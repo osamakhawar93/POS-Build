@@ -96897,7 +96897,7 @@ var MainComponent = (function () {
         console.log(__WEBPACK_IMPORTED_MODULE_11_jquery__(event.target).attr("data-target"));
         if (__WEBPACK_IMPORTED_MODULE_11_jquery__(event.target).attr("data-target") == "customers") {
             __WEBPACK_IMPORTED_MODULE_11_jquery__("#customers").show();
-            __WEBPACK_IMPORTED_MODULE_11_jquery__(event.target).parent("li").addClass('active');
+            __WEBPACK_IMPORTED_MODULE_11_jquery__(event.target).closest("li").addClass('active');
             __WEBPACK_IMPORTED_MODULE_11_jquery__("#customers").addClass("active in");
             __WEBPACK_IMPORTED_MODULE_11_jquery__("#categories-tab,#receipts,#menu3").hide();
             __WEBPACK_IMPORTED_MODULE_11_jquery__("#categories-tab,#receipts,#menu3").removeClass("active in");
@@ -96905,18 +96905,18 @@ var MainComponent = (function () {
         else if (__WEBPACK_IMPORTED_MODULE_11_jquery__(event.target).attr("data-target") == "categories-tab") {
             __WEBPACK_IMPORTED_MODULE_11_jquery__("#categories-tab").show();
             __WEBPACK_IMPORTED_MODULE_11_jquery__("#customers,#receipts,#menu3").hide();
-            __WEBPACK_IMPORTED_MODULE_11_jquery__(event.target).parent("li").addClass('active');
+            __WEBPACK_IMPORTED_MODULE_11_jquery__(event.target).closest("li").addClass('active');
             __WEBPACK_IMPORTED_MODULE_11_jquery__("#categories-tab").addClass("active in");
             __WEBPACK_IMPORTED_MODULE_11_jquery__("#customers,#receipts,#menu3").removeClass("active in");
         }
         else if (__WEBPACK_IMPORTED_MODULE_11_jquery__(event.target).attr("data-target") == "receipts") {
             __WEBPACK_IMPORTED_MODULE_11_jquery__("#receipts").show().addClass("active in");
-            __WEBPACK_IMPORTED_MODULE_11_jquery__(event.target).parent("li").addClass('active');
+            __WEBPACK_IMPORTED_MODULE_11_jquery__(event.target).closest("li").addClass('active');
             __WEBPACK_IMPORTED_MODULE_11_jquery__("#customers,#categories-tab,#menu3").hide().removeClass("active in");
         }
         else if (__WEBPACK_IMPORTED_MODULE_11_jquery__(event.target).attr("data-target") == "menu3") {
             __WEBPACK_IMPORTED_MODULE_11_jquery__("#menu3").show().addClass("active in");
-            __WEBPACK_IMPORTED_MODULE_11_jquery__(event.target).parent("li").addClass('active');
+            __WEBPACK_IMPORTED_MODULE_11_jquery__(event.target).closest("li").addClass('active');
             __WEBPACK_IMPORTED_MODULE_11_jquery__("#customers,#categories-tab,#receipts").hide().removeClass("active in");
         }
     };
