@@ -96971,6 +96971,7 @@ var MainComponent = (function () {
         }
     };
     MainComponent.prototype.createCustomer = function () {
+        var _this = this;
         var error = false;
         this.customerName = __WEBPACK_IMPORTED_MODULE_11_jquery__["trim"](this.customerName);
         this.customerCellPhone = __WEBPACK_IMPORTED_MODULE_11_jquery__["trim"](this.customerCellPhone);
@@ -97043,6 +97044,22 @@ var MainComponent = (function () {
                     __WEBPACK_IMPORTED_MODULE_11_jquery__("#incompleteForm").css("display", "none");
                     __WEBPACK_IMPORTED_MODULE_11_jquery__("#loader").hide();
                     __WEBPACK_IMPORTED_MODULE_11_jquery__("#customer-added").show();
+                    _this.customerService.getCustomersList().subscribe(function (a) {
+                        for (var i = 0; i < a.length; i++) {
+                            var allCustomers = new __WEBPACK_IMPORTED_MODULE_8__models_CustomersModel__["a" /* CustomersModel */]();
+                            allCustomers.id = a[i].Id;
+                            allCustomers.customerName = a[i].Name;
+                            allCustomers.customerEmail = a[i].Email;
+                            allCustomers.customerGender = a[i].Gender;
+                            allCustomers.customerDOB = a[i].dob;
+                            allCustomers.customerCellPhone = a[i].Billingphone;
+                            allCustomers.customerAddress = a[i].BillingAddress;
+                            allCustomers.toShipName = a[i].ShippingName;
+                            allCustomers.toShipPhone = a[i].Shippingphone;
+                            allCustomers.toShipAddress = a[i].ShippingAddress;
+                            _this.CustomersModel.push(allCustomers);
+                        }
+                    });
                 }
             });
         }

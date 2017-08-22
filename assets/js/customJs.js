@@ -13,24 +13,7 @@ function closeNav() {
 }
 
 
-    (function($){
-		$(".main-content").hover(function(){
-			
-			$(".main-content .mCSB_dragger_bar").css("display","block");
-		},function(){
-			$(".main-content .mCSB_dragger_bar").css("display","none");
-		});
-        $(window).on("load",function(){
-            $("#mySidenav").mCustomScrollbar({
-    theme:"dark"
-        });
-        });
-		$(window).on("load",function(){
-            $(".main-content,.main-item-order").mCustomScrollbar({
-    theme:"dark"
-        });
-        });
-    })(jQuery);
+    
 
 
 
