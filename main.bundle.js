@@ -146,7 +146,7 @@ var ac_main =
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 332);
+/******/ 	return __webpack_require__(__webpack_require__.s = 333);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1982,7 +1982,7 @@ function loadLocale(name) {
             module && module.exports) {
         try {
             oldLocale = globalLocale._abbr;
-            __webpack_require__(502)("./" + name);
+            __webpack_require__(503)("./" + name);
             // because defineLocale currently also sets the global locale, we
             // want to undo that for lazy loaded locales
             getSetGlobalLocale(oldLocale);
@@ -4617,7 +4617,7 @@ return hooks;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(561)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(562)(module)))
 
 /***/ }),
 /* 1 */,
@@ -4823,15 +4823,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge__ = __webpack_require__(536);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge__ = __webpack_require__(537);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__ = __webpack_require__(548);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__ = __webpack_require__(549);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__);
 
 /**
- * @license Angular v4.3.5
+ * @license Angular v4.3.3
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -5627,7 +5627,7 @@ var Version = (function () {
 /**
  * \@stable
  */
-var VERSION = new Version('4.3.5');
+var VERSION = new Version('4.3.3');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -10474,7 +10474,7 @@ var SystemJsNgModuleLoader = (function () {
         if (exportName === undefined) {
             exportName = 'default';
         }
-        return __webpack_require__(291)(module)
+        return __webpack_require__(292)(module)
             .then(function (module) { return module[exportName]; })
             .then(function (type) { return checkNotEmpty(type, module, exportName); })
             .then(function (type) { return _this._compiler.compileModuleAsync(type); });
@@ -10490,7 +10490,7 @@ var SystemJsNgModuleLoader = (function () {
             exportName = 'default';
             factoryClassSuffix = '';
         }
-        return __webpack_require__(291)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
+        return __webpack_require__(292)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
             .then(function (module) { return module[exportName + factoryClassSuffix]; })
             .then(function (factory) { return checkNotEmpty(factory, module, exportName); });
     };
@@ -10732,7 +10732,7 @@ var ChangeDetectorRef = (function () {
      *
      *   constructor(private ref: ChangeDetectorRef) {
      *     setInterval(() => {
-     *       this.numberOfTicks++;
+     *       this.numberOfTicks ++
      *       // the following is required, otherwise the view will not be updated
      *       this.ref.markForCheck();
      *     }, 1000);
@@ -10783,11 +10783,11 @@ var ChangeDetectorRef = (function () {
      * \@Component({
      *   selector: 'giant-list',
      *   template: `
-     *     <li *ngFor="let d of dataProvider.data">Data {{d}}</li>
+     *     <li *ngFor="let d of dataProvider.data">Data {{d}}</lig>
      *   `,
      * })
      * class GiantList {
-     *   constructor(private ref: ChangeDetectorRef, private dataProvider: DataProvider) {
+     *   constructor(private ref: ChangeDetectorRef, private dataProvider:DataProvider) {
      *     ref.detach();
      *     setInterval(() => {
      *       this.ref.detectChanges();
@@ -10874,14 +10874,13 @@ var ChangeDetectorRef = (function () {
      *   template: 'Data: {{dataProvider.data}}'
      * })
      * class LiveData {
-     *   constructor(private ref: ChangeDetectorRef, private dataProvider: DataProvider) {}
+     *   constructor(private ref: ChangeDetectorRef, private dataProvider:DataProvider) {}
      *
      *   set live(value) {
-     *     if (value) {
+     *     if (value)
      *       this.ref.reattach();
-     *     } else {
+     *     else
      *       this.ref.detach();
-     *     }
      *   }
      * }
      *
@@ -14899,9 +14898,6 @@ var ViewContainerRef_ = (function () {
      * @return {?}
      */
     ViewContainerRef_.prototype.insert = function (viewRef, index) {
-        if (viewRef.destroyed) {
-            throw new Error('Cannot insert a destroyed View in a ViewContainer!');
-        }
         var /** @type {?} */ viewRef_ = (viewRef);
         var /** @type {?} */ viewData = viewRef_._view;
         attachEmbeddedView(this._view, this._data, index, viewData);
@@ -14914,9 +14910,6 @@ var ViewContainerRef_ = (function () {
      * @return {?}
      */
     ViewContainerRef_.prototype.move = function (viewRef, currentIndex) {
-        if (viewRef.destroyed) {
-            throw new Error('Cannot move a destroyed View in a ViewContainer!');
-        }
         var /** @type {?} */ previousIndex = this._embeddedViews.indexOf(viewRef._view);
         moveEmbeddedView(this._data, previousIndex, currentIndex);
         return viewRef;
@@ -19025,11 +19018,10 @@ function style$1(tokens) {
  * \@experimental Animation support is experimental.
  * @param {?} name
  * @param {?} styles
- * @param {?=} options
  * @return {?}
  */
-function state$1(name, styles, options) {
-    return { type: 0 /* State */, name: name, styles: styles, options: options };
+function state$1(name, styles) {
+    return { type: 0 /* State */, name: name, styles: styles };
 }
 /**
  * `keyframes` is an animation-specific function that is designed to be used inside of Angular's
@@ -19630,7 +19622,7 @@ function transition$$1(stateChangeExpr, steps) {
 
 //# sourceMappingURL=core.es5.js.map
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(81)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(82)))
 
 /***/ }),
 /* 3 */,
@@ -19829,7 +19821,7 @@ function __asyncValues(o) {
 "use strict";
 
 var root_1 = __webpack_require__(51);
-var toSubscriber_1 = __webpack_require__(550);
+var toSubscriber_1 = __webpack_require__(551);
 var observable_1 = __webpack_require__(113);
 /**
  * A representation of any set of values over any amount of time. This the most basic building block
@@ -19972,11 +19964,11 @@ exports.Observable = Observable;
 
 
 var _ = __webpack_require__(32);
-var cls = __webpack_require__(76);
-var defaultSettings = __webpack_require__(507);
+var cls = __webpack_require__(77);
+var defaultSettings = __webpack_require__(508);
 var dom = __webpack_require__(49);
-var EventManager = __webpack_require__(504);
-var guid = __webpack_require__(505);
+var EventManager = __webpack_require__(505);
+var guid = __webpack_require__(506);
 
 var instances = {};
 
@@ -20089,9 +20081,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isFunction_1 = __webpack_require__(285);
-var Subscription_1 = __webpack_require__(78);
-var Observer_1 = __webpack_require__(277);
+var isFunction_1 = __webpack_require__(286);
+var Subscription_1 = __webpack_require__(79);
+var Observer_1 = __webpack_require__(278);
 var rxSubscriber_1 = __webpack_require__(114);
 /**
  * Implements the {@link Observer} interface and extends the
@@ -20401,46 +20393,46 @@ var SafeSubscriber = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__ = __webpack_require__(524);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__ = __webpack_require__(525);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__ = __webpack_require__(535);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__ = __webpack_require__(536);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__ = __webpack_require__(282);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__ = __webpack_require__(539);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__ = __webpack_require__(540);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__ = __webpack_require__(540);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__ = __webpack_require__(541);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__ = __webpack_require__(542);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__ = __webpack_require__(543);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__ = __webpack_require__(543);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__ = __webpack_require__(544);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__ = __webpack_require__(283);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce__ = __webpack_require__(547);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce__ = __webpack_require__(548);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__ = __webpack_require__(537);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__ = __webpack_require__(538);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__ = __webpack_require__(538);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__ = __webpack_require__(539);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__ = __webpack_require__(281);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_platform_browser__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter__ = __webpack_require__(541);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter__ = __webpack_require__(542);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter__);
 
 /**
- * @license Angular v4.3.5
+ * @license Angular v4.3.3
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -21083,7 +21075,7 @@ function wrapIntoObservable(value) {
         // change detection.
         return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__["fromPromise"])(Promise.resolve(value));
     }
-    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(/** @type {?} */ (value));
+    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(value);
 }
 /**
  * @license
@@ -22275,10 +22267,7 @@ function match(segmentGroup, route, segments) {
     var /** @type {?} */ res = matcher(segments, segmentGroup, route);
     if (!res) {
         return {
-            matched: false,
-            consumedSegments: /** @type {?} */ ([]),
-            lastChild: 0,
-            positionalParamSegments: {},
+            matched: false, consumedSegments: /** @type {?} */ ([]), lastChild: 0, positionalParamSegments: {},
         };
     }
     return {
@@ -25119,7 +25108,7 @@ var ActivateRoutes = (function () {
         if (context) {
             var /** @type {?} */ children = nodeChildrenAsMap(route);
             var /** @type {?} */ contexts_1 = route.value.component ? context.children : parentContexts;
-            forEach(children, function (v, k) { return _this.deactivateRouteAndItsChildren(v, contexts_1); });
+            forEach(children, function (v, k) { _this.deactivateRouteAndItsChildren(v, contexts_1); });
             if (context.outlet) {
                 // Destroy the component
                 context.outlet.deactivate();
@@ -25320,7 +25309,7 @@ function validateCommands(commands) {
  *
  * You can tell the directive to how to handle queryParams, available options are:
  *  - 'merge' merge the queryParams into the current queryParams
- *  - 'preserve' preserve the current queryParams
+ *  - 'preserve' prserve the current queryParams
  *  - default / '' use the queryParams only
  *  same options for {\@link NavigationExtras#queryParamsHandling}
  *
@@ -26693,7 +26682,7 @@ function provideRouterInitializer() {
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["Version"]('4.3.5');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["Version"]('4.3.3');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -26821,7 +26810,7 @@ function toComment(sourceMap) {
 "use strict";
 
 
-var cls = __webpack_require__(76);
+var cls = __webpack_require__(77);
 var dom = __webpack_require__(49);
 
 var toInt = exports.toInt = function (x) {
@@ -26912,7 +26901,7 @@ exports.env = {
 
 
 var _ = __webpack_require__(32);
-var cls = __webpack_require__(76);
+var cls = __webpack_require__(77);
 var dom = __webpack_require__(49);
 var instances = __webpack_require__(19);
 var updateScroll = __webpack_require__(38);
@@ -27190,7 +27179,7 @@ module.exports = function (element, axis, value) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__(53);
 
 /**
- * @license Angular v4.3.5
+ * @license Angular v4.3.3
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -29345,7 +29334,7 @@ JsonpModule.ctorParameters = function () { return []; };
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('4.3.5');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('4.3.3');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -29502,7 +29491,7 @@ if (!exports.root) {
     throw new Error('RxJS could not find any global context (window, self, global)');
 }
 //# sourceMappingURL=root.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(81)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(82)))
 
 /***/ }),
 /* 52 */
@@ -29563,7 +29552,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
 
 /**
- * @license Angular v4.3.5
+ * @license Angular v4.3.3
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -32977,8 +32966,8 @@ var ISO8601_DATE_REGEX = /^(\d{4})-?(\d\d)-?(\d\d)(?:T(\d\d)(?::?(\d\d)(?::?(\d\
  *  | month     |   M    | L (S)  | MMM (Sep)    | MMMM (September)  | M (9)     | MM (09)   |
  *  | day       |   d    | -      | -            | -                 | d (3)     | dd (03)   |
  *  | weekday   |   E    | E (S)  | EEE (Sun)    | EEEE (Sunday)     | -         | -         |
- *  | hour      |   j    | -      | -            | -                 | j (1 PM)  | jj (1 PM) |
- *  | hour12    |   h    | -      | -            | -                 | h (1)     | hh (01)   |
+ *  | hour      |   j    | -      | -            | -                 | j (13)    | jj (13)   |
+ *  | hour12    |   h    | -      | -            | -                 | h (1 PM)  | hh (01 PM)|
  *  | hour24    |   H    | -      | -            | -                 | H (13)    | HH (13)   |
  *  | minute    |   m    | -      | -            | -                 | m (5)     | mm (05)   |
  *  | second    |   s    | -      | -            | -                 | s (9)     | ss (09)   |
@@ -33506,7 +33495,7 @@ function isPlatformWorkerUi(platformId) {
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('4.3.5');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('4.3.3');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -33593,7 +33582,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('4.3.5'
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(2);
 
 /**
- * @license Angular v4.3.5
+ * @license Angular v4.3.3
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -38000,7 +37989,7 @@ var By = (function () {
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["Version"]('4.3.5');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["Version"]('4.3.3');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -38050,9 +38039,9 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(11);
 var Subscriber_1 = __webpack_require__(20);
-var Subscription_1 = __webpack_require__(78);
-var ObjectUnsubscribedError_1 = __webpack_require__(283);
-var SubjectSubscription_1 = __webpack_require__(527);
+var Subscription_1 = __webpack_require__(79);
+var ObjectUnsubscribedError_1 = __webpack_require__(284);
+var SubjectSubscription_1 = __webpack_require__(528);
 var rxSubscriber_1 = __webpack_require__(114);
 /**
  * @class SubjectSubscriber<T>
@@ -38206,6 +38195,202 @@ exports.AnonymousSubject = AnonymousSubject;
 /***/ }),
 /* 64 */,
 /* 65 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddtocartService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(39);
+
+
+
+
+var AddtocartService = (function () {
+    function AddtocartService(http) {
+        this.http = http;
+        this.cart = {
+            size: "",
+            box: "",
+            boxColor: "",
+            quantity: "",
+            total: "",
+            sizeAddon: "",
+            boxAddon: "",
+            totalAddon: "",
+            product: {
+                ID: "",
+                Name: "",
+                Image: "",
+                Sku: "",
+                price: 0
+            }
+        };
+    }
+    AddtocartService.prototype.setCustomer = function (customerObject) {
+        this.customer = customerObject;
+    };
+    AddtocartService.prototype.hideCartShowBackOffice = function () {
+        var backoffice = true;
+        return backoffice;
+    };
+    AddtocartService.prototype.getTaxDetails = function () {
+        var data = {};
+        var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+        return this.http.post("http://182.180.56.81:8080/Magento/GetTaxDetails.php", data, { headers: headers })
+            .map(function (res) {
+            return res.json();
+        });
+    };
+    AddtocartService.prototype.setTaxDetails = function (taxamount, check) {
+        var data = { "taxamount": taxamount, "check": check };
+        var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+        return this.http.post("http://182.180.56.81:8080/Magento/puttax.php", data, { headers: headers })
+            .map(function (res) {
+            var x;
+            x = res;
+            console.log(res);
+            return x.json();
+        });
+    };
+    AddtocartService.prototype.getShippingAddress = function (customerId) {
+        console.log(customerId);
+        var data = { "id": customerId };
+        var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+        return this.http.post("http://182.180.56.81:8080/Magento/GetAllShippingAddresses.php", data, { headers: headers })
+            .map(function (res) {
+            return res.json();
+        });
+    };
+    AddtocartService.prototype.addShippingAddress = function (shippmentObect) {
+        var data = { "id": shippmentObect.shipName, "toShipName": shippmentObect.shipName, "toShipAddress": shippmentObect.shipAddress, "toShipPhone": shippmentObect.shipPhone };
+        var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+        return this.http.post("http://182.180.56.81:8080/Magento/addshipping.php", data, { headers: headers })
+            .subscribe(function (res) {
+            console.log(res);
+        });
+    };
+    AddtocartService.prototype.getAllOrders = function () {
+        var data = {};
+        var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+        return this.http.post("http://182.180.56.81:8080/Magento/GetAllOrders.php", data, { headers: headers })
+            .map(function (res) {
+            return res.json();
+        });
+    };
+    AddtocartService.prototype.getCashOrders = function () {
+        var data = {};
+        var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+        return this.http.post("http://182.180.56.81:8080/Magento/GetCompleteOrders.php", data, { headers: headers })
+            .map(function (res) {
+            return res.json();
+        });
+    };
+    AddtocartService.prototype.getCashOnDeliveryOrders = function () {
+        var data = {};
+        var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+        return this.http.post("http://182.180.56.81:8080/Magento/GetDeliveryOrders.php", data, { headers: headers })
+            .map(function (res) {
+            return res.json();
+        });
+    };
+    AddtocartService.prototype.putOnHoldOrder = function (ShippmentMethod, length, customer, cart, shippmentObect) {
+        var data = { "ShippmentMethod": ShippmentMethod, "length": length, "customer": customer, "cart": cart, "shippmentObject": shippmentObect };
+        var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+        return this.http.post("http://182.180.56.81:8080/Magento/Directorder.php", data, { headers: headers })
+            .map(function (res) {
+            var x;
+            x = res;
+            console.log(res);
+            return x.json();
+        });
+    };
+    AddtocartService.prototype.placeOrder = function (ShippmentMethod, length, customer, cart, shippmentObect) {
+        var data = { "ShippmentMethod": ShippmentMethod, "length": length, "customer": customer, "cart": cart, "shippmentObject": shippmentObect };
+        var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+        return this.http.post("http://182.180.56.81:8080/Magento/Directorder.php", data, { headers: headers })
+            .map(function (res) {
+            var x;
+            x = res;
+            console.log(res);
+            return x.json();
+        });
+    };
+    AddtocartService.prototype.getCustomer = function () {
+        return this.customer;
+    };
+    AddtocartService.prototype.setCart = function (productQuantity, size, sizeAddon, box, boxAddon, boxColor, cartObj) {
+        this.cart = {
+            size: "",
+            box: "",
+            boxColor: "",
+            quantity: "",
+            total: "",
+            sizeAddon: "",
+            boxAddon: "",
+            totalAddon: "",
+            product: {
+                ID: "",
+                Name: "",
+                Image: "",
+                Sku: "",
+                price: 0
+            },
+        };
+        this.cart.size = size;
+        this.cart.quantity = productQuantity;
+        this.cart.box = box;
+        this.cart.boxColor = boxColor;
+        this.cart.product.ID = cartObj.ID;
+        this.cart.product.Name = cartObj.Name;
+        this.cart.product.Image = cartObj.Image;
+        this.cart.product.Sku = cartObj.Sku;
+        this.cart.product.price = cartObj.price;
+        this.cart.sizeAddon = sizeAddon;
+        this.cart.boxAddon = boxAddon;
+        this.cart.totalAddon = parseFloat(this.cart.sizeAddon) + parseFloat(this.cart.boxAddon);
+        //this.cart.total = this.cart.quantity * cartObj.price;
+        if (this.cart.size == undefined) {
+            var tempPrice = 0;
+        }
+        else {
+            var tempPrice = sizeAddon * productQuantity;
+        }
+        if (this.cart.box == undefined) {
+            var tempBoxPrice = 0;
+        }
+        else {
+            var tempBoxPrice = boxAddon * productQuantity;
+        }
+        var productPrice;
+        productPrice = this.cart.product.price * this.cart.quantity;
+        this.cart.total = productPrice + tempPrice + tempBoxPrice;
+    };
+    AddtocartService.prototype.getCart = function () {
+        return this.cart;
+    };
+    return AddtocartService;
+}());
+AddtocartService = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_http__["c" /* Http */]])
+], AddtocartService);
+
+
+
+/***/ }),
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38227,7 +38412,6 @@ exports.PerfectScrollbarConfig = PerfectScrollbarConfig;
 //# sourceMappingURL=perfect-scrollbar.interfaces.js.map
 
 /***/ }),
-/* 66 */,
 /* 67 */,
 /* 68 */,
 /* 69 */,
@@ -38237,7 +38421,8 @@ exports.PerfectScrollbarConfig = PerfectScrollbarConfig;
 /* 73 */,
 /* 74 */,
 /* 75 */,
-/* 76 */
+/* 76 */,
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38286,7 +38471,7 @@ exports.list = function (element) {
 
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38322,7 +38507,7 @@ exports.OuterSubscriber = OuterSubscriber;
 //# sourceMappingURL=OuterSubscriber.js.map
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38332,12 +38517,12 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isArray_1 = __webpack_require__(79);
-var isObject_1 = __webpack_require__(286);
-var isFunction_1 = __webpack_require__(285);
-var tryCatch_1 = __webpack_require__(551);
-var errorObject_1 = __webpack_require__(284);
-var UnsubscriptionError_1 = __webpack_require__(549);
+var isArray_1 = __webpack_require__(80);
+var isObject_1 = __webpack_require__(287);
+var isFunction_1 = __webpack_require__(286);
+var tryCatch_1 = __webpack_require__(552);
+var errorObject_1 = __webpack_require__(285);
+var UnsubscriptionError_1 = __webpack_require__(550);
 /**
  * Represents a disposable resource, such as the execution of an Observable. A
  * Subscription has one important method, `unsubscribe`, that takes no argument
@@ -38506,7 +38691,7 @@ function flattenUnsubscriptionErrors(errors) {
 //# sourceMappingURL=Subscription.js.map
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38515,18 +38700,18 @@ exports.isArray = Array.isArray || (function (x) { return x && typeof x.length =
 //# sourceMappingURL=isArray.js.map
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var root_1 = __webpack_require__(51);
-var isArray_1 = __webpack_require__(79);
-var isPromise_1 = __webpack_require__(287);
-var isObject_1 = __webpack_require__(286);
+var isArray_1 = __webpack_require__(80);
+var isPromise_1 = __webpack_require__(288);
+var isObject_1 = __webpack_require__(287);
 var Observable_1 = __webpack_require__(11);
 var iterator_1 = __webpack_require__(112);
-var InnerSubscriber_1 = __webpack_require__(525);
+var InnerSubscriber_1 = __webpack_require__(526);
 var observable_1 = __webpack_require__(113);
 function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
     var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
@@ -38599,7 +38784,7 @@ exports.subscribeToResult = subscribeToResult;
 //# sourceMappingURL=subscribeToResult.js.map
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports) {
 
 var g;
@@ -38626,7 +38811,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38703,16 +38888,16 @@ module.exports = g;
 /* unused harmony export ɵr */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__ = __webpack_require__(534);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__ = __webpack_require__(535);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__ = __webpack_require__(281);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__ = __webpack_require__(53);
 
 /**
- * @license Angular v4.3.5
+ * @license Angular v4.3.3
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -38740,16 +38925,12 @@ var AbstractControlDirective = (function () {
     function AbstractControlDirective() {
     }
     /**
-     * The {\@link FormControl}, {\@link FormGroup}, or {\@link FormArray}
-     * that backs this directive. Most properties fall through to that
-     * instance.
      * @abstract
      * @return {?}
      */
     AbstractControlDirective.prototype.control = function () { };
     Object.defineProperty(AbstractControlDirective.prototype, "value", {
         /**
-         * The value of the control.
          * @return {?}
          */
         get: function () { return this.control ? this.control.value : null; },
@@ -38758,10 +38939,6 @@ var AbstractControlDirective = (function () {
     });
     Object.defineProperty(AbstractControlDirective.prototype, "valid", {
         /**
-         * A control is `valid` when its `status === VALID`.
-         *
-         * In order to have this status, the control must have passed all its
-         * validation checks.
          * @return {?}
          */
         get: function () { return this.control ? this.control.valid : null; },
@@ -38770,10 +38947,6 @@ var AbstractControlDirective = (function () {
     });
     Object.defineProperty(AbstractControlDirective.prototype, "invalid", {
         /**
-         * A control is `invalid` when its `status === INVALID`.
-         *
-         * In order to have this status, the control must have failed
-         * at least one of its validation checks.
          * @return {?}
          */
         get: function () { return this.control ? this.control.invalid : null; },
@@ -38782,45 +38955,14 @@ var AbstractControlDirective = (function () {
     });
     Object.defineProperty(AbstractControlDirective.prototype, "pending", {
         /**
-         * A control is `pending` when its `status === PENDING`.
-         *
-         * In order to have this status, the control must be in the
-         * middle of conducting a validation check.
          * @return {?}
          */
         get: function () { return this.control ? this.control.pending : null; },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AbstractControlDirective.prototype, "disabled", {
-        /**
-         * A control is `disabled` when its `status === DISABLED`.
-         *
-         * Disabled controls are exempt from validation checks and
-         * are not included in the aggregate value of their ancestor
-         * controls.
-         * @return {?}
-         */
-        get: function () { return this.control ? this.control.disabled : null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlDirective.prototype, "enabled", {
-        /**
-         * A control is `enabled` as long as its `status !== DISABLED`.
-         *
-         * In other words, it has a status of `VALID`, `INVALID`, or
-         * `PENDING`.
-         * @return {?}
-         */
-        get: function () { return this.control ? this.control.enabled : null; },
-        enumerable: true,
-        configurable: true
-    });
     Object.defineProperty(AbstractControlDirective.prototype, "errors", {
         /**
-         * Returns any errors generated by failing validation. If there
-         * are no errors, it will return null.
          * @return {?}
          */
         get: function () { return this.control ? this.control.errors : null; },
@@ -38829,11 +38971,6 @@ var AbstractControlDirective = (function () {
     });
     Object.defineProperty(AbstractControlDirective.prototype, "pristine", {
         /**
-         * A control is `pristine` if the user has not yet changed
-         * the value in the UI.
-         *
-         * Note that programmatic changes to a control's value will
-         * *not* mark it dirty.
          * @return {?}
          */
         get: function () { return this.control ? this.control.pristine : null; },
@@ -38842,11 +38979,6 @@ var AbstractControlDirective = (function () {
     });
     Object.defineProperty(AbstractControlDirective.prototype, "dirty", {
         /**
-         * A control is `dirty` if the user has changed the value
-         * in the UI.
-         *
-         * Note that programmatic changes to a control's value will
-         * *not* mark it dirty.
          * @return {?}
          */
         get: function () { return this.control ? this.control.dirty : null; },
@@ -38855,8 +38987,6 @@ var AbstractControlDirective = (function () {
     });
     Object.defineProperty(AbstractControlDirective.prototype, "touched", {
         /**
-         * A control is marked `touched` once the user has triggered
-         * a `blur` event on it.
          * @return {?}
          */
         get: function () { return this.control ? this.control.touched : null; },
@@ -38865,18 +38995,30 @@ var AbstractControlDirective = (function () {
     });
     Object.defineProperty(AbstractControlDirective.prototype, "untouched", {
         /**
-         * A control is `untouched` if the user has not yet triggered
-         * a `blur` event on it.
          * @return {?}
          */
         get: function () { return this.control ? this.control.untouched : null; },
         enumerable: true,
         configurable: true
     });
+    Object.defineProperty(AbstractControlDirective.prototype, "disabled", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this.control ? this.control.disabled : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "enabled", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this.control ? this.control.enabled : null; },
+        enumerable: true,
+        configurable: true
+    });
     Object.defineProperty(AbstractControlDirective.prototype, "statusChanges", {
         /**
-         * Emits an event every time the validation status of the control
-         * is re-calculated.
          * @return {?}
          */
         get: function () {
@@ -38887,8 +39029,6 @@ var AbstractControlDirective = (function () {
     });
     Object.defineProperty(AbstractControlDirective.prototype, "valueChanges", {
         /**
-         * Emits an event every time the value of the control changes, in
-         * the UI or programmatically.
          * @return {?}
          */
         get: function () {
@@ -38899,9 +39039,6 @@ var AbstractControlDirective = (function () {
     });
     Object.defineProperty(AbstractControlDirective.prototype, "path", {
         /**
-         * Returns an array that represents the path from the top-level form
-         * to this control. Each index is the string name of the control on
-         * that level.
          * @return {?}
          */
         get: function () { return null; },
@@ -38909,13 +39046,6 @@ var AbstractControlDirective = (function () {
         configurable: true
     });
     /**
-     * Resets the form control. This means by default:
-     *
-     * * it is marked as `pristine`
-     * * it is marked as `untouched`
-     * * value is set to null
-     *
-     * For more information, see {\@link AbstractControl}.
      * @param {?=} value
      * @return {?}
      */
@@ -38925,10 +39055,6 @@ var AbstractControlDirective = (function () {
             this.control.reset(value);
     };
     /**
-     * Returns true if the control with the given path has the error specified. Otherwise
-     * returns false.
-     *
-     * If no path is given, it checks for the error on the present control.
      * @param {?} errorCode
      * @param {?=} path
      * @return {?}
@@ -38937,10 +39063,6 @@ var AbstractControlDirective = (function () {
         return this.control ? this.control.hasError(errorCode, path) : false;
     };
     /**
-     * Returns error data if the control with the given path has the error specified. Otherwise
-     * returns null or undefined.
-     *
-     * If no path is given, it checks for the error on the present control.
      * @param {?} errorCode
      * @param {?=} path
      * @return {?}
@@ -39405,7 +39527,6 @@ var DefaultValueAccessor = (function () {
         this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
     };
     /**
-     * \@internal
      * @param {?} value
      * @return {?}
      */
@@ -39415,12 +39536,10 @@ var DefaultValueAccessor = (function () {
         }
     };
     /**
-     * \@internal
      * @return {?}
      */
     DefaultValueAccessor.prototype._compositionStart = function () { this._composing = true; };
     /**
-     * \@internal
      * @param {?} value
      * @return {?}
      */
@@ -40059,8 +40178,8 @@ var SelectControlValueAccessor = (function () {
     SelectControlValueAccessor.prototype.registerOnChange = function (fn) {
         var _this = this;
         this.onChange = function (valueString) {
-            _this.value = _this._getOptionValue(valueString);
-            fn(_this.value);
+            _this.value = valueString;
+            fn(_this._getOptionValue(valueString));
         };
     };
     /**
@@ -40874,16 +40993,7 @@ var ngControlStatusHost = {
 };
 /**
  * Directive automatically applied to Angular form controls that sets CSS classes
- * based on control status. The following classes are applied as the properties
- * become true:
- *
- * * ng-valid
- * * ng-invalid
- * * ng-pending
- * * ng-pristine
- * * ng-dirty
- * * ng-untouched
- * * ng-touched
+ * based on control status (valid/invalid/dirty/etc).
  *
  * \@stable
  */
@@ -41500,7 +41610,7 @@ var AbstractControl = (function () {
      */
     AbstractControl.prototype.get = function (path) { return _find(this, path, '.'); };
     /**
-     * Returns error data if the control with the given path has the error specified. Otherwise
+     * Returns true if the control with the given path has the error specified. Otherwise
      * returns null or undefined.
      *
      * If no path is given, it checks for the error on the present control.
@@ -44636,7 +44746,7 @@ FormBuilder.ctorParameters = function () { return []; };
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('4.3.5');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('4.3.3');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -44804,7 +44914,7 @@ ReactiveFormsModule.ctorParameters = function () { return []; };
 
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44857,113 +44967,6 @@ var AppState = (function () {
 AppState = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])()
 ], AppState);
-
-
-
-/***/ }),
-/* 84 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddtocartService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(39);
-
-
-
-
-var AddtocartService = (function () {
-    function AddtocartService(http) {
-        this.http = http;
-        this.cart = {
-            size: "",
-            box: "",
-            boxColor: "",
-            quantity: "",
-            total: "",
-            sizeAddon: "",
-            boxAddon: "",
-            product: {
-                ID: "",
-                Name: "",
-                Image: "",
-                Sku: "",
-                price: 0
-            }
-        };
-    }
-    AddtocartService.prototype.setCustomer = function (customerObject) {
-        this.customer = customerObject;
-    };
-    AddtocartService.prototype.placeOrder = function (length, customer, cart) {
-        var data = { "length": length, "customer": customer, "cart": cart };
-        var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
-        headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-        return this.http.post("http://182.180.56.81:8080/Magento/Directorder.php", data, { headers: headers })
-            .subscribe(function (res) {
-            console.log(res);
-        });
-    };
-    AddtocartService.prototype.getCustomer = function () {
-        return this.customer;
-    };
-    AddtocartService.prototype.setCart = function (productQuantity, size, sizeAddon, box, boxAddon, boxColor, cartObj) {
-        this.cart = {
-            size: "",
-            box: "",
-            boxColor: "",
-            quantity: "",
-            total: "",
-            sizeAddon: "",
-            boxAddon: "",
-            product: {
-                ID: "",
-                Name: "",
-                Image: "",
-                Sku: "",
-                price: 0
-            },
-        };
-        this.cart.size = size;
-        this.cart.quantity = productQuantity;
-        this.cart.box = box;
-        this.cart.boxColor = boxColor;
-        this.cart.product.ID = cartObj.ID;
-        this.cart.product.Name = cartObj.Name;
-        this.cart.product.Image = cartObj.Image;
-        this.cart.product.Sku = cartObj.Sku;
-        this.cart.product.price = cartObj.price;
-        this.cart.sizeAddon = sizeAddon;
-        this.cart.boxAddon = boxAddon;
-        //this.cart.total = this.cart.quantity * cartObj.price;
-        if (this.cart.size == undefined) {
-            var tempPrice = 0;
-        }
-        else {
-            var tempPrice = sizeAddon * productQuantity;
-        }
-        if (this.cart.box == undefined) {
-            var tempBoxPrice = 0;
-        }
-        else {
-            var tempBoxPrice = boxAddon * productQuantity;
-        }
-        var productPrice;
-        productPrice = this.cart.product.price * this.cart.quantity;
-        this.cart.total = productPrice + tempPrice + tempBoxPrice;
-    };
-    AddtocartService.prototype.getCart = function () {
-        return this.cart;
-    };
-    return AddtocartService;
-}());
-AddtocartService = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_http__["c" /* Http */]])
-], AddtocartService);
 
 
 
@@ -55348,9 +55351,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(11);
-var ScalarObservable_1 = __webpack_require__(279);
+var ScalarObservable_1 = __webpack_require__(280);
 var EmptyObservable_1 = __webpack_require__(109);
-var isScheduler_1 = __webpack_require__(288);
+var isScheduler_1 = __webpack_require__(289);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -55655,8 +55658,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(77);
-var subscribeToResult_1 = __webpack_require__(80);
+var OuterSubscriber_1 = __webpack_require__(78);
+var subscribeToResult_1 = __webpack_require__(81);
 /**
  * Converts a higher-order Observable into a first-order Observable which
  * concurrently delivers all values that are emitted on the inner Observables.
@@ -55955,7 +55958,7 @@ var SlimScrollOptions = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__about_component__ = __webpack_require__(317);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__about_component__ = __webpack_require__(318);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__about_component__["a"]; });
 
 
@@ -55965,7 +55968,7 @@ var SlimScrollOptions = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home_component__ = __webpack_require__(324);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home_component__ = __webpack_require__(325);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__home_component__["a"]; });
 
 
@@ -55975,7 +55978,7 @@ var SlimScrollOptions = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__no_content_component__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__no_content_component__ = __webpack_require__(332);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__no_content_component__["a"]; });
 
 
@@ -55989,13 +55992,22 @@ var SlimScrollOptions = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_AddtocartService__ = __webpack_require__(65);
+
 
 
 
 var SidebarComponent = (function () {
-    function SidebarComponent(route) {
+    function SidebarComponent(route, addToCart) {
         this.route = route;
+        this.addToCart = addToCart;
+        this.showBackOfficeEvent = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["EventEmitter"]();
     }
+    SidebarComponent.prototype.showBackOffice = function () {
+        this.addToCart.hideCartShowBackOffice();
+        this.showBackOfficeEvent.emit("myValuesss");
+        event.preventDefault();
+    };
     SidebarComponent.prototype.ngOnInit = function () {
         /* (function($){
      
@@ -56049,26 +56061,45 @@ var SidebarComponent = (function () {
     };
     return SidebarComponent;
 }());
+__WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Output"])(),
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:type", Object)
+], SidebarComponent.prototype, "showBackOfficeEvent", void 0);
 SidebarComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: 'Sidebar',
-        template: __webpack_require__(523),
-        styles: [__webpack_require__(560)]
+        template: __webpack_require__(524),
+        styles: [__webpack_require__(561)]
     }),
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]])
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_3__services_AddtocartService__["a" /* AddtocartService */]])
 ], SidebarComponent);
 
 
 
 /***/ }),
 /* 122 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServiceUrl; });
+var ServiceUrl = (function () {
+    function ServiceUrl() {
+        this.baseUrl = "https://www.lesfloralies.ae/";
+    }
+    return ServiceUrl;
+}());
+
+
+
+/***/ }),
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var Ps = __webpack_require__(276);
+var Ps = __webpack_require__(277);
 var core_1 = __webpack_require__(2);
-var perfect_scrollbar_interfaces_1 = __webpack_require__(65);
+var perfect_scrollbar_interfaces_1 = __webpack_require__(66);
 var PerfectScrollbarComponent = (function () {
     function PerfectScrollbarComponent(elementRef, defaults, zone) {
         this.elementRef = elementRef;
@@ -56182,14 +56213,14 @@ exports.PerfectScrollbarComponent = PerfectScrollbarComponent;
 //# sourceMappingURL=perfect-scrollbar.component.js.map
 
 /***/ }),
-/* 123 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var Ps = __webpack_require__(276);
+var Ps = __webpack_require__(277);
 var core_1 = __webpack_require__(2);
-var perfect_scrollbar_interfaces_1 = __webpack_require__(65);
+var perfect_scrollbar_interfaces_1 = __webpack_require__(66);
 var PerfectScrollbarDirective = (function () {
     function PerfectScrollbarDirective(elementRef, defaults, zone) {
         this.elementRef = elementRef;
@@ -56307,7 +56338,7 @@ exports.PerfectScrollbarDirective = PerfectScrollbarDirective;
 //# sourceMappingURL=perfect-scrollbar.directive.js.map
 
 /***/ }),
-/* 124 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56440,7 +56471,6 @@ exports.WizardComponent = WizardComponent;
 //# sourceMappingURL=wizard.component.js.map
 
 /***/ }),
-/* 125 */,
 /* 126 */,
 /* 127 */,
 /* 128 */,
@@ -56475,7 +56505,8 @@ exports.WizardComponent = WizardComponent;
 /* 157 */,
 /* 158 */,
 /* 159 */,
-/* 160 */
+/* 160 */,
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -56553,7 +56584,7 @@ return af;
 
 
 /***/ }),
-/* 161 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -56617,7 +56648,7 @@ return arDz;
 
 
 /***/ }),
-/* 162 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -56681,7 +56712,7 @@ return arKw;
 
 
 /***/ }),
-/* 163 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -56812,7 +56843,7 @@ return arLy;
 
 
 /***/ }),
-/* 164 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -56877,7 +56908,7 @@ return arMa;
 
 
 /***/ }),
-/* 165 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -56987,7 +57018,7 @@ return arSa;
 
 
 /***/ }),
-/* 166 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -57051,7 +57082,7 @@ return arTn;
 
 
 /***/ }),
-/* 167 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -57198,7 +57229,7 @@ return ar;
 
 
 /***/ }),
-/* 168 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -57308,7 +57339,7 @@ return az;
 
 
 /***/ }),
-/* 169 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -57447,7 +57478,7 @@ return be;
 
 
 /***/ }),
-/* 170 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -57542,7 +57573,7 @@ return bg;
 
 
 /***/ }),
-/* 171 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -57666,7 +57697,7 @@ return bn;
 
 
 /***/ }),
-/* 172 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -57790,7 +57821,7 @@ return bo;
 
 
 /***/ }),
-/* 173 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -57903,7 +57934,7 @@ return br;
 
 
 /***/ }),
-/* 174 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -58051,7 +58082,7 @@ return bs;
 
 
 /***/ }),
-/* 175 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -58144,7 +58175,7 @@ return ca;
 
 
 /***/ }),
-/* 176 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -58321,7 +58352,7 @@ return cs;
 
 
 /***/ }),
-/* 177 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -58389,7 +58420,7 @@ return cv;
 
 
 /***/ }),
-/* 178 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -58475,7 +58506,7 @@ return cy;
 
 
 /***/ }),
-/* 179 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -58540,7 +58571,7 @@ return da;
 
 
 /***/ }),
-/* 180 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -58624,7 +58655,7 @@ return deAt;
 
 
 /***/ }),
-/* 181 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -58707,7 +58738,7 @@ return deCh;
 
 
 /***/ }),
-/* 182 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -58790,7 +58821,7 @@ return de;
 
 
 /***/ }),
-/* 183 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -58895,7 +58926,7 @@ return dv;
 
 
 /***/ }),
-/* 184 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -59000,7 +59031,7 @@ return el;
 
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -59072,7 +59103,7 @@ return enAu;
 
 
 /***/ }),
-/* 186 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -59140,7 +59171,7 @@ return enCa;
 
 
 /***/ }),
-/* 187 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -59212,7 +59243,7 @@ return enGb;
 
 
 /***/ }),
-/* 188 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -59284,7 +59315,7 @@ return enIe;
 
 
 /***/ }),
-/* 189 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -59356,7 +59387,7 @@ return enNz;
 
 
 /***/ }),
-/* 190 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -59434,7 +59465,7 @@ return eo;
 
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -59521,7 +59552,7 @@ return esDo;
 
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -59609,7 +59640,7 @@ return es;
 
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -59694,7 +59725,7 @@ return et;
 
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -59765,7 +59796,7 @@ return eu;
 
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -59877,7 +59908,7 @@ return fa;
 
 
 /***/ }),
-/* 196 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -59989,7 +60020,7 @@ return fi;
 
 
 /***/ }),
-/* 197 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -60054,7 +60085,7 @@ return fo;
 
 
 /***/ }),
-/* 198 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -60133,7 +60164,7 @@ return frCa;
 
 
 /***/ }),
-/* 199 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -60216,7 +60247,7 @@ return frCh;
 
 
 /***/ }),
-/* 200 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -60304,7 +60335,7 @@ return fr;
 
 
 /***/ }),
-/* 201 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -60384,7 +60415,7 @@ return fy;
 
 
 /***/ }),
-/* 202 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -60465,7 +60496,7 @@ return gd;
 
 
 /***/ }),
-/* 203 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -60547,7 +60578,7 @@ return gl;
 
 
 /***/ }),
-/* 204 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -60674,7 +60705,7 @@ return gomLatn;
 
 
 /***/ }),
-/* 205 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -60778,7 +60809,7 @@ return he;
 
 
 /***/ }),
-/* 206 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -60907,7 +60938,7 @@ return hi;
 
 
 /***/ }),
-/* 207 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -61057,7 +61088,7 @@ return hr;
 
 
 /***/ }),
-/* 208 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -61171,7 +61202,7 @@ return hu;
 
 
 /***/ }),
-/* 209 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -61271,7 +61302,7 @@ return hyAm;
 
 
 /***/ }),
-/* 210 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -61359,7 +61390,7 @@ return id;
 
 
 /***/ }),
-/* 211 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -61491,7 +61522,7 @@ return is;
 
 
 /***/ }),
-/* 212 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -61566,7 +61597,7 @@ return it;
 
 
 /***/ }),
-/* 213 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -61651,7 +61682,7 @@ return ja;
 
 
 /***/ }),
-/* 214 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -61739,7 +61770,7 @@ return jv;
 
 
 /***/ }),
-/* 215 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -61833,7 +61864,7 @@ return ka;
 
 
 /***/ }),
-/* 216 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -61925,7 +61956,7 @@ return kk;
 
 
 /***/ }),
-/* 217 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -61988,7 +62019,7 @@ return km;
 
 
 /***/ }),
-/* 218 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -62119,7 +62150,7 @@ return kn;
 
 
 /***/ }),
-/* 219 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -62193,7 +62224,7 @@ return ko;
 
 
 /***/ }),
-/* 220 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -62286,7 +62317,7 @@ return ky;
 
 
 /***/ }),
-/* 221 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -62428,7 +62459,7 @@ return lb;
 
 
 /***/ }),
-/* 222 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -62503,7 +62534,7 @@ return lo;
 
 
 /***/ }),
-/* 223 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -62625,7 +62656,7 @@ return lt;
 
 
 /***/ }),
-/* 224 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -62727,7 +62758,7 @@ return lv;
 
 
 /***/ }),
-/* 225 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -62843,7 +62874,7 @@ return me;
 
 
 /***/ }),
-/* 226 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -62912,7 +62943,7 @@ return mi;
 
 
 /***/ }),
-/* 227 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -63007,7 +63038,7 @@ return mk;
 
 
 /***/ }),
-/* 228 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -63093,7 +63124,7 @@ return ml;
 
 
 /***/ }),
-/* 229 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -63257,7 +63288,7 @@ return mr;
 
 
 /***/ }),
-/* 230 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -63345,7 +63376,7 @@ return msMy;
 
 
 /***/ }),
-/* 231 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -63432,7 +63463,7 @@ return ms;
 
 
 /***/ }),
-/* 232 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -63533,7 +63564,7 @@ return my;
 
 
 /***/ }),
-/* 233 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -63601,7 +63632,7 @@ return nb;
 
 
 /***/ }),
-/* 234 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -63729,7 +63760,7 @@ return ne;
 
 
 /***/ }),
-/* 235 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -63822,7 +63853,7 @@ return nlBe;
 
 
 /***/ }),
-/* 236 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -63915,7 +63946,7 @@ return nl;
 
 
 /***/ }),
-/* 237 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -63980,7 +64011,7 @@ return nn;
 
 
 /***/ }),
-/* 238 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -64109,7 +64140,7 @@ return paIn;
 
 
 /***/ }),
-/* 239 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -64221,7 +64252,7 @@ return pl;
 
 
 /***/ }),
-/* 240 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -64287,7 +64318,7 @@ return ptBr;
 
 
 /***/ }),
-/* 241 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -64357,7 +64388,7 @@ return pt;
 
 
 /***/ }),
-/* 242 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -64437,7 +64468,7 @@ return ro;
 
 
 /***/ }),
-/* 243 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -64625,7 +64656,7 @@ return ru;
 
 
 /***/ }),
-/* 244 */
+/* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -64728,7 +64759,7 @@ return sd;
 
 
 /***/ }),
-/* 245 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -64794,7 +64825,7 @@ return se;
 
 
 /***/ }),
-/* 246 */
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -64870,7 +64901,7 @@ return si;
 
 
 /***/ }),
-/* 247 */
+/* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -65025,7 +65056,7 @@ return sk;
 
 
 /***/ }),
-/* 248 */
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -65192,7 +65223,7 @@ return sl;
 
 
 /***/ }),
-/* 249 */
+/* 250 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -65267,7 +65298,7 @@ return sq;
 
 
 /***/ }),
-/* 250 */
+/* 251 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -65382,7 +65413,7 @@ return srCyrl;
 
 
 /***/ }),
-/* 251 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -65497,7 +65528,7 @@ return sr;
 
 
 /***/ }),
-/* 252 */
+/* 253 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -65591,7 +65622,7 @@ return ss;
 
 
 /***/ }),
-/* 253 */
+/* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -65665,7 +65696,7 @@ return sv;
 
 
 /***/ }),
-/* 254 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -65729,7 +65760,7 @@ return sw;
 
 
 /***/ }),
-/* 255 */
+/* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -65864,7 +65895,7 @@ return ta;
 
 
 /***/ }),
-/* 256 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -65958,7 +65989,7 @@ return te;
 
 
 /***/ }),
-/* 257 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -66031,7 +66062,7 @@ return tet;
 
 
 /***/ }),
-/* 258 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -66103,7 +66134,7 @@ return th;
 
 
 /***/ }),
-/* 259 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -66170,7 +66201,7 @@ return tlPh;
 
 
 /***/ }),
-/* 260 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -66295,7 +66326,7 @@ return tlh;
 
 
 /***/ }),
-/* 261 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -66390,7 +66421,7 @@ return tr;
 
 
 /***/ }),
-/* 262 */
+/* 263 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -66486,7 +66517,7 @@ return tzl;
 
 
 /***/ }),
-/* 263 */
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -66549,7 +66580,7 @@ return tzmLatn;
 
 
 /***/ }),
-/* 264 */
+/* 265 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -66612,7 +66643,7 @@ return tzm;
 
 
 /***/ }),
-/* 265 */
+/* 266 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -66768,7 +66799,7 @@ return uk;
 
 
 /***/ }),
-/* 266 */
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -66872,7 +66903,7 @@ return ur;
 
 
 /***/ }),
-/* 267 */
+/* 268 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -66935,7 +66966,7 @@ return uzLatn;
 
 
 /***/ }),
-/* 268 */
+/* 269 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -66998,7 +67029,7 @@ return uz;
 
 
 /***/ }),
-/* 269 */
+/* 270 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -67082,7 +67113,7 @@ return vi;
 
 
 /***/ }),
-/* 270 */
+/* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -67155,7 +67186,7 @@ return xPseudo;
 
 
 /***/ }),
-/* 271 */
+/* 272 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -67220,7 +67251,7 @@ return yo;
 
 
 /***/ }),
-/* 272 */
+/* 273 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -67336,7 +67367,7 @@ return zhCn;
 
 
 /***/ }),
-/* 273 */
+/* 274 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -67446,7 +67477,7 @@ return zhHk;
 
 
 /***/ }),
-/* 274 */
+/* 275 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -67555,7 +67586,7 @@ return zhTw;
 
 
 /***/ }),
-/* 275 */
+/* 276 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67564,7 +67595,7 @@ return zhTw;
 /* unused harmony export CALENDAR_VALUE_ACCESSOR */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return DatePickerComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_moment__);
 
@@ -67880,17 +67911,17 @@ var DatePickerComponent = (function () {
 //# sourceMappingURL=ng2-datepicker.component.js.map
 
 /***/ }),
-/* 276 */
+/* 277 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-module.exports = __webpack_require__(506);
+module.exports = __webpack_require__(507);
 
 
 /***/ }),
-/* 277 */
+/* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67904,7 +67935,7 @@ exports.empty = {
 //# sourceMappingURL=Observer.js.map
 
 /***/ }),
-/* 278 */
+/* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68031,7 +68062,7 @@ function dispatchError(arg) {
 //# sourceMappingURL=PromiseObservable.js.map
 
 /***/ }),
-/* 279 */
+/* 280 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68095,17 +68126,17 @@ exports.ScalarObservable = ScalarObservable;
 //# sourceMappingURL=ScalarObservable.js.map
 
 /***/ }),
-/* 280 */
+/* 281 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var PromiseObservable_1 = __webpack_require__(278);
+var PromiseObservable_1 = __webpack_require__(279);
 exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
 //# sourceMappingURL=fromPromise.js.map
 
 /***/ }),
-/* 281 */
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68115,7 +68146,7 @@ exports.of = ArrayObservable_1.ArrayObservable.of;
 //# sourceMappingURL=of.js.map
 
 /***/ }),
-/* 282 */
+/* 283 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68125,8 +68156,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var subscribeToResult_1 = __webpack_require__(80);
-var OuterSubscriber_1 = __webpack_require__(77);
+var subscribeToResult_1 = __webpack_require__(81);
+var OuterSubscriber_1 = __webpack_require__(78);
 /* tslint:disable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -68292,7 +68323,7 @@ exports.MergeMapSubscriber = MergeMapSubscriber;
 //# sourceMappingURL=mergeMap.js.map
 
 /***/ }),
-/* 283 */
+/* 284 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68325,7 +68356,7 @@ exports.ObjectUnsubscribedError = ObjectUnsubscribedError;
 //# sourceMappingURL=ObjectUnsubscribedError.js.map
 
 /***/ }),
-/* 284 */
+/* 285 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68335,7 +68366,7 @@ exports.errorObject = { e: {} };
 //# sourceMappingURL=errorObject.js.map
 
 /***/ }),
-/* 285 */
+/* 286 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68347,7 +68378,7 @@ exports.isFunction = isFunction;
 //# sourceMappingURL=isFunction.js.map
 
 /***/ }),
-/* 286 */
+/* 287 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68359,7 +68390,7 @@ exports.isObject = isObject;
 //# sourceMappingURL=isObject.js.map
 
 /***/ }),
-/* 287 */
+/* 288 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68371,7 +68402,7 @@ exports.isPromise = isPromise;
 //# sourceMappingURL=isPromise.js.map
 
 /***/ }),
-/* 288 */
+/* 289 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68383,7 +68414,7 @@ exports.isScheduler = isScheduler;
 //# sourceMappingURL=isScheduler.js.map
 
 /***/ }),
-/* 289 */
+/* 290 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -68429,7 +68460,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(554);
+var	fixUrls = __webpack_require__(555);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -68742,11 +68773,11 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 290 */
+/* 291 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(497);
+        var result = __webpack_require__(498);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -68756,7 +68787,7 @@ function updateLink (link, options, obj) {
     
 
 /***/ }),
-/* 291 */
+/* 292 */
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -68765,10 +68796,10 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 291;
+webpackEmptyAsyncContext.id = 292;
 
 /***/ }),
-/* 292 */
+/* 293 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68778,13 +68809,13 @@ webpackEmptyAsyncContext.id = 291;
 /* unused harmony export ɵINTERNAL_BROWSER_DYNAMIC_PLATFORM_PROVIDERS */
 /* unused harmony export ɵResourceLoaderImpl */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_compiler__ = __webpack_require__(314);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_compiler__ = __webpack_require__(315);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(53);
 
 /**
- * @license Angular v4.3.5
+ * @license Angular v4.3.3
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -68917,7 +68948,7 @@ var CachedResourceLoader = (function (_super) {
 /**
  * @stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["Version"]('4.3.5');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["Version"]('4.3.3');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -68951,11 +68982,11 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__
 
 
 /***/ }),
-/* 293 */
+/* 294 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_module__ = __webpack_require__(319);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_module__ = __webpack_require__(320);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__app_module__["a"]; });
 /**
  * App
@@ -68964,7 +68995,6 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__
 
 
 /***/ }),
-/* 294 */,
 /* 295 */,
 /* 296 */,
 /* 297 */,
@@ -68984,7 +69014,8 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__
 /* 311 */,
 /* 312 */,
 /* 313 */,
-/* 314 */
+/* 314 */,
+/* 315 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69218,7 +69249,7 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
 
 /**
- * @license Angular v4.3.5
+ * @license Angular v4.3.3
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -69238,7 +69269,7 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('4.3.5');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('4.3.3');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -81259,7 +81290,7 @@ function extractStyleUrls(resolver, baseUrl, cssText) {
     return new StyleWithImports(modifiedCssText, foundUrls);
 }
 var CSS_IMPORT_REGEXP = /@import\s+(?:url\()?\s*(?:(?:['"]([^'"]*))|([^;\)\s]*))[^;]*;?/g;
-var CSS_COMMENT_REGEXP = /\/\*[\s\S]+?\*\//g;
+var CSS_COMMENT_REGEXP = /\/\*.+?\*\//g;
 var URL_WITH_SCHEMA_REGEXP = /^([^:/?#]+):/;
 /**
  * @license
@@ -96855,14 +96886,14 @@ function _mergeArrays(parts) {
 //# sourceMappingURL=compiler.es5.js.map
 
 /***/ }),
-/* 315 */
+/* 316 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SlimScrollModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_directives_slimscroll_directive__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_directives_slimscroll_directive__ = __webpack_require__(317);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_classes_slimscroll_options_class__ = __webpack_require__(117);
 /* unused harmony namespace reexport */
 
@@ -96888,7 +96919,7 @@ SlimScrollModule = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 316 */
+/* 317 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -97128,7 +97159,7 @@ SlimScrollDirective = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */](
 
 
 /***/ }),
-/* 317 */
+/* 318 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -97191,7 +97222,7 @@ AboutComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 318 */
+/* 319 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -97199,7 +97230,7 @@ AboutComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_service__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_service__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sidebar_sidebar_component__ = __webpack_require__(121);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map__ = __webpack_require__(50);
@@ -97241,7 +97272,7 @@ AppComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
         encapsulation: __WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewEncapsulation"].None,
         providers: [__WEBPACK_IMPORTED_MODULE_4__sidebar_sidebar_component__["a" /* SidebarComponent */]],
         styles: [
-            __webpack_require__(556)
+            __webpack_require__(557)
         ],
         template: "\n \n    <main>\n      <router-outlet></router-outlet>\n    </main>\n  "
     }),
@@ -97258,41 +97289,41 @@ AppComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 319 */
+/* 320 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angularclass_hmr__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angularclass_hmr__ = __webpack_require__(342);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angularclass_hmr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__angularclass_hmr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__environment__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_routes__ = __webpack_require__(321);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_component__ = __webpack_require__(318);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_resolver__ = __webpack_require__(320);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_service__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_routes__ = __webpack_require__(322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_component__ = __webpack_require__(319);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_resolver__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_service__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__home__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__login_login_component__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__login_login_component__ = __webpack_require__(330);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__about__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__no_content__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__home_x_large__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__home_x_large__ = __webpack_require__(328);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__sidebar_sidebar_component__ = __webpack_require__(121);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__header_header_component__ = __webpack_require__(323);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__cartright_cartright_component__ = __webpack_require__(322);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__main_main_component__ = __webpack_require__(330);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__services_AddtocartService__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__styles_styles_scss__ = __webpack_require__(552);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__header_header_component__ = __webpack_require__(324);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__cartright_cartright_component__ = __webpack_require__(323);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__main_main_component__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__services_AddtocartService__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__styles_styles_scss__ = __webpack_require__(553);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__styles_styles_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22__styles_styles_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__styles_headings_css__ = __webpack_require__(553);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__styles_headings_css__ = __webpack_require__(554);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__styles_headings_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_23__styles_headings_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_angular2_wizard__ = __webpack_require__(345);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_angular2_wizard__ = __webpack_require__(346);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_angular2_wizard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_24_angular2_wizard__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_angular2_perfect_scrollbar__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_angular2_perfect_scrollbar__ = __webpack_require__(343);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_angular2_perfect_scrollbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_25_angular2_perfect_scrollbar__);
 
 
@@ -97441,7 +97472,7 @@ AppModule = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 320 */
+/* 321 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -97451,7 +97482,7 @@ AppModule = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__(528);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__(529);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__);
 
 
@@ -97478,7 +97509,7 @@ var APP_RESOLVER_PROVIDERS = [
 
 
 /***/ }),
-/* 321 */
+/* 322 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -97493,14 +97524,14 @@ var ROUTES = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_0__home__["a" /* HomeComponent */] },
     { path: 'home', component: __WEBPACK_IMPORTED_MODULE_0__home__["a" /* HomeComponent */] },
     { path: 'about', component: __WEBPACK_IMPORTED_MODULE_1__about__["a" /* AboutComponent */] },
-    { path: 'detail', loadChildren: function() { return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 563))  .then( function(module) { return module['DetailModule']; } ); } },
-    { path: 'barrel', loadChildren: function() { return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 562))  .then( function(module) { return module['BarrelModule']; } ); } },
+    { path: 'detail', loadChildren: function() { return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 564))  .then( function(module) { return module['DetailModule']; } ); } },
+    { path: 'barrel', loadChildren: function() { return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 563))  .then( function(module) { return module['BarrelModule']; } ); } },
     { path: '**', component: __WEBPACK_IMPORTED_MODULE_2__no_content__["a" /* NoContentComponent */] },
 ];
 
 
 /***/ }),
-/* 322 */
+/* 323 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -97510,7 +97541,7 @@ var ROUTES = [
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_AddtocartService__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_AddtocartService__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_jquery__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_jquery__);
 
@@ -97521,6 +97552,7 @@ var ROUTES = [
 
 var CartrightComponent = (function () {
     function CartrightComponent(addtocartService, route) {
+        var _this = this;
         this.addtocartService = addtocartService;
         this.route = route;
         this.outgoingData = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["EventEmitter"]();
@@ -97529,17 +97561,60 @@ var CartrightComponent = (function () {
         this.cart = [];
         this.subtotal = 0;
         this.FinalTotal = 0;
+        this.AddressModelArray = [];
+        this.shippmentObect = {
+            id: "",
+            shipName: "",
+            shipPhone: "",
+            shipAddress: ""
+        };
         this.counter = 1;
+        this.toShowTax = 0;
+        this.addtocartService.getTaxDetails().subscribe(function (a) {
+            if (a.TaxCheck == '1') {
+                _this.taxValue = a.Amount;
+                _this.taxCheck = true;
+                __WEBPACK_IMPORTED_MODULE_5_jquery__('.tax-value').prop('checked', true);
+                __WEBPACK_IMPORTED_MODULE_5_jquery__(".tax-amount-input").show();
+            }
+            else {
+                __WEBPACK_IMPORTED_MODULE_5_jquery__('.tax-value').prop('checked', false);
+                __WEBPACK_IMPORTED_MODULE_5_jquery__(".tax-amount-input").hide();
+                _this.taxValue = 0;
+            }
+        });
     }
+    CartrightComponent.prototype.showCartHideTax = function () {
+        __WEBPACK_IMPORTED_MODULE_5_jquery__(".back-office-div").hide();
+        __WEBPACK_IMPORTED_MODULE_5_jquery__('.whole-cart').show();
+    };
+    CartrightComponent.prototype.getSingleAddress = function (elem) {
+        this.checkoutShipName = this.selectedAdress.Name;
+        this.checkoutShipPhone = this.selectedAdress.Phone;
+        this.checkoutShipAddress = this.selectedAdress.Address;
+    };
+    CartrightComponent.prototype.pauseCart = function () {
+        this.unsetValues();
+        this.addtocartService.putOnHoldOrder(this.ShippmentMethod, this.cartObject.length, this.customerObject.id, this.cartObject, this.shippmentObect).subscribe(function (a) {
+            console.log(a);
+        });
+    };
     CartrightComponent.prototype.callModal = function () {
         var error = false;
+        console.log(this.cart);
         if (this.customerObject == undefined) {
             alert("Please choose a customer!");
             error = true;
         }
-        if (this.cartObject.length == 0) {
+        if (this.cart == undefined) {
             alert("You have no items in the cart!");
             error = true;
+        }
+        else {
+            if (this.cart.length == 0) {
+                alert("You have no items in the cart!");
+                error = true;
+            }
         }
         if (error) {
         }
@@ -97547,17 +97622,179 @@ var CartrightComponent = (function () {
             __WEBPACK_IMPORTED_MODULE_5_jquery__("#PaymentOptionsButton").click();
         }
     };
-    CartrightComponent.prototype.initiateCashPayment = function () {
-        this.addtocartService.placeOrder(this.cartObject.length, this.customerObject.id, this.cartObject);
+    CartrightComponent.prototype.thanksMsgShow = function () {
+        self = this;
+        __WEBPACK_IMPORTED_MODULE_5_jquery__(".OrderLoader").show();
+        __WEBPACK_IMPORTED_MODULE_5_jquery__(".proceed").hide();
+        __WEBPACK_IMPORTED_MODULE_5_jquery__(".shipment-plus-or").hide();
+        this.addtocartService.placeOrder(this.ShippmentMethod, this.cartObject.length, this.customerObject.id, this.cartObject, this.shippmentObect).subscribe(function (a) {
+            if (a == 1) {
+                __WEBPACK_IMPORTED_MODULE_5_jquery__(".thankyouMsg").show();
+                __WEBPACK_IMPORTED_MODULE_5_jquery__(".OrderLoader").hide();
+                setTimeout(function () {
+                    self.unsetValues();
+                    __WEBPACK_IMPORTED_MODULE_5_jquery__('#PaymentOptions #closeModal').click();
+                }, 5000);
+            }
+            else {
+                __WEBPACK_IMPORTED_MODULE_5_jquery__(".thankyouMsg>h3").text("There was an error while placing your order!");
+                setTimeout(function () {
+                    __WEBPACK_IMPORTED_MODULE_5_jquery__(".shippment-options,.or-text,.checkout-shippment-form,.proceed-without-shippment").hide();
+                    __WEBPACK_IMPORTED_MODULE_5_jquery__('.payment-options').show();
+                }, 5000);
+                console.log(a);
+            }
+        });
+    };
+    CartrightComponent.prototype.SubmitCheckoutShippmentInfo = function () {
+        var error;
+        this.checkoutShipName = __WEBPACK_IMPORTED_MODULE_5_jquery__["trim"](this.checkoutShipName);
+        this.checkoutShipPhone = __WEBPACK_IMPORTED_MODULE_5_jquery__["trim"](this.checkoutShipPhone);
+        this.checkoutShipAddress = __WEBPACK_IMPORTED_MODULE_5_jquery__["trim"](this.checkoutShipAddress);
+        if (this.checkoutShipName == undefined || this.checkoutShipName.length == 0) {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form #checkoutShipName,.checkout-shippment-form-cash-on-delivery .checkoutShipName").addClass("errorClass");
+            error = true;
+        }
+        else {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form #checkoutShipName,.checkout-shippment-form-cash-on-delivery .checkoutShipName").removeClass("errorClass");
+        }
+        if (this.checkoutShipPhone == undefined || this.checkoutShipPhone.length == 0) {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form #checkoutShipPhone,.checkout-shippment-form-cash-on-delivery .checkoutShipPhone").addClass("errorClass");
+            error = true;
+        }
+        else {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form #checkoutShipPhone,.checkout-shippment-form-cash-on-delivery .checkoutShipPhone").removeClass("errorClass");
+        }
+        if (this.checkoutShipAddress == undefined || this.checkoutShipAddress.length == 0) {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form #checkoutShipAddress,.checkout-shippment-form-cash-on-delivery .checkoutShipAddress").addClass("errorClass");
+            error = true;
+        }
+        else {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form #checkoutShipAddress,.checkout-shippment-form-cash-on-delivery .checkoutShipAddress").removeClass("errorClass");
+        }
+        if (error) {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".SubmitCheckoutShippment").css("display", "block");
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkoutLoader").hide();
+        }
+        else {
+            this.shippmentObect.id = this.customerObject.id;
+            this.shippmentObect.shipName = this.checkoutShipName;
+            this.shippmentObect.shipPhone = this.checkoutShipPhone;
+            this.shippmentObect.shipAddress = this.checkoutShipAddress;
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".SubmitCheckoutShippment").hide();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkoutLoader").show();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".shippment-options").hide();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".proceed-with-order").show();
+        }
+    };
+    CartrightComponent.prototype.deleteCart = function () {
+        this.unsetValues();
+    };
+    CartrightComponent.prototype.SubmitCheckoutShippmentInfoForCashOnDelivery = function () {
+        var error;
+        this.checkoutShipName = __WEBPACK_IMPORTED_MODULE_5_jquery__["trim"](this.checkoutShipName);
+        this.checkoutShipPhone = __WEBPACK_IMPORTED_MODULE_5_jquery__["trim"](this.checkoutShipPhone);
+        this.checkoutShipAddress = __WEBPACK_IMPORTED_MODULE_5_jquery__["trim"](this.checkoutShipAddress);
+        if (this.checkoutShipName == undefined || this.checkoutShipName.length == 0) {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipName").addClass("errorClass");
+            error = true;
+        }
+        else {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipName").removeClass("errorClass");
+        }
+        if (this.checkoutShipPhone == undefined || this.checkoutShipPhone.length == 0) {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipPhone").addClass("errorClass");
+            error = true;
+        }
+        else {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipPhone").removeClass("errorClass");
+        }
+        if (this.checkoutShipAddress == undefined || this.checkoutShipAddress.length == 0) {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipAddress").addClass("errorClass");
+            error = true;
+        }
+        else {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipAddress").removeClass("errorClass");
+        }
+        if (error) {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".SubmitCheckoutShippmentCashOnDelivery").css("display", "block");
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkoutLoader").hide();
+        }
+        else {
+            this.shippmentObect.shipName = this.checkoutShipName;
+            this.shippmentObect.shipPhone = this.checkoutShipPhone;
+            this.shippmentObect.shipAddress = this.checkoutShipAddress;
+            console.log(this.shippmentObect);
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".SubmitCheckoutShippment").hide();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkoutLoader").show();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".shippment-options").hide();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".proceed-with-order").show();
+        }
+    };
+    CartrightComponent.prototype.CheckoutShippingForm = function () {
+        if (__WEBPACK_IMPORTED_MODULE_5_jquery__('.shippmentFormYes').is(":checked")) {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__('.checkout-shippment-form').slideDown();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".proceed-without-shippment").hide();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".or-text").hide();
+        }
+        else {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__('.checkout-shippment-form').slideUp();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".proceed-without-shippment").show();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".or-text").hide();
+        }
+    };
+    CartrightComponent.prototype.initiateCashPayment = function (event) {
+        var _this = this;
+        if (event.target.id == "cashOnDelivery") {
+            this.ShippmentMethod = "cashondelivery";
+        }
+        else {
+            this.ShippmentMethod = "checkmo";
+        }
+        this.addtocartService.getShippingAddress(this.customerObject.id).subscribe(function (a) {
+            console.log(a);
+            _this.AddressModelArray = a;
+        });
+        __WEBPACK_IMPORTED_MODULE_5_jquery__(".payment-options").hide();
+        __WEBPACK_IMPORTED_MODULE_5_jquery__(".shippment-options").show();
     };
     CartrightComponent.prototype.unAttachUser = function () {
         this.customerName = undefined;
+    };
+    CartrightComponent.prototype.saveTax = function () {
+        if (this.taxValue == undefined) {
+            alert("Please enter tax amount!");
+        }
+        else {
+            this.addtocartService.setTaxDetails(this.taxValue, this.taxCheck).subscribe(function (a) {
+                console.log(a);
+                if (a == 1) {
+                    alert("Tax amount saved and applied!");
+                }
+            });
+        }
+    };
+    CartrightComponent.prototype.taxValueChange = function () {
+        if (__WEBPACK_IMPORTED_MODULE_5_jquery__('.tax-value').is(":checked")) {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__('.tax-amount-input').show();
+            this.taxCheck = true;
+            this.taxValue = 0;
+        }
+        else {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__('.tax-amount-input').hide();
+            this.taxCheck = false;
+            this.taxValue = 0;
+            this.addtocartService.setTaxDetails(this.taxValue, this.taxCheck).subscribe(function (a) {
+                console.log(a);
+                if (a == 1) {
+                }
+            });
+        }
     };
     CartrightComponent.prototype.proceedToCheckout = function () {
     };
     CartrightComponent.prototype.getCustomer = function () {
         this.customerObject = this.addtocartService.getCustomer();
-        console.log(this.customerObject);
         this.customerName = this.customerObject.customerName;
     };
     CartrightComponent.prototype.deleteThisRow = function (elem) {
@@ -97565,8 +97802,13 @@ var CartrightComponent = (function () {
         console.log(obj);
         this.cart.splice(obj, 1);
         this.subtotal = 0;
+        if (this.cartObject.length == 0) {
+            this.FinalTotal = 0;
+            this.toShowTax = 0;
+        }
         for (var i = 0; i < this.cartObject.length; i++) {
             this.subtotal = this.subtotal + this.cartObject[i].total;
+            this.subtotal = this.subtotal * (this.taxValue / 100);
             this.FinalTotal = this.subtotal;
         }
     };
@@ -97610,22 +97852,49 @@ var CartrightComponent = (function () {
         this.subtotal = 0;
         for (var i = 0; i < this.cartObject.length; i++) {
             this.subtotal = this.subtotal + this.cartObject[i].total;
-            this.FinalTotal = this.subtotal;
+            this.toShowTax = this.subtotal * (this.taxValue / 100);
+            this.FinalTotal = this.subtotal + this.toShowTax;
         }
         this.cart = this.cartObject;
     };
+    CartrightComponent.prototype.showStart = function () {
+    };
     CartrightComponent.prototype.unsetValues = function () {
+        this.cart = undefined;
+        this.customerObject = undefined;
+        __WEBPACK_IMPORTED_MODULE_5_jquery__(".no-user").click();
+        this.cartObject = undefined;
         this.oneCartObject.size = undefined;
         this.oneCartObject.box = undefined;
         this.oneCartObject.quantity = undefined;
         this.oneCartObject.total = undefined;
         this.oneCartObject.product.ID = undefined;
+        this.subtotal = 0;
+        this.FinalTotal = 0;
     };
     CartrightComponent.prototype.sendData = function (data) {
         this.outgoingData.emit(data);
     };
     CartrightComponent.prototype.ngOnInit = function () {
         var _this = this;
+        var self = this;
+        __WEBPACK_IMPORTED_MODULE_5_jquery__(document).ready(function () {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__('[data-dismiss=modal]').on('click', function (e) {
+                /*         self.file=undefined;*/
+                /*    self.unsetValues();*/
+                __WEBPACK_IMPORTED_MODULE_5_jquery__(".shippment-options,.or-text,.checkout-shippment-form,.proceed-without-shippment").hide();
+                __WEBPACK_IMPORTED_MODULE_5_jquery__('.payment-options').show();
+                /*  jQuery("").hide();*/
+                var $t = $(this), target = $t[0].href || $t.data("target") || $t.parents('.modal') || [];
+                $(target)
+                    .find("input,textarea,select")
+                    .val('')
+                    .end()
+                    .find("input[type=checkbox], input[type=radio]")
+                    .prop("checked", "")
+                    .end();
+            });
+        });
         this.route
             .data
             .subscribe(function (data) {
@@ -97670,8 +97939,8 @@ __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 CartrightComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: 'Cartright',
-        template: __webpack_require__(518),
-        styles: [__webpack_require__(557), __webpack_require__(290)],
+        template: __webpack_require__(519),
+        styles: [__webpack_require__(558), __webpack_require__(291)],
         providers: []
     }),
     __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__services_AddtocartService__["a" /* AddtocartService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]])
@@ -97680,7 +97949,7 @@ CartrightComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 323 */
+/* 324 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -97733,8 +98002,8 @@ var HeaderComponent = (function () {
 HeaderComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: 'Header',
-        template: __webpack_require__(519),
-        styles: [__webpack_require__(558)]
+        template: __webpack_require__(520),
+        styles: [__webpack_require__(559)]
     }),
     __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]])
 ], HeaderComponent);
@@ -97742,7 +98011,7 @@ HeaderComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 324 */
+/* 325 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -97750,8 +98019,8 @@ HeaderComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_service__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__title__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_service__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__title__ = __webpack_require__(326);
 
 
 
@@ -97803,11 +98072,11 @@ HomeComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
         /**
          * Our list of styles in our component. We may add more to compose many styles together.
          */
-        styles: [__webpack_require__(559)],
+        styles: [__webpack_require__(560)],
         /**
          * Every Angular template is first compiled by the browser before Angular runs it's compiler.
          */
-        template: __webpack_require__(520)
+        template: __webpack_require__(521)
     }),
     __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__app_service__["a" /* AppState */], __WEBPACK_IMPORTED_MODULE_4__title__["a" /* Title */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* Router */]])
 ], HomeComponent);
@@ -97815,17 +98084,17 @@ HomeComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 325 */
+/* 326 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__title_service__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__title_service__ = __webpack_require__(327);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__title_service__["a"]; });
 
 
 
 /***/ }),
-/* 326 */
+/* 327 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -97861,17 +98130,17 @@ Title = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 327 */
+/* 328 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__x_large_directive__ = __webpack_require__(328);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__x_large_directive__ = __webpack_require__(329);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__x_large_directive__["a"]; });
 
 
 
 /***/ }),
-/* 328 */
+/* 329 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -97910,14 +98179,14 @@ XLargeDirective = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 329 */
+/* 330 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Login; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_UsersService__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_UsersService__ = __webpack_require__(338);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jquery__);
@@ -98007,8 +98276,8 @@ var Login = (function () {
 Login = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: 'login',
-        styles: [__webpack_require__(555)],
-        template: __webpack_require__(521),
+        styles: [__webpack_require__(556)],
+        template: __webpack_require__(522),
         providers: [__WEBPACK_IMPORTED_MODULE_2__services_UsersService__["a" /* UsersService */]],
         encapsulation: __WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewEncapsulation"].None,
         host: {
@@ -98021,7 +98290,7 @@ Login = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 330 */
+/* 331 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -98031,13 +98300,13 @@ Login = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_productslistService__ = __webpack_require__(339);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_customersService__ = __webpack_require__(338);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_CustomergroupsModel__ = __webpack_require__(334);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_CategoryModel__ = __webpack_require__(333);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_CustomersModel__ = __webpack_require__(335);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ng2_datepicker__ = __webpack_require__(503);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_AddtocartService__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_productslistService__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_customersService__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_CustomergroupsModel__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_CategoryModel__ = __webpack_require__(334);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_CustomersModel__ = __webpack_require__(336);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ng2_datepicker__ = __webpack_require__(504);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_AddtocartService__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_jquery__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_jquery__);
 
@@ -98090,14 +98359,23 @@ var MainComponent = (function () {
         this.boxCheck = false;
         this.OptionsCheck = true;
         this.boxTypeCheck = false;
+        this.ordersArray = [];
+        this.tempOrders = [];
+        this.orderDetailFlag = false;
         this.sizevalues = function (event, elem, elem2) {
-            __WEBPACK_IMPORTED_MODULE_11_jquery__(".size-box .overlay").hide();
             __WEBPACK_IMPORTED_MODULE_11_jquery__(".size-box").removeClass("selected-cart-options");
-            __WEBPACK_IMPORTED_MODULE_11_jquery__(event.target).find(".overlay").show();
-            //this.renderer.setElementClass(event.target, "selected-cart-options", true);
+            /*jQuery(".size-box").removeClass("selected-cart-options");
+            jQuery(event.target).find(".overlay").show();*/
+            _this.renderer.setElementClass(event.target, "selected-cart-options", true);
             _this.sizeAddon = elem2;
             _this.size = elem;
         };
+        this.addtocartService.getAllOrders().subscribe(function (a) {
+            _this.ordersArray = a;
+            _this.tempOrders = _this.ordersArray;
+            console.log(_this.tempOrders);
+        });
+        console.log(this.ordersArray);
         __WEBPACK_IMPORTED_MODULE_11_jquery__(".customer-loader").show();
         this.customersDOBOptions = new __WEBPACK_IMPORTED_MODULE_9_ng2_datepicker__["a" /* DatePickerOptions */]();
         this.productslistService.searchProducts().subscribe(function (a) {
@@ -98145,6 +98423,8 @@ var MainComponent = (function () {
         __WEBPACK_IMPORTED_MODULE_11_jquery__(".nav-pills li").removeClass('active');
         if (__WEBPACK_IMPORTED_MODULE_11_jquery__(event.target).attr("data-target") == "customers") {
             __WEBPACK_IMPORTED_MODULE_11_jquery__("#customers").show();
+            __WEBPACK_IMPORTED_MODULE_11_jquery__(".search-box-items,.list-customers").show();
+            __WEBPACK_IMPORTED_MODULE_11_jquery__(".Customer-full-detail,.edit-customer-form").hide();
             __WEBPACK_IMPORTED_MODULE_11_jquery__(event.target).closest("li").addClass('active');
             __WEBPACK_IMPORTED_MODULE_11_jquery__("#customers").addClass("active in");
             __WEBPACK_IMPORTED_MODULE_11_jquery__("#categories-tab,#receipts,#menu3").hide();
@@ -98169,15 +98449,14 @@ var MainComponent = (function () {
         }
     };
     MainComponent.prototype.colorvalues = function (event, elem) {
-        __WEBPACK_IMPORTED_MODULE_11_jquery__(".product-variation-box .overlay").hide();
-        __WEBPACK_IMPORTED_MODULE_11_jquery__(".product-variation-box").removeClass("selected-cart-options");
-        __WEBPACK_IMPORTED_MODULE_11_jquery__(event.target).find(".overlay").show();
-        /*    this.renderer.setElementClass(event.target, "selected-cart-options", true);*/
+        __WEBPACK_IMPORTED_MODULE_11_jquery__(".boxColor").removeClass("selected-cart-options");
+        this.renderer.setElementClass(event.target, "selected-cart-options", true);
         this.boxColor = elem;
     };
     MainComponent.prototype.boxtype = function (event, elem, elem2) {
-        __WEBPACK_IMPORTED_MODULE_11_jquery__("#box-type .product-variation-box .overlay").hide();
-        __WEBPACK_IMPORTED_MODULE_11_jquery__(event.target).find(".overlay").show();
+        __WEBPACK_IMPORTED_MODULE_11_jquery__("#box-type .product-variation-box").removeClass("selected-cart-options");
+        this.renderer.setElementClass(event.target, "selected-cart-options", true);
+        /* jQuery(event.target).find(".overlay").show();*/
         this.boxAddon = elem2;
         this.box = elem;
     };
@@ -98204,7 +98483,6 @@ var MainComponent = (function () {
         this.boxColor = undefined;
         this.box = undefined;
         this.size = undefined;
-        /*    this.unsetValues();*/
         __WEBPACK_IMPORTED_MODULE_11_jquery__(".size-alert,.box-alert").hide();
     };
     MainComponent.prototype.setAll = function () {
@@ -98223,6 +98501,38 @@ var MainComponent = (function () {
                 }
             }
         });
+    };
+    MainComponent.prototype.getOnDeliveryOrders = function (event) {
+        var _this = this;
+        __WEBPACK_IMPORTED_MODULE_11_jquery__(".order-types").removeClass("selected");
+        this.renderer.setElementClass(event.target, "selected", true);
+        this.addtocartService.getCashOnDeliveryOrders().subscribe(function (a) {
+            console.log(a);
+            _this.tempOrders = [];
+            _this.tempOrders = a;
+        });
+    };
+    MainComponent.prototype.getOnCashOrders = function (event) {
+        var _this = this;
+        __WEBPACK_IMPORTED_MODULE_11_jquery__(".order-types").removeClass("selected");
+        this.renderer.setElementClass(event.target, "selected", true);
+        this.addtocartService.getCashOrders().subscribe(function (a) {
+            console.log(a);
+            _this.tempOrders = [];
+            _this.tempOrders = a;
+        });
+    };
+    MainComponent.prototype.getDetailedOrder = function (elem) {
+        this.orderDetailFlag = true;
+        var obj = this.tempOrders.find(function (order) { return order.Customer.OrderID == elem; });
+        this.orderDetail = obj;
+        console.log(this.orderDetail);
+        __WEBPACK_IMPORTED_MODULE_11_jquery__("#reciepts-data").hide();
+        __WEBPACK_IMPORTED_MODULE_11_jquery__("#orderDetail").show();
+    };
+    MainComponent.prototype.backToOrders = function () {
+        __WEBPACK_IMPORTED_MODULE_11_jquery__("#orderDetail").hide();
+        __WEBPACK_IMPORTED_MODULE_11_jquery__("#reciepts-data").show();
     };
     MainComponent.prototype.shippingAddressForm = function () {
         if (__WEBPACK_IMPORTED_MODULE_11_jquery__('.shippingCheckbox').is(":checked")) {
@@ -98426,6 +98736,10 @@ var MainComponent = (function () {
             });
         }
     };
+    MainComponent.prototype.hideCartShowBackoffice = function () {
+        __WEBPACK_IMPORTED_MODULE_11_jquery__('.whole-cart').hide();
+        __WEBPACK_IMPORTED_MODULE_11_jquery__(".back-office-div").show();
+    };
     MainComponent.prototype.editCustomerDetails = function (id) {
         this.toEditCustomerId = id;
         var obj = this.CustomersModel.find(function (x) { return x.id == id; });
@@ -98498,10 +98812,6 @@ var MainComponent = (function () {
         for (var i = 0; i < this.CustomersModel.length; i++) {
             if (this.CustomersModel[i].customerName.toLowerCase().indexOf(this.searchCustomers) > -1) {
                 this.SearchedModel.push(this.CustomersModel[i]);
-            }
-            else {
-                __WEBPACK_IMPORTED_MODULE_11_jquery__(".listing-customers").empty();
-                __WEBPACK_IMPORTED_MODULE_11_jquery__(".listing-customers").append("<li style='text-align:center;list-style-type:none;'>No Customer found!</li>");
             }
         }
     };
@@ -98635,14 +98945,11 @@ var MainComponent = (function () {
     };
     MainComponent.prototype.addtoCart = function (obj) {
         var issue;
-        console.log(obj);
+        issue = false;
         var e = obj.ID;
         this.productQuantity = __WEBPACK_IMPORTED_MODULE_11_jquery__("#num_val").val();
         var cartObj = this.productModel.find(function (x) { return x.ID == e; });
-        console.log(cartObj);
-        console.log(this.size);
         if (cartObj.Options == 'null') {
-            issue = false;
         }
         else {
             if (cartObj.Options.color == "null") {
@@ -98655,7 +98962,6 @@ var MainComponent = (function () {
                 }
                 else {
                     __WEBPACK_IMPORTED_MODULE_11_jquery__(".color-alert").hide();
-                    issue = false;
                 }
             }
             if (cartObj.Options.size == "null") {
@@ -98668,7 +98974,6 @@ var MainComponent = (function () {
                 }
                 else {
                     __WEBPACK_IMPORTED_MODULE_11_jquery__(".size-alert").hide();
-                    issue = false;
                 }
             }
             if (cartObj.Options.box == "null") {
@@ -98676,12 +98981,11 @@ var MainComponent = (function () {
             }
             else {
                 if (this.box == undefined) {
-                    __WEBPACK_IMPORTED_MODULE_11_jquery__(".box-alert").show();
                     issue = true;
+                    __WEBPACK_IMPORTED_MODULE_11_jquery__(".box-alert").show();
                 }
                 else {
                     __WEBPACK_IMPORTED_MODULE_11_jquery__(".box-alert").hide();
-                    issue = false;
                 }
             }
         }
@@ -98744,10 +99048,10 @@ __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 MainComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: 'Main',
-        template: __webpack_require__(522),
+        template: __webpack_require__(523),
         inputs: ['myName'],
         outputs: ['myEvents'],
-        styles: [__webpack_require__(290)],
+        styles: [__webpack_require__(291)],
         providers: [__WEBPACK_IMPORTED_MODULE_4__services_productslistService__["a" /* ProductslistService */], __WEBPACK_IMPORTED_MODULE_5__services_customersService__["a" /* CustomerService */]]
     }),
     __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_core__["Renderer"], __WEBPACK_IMPORTED_MODULE_10__services_AddtocartService__["a" /* AddtocartService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injector"], __WEBPACK_IMPORTED_MODULE_4__services_productslistService__["a" /* ProductslistService */], __WEBPACK_IMPORTED_MODULE_5__services_customersService__["a" /* CustomerService */]])
@@ -98756,7 +99060,7 @@ MainComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 331 */
+/* 332 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -98780,15 +99084,15 @@ NoContentComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 332 */
+/* 333 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["main"] = main;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(293);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_environment__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app__ = __webpack_require__(294);
 /**
  * Angular bootstrapping
  */
@@ -98857,7 +99161,7 @@ function _domReadyHandler() {
 
 
 /***/ }),
-/* 333 */
+/* 334 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -98896,7 +99200,7 @@ var CategoryModel = (function (_super) {
 
 
 /***/ }),
-/* 334 */
+/* 335 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -98934,7 +99238,7 @@ var CustomergroupsModel = (function (_super) {
 
 
 /***/ }),
-/* 335 */
+/* 336 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -98980,8 +99284,8 @@ var CustomersModel = (function (_super) {
 
 
 /***/ }),
-/* 336 */,
-/* 337 */
+/* 337 */,
+/* 338 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -98991,6 +99295,8 @@ var CustomersModel = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serviceUrl__ = __webpack_require__(122);
+
 
 
 
@@ -98998,12 +99304,14 @@ var CustomersModel = (function (_super) {
 var UsersService = (function () {
     function UsersService(http) {
         this.http = http;
+        this.serviceUrl = new __WEBPACK_IMPORTED_MODULE_4__serviceUrl__["a" /* ServiceUrl */]();
     }
     UsersService.prototype.authenticateAdminUser = function (email, password) {
+        console.log(this.serviceUrl.baseUrl + "getadmin.php");
         var data = { username: email, password: password };
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json; charset=UTF-8');
-        return this.http.post("http://182.180.56.81:8080/Magento/getadmin.php", data, { headers: headers })
+        return this.http.post(this.serviceUrl.baseUrl + "getadmin.php", data, { headers: headers })
             .map(function (res) { return res.json(); });
     };
     return UsersService;
@@ -99016,7 +99324,7 @@ UsersService = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 338 */
+/* 339 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -99090,7 +99398,7 @@ CustomerService = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 339 */
+/* 340 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -99100,6 +99408,8 @@ CustomerService = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serviceUrl__ = __webpack_require__(122);
+
 
 
 
@@ -99107,6 +99417,7 @@ CustomerService = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 var ProductslistService = (function () {
     function ProductslistService(http) {
         this.http = http;
+        this.serviceUrl = new __WEBPACK_IMPORTED_MODULE_4__serviceUrl__["a" /* ServiceUrl */]();
     }
     ProductslistService.prototype.searchProducts = function () {
         var data = {};
@@ -99123,7 +99434,7 @@ var ProductslistService = (function () {
         var data = {};
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json; charset=UTF-8');
-        return this.http.get("http://182.180.56.81:8080/Magento/getcategories.php", { headers: headers })
+        return this.http.get(this.serviceUrl.baseUrl + "getcategories.php", { headers: headers })
             .map(function (res) { return res.json(); });
     };
     ProductslistService.prototype.getProductsById = function (id) {
@@ -99150,7 +99461,7 @@ ProductslistService = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */](
 
 
 /***/ }),
-/* 340 */
+/* 341 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -99221,19 +99532,6 @@ exports.createInputTransfer = createInputTransfer;
 //# sourceMappingURL=helpers.js.map
 
 /***/ }),
-/* 341 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-// Hot Module Replacement
-__export(__webpack_require__(340));
-//# sourceMappingURL=index.js.map
-
-/***/ }),
 /* 342 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -99242,7 +99540,8 @@ __export(__webpack_require__(340));
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-__export(__webpack_require__(343));
+// Hot Module Replacement
+__export(__webpack_require__(341));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -99254,9 +99553,6 @@ __export(__webpack_require__(343));
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-__export(__webpack_require__(122));
-__export(__webpack_require__(123));
-__export(__webpack_require__(65));
 __export(__webpack_require__(344));
 //# sourceMappingURL=index.js.map
 
@@ -99266,11 +99562,26 @@ __export(__webpack_require__(344));
 
 "use strict";
 
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+__export(__webpack_require__(123));
+__export(__webpack_require__(124));
+__export(__webpack_require__(66));
+__export(__webpack_require__(345));
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+/* 345 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 var common_1 = __webpack_require__(52);
 var core_1 = __webpack_require__(2);
-var perfect_scrollbar_component_1 = __webpack_require__(122);
-var perfect_scrollbar_directive_1 = __webpack_require__(123);
-var perfect_scrollbar_interfaces_1 = __webpack_require__(65);
+var perfect_scrollbar_component_1 = __webpack_require__(123);
+var perfect_scrollbar_directive_1 = __webpack_require__(124);
+var perfect_scrollbar_interfaces_1 = __webpack_require__(66);
 exports.PERFECT_SCROLLBAR_GUARD = new core_1.OpaqueToken('PERFECT_SCROLLBAR_GUARD');
 exports.PERFECT_SCROLLBAR_CONFIG = new core_1.OpaqueToken('PERFECT_SCROLLBAR_CONFIG');
 var PerfectScrollbarModule = (function () {
@@ -99338,7 +99649,7 @@ exports.provideDefaultConfig = provideDefaultConfig;
 //# sourceMappingURL=perfect-scrollbar.module.js.map
 
 /***/ }),
-/* 345 */
+/* 346 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -99354,9 +99665,9 @@ function __export(m) {
 }
 var core_1 = __webpack_require__(2);
 var common_1 = __webpack_require__(52);
-var wizard_component_1 = __webpack_require__(124);
+var wizard_component_1 = __webpack_require__(125);
 var wizard_step_component_1 = __webpack_require__(85);
-__export(__webpack_require__(124));
+__export(__webpack_require__(125));
 __export(__webpack_require__(85));
 var FormWizardModule = FormWizardModule_1 = (function () {
     function FormWizardModule() {
@@ -99388,7 +99699,6 @@ var FormWizardModule_1;
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 346 */,
 /* 347 */,
 /* 348 */,
 /* 349 */,
@@ -99533,7 +99843,8 @@ var FormWizardModule_1;
 /* 488 */,
 /* 489 */,
 /* 490 */,
-/* 491 */
+/* 491 */,
+/* 492 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(31)(undefined);
@@ -99547,7 +99858,7 @@ exports.push([module.i, "body {\n  margin: 0;\n  color: #6a6f8c;\n  background: 
 
 
 /***/ }),
-/* 492 */
+/* 493 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(31)(undefined);
@@ -99561,20 +99872,6 @@ exports.push([module.i, "/* this file will be extracted to main dist folder and 
 
 
 /***/ }),
-/* 493 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(31)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "@font-face {\r\n    font-family: 'goudy_old_styleregular';\r\n    src: url(" + __webpack_require__(501) + ") format('woff2'),\r\n         url(" + __webpack_require__(500) + ") format('woff');\r\n    font-weight: normal;\r\n    font-style: normal;\r\n\r\n}\r\n\r\nhtml, body{\r\n  height: 100%;\r\n  font-family:'goudy_old_styleregular';\r\n  background:#EAEDF1;\r\n}\r\n\r\n.left-main,.right-main{\r\n\twidth:45%;\r\n\tposition: relative;\r\n\tfloat: left;\r\n}\r\n\r\na.active {\r\n  background-color: gray;\r\n}\r\n#main-right{\r\npadding:8px 25px 10px 25px !important;\r\n} \r\n#main2{\r\nmargin-right:0;\r\n}\r\n#main{\r\n  padding-right: 0;\r\n}\r\n\r\nnav a{\r\n  background:transparent;\r\n}\r\n.custom-right-navbar{\r\n\tborder-radius:0;\r\n\tmargin-bottom:0;\r\n\tbackground-color: #fff;\r\n\tpadding-top: 4px;\r\n}\r\n.custom-navbar{\r\n\tz-index: 2;\r\n\tborder-radius:0;\r\n\t    background-color: #fff;\r\n    box-shadow: 0 0 1px rgba(76,86,103,.25), 0 2px 5px rgba(31,37,50,.32);\r\n    -webkit-box-shadow: 0 0 1px rgba(76,86,103,.25), 0 2px 5px rgba(31,37,50,.32);\r\n    -moz-box-shadow: 0 0 1px rgba(76,86,103,.25),0 2px 5px rgba(31,37,50,.32);\r\n    margin-bottom: 3px;padding-top: 4px;\r\n}\r\n.custom-right-navbar .navbar-nav li a{\r\n\tpadding-left:0;\r\n}\r\n.cart-count p{\r\n\ttext-align:center;\r\n\t    padding-top: 18px;\r\n}\r\n.cart-count{\r\n\tdisplay:inline-block;\r\n\twidth:80%;\r\n}\r\n\r\n.fa-bell{\r\n\tfont-size: 26px !important;\r\n    color: #768496 !important;\r\n\t    margin-top: 1px;\r\n    margin-right: 20px;\r\n}\r\n.fa-trash,.fa-ellipsis-h{\r\n\t    color: #768496 !important;\r\n\t\tfont-size: 26px !important;\r\n}\r\n.fa-menu{\r\n\tfont-size: 26px !important;\r\n    color: #768496 !important;\r\n\t    margin-top: 4px;\r\n}\r\n.fa-menu:before {\r\n    content: '\\F0C9';\r\n}\r\n.navbar-form{\r\n\twidth:550px;\r\n}\r\n.fa-ellipsis-v,a.dropdown-toggle{\r\n\tfont-size:14px !important;\r\n\tcolor: #3c4857 !important;\r\n    font-weight: normal;\r\n}\r\n.navbar-form input:focus{\r\nbox-shadow:none;\r\n}\r\n.dropdown-toggle .caret{\r\n\tmargin-top:-3px;\r\n\tmargin-left:8px;\r\n\tcolor: #3c4857 !important;\r\n}\r\n.navbar-form,.navbar-form button,.navbar-form input{\r\n\theight:40px;\r\n    color: #3C4867;\r\n\tborder: 0 none;\r\n    background: #EDEFF2;\r\n    box-shadow:none;\r\n    font-size: 13px;\r\n\toutline:none;\r\n    border-radius: 0;\r\n}\r\n#main2{\r\n\tbackground: #EDEFF2;\r\n}\r\n\r\n/* Radio Buttons */\r\n\r\n\r\n.radio label.radioLabels {\r\n  display: inline-block;\r\n  cursor: pointer;\r\n  position: relative;\r\n  padding-left: 25px;\r\n  margin-right: 15px;\r\n  font-size: 13px;\r\n}\r\ninput[type=radio] {\r\n  display: none ;\r\n}\r\n\r\n.radio label.radioLabels:before {\r\n  border-radius: 8px;\r\n}\r\n\r\ninput[type=radio]:checked + label.radioLabels:before {\r\n    content: \"\\2022\";\r\n    color: #f3f3f3;\r\n    font-size: 25px;\r\n    text-align: center;\r\n    line-height: 20px;\r\n}\r\n\r\n.radio label.radioLabels:before {\r\n  content: \"\";\r\n  display: inline-block;\r\n \r\n  width: 16px;\r\n  height: 16px;\r\n \r\n  margin-right: 10px;\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: 1px;\r\n  background-color: #7FCBC2;\r\n  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);\r\n}\r\n#loader i{\r\n  color:#7FCBC2;\r\n}\r\n#loader{\r\n      text-align: center;\r\n    margin-top: 50px;\r\n    display: none;\r\n}\r\n.our-name p{\r\ntext-align: center;\r\n}\r\n/* Radio Buttons */\r\n/* Media Queries */\r\n\r\n\r\n\r\n\r\n\r\n/*iPad 1 & 2 in portrait*/\r\n\r\n\r\n@media only screen \r\nand (min-device-width : 768px) \r\nand (max-device-width : 1024px) \r\nand (orientation : portrait) \r\nand (-webkit-min-device-pixel-ratio: 1) { \r\n\r\n.circle-box{\r\n\twidth:50px !important;\r\n\theight:50px !important;\r\n\t\r\n}\r\n\r\n.all-text{\r\n\tline-height: 50px !important;\r\n\r\n}\r\n\r\n.left-main, .right-main{\r\n\twidth:44% !important;\r\n}\r\n.main-item-order{\r\n    height: calc(100vh - 180px) !important;\r\n   \r\n}\r\n.table-cart{\r\n\tpadding-left:15px !important;\r\n}\r\n\r\n#main-right {\r\n    padding: 8px 10px 10px 25px !important;\r\n}\r\n.actions-customer h2{\r\n    text-align: left;\r\n    font-size: 26px !important;\r\n}\r\n\r\n.search-input img{\r\n    top: 5px !important;\r\n    width: 30px !important;\r\n    right: 12px !important;\r\n}\r\n }\r\n\r\n\r\n\r\n\r\n\r\n/* Media Queries */", ""]);
-
-// exports
-
-
-/***/ }),
 /* 494 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -99583,7 +99880,7 @@ exports = module.exports = __webpack_require__(31)(undefined);
 
 
 // module
-exports.push([module.i, "/* Products */\r\n.custom-right-navbar{\r\n\theight:60px;\r\n}\r\n.actions-customer{\r\n\tbackground: #7FCBC2;\r\n}\r\nnav{\r\n\tmargin-top:0;\r\n}\r\n\r\n\r\n.main-content .mCSB_dragger_bar{\r\n\tdisplay:none;\r\n}\r\n.main-content{\r\n\theight: calc(100vh - 141px);\r\n}\r\n.products-row{\r\n\tmargin-left:15px !important;\r\n\tmargin-right:15px !important;\r\n\tpadding-top:15px;\r\n}\r\n.products-row .col-md-3{\r\n\tpadding-right:0;\r\n}\r\n.item-list{\r\n\tbackground:white;\r\n\tpadding: 8px 10px 0px;\r\n\tfloat: left;\r\n    width: 100%;\r\n    cursor: pointer;\r\n}\r\n.product-item{\r\n\tbackground:white;\r\n\tpadding: 10px 10px 5px;\r\n    margin-bottom: 18px;\r\n    float: left;\r\n    width: 100%;\r\n    cursor: pointer;\r\n}\r\n.product-item .product-img{\r\n\ttext-align:center;\r\n\tmax-height: calc((66vw - 591px) / 4);\r\n\twidth:auto;\r\n\tdisplay:block;\r\n}\r\n.final-price{\r\n\tfont-size:13px;\r\n}\r\n.availability,.available_qty{\r\n\t    font-size: 11px;\r\n\t\tcolor:#6f7d90;\r\n\t\tfont-family:'Open Sans';\r\n\t\tfont-weight:400 !important;\r\n}\r\n.product-name{\r\n\tmin-height: 25px;\r\n    max-height: 25px;\r\n    overflow: hidden;\r\n\tfont-size:13px;\r\n}\r\n.product-count p{\r\n\tfont-size: 14px;\r\n\tcolor: #6f7d90;\r\n\tfont-family: sans-serif;\r\n}\r\n.row{\r\n\t    margin-right: 0px;\r\n    margin-left: 0px;\r\n}\r\n.page-number{\r\n\tfont-family: sans-serif;\r\n\tcolor: #464646;\r\n    font-size: 14px;\r\n}\r\n.pagination-list li{\r\nlist-style-type:none;\r\npadding-right:10px;\r\ndisplay:inline-block;}\r\n\r\n.pagination-list .fa{\r\n\tcolor: #464646;\r\n}\r\n.myFooter{\r\n\tmargin-left:30px;\r\n\tmargin-right:10px;\r\n}\r\n.myFooter>.row{\r\n\tpadding-top: 20px;\r\n}\r\n.users-modal .fa{\r\n\tfont-size:24px;\r\n\tcolor: #6f7d90;\r\n}\r\n.no-padding{\r\n\tpadding-left:0;\r\n\tpadding-right:0;\r\n}\r\n.actions-customer h2{\r\n\tcolor:white;\r\n\ttext-align: left;\r\n\tmargin:5px 5px;\r\n\tfont-size:50px;\r\n}\r\n.actions-customer{\r\ntext-align: left;\r\nborder-top: 2px solid #d7d7d7;\r\nborder-bottom: 1px solid #d7d7d7;\r\n}\r\n.guest-text{\r\n\tcursor:default;\r\n\tcolor: #6f7d90;\r\n\tfont-family: sans-serif;\r\n}\r\n.align-right{\r\n\ttext-align:right;\r\n}\r\n.users-modal{\r\n\tborder:none;\r\n\tbackground:transparent;\r\n\t    margin-top: -5px;\r\n}\r\n.btn-custom-modal{\r\n\tborder:none;\r\n\tbackground:transparent;\r\n\tfont-family: sans-serif;\r\n\t\tcolor: #6f7d90;\r\n    font-size: 14px;\r\n\tfont-weight:400;\r\n}\r\n.main-item-order{\r\n\t    \r\n\t\t   /* height: calc(100vh - 110px);*/\r\n\t\t   height: calc(100vh - 202px);\r\n\t    background: #eaedf1;\r\n\t\toverflow: hidden;\r\n\t\t    padding-bottom: 100px;\r\n}\r\n\r\n.product-item{\r\n\t\r\n\theight:74px;\r\n}\r\n.main-data,.delete{\r\n\t\r\n\tposition:relative;\r\n\tfloat:left;\r\n}\r\n.main-data{\r\n width:94%;\t\r\n}\r\n.cart-footer{\r\n\tposition: absolute;\r\n    bottom: 0;\r\n    width: 98%;\r\n    background: #fff;\r\n    padding: 7px 15px 12px;\r\n    border-top: 1px solid #d7d7d7;\r\n}\r\n\r\n.item-image{\r\n\t\r\n\t    height: 64px;\r\n\t\twidth: 60px;\r\n}\r\n.cart-list{\r\n\tmax-height: calc(100vh - 418px);\r\n\t    padding-left: 0;\r\n}\r\n.cart-list li{\r\n\tlist-style-type:none;\r\n\t    border-bottom: 1px solid #d7d7d7;\r\n}\r\n.item-image,.item-detail,.item-price{\r\n\tdisplay:inline-block;\r\n}\r\n.delete i{\r\n\t    color: #6f7d90;\r\n\tfont-size:20px !important;\r\n}\r\n.delete{\r\n\twidth:6%;\r\n\t    padding-top: 15px;\r\n}\r\n.item-price span{\r\n\ttext-align: right;\r\n    color: #363e48;\r\n}\r\n.circle{\r\n\tborder:1px solid #6f7d90;\r\n\tborder-radius:50%;\r\n\tpadding-top:2px;\r\n}\r\n.item-image{    width: 12%;\r\n}\r\n.item-price{\r\n\ttext-align:right;\r\n\tmargin-right:5px;\r\n\twidth: 17%;\r\n}\r\n.item-detail{\r\n\t width:66%;\r\n    align-self: center;\r\n}\r\n.item-detail>h4{\r\n\t    font-size: 14px;\r\n\t\t    color: #363e48;\r\n\t\t\tmargin:0;\r\n}\r\n.item-image img{\r\n\tmax-height: 64px;\r\n    min-width: 52px;\r\n\tmax-width: 100%;\r\n    height: auto;\r\n    position: relative;\r\n    text-align: center;\r\n    align-self: center;\r\n}\r\n.total-row{\r\n\tpadding: 8px 0 5px;\r\nborder-bottom:none;\t\r\n}\r\n\r\n.cart-buttons{\r\n\t\r\n\t    padding: 8px 0 5px;\r\n\t\tmargin-bottom:15px;\r\n}\r\n.hold{\r\nposition:relative;\r\nfloat:left;\r\nwidth:34%;\r\n}\r\n.checkout{\r\nposition:relative;\t\r\nfloat:left;\r\nwidth:58%;\r\n margin-left: 6%;\r\n}\r\n.checkout-button{\r\n\theight: 50px;\r\n\tline-height: 35px;\r\n    padding-top: 0;\r\n    padding-bottom: 0;\r\n\t background: #D43A2F;\r\n\t border:1px solid #D43A2F;\r\n\t color:white;\r\n\t text-transform:uppercase;\r\n    width: 100%;\r\n\tborder-radius: 3px;\r\n    flex-grow: 1;\r\n}\r\n.hold-button{\r\n\tmargin-left:15px;\r\n\theight: 50px;\r\n\tline-height: 35px;\r\n    padding-top: 0;\r\n    padding-bottom: 0;\r\n\t background: #6f7d90;\r\n\t border:1px solid #6f7d90;\r\n\t color:white;\r\n\t text-transform:uppercase;\r\n    width: 100%;\r\n\t    border-radius: 3px;\r\n    flex-grow: 1;\r\n    margin-right: 20px;\r\n}\r\n.sub-total-row{\r\n\tborder-bottom: 1px solid #d7d7d7;\r\n\tpadding: 8px 0 5px;\r\n}\r\n.left-text,.right-text{\r\n\tposition:relative;\r\n\tfloat:left;\r\n\twidth:50%;\r\n\t\r\n}\r\n.left-text .heading{\r\n\tmargin-bottom: 0;\r\n\tpadding-left:15px;\r\n\t    color: #363e48;\r\n    font-weight: normal;\r\n\tfont-size:14px;\r\n\tfont-family: sans-serif;\r\n}\r\n.right-text{\r\ntext-align:right;\r\npadding-right:15px;\t\r\n}\r\n.right-text .price{\r\n\tmargin-bottom: 0;\r\n\tfont-weight:600;\r\n\tcolor: black;\r\n\tfont-size:14px;\r\n\tfont-family: sans-serif;\r\n}\r\n\r\n.custom-right-navbar .navbar-nav{\r\n\theight:60px;\r\n}\r\n.custom-right-navbar .navbar-nav>li>a{\r\n\tpadding-top:6px;\r\n}\r\n.customer-name{\r\n\tborder-left:1px solid #ccc;\r\nborder-right:1px solid #ccc;\r\npadding:10px 0px;\r\n}\r\n.customer-name h3{\r\n\ttext-align: center;\r\n\tfont-style: italic;\r\n\tfont-size:30px;\r\n\tcolor:black;\r\n\tmargin-top: 0;\r\n    margin-bottom: 0;\r\n\t\r\n}\r\n.background-th{\r\n\theight:46px;\r\n\tcolor:white;\r\n\tbackground:rgba(126,203,194,0.4);\r\n}\r\n.no-left-border{\r\n\tborder-left:none !important;\r\n}\r\n.no-right-border{\r\n\tborder-right:none !important;\r\n}\r\n.blue-color{\r\n\ttext-transform: uppercase;\r\n\tfont-size:16px;\r\n\tcolor:#7FCBC2;\r\n\tfont-weight: 600;\r\n}\r\n.paddingLeft{\r\n\tpadding-left:0;\r\n}\r\nsmall{\r\n\tcolor:#7FCBC2;\r\n\t    font-size: 14px;\r\n    font-weight: 500;\r\n}\r\n.price-total-box{\r\n\tfont-size:18px;\r\n\tfont-weight: bold;\r\n\tcolor:#7FCBC2;\r\n}\r\n.uppercase{\r\n\tpadding-left:30px;\r\n\tfont-size:18px;\r\n\ttext-transform: uppercase;\r\n\tcolor:#7FCBC2;\r\n\tfont-weight: bold;\r\n}\r\n.table-bordered,.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{\r\n  border: 1px solid #7FCBC2;\r\n}\r\n.empty{\r\n\tcolor:#7FCBC2;\r\n\tbackground:#7FCBC2;\r\n}\r\n.upload .dropdown-toggle i{\r\ncolor:#7FCBC2;\r\nfont-size:20px;\r\n}\r\n.upload .dropdown-toggle{\r\nbackground: none;\r\n    border: none;\r\n\tpadding:0;\r\n\tmargin-top: 8px;\r\n\t    margin-left: 12px;\r\n}\r\n.pause,.cancel{\r\n\tposition: relative;\r\n\tfloat:left;\r\n\tmargin-left:15px;\r\n\tmargin-top: 9px;\r\n}\r\n.pause-button,.cancel-button{\r\n\tborder:none;\r\n\tbackground:none;\r\n\tdisplay: inline-block;\r\n}\r\n\r\n.pause-button i, .cancel-button i{\r\n\tcolor: #7FCBC2;\r\n    font-size: 20px;\r\n}\r\n.table-cart{\r\n\tmax-height: calc(100vh - 80px);\r\n\tpadding-left:40px;\r\n}\r\n.Customer-full-detail{\r\n\tdisplay:none;\r\n\tpadding-left:75px;\r\n}\r\n.left-pic,.right-name{\r\n position: relative;\r\n float:left;\r\n}\r\n.right-name{\r\n\tmargin-left: 20px;\r\n}\r\n.left-less{\r\n\tpadding-left:10px !important;\r\n}\r\n.toCheckout i{\r\n\tcolor:white;\r\n\tfont-weight: bold;\r\n\t\r\n}\r\n.toCheckout{\r\n\tbackground:#7FCBC2;\r\n\tborder:#7FCBC2;;\r\n\twidth:35px;\r\n\t    height: 135px;\r\n\tposition: absolute;\r\n}\r\n.small-tex{\r\n\tfont-size:12px;\r\n\tcolor:#7FCBC2;\r\n\tmargin-bottom:0;\r\n}\r\n.colorBox{\r\n\twidth:25px;\r\n\theight:25px;\r\n\tbackground:#7FCBC2;\r\n\tmargin-right:10px;\r\n\tdisplay: inline-block;\r\n}\r\n.deleteRow{\r\n\t\r\n\tcursor: pointer;\r\n\twidth: 100%;\r\n    height: 100%;\r\n    background:none;\r\n\tborder:none;\r\n\r\n}\r\n.Checkout{\r\n\t    width: 100%;\r\n    min-height: 41px;\r\n    background: #7FCBC2;\r\n    color: #7FCBC2;\r\n\ttext-align: center;\r\n    padding-top: 11px;\r\n    border: none;\r\n\theight: calc(6vh - 11px);\r\n\tcursor: pointer;\r\n}\r\n.Checkout i{\r\n\tcolor:white;\r\n\tfont-size:20px;\r\n\tfont-weight: light;\r\n}\r\n.deleteRow i{\r\n\t    font-size: 32px !important;\r\n    color: #7FCBC2 !important;\r\n\tfont-weight: light;\r\n}\r\n.background-colored{\r\n\tbackground: #7FCBC2 !important;\r\n}\r\n.no-padding-all{\r\n\tpadding:0 !important;\r\n\tbackground: #7FCBC2;\r\n\t    border-bottom: 2px solid #7fcbc2 !important;\r\n}\r\n.no-user{\r\n\tfloat:right;\r\n\tmargin-right:10px;\r\n\tcolor:#7FCBC2;\r\n\tcursor: pointer;\r\n\tbackground: none;\r\n\tborder:none;\r\n}\r\n.price-row p{\r\n\tmargin-bottom:0 !important;\r\n}\r\n.price-row p:first-child{\r\n\tfont-size: 24px;\r\n    color: green;\r\n}\r\n.modal-body{\r\n\tpadding:0 !important;\r\n}\r\n.price-row p.blue{\r\n\tfont-size: 24px;\r\n    color: #7FCBC2;\r\n}\r\n.price-row p.grey{\r\n\tfont-size: 24px;\r\n    color: #cacaca;\r\n}\r\n.price-row{\r\n\t    border-bottom: 1px solid #ccc;\r\n\t\tmargin-top: 10px;\r\n    \tpadding-bottom: 8px;\r\n\r\n}\r\n.modal-header{\r\n\tpadding:0;\r\n}\r\n.modal-content{\r\n\tborder-radius: 0 !important;\r\n\tmin-height: 428px;\r\n\tbackground:#EDEFF2;\r\n}\r\n.heading-box{\r\n\tbackground: #7FCBC2;\r\n\theight:30px;\r\n\ttext-align: center;\r\n\tmargin-top:0 !important;\r\n}\r\n.heading-box h3{\r\n  margin-top:0 !important;\r\n  color:white;\r\n  line-height: 30px;\r\n}\r\n.modal-header .close {\r\n    margin-top: 5px;\r\n    margin-right: 10px;\r\n\tcolor:White;\r\n}\r\n#closeModal{\r\n\tborder: none;\r\n    background: none;\r\n    position: absolute;\r\n    left: 10px;\r\n    top: 5px;\r\n    color: white;\r\n\r\n}\r\n.payment-methods-row{\r\n\tmargin-top:50px;\r\n}\r\n.option-box{\r\n\tdisplay: table-cell;\r\n\tvertical-align: middle;\r\nmin-width:120px;\r\ncursor:pointer;\r\nheight:120px;\r\ntext-align: center;\r\nmargin:0 auto;\r\nbackground:transparent;\r\nborder:2px solid #7FCBC2;\r\n    border-radius: 4px;\r\n}\r\n\r\n.option-box i{\r\n color:#7FCBC2;\r\n     font-size: 60px;\r\n}\r\n\r\n.option-box p{\r\n\tfont-size: 14px;\r\n    margin-top: 10px;\r\n\ttext-transform: uppercase;\r\n\tcolor:#7FCBC2;\r\n\tfont-weight: bold;\r\n}\r\n\r\n.modal-dialog{\r\n\twidth: 700px;\r\n    min-height: 428px;\r\n    margin: 30px auto;\r\n}\r\n.credit-card-steps{\r\n\tdisplay:none;\r\n}\r\n/*Products*/\r\n\r\n", ""]);
+exports.push([module.i, "@font-face {\r\n    font-family: 'goudy_old_styleregular';\r\n    src: url(" + __webpack_require__(502) + ") format('woff2'),\r\n         url(" + __webpack_require__(501) + ") format('woff');\r\n    font-weight: normal;\r\n    font-style: normal;\r\n\r\n}\r\n\r\nhtml, body{\r\n  height: 100%;\r\n  font-family:'goudy_old_styleregular';\r\n  background:#EAEDF1;\r\n}\r\n\r\n.left-main,.right-main{\r\n\twidth:45%;\r\n\tposition: relative;\r\n\tfloat: left;\r\n}\r\n\r\na.active {\r\n  background-color: gray;\r\n}\r\n#main-right{\r\npadding:8px 25px 10px 25px !important;\r\n} \r\n#main2{\r\nmargin-right:0;\r\n}\r\n#main{\r\n  padding-right: 0;\r\n}\r\n\r\nnav a{\r\n  background:transparent;\r\n}\r\n.custom-right-navbar{\r\n\tborder-radius:0;\r\n\tmargin-bottom:0;\r\n\tbackground-color: #fff;\r\n\tpadding-top: 4px;\r\n}\r\n.custom-navbar{\r\n\tz-index: 2;\r\n\tborder-radius:0;\r\n\t    background-color: #fff;\r\n    box-shadow: 0 0 1px rgba(76,86,103,.25), 0 2px 5px rgba(31,37,50,.32);\r\n    -webkit-box-shadow: 0 0 1px rgba(76,86,103,.25), 0 2px 5px rgba(31,37,50,.32);\r\n    -moz-box-shadow: 0 0 1px rgba(76,86,103,.25),0 2px 5px rgba(31,37,50,.32);\r\n    margin-bottom: 3px;padding-top: 4px;\r\n}\r\n.custom-right-navbar .navbar-nav li a{\r\n\tpadding-left:0;\r\n}\r\n.cart-count p{\r\n\ttext-align:center;\r\n\t    padding-top: 18px;\r\n}\r\n.cart-count{\r\n\tdisplay:inline-block;\r\n\twidth:80%;\r\n}\r\n\r\n.fa-bell{\r\n\tfont-size: 26px !important;\r\n    color: #768496 !important;\r\n\t    margin-top: 1px;\r\n    margin-right: 20px;\r\n}\r\n.fa-trash,.fa-ellipsis-h{\r\n\t    color: #768496 !important;\r\n\t\tfont-size: 26px !important;\r\n}\r\n.fa-menu{\r\n\tfont-size: 26px !important;\r\n    color: #768496 !important;\r\n\t    margin-top: 4px;\r\n}\r\n.fa-menu:before {\r\n    content: '\\F0C9';\r\n}\r\n.navbar-form{\r\n\twidth:550px;\r\n}\r\n.fa-ellipsis-v,a.dropdown-toggle{\r\n\tfont-size:14px !important;\r\n\tcolor: #3c4857 !important;\r\n    font-weight: normal;\r\n}\r\n.navbar-form input:focus{\r\nbox-shadow:none;\r\n}\r\n.dropdown-toggle .caret{\r\n\tmargin-top:-3px;\r\n\tmargin-left:8px;\r\n\tcolor: #3c4857 !important;\r\n}\r\n.navbar-form,.navbar-form button,.navbar-form input{\r\n\theight:40px;\r\n    color: #3C4867;\r\n\tborder: 0 none;\r\n    background: #EDEFF2;\r\n    box-shadow:none;\r\n    font-size: 13px;\r\n\toutline:none;\r\n    border-radius: 0;\r\n}\r\n#main2{\r\n\tbackground: #EDEFF2;\r\n}\r\n\r\n/* Radio Buttons */\r\n\r\n\r\n.radio label.radioLabels {\r\n  display: inline-block;\r\n  cursor: pointer;\r\n  position: relative;\r\n  padding-left: 25px;\r\n  margin-right: 15px;\r\n  font-size: 13px;\r\n}\r\ninput[type=radio] {\r\n  display: none ;\r\n}\r\n\r\n.radio label.radioLabels:before {\r\n  border-radius: 8px;\r\n}\r\n\r\ninput[type=radio]:checked + label.radioLabels:before {\r\n    content: \"\\2022\";\r\n    color: #f3f3f3;\r\n    font-size: 25px;\r\n    text-align: center;\r\n    line-height: 20px;\r\n}\r\n\r\n.radio label.radioLabels:before {\r\n  content: \"\";\r\n  display: inline-block;\r\n \r\n  width: 16px;\r\n  height: 16px;\r\n \r\n  margin-right: 10px;\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: 1px;\r\n  background-color: #7FCBC2;\r\n  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);\r\n}\r\n#loader i{\r\n  color:#7FCBC2;\r\n}\r\n#loader{\r\n      text-align: center;\r\n    margin-top: 50px;\r\n    display: none;\r\n}\r\n.our-name p{\r\ntext-align: center;\r\n}\r\n/* Radio Buttons */\r\n/* Media Queries */\r\n\r\n\r\n\r\n\r\n\r\n/*iPad 1 & 2 in portrait*/\r\n\r\n\r\n@media only screen \r\nand (min-device-width : 768px) \r\nand (max-device-width : 1024px) \r\nand (orientation : portrait) \r\nand (-webkit-min-device-pixel-ratio: 1) { \r\n\r\n.circle-box{\r\n\twidth:50px !important;\r\n\theight:50px !important;\r\n\t\r\n}\r\n\r\n.all-text{\r\n\tline-height: 50px !important;\r\n\r\n}\r\n\r\n.left-main, .right-main{\r\n\twidth:44% !important;\r\n}\r\n.main-item-order{\r\n    height: calc(100vh - 180px) !important;\r\n   \r\n}\r\n.table-cart{\r\n\tpadding-left:15px !important;\r\n}\r\n\r\n#main-right {\r\n    padding: 8px 10px 10px 25px !important;\r\n}\r\n.actions-customer h2{\r\n    text-align: left;\r\n    font-size: 26px !important;\r\n}\r\n\r\n.search-input img{\r\n    top: 5px !important;\r\n    width: 30px !important;\r\n    right: 12px !important;\r\n}\r\n }\r\n\r\n\r\n\r\n\r\n\r\n/* Media Queries */", ""]);
 
 // exports
 
@@ -99597,7 +99894,7 @@ exports = module.exports = __webpack_require__(31)(undefined);
 
 
 // module
-exports.push([module.i, "\r\n/* Style page content - use this if you want to push the page content to the right when you open the side navigation */\r\n#main{\r\npadding-right:0;\r\n}\r\nnav{\r\n\tmargin-top:0;\r\n}\r\n#main {\r\n    transition: margin-left .5s;\r\n\tpadding-right:0;\r\n\t    padding-left: 0;\r\n\t\tbackground:#EAEDF1;\r\n}\r\n.mCSB_inside > .mCSB_container{\r\nmargin-right:0 !important;\r\n}\r\n\r\n.custom-navbar .navbar-nav>li>a{\r\n\tline-height: 12px;\r\n}\r\n\r\n.custom-navbar,#myNavbar,.navbar-nav{\r\n\t    height: 60px;\r\n\t\tpadding-left:0;\r\n}\r\n.bell{\r\n\tpadding-top: 4px;\r\n}\r\n.custom-navbar form{\r\n\t    margin-top: 5px;\r\n}\r\n\r\n.custom-navbar .dropdown-toggle{\r\n\t    padding-top: 12px;\r\n}\r\n.circle i{\r\ncolor:#7FCBC2;\r\nmargin-top: -8px;\r\n    margin-left: -4px;\r\n\tfont-size:22px;\t\r\n}\r\n.circle{\r\n\twidth: 40px;\r\n    height: 40px;\r\n\tborder-radius: 50%;\r\n\tborder:1px solid #7FCBC2;\r\n\tmargin-top: 5px;\r\n\tmargin-left:8px;\r\n}\r\n\r\n.our-name{\r\n\twidth:300px;\r\n    margin:0 auto;\r\n} \r\n.our-name p{\r\n\t    font-size: 34px;\r\n}", ""]);
+exports.push([module.i, "/* Products */\r\n.custom-right-navbar{\r\n\theight:60px;\r\n}\r\n.actions-customer{\r\n\tbackground: #7FCBC2;\r\n}\r\nnav{\r\n\tmargin-top:0;\r\n}\r\n\r\n\r\n.main-content .mCSB_dragger_bar{\r\n\tdisplay:none;\r\n}\r\n.main-content{\r\n\theight: calc(100vh - 141px);\r\n}\r\n.products-row{\r\n\tmargin-left:15px !important;\r\n\tmargin-right:15px !important;\r\n\tpadding-top:15px;\r\n}\r\n.products-row .col-md-3{\r\n\tpadding-right:0;\r\n}\r\n.item-list{\r\n\tbackground:white;\r\n\tpadding: 8px 10px 0px;\r\n\tfloat: left;\r\n    width: 100%;\r\n    cursor: pointer;\r\n}\r\n.product-item{\r\n\tbackground:white;\r\n\tpadding: 10px 10px 5px;\r\n    margin-bottom: 18px;\r\n    float: left;\r\n    width: 100%;\r\n    cursor: pointer;\r\n}\r\n.product-item .product-img{\r\n\ttext-align:center;\r\n\tmax-height: calc((66vw - 591px) / 4);\r\n\twidth:auto;\r\n\tdisplay:block;\r\n}\r\n.final-price{\r\n\tfont-size:13px;\r\n}\r\n.availability,.available_qty{\r\n\t    font-size: 11px;\r\n\t\tcolor:#6f7d90;\r\n\t\tfont-family:'Open Sans';\r\n\t\tfont-weight:400 !important;\r\n}\r\n.product-name{\r\n\tmin-height: 25px;\r\n    max-height: 25px;\r\n    overflow: hidden;\r\n\tfont-size:13px;\r\n}\r\n.product-count p{\r\n\tfont-size: 14px;\r\n\tcolor: #6f7d90;\r\n\tfont-family: sans-serif;\r\n}\r\n.row{\r\n\t    margin-right: 0px;\r\n    margin-left: 0px;\r\n}\r\n.page-number{\r\n\tfont-family: sans-serif;\r\n\tcolor: #464646;\r\n    font-size: 14px;\r\n}\r\n.pagination-list li{\r\nlist-style-type:none;\r\npadding-right:10px;\r\ndisplay:inline-block;}\r\n\r\n.pagination-list .fa{\r\n\tcolor: #464646;\r\n}\r\n.myFooter{\r\n\tmargin-left:30px;\r\n\tmargin-right:10px;\r\n}\r\n.myFooter>.row{\r\n\tpadding-top: 20px;\r\n}\r\n.users-modal .fa{\r\n\tfont-size:24px;\r\n\tcolor: #6f7d90;\r\n}\r\n.no-padding{\r\n\tpadding-left:0;\r\n\tpadding-right:0;\r\n}\r\n.actions-customer h2{\r\n\tcolor:white;\r\n\ttext-align: left;\r\n\tmargin:5px 5px;\r\n\tfont-size:50px;\r\n}\r\n.actions-customer{\r\ntext-align: left;\r\nborder-top: 2px solid #d7d7d7;\r\nborder-bottom: 1px solid #d7d7d7;\r\n}\r\n.guest-text{\r\n\tcursor:default;\r\n\tcolor: #6f7d90;\r\n\tfont-family: sans-serif;\r\n}\r\n.align-right{\r\n\ttext-align:right;\r\n}\r\n.users-modal{\r\n\tborder:none;\r\n\tbackground:transparent;\r\n\t    margin-top: -5px;\r\n}\r\n.btn-custom-modal{\r\n\tborder:none;\r\n\tbackground:transparent;\r\n\tfont-family: sans-serif;\r\n\t\tcolor: #6f7d90;\r\n    font-size: 14px;\r\n\tfont-weight:400;\r\n}\r\n.main-item-order{\r\n\t    \r\n\t\t   /* height: calc(100vh - 110px);*/\r\n\t\t   height: calc(100vh - 202px);\r\n\t    background: #eaedf1;\r\n\t\toverflow: hidden;\r\n\t\t    padding-bottom: 100px;\r\n}\r\n\r\n.product-item{\r\n\t\r\n\theight:74px;\r\n}\r\n.main-data,.delete{\r\n\t\r\n\tposition:relative;\r\n\tfloat:left;\r\n}\r\n.main-data{\r\n width:94%;\t\r\n}\r\n.cart-footer{\r\n\tposition: absolute;\r\n    bottom: 0;\r\n    width: 98%;\r\n    background: #fff;\r\n    padding: 7px 15px 12px;\r\n    border-top: 1px solid #d7d7d7;\r\n}\r\n\r\n.item-image{\r\n\t\r\n\t    height: 64px;\r\n\t\twidth: 60px;\r\n}\r\n.cart-list{\r\n\tmax-height: calc(100vh - 418px);\r\n\t    padding-left: 0;\r\n}\r\n.cart-list li{\r\n\tlist-style-type:none;\r\n\t    border-bottom: 1px solid #d7d7d7;\r\n}\r\n.item-image,.item-detail,.item-price{\r\n\tdisplay:inline-block;\r\n}\r\n.delete i{\r\n\t    color: #6f7d90;\r\n\tfont-size:20px !important;\r\n}\r\n.delete{\r\n\twidth:6%;\r\n\t    padding-top: 15px;\r\n}\r\n.item-price span{\r\n\ttext-align: right;\r\n    color: #363e48;\r\n}\r\n.circle{\r\n\tborder:1px solid #6f7d90;\r\n\tborder-radius:50%;\r\n\tpadding-top:2px;\r\n}\r\n.item-image{    width: 12%;\r\n}\r\n.item-price{\r\n\ttext-align:right;\r\n\tmargin-right:5px;\r\n\twidth: 17%;\r\n}\r\n.item-detail{\r\n\t width:66%;\r\n    align-self: center;\r\n}\r\n.item-detail>h4{\r\n\t    font-size: 14px;\r\n\t\t    color: #363e48;\r\n\t\t\tmargin:0;\r\n}\r\n.item-image img{\r\n\tmax-height: 64px;\r\n    min-width: 52px;\r\n\tmax-width: 100%;\r\n    height: auto;\r\n    position: relative;\r\n    text-align: center;\r\n    align-self: center;\r\n}\r\n.total-row{\r\n\tpadding: 8px 0 5px;\r\nborder-bottom:none;\t\r\n}\r\n\r\n.cart-buttons{\r\n\t\r\n\t    padding: 8px 0 5px;\r\n\t\tmargin-bottom:15px;\r\n}\r\n.hold{\r\nposition:relative;\r\nfloat:left;\r\nwidth:34%;\r\n}\r\n.checkout{\r\nposition:relative;\t\r\nfloat:left;\r\nwidth:58%;\r\n margin-left: 6%;\r\n}\r\n.checkout-button{\r\n\theight: 50px;\r\n\tline-height: 35px;\r\n    padding-top: 0;\r\n    padding-bottom: 0;\r\n\t background: #D43A2F;\r\n\t border:1px solid #D43A2F;\r\n\t color:white;\r\n\t text-transform:uppercase;\r\n    width: 100%;\r\n\tborder-radius: 3px;\r\n    flex-grow: 1;\r\n}\r\n.hold-button{\r\n\tmargin-left:15px;\r\n\theight: 50px;\r\n\tline-height: 35px;\r\n    padding-top: 0;\r\n    padding-bottom: 0;\r\n\t background: #6f7d90;\r\n\t border:1px solid #6f7d90;\r\n\t color:white;\r\n\t text-transform:uppercase;\r\n    width: 100%;\r\n\t    border-radius: 3px;\r\n    flex-grow: 1;\r\n    margin-right: 20px;\r\n}\r\n.sub-total-row{\r\n\tborder-bottom: 1px solid #d7d7d7;\r\n\tpadding: 8px 0 5px;\r\n}\r\n.left-text,.right-text{\r\n\tposition:relative;\r\n\tfloat:left;\r\n\twidth:50%;\r\n\t\r\n}\r\n.left-text .heading{\r\n\tmargin-bottom: 0;\r\n\tpadding-left:15px;\r\n\t    color: #363e48;\r\n    font-weight: normal;\r\n\tfont-size:14px;\r\n\tfont-family: sans-serif;\r\n}\r\n.right-text{\r\ntext-align:right;\r\npadding-right:15px;\t\r\n}\r\n.right-text .price{\r\n\tmargin-bottom: 0;\r\n\tfont-weight:600;\r\n\tcolor: black;\r\n\tfont-size:14px;\r\n\tfont-family: sans-serif;\r\n}\r\n\r\n.custom-right-navbar .navbar-nav{\r\n\theight:60px;\r\n}\r\n.custom-right-navbar .navbar-nav>li>a{\r\n\tpadding-top:6px;\r\n}\r\n.customer-name{\r\n\tborder-left:1px solid #ccc;\r\nborder-right:1px solid #ccc;\r\npadding:10px 0px;\r\n}\r\n.customer-name h3{\r\n\ttext-align: center;\r\n\tfont-style: italic;\r\n\tfont-size:30px;\r\n\tcolor:black;\r\n\tmargin-top: 0;\r\n    margin-bottom: 0;\r\n\t\r\n}\r\n.background-th{\r\n\theight:46px;\r\n\tcolor:white;\r\n\tbackground:rgba(126,203,194,0.4);\r\n}\r\n.no-left-border{\r\n\tborder-left:none !important;\r\n}\r\n.no-right-border{\r\n\tborder-right:none !important;\r\n}\r\n.blue-color{\r\n\ttext-transform: uppercase;\r\n\tfont-size:16px;\r\n\tcolor:#7FCBC2;\r\n\tfont-weight: 600;\r\n}\r\n.paddingLeft{\r\n\tpadding-left:0;\r\n}\r\nsmall{\r\n\tcolor:#7FCBC2;\r\n\t    font-size: 14px;\r\n    font-weight: 500;\r\n}\r\n.price-total-box{\r\n\tfont-size:18px;\r\n\tfont-weight: bold;\r\n\tcolor:#7FCBC2;\r\n}\r\n.uppercase{\r\n\tpadding-left:30px;\r\n\tfont-size:18px;\r\n\ttext-transform: uppercase;\r\n\tcolor:#7FCBC2;\r\n\tfont-weight: bold;\r\n}\r\n.table-bordered,.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{\r\n  border: 1px solid #7FCBC2;\r\n}\r\n.empty{\r\n\tcolor:#7FCBC2;\r\n\tbackground:#7FCBC2;\r\n}\r\n.upload .dropdown-toggle i{\r\ncolor:#7FCBC2;\r\nfont-size:20px;\r\n}\r\n.upload .dropdown-toggle{\r\nbackground: none;\r\n    border: none;\r\n\tpadding:0;\r\n\tmargin-top: 8px;\r\n\t    margin-left: 12px;\r\n}\r\n.pause,.cancel{\r\n\tposition: relative;\r\n\tfloat:left;\r\n\tmargin-left:15px;\r\n\tmargin-top: 9px;\r\n}\r\n.pause-button,.cancel-button{\r\n\tborder:none;\r\n\tbackground:none;\r\n\tdisplay: inline-block;\r\n}\r\n\r\n.pause-button i, .cancel-button i{\r\n\tcolor: #7FCBC2;\r\n    font-size: 20px;\r\n}\r\n.table-cart{\r\n\tmax-height: calc(100vh - 80px);\r\n\tpadding-left:40px;\r\n}\r\n.Customer-full-detail{\r\n\tdisplay:none;\r\n\tpadding-left:75px;\r\n}\r\n.left-pic,.right-name{\r\n position: relative;\r\n float:left;\r\n}\r\n.right-name{\r\n\tmargin-left: 20px;\r\n}\r\n.left-less{\r\n\tpadding-left:10px !important;\r\n}\r\n.toCheckout i{\r\n\tcolor:white;\r\n\tfont-weight: bold;\r\n\t\r\n}\r\n.toCheckout{\r\n\tbackground:#7FCBC2;\r\n\tborder:#7FCBC2;;\r\n\twidth:35px;\r\n\t    height: 135px;\r\n\tposition: absolute;\r\n}\r\n.small-tex{\r\n\tfont-size:12px;\r\n\tcolor:#7FCBC2;\r\n\tmargin-bottom:0;\r\n}\r\n.colorBox{\r\n\twidth:25px;\r\n\theight:25px;\r\n\tbackground:#7FCBC2;\r\n\tmargin-right:10px;\r\n\tdisplay: inline-block;\r\n}\r\n.deleteRow img{\r\nwidth:25px;\r\n}\r\n.deleteRow{\r\n\t\r\n\tcursor: pointer;\r\n\twidth: 100%;\r\n    height: 100%;\r\n    background:none;\r\n\tborder:none;\r\n\r\n}\r\n.Checkout{\r\n\t    width: 100%;\r\n    min-height: 41px;\r\n    background: #7FCBC2;\r\n    color: #7FCBC2;\r\n\ttext-align: center;\r\n    padding-top: 11px;\r\n    border: none;\r\n\theight: calc(6vh - 11px);\r\n\tcursor: pointer;\r\n}\r\n.Checkout i{\r\n\tcolor:white;\r\n\tfont-size:20px;\r\n\tfont-weight: light;\r\n}\r\n.deleteRow i{\r\n\t    font-size: 32px !important;\r\n    color: #7FCBC2 !important;\r\n\tfont-weight: light;\r\n}\r\n.background-colored{\r\n\tbackground: #7FCBC2 !important;\r\n}\r\n.no-padding-all{\r\n\tpadding:0 !important;\r\n\tbackground: #7FCBC2;\r\n\t    border-bottom: 2px solid #7fcbc2 !important;\r\n}\r\n.no-user{\r\n\tfloat:right;\r\n\tmargin-right:10px;\r\n\tcolor:#7FCBC2;\r\n\tcursor: pointer;\r\n\tbackground: none;\r\n\tborder:none;\r\n}\r\n.price-row p{\r\n\tmargin-bottom:0 !important;\r\n}\r\n.price-row p:first-child{\r\n\tfont-size: 24px;\r\n    color: green;\r\n}\r\n.modal-body{\r\n\tpadding:0 !important;\r\n}\r\n.price-row p.blue{\r\n\tfont-size: 24px;\r\n    color: #7FCBC2;\r\n}\r\n.price-row p.grey{\r\n\tfont-size: 24px;\r\n    color: #cacaca;\r\n}\r\n.price-row{\r\n\t    border-bottom: 1px solid #ccc;\r\n\t\tmargin-top: 10px;\r\n    \tpadding-bottom: 8px;\r\n\r\n}\r\n.modal-header{\r\n\tpadding:0;\r\n}\r\n.modal-content{\r\n\tborder-radius: 0 !important;\r\n\tmin-height: 428px;\r\n\tbackground:#EDEFF2;\r\n}\r\n.heading-box{\r\n\tbackground: #7FCBC2;\r\n\theight:30px;\r\n\ttext-align: center;\r\n\tmargin-top:0 !important;\r\n}\r\n.heading-box h3{\r\n  margin-top:0 !important;\r\n  color:white;\r\n  line-height: 30px;\r\n}\r\n.modal-header .close {\r\n    margin-top: 5px;\r\n    margin-right: 10px;\r\n\tcolor:White;\r\n}\r\n#closeModal{\r\n\tborder: none;\r\n    background: none;\r\n    position: absolute;\r\n    left: 10px;\r\n    top: 5px;\r\n    color: white;\r\n\r\n}\r\n.payment-methods-row{\r\n\tmargin-top:50px;\r\n}\r\n.payment-methods-row .col-md-3{\r\n\tmargin-top:10px;\r\n}\r\n.option-box{\r\n\tdisplay: table-cell;\r\n\tvertical-align: middle;\r\n    min-width: 142px;\r\ncursor:pointer;\r\nheight:120px;\r\ntext-align: center;\r\nmargin:0 auto;\r\nbackground:transparent;\r\nborder:2px solid #7FCBC2;\r\n    border-radius: 4px;\r\n}\r\n\r\n.option-box i{\r\n color:#7FCBC2;\r\n     font-size: 60px;\r\n}\r\n\r\n.option-box p{\r\n\tfont-size: 14px;\r\n    margin-top: 10px;\r\n\ttext-transform: uppercase;\r\n\tcolor:#7FCBC2;\r\n\tfont-weight: bold;\r\n}\r\n\r\n.modal-dialog{\r\n\twidth: 700px;\r\n    min-height: 428px;\r\n    margin: 30px auto;\r\n}\r\n.credit-card-steps{\r\n\tdisplay:none;\r\n}\r\n.shippment-options,.checkout-shippment-form{\r\n\tdisplay: none;\r\n}\r\n.shippment-check{\r\n\ttext-align: center;\r\n    margin-top: 30px;\r\n}\r\n.new-form-inputs{\r\n    border:none;\r\n    border-bottom:1px solid #7FCBC2;\r\n    padding-left:10px;\r\n    background:transparent;\r\n    height:35px;\r\n    width:100%;\r\n}\r\n.checkoutLoader i{\r\ncolor:#7FCBC2;\r\n}\r\n.checkoutLoader{\r\n\t    width: 50px;\r\n    margin: 50px auto;\r\n\r\n}\r\n\r\n.SubmitCheckoutShippment:hover{\r\n    \r\n    color:white;\r\n    \r\n    background-color:#7FCBC2;\r\n    -webkit-transition: background-color 1s linear;\r\n    -ms-transition: background-color 1s linear;\r\n    transition: background-color 1s linear;\r\n\r\n}\r\n.SubmitCheckoutShippment{\r\n\r\n\ttext-align: center;\r\n\r\n    width:50%;\r\n    font-size:18px;\r\n     margin: 20px auto;\r\n    height:50px;\r\n    background:transparent;\r\n    border:1px solid #7FCBC2;\r\n}\r\n.incompleteCheckoutShippment,.checkoutLoader,.proceed-with-order{\r\n\tdisplay: none;\r\n}\r\n.errorClass{\r\n    border:1px solid Red !important;\r\n}\r\n.proceed{\r\n\twidth:80%;\r\n\theight:100px;\r\n\ttext-align: center;\r\n\t width: 80%;\r\n    height: 100px;\r\n    text-align: center;\r\n    margin: 100px auto;\r\n\r\n}\r\n.proceed-button{\r\n\twidth:100%;\r\n\theight:100%;\r\n\tborder:none;\r\n\tbackground:#7FCBC2;\r\n\tcolor:white;\r\n\t\tfont-size: 3.2em;\r\n}\r\n.proceed-button i{\r\n\tfont-size: 1.3em;\r\n}\r\n.thankyouMsg{\r\n\tdisplay: none;\r\n\ttext-align: center;\r\n}\r\n.button-close{\r\n\theight:40px;\r\n\twidth:20%;\r\n\tborder-radius:0 !important;\r\n\tline-height: 27px;\r\n\tcolor:white;\r\n\tbackground:#7FCBC2;\r\n\tborder:1px solid #7FCBC2;\r\n}\r\n.proceed-without-shippment .proceed{\r\n\twidth: 80%;\r\n    height: 100px;\r\n    text-align: center;\r\n    margin: 0px auto;\r\n}\r\n.cash-on-delivery-tab{\r\n\tdisplay: none;\r\n}\r\n.OrderLoader i{\r\n    font-weight: 24px;\r\n\tcolor:#7FCBC2;\r\n}\r\n.OrderLoader{\r\n\twidth:50px;\r\n\tmargin:20px auto;\r\n\tdisplay: none;\r\n}\r\n.back-office-div{\r\n\tdisplay: none;\r\n\tpadding: 25px 40px;\r\n\theight: calc(100vh - 11vh);\r\n}\r\n.setting-row{\r\n\tmargin-top:20px;\r\n}\r\n.new-form-inputs{\r\n    border:none;\r\n    border-bottom:1px solid #7FCBC2;\r\n    padding-left:10px;\r\n    background:transparent;\r\n    height:35px;\r\n    width:100%;\r\n}\r\n.btn-save-tax i{\r\n\tcolor:#7FCBC2;\r\n\tfont-size:20px;\r\n}\r\n.btn-save-tax{\r\n\tborder:1px solid #7FCBC2;\r\n\tbackground:white;\r\n\tpadding: 5px 14px;\r\n}\r\n.tax-amount-input{\r\n\tdisplay: none;\r\n}\r\n.backToCart{\r\n\tposition: absolute;\r\n    right: 30px;\r\n    cursor: pointer;\r\n    top: 20px;\r\n}\r\n/*Products*/\r\n\r\n", ""]);
 
 // exports
 
@@ -99611,7 +99908,7 @@ exports = module.exports = __webpack_require__(31)(undefined);
 
 
 // module
-exports.push([module.i, "/*styles for home content only*/", ""]);
+exports.push([module.i, "\r\n/* Style page content - use this if you want to push the page content to the right when you open the side navigation */\r\n#main{\r\npadding-right:0;\r\n}\r\nnav{\r\n\tmargin-top:0;\r\n}\r\n#main {\r\n    transition: margin-left .5s;\r\n\tpadding-right:0;\r\n\t    padding-left: 0;\r\n\t\tbackground:#EAEDF1;\r\n}\r\n.mCSB_inside > .mCSB_container{\r\nmargin-right:0 !important;\r\n}\r\n\r\n.custom-navbar .navbar-nav>li>a{\r\n\tline-height: 12px;\r\n}\r\n\r\n.custom-navbar,#myNavbar,.navbar-nav{\r\n\t    height: 60px;\r\n\t\tpadding-left:0;\r\n}\r\n.bell{\r\n\tpadding-top: 4px;\r\n}\r\n.custom-navbar form{\r\n\t    margin-top: 5px;\r\n}\r\n\r\n.custom-navbar .dropdown-toggle{\r\n\t    padding-top: 12px;\r\n}\r\n.circle i{\r\ncolor:#7FCBC2;\r\nmargin-top: -8px;\r\n    margin-left: -4px;\r\n\tfont-size:22px;\t\r\n}\r\n.circle{\r\n\twidth: 40px;\r\n    height: 40px;\r\n\tborder-radius: 50%;\r\n\tborder:1px solid #7FCBC2;\r\n\tmargin-top: 5px;\r\n\tmargin-left:8px;\r\n}\r\n\r\n.our-name{\r\n\twidth:300px;\r\n    margin:0 auto;\r\n} \r\n.our-name p{\r\n\t    font-size: 34px;\r\n}", ""]);
 
 // exports
 
@@ -99625,7 +99922,7 @@ exports = module.exports = __webpack_require__(31)(undefined);
 
 
 // module
-exports.push([module.i, "/* Products */\r\n\r\ninput[type=radio]:checked + label.radioLabels:before {\r\n    content: \"\\2022\";\r\n    color: #f3f3f3;\r\n    font-size: 25px;\r\n    text-align: center;\r\n        line-height: 15px;\r\n}\r\n\r\n.radio label.radioLabels:before {\r\n  content: \"\";\r\n  display: inline-block;\r\n \r\n  width: 16px;\r\n  height: 16px;\r\n \r\n  margin-right: 10px;\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: 1px;\r\n  background-color: #7FCBC2;\r\n  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);\r\n}\r\n\r\n\r\n/*  Radios up */\r\n.switch {\r\n  position: relative;\r\n  display: inline-block;\r\n  width: 50px;\r\n  height: 20px;\r\n}\r\n.spaced{\r\n\tmargin-top:6px;\r\n}\r\n.switch input {display:none;}\r\nbutton:focus {outline:0;}\r\n.slider {\r\n  position: absolute;\r\n  cursor: pointer;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  background-color: #ccc;\r\n  -webkit-transition: .4s;\r\n  transition: .4s;\r\n}\r\n.customSale-add{\r\n\tdisplay: block;\r\n    margin-top: 0;\r\n    width: 100%;\r\n    text-align: center;\r\n    border: 0 none;\r\n    background:#D43A2F;\r\n\t    margin-top: 20px;\r\n\t\tfont-weight: bold;\r\n    border-radius: 2px;\r\n    padding: 0 45px;\r\n    height: 50px;\r\n    line-height: 50px;\r\n    text-transform: uppercase;\r\n    color: #fff;\r\n    font-size: 15px;\r\n    margin-bottom: 0;\r\n}\r\n.slider:before {\r\n  position: absolute;\r\n  content: \"\";\r\n  height: 26px;\r\n  width: 26px;\r\n    left: -1px;\r\n    bottom: -2px;\r\n  background-color: white;\r\n  -webkit-transition: .4s;\r\n  transition: .4s;\r\n      -webkit-transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);\r\n    -moz-transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);\r\n    -o-transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);\r\n    transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);\r\n    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 3px 4px 0 rgba(0,0,0,0.1);\r\n    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 3px 4px 0 rgba(0,0,0,0.1);\r\n}\r\n.numberFields{\r\n\tmargin-top:6px;\r\n}\r\n.numberFields button:active{\r\n\tbackground: white;\r\n\tcolor:black;\r\n}\r\n.numberFields button{\r\n\tbackground: #eee;\r\n    color: #767f89;\r\n    border: 1px solid #e1e1e1;\r\n    width: 33.33%;\r\n\tmargin:-2px;\r\n\t    font-weight: 600;\r\n    height: 47px;\r\n    display: inline-block;\r\n    font-size: 20px;\r\n    line-height: 46px;\r\n    padding: 0;\r\n    vertical-align: middle;\r\n}\r\ninput:checked + .slider {\r\n  background-color: #00A679;\r\n}\r\n\r\ninput:focus + .slider {\r\n  box-shadow: 0 0 1px #00A679;\r\n}\r\n\r\ninput:checked + .slider:before {\r\n  -webkit-transform: translateX(26px);\r\n  -ms-transform: translateX(26px);\r\n  transform: translateX(26px);\r\n}\r\n\r\n/* Rounded sliders */\r\n\r\n.slider.round {\r\n  border-radius: 34px;\r\n}\r\n\r\n.slider.round:before {\r\n  border-radius: 50%;\r\n}\r\n.shippable{\r\n\tcolor:#6f7d90 !important;\r\n\tfont-size: 15px;\r\n    font-weight: 400;\r\n}\r\n.inner-addon { \r\n    position: relative; \r\n}\r\n.fa-dollar{\r\n\tcolor:#6f7d90;\r\n\t\r\n}\r\n.dropdown-menu{\r\n\twidth: 100%;\r\n    border-radius: 0;\r\n    padding: 0;\r\n}\r\n.dropdown-toggle{\r\n\ttext-align: left;\r\n}\r\n.dropdown-toggle .caret{\r\n\tfloat: right;\r\n    margin-top: 16px;\r\n\tcolor:#6f7d90 !important;\r\n}\r\n/* style icon */\r\n.inner-addon .fa {\r\n  position: absolute;\r\n  padding: 10px;\r\n  pointer-events: none;\r\n}\r\n\r\n/* align icon */\r\n.left-addon .fa  { left:  0px;}\r\n.right-addon .fa { right: 0px;}\r\n\r\n/* add padding  */\r\n.left-addon input  { padding-left:  30px; }\r\n.right-addon input { padding-right: 30px; }\r\n.customSale-field::-webkit-input-placeholder {\r\n    /* WebKit, Blink, Edge */\r\n    color: #6f7d90;\r\n}\r\n.customSale-field:-moz-placeholder {\r\n    /* Mozilla Firefox 4 to 18 */\r\n    color: #6f7d90;\r\n    opacity: 1;\r\n}\r\n.customSale-field::-moz-placeholder {\r\n    /* Mozilla Firefox 19+ */\r\n    color: #6f7d90;\r\n    opacity: 1;\r\n}\r\n.customSale-field:-ms-input-placeholder {\r\n    /* Internet Explorer 10-11 */\r\n    color: #6f7d90;\r\n}\r\n\r\n.customSale-field{\r\n\t\tfont-family:sans-serif;\r\n\twidth: 100%;\r\n    background: #fff;\r\n    border: 1px solid #d7d7d7;\r\n    height: 35px;\r\n    line-height: 35px;\r\n    padding: 0 10px;\r\n    color: #6f7d90 !important;\r\n\tborder-radius: 0;\r\n\tmargin-bottom: 10px;\r\n}\r\n#customSale .modal-content{\r\n\tborder-radius:0;\r\n\t    width: 355px;\r\n\t\tmargin: 0 auto;\r\n}\r\n#customSale .modal-header{\r\n\t    padding-bottom: 5px;\r\n}\r\n#customSale .modal-title{\r\n\ttext-align: center;\r\n\tfont-weight: 400;\r\n    margin-bottom: 0;\r\n    min-height: 1em;\r\n    line-height: 40px;\r\n\tcolor:#6f7d90;\r\n}\r\n#customSale .close,#customSale .close:hover{\r\n\tfloat:left;\r\n\tbackground: none transparent;\r\n    border: 0 none;\r\n    color: #9da4a2;\r\n    font-size: 15px;\r\n    font-weight: 400;\r\n    line-height: 35px;\r\n    height: 35px;\r\n    padding: 0;\r\n}\r\n.products-row .col-md-3,.products-row{\r\nbackground: #EDEFF2;\r\n}\r\n.myFooter,#main2{\r\n\tbackground: #EDEFF2;\r\n}\r\n#product-modal .modal-title{\r\n\ttext-align: center;\r\n\tcolor: #4e5660;\r\n    font-size: 13px;\r\n    font-weight: normal;\r\n    margin-top: 0;\r\n    line-height: 1.4;\r\n    margin-left: 5px;\r\n}\r\n#product-modal .modal-header{\r\n\tpadding:6px;\r\n}\r\n#product-modal .close{\r\n\tfloat: left;\r\n    font-size: 12px;\r\n    font-weight: 400;\r\n\tmargin-top: 3px;\r\n    margin-left: 3px;\r\n}\r\n#product-modal .oos{\r\n\tfont-family: 'Open Sans',sans-serif!important;\r\n\t    color: #6f7d90;\r\n\t    font-size: 11px;\r\n    font-weight: 200;\r\n}\r\n#product-modal .sku{\r\n\t    color: #838f9c;\r\n\t\tfont-size: 10px;\r\n}\r\n#product-modal .product-name{\r\n  font-size: 16px;\r\n    text-transform: uppercase;\r\n    color: #363e48;\r\n    margin: 10px 0 0px;\r\n}\r\n#product-modal .product-info-price{\r\n\tmargin-top:12px;\r\n\tcolor: #363e48;\r\n    font-size: 21px;\r\n    font-weight: 100;\r\n}\r\n#product-modal .modal-content{\r\n \r\n   border-radius: 0;\r\n\r\n\r\n}\r\n#product-modal .modal-body{\r\n \r\n  padding:0;\r\n \r\n}\r\n.detail-button i{\r\n    color:#00a679;\r\n\tpadding: 6px 0px 1px 9px;\r\n\r\n}\r\n.detail-button{\r\n   width:25px;\r\n   height:25px;\r\n   border-radius: 50%;\r\n   border:1px solid #b0bec5;\r\n   position: absolute;\r\nbottom: 30px;\r\n    right: 14px;\r\n\r\n}\r\n.main-content .mCSB_dragger_bar{\r\n\tdisplay:none;\r\n}\r\n.main-content{\r\n    padding: 0 20px;\r\n\theight: calc(100vh - 150px);\r\n}\r\n\r\n.products-row .col-md-3{\r\n\tpadding-right:0;\r\n}\r\n\r\n.main-content .mCSB_dragger_bar{\r\n\tdisplay:none;\r\n}\r\n\r\n.products-row{\r\n    margin-left:0;\r\n\tpadding-top:10px;\r\n    border-left: 2px solid #7FCBC2;\r\n    height: calc(100vh - 65px);\r\n}\r\n.products-row .col-md-3{\r\n\tpadding-right:0;\r\n}\r\n.item-list{\r\n\tbackground:white;\r\n\tpadding: 10px 10px 5px;\r\n\tfloat: left;\r\n    width: 100%;\r\n    cursor: pointer;\r\n}\r\n.product-item{\r\n\tbackground:white;\r\n\tpadding: 10px 10px 5px;\r\n    margin-bottom: 18px;\r\n    float: left;\r\n    width: 100%;\r\n    cursor: pointer;\r\n\theight:235px !important;\r\n}\r\n.product-item .product-img{\r\n\ttext-align:center;\r\n\tmax-height: calc((66vw - 591px) / 4);\r\n\twidth:auto;\r\n\tdisplay:block;\r\n}\r\n.final-price{\r\n\t    color: #363e48;\r\n    font-size: 120%;\r\n}\r\n.availability,.available_qty{\r\n\t    font-size: 14px;\r\n\t\tcolor:#6f7d90;\r\n\t\tfont-family: sans-serif;\r\n\t\tfont-weight:400 !important;\r\n}\r\n.product-name{\r\n\tmin-height: 25px;\r\n    max-height: 25px;\r\n    overflow: hidden;\r\n\tfont-size:13px;\r\n\tmargin-bottom:22px;\r\n}\r\n.product-count p{\r\n\tfont-size: 14px;\r\n\tcolor: #6f7d90;\r\n\tfont-family: sans-serif;\r\n}\r\n.row{\r\n\t    margin-right: 0px;\r\n    margin-left: 0px;\r\n}\r\n.page-number{\r\n\tfont-family: sans-serif;\r\n\tcolor: #464646;\r\n    font-size: 14px;\r\n}\r\n.pagination-list li{\r\nlist-style-type:none;\r\npadding-right:10px;\r\ndisplay:inline-block;}\r\n\r\n.pagination-list .fa{\r\n\tcolor: #464646;\r\n}\r\n.myFooter{\r\n\tpadding-left:15px;\r\n\tpadding-right:25px;\r\n}\r\n.myFooter p{\r\n\tmargin-bottom:0;\r\n}\r\n.myFooter>.row{\r\n\tpadding-top: 20px;\r\n}\r\n.users-modal .fa{\r\n\tfont-size:24px;\r\n\tcolor: #6f7d90;\r\n}\r\n.no-padding{\r\n\tpadding-left:0;\r\n\tpadding-right:0;\r\n}\r\n.users-modal{\r\n\tborder:none;\r\n\tbackground:transparent;\r\n\t    margin-top: -5px;\r\n}\r\n.btn-custom-modal{\r\n\tborder:none;\r\n\tbackground:transparent;\r\n\tfont-family: sans-serif;\r\n\t\tcolor: #6f7d90;\r\n    font-size: 14px;\r\n\tfont-weight:400;\r\n}\r\n\r\n\r\n\r\n.main-data{\r\n width:94%;\t\r\n}\r\n\r\n\r\n.nav-pills{\r\n   width:300px;\r\n   border: 1px solid#ccc;\r\n    border-radius: 4px;\r\n   margin:0 auto;\r\n}\r\n\r\n.nav-pills>li>a{\r\n        padding: 10px 30px;\r\n}\r\n\r\n.nav-pills>li.active>a{\r\n    border-radius:0;\r\n    background-color:#7FCBC2;\r\n}\r\n.cat-image{\r\n    width:100px;\r\n    height:100px;\r\n    margin:0 auto;\r\n    cursor: pointer;\r\n}\r\n.cat-image img{\r\n    width:100%;\r\n    height:100px;\r\n    object-fit: cover;\r\n    border:2px solid #7FCBC2;\r\n}\r\n.categories-tab .box{\r\n    position: relative;\r\n    float:left;\r\n    width: 20%;\r\n        margin: 0 auto;\r\n}\r\n.all-text{\r\n    line-height: 100px;\r\n    text-align: center;\r\n    font-weight: bold;\r\n    color:#fff;\r\n}\r\n.circle-box{\r\n    width:100px;\r\n    height:100px;\r\n    border-radius: 50%;\r\n    background:#7FCBC2;\r\n}\r\n\r\n#categories-tab{\r\n    margin-top: 30px;\r\n}\r\n.box h3{\r\n    text-align: center;\r\n    font-size: 22px;\r\n    color:#7FCBC2;\r\n    margin-bottom:0;\r\n}\r\n.no-link,.no-link:hover{\r\n    color:#7FCBC2;\r\n    text-decoration: none;\r\n}\r\n.nav-tabs{\r\n\r\n border-bottom:none;\r\n\r\n}\r\n\r\n.categories-tab{\r\n    padding:15px 0;\r\n    border-top:1px solid #7FCBC2;\r\n    border-bottom:1px solid #7FCBC2;\r\n}\r\n.search-box-items{\r\n        padding: 10px;\r\n}\r\n.search-input{\r\n    height:40px;\r\n}\r\n.search-input .form-control{\r\n    height: 40px;\r\n    text-align: center;\r\n    padding-left:15px;\r\n    border-radius:0;\r\n    width: 100%;\r\n    position: relative;\r\n    float: left;\r\n}\r\n.searchCustomerBtn{\r\n    height:40px;\r\n    border:none;\r\n    background:white;\r\n    border-top:1px solid #ccc;\r\n    border-right:1px solid #ccc;\r\n    border-bottom:1px solid #ccc;\r\n}\r\n.search-input button i{\r\n        padding-top: 8px;\r\n}\r\n.search-input button{\r\n    width: 10%;\r\n    position: relative;\r\n    float: left;\r\n}\r\n.search-input{\r\n    position: relative;\r\n}\r\n .search-input img{\r\n    position: absolute;\r\n    top: 0px;\r\n    width: 40px;\r\n    right: 23px;\r\n}\r\n.background-added{\r\n        background: rgba(126,203,194,0.1);\r\n}\r\n.products-list .box{\r\n   position: relative;\r\n   float:left;\r\n   width:20%;\r\n}\r\n.products-list{\r\n        margin-top: 20px;\r\n}\r\n.prod-image{\r\n    cursor: pointer;\r\n}\r\n.products-list .box .prod-image{\r\n   width:100px;\r\n    height:100px;\r\n    margin:0 auto;\r\n}\r\n.products-list .box p{\r\ntext-align: center;\r\ncolor:#7FCBC2;\r\nfont-size:14px;\r\nmargin-top:10px;\r\n}\r\n.align-right{\r\n    text-align: right;\r\n}\r\n.products-list .box .prod-image img{\r\n     width:100px;\r\n    height:100px;\r\n    object-fit: cover;\r\n    border: 2px solid #7FCBC2;\r\n}\r\n\r\n.customers-heading,.customer-add,.unselect-customer{\r\n    position: relative;\r\n    float:left;\r\n}\r\n.unselect-customer{\r\n    width:20%;\r\n}\r\n\r\n.customer-profile-tab .customer-edit{\r\n        width: 40%;\r\n    position: relative;\r\n    float: left;\r\n    text-align: right;\r\n}\r\n.customer-add{\r\n    width: 38%;\r\n    text-align: right;\r\n}\r\n.customers-heading p{\r\n    margin-bottom:0;\r\n    font-size: 16px;\r\n    color:#7FCBC2;\r\n\r\n        font-weight: bold;\r\n}\r\n.customers-heading{\r\n        width: 56%;\r\n    text-align: right;\r\n\r\n}\r\n.customers-tab{\r\n    border-top:1px solid #7FCBC2;\r\n    border-bottom:1px solid #7FCBC2;\r\n    padding:10px 0;\r\n        margin-top: 30px;\r\n        background: rgba(126,203,194,0.1);\r\n}\r\n.add-customer i{\r\n    color:#7FCBC2;\r\n}\r\n.add-customer{\r\n    border:none;\r\n    background: none;\r\n    margin-top: 2px;\r\n}\r\n#customers .search-box-items,#receipts .search-box-items{\r\n     background: rgba(126,203,194,0.1);\r\n}\r\n.listing-customers{\r\n    padding-left:0;\r\n}\r\n.listing-customers li a{\r\n    font-size:16px;\r\n    color:black !important;\r\n    cursor: pointer;\r\n\r\n}\r\n.listing-customers li{\r\n    list-style-type:none;\r\n    border-bottom:1px solid #ccc;\r\n        padding: 6px;\r\n}\r\n\r\n.customer-profile-tab .customers-heading{\r\n    width:35%;\r\n}\r\n.unselect-customer button i{\r\n    color:#7FCBC2;\r\n    font-size:22px;\r\n}\r\n.unselect-customer button{\r\n border:none;\r\n background:none;\r\n\r\n}\r\n.image-left,.text-right{\r\n    position: relative;\r\n    float:left;\r\n}\r\n\r\n.image-left{\r\n    width:20%;\r\n}\r\n\r\n.text-right{\r\n    width:80%;\r\n    text-align: left;\r\n\r\n}\r\n.profile-name{\r\n color:#7FCBC2;\r\n     font-size: 30px;\r\n    margin-top: 0;\r\n}\r\n.profile-pic{\r\n    width:120px;\r\n    height:120px;\r\n    border-radius: 50%;\r\n    position: relative;\r\n    float:left;\r\n    margin-bottom:20px;\r\n}\r\n.profile-pic img{\r\n  width: 100%;\r\n  height:120px;\r\n  border-radius: 50%;\r\n  object-fit:cover;\r\n}\r\n.margined-top{\r\nmargin-top:15px;\r\n}\r\nhr{\r\n     margin:0;\r\n    border: 0;\r\n    border-top: 1px solid #7FCBC2;\r\n}\r\n.customer-profile-tab p.text,.new-customer-form p.text{\r\n    font-size:16px;\r\n    padding-top: 5px;\r\n     color:#7FCBC2;\r\n}\r\n.reciepts,.notes{\r\n    border:none;\r\n    background:none;\r\n}\r\n.reciepts p,.notes p{\r\n     color:#7FCBC2;\r\n     margin-top:10px;\r\n}\r\n.reciepts i,.notes i{\r\n    font-size:30px;\r\n    color:#7FCBC2;\r\n}\r\n.new-form-inputs{\r\n    border:none;\r\n    border-bottom:1px solid #7FCBC2;\r\n    padding-left:10px;\r\n    background:transparent;\r\n    height:35px;\r\n    width:100%;\r\n}\r\n.create-customer:hover{\r\n    \r\n    color:white;\r\n    \r\n    background-color:#7FCBC2;\r\n    -webkit-transition: background-color 1s linear;\r\n    -ms-transition: background-color 1s linear;\r\n    transition: background-color 1s linear;\r\n\r\n}\r\n.create-customer{\r\n    margin-bottom:50px;\r\n    width:100%;\r\n    font-size:18px;\r\n    margin-top:10px;\r\n    height:50px;\r\n    background:transparent;\r\n    border:1px solid #7FCBC2;\r\n}\r\n.thumbnail a>img, .thumbnail>img,#image-container img{\r\n   max-height: 100%;\r\n    width: 120px;\r\n    height: 120px;\r\n    border-radius: 50%;\r\n    object-fit: cover;\r\n    line-height: 120px;\r\n}\r\n.remove_image{\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0%;\r\n    background: white;\r\n    border: none;\r\n}\r\n.remove_image i{\r\n        color: #7FCBC2 !important;\r\n    font-size: 18px !important;\r\n}\r\n.new-customer-form,.customer-profile-tab{\r\n    display:none;\r\n    margin-top:45px;\r\n}\r\n.checkbox{\r\n        margin-left: 24px;\r\n}\r\n.checkbox label{\r\n    font-size: 16px;\r\n    color: #7FCBC2;\r\n    font-weight: 700;\r\n}\r\n.regular-checkbox {\r\n\t-webkit-appearance: none;\r\n\tbackground-color: #fafafa;\r\n\tborder: 1px solid #cacece;\r\n\tbox-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);\r\n\tpadding: 6px;\r\n\tborder-radius: 3px;\r\n\tdisplay: inline-block;\r\n     outline:none;\r\n\tposition: relative;\r\n}\r\n.shipping-address-form{\r\n    display: none;\r\n}\r\n.regular-checkbox:active, .regular-checkbox:checked:active {\r\n\tbox-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);\r\n}\r\n\r\n.regular-checkbox:checked {\r\n\tbackground-color: #e9ecee;\r\n\tborder: 1px solid #adb8c0;\r\n\tbox-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);\r\n\tcolor: #99a1a7;\r\n}\r\n\r\n\r\n.regular-checkbox:checked:after {\r\n\tcontent: '\\2714';\r\n\tfont-size: 14px;\r\n\tposition: absolute;\r\n    top: -7px;\r\n    left: 0px;\r\n    outline:none;\r\n\tcolor: #99a1a7;\r\n}\r\n.checkbox .regular-checkbox{\r\nmargin-left:-30px !important;\r\n}\r\n.close-form{\r\n    position: absolute;\r\n    right: 30px;\r\n    top:44px;\r\n    font-size: 40px;\r\n    color: #7FCBC2;\r\n    cursor:pointer;\r\n}\r\n.close-edit-form{\r\n    float:right;\r\n    font-size: 40px;\r\n    color: #7FCBC2;\r\n    cursor:pointer;\r\n}\r\n.errorClass{\r\n    border:1px solid Red !important;\r\n}\r\n.customer-loader i{\r\n    color:#7FCBC2;\r\n}\r\n.customer-loader,#editloader{\r\n    width:100px;\r\n    margin:0 auto;\r\n    margin-top:30px;\r\n\r\n}\r\n#editloader i{\r\ncolor:#7FCBC2;\r\n}\r\n#incompleteForm,#loader,#customer-added,#editincompleteForm,#editloader,#customer-updated{\r\n    display:none;\r\n}\r\n#incompleteForm p{\r\n    text-align: center;\r\n    color: red;\r\n    font-size: 16px;\r\n    padding-top: 10px;\r\n}\r\n\r\n.product-detail-tab{\r\n  /*  display:none;*/\r\n}\r\n.product-heading{\r\n    padding: 0px 0;\r\n    border-bottom: 1px solid #ccc;\r\n    border-top: 1px solid #ccc;\r\n    margin-top: 10px;\r\n\r\n}\r\n.product-heading h2{\r\n    text-align: center;\r\n    color: #7FCBC2;\r\n    margin-top: 20px;\r\n    font-size: 22px;\r\n    margin-bottom: 20px;\r\n}\r\na{\r\n    text-decoration: none !important;\r\n    cursor: pointer;\r\n}\r\n.product-size,.product-box-variation{\r\n        width: 78%;\r\n    margin: 0 auto;\r\n    margin-bottom:20px;\r\n}\r\n\r\n.size-box-wrapper,.product-box-variation-wrapper{\r\n     position: relative;\r\n    float:left;\r\n        width: 30%;\r\n    margin-right: 2%;\r\n    min-height: 115px;\r\n}\r\n.size-box,.product-variation-box{\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n    width: 140px;\r\n    height: 120px;\r\n    border:2px solid #7FCBC2;\r\n        margin: 10px;\r\n        border-radius:4px;\r\n        cursor:pointer;\r\n}\r\n.size-box h3,.product-variation-box h3{\r\n    font-size: 20px;\r\n    text-align: center;\r\n    color: #7FCBC2;\r\n}\r\n.size-box p{\r\ntext-align:center;\r\n  color: #7FCBC2;\r\n}\r\n.size-box p.extra-price{\r\ntext-align:center;\r\n  color: #7FCBC2;\r\n   text-align: center;\r\n    font-size: 14px;\r\n\r\n}\r\n.product-properties{\r\n    font-size:24px;\r\n    color:#4D4D4F;\r\n    margin-top: 10px;\r\n}\r\n\r\n/*  Quantity */\r\n\r\n.quantity {\r\n    position: relative;\r\n    border: 0;\r\n}\r\n\r\ninput[type=number]::-webkit-inner-spin-button,\r\ninput[type=number]::-webkit-outer-spin-button {\r\n    -webkit-appearance: none;\r\n    margin: 0;\r\n}\r\n\r\ninput[type=number] {\r\n    -moz-appearance: textfield;\r\n}\r\n.quantity-row{\r\n    height:50px;\r\n    margin-top:20px;\r\n}\r\n\r\n.quantity input {\r\n  width: 50%;\r\n    height: 50px;\r\n    line-height: 1.65;\r\n    float: left;\r\n    display: block;\r\n    padding: 0;\r\n    margin: 0;\r\n    padding-left: 20px;\r\n    border: 1px solid #eee;\r\nfont-size: 24px;\r\n    font-weight: bold;\r\n    border-radius: 5px;   \r\n    margin-bottom: 4px; \r\n}\r\n\r\n.quantity input:focus {\r\n    outline: 0;\r\n}\r\n\r\n.quantity-nav {\r\n    float: left;\r\n    position: relative;\r\n    height: 50px;\r\n}\r\n\r\n.quantity-button {\r\n    position: relative;\r\n    cursor: pointer;\r\n    border-left: 1px solid #eee;\r\n    width: 20px;\r\n    text-align: center;\r\n    color: #333;\r\n    font-size: 13px;\r\n    font-family: \"Trebuchet MS\", Helvetica, sans-serif !important;\r\n    line-height: 1.7;\r\n    -webkit-transform: translateX(-100%);\r\n    transform: translateX(-100%);\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    -o-user-select: none;\r\n    user-select: none;\r\n\r\n    background: #323f44;\r\n    width: 30px;\r\n    border: 0;\r\n    color: #fff;\r\n    font-size: 23px;\r\n    line-height: 23px;\r\n    border-radius:0 5px 0 0\r\n\r\n}\r\n\r\n.quantity-button.quantity-up {\r\n    position: absolute;\r\n    height: 50%;\r\n    top: 0;\r\n}\r\n\r\n.quantity-button.quantity-down {\r\n    position: absolute;\r\n    bottom: -1px;\r\n    height: 50%;\r\n     border-radius:0 0 5px 0;\r\n}\r\n\r\n.Customer-full-detail{\r\n    display: none;\r\n    padding-left:45px;\r\n}\r\n\r\n.left-pic,.right-name{\r\n position: relative;\r\n float:left;\r\n}\r\n.right-name{\r\n\tmargin-left: 20px;\r\n}\r\n.product-detail-tab{\r\n    position: relative;\r\n}\r\n.backToProducts{\r\n    position: absolute;\r\n    right: 25px;\r\n    cursor: pointer;\r\n    top: 20px;\r\n}\r\n.back-to-search-customers{\r\n    position: absolute;\r\n    right:25px;\r\n    cursor: pointer;\r\n    \r\n}\r\n.back-to-search-customers i,.backToProducts i{\r\n    color:#7FCBC2;\r\n        font-size: 26px;\r\n}\r\n.product-variation-box p{\r\n       color:#7FCBC2;\r\n        font-size: 14px;\r\n        text-align: center;\r\n}\r\n.search-box-items .row p,.search-box-items .row span{\r\nmargin-bottom:0;\r\ncolor:#7FCBC2;\r\nfont-size:14px;\r\nfont-weight: bold;\r\n}\r\n.add-to-cart{\r\n\r\n    background:#7FCBC2;\r\n    color:white;\r\n    font-weight: bold;\r\n    font-size:24px;\r\n    border-radius:4px;\r\n    border:1px solid #7FCBC2;\r\n    width:100%;\r\n    height: 60px;\r\n    line-height: 60px;\r\n}\r\n\r\n.selected-cart-options{\r\n\r\nbackground-color:white;\r\ncolor:#7FCBC2;\r\n\r\n}\r\n.quantity-value{\r\n        line-height: 46px;\r\n    font-size: 24px;\r\n}\r\n.size-alert{\r\n    margin-top:20px;\r\n}\r\n.size-alert,.box-alert,.color-alert{\r\ndisplay: none;\r\n}\r\n.overlay{\r\n    width:86%;\r\n    height:100px;\r\n    background:rgba(204,204,204,0.4);\r\n    position: absolute;\r\n    top:0;\r\n    min-height: 118px;\r\n    display: none;\r\n    }\r\n    .check-exists{\r\n        margin-bottom:20px;\r\n    }\r\n\r\n    .editCustomer{\r\n        position: absolute;\r\n        left:25px;\r\n        display: none;\r\n            z-index: 25;\r\n    }\r\n    .editCustomer i{\r\n        color:#7FCBC2;\r\n\r\n    }\r\n    .editCustomerBtn{\r\n        cursor: pointer;\r\n        background:transparent;\r\n        border:none;\r\n    }\r\n    .edit-customer-form{\r\n        display: none;\r\n    }\r\n/* Quantity */\r\n\r\n\r\n/*Products*/\r\n\r\n\r\n\r\n/* Media Queries */\r\n\r\n\r\n\r\n\r\n\r\n/*iPad 1 & 2 in portrait*/\r\n@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) { \r\n  \r\n   .circle-box,.cat-image,.cat-image img{\r\n\t   width: 50px;\r\n\t   height: 50px;\r\n\r\n   }\r\n   .all-text{\r\n\t   line-height: 50px;\r\n   }\r\n   .box h3{\r\n\t   font-size:16px;\r\n   }\r\n   .products-list .box{\r\n\t\t    width: 25%;\r\n   }\r\n   .prod-image,.prod-image img{\r\n\t   width:90px !important;\r\n\t   height:90px !important;\r\n   }\r\n }\r\n\r\n\r\n/*iPad 1 & 2 in landscape*/\r\n@media only screen \r\nand (min-device-width : 768px) \r\nand (max-device-width : 1024px) \r\nand (orientation : landscape)\r\nand (-webkit-min-device-pixel-ratio: 1)  {\r\n\r\n    .main-item-orders{\r\n        height: calc(100vh - 191px) !important;\r\n    }\r\n}\r\n\r\n\r\n\r\n/*Ipad in portrait*/\r\n\r\n@media only screen \r\nand (min-device-width : 768px) \r\nand (max-device-width : 1024px) \r\nand (orientation : landscape) { \r\n\r\n\r\n      .product-size,.product-box-variation{\r\n        width:100% !important;\r\n    }\r\n \r\n   .size-box-wrapper,.product-box-variation-wrapper{\r\n       width: 28%;\r\n    margin-right: 20px;\r\n   }\r\n   .size-box,.product-variation-box{\r\n       height:100px;\r\n   }\r\n   .toCheckout{\r\n           height: 218px;\r\n\r\n   }\r\n   .searchCustomerBtn{\r\n       margin-top:0.2px;\r\n   }\r\n\r\n     .left-main, .right-main{\r\n        width:44%;\r\n    }\r\n    .cat-image,.cat-image img{\r\n        width:70px ;\r\n        height: 70px ;\r\n    }\r\n\r\n    .all-text{\r\n        line-height: 70px;\r\n    }\r\n    .box h3{\r\n        font-size:16px;\r\n    }\r\n\r\n    .products-list .box{\r\n   \r\n     width:25%;\r\n\r\n    }\r\n\r\n    .prod-image ,.prod-image img{\r\n        width:90px !important;\r\n        height:90px !important;\r\n    }\r\n\r\n\r\n}\r\n\r\n@media only screen \r\nand (min-device-width : 768px) \r\nand (max-device-width : 1024px)  { \r\n  \r\n}\r\n\r\n/*Ipad Landscape*/\r\n\r\n\r\n\r\n@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { \r\n    .cat-image{\r\n        width:50px !important;\r\n        height:50px !important;\r\n\r\n    }\r\n\r\n    .box h3{\r\n        font-size:13px;\r\n    }\r\n    .prod-image,.prod-image img{\r\n        width:70px !important;\r\n        height:70px !important;\r\n    }\r\n    .product-size,.product-box-variation{\r\n        width:100%;\r\n    }\r\n    .size-box-wrapper{\r\n        width:30%;\r\n        margin-right:10px;\r\n    }\r\n    .size-box,.product-box-variation-wrapper{\r\n        height: 76px;\r\n        width:30%;\r\n        margin-right:10px;\r\n    }\r\n    .product-variation-box{\r\n        height:100px;\r\n    }\r\n    .quantity input{\r\n        width:100%;\r\n    }\r\n}\r\n\r\n\r\n\r\n\r\n/* Media Queries */", ""]);
+exports.push([module.i, "/*styles for home content only*/", ""]);
 
 // exports
 
@@ -99639,7 +99936,7 @@ exports = module.exports = __webpack_require__(31)(undefined);
 
 
 // module
-exports.push([module.i, "/* The side navigation menu */\r\n.sidenav {\r\n    height: 100%; /* 100% Full-height */\r\n    width: 100px; /* 0 width - change this with JavaScript */\r\n    position: fixed; /* Stay in place */\r\n    z-index: 1; /* Stay on top */\r\n    top: 0;\r\n    left: 0;\r\n    background-color:white;\r\n    overflow-y: auto; /* Black*/\r\n    overflow-x: hidden; /* Disable horizontal scroll */\r\n    padding-top: 60px; /* Place content 60px from the top */\r\n    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */\r\n}\r\n\r\n/* The navigation menu links */\r\n.sidenav a {\r\n    padding: 8px 8px 8px 32px;\r\n    text-decoration: none;\r\n    font-size: 25px;\r\n    color: #818181;\r\n    display: block;\r\n    transition: 0.3s\r\n}\r\n\r\n/* When you mouse over the navigation links, change their color */\r\n.sidenav a:hover, .offcanvas a:focus{\r\n    color: #f1f1f1;\r\n}\r\n\r\n/* Position and style the close button (top right corner) */\r\n.sidenav .closebtn {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 25px;\r\n    font-size: 36px;\r\n    margin-left: 50px;\r\n}\r\n\r\n\r\n\r\n.side-list{\r\n   padding-left:0px;\r\n   margin-bottom:0;  \r\n}\r\nul.side-list li{\r\n\tpadding-left:15px;\r\n}\r\nul.side-list li a{\r\n\tcolor: #76808d;\r\n\tfont-size:14px !important;\r\n\tpadding: 10px 0px 10px 0;\r\n}\r\n.logout-box{\r\n margin-top:60px;\r\n}\r\n.logout-link{\r\n\tpadding-left:15px !important;\r\n\t    font-size: 24px !important;\r\n    color: white !important;\r\n}\r\nul.side-list li i,ul.side-list li{\r\n\tcolor: #76808d;\r\n\tlist-style-type:none;\r\n\tfont-size:14px !important;\r\n}\r\nli.title{\r\n\tpadding: 15px 18px;\r\n    font-size: 18px;\r\n\tfont-weight: 600;\r\n    background: #202835;\r\n    display: block;\r\n    color: white !important;\r\n    text-transform: uppercase;\r\n}\r\nli.menu-item{\r\n\t    padding: 5px 18px;\r\n    text-align: left;\r\n    border-top: 0 none;\r\n    border-bottom: solid 1px #343E4A;\r\n}\r\n\r\n.sidebar-list{\r\n        padding-left: 0px;\r\n            padding-top: 10px;\r\n}\r\n.sidebar-list li{ \r\n  margin-bottom:20px;\r\n  list-style-type:none;\r\n  text-align: center;\r\n}\r\n.sidebar-list li a{\r\n    padding:0;\r\n}\r\n\r\n.sidebar-list li i,.sync-button i{\r\n  font-size:30px;\r\n  color:#7FCBC2;\r\n  list-style-type:none;\r\n}\r\n\r\n.sidebar-list li p,.sync-button p{\r\n      color:#7FCBC2;\r\n    font-size:10px;\r\n    margin-top: 14px;\r\n\r\n}\r\n.sync-button{\r\n    position: absolute;\r\n    bottom:0;\r\n    left:10px;\r\n}", ""]);
+exports.push([module.i, "/* Products */\r\n\r\ninput[type=radio]:checked + label.radioLabels:before {\r\n    content: \"\\2022\";\r\n    color: #f3f3f3;\r\n    font-size: 25px;\r\n    text-align: center;\r\n        line-height: 19px;\r\n}\r\n\r\n.radio label.radioLabels:before {\r\n  content: \"\";\r\n  display: inline-block;\r\n \r\n  width: 16px;\r\n  height: 16px;\r\n \r\n  margin-right: 10px;\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: 1px;\r\n  background-color: #7FCBC2;\r\n  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);\r\n}\r\n\r\n\r\n/*  Radios up */\r\n.switch {\r\n  position: relative;\r\n  display: inline-block;\r\n  width: 50px;\r\n  height: 20px;\r\n}\r\n.spaced{\r\n\tmargin-top:6px;\r\n}\r\n.switch input {display:none;}\r\nbutton:focus {outline:0;}\r\n.slider {\r\n  position: absolute;\r\n  cursor: pointer;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  background-color: #ccc;\r\n  -webkit-transition: .4s;\r\n  transition: .4s;\r\n}\r\n.customSale-add{\r\n\tdisplay: block;\r\n    margin-top: 0;\r\n    width: 100%;\r\n    text-align: center;\r\n    border: 0 none;\r\n    background:#D43A2F;\r\n\t    margin-top: 20px;\r\n\t\tfont-weight: bold;\r\n    border-radius: 2px;\r\n    padding: 0 45px;\r\n    height: 50px;\r\n    line-height: 50px;\r\n    text-transform: uppercase;\r\n    color: #fff;\r\n    font-size: 15px;\r\n    margin-bottom: 0;\r\n}\r\n.slider:before {\r\n  position: absolute;\r\n  content: \"\";\r\n  height: 26px;\r\n  width: 26px;\r\n    left: -1px;\r\n    bottom: -2px;\r\n  background-color: white;\r\n  -webkit-transition: .4s;\r\n  transition: .4s;\r\n      -webkit-transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);\r\n    -moz-transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);\r\n    -o-transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);\r\n    transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);\r\n    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 3px 4px 0 rgba(0,0,0,0.1);\r\n    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 3px 4px 0 rgba(0,0,0,0.1);\r\n}\r\n.numberFields{\r\n\tmargin-top:6px;\r\n}\r\n.numberFields button:active{\r\n\tbackground: white;\r\n\tcolor:black;\r\n}\r\n.numberFields button{\r\n\tbackground: #eee;\r\n    color: #767f89;\r\n    border: 1px solid #e1e1e1;\r\n    width: 33.33%;\r\n\tmargin:-2px;\r\n\t    font-weight: 600;\r\n    height: 47px;\r\n    display: inline-block;\r\n    font-size: 20px;\r\n    line-height: 46px;\r\n    padding: 0;\r\n    vertical-align: middle;\r\n}\r\ninput:checked + .slider {\r\n  background-color: #00A679;\r\n}\r\n\r\ninput:focus + .slider {\r\n  box-shadow: 0 0 1px #00A679;\r\n}\r\n\r\ninput:checked + .slider:before {\r\n  -webkit-transform: translateX(26px);\r\n  -ms-transform: translateX(26px);\r\n  transform: translateX(26px);\r\n}\r\n\r\n/* Rounded sliders */\r\n\r\n.slider.round {\r\n  border-radius: 34px;\r\n}\r\n\r\n.slider.round:before {\r\n  border-radius: 50%;\r\n}\r\n.shippable{\r\n\tcolor:#6f7d90 !important;\r\n\tfont-size: 15px;\r\n    font-weight: 400;\r\n}\r\n.inner-addon { \r\n    position: relative; \r\n}\r\n.fa-dollar{\r\n\tcolor:#6f7d90;\r\n\t\r\n}\r\n.dropdown-menu{\r\n\twidth: 100%;\r\n    border-radius: 0;\r\n    padding: 0;\r\n}\r\n.dropdown-toggle{\r\n\ttext-align: left;\r\n}\r\n.dropdown-toggle .caret{\r\n\tfloat: right;\r\n    margin-top: 16px;\r\n\tcolor:#6f7d90 !important;\r\n}\r\n/* style icon */\r\n.inner-addon .fa {\r\n  position: absolute;\r\n  padding: 10px;\r\n  pointer-events: none;\r\n}\r\n\r\n/* align icon */\r\n.left-addon .fa  { left:  0px;}\r\n.right-addon .fa { right: 0px;}\r\n\r\n/* add padding  */\r\n.left-addon input  { padding-left:  30px; }\r\n.right-addon input { padding-right: 30px; }\r\n.customSale-field::-webkit-input-placeholder {\r\n    /* WebKit, Blink, Edge */\r\n    color: #6f7d90;\r\n}\r\n.customSale-field:-moz-placeholder {\r\n    /* Mozilla Firefox 4 to 18 */\r\n    color: #6f7d90;\r\n    opacity: 1;\r\n}\r\n.customSale-field::-moz-placeholder {\r\n    /* Mozilla Firefox 19+ */\r\n    color: #6f7d90;\r\n    opacity: 1;\r\n}\r\n.customSale-field:-ms-input-placeholder {\r\n    /* Internet Explorer 10-11 */\r\n    color: #6f7d90;\r\n}\r\n\r\n.customSale-field{\r\n\t\tfont-family:sans-serif;\r\n\twidth: 100%;\r\n    background: #fff;\r\n    border: 1px solid #d7d7d7;\r\n    height: 35px;\r\n    line-height: 35px;\r\n    padding: 0 10px;\r\n    color: #6f7d90 !important;\r\n\tborder-radius: 0;\r\n\tmargin-bottom: 10px;\r\n}\r\n#customSale .modal-content{\r\n\tborder-radius:0;\r\n\t    width: 355px;\r\n\t\tmargin: 0 auto;\r\n}\r\n#customSale .modal-header{\r\n\t    padding-bottom: 5px;\r\n}\r\n#customSale .modal-title{\r\n\ttext-align: center;\r\n\tfont-weight: 400;\r\n    margin-bottom: 0;\r\n    min-height: 1em;\r\n    line-height: 40px;\r\n\tcolor:#6f7d90;\r\n}\r\n#customSale .close,#customSale .close:hover{\r\n\tfloat:left;\r\n\tbackground: none transparent;\r\n    border: 0 none;\r\n    color: #9da4a2;\r\n    font-size: 15px;\r\n    font-weight: 400;\r\n    line-height: 35px;\r\n    height: 35px;\r\n    padding: 0;\r\n}\r\n.products-row .col-md-3,.products-row{\r\nbackground: #EDEFF2;\r\n}\r\n.myFooter,#main2{\r\n\tbackground: #EDEFF2;\r\n}\r\n#product-modal .modal-title{\r\n\ttext-align: center;\r\n\tcolor: #4e5660;\r\n    font-size: 13px;\r\n    font-weight: normal;\r\n    margin-top: 0;\r\n    line-height: 1.4;\r\n    margin-left: 5px;\r\n}\r\n#product-modal .modal-header{\r\n\tpadding:6px;\r\n}\r\n#product-modal .close{\r\n\tfloat: left;\r\n    font-size: 12px;\r\n    font-weight: 400;\r\n\tmargin-top: 3px;\r\n    margin-left: 3px;\r\n}\r\n#product-modal .oos{\r\n\tfont-family: 'Open Sans',sans-serif!important;\r\n\t    color: #6f7d90;\r\n\t    font-size: 11px;\r\n    font-weight: 200;\r\n}\r\n#product-modal .sku{\r\n\t    color: #838f9c;\r\n\t\tfont-size: 10px;\r\n}\r\n#product-modal .product-name{\r\n  font-size: 16px;\r\n    text-transform: uppercase;\r\n    color: #363e48;\r\n    margin: 10px 0 0px;\r\n}\r\n#product-modal .product-info-price{\r\n\tmargin-top:12px;\r\n\tcolor: #363e48;\r\n    font-size: 21px;\r\n    font-weight: 100;\r\n}\r\n#product-modal .modal-content{\r\n \r\n   border-radius: 0;\r\n\r\n\r\n}\r\n#product-modal .modal-body{\r\n \r\n  padding:0;\r\n \r\n}\r\n.detail-button i{\r\n    color:#00a679;\r\n\tpadding: 6px 0px 1px 9px;\r\n\r\n}\r\n.detail-button{\r\n   width:25px;\r\n   height:25px;\r\n   border-radius: 50%;\r\n   border:1px solid #b0bec5;\r\n   position: absolute;\r\nbottom: 30px;\r\n    right: 14px;\r\n\r\n}\r\n.main-content .mCSB_dragger_bar{\r\n\tdisplay:none;\r\n}\r\n.main-content{\r\n    padding: 0 20px;\r\n\theight: calc(100vh - 150px);\r\n}\r\n\r\n.products-row .col-md-3{\r\n\tpadding-right:0;\r\n}\r\n\r\n.main-content .mCSB_dragger_bar{\r\n\tdisplay:none;\r\n}\r\n\r\n.products-row{\r\n    margin-left:0;\r\n\tpadding-top:10px;\r\n    border-left: 2px solid #7FCBC2;\r\n    height: calc(100vh - 65px);\r\n}\r\n.products-row .col-md-3{\r\n\tpadding-right:0;\r\n}\r\n.item-list{\r\n\tbackground:white;\r\n\tpadding: 10px 10px 5px;\r\n\tfloat: left;\r\n    width: 100%;\r\n    cursor: pointer;\r\n}\r\n.product-item{\r\n\tbackground:white;\r\n\tpadding: 10px 10px 5px;\r\n    margin-bottom: 18px;\r\n    float: left;\r\n    width: 100%;\r\n    cursor: pointer;\r\n\theight:235px !important;\r\n}\r\n.product-item .product-img{\r\n\ttext-align:center;\r\n\tmax-height: calc((66vw - 591px) / 4);\r\n\twidth:auto;\r\n\tdisplay:block;\r\n}\r\n.final-price{\r\n\t    color: #363e48;\r\n    font-size: 120%;\r\n}\r\n.availability,.available_qty{\r\n\t    font-size: 14px;\r\n\t\tcolor:#6f7d90;\r\n\t\tfont-family: sans-serif;\r\n\t\tfont-weight:400 !important;\r\n}\r\n.product-name{\r\n\tmin-height: 25px;\r\n    max-height: 25px;\r\n    overflow: hidden;\r\n\tfont-size:13px;\r\n\tmargin-bottom:22px;\r\n}\r\n.product-count p{\r\n\tfont-size: 14px;\r\n\tcolor: #6f7d90;\r\n\tfont-family: sans-serif;\r\n}\r\n.row{\r\n\t    margin-right: 0px;\r\n    margin-left: 0px;\r\n}\r\n.page-number{\r\n\tfont-family: sans-serif;\r\n\tcolor: #464646;\r\n    font-size: 14px;\r\n}\r\n.pagination-list li{\r\nlist-style-type:none;\r\npadding-right:10px;\r\ndisplay:inline-block;}\r\n\r\n.pagination-list .fa{\r\n\tcolor: #464646;\r\n}\r\n.myFooter{\r\n\tpadding-left:15px;\r\n\tpadding-right:25px;\r\n}\r\n.myFooter p{\r\n\tmargin-bottom:0;\r\n}\r\n.myFooter>.row{\r\n\tpadding-top: 20px;\r\n}\r\n.users-modal .fa{\r\n\tfont-size:24px;\r\n\tcolor: #6f7d90;\r\n}\r\n.no-padding{\r\n\tpadding-left:0;\r\n\tpadding-right:0;\r\n}\r\n.users-modal{\r\n\tborder:none;\r\n\tbackground:transparent;\r\n\t    margin-top: -5px;\r\n}\r\n.btn-custom-modal{\r\n\tborder:none;\r\n\tbackground:transparent;\r\n\tfont-family: sans-serif;\r\n\t\tcolor: #6f7d90;\r\n    font-size: 14px;\r\n\tfont-weight:400;\r\n}\r\n\r\n\r\n\r\n.main-data{\r\n width:94%;\t\r\n}\r\n\r\n\r\n.nav-pills{\r\n   width:300px;\r\n   border: 1px solid#ccc;\r\n    border-radius: 4px;\r\n   margin:0 auto;\r\n}\r\n\r\n.nav-pills>li>a{\r\n        padding: 10px 30px;\r\n}\r\n\r\n.nav-pills>li.active>a{\r\n    border-radius:0;\r\n    background-color:#7FCBC2;\r\n}\r\n.cat-image{\r\n    width:100px;\r\n    height:100px;\r\n    margin:0 auto;\r\n    cursor: pointer;\r\n}\r\n.cat-image img{\r\n    width:100%;\r\n    height:100px;\r\n    object-fit: cover;\r\n    border:2px solid #7FCBC2;\r\n}\r\n.categories-tab .box{\r\n    position: relative;\r\n    float:left;\r\n    width: 20%;\r\n        margin: 0 auto;\r\n}\r\n.all-text{\r\n    line-height: 100px;\r\n    text-align: center;\r\n    font-weight: bold;\r\n    color:#fff;\r\n}\r\n.circle-box{\r\n    width:100px;\r\n    height:100px;\r\n    border-radius: 50%;\r\n    background:#7FCBC2;\r\n}\r\n\r\n#categories-tab{\r\n    margin-top: 30px;\r\n}\r\n.box h3{\r\n    text-align: center;\r\n    font-size: 22px;\r\n    color:#7FCBC2;\r\n    margin-bottom:0;\r\n}\r\n.no-link,.no-link:hover{\r\n    color:#7FCBC2;\r\n    text-decoration: none;\r\n}\r\n.nav-tabs{\r\n\r\n border-bottom:none;\r\n\r\n}\r\n\r\n.categories-tab{\r\n    padding:15px 0;\r\n    border-top:1px solid #7FCBC2;\r\n    border-bottom:1px solid #7FCBC2;\r\n}\r\n.search-box-items,.search-box-items-reciept{\r\n        padding: 10px;\r\n}\r\n.search-input{\r\n    height:40px;\r\n}\r\n.search-input .form-control{\r\n    height: 40px;\r\n    text-align: center;\r\n    padding-left:15px;\r\n    border-radius:0;\r\n    width: 100%;\r\n    position: relative;\r\n    float: left;\r\n}\r\n.searchCustomerBtn{\r\n    height:40px;\r\n    border:none;\r\n    background:white;\r\n    border-top:1px solid #ccc;\r\n    border-right:1px solid #ccc;\r\n    border-bottom:1px solid #ccc;\r\n}\r\n.search-input button i{\r\n        padding-top: 8px;\r\n}\r\n.search-input button{\r\n    width: 10%;\r\n    position: relative;\r\n    float: left;\r\n}\r\n.search-input{\r\n    position: relative;\r\n}\r\n .search-input img{\r\n    position: absolute;\r\n    top: 0px;\r\n    width: 40px;\r\n    right: 23px;\r\n}\r\n.background-added{\r\n        background: rgba(126,203,194,0.1);\r\n}\r\n.products-list .box{\r\n   position: relative;\r\n   float:left;\r\n   width:20%;\r\n}\r\n.products-list{\r\n        margin-top: 20px;\r\n}\r\n.prod-image{\r\n    cursor: pointer;\r\n}\r\n.products-list .box .prod-image{\r\n   width:100px;\r\n    height:100px;\r\n    margin:0 auto;\r\n}\r\n.products-list .box p{\r\ntext-align: center;\r\ncolor:#7FCBC2;\r\nfont-size:14px;\r\nmargin-top:10px;\r\n}\r\n.align-right{\r\n    text-align: right;\r\n}\r\n.products-list .box .prod-image img{\r\n     width:100px;\r\n    height:100px;\r\n    object-fit: cover;\r\n    border: 2px solid #7FCBC2;\r\n}\r\n\r\n.customers-heading,.customer-add,.unselect-customer{\r\n    position: relative;\r\n    float:left;\r\n}\r\n.unselect-customer{\r\n    width:20%;\r\n}\r\n\r\n.customer-profile-tab .customer-edit{\r\n        width: 40%;\r\n    position: relative;\r\n    float: left;\r\n    text-align: right;\r\n}\r\n.customer-add{\r\n    width: 38%;\r\n    text-align: right;\r\n}\r\n.customers-heading p{\r\n    margin-bottom:0;\r\n    font-size: 16px;\r\n    color:#7FCBC2;\r\n\r\n        font-weight: bold;\r\n}\r\n.customers-heading{\r\n        width: 56%;\r\n    text-align: right;\r\n\r\n}\r\n.customers-tab{\r\n    border-top:1px solid #7FCBC2;\r\n    border-bottom:1px solid #7FCBC2;\r\n    padding:10px 0;\r\n        margin-top: 30px;\r\n        background: rgba(126,203,194,0.1);\r\n}\r\n.add-customer i{\r\n    color:#7FCBC2;\r\n}\r\n.add-customer{\r\n    border:none;\r\n    background: none;\r\n    margin-top: 2px;\r\n}\r\n#customers .search-box-items,#receipts .search-box-items-reciept{\r\n     background: rgba(126,203,194,0.1);\r\n}\r\n.listing-customers{\r\n    padding-left:0;\r\n}\r\n.listing-customers li a{\r\n    font-size:16px;\r\n    color:black !important;\r\n    cursor: pointer;\r\n\r\n}\r\n.listing-customers li{\r\n    list-style-type:none;\r\n    border-bottom:1px solid #ccc;\r\n        padding: 6px;\r\n}\r\n\r\n.customer-profile-tab .customers-heading{\r\n    width:35%;\r\n}\r\n.unselect-customer button i{\r\n    color:#7FCBC2;\r\n    font-size:22px;\r\n}\r\n.unselect-customer button{\r\n border:none;\r\n background:none;\r\n\r\n}\r\n.image-left,.text-right{\r\n    position: relative;\r\n    float:left;\r\n}\r\n\r\n.image-left{\r\n    width:20%;\r\n}\r\n\r\n.text-right{\r\n    width:80%;\r\n    text-align: left;\r\n\r\n}\r\n.profile-name{\r\n color:#7FCBC2;\r\n     font-size: 30px;\r\n    margin-top: 0;\r\n}\r\n.profile-pic{\r\n    width:120px;\r\n    height:120px;\r\n    border-radius: 50%;\r\n    position: relative;\r\n    float:left;\r\n    margin-bottom:20px;\r\n}\r\n.profile-pic img{\r\n  width: 100%;\r\n  height:120px;\r\n  border-radius: 50%;\r\n  object-fit:cover;\r\n}\r\n.margined-top{\r\nmargin-top:15px;\r\n}\r\nhr{\r\n     margin:0;\r\n    border: 0;\r\n    border-top: 1px solid #7FCBC2;\r\n}\r\n.customer-profile-tab p.text,.new-customer-form p.text{\r\n    font-size:16px;\r\n    padding-top: 5px;\r\n     color:#7FCBC2;\r\n}\r\n.reciepts,.notes{\r\n    border:none;\r\n    background:none;\r\n}\r\n.reciepts p,.notes p{\r\n     color:#7FCBC2;\r\n     margin-top:10px;\r\n}\r\n.reciepts i,.notes i{\r\n    font-size:30px;\r\n    color:#7FCBC2;\r\n}\r\n.new-form-inputs{\r\n    border:none;\r\n    border-bottom:1px solid #7FCBC2;\r\n    padding-left:10px;\r\n    background:transparent;\r\n    height:35px;\r\n    width:100%;\r\n}\r\n.create-customer:hover{\r\n    \r\n    color:white;\r\n    \r\n    background-color:#7FCBC2;\r\n    -webkit-transition: background-color 1s linear;\r\n    -ms-transition: background-color 1s linear;\r\n    transition: background-color 1s linear;\r\n\r\n}\r\n.create-customer{\r\n    margin-bottom:50px;\r\n    width:100%;\r\n    font-size:18px;\r\n    margin-top:10px;\r\n    height:50px;\r\n    background:transparent;\r\n    border:1px solid #7FCBC2;\r\n}\r\n.thumbnail a>img, .thumbnail>img,#image-container img{\r\n   max-height: 100%;\r\n    width: 120px;\r\n    height: 120px;\r\n    border-radius: 50%;\r\n    object-fit: cover;\r\n    line-height: 120px;\r\n}\r\n.remove_image{\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0%;\r\n    background: white;\r\n    border: none;\r\n}\r\n.remove_image i{\r\n        color: #7FCBC2 !important;\r\n    font-size: 18px !important;\r\n}\r\n.new-customer-form,.customer-profile-tab{\r\n    display:none;\r\n    margin-top:45px;\r\n}\r\n.checkbox{\r\n        margin-left: 24px;\r\n}\r\n.checkbox label{\r\n    font-size: 16px;\r\n    color: #7FCBC2;\r\n    font-weight: 700;\r\n}\r\n.regular-checkbox {\r\n\t-webkit-appearance: none;\r\n\tbackground-color: #fafafa;\r\n\tborder: 1px solid #cacece;\r\n\tbox-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);\r\n\tpadding: 6px;\r\n\tborder-radius: 3px;\r\n\tdisplay: inline-block;\r\n     outline:none;\r\n\tposition: relative;\r\n}\r\n.shipping-address-form{\r\n    display: none;\r\n}\r\n.regular-checkbox:active, .regular-checkbox:checked:active {\r\n\tbox-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);\r\n}\r\n\r\n.regular-checkbox:checked {\r\n\tbackground-color: #e9ecee;\r\n\tborder: 1px solid #adb8c0;\r\n\tbox-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);\r\n\tcolor: #99a1a7;\r\n}\r\n\r\n\r\n.regular-checkbox:checked:after {\r\n\tcontent: '\\2714';\r\n\tfont-size: 14px;\r\n\tposition: absolute;\r\n    top: -7px;\r\n    left: 0px;\r\n    outline:none;\r\n\tcolor: #99a1a7;\r\n}\r\n.checkbox .regular-checkbox{\r\nmargin-left:-30px !important;\r\n}\r\n.close-form{\r\n    position: absolute;\r\n    right: 30px;\r\n    top:44px;\r\n    font-size: 40px;\r\n    color: #7FCBC2;\r\n    cursor:pointer;\r\n}\r\n.close-edit-form{\r\n    float:right;\r\n    font-size: 40px;\r\n    color: #7FCBC2;\r\n    cursor:pointer;\r\n}\r\n.errorClass{\r\n    border:1px solid Red !important;\r\n}\r\n.customer-loader i{\r\n    color:#7FCBC2;\r\n}\r\n.customer-loader,#editloader{\r\n    width:100px;\r\n    margin:0 auto;\r\n    margin-top:30px;\r\n\r\n}\r\n#editloader i{\r\ncolor:#7FCBC2;\r\n}\r\n#incompleteForm,#loader,#customer-added,#editincompleteForm,#editloader,#customer-updated{\r\n    display:none;\r\n}\r\n#incompleteForm p{\r\n    text-align: center;\r\n    color: red;\r\n    font-size: 16px;\r\n    padding-top: 10px;\r\n}\r\n\r\n.product-detail-tab{\r\n  /*  display:none;*/\r\n}\r\n.product-heading{\r\n    padding: 0px 0;\r\n    border-bottom: 1px solid #ccc;\r\n    border-top: 1px solid #ccc;\r\n    margin-top: 10px;\r\n\r\n}\r\n.product-heading h2{\r\n    text-align: center;\r\n    color: #7FCBC2;\r\n    margin-top: 20px;\r\n    font-size: 22px;\r\n    margin-bottom: 20px;\r\n}\r\na{\r\n    text-decoration: none !important;\r\n    cursor: pointer;\r\n}\r\n.product-size,.product-box-variation{\r\n        width: 78%;\r\n    margin: 0 auto;\r\n    margin-bottom:20px;\r\n}\r\n\r\n.size-box-wrapper,.product-box-variation-wrapper{\r\n     position: relative;\r\n    float:left;\r\n        width: 30%;\r\n    margin-right: 2%;\r\n    min-height: 115px;\r\n}\r\n.size-box,.product-variation-box{\r\n    position: relative;\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n    width: 140px;\r\n    height: 120px;\r\n    border:2px solid #7FCBC2;\r\n        margin: 10px;\r\n        border-radius:4px;\r\n        cursor:pointer;\r\n}\r\n.size-box h3,.product-variation-box h3{\r\n    font-size: 20px;\r\n    text-align: center;\r\n    color: #7FCBC2;\r\n}\r\n.size-box p{\r\ntext-align:center;\r\n  color: #7FCBC2;\r\n}\r\n.size-box p.extra-price{\r\ntext-align:center;\r\n  color: #7FCBC2;\r\n   text-align: center;\r\n    font-size: 14px;\r\n\r\n}\r\n.product-properties{\r\n    font-size:24px;\r\n    color:#4D4D4F;\r\n    margin-top: 10px;\r\n}\r\n\r\n/*  Quantity */\r\n\r\n.quantity {\r\n    position: relative;\r\n    border: 0;\r\n}\r\n\r\ninput[type=number]::-webkit-inner-spin-button,\r\ninput[type=number]::-webkit-outer-spin-button {\r\n    -webkit-appearance: none;\r\n    margin: 0;\r\n}\r\n\r\ninput[type=number] {\r\n    -moz-appearance: textfield;\r\n}\r\n.quantity-row{\r\n    height:50px;\r\n    margin-top:20px;\r\n}\r\n\r\n.quantity input {\r\n  width: 50%;\r\n    height: 50px;\r\n    line-height: 1.65;\r\n    float: left;\r\n    display: block;\r\n    padding: 0;\r\n    margin: 0;\r\n    padding-left: 20px;\r\n    border: 1px solid #eee;\r\nfont-size: 24px;\r\n    font-weight: bold;\r\n    border-radius: 5px;   \r\n    margin-bottom: 4px; \r\n}\r\n\r\n.quantity input:focus {\r\n    outline: 0;\r\n}\r\n\r\n.quantity-nav {\r\n    float: left;\r\n    position: relative;\r\n    height: 50px;\r\n}\r\n\r\n.quantity-button {\r\n    position: relative;\r\n    cursor: pointer;\r\n    border-left: 1px solid #eee;\r\n    width: 20px;\r\n    text-align: center;\r\n    color: #333;\r\n    font-size: 13px;\r\n    font-family: \"Trebuchet MS\", Helvetica, sans-serif !important;\r\n    line-height: 1.7;\r\n    -webkit-transform: translateX(-100%);\r\n    transform: translateX(-100%);\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    -o-user-select: none;\r\n    user-select: none;\r\n\r\n    background: #323f44;\r\n    width: 30px;\r\n    border: 0;\r\n    color: #fff;\r\n    font-size: 23px;\r\n    line-height: 23px;\r\n    border-radius:0 5px 0 0\r\n\r\n}\r\n\r\n.quantity-button.quantity-up {\r\n    position: absolute;\r\n    height: 50%;\r\n    top: 0;\r\n}\r\n\r\n.quantity-button.quantity-down {\r\n    position: absolute;\r\n    bottom: -1px;\r\n    height: 50%;\r\n     border-radius:0 0 5px 0;\r\n}\r\n\r\n.Customer-full-detail{\r\n    display: none;\r\n    padding-left:45px;\r\n}\r\n\r\n.left-pic,.right-name{\r\n position: relative;\r\n float:left;\r\n}\r\n.right-name{\r\n\tmargin-left: 20px;\r\n}\r\n.product-detail-tab{\r\n    position: relative;\r\n}\r\n.back-to-orders{\r\n    position: absolute;\r\n    right: 30px;\r\n    cursor: pointer;\r\n}\r\n.backToProducts{\r\n    position: absolute;\r\n    right: 30px;\r\n    cursor: pointer;\r\n    top: 20px;\r\n}\r\n.backToProducts img,.back-to-search-customers img,.back-to-orders img{\r\n        width: 21px;\r\n    height: 21px;\r\n    padding-top: 5px;\r\n}\r\n.back-to-search-customers{\r\n    position: absolute;\r\n    right:25px;\r\n    cursor: pointer;\r\n    \r\n}\r\n\r\n.back-to-search-customers i,.backToProducts i{\r\n    color:#7FCBC2;\r\n        font-size: 26px;\r\n}\r\n.product-variation-box p{\r\n       color:#7FCBC2;\r\n        font-size: 14px;\r\n        text-align: center;\r\n}\r\n.search-box-items .row p,.search-box-items .row span{\r\nmargin-bottom:0;\r\ncolor:#7FCBC2;\r\nfont-size:14px;\r\nfont-weight: bold;\r\n}\r\n.add-to-cart{\r\n\r\n    background:#7FCBC2;\r\n    color:white;\r\n    font-weight: bold;\r\n    font-size:24px;\r\n    border-radius:4px;\r\n    border:1px solid #7FCBC2;\r\n    width:100%;\r\n    height: 60px;\r\n    line-height: 60px;\r\n}\r\n\r\n.selected-cart-options{\r\n    font-size: 18px;\r\nbackground-color:white;\r\ncolor:#7FCBC2;\r\n\r\n}\r\n.quantity-value{\r\n        line-height: 46px;\r\n    font-size: 24px;\r\n}\r\n.size-alert{\r\n    margin-top:20px;\r\n}\r\n.size-alert,.box-alert,.color-alert{\r\ndisplay: none;\r\n}\r\n.overlay{\r\n    width:100%;\r\n    height:100px;\r\n    background:rgba(204,204,204,0.4);\r\n    position: absolute;\r\n    top:0;\r\n    min-height: 118px;\r\n    display: none;\r\n    }\r\n    .check-exists{\r\n        margin-bottom:20px;\r\n    }\r\n\r\n    .editCustomer{\r\n        position: absolute;\r\n        left:25px;\r\n        display: none;\r\n            z-index: 25;\r\n    }\r\n    .editCustomer i{\r\n        color:#7FCBC2;\r\n\r\n    }\r\n    .editCustomerBtn{\r\n        cursor: pointer;\r\n        background:transparent;\r\n        border:none;\r\n    }\r\n    .edit-customer-form{\r\n        display: none;\r\n    }\r\n.order-types{\r\n    background:none;\r\n    border-radius:3px;\r\n    color: #7FCBC2;\r\n    font-weight: bold;\r\n    width: 100%;\r\n    border:1px solid #ccc;\r\n}\r\n#orderDetail{\r\n    display: none;\r\n}\r\n.order-types-row .col-md-3{\r\n    background: rgba(126,203,194,0.001) !important;\r\n}\r\n.order-heading{\r\n    font-size:20px;\r\n    color:#7FCBC2;\r\n    font-weight: bold;\r\n}\r\n#orderDetail{\r\n        padding: 0 2px;\r\n}\r\n#orderDetail hr{\r\n    margin-bottom:20px;\r\n}\r\n.selected{\r\n    background:white;\r\n    border-radius:3px;\r\n    color: #7FCBC2;\r\n    font-weight: bold;\r\n    width: 100%;\r\n    border:1px solid white;\r\n\r\n}\r\n/* Quantity */\r\n\r\n\r\n/*Products*/\r\n\r\n\r\n\r\n/* Media Queries */\r\n\r\n\r\n\r\n\r\n\r\n/*iPad 1 & 2 in portrait*/\r\n@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) { \r\n  \r\n   .circle-box,.cat-image,.cat-image img{\r\n\t   width: 50px;\r\n\t   height: 50px;\r\n\r\n   }\r\n   .all-text{\r\n\t   line-height: 50px;\r\n   }\r\n   .box h3{\r\n\t   font-size:16px;\r\n   }\r\n   .products-list .box{\r\n\t\t    width: 25%;\r\n   }\r\n   .prod-image,.prod-image img{\r\n\t   width:90px !important;\r\n\t   height:90px !important;\r\n   }\r\n }\r\n\r\n\r\n/*iPad 1 & 2 in landscape*/\r\n@media only screen \r\nand (min-device-width : 768px) \r\nand (max-device-width : 1024px) \r\nand (orientation : landscape)\r\nand (-webkit-min-device-pixel-ratio: 1)  {\r\n\r\n    .main-item-orders{\r\n        height: calc(100vh - 191px) !important;\r\n    }\r\n}\r\n\r\n\r\n\r\n/*Ipad in portrait*/\r\n\r\n@media only screen \r\nand (min-device-width : 768px) \r\nand (max-device-width : 1024px) \r\nand (orientation : landscape) { \r\n\r\n\r\n      .product-size,.product-box-variation{\r\n        width:100% !important;\r\n    }\r\n \r\n   .size-box-wrapper,.product-box-variation-wrapper{\r\n       width: 28%;\r\n    margin-right: 20px;\r\n   }\r\n   .size-box,.product-variation-box{\r\n       height:100px;\r\n   }\r\n   .toCheckout{\r\n           height: 218px;\r\n\r\n   }\r\n   .searchCustomerBtn{\r\n       margin-top:0.2px;\r\n   }\r\n\r\n     .left-main, .right-main{\r\n        width:44%;\r\n    }\r\n    .cat-image,.cat-image img{\r\n        width:70px ;\r\n        height: 70px ;\r\n    }\r\n\r\n    .all-text{\r\n        line-height: 70px;\r\n    }\r\n    .box h3{\r\n        font-size:16px;\r\n    }\r\n\r\n    .products-list .box{\r\n   \r\n     width:25%;\r\n\r\n    }\r\n\r\n    .prod-image ,.prod-image img{\r\n        width:90px !important;\r\n        height:90px !important;\r\n    }\r\n\r\n\r\n}\r\n\r\n@media only screen \r\nand (min-device-width : 768px) \r\nand (max-device-width : 1024px)  { \r\n  \r\n}\r\n\r\n/*Ipad Landscape*/\r\n\r\n\r\n\r\n@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { \r\n    .cat-image{\r\n        width:50px !important;\r\n        height:50px !important;\r\n\r\n    }\r\n\r\n    .box h3{\r\n        font-size:13px;\r\n    }\r\n    .prod-image,.prod-image img{\r\n        width:70px !important;\r\n        height:70px !important;\r\n    }\r\n    .product-size,.product-box-variation{\r\n        width:100%;\r\n    }\r\n    .size-box-wrapper{\r\n        width:30%;\r\n        margin-right:10px;\r\n    }\r\n    .size-box,.product-box-variation-wrapper{\r\n        height: 76px;\r\n        width:30%;\r\n        margin-right:10px;\r\n    }\r\n    .product-variation-box{\r\n        height:100px;\r\n    }\r\n    .quantity input{\r\n        width:100%;\r\n    }\r\n}\r\n\r\n\r\n\r\n\r\n/* Media Queries */", ""]);
 
 // exports
 
@@ -99653,7 +99950,7 @@ exports = module.exports = __webpack_require__(31)(undefined);
 
 
 // module
-exports.push([module.i, "h1 {\r\n  color: #00BCD4;\r\n}", ""]);
+exports.push([module.i, "/* The side navigation menu */\r\n.sidenav {\r\n    height: 100%; /* 100% Full-height */\r\n    width: 100px; /* 0 width - change this with JavaScript */\r\n    position: fixed; /* Stay in place */\r\n    z-index: 1; /* Stay on top */\r\n    top: 0;\r\n    left: 0;\r\n    background-color:white;\r\n    overflow-y: auto; /* Black*/\r\n    overflow-x: hidden; /* Disable horizontal scroll */\r\n    padding-top: 60px; /* Place content 60px from the top */\r\n    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */\r\n}\r\n\r\n/* The navigation menu links */\r\n.sidenav a {\r\n    padding: 8px 8px 8px 32px;\r\n    text-decoration: none;\r\n    font-size: 25px;\r\n    color: #818181;\r\n    display: block;\r\n    transition: 0.3s\r\n}\r\n\r\n/* When you mouse over the navigation links, change their color */\r\n.sidenav a:hover, .offcanvas a:focus{\r\n    color: #f1f1f1;\r\n}\r\n\r\n/* Position and style the close button (top right corner) */\r\n.sidenav .closebtn {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 25px;\r\n    font-size: 36px;\r\n    margin-left: 50px;\r\n}\r\n\r\n\r\n\r\n.side-list{\r\n   padding-left:0px;\r\n   margin-bottom:0;  \r\n}\r\nul.side-list li{\r\n\tpadding-left:15px;\r\n}\r\nul.side-list li a{\r\n\tcolor: #76808d;\r\n\tfont-size:14px !important;\r\n\tpadding: 10px 0px 10px 0;\r\n}\r\n.logout-box{\r\n margin-top:60px;\r\n}\r\n.logout-link{\r\n\tpadding-left:15px !important;\r\n\t    font-size: 24px !important;\r\n    color: white !important;\r\n}\r\nul.side-list li i,ul.side-list li{\r\n\tcolor: #76808d;\r\n\tlist-style-type:none;\r\n\tfont-size:14px !important;\r\n}\r\nli.title{\r\n\tpadding: 15px 18px;\r\n    font-size: 18px;\r\n\tfont-weight: 600;\r\n    background: #202835;\r\n    display: block;\r\n    color: white !important;\r\n    text-transform: uppercase;\r\n}\r\nli.menu-item{\r\n\t    padding: 5px 18px;\r\n    text-align: left;\r\n    border-top: 0 none;\r\n    border-bottom: solid 1px #343E4A;\r\n}\r\n\r\n.sidebar-list{\r\n        padding-left: 0px;\r\n            padding-top: 10px;\r\n}\r\n.sidebar-list li{ \r\n  margin-bottom:20px;\r\n  list-style-type:none;\r\n  text-align: center;\r\n}\r\n.sidebar-list li a{\r\n    padding:0;\r\n}\r\n\r\n.sidebar-list li i,.sync-button i{\r\n  font-size:30px;\r\n  color:#7FCBC2;\r\n  list-style-type:none;\r\n}\r\n\r\n.sidebar-list li p,.sync-button p{\r\n      color:#7FCBC2;\r\n    font-size:10px;\r\n    margin-top: 14px;\r\n\r\n}\r\n.sync-button{\r\n    position: absolute;\r\n    bottom:0;\r\n    left:10px;\r\n}", ""]);
 
 // exports
 
@@ -99662,249 +99959,263 @@ exports.push([module.i, "h1 {\r\n  color: #00BCD4;\r\n}", ""]);
 /* 500 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "ccad210978aedfd7648260f7588e849e.woff";
+exports = module.exports = __webpack_require__(31)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "h1 {\r\n  color: #00BCD4;\r\n}", ""]);
+
+// exports
+
 
 /***/ }),
 /* 501 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "b5fd3a47e1d994ff01e32f862ac97f4e.woff2";
+module.exports = __webpack_require__.p + "ccad210978aedfd7648260f7588e849e.woff";
 
 /***/ }),
 /* 502 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "b5fd3a47e1d994ff01e32f862ac97f4e.woff2";
+
+/***/ }),
+/* 503 */
+/***/ (function(module, exports, __webpack_require__) {
+
 var map = {
-	"./af": 160,
-	"./af.js": 160,
-	"./ar": 167,
-	"./ar-dz": 161,
-	"./ar-dz.js": 161,
-	"./ar-kw": 162,
-	"./ar-kw.js": 162,
-	"./ar-ly": 163,
-	"./ar-ly.js": 163,
-	"./ar-ma": 164,
-	"./ar-ma.js": 164,
-	"./ar-sa": 165,
-	"./ar-sa.js": 165,
-	"./ar-tn": 166,
-	"./ar-tn.js": 166,
-	"./ar.js": 167,
-	"./az": 168,
-	"./az.js": 168,
-	"./be": 169,
-	"./be.js": 169,
-	"./bg": 170,
-	"./bg.js": 170,
-	"./bn": 171,
-	"./bn.js": 171,
-	"./bo": 172,
-	"./bo.js": 172,
-	"./br": 173,
-	"./br.js": 173,
-	"./bs": 174,
-	"./bs.js": 174,
-	"./ca": 175,
-	"./ca.js": 175,
-	"./cs": 176,
-	"./cs.js": 176,
-	"./cv": 177,
-	"./cv.js": 177,
-	"./cy": 178,
-	"./cy.js": 178,
-	"./da": 179,
-	"./da.js": 179,
-	"./de": 182,
-	"./de-at": 180,
-	"./de-at.js": 180,
-	"./de-ch": 181,
-	"./de-ch.js": 181,
-	"./de.js": 182,
-	"./dv": 183,
-	"./dv.js": 183,
-	"./el": 184,
-	"./el.js": 184,
-	"./en-au": 185,
-	"./en-au.js": 185,
-	"./en-ca": 186,
-	"./en-ca.js": 186,
-	"./en-gb": 187,
-	"./en-gb.js": 187,
-	"./en-ie": 188,
-	"./en-ie.js": 188,
-	"./en-nz": 189,
-	"./en-nz.js": 189,
-	"./eo": 190,
-	"./eo.js": 190,
-	"./es": 192,
-	"./es-do": 191,
-	"./es-do.js": 191,
-	"./es.js": 192,
-	"./et": 193,
-	"./et.js": 193,
-	"./eu": 194,
-	"./eu.js": 194,
-	"./fa": 195,
-	"./fa.js": 195,
-	"./fi": 196,
-	"./fi.js": 196,
-	"./fo": 197,
-	"./fo.js": 197,
-	"./fr": 200,
-	"./fr-ca": 198,
-	"./fr-ca.js": 198,
-	"./fr-ch": 199,
-	"./fr-ch.js": 199,
-	"./fr.js": 200,
-	"./fy": 201,
-	"./fy.js": 201,
-	"./gd": 202,
-	"./gd.js": 202,
-	"./gl": 203,
-	"./gl.js": 203,
-	"./gom-latn": 204,
-	"./gom-latn.js": 204,
-	"./he": 205,
-	"./he.js": 205,
-	"./hi": 206,
-	"./hi.js": 206,
-	"./hr": 207,
-	"./hr.js": 207,
-	"./hu": 208,
-	"./hu.js": 208,
-	"./hy-am": 209,
-	"./hy-am.js": 209,
-	"./id": 210,
-	"./id.js": 210,
-	"./is": 211,
-	"./is.js": 211,
-	"./it": 212,
-	"./it.js": 212,
-	"./ja": 213,
-	"./ja.js": 213,
-	"./jv": 214,
-	"./jv.js": 214,
-	"./ka": 215,
-	"./ka.js": 215,
-	"./kk": 216,
-	"./kk.js": 216,
-	"./km": 217,
-	"./km.js": 217,
-	"./kn": 218,
-	"./kn.js": 218,
-	"./ko": 219,
-	"./ko.js": 219,
-	"./ky": 220,
-	"./ky.js": 220,
-	"./lb": 221,
-	"./lb.js": 221,
-	"./lo": 222,
-	"./lo.js": 222,
-	"./lt": 223,
-	"./lt.js": 223,
-	"./lv": 224,
-	"./lv.js": 224,
-	"./me": 225,
-	"./me.js": 225,
-	"./mi": 226,
-	"./mi.js": 226,
-	"./mk": 227,
-	"./mk.js": 227,
-	"./ml": 228,
-	"./ml.js": 228,
-	"./mr": 229,
-	"./mr.js": 229,
-	"./ms": 231,
-	"./ms-my": 230,
-	"./ms-my.js": 230,
-	"./ms.js": 231,
-	"./my": 232,
-	"./my.js": 232,
-	"./nb": 233,
-	"./nb.js": 233,
-	"./ne": 234,
-	"./ne.js": 234,
-	"./nl": 236,
-	"./nl-be": 235,
-	"./nl-be.js": 235,
-	"./nl.js": 236,
-	"./nn": 237,
-	"./nn.js": 237,
-	"./pa-in": 238,
-	"./pa-in.js": 238,
-	"./pl": 239,
-	"./pl.js": 239,
-	"./pt": 241,
-	"./pt-br": 240,
-	"./pt-br.js": 240,
-	"./pt.js": 241,
-	"./ro": 242,
-	"./ro.js": 242,
-	"./ru": 243,
-	"./ru.js": 243,
-	"./sd": 244,
-	"./sd.js": 244,
-	"./se": 245,
-	"./se.js": 245,
-	"./si": 246,
-	"./si.js": 246,
-	"./sk": 247,
-	"./sk.js": 247,
-	"./sl": 248,
-	"./sl.js": 248,
-	"./sq": 249,
-	"./sq.js": 249,
-	"./sr": 251,
-	"./sr-cyrl": 250,
-	"./sr-cyrl.js": 250,
-	"./sr.js": 251,
-	"./ss": 252,
-	"./ss.js": 252,
-	"./sv": 253,
-	"./sv.js": 253,
-	"./sw": 254,
-	"./sw.js": 254,
-	"./ta": 255,
-	"./ta.js": 255,
-	"./te": 256,
-	"./te.js": 256,
-	"./tet": 257,
-	"./tet.js": 257,
-	"./th": 258,
-	"./th.js": 258,
-	"./tl-ph": 259,
-	"./tl-ph.js": 259,
-	"./tlh": 260,
-	"./tlh.js": 260,
-	"./tr": 261,
-	"./tr.js": 261,
-	"./tzl": 262,
-	"./tzl.js": 262,
-	"./tzm": 264,
-	"./tzm-latn": 263,
-	"./tzm-latn.js": 263,
-	"./tzm.js": 264,
-	"./uk": 265,
-	"./uk.js": 265,
-	"./ur": 266,
-	"./ur.js": 266,
-	"./uz": 268,
-	"./uz-latn": 267,
-	"./uz-latn.js": 267,
-	"./uz.js": 268,
-	"./vi": 269,
-	"./vi.js": 269,
-	"./x-pseudo": 270,
-	"./x-pseudo.js": 270,
-	"./yo": 271,
-	"./yo.js": 271,
-	"./zh-cn": 272,
-	"./zh-cn.js": 272,
-	"./zh-hk": 273,
-	"./zh-hk.js": 273,
-	"./zh-tw": 274,
-	"./zh-tw.js": 274
+	"./af": 161,
+	"./af.js": 161,
+	"./ar": 168,
+	"./ar-dz": 162,
+	"./ar-dz.js": 162,
+	"./ar-kw": 163,
+	"./ar-kw.js": 163,
+	"./ar-ly": 164,
+	"./ar-ly.js": 164,
+	"./ar-ma": 165,
+	"./ar-ma.js": 165,
+	"./ar-sa": 166,
+	"./ar-sa.js": 166,
+	"./ar-tn": 167,
+	"./ar-tn.js": 167,
+	"./ar.js": 168,
+	"./az": 169,
+	"./az.js": 169,
+	"./be": 170,
+	"./be.js": 170,
+	"./bg": 171,
+	"./bg.js": 171,
+	"./bn": 172,
+	"./bn.js": 172,
+	"./bo": 173,
+	"./bo.js": 173,
+	"./br": 174,
+	"./br.js": 174,
+	"./bs": 175,
+	"./bs.js": 175,
+	"./ca": 176,
+	"./ca.js": 176,
+	"./cs": 177,
+	"./cs.js": 177,
+	"./cv": 178,
+	"./cv.js": 178,
+	"./cy": 179,
+	"./cy.js": 179,
+	"./da": 180,
+	"./da.js": 180,
+	"./de": 183,
+	"./de-at": 181,
+	"./de-at.js": 181,
+	"./de-ch": 182,
+	"./de-ch.js": 182,
+	"./de.js": 183,
+	"./dv": 184,
+	"./dv.js": 184,
+	"./el": 185,
+	"./el.js": 185,
+	"./en-au": 186,
+	"./en-au.js": 186,
+	"./en-ca": 187,
+	"./en-ca.js": 187,
+	"./en-gb": 188,
+	"./en-gb.js": 188,
+	"./en-ie": 189,
+	"./en-ie.js": 189,
+	"./en-nz": 190,
+	"./en-nz.js": 190,
+	"./eo": 191,
+	"./eo.js": 191,
+	"./es": 193,
+	"./es-do": 192,
+	"./es-do.js": 192,
+	"./es.js": 193,
+	"./et": 194,
+	"./et.js": 194,
+	"./eu": 195,
+	"./eu.js": 195,
+	"./fa": 196,
+	"./fa.js": 196,
+	"./fi": 197,
+	"./fi.js": 197,
+	"./fo": 198,
+	"./fo.js": 198,
+	"./fr": 201,
+	"./fr-ca": 199,
+	"./fr-ca.js": 199,
+	"./fr-ch": 200,
+	"./fr-ch.js": 200,
+	"./fr.js": 201,
+	"./fy": 202,
+	"./fy.js": 202,
+	"./gd": 203,
+	"./gd.js": 203,
+	"./gl": 204,
+	"./gl.js": 204,
+	"./gom-latn": 205,
+	"./gom-latn.js": 205,
+	"./he": 206,
+	"./he.js": 206,
+	"./hi": 207,
+	"./hi.js": 207,
+	"./hr": 208,
+	"./hr.js": 208,
+	"./hu": 209,
+	"./hu.js": 209,
+	"./hy-am": 210,
+	"./hy-am.js": 210,
+	"./id": 211,
+	"./id.js": 211,
+	"./is": 212,
+	"./is.js": 212,
+	"./it": 213,
+	"./it.js": 213,
+	"./ja": 214,
+	"./ja.js": 214,
+	"./jv": 215,
+	"./jv.js": 215,
+	"./ka": 216,
+	"./ka.js": 216,
+	"./kk": 217,
+	"./kk.js": 217,
+	"./km": 218,
+	"./km.js": 218,
+	"./kn": 219,
+	"./kn.js": 219,
+	"./ko": 220,
+	"./ko.js": 220,
+	"./ky": 221,
+	"./ky.js": 221,
+	"./lb": 222,
+	"./lb.js": 222,
+	"./lo": 223,
+	"./lo.js": 223,
+	"./lt": 224,
+	"./lt.js": 224,
+	"./lv": 225,
+	"./lv.js": 225,
+	"./me": 226,
+	"./me.js": 226,
+	"./mi": 227,
+	"./mi.js": 227,
+	"./mk": 228,
+	"./mk.js": 228,
+	"./ml": 229,
+	"./ml.js": 229,
+	"./mr": 230,
+	"./mr.js": 230,
+	"./ms": 232,
+	"./ms-my": 231,
+	"./ms-my.js": 231,
+	"./ms.js": 232,
+	"./my": 233,
+	"./my.js": 233,
+	"./nb": 234,
+	"./nb.js": 234,
+	"./ne": 235,
+	"./ne.js": 235,
+	"./nl": 237,
+	"./nl-be": 236,
+	"./nl-be.js": 236,
+	"./nl.js": 237,
+	"./nn": 238,
+	"./nn.js": 238,
+	"./pa-in": 239,
+	"./pa-in.js": 239,
+	"./pl": 240,
+	"./pl.js": 240,
+	"./pt": 242,
+	"./pt-br": 241,
+	"./pt-br.js": 241,
+	"./pt.js": 242,
+	"./ro": 243,
+	"./ro.js": 243,
+	"./ru": 244,
+	"./ru.js": 244,
+	"./sd": 245,
+	"./sd.js": 245,
+	"./se": 246,
+	"./se.js": 246,
+	"./si": 247,
+	"./si.js": 247,
+	"./sk": 248,
+	"./sk.js": 248,
+	"./sl": 249,
+	"./sl.js": 249,
+	"./sq": 250,
+	"./sq.js": 250,
+	"./sr": 252,
+	"./sr-cyrl": 251,
+	"./sr-cyrl.js": 251,
+	"./sr.js": 252,
+	"./ss": 253,
+	"./ss.js": 253,
+	"./sv": 254,
+	"./sv.js": 254,
+	"./sw": 255,
+	"./sw.js": 255,
+	"./ta": 256,
+	"./ta.js": 256,
+	"./te": 257,
+	"./te.js": 257,
+	"./tet": 258,
+	"./tet.js": 258,
+	"./th": 259,
+	"./th.js": 259,
+	"./tl-ph": 260,
+	"./tl-ph.js": 260,
+	"./tlh": 261,
+	"./tlh.js": 261,
+	"./tr": 262,
+	"./tr.js": 262,
+	"./tzl": 263,
+	"./tzl.js": 263,
+	"./tzm": 265,
+	"./tzm-latn": 264,
+	"./tzm-latn.js": 264,
+	"./tzm.js": 265,
+	"./uk": 266,
+	"./uk.js": 266,
+	"./ur": 267,
+	"./ur.js": 267,
+	"./uz": 269,
+	"./uz-latn": 268,
+	"./uz-latn.js": 268,
+	"./uz.js": 269,
+	"./vi": 270,
+	"./vi.js": 270,
+	"./x-pseudo": 271,
+	"./x-pseudo.js": 271,
+	"./yo": 272,
+	"./yo.js": 272,
+	"./zh-cn": 273,
+	"./zh-cn.js": 273,
+	"./zh-hk": 274,
+	"./zh-hk.js": 274,
+	"./zh-tw": 275,
+	"./zh-tw.js": 275
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -99920,19 +100231,19 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 502;
+webpackContext.id = 503;
 
 /***/ }),
-/* 503 */
+/* 504 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export DatePickerModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_slimscroll__ = __webpack_require__(315);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng2_datepicker_component__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_slimscroll__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng2_datepicker_component__ = __webpack_require__(276);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_4__ng2_datepicker_component__["a"]; });
 /* unused harmony reexport DateModel */
 
@@ -99968,7 +100279,7 @@ var DatePickerModule = (function () {
 //# sourceMappingURL=ng2-datepicker.module.js.map
 
 /***/ }),
-/* 504 */
+/* 505 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100046,7 +100357,7 @@ module.exports = EventManager;
 
 
 /***/ }),
-/* 505 */
+/* 506 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100066,15 +100377,15 @@ module.exports = (function () {
 
 
 /***/ }),
-/* 506 */
+/* 507 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var destroy = __webpack_require__(508);
-var initialize = __webpack_require__(516);
-var update = __webpack_require__(517);
+var destroy = __webpack_require__(509);
+var initialize = __webpack_require__(517);
+var update = __webpack_require__(518);
 
 module.exports = {
   initialize: initialize,
@@ -100084,7 +100395,7 @@ module.exports = {
 
 
 /***/ }),
-/* 507 */
+/* 508 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100107,7 +100418,7 @@ module.exports = {
 
 
 /***/ }),
-/* 508 */
+/* 509 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100136,7 +100447,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 509 */
+/* 510 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100182,7 +100493,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 510 */
+/* 511 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100292,7 +100603,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 511 */
+/* 512 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100453,7 +100764,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 512 */
+/* 513 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100601,7 +100912,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 513 */
+/* 514 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100623,7 +100934,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 514 */
+/* 515 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100745,7 +101056,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 515 */
+/* 516 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100931,27 +101242,27 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 516 */
+/* 517 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var _ = __webpack_require__(32);
-var cls = __webpack_require__(76);
+var cls = __webpack_require__(77);
 var instances = __webpack_require__(19);
 var updateGeometry = __webpack_require__(33);
 
 // Handlers
 var handlers = {
-  'click-rail': __webpack_require__(509),
-  'drag-scrollbar': __webpack_require__(510),
-  'keyboard': __webpack_require__(511),
-  'wheel': __webpack_require__(512),
-  'touch': __webpack_require__(515),
-  'selection': __webpack_require__(514)
+  'click-rail': __webpack_require__(510),
+  'drag-scrollbar': __webpack_require__(511),
+  'keyboard': __webpack_require__(512),
+  'wheel': __webpack_require__(513),
+  'touch': __webpack_require__(516),
+  'selection': __webpack_require__(515)
 };
-var nativeScrollHandler = __webpack_require__(513);
+var nativeScrollHandler = __webpack_require__(514);
 
 module.exports = function (element, userSettings) {
   userSettings = typeof userSettings === 'object' ? userSettings : {};
@@ -100975,7 +101286,7 @@ module.exports = function (element, userSettings) {
 
 
 /***/ }),
-/* 517 */
+/* 518 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101019,43 +101330,43 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 518 */
-/***/ (function(module, exports) {
-
-module.exports = "\r\n  <button id=\"PaymentOptionsButton\" type=\"button\" class=\"btn btn-info btn-lg\" data-toggle=\"modal\" data-target=\"#PaymentOptions\" style=\"display:none\">Open Modal</button>\r\n\t\t <!-- Modal -->\r\n  <div class=\"modal fade\" id=\"PaymentOptions\" role=\"dialog\">\r\n    <div class=\"modal-dialog\">\r\n    \r\n      <!-- Modal content-->\r\n      <div class=\"modal-content\">\r\n        <div class=\"modal-header\">\r\n\t\t\t\t\t  <button type=\"button\" id=\"closeModal\" data-dismiss=\"modal\">Close</button>\r\n          <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                <div class=\"heading-box\"><h3>Make Payment</h3></div>\r\n        </div>\r\n        <div class=\"modal-body\">\r\n\t\t\t\t\t\t<div class=\"row price-row\" style=\"margin-top:20px;\">\r\n\t\t\t\t\t\t\t  <div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p>Balance</p>\r\n\t\t\t\t\t\t\t  </div>\r\n\r\n\t\t\t\t\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p>{{FinalTotal}}</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"row price-row\">\r\n\t\t\t\t\t\t\t  <div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p class=\"blue\">Paying Now</p>\r\n\t\t\t\t\t\t\t  </div>\r\n\r\n\t\t\t\t\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p class=\"grey\">{{FinalTotal}}</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"row payment-methods-row\">\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-gift\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>Gift Card</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\" (click)=\"initiateCashPayment()\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-money\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>Cash</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-credit-card\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>Credit Card</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-arrow-right\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>3rd Party</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<!-- Credit Cards steps -->\r\n\t\t\t\t\t\t<div class=\"credit-card-steps\">\r\n\r\n\t\t\t\t\t\t\t<form-wizard>\r\n  <wizard-step [title]=\"'Step1'\"  (onNext)=\"onStep1Next($event)\">\r\n    <h1>Step1</h1>\r\n   \r\n  </wizard-step>\r\n  <wizard-step [title]=\"'Step2'\" (onNext)=\"onStep2Next($event)\">\r\n    <h1>Step2</h1>\r\n  </wizard-step>\r\n  <wizard-step [title]=\"'Step3'\" (onNext)=\"onStep3Next($event)\">\r\n    <h1>Step3</h1>\r\n  </wizard-step>\r\n  <wizard-step [title]=\"'Step4'\" (onComplete)=\"onComplete($event)\">\r\n    <div [ngSwitch]=\"isCompleted\">\r\n      <div *ngSwitchDefault>\r\n        <h1>Step4</h1>\r\n      </div>\r\n      <div *ngSwitchCase=\"true\">\r\n        <h4>Thank you! You have completed all the steps.</h4>\r\n      </div>\r\n    </div>\r\n  </wizard-step>\r\n</form-wizard>\r\n\r\n\r\n\t\t\t\t\t\t</div>\r\n<!-- Credit Cards Steps -->\r\n\r\n\r\n\r\n        </div>\r\n\r\n      </div>\r\n      \r\n    </div>\r\n  </div>\r\n\r\n\r\n<div class=\"table-cart animated\">\r\n\t<div class=\"actions-customer row\">\r\n\t\r\n\t <h2>Charge AED {{subtotal}}</h2>\r\n\t  \r\n\t\r\n\t</div>\r\n\t\r\n\t<div class=\"customer-name\">\r\n    <h3 *ngIf=\"!customerName\">Guest Customer</h3>\r\n     <h3 *ngIf=\"customerName\">{{customerName}}<button (click)=\"unAttachUser()\" class=\"no-user\">&times;</button></h3>\r\n\t</div>\r\n\t\r\n\t<div class=\"main-item-order\" [perfect-scrollbar]=\"config\"> \r\n\t\r\n\t<table class=\"table table-bordered\">\r\n    <thead>\r\n      <tr>\r\n\t\t\t\t<th class=\"col-md-1 no-right-border background-th\"></th>\r\n        <th class=\"col-md-8 background-th no-left-border\">ITEM</th>\r\n        <th class=\"col-md-3 background-th align-right\">TOTAL</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n\r\n\r\n\t\t\t<tr *ngFor=\"let cartObj of cart\" id=\"{{cartObj.product.ID}}\">\r\n\t\t\t\t<td class=\"col-md-1\" style=\" vertical-align: middle;\"><button class='deleteRow' (click)=\"deleteThisRow(cartObj.product.ID)\"><i class='fa fa-trash'></i></button></td>\r\n        <td class=\"col-md-8\">\r\n\t\t\r\n\t\t\t\t\t  <div class=\"row\">\r\n\t\t\t\t\t\t  <div class=\"col-md-10 paddingLeft\">\r\n\t\t\t\t\t\t\t\t <p class=\"blue-color\">{{cartObj.product.Name}}</p>\r\n\t\t\t\t\t\t\t\t  <p class=\"small-tex\"> AED{{cartObj.product.price}} </p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"small-tex\">{{cartObj.box}} </p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"small-tex\">{{cartObj.boxColor}} </p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"small-tex\">{{cartObj.size}} </p>\r\n\t\t\t\t\t\t  </div>\r\n\t\t\t\t\t\t\t<div class=\"col-md-2\">\r\n\t\t\t\t\t\t\t\t<p class=\"blue-color\">X {{cartObj.quantity}}</p>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t</td>\r\n        <td class=\"col-md-3  price-total-box align-right\">AED {{cartObj.total}} </td>\r\n      </tr>\r\n\r\n\r\n    </tbody>\r\n\t\t  <tfoot>\r\n\r\n\t\t\t\r\n    <tr>\r\n      <td class=\"col-md-1 no-padding-all background-colored\"><div class=\"Checkout\" (click)=\"callModal()\">a</div></td>\r\n      <td class=\"col-md-9 uppercase left-less\" >Subtotal</td>\r\n      <td class=\"col-md-2 uppercase align-right\">AED {{subtotal}}</td>\r\n    </tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"col-md-1 no-padding-all background-colored\"><div class=\"Checkout\" (click)=\"callModal()\" ><i class=\"fa fa-plus\"></i></div></td>\r\n      <td class=\"col-md-9 uppercase left-less\" >Tax</td>\r\n      <td class=\"col-md-2 uppercase align-right\">AED 0</td>\r\n    </tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"col-md-1 no-padding-all background-colored\"><div class=\"Checkout\" (click)=\"callModal()\">a</div></td>\r\n      <td class=\"col-md-9 uppercase left-less\" >Total</td>\r\n      <td class=\"col-md-2 uppercase align-right\">AED {{FinalTotal}}</td>\r\n    </tr>\r\n\r\n  </tfoot>\r\n  </table>\r\n\t\r\n\t\t\r\n\t\t\r\n\t</div>\r\n\t\r\n\t</div>\r\n\r\n\r\n\r\n\r\n\r\n\t\t<div class=\"cart-footer clearfix\">\r\n\t\t\t\r\n\t\t\t <div class=\"row\">\r\n\r\n\t\t\t\t\t  <div class=\"col-md-8 col-sm-7\">\r\n\t\t\t\t\t\t\t<div class=\"upload\">\r\n\t\t\t\t\t\t\t\t<div class=\"dropup\">\r\n\t\t\t\t\t\t\t\t\t<button class=\"btn btn-primary dropdown-toggle\" type=\"button\" data-toggle=\"dropdown\"><i class=\"fa fa-upload\"></i>\r\n\t\t\t\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t\t\t\t<ul class=\"dropdown-menu\">\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Discounts</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Tips</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Notes</a></li>\r\n\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t  <div class=\"col-md-4 col-sm-5\">\r\n\t\t\t\t\t\t\t\t<div class=\"pause\">\r\n\t\t\t\t\t\t\t\t\t\t<button class=\"pause-button\"><i class=\"fa fa-pause\"></i></button>\r\n\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t<div class=\"cancel\">\r\n\t\t\t\t\t\t\t\t\t<button class=\"cancel-button\"><i class=\"fa fa-times-circle-o\" aria-hidden=\"true\"></i></button>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t \r\n\t\t\t </div>\r\n\t\r\n\t\t\t\r\n\t\t</div>"
-
-/***/ }),
 /* 519 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default custom-navbar\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"navbar-header\">\r\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#myNavbar\">\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>                        \r\n      </button>\r\n    </div>\r\n    <div class=\"collapse navbar-collapse\" id=\"myNavbar\">\r\n      <ul class=\"nav navbar-nav\">\r\n        <li><a class=\"circle\"><i class=\"fa fa-user\"></i></a></li>\r\n      </ul> \r\n\t  \r\n\r\n    <div class=\"our-name\">\r\n         <p>Les Floralies</p>\r\n    </div>\r\n\t\r\n\r\n    </div>\r\n  </div>\r\n</nav>"
+module.exports = "\r\n  \r\n  <!-- Whole Cart-->\r\n\r\n  <div class=\"whole-cart\">\r\n\r\n\r\n  <button id=\"PaymentOptionsButton\" type=\"button\" class=\"btn btn-info btn-lg\" data-toggle=\"modal\" data-target=\"#PaymentOptions\" style=\"display:none\">Open Modal</button>\r\n\t\t <!-- Modal -->\r\n  <div class=\"modal fade\" id=\"PaymentOptions\" data-backdrop=\"static\" data-keyboard=\"false\" role=\"dialog\">\r\n    <div class=\"modal-dialog\">\r\n    \r\n      <!-- Modal content-->\r\n      <div class=\"modal-content\">\r\n        <div class=\"modal-header\">\r\n\t\t\t\t\t  <button type=\"button\" id=\"closeModal\" data-dismiss=\"modal\">Close</button>\r\n          <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                <div class=\"heading-box\"><h3>Make Payment</h3></div>\r\n        </div>\r\n        <div class=\"modal-body\">\r\n\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t<div class=\"row price-row\" style=\"margin-top:20px;\">\r\n\t\t\t\t\t\t\t  <div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p>Balance</p>\r\n\t\t\t\t\t\t\t  </div>\r\n\r\n\t\t\t\t\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p>{{FinalTotal}}</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"row price-row\">\r\n\t\t\t\t\t\t\t  <div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p class=\"blue\">Paying Now</p>\r\n\t\t\t\t\t\t\t  </div>\r\n\r\n\t\t\t\t\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p class=\"grey\">{{FinalTotal}}</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t<div class=\"payment-options\">\r\n\r\n\t\t\t\t\t\t<div class=\"row payment-methods-row\">\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\" (click)=\"initiateCashPayment($event)\" id=\"cashOnDelivery\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-gift\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>Cash on Delivery</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\" (click)=\"initiateCashPayment($event)\" id=\"cashOnHand\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-money\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>Cash</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-credit-card\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>Credit Card</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-arrow-right\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>3rd Party</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t       </div>\r\n\r\n\r\n\r\n\t\t\t\t\t <div class=\"shippment-options\">\r\n\r\n\t\t\t\t\t\t<div class=\"shipment-plus-or\">\r\n\t\t\t\t\t \t <div class=\"checkbox shippment-check\">\r\n\t\t\t\t\t\t\t<label><input type=\"checkbox\" class=\"shippmentFormYes\" (change)=\"CheckoutShippingForm()\"  value=\"shipYes\">Do you want to ship these produts?</label>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<p class=\"or-text\" style=\"text-align:center;font-size:20px;\">OR</p> \r\n\t\t\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t\t<div class=\"proceed-without-shippment\">\r\n\r\n\r\n\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t <div class=\"proceed\">\r\n\t\t\t\t\t\t\t\t\t<button class=\"proceed-button\" (click)=\"thanksMsgShow()\"><i class=\"fa fa-check\"></i>&nbsp;&nbsp;&nbsp;Proceed</button>\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t<div class=\"thankyouMsg\">\r\n\t\t\t\t\t\t\t\t\t\t<h3 style=\"color:#7FCBC2;text-align: center;margin:20px 0;\">Your order was placed successfully! Thank you </h3>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-default button-close\" data-dismiss=\"modal\">Close</button>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\r\n\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\r\n\t\t\t\t\t\t  <div class=\"checkout-shippment-form\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t<h3 style=\"text-align:center;\">Enter Shipping Details</h3>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t <div class=\"row\" style=\"margin-top:20px\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t          <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t     <Strong>Select Shipping Address</Strong>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t<select [(ngModel)]=\"selectedAdress\" class=\"new-form-inputs\" (change)=\"getSingleAddress($event.target.value)\">\r\n\r\n                <option  value=\"\" disabled selected>Select Address</option>\r\n                <option  *ngFor=\"let address of AddressModelArray\" [ngValue]=\"address\">{{address.Address}}</option>  \r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</select>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t </div>\r\n\r\n                        <div class=\"row\" style=\"margin-top:20px\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Shipping Name</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"checkoutShipName\" name=\"checkoutShipName\" [(ngModel)]=\"checkoutShipName\" type=\"text\" placeholder=\"Enter name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row\" style=\"margin-top:20px\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Shipping Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"checkoutShipPhone\" name=\"checkoutShipPhone\" [(ngModel)]=\"checkoutShipPhone\" type=\"number\" placeholder=\"Enter phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row\" style=\"margin-top:20px\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Shipping Adress</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"checkoutShipAddress\" name=\"checkoutShipAddress\" [(ngModel)]=\"checkoutShipAddress\" type=\"text\" placeholder=\"Enter address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"incompleteCheckoutShippment alert alert-danger\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Incomplete Form</strong>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"checkoutLoader\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"row\" style=\"margin-top:20px;text-align: center;\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t   <button class=\"SubmitCheckoutShippment\" (click)=\"SubmitCheckoutShippmentInfo()\">Submit Details</button>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t  <!-- Proceed -->\r\n\t\t\t\t\t\t\t<div class=\"proceed-with-order\">\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t <div class=\"proceed\">\r\n\t\t\t\t\t\t\t\t\t<h3 style=\"color:black;text-align: center;margin:20px 0;\">Do you want to Proceed?</h3>\r\n\t\t\t\t\t\t\t\t\t<button class=\"proceed-button\" (click)=\"thanksMsgShow()\"><i class=\"fa fa-check\"></i>&nbsp;&nbsp;&nbsp;Proceed</button>\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t<div class=\"OrderLoader\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t<div class=\"thankyouMsg\">\r\n\t\t\t\t\t\t\t\t\t\t<h3 style=\"color:#7FCBC2;text-align: center;margin:20px 0;\">Your order was placed successfully! Thank you </h3>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-default button-close\" data-dismiss=\"modal\">Close</button>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<!-- Proceed -->\r\n\r\n\r\n\r\n        </div>\r\n\r\n      </div>\r\n      \r\n    </div>\r\n  </div>\r\n\r\n\r\n<div class=\"table-cart animated\">\r\n\t<div class=\"actions-customer row\">\r\n\t\r\n\t <h2>Charge AED {{subtotal}}</h2>\r\n\t  \r\n\t\r\n\t</div>\r\n\t\r\n\t<div class=\"customer-name\">\r\n    <h3 *ngIf=\"!customerName\">Guest Customer</h3>\r\n     <h3 *ngIf=\"customerName\">{{customerName}}<button (click)=\"unAttachUser()\" class=\"no-user\">&times;</button></h3>\r\n\t</div>\r\n\t\r\n\t<div class=\"main-item-order\" [perfect-scrollbar]=\"config\"> \r\n\t\r\n\t<table class=\"table table-bordered\">\r\n    <thead>\r\n      <tr>\r\n\t\t\t\t<th class=\"col-md-1 no-right-border background-th\"></th>\r\n        <th class=\"col-md-8 background-th no-left-border\">ITEM</th>\r\n        <th class=\"col-md-3 background-th align-right\">TOTAL</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n\r\n\r\n\t\t\t<tr *ngFor=\"let cartObj of cart\" id=\"{{cartObj.product.ID}}\">\r\n\t\t\t\t<td class=\"col-md-1\" style=\" vertical-align: middle;\"><button class='deleteRow' (click)=\"deleteThisRow(cartObj.product.ID)\"><img src=\"/assets/img/delete.png\"></button></td>\r\n        <td class=\"col-md-8\">\r\n\t\t\r\n\t\t\t\t\t  <div class=\"row\">\r\n\t\t\t\t\t\t  <div class=\"col-md-10 paddingLeft\">\r\n\t\t\t\t\t\t\t\t <p class=\"blue-color\">{{cartObj.product.Name}}</p>\r\n\t\t\t\t\t\t\t\t  <p class=\"small-tex\"> AED{{cartObj.product.price}} </p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"small-tex\">{{cartObj.box}} </p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"small-tex\">{{cartObj.boxColor}} </p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"small-tex\">{{cartObj.size}} </p>\r\n\t\t\t\t\t\t  </div>\r\n\t\t\t\t\t\t\t<div class=\"col-md-2\">\r\n\t\t\t\t\t\t\t\t<p class=\"blue-color\">X {{cartObj.quantity}}</p>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t</td>\r\n        <td class=\"col-md-3  price-total-box align-right\">AED {{cartObj.total}} </td>\r\n      </tr>\r\n\r\n\r\n    </tbody>\r\n\t\t  <tfoot>\r\n\r\n\t\t\t\r\n    <tr>\r\n      <td class=\"col-md-1 no-padding-all background-colored\"><div class=\"Checkout\" (click)=\"callModal()\">a</div></td>\r\n      <td class=\"col-md-9 uppercase left-less\" >Subtotal</td>\r\n      <td class=\"col-md-2 uppercase align-right\">AED {{subtotal}}</td>\r\n    </tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"col-md-1 no-padding-all background-colored\"><div class=\"Checkout\" (click)=\"callModal()\" ><i class=\"fa fa-plus\"></i></div></td>\r\n      <td class=\"col-md-9 uppercase left-less\" >Tax</td>\r\n      <td class=\"col-md-2 uppercase align-right\">AED {{toShowTax}}</td>\r\n    </tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"col-md-1 no-padding-all background-colored\"><div class=\"Checkout\" (click)=\"callModal()\">a</div></td>\r\n      <td class=\"col-md-9 uppercase left-less\" >Total</td>\r\n      <td class=\"col-md-2 uppercase align-right\">AED {{FinalTotal}}</td>\r\n    </tr>\r\n\r\n  </tfoot>\r\n  </table>\r\n\t\r\n\t\t\r\n\t\t\r\n\t</div>\r\n\t\r\n\t</div>\r\n\r\n\r\n</div>  <!-- Whole Cart-->\r\n\r\n\r\n\r\n\r\n<!-- Back Office Div -->\r\n\r\n<div class=\"back-office-div\">\r\n\r\n<div class=\"backToCart\" (click)=\"showCartHideTax()\">\r\n\t<img src=\"/assets/img/left.png\" width=\"30px\">\r\n</div>\r\n\r\n\r\n<div class=\"row\">\r\n\r\n <h3>Global Settings</h3>\r\n <hr>\r\n</div>\r\n\r\n<div class=\"setting-row\">\r\n\t<div class=\"col-md-6 col-sm-6\">\r\n\t\t<p class=\"settings-text\">Global Tax</p>\r\n\t</div>\r\n\r\n\t<div class=\"col-md-6 col-sm-6\">\r\n\r\n\t\t<label class=\"switch\">\r\n\t\t\t<input type=\"checkbox\" (change)=\"taxValueChange()\" class=\"tax-value\">\r\n\t\t\t<span class=\"slider round\"></span>\r\n        </label>\r\n\r\n\t</div>\r\n</div>\r\n\r\n\r\n<div class=\"setting-row tax-amount-input\">\r\n\r\n\t\t<div class=\"col-md-6\">\r\n\t\t\t<p class=\"settings-text\">Global Tax Value</p>\r\n\t\t</div>\r\n\r\n\r\n\t\t<div class=\"col-md-3\">\r\n\t\t\t<input type=\"number\" class=\"new-form-inputs\" id=\"taxValue\" name=\"taxValue\" [(ngModel)]=\"taxValue\">\r\n\t\t</div>\r\n\r\n\t\t<div class=\"col-md-3\">\r\n\t\t\t<button class=\"btn-save-tax\" (click)=\"saveTax()\"><i class='fa fa-save'></i></button>\r\n\t\t</div>\r\n\r\n\r\n</div>\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<!-- Back Office div-->\r\n\r\n\r\n\r\n\r\n\r\n\t\t<div class=\"cart-footer clearfix\">\r\n\t\t\t\r\n\t\t\t <div class=\"row\">\r\n\r\n\t\t\t\t\t  <div class=\"col-md-8 col-sm-7\">\r\n\t\t\t\t\t\t\t<div class=\"upload\">\r\n\t\t\t\t\t\t\t\t<div class=\"dropup\">\r\n\t\t\t\t\t\t\t\t\t<button class=\"btn btn-primary dropdown-toggle\" type=\"button\" data-toggle=\"dropdown\"><i class=\"fa fa-upload\"></i>\r\n\t\t\t\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t\t\t\t<ul class=\"dropdown-menu\">\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Discounts</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Tips</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Notes</a></li>\r\n\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t  <div class=\"col-md-4 col-sm-5\">\r\n\t\t\t\t\t\t\t\t<div class=\"pause\">\r\n\t\t\t\t\t\t\t\t\t\t<button class=\"pause-button\" (click)=\"pauseCart()\"><img src=\"/assets/img/pause.png\" width=\"15px\"></button>\r\n\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t<div class=\"cancel\">\r\n\t\t\t\t\t\t\t\t\t<button class=\"cancel-button\" (click)=\"deleteCart()\"><img src=\"/assets/img/cross.png\" width=\"15px\"></button>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t \r\n\t\t\t </div>\r\n\t\r\n\t\t\t\r\n\t\t</div>"
 
 /***/ }),
 /* 520 */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n    <Header></Header>\r\n    <perfect-scrollbar  [config]=\"config\">\r\n    <Sidebar></Sidebar>\r\n    </perfect-scrollbar>\r\n<div class=\"row\" id=\"main2\"> <!-- Outermost Row (col-md-5 col-sm-6 main right) col-md-6 col-sm-6 mainleft -->\r\n\r\n  <div class=\"left-main\" id=\"main-right\"> <!-- Main Right -->\r\n\r\n   <Cartright #Cartright></Cartright>\r\n\r\n  </div><!-- Main Right Ends-->\r\n\r\n  <div id=\"main\" class=\"right-main\">  <!-- Main -->\r\n\r\n    \r\n    <Main id=\"backgrounded\" (customerSet)=\"Cartright.getCustomer()\" (myEvent)=\"Cartright.function1()\"></Main>\r\n\r\n\r\n  </div> <!-- Main Ends -->\r\n   \r\n\r\n\r\n\r\n</div>  <!-- Outermost Row Ends -->"
+module.exports = "<nav class=\"navbar navbar-default custom-navbar\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"navbar-header\">\r\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#myNavbar\">\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>                        \r\n      </button>\r\n    </div>\r\n    <div class=\"collapse navbar-collapse\" id=\"myNavbar\">\r\n      <ul class=\"nav navbar-nav\">\r\n        <li><a class=\"circle\"><i class=\"fa fa-user\"></i></a></li>\r\n      </ul> \r\n\t  \r\n\r\n    <div class=\"our-name\">\r\n         <p>Les Floralies</p>\r\n    </div>\r\n\t\r\n\r\n    </div>\r\n  </div>\r\n</nav>"
 
 /***/ }),
 /* 521 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"login-wrap\">\r\n\t<div class=\"login-html\">\r\n\t\t<input id=\"tab-1\" type=\"radio\" name=\"tab\" class=\"sign-in\" checked><label for=\"tab-1\" class=\"tab\">Sign In</label>\r\n\t\t<input id=\"tab-2\" type=\"radio\" name=\"tab\" class=\"sign-up\"><label for=\"tab-2\" class=\"tab\"></label>\r\n\t\t<div class=\"login-form\">\r\n\t\t\t<div class=\"sign-in-htm\">\r\n\t\t\t\t<div class=\"group\">\r\n\t\t\t\t\t<label for=\"user\" class=\"label\">Username</label>\r\n\t\t\t\t\t<input id=\"user\" type=\"text\" name=\"Email\" [(ngModel)]=\"Email\" class=\"input\">\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"group\">\r\n\t\t\t\t\t<label for=\"pass\" class=\"label\">Password</label>\r\n\t\t\t\t\t<input id=\"pass\" type=\"password\" name=\"Password\" [(ngModel)]=\"Password\"  class=\"input\" data-type=\"password\">\r\n\t\t\t\t</div>\r\n\t\t\t\r\n\r\n        <div class=\"group\" id=\"enterEmail\">\r\n               <p>Enter your email</p>\r\n\t\t\t\t</div>\r\n\r\n        <div class=\"group\" id=\"enterPassword\">\r\n               <p>Enter your password</p>\r\n\t\t\t\t</div>\r\n\r\n        <div class=\"group\" id=\"wrongEmail\">\r\n               <p>Enter a valid email</p>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"group\" id=\"wrongCreds\">\r\n               <p>Enter valid credentials</p>\r\n\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t<div class=\"group\">\r\n\t\t\t\t\t<input type=\"submit\" (click)=\"Submitting()\" class=\"button\" value=\"Sign In\">\r\n\t\t\t\t</div>\r\n\r\n        <div id=\"loader\">\r\n<i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n        </div>\r\n        \r\n\t\t\t\t<div class=\"hr\"></div>\r\n<!--\t\t\t\t<div class=\"foot-lnk\">\r\n\t\t\t\t\t<a href=\"#forgot\">Forgot Password?</a>\r\n\t\t\t\t</div>-->\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\t</div>\r\n</div>"
+module.exports = "\r\n    <Header></Header>\r\n    <perfect-scrollbar  [config]=\"config\">\r\n    <Sidebar (showBackOfficeEvent)=\"Main.hideCartShowBackoffice()\"></Sidebar>\r\n    </perfect-scrollbar>\r\n<div class=\"row\" id=\"main2\"> <!-- Outermost Row (col-md-5 col-sm-6 main right) col-md-6 col-sm-6 mainleft -->\r\n\r\n  <div class=\"left-main\" id=\"main-right\"> <!-- Main Right -->\r\n\r\n   <Cartright #Cartright></Cartright>\r\n\r\n  </div><!-- Main Right Ends-->\r\n\r\n  <div  id=\"main\" class=\"right-main\">  <!-- Main -->\r\n\r\n    \r\n    <Main #Main id=\"backgrounded\" (customerSet)=\"Cartright.getCustomer()\" (myEvent)=\"Cartright.function1()\"></Main>\r\n\r\n\r\n  </div> <!-- Main Ends -->\r\n   \r\n\r\n\r\n\r\n</div>  <!-- Outermost Row Ends -->"
 
 /***/ }),
 /* 522 */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Custom Sale Modal -->\r\n\r\n<div id=\"customSale\" class=\"modal fade\" role=\"dialog\">\r\n    <div class=\"modal-dialog\">\r\n\r\n        <!-- Modal content-->\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">Cancel</button>\r\n                <h4 class=\"modal-title\">Custom Sale</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-12\">\r\n                        <input type=\"text\" class=\"customSale-field\" placeholder=\"Enter Product Name\">\r\n                    </div>\r\n                </div>\r\n\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-12\">\r\n                        <div class=\"inner-addon left-addon\">\r\n                            <i class=\"fa fa-dollar\"></i>\r\n                            <input type=\"text\" class=\"customSale-field\" />\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-12\">\r\n\r\n                        <div class=\"dropdown\">\r\n                            <button class=\"btn btn-default dropdown-toggle customSale-field\" type=\"button\" id=\"menu1\" data-toggle=\"dropdown\">Tutorials\r\n                            <span class=\"caret\"></span></button>\r\n                            <ul class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"menu1\">\r\n                                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Taxable Goods</a></li>\r\n                                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Shipping</a></li>\r\n                                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Tax Exempt</a></li>\r\n                            </ul>\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n                </div>\r\n\r\n                <div class=\"row spaced\">\r\n\r\n                    <div class=\"col-md-3 col-xs-4\">\r\n                        <p class=\"shippable\">Shippable</p>\r\n                    </div>\r\n\r\n                    <div class=\"col-md-9 col-xs-8\">\r\n                        <label class=\"switch\"> \r\n                    <input type=\"checkbox\">\r\n                    <span class=\"slider round\"></span>\r\n                    </label>\r\n                    </div>\r\n                </div>\r\n\r\n                <div class=\"row\">\r\n\r\n                    <div class=\"col-md-12\">\r\n\r\n                        <div class=\"numberFields\">\r\n                            <button type=\"button\" name=\"1\" value=\"1\" (click)=\"addPrice()\">1</button>\r\n                            <button type=\"button\" name=\"2\" value=\"2\" class=\"\" (click)=\"addPrice()\">2</button>\r\n                            <button type=\"button\" name=\"3\" value=\"3\" (click)=\"addPrice()\">3</button>\r\n                            <button type=\"button\" name=\"4\" value=\"4\" (click)=\"addPrice()\">4</button>\r\n                            <button type=\"button\" name=\"5\" value=\"5\" (click)=\"addPrice()\">5</button>\r\n                            <button type=\"button\" name=\"6\" value=\"6\" (click)=\"addPrice()\">6</button>\r\n                            <button type=\"button\" name=\"7\" value=\"7\" (click)=\"addPrice()\">7</button>\r\n                            <button type=\"button\" name=\"8\" value=\"8\" (click)=\"addPrice()\">8</button>\r\n                            <button type=\"button\" name=\"9\" value=\"9\" (click)=\"addPrice()\">9</button>\r\n                            <button type=\"button\" name=\"00\" value=\"00\" (click)=\"addPrice()\">00</button>\r\n                            <button type=\"button\" name=\"0\" value=\"0\" (click)=\"addPrice()\">0</button>\r\n                            <button type=\"button\" name=\"backspace\" value=\"backspace\">\r\n                <i class=\"fa fa-eraser\" aria-hidden=\"true\"></i>\r\n            </button>\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                </div>\r\n\r\n                <div class=\"row\">\r\n\r\n                    <div class=\"col-md-12\">\r\n\r\n                        <button class=\"customSale-add\">Add to cart</button>\r\n\r\n                    </div>\r\n\r\n                </div>\r\n\r\n            </div>\r\n\r\n        </div>\r\n\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n<!-- Custom Sale Model -->\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div class=\"row products-row\">\r\n\r\n\r\n\r\n\r\n\r\n<perfect-scrollbar  [config]=\"config\">\r\n    <div class=\"main-content \">\r\n        <!-- class mCustomScrollbar data-mcs-theme=\"dark\"-->\r\n\r\n\r\n        <div class=\"nav-tabs\">\r\n\r\n            <ul class=\"nav nav-pills\">\r\n                <li><a (click)=\"changePill($event)\" data-target=\"customers\" data-toggle=\"pill\"><i (click)=\"changePill($event)\" data-target=\"customers\" class=\"fa fa-user\"></i></a></li>\r\n                <li class=\"active\"><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"categories-tab\"><i (click)=\"changePill($event)\" data-target=\"categories-tab\" class=\"fa fa-bars\"></i></a></li>\r\n                <li><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"receipts\"><i (click)=\"changePill($event)\" data-target=\"receipts\" class=\"fa fa-ticket\"></i></a></li>\r\n                <li><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"menu3\"><i (click)=\"changePill($event)\" data-target=\"menu3\" class=\"fa fa-male\"></i></a></li>\r\n            </ul>\r\n\r\n        </div>\r\n\r\n\r\n        <div class=\"nav-content\">\r\n\r\n\r\n            <div class=\"tab-content\">\r\n\r\n\r\n                <div id=\"customers\" class=\"tab-pane fade clearfix\">\r\n\r\n\r\n                    <div class=\"search-customer\">\r\n\r\n                        <div class=\"customers-tab clearfix\">\r\n\r\n                            <div class=\"editCustomer\">\r\n                                <button class=\"editCustomerBtn\" (click)=\"editCustomerDetails(toEditCustomerId)\"><i class=\"fa fa-pencil\"></i></button>\r\n                            </div>\r\n\r\n                            <div class=\"customers-heading\">\r\n                                <p>Customers</p>\r\n                            </div>\r\n\r\n                            <div class=\"customer-add\">\r\n                                <button class=\"add-customer\" (click)=\"addCustomerForm()\"><i class=\"fa fa-plus\"></i></button>\r\n                            </div>\r\n\r\n                        </div>\r\n                        <div class=\"search-box-items clearfix\">\r\n\r\n                            <div class=\"search-input clearfix\">\r\n\r\n                                <input type=\"text\" name=\"searchCustomers\" (keyup)=\"searchThisCustomer(this)\" [(ngModel)]=\"searchCustomers\" class=\"form-control\" placeholder=\"Search items by name or sku\">\r\n<!--                                <button class=\"searchCustomerBtn\" (click)=\"searchCustomer()\"><i class=\"fa fa-chevron-right\"></i></button>-->\r\n                                <img src=\"../../assets/img/camera.png\">\r\n                                \r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"list-customers clearfix\">\r\n                            <div class='customer-loader'>  <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i></div>\r\n                            <ul *ngIf=\"customerList\" class=\"listing-customers clearfix\">\r\n\r\n                                <li *ngFor=\"let customersModel of CustomersModel\" class=\"clearfix\">\r\n                                    <a (click)=\"editCustomer(customersModel.id)\" id='{{customersModel.id}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{customersModel.customerName}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{customersModel.customerEmail}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>\r\n\r\n\r\n                            </ul>\r\n\r\n                            <ul *ngIf=\"searchFlag\" class=\"listing-customers clearfix\">\r\n\r\n                                 <li *ngFor=\"let searchedModel of SearchedModel\" class=\"clearfix\">\r\n                                    <a (click)=\"editCustomer(searchedModel.id)\" id='{{searchedModel.id}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{searchedModel.customerName}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{searchedModel.customerEmail}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>                           \r\n\r\n\r\n                            </ul>\r\n\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"new-customer-form\">\r\n\r\n                        <div class=\"close-form\" (click)=\"hideNewCustomerForm()\">&times;</div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <div class=\"fileinput fileinput-new\" data-provides=\"fileinput\">\r\n                                        <div class=\"fileinput-preview thumbnail\" id=\"image-container\" data-trigger=\"fileinput\" style=\"width:120px;height:120px;border-radius:50%;\"></div>\r\n                                        <div>\r\n                                            <span style=\"display:none\" class=\"btn btn-default btn-file\"><span  class=\"fileinput-new\">Select image</span>\r\n                                            <span\r\n                                                class=\"fileinput-exists\">Change</span><input type=\"file\" style=\"display:none\" name=\"...\"></span>\r\n                                                <a href=\"#\" class=\"btn btn-default fileinput-exists remove_image\" data-dismiss=\"fileinput\"><i class=\"fa fa-trash\"></i></a>\r\n                                        </div>\r\n                                    </div>\r\n\r\n\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerNameInput\" name=\"customerName\" [(ngModel)]=\"customerName\" type=\"text\" placeholder=\"Customer Name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <select id=\"select-customer-type\" [(ngModel)]=\"customerType\" class=\"new-form-inputs\">\r\n                             <option  value=\"\" disabled selected>Customer Type</option>\r\n                            <option *ngFor=\"let customerGroup of CustomergroupsModel\" value=\"{{customerGroup.id}}\">{{customerGroup.value}}</option>\r\n                    \r\n                    </select>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerCellPhone\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\"\r\n                                    placeholder=\"Cell Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Work Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerWorkPhone\" [(ngModel)]=\"customerWorkPhone\" type=\"number\" placeholder=\"Work Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerEmail\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Email\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <div class=\"radio\">\r\n                                    <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"male\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                    <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"female\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                </div>\r\n\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n                               <!-- <ng2-datepicker [options]=\"options\" [(ngModel)]=\"customersDOB\"></ng2-datepicker>-->\r\n\r\n                             <input class=\"new-form-inputs\" id=\"customerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n\r\n                            <div class=\"checkbox\">\r\n                                <label><input class=\"shippingCheckbox regular-checkbox\" (change)=\"shippingAddressForm()\" type=\"checkbox\" value=\"shipping\">    Shipping</label>\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"shipping-address-form\">\r\n                            <!-- Shipping Address Form -->\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"Name\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"Phone\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\"  id=\"toShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n                        <!-- Shipping Address Form -->\r\n\r\n\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Personal Discount</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerDiscount\" [(ngModel)]=\"customerDiscount\" type=\"text\" placeholder=\"Discount\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"incompleteForm\">\r\n\r\n                            <p>Please Fill out the form completely!</p>\r\n\r\n                        </div>\r\n\r\n                        <div id=\"loader\">\r\n                            <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"submit-button\">\r\n\r\n                            <button class=\"create-customer\" (click)=\"createCustomer()\">Create Customer</button>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"alert alert-success row margined-top\" id=\"customer-added\">\r\n\r\n                            <p>Customer Created Successfully!</p>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                    <!--- Customer Edit Form -->\r\n\r\n\r\n\r\n\r\n                    <div class=\"edit-customer-form\">\r\n\r\n                        <div class=\"row\">\r\n                            <div class=\"col-md-6\"></div>\r\n                            <div class=\"col-md-6\"> <div class=\"close-edit-form\" (click)=\"hideEditForm()\">&times;</div></div>\r\n                        </div>\r\n                       \r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <div class=\"fileinput fileinput-new\" data-provides=\"fileinput\">\r\n                                        <div class=\"fileinput-preview thumbnail\" id=\"image-container\" data-trigger=\"fileinput\" style=\"width:120px;height:120px;border-radius:50%;\"></div>\r\n                                        <div>\r\n                                            <span style=\"display:none\" class=\"btn btn-default btn-file\"><span  class=\"fileinput-new\">Select image</span>\r\n                                            <span\r\n                                                class=\"fileinput-exists\">Change</span><input type=\"file\" style=\"display:none\" name=\"...\"></span>\r\n                                                <a href=\"#\" class=\"btn btn-default fileinput-exists remove_image\" data-dismiss=\"fileinput\"><i class=\"fa fa-trash\"></i></a>\r\n                                        </div>\r\n                                    </div>\r\n\r\n\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs edit-profile-name\" id=\"editCustomerName\" name=\"customerName\" [(ngModel)]=\"customerName\" type=\"text\" placeholder=\"Customer Name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <select id=\"edit-customer-type\" [(ngModel)]=\"customerType\" class=\"new-form-inputs\">\r\n                             <option  value=\"\" disabled selected>Customer Type</option>\r\n                            <option *ngFor=\"let customerGroup of CustomergroupsModel\" value=\"{{customerGroup.id}}\">{{customerGroup.value}}</option>\r\n                    \r\n                    </select>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerCellPhone\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\"\r\n                                    placeholder=\"Cell Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Work Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"editCustomerWorkPhone\" [(ngModel)]=\"customerWorkPhone\" type=\"number\" placeholder=\"Work Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerEmail\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Email\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <div class=\"radio\">\r\n                                    <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"editGender\" value=\"Male\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                    <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"editGender\" value=\"Female\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                </div>\r\n\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n                               <!-- <ng2-datepicker [options]=\"options\" [(ngModel)]=\"customersDOB\"></ng2-datepicker>-->\r\n\r\n                             <input class=\"new-form-inputs\" id=\"editCustomerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n\r\n                            <div class=\"checkbox\">\r\n                                <label><input class=\"shippingCheckbox regular-checkbox\" (change)=\"shippingAddressForm()\" type=\"checkbox\" value=\"shipping\">    Shipping</label>\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"shipping-address-form\">\r\n                            <!-- Shipping Address Form -->\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"editToShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"Name\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"editToShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"Phone\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\"  id=\"editToShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n                        <!-- Shipping Address Form -->\r\n\r\n\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Personal Discount</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerDiscount\" [(ngModel)]=\"customerDiscount\" type=\"text\" placeholder=\"Discount\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"editincompleteForm\">\r\n\r\n                            <p>Please Fill out the form completely!</p>\r\n\r\n                        </div>\r\n\r\n                        <div id=\"editloader\">\r\n                            <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"update-button\">\r\n\r\n                            <button class=\"create-customer\" (click)=\"updateCustomer()\">Update Customer</button>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"alert alert-success row margined-top\" id=\"customer-updated\">\r\n\r\n                            <p>Customer Updated Successfully!</p>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                    <!-- Customer Edit Form -->\r\n\r\n\r\n                    <!-- Customer Profile to show -->\r\n\r\n                    <div class=\"Customer-full-detail animated\">\r\n\r\n\r\n                        <div class=\"back-to-search-customers\" (click)=\"backToSearchCustomers()\">\r\n                            <i class=\"fa fa-arrow-left\" aria-hidden=\"true\"></i>\r\n                        </div>\r\n\r\n                        <div class=\"\">\r\n\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"left-pic clearfix\">\r\n\r\n                                    <div class=\"profile-pic\">\r\n\r\n                                        <img src=\"../../assets/img/bane.jpg\">\r\n\r\n                                    </div>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"right-name clearfix\">\r\n\r\n                                    <h3 class=\"profile-name\">Tom Hardy</h3>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n\r\n                            <hr>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Cell Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\" placeholder=\"Cell Phone\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Email</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Cell Phone\" readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Gender</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <div class=\"radio\">\r\n                                        <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"Male\" [(ngModel)]=\"customerGender\">\r\n                                        <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                        <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"Female\" [(ngModel)]=\"customerGender\">\r\n                                        <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                    </div>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Date of Birth</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"customerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"customerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <button class=\"reciepts\"><i class=\"fa fa-bar-chart\"></i><p> Orders/Reciepts </p></button>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <button class=\"notes\"><i class=\"fa fa-sticky-note\" aria-hidden=\"true\"></i><p> Notes </p></button>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n                    <!-- Customer Profile to Show-->\r\n\r\n\r\n                    <div class=\"customer-profile-tab\">\r\n\r\n                        <div class=\"customers-tab clearfix\">\r\n\r\n                            <div class=\"unselect-customer\">\r\n                                <button><i class=\"fa fa-times-circle-o\" aria-hidden=\"true\"></i></button>\r\n                            </div>\r\n                            <div class=\"customers-heading\">\r\n                                <p>Customers</p>\r\n                            </div>\r\n\r\n                            <div class=\"customer-edit\">\r\n                                <button class=\"add-customer\"><i class=\"fa fa-pencil\"></i></button>\r\n                            </div>\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <img src=\"../../assets/img/bane.jpg\">\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <h3 class=\"profile-name\">Tom Hardy</h3>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">--</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Code</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">9876</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">(001)-7524-3422</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">bane@gothamcity.com</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">Male</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">26-05-1993</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">Arkhan City Asylum</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <button class=\"reciepts\"><i class=\"fa fa-bar-chart\"></i><p> Orders/Reciepts </p></button>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <button class=\"notes\"><i class=\"fa fa-sticky-note\" aria-hidden=\"true\"></i><p> Notes </p></button>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                </div>\r\n\r\n\r\n\r\n                <div id=\"categories-tab\" class=\"tab-pane fade in active clearfix\">\r\n\r\n                    <div class=\"background-added\">\r\n\r\n                        <div class=\"categories-tab clearfix\">\r\n\r\n                            <div class=\"box\">\r\n                                <a class=\"no-link\" (click)=\"setAll()\">\r\n                                    <div class=\"cat-image circle-box\">\r\n                                        <p class=\"all-text\">All</p>\r\n                                    </div>\r\n                                    <h3>All</h3>\r\n                                </a>\r\n                            </div>\r\n\r\n\r\n                            <div *ngFor=\"let categories of categories\" class=\"box\">\r\n                                <a class=\"no-link\" (click)=\"ShowProductsForCategories(categories.id)\" id=\"{{categories.id}}\">\r\n                                    <div class=\"cat-image\">\r\n                                        <img src=\"{{categories.imageURL}}\">\r\n                                    </div>\r\n                                    <h3>{{categories.name}}</h3>\r\n                                </a>\r\n                            </div>\r\n\r\n\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"search-box-items\">\r\n\r\n                            <div class=\"search-input\">\r\n                                <input type=\"text\" name=\"searchProduct\" [(ngModel)]=\"searchProduct\" (keyup)=\"searchThisProduct(this)\" class=\"form-control\" placeholder=\"Search items by name or sku\">\r\n                               <!-- <button class=\"searchCustomerBtn\"><i class=\"fa fa-chevron-right\"></i></button>-->\r\n                                <img src=\"../../assets/img/camera.png\">\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                    <div *ngIf=\"detailFlag\" class=\"product-detail-tab animated\">\r\n\r\n                        <div class=\"backToProducts\" (click)=\"backToProducts()\">\r\n                            <i class=\"fa fa-arrow-left\"></i>\r\n                        </div>\r\n\r\n                        <div class=\"looping\">\r\n\r\n                            <div class=\"product-heading\">\r\n                                <h2>{{productDetailModel.Name}}</h2>\r\n                            </div>\r\n\r\n                            \r\n                        <div class=\"optionsDiv\" *ngIf=\"OptionsCheck\">\r\n\r\n                            <div class=\"product-size clearfix\">\r\n                                \r\n                                <div class=\"check-exists\" *ngIf=\"sizeCheck\">\r\n                                    <h2 class=\"product-properties\">Size</h2>\r\n                                    <div class=\"size-box-wrapper\" *ngFor=\"let productDetails of productDetailModel.Options.size\">\r\n                                        \r\n                                        <div class=\"size-box\" (click)=\"sizevalues($event,productDetails.size,productDetails.Price)\"> \r\n                                            <div class=\"overlay\"></div>\r\n                                            <h3>{{productDetails.size}}</h3>\r\n                                            <p class='extra-price'>+ AED{{productDetails.Price}}</p>\r\n                                        </div>\r\n                                    </div>\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n\r\n\r\n                            <div class=\"product-box-variation clearfix\">\r\n\r\n\r\n\r\n                                <div class=\"row check-exists\" *ngIf=\"boxCheck\">\r\n                                    <h2 class=\"product-properties\">Box Color</h2>\r\n                                    <div class=\"product-box-variation-wrapper clearfix\" *ngFor=\"let productDetails of productDetailModel.Options.color\">\r\n                                        <div class=\"product-variation-box\" (click)=\"colorvalues($event,productDetails.color)\">\r\n                                            <div class=\"overlay\"></div>\r\n                                            <h3>{{productDetails.color}}</h3>\r\n                                        </div>\r\n                                    </div>\r\n                                </div>\r\n\r\n\r\n                                <div class=\"row check-exists\" *ngIf=\"boxTypeCheck\">\r\n                                    <h2 class=\"product-properties\">Box Type</h2>\r\n                                    <div id=\"box-type\" class=\"product-box-variation-wrapper clearfix\" *ngFor=\"let productDetails of productDetailModel.Options.box\">\r\n                                        <div class=\"product-variation-box\" (click)=\"boxtype($event,productDetails.box,productDetails.Price)\">\r\n                                            <div class=\"overlay\"></div>\r\n                                            <h3>{{productDetails.box}}</h3>\r\n                                            <p>+ AED{{productDetails.Price}}</p>\r\n                                        </div>\r\n                                    </div>\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-6 col-xs-6' style=\"padding-left:0;\">\r\n                                    <h2 class=\"product-properties\">In Stock</h2>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    <p class=\"quantity-value\">{{productDetailModel.Quantity}}</p>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-6 col-xs-6' style=\"padding-left:0;\">\r\n                                    <h2 class=\"product-properties\">Quantity</h2>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    <div class=\"quantity\" id=\"prod-quantity\">\r\n                                        <input type=\"number\" id=\"num_val\" min=\"1\" max=\"{{productDetailModel.Quantity}}\" class='qty' step=\"1\" value=\"1\">\r\n                                        <div class=\"quantity-nav\">\r\n                                            <div class=\"quantity-button quantity-up qtyplus \" field='quantity' (click)=\"Upping(productDetailModel.Quantity)\">+</div>\r\n                                            <div class=\"quantity-button quantity-down qtyminus\"  field='quantity' (click)=\"Downing()\">-</div>\r\n                                        </div>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert size-alert alert-danger\">Please select a Size</div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert box-alert alert-danger\">Please select Box Type</div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert color-alert alert-danger\">Please select a Color</div>\r\n                            </div>\r\n\r\n                            <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-12 col-xs-12' style=\"padding-left:0;\">\r\n                                    <button class=\"add-to-cart\" (click)=\"addtoCart(productDetailModel)\">Add To Cart</button>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    \r\n                                </div>\r\n                            </div>\r\n\r\n\r\n\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n\r\n                    <div class=\"products-list animated\">\r\n\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='allProducts'>\r\n                            <div class=\"box\" *ngFor=\"let Product of searchproductModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat1'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat2'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat3'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat4'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                </div>\r\n\r\n                <div id=\"receipts\" class=\"tab-pane fade\">\r\n\r\n\r\n\r\n                    <div class=\"customers-tab clearfix\">\r\n\r\n                        <div class=\"customers-heading\">\r\n                            <p>Receipts</p>\r\n                        </div>\r\n\r\n                    </div>\r\n                    <div class=\"search-box-items\">\r\n\r\n                        <div class=\"row\">\r\n                            <div class=\"col-md-6 col-sm-6 col-xs-6\">\r\n                                <p>Date</p>\r\n                            </div>\r\n                            <div class=\"col-md-6 col-sm-6 col-xs-6\">\r\n                                <span>Count:</span>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div id=\"reciepts-data\">\r\n\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div class=\"cart-footer clearfix\">\r\n\r\n                        <div class=\"row\">\r\n\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                </div>\r\n                <div id=\"menu3\" class=\"tab-pane fade\">\r\n                    <h3>Menu 3</h3>\r\n                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>\r\n                </div>\r\n            </div>\r\n\r\n\r\n        </div>\r\n\r\n\r\n\r\n    </div>\r\n\r\n    </perfect-scrollbar>\r\n</div>"
+module.exports = "<div class=\"login-wrap\">\r\n\t<div class=\"login-html\">\r\n\t\t<input id=\"tab-1\" type=\"radio\" name=\"tab\" class=\"sign-in\" checked><label for=\"tab-1\" class=\"tab\">Sign In</label>\r\n\t\t<input id=\"tab-2\" type=\"radio\" name=\"tab\" class=\"sign-up\"><label for=\"tab-2\" class=\"tab\"></label>\r\n\t\t<div class=\"login-form\">\r\n\t\t\t<div class=\"sign-in-htm\">\r\n\t\t\t\t<div class=\"group\">\r\n\t\t\t\t\t<label for=\"user\" class=\"label\">Username</label>\r\n\t\t\t\t\t<input id=\"user\" type=\"text\" name=\"Email\" [(ngModel)]=\"Email\" class=\"input\">\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"group\">\r\n\t\t\t\t\t<label for=\"pass\" class=\"label\">Password</label>\r\n\t\t\t\t\t<input id=\"pass\" type=\"password\" name=\"Password\" [(ngModel)]=\"Password\"  class=\"input\" data-type=\"password\">\r\n\t\t\t\t</div>\r\n\t\t\t\r\n\r\n        <div class=\"group\" id=\"enterEmail\">\r\n               <p>Enter your email</p>\r\n\t\t\t\t</div>\r\n\r\n        <div class=\"group\" id=\"enterPassword\">\r\n               <p>Enter your password</p>\r\n\t\t\t\t</div>\r\n\r\n        <div class=\"group\" id=\"wrongEmail\">\r\n               <p>Enter a valid email</p>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"group\" id=\"wrongCreds\">\r\n               <p>Enter valid credentials</p>\r\n\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t<div class=\"group\">\r\n\t\t\t\t\t<input type=\"submit\" (click)=\"Submitting()\" class=\"button\" value=\"Sign In\">\r\n\t\t\t\t</div>\r\n\r\n        <div id=\"loader\">\r\n<i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n        </div>\r\n        \r\n\t\t\t\t<div class=\"hr\"></div>\r\n<!--\t\t\t\t<div class=\"foot-lnk\">\r\n\t\t\t\t\t<a href=\"#forgot\">Forgot Password?</a>\r\n\t\t\t\t</div>-->\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\t</div>\r\n</div>"
 
 /***/ }),
 /* 523 */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<div id=\"mySidenav\" class=\"sidenav\">\r\n \r\n   <ul class=\"sidebar-list\">\r\n  \r\n<li><i class=\"fa fa-sign-in\" aria-hidden=\"true\"></i><p>Register<p></li>\r\n<li><i class=\"fa fa-users\" aria-hidden=\"true\"></i><p>Customers<p></li>\r\n<li><i class=\"fa fa-cog\" aria-hidden=\"true\"></i><p>My Company<p></li>\r\n<li><i class=\"fa fa-cloud\" aria-hidden=\"true\"></i><p>Back Office<p></li>\r\n<li><i class=\"fa fa-question\" aria-hidden=\"true\"></i><p>Help<p></li>\r\n<li><i class=\"fa fa-bars\" aria-hidden=\"true\"></i><p>Add Ons<p></li>\r\n<li><a [routerLink]=\" ['/']\" (click)=\"logout()\"><i class=\"fa fa-lock\" aria-hidden=\"true\"></i><p>Sign Out<p></a></li>\r\n   <!--<div class=\"sync-button\">\r\n        <i class=\"fa fa-cloud\"></i><p>Sync</p>\r\n    </div>-->\r\n</ul>\r\n\r\n\r\n</div>\r\n\r\n<!-- Use any element to open the sidenav -->\r\n"
+module.exports = "\r\n<div class=\"row products-row\">\r\n\r\n\r\n\r\n\r\n\r\n<perfect-scrollbar  [config]=\"config\">\r\n    <div class=\"main-content \">\r\n\r\n\r\n\r\n        <div class=\"nav-tabs\">\r\n\r\n            <ul class=\"nav nav-pills\">\r\n                <li><a (click)=\"changePill($event)\" data-target=\"customers\" data-toggle=\"pill\"><i (click)=\"changePill($event)\" data-target=\"customers\" class=\"fa fa-user\"></i></a></li>\r\n                <li class=\"active\"><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"categories-tab\"><i (click)=\"changePill($event)\" data-target=\"categories-tab\" class=\"fa fa-bars\"></i></a></li>\r\n                <li><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"receipts\"><i (click)=\"changePill($event)\" data-target=\"receipts\" class=\"fa fa-ticket\"></i></a></li>\r\n                <li><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"menu3\"><i (click)=\"changePill($event)\" data-target=\"menu3\" class=\"fa fa-male\"></i></a></li>\r\n            </ul>\r\n\r\n        </div>\r\n\r\n\r\n        <div class=\"nav-content\">\r\n\r\n\r\n            <div class=\"tab-content\">\r\n\r\n\r\n                <div id=\"customers\" class=\"tab-pane fade clearfix\">\r\n\r\n\r\n                    <div class=\"search-customer\">\r\n\r\n                        <div class=\"customers-tab clearfix\">\r\n\r\n                            <div class=\"editCustomer\">\r\n                                <button class=\"editCustomerBtn\" (click)=\"editCustomerDetails(toEditCustomerId)\"><i class=\"fa fa-pencil\"></i></button>\r\n                            </div>\r\n\r\n                            <div class=\"customers-heading\">\r\n                                <p>Customers</p>\r\n                            </div>\r\n\r\n                            <div class=\"customer-add\">\r\n                                <button class=\"add-customer\" (click)=\"addCustomerForm()\"><i class=\"fa fa-plus\"></i></button>\r\n                            </div>\r\n\r\n                        </div>\r\n                        <div class=\"search-box-items clearfix\">\r\n\r\n                            <div class=\"search-input clearfix\">\r\n\r\n                                <input type=\"text\" name=\"searchCustomers\" (keyup)=\"searchThisCustomer(this)\" [(ngModel)]=\"searchCustomers\" class=\"form-control\" placeholder=\"Search items by name or sku\">\r\n\r\n                                <img src=\"../../assets/img/camera.png\">\r\n                                \r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"list-customers clearfix\">\r\n                            <div class='customer-loader'>  <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i></div>\r\n                            <ul *ngIf=\"customerList\" class=\"listing-customers clearfix\">\r\n\r\n                                <li *ngFor=\"let customersModel of CustomersModel\" class=\"clearfix\">\r\n                                    <a (click)=\"editCustomer(customersModel.id)\" id='{{customersModel.id}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{customersModel.customerName}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{customersModel.customerEmail}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>\r\n\r\n\r\n                            </ul>\r\n\r\n                            <ul *ngIf=\"searchFlag\" class=\"listing-customers clearfix\">\r\n\r\n                                 <li *ngFor=\"let searchedModel of SearchedModel\" class=\"clearfix\">\r\n                                    <a (click)=\"editCustomer(searchedModel.id)\" id='{{searchedModel.id}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{searchedModel.customerName}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{searchedModel.customerEmail}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>                           \r\n\r\n\r\n                            </ul>\r\n\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"new-customer-form\">\r\n\r\n                        <div class=\"close-form\" (click)=\"hideNewCustomerForm()\">&times;</div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <div class=\"fileinput fileinput-new\" data-provides=\"fileinput\">\r\n                                        <div class=\"fileinput-preview thumbnail\" id=\"image-container\" data-trigger=\"fileinput\" style=\"width:120px;height:120px;border-radius:50%;\"></div>\r\n                                        <div>\r\n                                            <span style=\"display:none\" class=\"btn btn-default btn-file\"><span  class=\"fileinput-new\">Select image</span>\r\n                                            <span\r\n                                                class=\"fileinput-exists\">Change</span><input type=\"file\" style=\"display:none\" name=\"...\"></span>\r\n                                                <a href=\"#\" class=\"btn btn-default fileinput-exists remove_image\" data-dismiss=\"fileinput\"><i class=\"fa fa-trash\"></i></a>\r\n                                        </div>\r\n                                    </div>\r\n\r\n\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerNameInput\" name=\"customerName\" [(ngModel)]=\"customerName\" type=\"text\" placeholder=\"Customer Name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <select id=\"select-customer-type\" [(ngModel)]=\"customerType\" class=\"new-form-inputs\">\r\n                             <option  value=\"\" disabled selected>Customer Type</option>\r\n                            <option *ngFor=\"let customerGroup of CustomergroupsModel\" value=\"{{customerGroup.id}}\">{{customerGroup.value}}</option>\r\n                    \r\n                    </select>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerCellPhone\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\"\r\n                                    placeholder=\"Cell Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Work Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerWorkPhone\" [(ngModel)]=\"customerWorkPhone\" type=\"number\" placeholder=\"Work Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerEmail\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Email\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <div class=\"radio\">\r\n                                    <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"male\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                    <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"female\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                </div>\r\n\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n                               <!-- <ng2-datepicker [options]=\"options\" [(ngModel)]=\"customersDOB\"></ng2-datepicker>-->\r\n\r\n                             <input class=\"new-form-inputs\" id=\"customerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n\r\n                            <div class=\"checkbox\">\r\n                                <label><input class=\"shippingCheckbox regular-checkbox\" (change)=\"shippingAddressForm()\" type=\"checkbox\" value=\"shipping\">    Shipping</label>\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"shipping-address-form\">\r\n                            <!-- Shipping Address Form -->\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"Name\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"Phone\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\"  id=\"toShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n                        <!-- Shipping Address Form -->\r\n\r\n\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Personal Discount</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerDiscount\" [(ngModel)]=\"customerDiscount\" type=\"text\" placeholder=\"Discount\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"incompleteForm\">\r\n\r\n                            <p>Please Fill out the form completely!</p>\r\n\r\n                        </div>\r\n\r\n                        <div id=\"loader\">\r\n                            <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"submit-button\">\r\n\r\n                            <button class=\"create-customer\" (click)=\"createCustomer()\">Create Customer</button>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"alert alert-success row margined-top\" id=\"customer-added\">\r\n\r\n                            <p>Customer Created Successfully!</p>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                    <!--- Customer Edit Form -->\r\n\r\n\r\n\r\n\r\n                    <div class=\"edit-customer-form\">\r\n\r\n                        <div class=\"row\">\r\n                            <div class=\"col-md-6\"></div>\r\n                            <div class=\"col-md-6\"> <div class=\"close-edit-form\" (click)=\"hideEditForm()\">&times;</div></div>\r\n                        </div>\r\n                       \r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <div class=\"fileinput fileinput-new\" data-provides=\"fileinput\">\r\n                                        <div class=\"fileinput-preview thumbnail\" id=\"image-container\" data-trigger=\"fileinput\" style=\"width:120px;height:120px;border-radius:50%;\"></div>\r\n                                        <div>\r\n                                            <span style=\"display:none\" class=\"btn btn-default btn-file\"><span  class=\"fileinput-new\">Select image</span>\r\n                                            <span\r\n                                                class=\"fileinput-exists\">Change</span><input type=\"file\" style=\"display:none\" name=\"...\"></span>\r\n                                                <a href=\"#\" class=\"btn btn-default fileinput-exists remove_image\" data-dismiss=\"fileinput\"><i class=\"fa fa-trash\"></i></a>\r\n                                        </div>\r\n                                    </div>\r\n\r\n\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs edit-profile-name\" id=\"editCustomerName\" name=\"customerName\" [(ngModel)]=\"customerName\" type=\"text\" placeholder=\"Customer Name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <select id=\"edit-customer-type\" [(ngModel)]=\"customerType\" class=\"new-form-inputs\">\r\n                             <option  value=\"\" disabled selected>Customer Type</option>\r\n                            <option *ngFor=\"let customerGroup of CustomergroupsModel\" value=\"{{customerGroup.id}}\">{{customerGroup.value}}</option>\r\n                    \r\n                    </select>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerCellPhone\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\"\r\n                                    placeholder=\"Cell Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Work Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"editCustomerWorkPhone\" [(ngModel)]=\"customerWorkPhone\" type=\"number\" placeholder=\"Work Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerEmail\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Email\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <div class=\"radio\">\r\n                                    <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"editGender\" value=\"Male\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                    <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"editGender\" value=\"Female\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                </div>\r\n\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n                               <!-- <ng2-datepicker [options]=\"options\" [(ngModel)]=\"customersDOB\"></ng2-datepicker>-->\r\n\r\n                             <input class=\"new-form-inputs\" id=\"editCustomerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n\r\n                            <div class=\"checkbox\">\r\n                                <label><input class=\"shippingCheckbox regular-checkbox\" (change)=\"shippingAddressForm()\" type=\"checkbox\" value=\"shipping\">    Shipping</label>\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"shipping-address-form\">\r\n                            <!-- Shipping Address Form -->\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"editToShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"Name\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"editToShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"Phone\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\"  id=\"editToShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n                        <!-- Shipping Address Form -->\r\n\r\n\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Personal Discount</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerDiscount\" [(ngModel)]=\"customerDiscount\" type=\"text\" placeholder=\"Discount\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"editincompleteForm\">\r\n\r\n                            <p>Please Fill out the form completely!</p>\r\n\r\n                        </div>\r\n\r\n                        <div id=\"editloader\">\r\n                            <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"update-button\">\r\n\r\n                            <button class=\"create-customer\" (click)=\"updateCustomer()\">Update Customer</button>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"alert alert-success row margined-top\" id=\"customer-updated\">\r\n\r\n                            <p>Customer Updated Successfully!</p>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                    <!-- Customer Edit Form -->\r\n\r\n\r\n                    <!-- Customer Profile to show -->\r\n\r\n                    <div class=\"Customer-full-detail animated\">\r\n\r\n\r\n                        <div class=\"back-to-search-customers\" (click)=\"backToSearchCustomers()\">\r\n                              <img src=\"/assets/img/left.png\">\r\n                        </div>\r\n\r\n                        <div class=\"\">\r\n\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"left-pic clearfix\">\r\n\r\n                                    <div class=\"profile-pic\">\r\n\r\n                                        <img src=\"../../assets/img/bane.jpg\">\r\n\r\n                                    </div>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"right-name clearfix\">\r\n\r\n                                    <h3 class=\"profile-name\">Tom Hardy</h3>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n\r\n                            <hr>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Cell Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\" placeholder=\"Cell Phone\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Email</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Cell Phone\" readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Gender</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <div class=\"radio\">\r\n                                        <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"Male\" [(ngModel)]=\"customerGender\">\r\n                                        <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                        <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"Female\" [(ngModel)]=\"customerGender\">\r\n                                        <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                    </div>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Date of Birth</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"customerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"customerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <button class=\"reciepts\"><i class=\"fa fa-bar-chart\"></i><p> Orders/Reciepts </p></button>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <button class=\"notes\"><i class=\"fa fa-sticky-note\" aria-hidden=\"true\"></i><p> Notes </p></button>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n                    <!-- Customer Profile to Show-->\r\n\r\n\r\n                    <div class=\"customer-profile-tab\">\r\n\r\n                        <div class=\"customers-tab clearfix\">\r\n\r\n                            <div class=\"unselect-customer\">\r\n                                <button><i class=\"fa fa-times-circle-o\" aria-hidden=\"true\"></i></button>\r\n                            </div>\r\n                            <div class=\"customers-heading\">\r\n                                <p>Customers</p>\r\n                            </div>\r\n\r\n                            <div class=\"customer-edit\">\r\n                                <button class=\"add-customer\"><i class=\"fa fa-pencil\"></i></button>\r\n                            </div>\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <img src=\"../../assets/img/bane.jpg\">\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <h3 class=\"profile-name\">Tom Hardy</h3>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">--</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Code</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">9876</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">(001)-7524-3422</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">bane@gothamcity.com</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">Male</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">26-05-1993</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">Arkhan City Asylum</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <button class=\"reciepts\"><i class=\"fa fa-bar-chart\"></i><p> Orders/Reciepts </p></button>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <button class=\"notes\"><i class=\"fa fa-sticky-note\" aria-hidden=\"true\"></i><p> Notes </p></button>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                </div>\r\n\r\n\r\n\r\n                <div id=\"categories-tab\" class=\"tab-pane fade in active clearfix\">\r\n\r\n                    <div class=\"background-added\">\r\n\r\n                        <div class=\"categories-tab clearfix\">\r\n\r\n                            <div class=\"box\">\r\n                                <a class=\"no-link\" (click)=\"setAll()\">\r\n                                    <div class=\"cat-image circle-box\">\r\n                                        <p class=\"all-text\">All</p>\r\n                                    </div>\r\n                                    <h3>All</h3>\r\n                                </a>\r\n                            </div>\r\n\r\n\r\n                            <div *ngFor=\"let categories of categories\" class=\"box\">\r\n                                <a class=\"no-link\" (click)=\"ShowProductsForCategories(categories.id)\" id=\"{{categories.id}}\">\r\n                                    <div class=\"cat-image\">\r\n                                        <img src=\"{{categories.imageURL}}\">\r\n                                    </div>\r\n                                    <h3>{{categories.name}}</h3>\r\n                                </a>\r\n                            </div>\r\n\r\n\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"search-box-items\">\r\n\r\n                            <div class=\"search-input\">\r\n                                <input type=\"text\" name=\"searchProduct\" [(ngModel)]=\"searchProduct\" (keyup)=\"searchThisProduct(this)\" class=\"form-control\" placeholder=\"Search items by name or sku\">\r\n                               <!-- <button class=\"searchCustomerBtn\"><i class=\"fa fa-chevron-right\"></i></button>-->\r\n                                <img src=\"../../assets/img/camera.png\">\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                    <div *ngIf=\"detailFlag\" class=\"product-detail-tab animated\">\r\n\r\n                        <div class=\"backToProducts\" (click)=\"backToProducts()\">\r\n                            <img src=\"/assets/img/left.png\">\r\n                        </div>\r\n\r\n                        <div class=\"looping\">\r\n\r\n                            <div class=\"product-heading\">\r\n                                <h2>{{productDetailModel.Name}}</h2>\r\n                            </div>\r\n\r\n                            \r\n                        <div class=\"optionsDiv\" *ngIf=\"OptionsCheck\">\r\n\r\n                            <div class=\"product-size clearfix\">\r\n                                \r\n                                <div class=\"check-exists\" *ngIf=\"sizeCheck\">\r\n                                    <h2 class=\"product-properties\">Size</h2>\r\n                                    <div class=\"size-box-wrapper\" *ngFor=\"let productDetails of productDetailModel.Options.size\">\r\n                                        \r\n                                        <button class=\"size-box\" (click)=\"sizevalues($event,productDetails.size,productDetails.Price)\"> \r\n        \r\n                                            {{productDetails.size}}<br>\r\n                                            + AED{{productDetails.Price}}\r\n                                        </button>\r\n                                    </div>\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n\r\n\r\n                            <div class=\"product-box-variation clearfix\">\r\n\r\n\r\n\r\n                                <div class=\"row check-exists\" *ngIf=\"boxCheck\">\r\n                                    <h2 class=\"product-properties\">Box Color</h2>\r\n                                    <div class=\"product-box-variation-wrapper clearfix\" *ngFor=\"let productDetails of productDetailModel.Options.color\">\r\n                                        <button class=\"product-variation-box boxColor\" (click)=\"colorvalues($event,productDetails.color)\">\r\n                                            {{productDetails.color}}\r\n                                        </button>\r\n                                    </div>\r\n                                </div>\r\n\r\n\r\n                                <div class=\"row check-exists\" *ngIf=\"boxTypeCheck\">\r\n                                    <h2 class=\"product-properties\">Box Type</h2>\r\n                                    <div id=\"box-type\" class=\"product-box-variation-wrapper clearfix\" *ngFor=\"let productDetails of productDetailModel.Options.box\">\r\n                                        <button class=\"product-variation-box\" (click)=\"boxtype($event,productDetails.box,productDetails.Price)\">\r\n                                        \r\n                                            {{productDetails.box}}<br>\r\n                                            + AED{{productDetails.Price}}\r\n                                        </button>\r\n                                    </div>\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-6 col-xs-6' style=\"padding-left:0;\">\r\n                                    <h2 class=\"product-properties\">In Stock</h2>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    <p class=\"quantity-value\">{{productDetailModel.Quantity}}</p>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-6 col-xs-6' style=\"padding-left:0;\">\r\n                                    <h2 class=\"product-properties\">Quantity</h2>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    <div class=\"quantity\" id=\"prod-quantity\">\r\n                                        <input type=\"number\" id=\"num_val\" min=\"1\" max=\"{{productDetailModel.Quantity}}\" class='qty' step=\"1\" value=\"1\" readonly>\r\n                                        <div class=\"quantity-nav\">\r\n                                            <div class=\"quantity-button quantity-up qtyplus \" field='quantity' (click)=\"Upping(productDetailModel.Quantity)\">+</div>\r\n                                            <div class=\"quantity-button quantity-down qtyminus\"  field='quantity' (click)=\"Downing()\">-</div>\r\n                                        </div>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert size-alert alert-danger\">Please select a Size</div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert box-alert alert-danger\">Please select Box Type</div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert color-alert alert-danger\">Please select a Color</div>\r\n                            </div>\r\n\r\n                            <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-12 col-xs-12' style=\"padding-left:0;\">\r\n                                    <button class=\"add-to-cart\" (click)=\"addtoCart(productDetailModel)\">Add To Cart</button>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    \r\n                                </div>\r\n                            </div>\r\n\r\n\r\n\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n\r\n                    <div class=\"products-list animated\">\r\n\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='allProducts'>\r\n                            <div class=\"box\" *ngFor=\"let Product of searchproductModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat1'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat2'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat3'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat4'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                </div>\r\n\r\n                <div id=\"receipts\" class=\"tab-pane fade\">\r\n\r\n\r\n\r\n                    <div class=\"customers-tab clearfix\">\r\n\r\n                        <div class=\"customers-heading\">\r\n                            <p>Receipts</p>\r\n                        </div>\r\n\r\n                    </div>\r\n                    <div class=\"search-box-items-reciept\">\r\n\r\n                    <div class=\"row clearfix order-types-row\">\r\n\r\n                        <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                              <button class=\"order-types\" id=\"cashOnDelivery\" (click)=\"getOnDeliveryOrders($event)\">On Delivery</button>\r\n                            </div>\r\n                         <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                             <button class=\"order-types\" (click)=\"getOnCashOrders($event)\">Cash</button>\r\n                            </div>\r\n\r\n                         <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                             <button class=\"order-types\">Credit Card</button>\r\n                            </div>\r\n\r\n                         <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                             <button class=\"order-types\">3rd Party</button>\r\n                            </div>\r\n\r\n\r\n                     </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div id=\"reciepts-data\">\r\n\r\n\r\n                        <ul  class=\"listing-customers clearfix\">\r\n\r\n                                <li *ngFor=\"let order of tempOrders\" class=\"clearfix\">\r\n                                    <a (click)=\"getDetailedOrder(order.Customer.OrderID)\" id='{{order.Customer.OrderID}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{order.Customer.Date}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{order.Billing.Name}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>\r\n\r\n\r\n                        </ul>\r\n\r\n\r\n\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div id=\"orderDetail\">\r\n\r\n                        <div class=\"info-holder\" *ngIf='orderDetailFlag'>\r\n                                            \r\n                        <div class=\"billing-section\">\r\n                            <div class=\"back-to-orders\" (click)=\"backToOrders()\">\r\n                                                <img src=\"/assets/img/left.png\">\r\n                                            </div>\r\n                            <div class=\"order-section\">\r\n                                <h3 class=\"order-heading\">Order Information</h3>\r\n                                <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.OrderID}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Total}}</p>\r\n                            </div>\r\n                            <div class=\"billing-name\">\r\n                                <h3 class=\"order-heading\">Billing Information</h3>\r\n                                <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Billing.Name}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Billing.Phone}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Billing.Address}}</p>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"customer-detail-section\">\r\n                            <h3 class=\"order-heading\">Customer Details</h3>\r\n                            <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.OrderID}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Name}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Email}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Date}}</p>\r\n                        </div>\r\n                        <div class=\"products-section\">\r\n                            <h3 class=\"order-heading\">Product Details</h3>\r\n                            <hr>\r\n                            <table class=\"table table-striped\">\r\n                                <thead>\r\n                                <tr>\r\n                                    <th>Product Name</th>\r\n                                    <th>Product Price</th>\r\n                                    <th>Product Sku</th>\r\n                                    <th>Product Options</th>\r\n                                </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                <tr *ngFor=\"let products of orderDetail.Products\">\r\n                                    <td>{{products.ProductName}}</td>\r\n                                    <td>{{products.ProductPrice}}</td>\r\n                                    <td>{{products.ProductSku}}</td>\r\n                                    <td>{{products.ProductName}}</td>\r\n                                </tr>\r\n                                </tbody>\r\n                            </table>\r\n\r\n\r\n                           \r\n                        </div>\r\n                        <div class=\"shipping-info-section\">\r\n                                <h3 class=\"order-heading\">Shipping Information</h3>\r\n                                <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Shipping.Name}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Shipping.Phone}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Shipping.Address}}</p>\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div class=\"cart-footer clearfix\">\r\n\r\n                        <div class=\"row\">\r\n\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n                    </div>\r\n\r\n                </div>\r\n                <div id=\"menu3\" class=\"tab-pane fade\">\r\n                    <h3>Menu 3</h3>\r\n                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>\r\n                </div>\r\n            </div>\r\n\r\n\r\n        </div>\r\n\r\n\r\n\r\n    </div>\r\n\r\n    </perfect-scrollbar>\r\n</div>"
 
 /***/ }),
 /* 524 */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<div id=\"mySidenav\" class=\"sidenav\">\r\n \r\n   <ul class=\"sidebar-list\">\r\n  \r\n<li><i class=\"fa fa-sign-in\" aria-hidden=\"true\"></i><p>Register<p></li>\r\n<li><i class=\"fa fa-users\" aria-hidden=\"true\"></i><p>Customers<p></li>\r\n<li><i class=\"fa fa-cog\" aria-hidden=\"true\"></i><p>My Company<p></li>\r\n<li><a href=\"#\" (click)=\"showBackOffice()\"><i class=\"fa fa-cloud\" aria-hidden=\"true\"></i><p>Back Office<p></a></li>\r\n<li><i class=\"fa fa-question\" aria-hidden=\"true\"></i><p>Help<p></li>\r\n<li><i class=\"fa fa-bars\" aria-hidden=\"true\"></i><p>Add Ons<p></li>\r\n<li><a [routerLink]=\" ['/']\" (click)=\"logout()\"><i class=\"fa fa-lock\" aria-hidden=\"true\"></i><p>Sign Out<p></a></li>\r\n   <!--<div class=\"sync-button\">\r\n        <i class=\"fa fa-cloud\"></i><p>Sync</p>\r\n    </div>-->\r\n</ul>\r\n\r\n\r\n</div>\r\n\r\n<!-- Use any element to open the sidenav -->\r\n"
+
+/***/ }),
+/* 525 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101066,7 +101377,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subject_1 = __webpack_require__(63);
-var ObjectUnsubscribedError_1 = __webpack_require__(283);
+var ObjectUnsubscribedError_1 = __webpack_require__(284);
 /**
  * @class BehaviorSubject<T>
  */
@@ -101110,7 +101421,7 @@ exports.BehaviorSubject = BehaviorSubject;
 //# sourceMappingURL=BehaviorSubject.js.map
 
 /***/ }),
-/* 525 */
+/* 526 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101152,7 +101463,7 @@ exports.InnerSubscriber = InnerSubscriber;
 //# sourceMappingURL=InnerSubscriber.js.map
 
 /***/ }),
-/* 526 */
+/* 527 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101285,7 +101596,7 @@ exports.Notification = Notification;
 //# sourceMappingURL=Notification.js.map
 
 /***/ }),
-/* 527 */
+/* 528 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101295,7 +101606,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscription_1 = __webpack_require__(78);
+var Subscription_1 = __webpack_require__(79);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -101331,18 +101642,18 @@ exports.SubjectSubscription = SubjectSubscription;
 //# sourceMappingURL=SubjectSubscription.js.map
 
 /***/ }),
-/* 528 */
+/* 529 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(11);
-var of_1 = __webpack_require__(281);
+var of_1 = __webpack_require__(282);
 Observable_1.Observable.of = of_1.of;
 //# sourceMappingURL=of.js.map
 
 /***/ }),
-/* 529 */
+/* 530 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101353,7 +101664,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(11);
-var ScalarObservable_1 = __webpack_require__(279);
+var ScalarObservable_1 = __webpack_require__(280);
 var EmptyObservable_1 = __webpack_require__(109);
 /**
  * We need this JSDoc comment for affecting ESDoc.
@@ -101418,7 +101729,7 @@ exports.ArrayLikeObservable = ArrayLikeObservable;
 //# sourceMappingURL=ArrayLikeObservable.js.map
 
 /***/ }),
-/* 530 */
+/* 531 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101431,7 +101742,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Subject_1 = __webpack_require__(63);
 var Observable_1 = __webpack_require__(11);
 var Subscriber_1 = __webpack_require__(20);
-var Subscription_1 = __webpack_require__(78);
+var Subscription_1 = __webpack_require__(79);
 /**
  * @class ConnectableObservable<T>
  */
@@ -101586,7 +101897,7 @@ var RefCountSubscriber = (function (_super) {
 //# sourceMappingURL=ConnectableObservable.js.map
 
 /***/ }),
-/* 531 */
+/* 532 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101598,9 +101909,9 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(11);
 var EmptyObservable_1 = __webpack_require__(109);
-var isArray_1 = __webpack_require__(79);
-var subscribeToResult_1 = __webpack_require__(80);
-var OuterSubscriber_1 = __webpack_require__(77);
+var isArray_1 = __webpack_require__(80);
+var subscribeToResult_1 = __webpack_require__(81);
+var OuterSubscriber_1 = __webpack_require__(78);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -101704,7 +102015,7 @@ var ForkJoinSubscriber = (function (_super) {
 //# sourceMappingURL=ForkJoinObservable.js.map
 
 /***/ }),
-/* 532 */
+/* 533 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101714,15 +102025,15 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isArray_1 = __webpack_require__(79);
-var isPromise_1 = __webpack_require__(287);
-var PromiseObservable_1 = __webpack_require__(278);
-var IteratorObservable_1 = __webpack_require__(533);
+var isArray_1 = __webpack_require__(80);
+var isPromise_1 = __webpack_require__(288);
+var PromiseObservable_1 = __webpack_require__(279);
+var IteratorObservable_1 = __webpack_require__(534);
 var ArrayObservable_1 = __webpack_require__(108);
-var ArrayLikeObservable_1 = __webpack_require__(529);
+var ArrayLikeObservable_1 = __webpack_require__(530);
 var iterator_1 = __webpack_require__(112);
 var Observable_1 = __webpack_require__(11);
-var observeOn_1 = __webpack_require__(546);
+var observeOn_1 = __webpack_require__(547);
 var observable_1 = __webpack_require__(113);
 var isArrayLike = (function (x) { return x && typeof x.length === 'number'; });
 /**
@@ -101832,7 +102143,7 @@ exports.FromObservable = FromObservable;
 //# sourceMappingURL=FromObservable.js.map
 
 /***/ }),
-/* 533 */
+/* 534 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102001,24 +102312,14 @@ function sign(value) {
 //# sourceMappingURL=IteratorObservable.js.map
 
 /***/ }),
-/* 534 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var ForkJoinObservable_1 = __webpack_require__(531);
-exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
-//# sourceMappingURL=forkJoin.js.map
-
-/***/ }),
 /* 535 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var FromObservable_1 = __webpack_require__(532);
-exports.from = FromObservable_1.FromObservable.create;
-//# sourceMappingURL=from.js.map
+var ForkJoinObservable_1 = __webpack_require__(532);
+exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
+//# sourceMappingURL=forkJoin.js.map
 
 /***/ }),
 /* 536 */
@@ -102026,12 +102327,22 @@ exports.from = FromObservable_1.FromObservable.create;
 
 "use strict";
 
-var merge_1 = __webpack_require__(544);
+var FromObservable_1 = __webpack_require__(533);
+exports.from = FromObservable_1.FromObservable.create;
+//# sourceMappingURL=from.js.map
+
+/***/ }),
+/* 537 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var merge_1 = __webpack_require__(545);
 exports.merge = merge_1.mergeStatic;
 //# sourceMappingURL=merge.js.map
 
 /***/ }),
-/* 537 */
+/* 538 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102041,8 +102352,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(77);
-var subscribeToResult_1 = __webpack_require__(80);
+var OuterSubscriber_1 = __webpack_require__(78);
+var subscribeToResult_1 = __webpack_require__(81);
 /**
  * Catches errors on the observable to be handled by returning a new observable or throwing an error.
  * @param {function} selector a function that takes as arguments `err`, which is the error, and `caught`, which
@@ -102103,7 +102414,7 @@ var CatchSubscriber = (function (_super) {
 //# sourceMappingURL=catch.js.map
 
 /***/ }),
-/* 538 */
+/* 539 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102165,12 +102476,12 @@ exports.concatAll = concatAll;
 //# sourceMappingURL=concatAll.js.map
 
 /***/ }),
-/* 539 */
+/* 540 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var mergeMap_1 = __webpack_require__(282);
+var mergeMap_1 = __webpack_require__(283);
 /* tslint:disable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -102241,7 +102552,7 @@ exports.concatMap = concatMap;
 //# sourceMappingURL=concatMap.js.map
 
 /***/ }),
-/* 540 */
+/* 541 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102321,7 +102632,7 @@ var EverySubscriber = (function (_super) {
 //# sourceMappingURL=every.js.map
 
 /***/ }),
-/* 541 */
+/* 542 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102420,7 +102731,7 @@ var FilterSubscriber = (function (_super) {
 //# sourceMappingURL=filter.js.map
 
 /***/ }),
-/* 542 */
+/* 543 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102578,7 +102889,7 @@ var FirstSubscriber = (function (_super) {
 //# sourceMappingURL=first.js.map
 
 /***/ }),
-/* 543 */
+/* 544 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102703,14 +103014,14 @@ var LastSubscriber = (function (_super) {
 //# sourceMappingURL=last.js.map
 
 /***/ }),
-/* 544 */
+/* 545 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var ArrayObservable_1 = __webpack_require__(108);
 var mergeAll_1 = __webpack_require__(111);
-var isScheduler_1 = __webpack_require__(288);
+var isScheduler_1 = __webpack_require__(289);
 /* tslint:disable:max-line-length */
 /**
  * Creates an output Observable which concurrently emits all values from every
@@ -102853,12 +103164,12 @@ exports.mergeStatic = mergeStatic;
 //# sourceMappingURL=merge.js.map
 
 /***/ }),
-/* 545 */
+/* 546 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ConnectableObservable_1 = __webpack_require__(530);
+var ConnectableObservable_1 = __webpack_require__(531);
 /* tslint:disable:max-line-length */
 /**
  * Returns an Observable that emits the results of invoking a specified selector on items
@@ -102916,7 +103227,7 @@ exports.MulticastOperator = MulticastOperator;
 //# sourceMappingURL=multicast.js.map
 
 /***/ }),
-/* 546 */
+/* 547 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102927,7 +103238,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(20);
-var Notification_1 = __webpack_require__(526);
+var Notification_1 = __webpack_require__(527);
 /**
  * @see {@link Notification}
  *
@@ -103001,7 +103312,7 @@ exports.ObserveOnMessage = ObserveOnMessage;
 //# sourceMappingURL=observeOn.js.map
 
 /***/ }),
-/* 547 */
+/* 548 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -103130,12 +103441,12 @@ exports.ReduceSubscriber = ReduceSubscriber;
 //# sourceMappingURL=reduce.js.map
 
 /***/ }),
-/* 548 */
+/* 549 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var multicast_1 = __webpack_require__(545);
+var multicast_1 = __webpack_require__(546);
 var Subject_1 = __webpack_require__(63);
 function shareSubjectFactory() {
     return new Subject_1.Subject();
@@ -103160,7 +103471,7 @@ exports.share = share;
 //# sourceMappingURL=share.js.map
 
 /***/ }),
-/* 549 */
+/* 550 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -103191,14 +103502,14 @@ exports.UnsubscriptionError = UnsubscriptionError;
 //# sourceMappingURL=UnsubscriptionError.js.map
 
 /***/ }),
-/* 550 */
+/* 551 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Subscriber_1 = __webpack_require__(20);
 var rxSubscriber_1 = __webpack_require__(114);
-var Observer_1 = __webpack_require__(277);
+var Observer_1 = __webpack_require__(278);
 function toSubscriber(nextOrObserver, error, complete) {
     if (nextOrObserver) {
         if (nextOrObserver instanceof Subscriber_1.Subscriber) {
@@ -103217,12 +103528,12 @@ exports.toSubscriber = toSubscriber;
 //# sourceMappingURL=toSubscriber.js.map
 
 /***/ }),
-/* 551 */
+/* 552 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var errorObject_1 = __webpack_require__(284);
+var errorObject_1 = __webpack_require__(285);
 var tryCatchTarget;
 function tryCatcher() {
     try {
@@ -103242,13 +103553,13 @@ exports.tryCatch = tryCatch;
 //# sourceMappingURL=tryCatch.js.map
 
 /***/ }),
-/* 552 */
+/* 553 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(492);
+var content = __webpack_require__(493);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -103256,7 +103567,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(289)(content, options);
+var update = __webpack_require__(290)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -103273,13 +103584,13 @@ if(false) {
 }
 
 /***/ }),
-/* 553 */
+/* 554 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(499);
+var content = __webpack_require__(500);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -103287,7 +103598,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(289)(content, options);
+var update = __webpack_require__(290)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -103304,7 +103615,7 @@ if(false) {
 }
 
 /***/ }),
-/* 554 */
+/* 555 */
 /***/ (function(module, exports) {
 
 
@@ -103399,25 +103710,11 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 555 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(491);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
 /* 556 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(493);
+        var result = __webpack_require__(492);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -103473,7 +103770,7 @@ module.exports = function (css) {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(498);
+        var result = __webpack_require__(497);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -103484,6 +103781,20 @@ module.exports = function (css) {
 
 /***/ }),
 /* 561 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(499);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+/* 562 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
