@@ -19622,7 +19622,7 @@ function transition$$1(stateChangeExpr, steps) {
 
 //# sourceMappingURL=core.es5.js.map
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(82)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(83)))
 
 /***/ }),
 /* 3 */,
@@ -19822,7 +19822,7 @@ function __asyncValues(o) {
 
 var root_1 = __webpack_require__(51);
 var toSubscriber_1 = __webpack_require__(551);
-var observable_1 = __webpack_require__(113);
+var observable_1 = __webpack_require__(114);
 /**
  * A representation of any set of values over any amount of time. This the most basic building block
  * of RxJS.
@@ -19964,7 +19964,7 @@ exports.Observable = Observable;
 
 
 var _ = __webpack_require__(32);
-var cls = __webpack_require__(77);
+var cls = __webpack_require__(78);
 var defaultSettings = __webpack_require__(508);
 var dom = __webpack_require__(49);
 var EventManager = __webpack_require__(505);
@@ -20082,9 +20082,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var isFunction_1 = __webpack_require__(286);
-var Subscription_1 = __webpack_require__(79);
+var Subscription_1 = __webpack_require__(80);
 var Observer_1 = __webpack_require__(278);
-var rxSubscriber_1 = __webpack_require__(114);
+var rxSubscriber_1 = __webpack_require__(115);
 /**
  * Implements the {@link Observer} interface and extends the
  * {@link Subscription} class. While the {@link Observer} is the public API for
@@ -20409,7 +20409,7 @@ var SafeSubscriber = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__ = __webpack_require__(544);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__ = __webpack_require__(283);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__);
@@ -20421,11 +20421,11 @@ var SafeSubscriber = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__ = __webpack_require__(539);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__ = __webpack_require__(281);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_platform_browser__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter__ = __webpack_require__(542);
@@ -26810,7 +26810,7 @@ function toComment(sourceMap) {
 "use strict";
 
 
-var cls = __webpack_require__(77);
+var cls = __webpack_require__(78);
 var dom = __webpack_require__(49);
 
 var toInt = exports.toInt = function (x) {
@@ -26901,7 +26901,7 @@ exports.env = {
 
 
 var _ = __webpack_require__(32);
-var cls = __webpack_require__(77);
+var cls = __webpack_require__(78);
 var dom = __webpack_require__(49);
 var instances = __webpack_require__(19);
 var updateScroll = __webpack_require__(38);
@@ -29469,7 +29469,7 @@ module.exports = DOM;
 "use strict";
 
 var Observable_1 = __webpack_require__(11);
-var map_1 = __webpack_require__(110);
+var map_1 = __webpack_require__(111);
 Observable_1.Observable.prototype.map = map_1.map;
 //# sourceMappingURL=map.js.map
 
@@ -29491,7 +29491,7 @@ if (!exports.root) {
     throw new Error('RxJS could not find any global context (window, self, global)');
 }
 //# sourceMappingURL=root.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(82)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(83)))
 
 /***/ }),
 /* 52 */
@@ -38039,10 +38039,10 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(11);
 var Subscriber_1 = __webpack_require__(20);
-var Subscription_1 = __webpack_require__(79);
+var Subscription_1 = __webpack_require__(80);
 var ObjectUnsubscribedError_1 = __webpack_require__(284);
 var SubjectSubscription_1 = __webpack_require__(528);
-var rxSubscriber_1 = __webpack_require__(114);
+var rxSubscriber_1 = __webpack_require__(115);
 /**
  * @class SubjectSubscriber<T>
  */
@@ -38204,6 +38204,8 @@ exports.AnonymousSubject = AnonymousSubject;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serviceUrl__ = __webpack_require__(66);
+
 
 
 
@@ -38211,6 +38213,7 @@ exports.AnonymousSubject = AnonymousSubject;
 var AddtocartService = (function () {
     function AddtocartService(http) {
         this.http = http;
+        this.serviceUrl = new __WEBPACK_IMPORTED_MODULE_4__serviceUrl__["a" /* ServiceUrl */]();
         this.cart = {
             size: "",
             box: "",
@@ -38240,7 +38243,7 @@ var AddtocartService = (function () {
         var data = {};
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-        return this.http.post("http://182.180.56.81:8080/Magento/GetTaxDetails.php", data, { headers: headers })
+        return this.http.post(this.serviceUrl.baseUrl + "GetTaxDetails.php", data, { headers: headers })
             .map(function (res) {
             return res.json();
         });
@@ -38249,7 +38252,7 @@ var AddtocartService = (function () {
         var data = { "taxamount": taxamount, "check": check };
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-        return this.http.post("http://182.180.56.81:8080/Magento/puttax.php", data, { headers: headers })
+        return this.http.post(this.serviceUrl.baseUrl + "puttax.php", data, { headers: headers })
             .map(function (res) {
             var x;
             x = res;
@@ -38262,7 +38265,7 @@ var AddtocartService = (function () {
         var data = { "id": customerId };
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-        return this.http.post("http://182.180.56.81:8080/Magento/GetAllShippingAddresses.php", data, { headers: headers })
+        return this.http.post(this.serviceUrl.baseUrl + "GetAllShippingAddresses.php", data, { headers: headers })
             .map(function (res) {
             return res.json();
         });
@@ -38271,7 +38274,7 @@ var AddtocartService = (function () {
         var data = { "id": shippmentObect.shipName, "toShipName": shippmentObect.shipName, "toShipAddress": shippmentObect.shipAddress, "toShipPhone": shippmentObect.shipPhone };
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-        return this.http.post("http://182.180.56.81:8080/Magento/addshipping.php", data, { headers: headers })
+        return this.http.post(this.serviceUrl.baseUrl + "addshipping.php", data, { headers: headers })
             .subscribe(function (res) {
             console.log(res);
         });
@@ -38280,7 +38283,7 @@ var AddtocartService = (function () {
         var data = {};
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-        return this.http.post("http://182.180.56.81:8080/Magento/GetAllOrders.php", data, { headers: headers })
+        return this.http.post(this.serviceUrl.baseUrl + "GetAllOrders.php", data, { headers: headers })
             .map(function (res) {
             return res.json();
         });
@@ -38289,7 +38292,7 @@ var AddtocartService = (function () {
         var data = {};
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-        return this.http.post("http://182.180.56.81:8080/Magento/GetCompleteOrders.php", data, { headers: headers })
+        return this.http.post(this.serviceUrl.baseUrl + "GetCompleteOrders.php", data, { headers: headers })
             .map(function (res) {
             return res.json();
         });
@@ -38298,7 +38301,7 @@ var AddtocartService = (function () {
         var data = {};
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-        return this.http.post("http://182.180.56.81:8080/Magento/GetDeliveryOrders.php", data, { headers: headers })
+        return this.http.post(this.serviceUrl.baseUrl + "GetDeliveryOrders.php", data, { headers: headers })
             .map(function (res) {
             return res.json();
         });
@@ -38307,7 +38310,7 @@ var AddtocartService = (function () {
         var data = { "ShippmentMethod": ShippmentMethod, "length": length, "customer": customer, "cart": cart, "shippmentObject": shippmentObect };
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-        return this.http.post("http://182.180.56.81:8080/Magento/Directorder.php", data, { headers: headers })
+        return this.http.post(this.serviceUrl.baseUrl + "Directorder.php", data, { headers: headers })
             .map(function (res) {
             var x;
             x = res;
@@ -38319,7 +38322,7 @@ var AddtocartService = (function () {
         var data = { "ShippmentMethod": ShippmentMethod, "length": length, "customer": customer, "cart": cart, "shippmentObject": shippmentObect };
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-        return this.http.post("http://182.180.56.81:8080/Magento/Directorder.php", data, { headers: headers })
+        return this.http.post(this.serviceUrl.baseUrl + "Directorder.php", data, { headers: headers })
             .map(function (res) {
             var x;
             x = res;
@@ -38391,6 +38394,21 @@ AddtocartService = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 /***/ }),
 /* 66 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServiceUrl; });
+var ServiceUrl = (function () {
+    function ServiceUrl() {
+        this.baseUrl = "http://182.180.56.81:8080/Magento/";
+    }
+    return ServiceUrl;
+}());
+
+
+
+/***/ }),
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38412,7 +38430,6 @@ exports.PerfectScrollbarConfig = PerfectScrollbarConfig;
 //# sourceMappingURL=perfect-scrollbar.interfaces.js.map
 
 /***/ }),
-/* 67 */,
 /* 68 */,
 /* 69 */,
 /* 70 */,
@@ -38422,7 +38439,8 @@ exports.PerfectScrollbarConfig = PerfectScrollbarConfig;
 /* 74 */,
 /* 75 */,
 /* 76 */,
-/* 77 */
+/* 77 */,
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38471,7 +38489,7 @@ exports.list = function (element) {
 
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38507,7 +38525,7 @@ exports.OuterSubscriber = OuterSubscriber;
 //# sourceMappingURL=OuterSubscriber.js.map
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38517,7 +38535,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isArray_1 = __webpack_require__(80);
+var isArray_1 = __webpack_require__(81);
 var isObject_1 = __webpack_require__(287);
 var isFunction_1 = __webpack_require__(286);
 var tryCatch_1 = __webpack_require__(552);
@@ -38691,7 +38709,7 @@ function flattenUnsubscriptionErrors(errors) {
 //# sourceMappingURL=Subscription.js.map
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38700,19 +38718,19 @@ exports.isArray = Array.isArray || (function (x) { return x && typeof x.length =
 //# sourceMappingURL=isArray.js.map
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var root_1 = __webpack_require__(51);
-var isArray_1 = __webpack_require__(80);
+var isArray_1 = __webpack_require__(81);
 var isPromise_1 = __webpack_require__(288);
 var isObject_1 = __webpack_require__(287);
 var Observable_1 = __webpack_require__(11);
-var iterator_1 = __webpack_require__(112);
+var iterator_1 = __webpack_require__(113);
 var InnerSubscriber_1 = __webpack_require__(526);
-var observable_1 = __webpack_require__(113);
+var observable_1 = __webpack_require__(114);
 function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
     var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
     if (destination.closed) {
@@ -38784,7 +38802,7 @@ exports.subscribeToResult = subscribeToResult;
 //# sourceMappingURL=subscribeToResult.js.map
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports) {
 
 var g;
@@ -38811,7 +38829,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38892,7 +38910,7 @@ module.exports = g;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__ = __webpack_require__(281);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__ = __webpack_require__(53);
 
@@ -44914,7 +44932,7 @@ ReactiveFormsModule.ctorParameters = function () { return []; };
 
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44971,7 +44989,7 @@ AppState = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45059,7 +45077,6 @@ exports.WizardStepComponent = WizardStepComponent;
 //# sourceMappingURL=wizard-step.component.js.map
 
 /***/ }),
-/* 86 */,
 /* 87 */,
 /* 88 */,
 /* 89 */,
@@ -45080,7 +45097,8 @@ exports.WizardStepComponent = WizardStepComponent;
 /* 104 */,
 /* 105 */,
 /* 106 */,
-/* 107 */
+/* 107 */,
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -55340,7 +55358,7 @@ return jQuery;
 
 
 /***/ }),
-/* 108 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55352,7 +55370,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(11);
 var ScalarObservable_1 = __webpack_require__(280);
-var EmptyObservable_1 = __webpack_require__(109);
+var EmptyObservable_1 = __webpack_require__(110);
 var isScheduler_1 = __webpack_require__(289);
 /**
  * We need this JSDoc comment for affecting ESDoc.
@@ -55468,7 +55486,7 @@ exports.ArrayObservable = ArrayObservable;
 //# sourceMappingURL=ArrayObservable.js.map
 
 /***/ }),
-/* 109 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55555,7 +55573,7 @@ exports.EmptyObservable = EmptyObservable;
 //# sourceMappingURL=EmptyObservable.js.map
 
 /***/ }),
-/* 110 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55648,7 +55666,7 @@ var MapSubscriber = (function (_super) {
 //# sourceMappingURL=map.js.map
 
 /***/ }),
-/* 111 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55658,8 +55676,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(78);
-var subscribeToResult_1 = __webpack_require__(81);
+var OuterSubscriber_1 = __webpack_require__(79);
+var subscribeToResult_1 = __webpack_require__(82);
 /**
  * Converts a higher-order Observable into a first-order Observable which
  * concurrently delivers all values that are emitted on the inner Observables.
@@ -55765,7 +55783,7 @@ exports.MergeAllSubscriber = MergeAllSubscriber;
 //# sourceMappingURL=mergeAll.js.map
 
 /***/ }),
-/* 112 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55805,7 +55823,7 @@ exports.$$iterator = symbolIteratorPonyfill(root_1.root);
 //# sourceMappingURL=iterator.js.map
 
 /***/ }),
-/* 113 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55833,7 +55851,7 @@ exports.$$observable = getSymbolObservable(root_1.root);
 //# sourceMappingURL=observable.js.map
 
 /***/ }),
-/* 114 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55845,7 +55863,7 @@ exports.$$rxSubscriber = (typeof Symbol === 'function' && typeof Symbol.for === 
 //# sourceMappingURL=rxSubscriber.js.map
 
 /***/ }),
-/* 115 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55879,7 +55897,7 @@ exports.EmptyError = EmptyError;
 //# sourceMappingURL=EmptyError.js.map
 
 /***/ }),
-/* 116 */
+/* 117 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -55929,7 +55947,7 @@ var ENV_PROVIDERS = PROVIDERS.slice();
 
 
 /***/ }),
-/* 117 */
+/* 118 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -55954,7 +55972,7 @@ var SlimScrollOptions = (function () {
 
 
 /***/ }),
-/* 118 */
+/* 119 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -55964,7 +55982,7 @@ var SlimScrollOptions = (function () {
 
 
 /***/ }),
-/* 119 */
+/* 120 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -55974,7 +55992,7 @@ var SlimScrollOptions = (function () {
 
 
 /***/ }),
-/* 120 */
+/* 121 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -55984,7 +56002,7 @@ var SlimScrollOptions = (function () {
 
 
 /***/ }),
-/* 121 */
+/* 122 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -56077,21 +56095,6 @@ SidebarComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 122 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServiceUrl; });
-var ServiceUrl = (function () {
-    function ServiceUrl() {
-        this.baseUrl = "https://www.lesfloralies.ae/";
-    }
-    return ServiceUrl;
-}());
-
-
-
-/***/ }),
 /* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -56099,7 +56102,7 @@ var ServiceUrl = (function () {
 
 var Ps = __webpack_require__(277);
 var core_1 = __webpack_require__(2);
-var perfect_scrollbar_interfaces_1 = __webpack_require__(66);
+var perfect_scrollbar_interfaces_1 = __webpack_require__(67);
 var PerfectScrollbarComponent = (function () {
     function PerfectScrollbarComponent(elementRef, defaults, zone) {
         this.elementRef = elementRef;
@@ -56220,7 +56223,7 @@ exports.PerfectScrollbarComponent = PerfectScrollbarComponent;
 
 var Ps = __webpack_require__(277);
 var core_1 = __webpack_require__(2);
-var perfect_scrollbar_interfaces_1 = __webpack_require__(66);
+var perfect_scrollbar_interfaces_1 = __webpack_require__(67);
 var PerfectScrollbarDirective = (function () {
     function PerfectScrollbarDirective(elementRef, defaults, zone) {
         this.elementRef = elementRef;
@@ -56353,7 +56356,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(2);
-var wizard_step_component_1 = __webpack_require__(85);
+var wizard_step_component_1 = __webpack_require__(86);
 var WizardComponent = (function () {
     function WizardComponent() {
         this._steps = [];
@@ -67595,7 +67598,7 @@ return zhTw;
 /* unused harmony export CALENDAR_VALUE_ACCESSOR */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return DatePickerComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_moment__);
 
@@ -68141,7 +68144,7 @@ exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
 
 "use strict";
 
-var ArrayObservable_1 = __webpack_require__(108);
+var ArrayObservable_1 = __webpack_require__(109);
 exports.of = ArrayObservable_1.ArrayObservable.of;
 //# sourceMappingURL=of.js.map
 
@@ -68156,8 +68159,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var subscribeToResult_1 = __webpack_require__(81);
-var OuterSubscriber_1 = __webpack_require__(78);
+var subscribeToResult_1 = __webpack_require__(82);
+var OuterSubscriber_1 = __webpack_require__(79);
 /* tslint:disable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -96894,7 +96897,7 @@ function _mergeArrays(parts) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_directives_slimscroll_directive__ = __webpack_require__(317);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_classes_slimscroll_options_class__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_classes_slimscroll_options_class__ = __webpack_require__(118);
 /* unused harmony namespace reexport */
 
 
@@ -96926,7 +96929,7 @@ SlimScrollModule = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SlimScrollDirective; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__classes_slimscroll_options_class__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__classes_slimscroll_options_class__ = __webpack_require__(118);
 
 
 
@@ -97230,8 +97233,8 @@ AboutComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_service__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sidebar_sidebar_component__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_service__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sidebar_sidebar_component__ = __webpack_require__(122);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map__);
@@ -97296,23 +97299,23 @@ AppComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angularclass_hmr__ = __webpack_require__(342);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angularclass_hmr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__angularclass_hmr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__environment__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__environment__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_routes__ = __webpack_require__(322);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_component__ = __webpack_require__(319);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_resolver__ = __webpack_require__(321);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_service__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__home__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_service__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__home__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__login_login_component__ = __webpack_require__(330);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__about__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__no_content__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__about__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__no_content__ = __webpack_require__(121);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__home_x_large__ = __webpack_require__(328);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__sidebar_sidebar_component__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__sidebar_sidebar_component__ = __webpack_require__(122);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__header_header_component__ = __webpack_require__(324);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__cartright_cartright_component__ = __webpack_require__(323);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__main_main_component__ = __webpack_require__(331);
@@ -97514,9 +97517,9 @@ var APP_RESOLVER_PROVIDERS = [
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ROUTES; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__no_content__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__no_content__ = __webpack_require__(121);
 
 
 
@@ -97542,7 +97545,7 @@ var ROUTES = [
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_AddtocartService__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_jquery__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_jquery__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_jquery__);
 
 
@@ -98019,7 +98022,7 @@ HeaderComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_service__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_service__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__title__ = __webpack_require__(326);
 
 
@@ -98188,7 +98191,7 @@ XLargeDirective = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_UsersService__ = __webpack_require__(338);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jquery__);
 
 
@@ -98307,7 +98310,7 @@ Login = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_CustomersModel__ = __webpack_require__(336);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ng2_datepicker__ = __webpack_require__(504);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_AddtocartService__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_jquery__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_jquery__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_jquery__);
 
 
@@ -99091,7 +99094,7 @@ NoContentComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["main"] = main;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(293);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_environment__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_environment__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app__ = __webpack_require__(294);
 /**
  * Angular bootstrapping
@@ -99295,7 +99298,7 @@ var CustomersModel = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serviceUrl__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serviceUrl__ = __webpack_require__(66);
 
 
 
@@ -99307,7 +99310,6 @@ var UsersService = (function () {
         this.serviceUrl = new __WEBPACK_IMPORTED_MODULE_4__serviceUrl__["a" /* ServiceUrl */]();
     }
     UsersService.prototype.authenticateAdminUser = function (email, password) {
-        console.log(this.serviceUrl.baseUrl + "getadmin.php");
         var data = { username: email, password: password };
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json; charset=UTF-8');
@@ -99334,6 +99336,8 @@ UsersService = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serviceUrl__ = __webpack_require__(66);
+
 
 
 
@@ -99341,12 +99345,13 @@ UsersService = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 var CustomerService = (function () {
     function CustomerService(http) {
         this.http = http;
+        this.serviceUrl = new __WEBPACK_IMPORTED_MODULE_4__serviceUrl__["a" /* ServiceUrl */]();
     }
     CustomerService.prototype.searchCustomers = function (email) {
         var data = { email: email };
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json; charset=UTF-8');
-        return this.http.post("http://182.180.56.81:8080/Magento/searchcustomer.php", data, { headers: headers })
+        return this.http.post(this.serviceUrl.baseUrl + "searchcustomer.php", data, { headers: headers })
             .map(function (res) {
             var x;
             x = res;
@@ -99356,20 +99361,20 @@ var CustomerService = (function () {
     CustomerService.prototype.getGroups = function () {
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json; charset=UTF-8');
-        return this.http.post("http://182.180.56.81:8080/Magento/getcustomergroups.php", { headers: headers })
+        return this.http.post(this.serviceUrl.baseUrl + "getcustomergroups.php", { headers: headers })
             .map(function (res) { return res.json(); });
     };
     CustomerService.prototype.getCustomersList = function () {
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json; charset=UTF-8');
-        return this.http.post("http://182.180.56.81:8080/Magento/getcustomer.php", { headers: headers })
+        return this.http.post(this.serviceUrl.baseUrl + "getcustomer.php", { headers: headers })
             .map(function (res) { return res.json(); });
     };
     CustomerService.prototype.registerCustomers = function (customerName, customerType, customerCellPhone, customerWorkPhone, customerEmail, customerGender, customerDOB, shippingName, shippingPhone, shippingAddress, customerAddress, customerCompany) {
         var data = { "customerName": customerName, "customerType": customerType, "customerCellPhone": customerCellPhone, "customerWorkPhone": customerWorkPhone, "customerEmail": customerEmail, "customerGender": customerGender, "customerDOB": customerDOB, "toShipAddress": shippingAddress, "toShipPhone": shippingPhone, "toShipName": shippingName, "customerAddress": customerAddress, "customerCompany": customerCompany };
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-        return this.http.post("http://182.180.56.81:8080/Magento/createcustomer.php", data, { headers: headers })
+        return this.http.post(this.serviceUrl.baseUrl + "createcustomer.php", data, { headers: headers })
             .map(function (res) {
             var x;
             x = res;
@@ -99380,7 +99385,7 @@ var CustomerService = (function () {
         var data = { "id": id, "customerName": customerName, "customerType": customerType, "customerCellPhone": customerCellPhone, "customerWorkPhone": customerWorkPhone, "customerEmail": customerEmail, "customerGender": customerGender, "customerDOB": customerDOB, "toShipAddress": shippingAddress, "toShipPhone": shippingPhone, "toShipName": shippingName, "customerAddress": customerAddress, "customerCompany": customerCompany };
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-        return this.http.post("http://182.180.56.81:8080/Magento/editcustomer.php", data, { headers: headers })
+        return this.http.post(this.serviceUrl.baseUrl + "editcustomer.php", data, { headers: headers })
             .map(function (res) {
             var x;
             x = res;
@@ -99408,7 +99413,7 @@ CustomerService = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serviceUrl__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serviceUrl__ = __webpack_require__(66);
 
 
 
@@ -99423,7 +99428,7 @@ var ProductslistService = (function () {
         var data = {};
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json; charset=UTF-8');
-        return this.http.post("http://182.180.56.81:8080/Magento/searchproduct.php", data, { headers: headers })
+        return this.http.post(this.serviceUrl.baseUrl + "searchproduct.php", data, { headers: headers })
             .map(function (res) {
             var x;
             x = res;
@@ -99441,14 +99446,14 @@ var ProductslistService = (function () {
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         var data = { id: id };
         headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-        return this.http.post("http://182.180.56.81:8080/Magento/categoryproduct.php", data, { headers: headers })
+        return this.http.post(this.serviceUrl.baseUrl + "categoryproduct.php", data, { headers: headers })
             .map(function (res) { return res.json(); });
     };
     ProductslistService.prototype.getProducts = function () {
         var data = {};
         var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json; charset=UTF-8');
-        return this.http.get("http://182.180.56.81:8080/Magento/allproduct.php", { headers: headers })
+        return this.http.get(this.serviceUrl.baseUrl + "allproduct.php", { headers: headers })
             .map(function (res) { return res.json(); });
     };
     return ProductslistService;
@@ -99567,7 +99572,7 @@ function __export(m) {
 }
 __export(__webpack_require__(123));
 __export(__webpack_require__(124));
-__export(__webpack_require__(66));
+__export(__webpack_require__(67));
 __export(__webpack_require__(345));
 //# sourceMappingURL=index.js.map
 
@@ -99581,7 +99586,7 @@ var common_1 = __webpack_require__(52);
 var core_1 = __webpack_require__(2);
 var perfect_scrollbar_component_1 = __webpack_require__(123);
 var perfect_scrollbar_directive_1 = __webpack_require__(124);
-var perfect_scrollbar_interfaces_1 = __webpack_require__(66);
+var perfect_scrollbar_interfaces_1 = __webpack_require__(67);
 exports.PERFECT_SCROLLBAR_GUARD = new core_1.OpaqueToken('PERFECT_SCROLLBAR_GUARD');
 exports.PERFECT_SCROLLBAR_CONFIG = new core_1.OpaqueToken('PERFECT_SCROLLBAR_CONFIG');
 var PerfectScrollbarModule = (function () {
@@ -99666,9 +99671,9 @@ function __export(m) {
 var core_1 = __webpack_require__(2);
 var common_1 = __webpack_require__(52);
 var wizard_component_1 = __webpack_require__(125);
-var wizard_step_component_1 = __webpack_require__(85);
+var wizard_step_component_1 = __webpack_require__(86);
 __export(__webpack_require__(125));
-__export(__webpack_require__(85));
+__export(__webpack_require__(86));
 var FormWizardModule = FormWizardModule_1 = (function () {
     function FormWizardModule() {
     }
@@ -100241,7 +100246,7 @@ webpackContext.id = 503;
 /* unused harmony export DatePickerModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_slimscroll__ = __webpack_require__(316);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng2_datepicker_component__ = __webpack_require__(276);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_4__ng2_datepicker_component__["a"]; });
@@ -101249,7 +101254,7 @@ module.exports = function (element) {
 
 
 var _ = __webpack_require__(32);
-var cls = __webpack_require__(77);
+var cls = __webpack_require__(78);
 var instances = __webpack_require__(19);
 var updateGeometry = __webpack_require__(33);
 
@@ -101357,7 +101362,7 @@ module.exports = "<div class=\"login-wrap\">\r\n\t<div class=\"login-html\">\r\n
 /* 523 */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<div class=\"row products-row\">\r\n\r\n\r\n\r\n\r\n\r\n<perfect-scrollbar  [config]=\"config\">\r\n    <div class=\"main-content \">\r\n\r\n\r\n\r\n        <div class=\"nav-tabs\">\r\n\r\n            <ul class=\"nav nav-pills\">\r\n                <li><a (click)=\"changePill($event)\" data-target=\"customers\" data-toggle=\"pill\"><i (click)=\"changePill($event)\" data-target=\"customers\" class=\"fa fa-user\"></i></a></li>\r\n                <li class=\"active\"><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"categories-tab\"><i (click)=\"changePill($event)\" data-target=\"categories-tab\" class=\"fa fa-bars\"></i></a></li>\r\n                <li><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"receipts\"><i (click)=\"changePill($event)\" data-target=\"receipts\" class=\"fa fa-ticket\"></i></a></li>\r\n                <li><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"menu3\"><i (click)=\"changePill($event)\" data-target=\"menu3\" class=\"fa fa-male\"></i></a></li>\r\n            </ul>\r\n\r\n        </div>\r\n\r\n\r\n        <div class=\"nav-content\">\r\n\r\n\r\n            <div class=\"tab-content\">\r\n\r\n\r\n                <div id=\"customers\" class=\"tab-pane fade clearfix\">\r\n\r\n\r\n                    <div class=\"search-customer\">\r\n\r\n                        <div class=\"customers-tab clearfix\">\r\n\r\n                            <div class=\"editCustomer\">\r\n                                <button class=\"editCustomerBtn\" (click)=\"editCustomerDetails(toEditCustomerId)\"><i class=\"fa fa-pencil\"></i></button>\r\n                            </div>\r\n\r\n                            <div class=\"customers-heading\">\r\n                                <p>Customers</p>\r\n                            </div>\r\n\r\n                            <div class=\"customer-add\">\r\n                                <button class=\"add-customer\" (click)=\"addCustomerForm()\"><i class=\"fa fa-plus\"></i></button>\r\n                            </div>\r\n\r\n                        </div>\r\n                        <div class=\"search-box-items clearfix\">\r\n\r\n                            <div class=\"search-input clearfix\">\r\n\r\n                                <input type=\"text\" name=\"searchCustomers\" (keyup)=\"searchThisCustomer(this)\" [(ngModel)]=\"searchCustomers\" class=\"form-control\" placeholder=\"Search items by name or sku\">\r\n\r\n                                <img src=\"../../assets/img/camera.png\">\r\n                                \r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"list-customers clearfix\">\r\n                            <div class='customer-loader'>  <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i></div>\r\n                            <ul *ngIf=\"customerList\" class=\"listing-customers clearfix\">\r\n\r\n                                <li *ngFor=\"let customersModel of CustomersModel\" class=\"clearfix\">\r\n                                    <a (click)=\"editCustomer(customersModel.id)\" id='{{customersModel.id}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{customersModel.customerName}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{customersModel.customerEmail}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>\r\n\r\n\r\n                            </ul>\r\n\r\n                            <ul *ngIf=\"searchFlag\" class=\"listing-customers clearfix\">\r\n\r\n                                 <li *ngFor=\"let searchedModel of SearchedModel\" class=\"clearfix\">\r\n                                    <a (click)=\"editCustomer(searchedModel.id)\" id='{{searchedModel.id}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{searchedModel.customerName}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{searchedModel.customerEmail}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>                           \r\n\r\n\r\n                            </ul>\r\n\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"new-customer-form\">\r\n\r\n                        <div class=\"close-form\" (click)=\"hideNewCustomerForm()\">&times;</div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <div class=\"fileinput fileinput-new\" data-provides=\"fileinput\">\r\n                                        <div class=\"fileinput-preview thumbnail\" id=\"image-container\" data-trigger=\"fileinput\" style=\"width:120px;height:120px;border-radius:50%;\"></div>\r\n                                        <div>\r\n                                            <span style=\"display:none\" class=\"btn btn-default btn-file\"><span  class=\"fileinput-new\">Select image</span>\r\n                                            <span\r\n                                                class=\"fileinput-exists\">Change</span><input type=\"file\" style=\"display:none\" name=\"...\"></span>\r\n                                                <a href=\"#\" class=\"btn btn-default fileinput-exists remove_image\" data-dismiss=\"fileinput\"><i class=\"fa fa-trash\"></i></a>\r\n                                        </div>\r\n                                    </div>\r\n\r\n\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerNameInput\" name=\"customerName\" [(ngModel)]=\"customerName\" type=\"text\" placeholder=\"Customer Name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <select id=\"select-customer-type\" [(ngModel)]=\"customerType\" class=\"new-form-inputs\">\r\n                             <option  value=\"\" disabled selected>Customer Type</option>\r\n                            <option *ngFor=\"let customerGroup of CustomergroupsModel\" value=\"{{customerGroup.id}}\">{{customerGroup.value}}</option>\r\n                    \r\n                    </select>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerCellPhone\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\"\r\n                                    placeholder=\"Cell Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Work Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerWorkPhone\" [(ngModel)]=\"customerWorkPhone\" type=\"number\" placeholder=\"Work Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerEmail\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Email\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <div class=\"radio\">\r\n                                    <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"male\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                    <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"female\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                </div>\r\n\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n                               <!-- <ng2-datepicker [options]=\"options\" [(ngModel)]=\"customersDOB\"></ng2-datepicker>-->\r\n\r\n                             <input class=\"new-form-inputs\" id=\"customerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n\r\n                            <div class=\"checkbox\">\r\n                                <label><input class=\"shippingCheckbox regular-checkbox\" (change)=\"shippingAddressForm()\" type=\"checkbox\" value=\"shipping\">    Shipping</label>\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"shipping-address-form\">\r\n                            <!-- Shipping Address Form -->\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"Name\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"Phone\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\"  id=\"toShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n                        <!-- Shipping Address Form -->\r\n\r\n\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Personal Discount</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerDiscount\" [(ngModel)]=\"customerDiscount\" type=\"text\" placeholder=\"Discount\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"incompleteForm\">\r\n\r\n                            <p>Please Fill out the form completely!</p>\r\n\r\n                        </div>\r\n\r\n                        <div id=\"loader\">\r\n                            <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"submit-button\">\r\n\r\n                            <button class=\"create-customer\" (click)=\"createCustomer()\">Create Customer</button>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"alert alert-success row margined-top\" id=\"customer-added\">\r\n\r\n                            <p>Customer Created Successfully!</p>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                    <!--- Customer Edit Form -->\r\n\r\n\r\n\r\n\r\n                    <div class=\"edit-customer-form\">\r\n\r\n                        <div class=\"row\">\r\n                            <div class=\"col-md-6\"></div>\r\n                            <div class=\"col-md-6\"> <div class=\"close-edit-form\" (click)=\"hideEditForm()\">&times;</div></div>\r\n                        </div>\r\n                       \r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <div class=\"fileinput fileinput-new\" data-provides=\"fileinput\">\r\n                                        <div class=\"fileinput-preview thumbnail\" id=\"image-container\" data-trigger=\"fileinput\" style=\"width:120px;height:120px;border-radius:50%;\"></div>\r\n                                        <div>\r\n                                            <span style=\"display:none\" class=\"btn btn-default btn-file\"><span  class=\"fileinput-new\">Select image</span>\r\n                                            <span\r\n                                                class=\"fileinput-exists\">Change</span><input type=\"file\" style=\"display:none\" name=\"...\"></span>\r\n                                                <a href=\"#\" class=\"btn btn-default fileinput-exists remove_image\" data-dismiss=\"fileinput\"><i class=\"fa fa-trash\"></i></a>\r\n                                        </div>\r\n                                    </div>\r\n\r\n\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs edit-profile-name\" id=\"editCustomerName\" name=\"customerName\" [(ngModel)]=\"customerName\" type=\"text\" placeholder=\"Customer Name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <select id=\"edit-customer-type\" [(ngModel)]=\"customerType\" class=\"new-form-inputs\">\r\n                             <option  value=\"\" disabled selected>Customer Type</option>\r\n                            <option *ngFor=\"let customerGroup of CustomergroupsModel\" value=\"{{customerGroup.id}}\">{{customerGroup.value}}</option>\r\n                    \r\n                    </select>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerCellPhone\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\"\r\n                                    placeholder=\"Cell Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Work Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"editCustomerWorkPhone\" [(ngModel)]=\"customerWorkPhone\" type=\"number\" placeholder=\"Work Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerEmail\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Email\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <div class=\"radio\">\r\n                                    <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"editGender\" value=\"Male\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                    <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"editGender\" value=\"Female\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                </div>\r\n\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n                               <!-- <ng2-datepicker [options]=\"options\" [(ngModel)]=\"customersDOB\"></ng2-datepicker>-->\r\n\r\n                             <input class=\"new-form-inputs\" id=\"editCustomerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n\r\n                            <div class=\"checkbox\">\r\n                                <label><input class=\"shippingCheckbox regular-checkbox\" (change)=\"shippingAddressForm()\" type=\"checkbox\" value=\"shipping\">    Shipping</label>\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"shipping-address-form\">\r\n                            <!-- Shipping Address Form -->\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"editToShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"Name\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"editToShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"Phone\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\"  id=\"editToShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n                        <!-- Shipping Address Form -->\r\n\r\n\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Personal Discount</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerDiscount\" [(ngModel)]=\"customerDiscount\" type=\"text\" placeholder=\"Discount\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"editincompleteForm\">\r\n\r\n                            <p>Please Fill out the form completely!</p>\r\n\r\n                        </div>\r\n\r\n                        <div id=\"editloader\">\r\n                            <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"update-button\">\r\n\r\n                            <button class=\"create-customer\" (click)=\"updateCustomer()\">Update Customer</button>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"alert alert-success row margined-top\" id=\"customer-updated\">\r\n\r\n                            <p>Customer Updated Successfully!</p>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                    <!-- Customer Edit Form -->\r\n\r\n\r\n                    <!-- Customer Profile to show -->\r\n\r\n                    <div class=\"Customer-full-detail animated\">\r\n\r\n\r\n                        <div class=\"back-to-search-customers\" (click)=\"backToSearchCustomers()\">\r\n                              <img src=\"/assets/img/left.png\">\r\n                        </div>\r\n\r\n                        <div class=\"\">\r\n\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"left-pic clearfix\">\r\n\r\n                                    <div class=\"profile-pic\">\r\n\r\n                                        <img src=\"../../assets/img/bane.jpg\">\r\n\r\n                                    </div>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"right-name clearfix\">\r\n\r\n                                    <h3 class=\"profile-name\">Tom Hardy</h3>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n\r\n                            <hr>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Cell Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\" placeholder=\"Cell Phone\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Email</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Cell Phone\" readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Gender</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <div class=\"radio\">\r\n                                        <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"Male\" [(ngModel)]=\"customerGender\">\r\n                                        <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                        <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"Female\" [(ngModel)]=\"customerGender\">\r\n                                        <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                    </div>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Date of Birth</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"customerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"customerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <button class=\"reciepts\"><i class=\"fa fa-bar-chart\"></i><p> Orders/Reciepts </p></button>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <button class=\"notes\"><i class=\"fa fa-sticky-note\" aria-hidden=\"true\"></i><p> Notes </p></button>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n                    <!-- Customer Profile to Show-->\r\n\r\n\r\n                    <div class=\"customer-profile-tab\">\r\n\r\n                        <div class=\"customers-tab clearfix\">\r\n\r\n                            <div class=\"unselect-customer\">\r\n                                <button><i class=\"fa fa-times-circle-o\" aria-hidden=\"true\"></i></button>\r\n                            </div>\r\n                            <div class=\"customers-heading\">\r\n                                <p>Customers</p>\r\n                            </div>\r\n\r\n                            <div class=\"customer-edit\">\r\n                                <button class=\"add-customer\"><i class=\"fa fa-pencil\"></i></button>\r\n                            </div>\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <img src=\"../../assets/img/bane.jpg\">\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <h3 class=\"profile-name\">Tom Hardy</h3>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">--</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Code</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">9876</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">(001)-7524-3422</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">bane@gothamcity.com</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">Male</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">26-05-1993</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">Arkhan City Asylum</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <button class=\"reciepts\"><i class=\"fa fa-bar-chart\"></i><p> Orders/Reciepts </p></button>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <button class=\"notes\"><i class=\"fa fa-sticky-note\" aria-hidden=\"true\"></i><p> Notes </p></button>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                </div>\r\n\r\n\r\n\r\n                <div id=\"categories-tab\" class=\"tab-pane fade in active clearfix\">\r\n\r\n                    <div class=\"background-added\">\r\n\r\n                        <div class=\"categories-tab clearfix\">\r\n\r\n                            <div class=\"box\">\r\n                                <a class=\"no-link\" (click)=\"setAll()\">\r\n                                    <div class=\"cat-image circle-box\">\r\n                                        <p class=\"all-text\">All</p>\r\n                                    </div>\r\n                                    <h3>All</h3>\r\n                                </a>\r\n                            </div>\r\n\r\n\r\n                            <div *ngFor=\"let categories of categories\" class=\"box\">\r\n                                <a class=\"no-link\" (click)=\"ShowProductsForCategories(categories.id)\" id=\"{{categories.id}}\">\r\n                                    <div class=\"cat-image\">\r\n                                        <img src=\"{{categories.imageURL}}\">\r\n                                    </div>\r\n                                    <h3>{{categories.name}}</h3>\r\n                                </a>\r\n                            </div>\r\n\r\n\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"search-box-items\">\r\n\r\n                            <div class=\"search-input\">\r\n                                <input type=\"text\" name=\"searchProduct\" [(ngModel)]=\"searchProduct\" (keyup)=\"searchThisProduct(this)\" class=\"form-control\" placeholder=\"Search items by name or sku\">\r\n                               <!-- <button class=\"searchCustomerBtn\"><i class=\"fa fa-chevron-right\"></i></button>-->\r\n                                <img src=\"../../assets/img/camera.png\">\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                    <div *ngIf=\"detailFlag\" class=\"product-detail-tab animated\">\r\n\r\n                        <div class=\"backToProducts\" (click)=\"backToProducts()\">\r\n                            <img src=\"/assets/img/left.png\">\r\n                        </div>\r\n\r\n                        <div class=\"looping\">\r\n\r\n                            <div class=\"product-heading\">\r\n                                <h2>{{productDetailModel.Name}}</h2>\r\n                            </div>\r\n\r\n                            \r\n                        <div class=\"optionsDiv\" *ngIf=\"OptionsCheck\">\r\n\r\n                            <div class=\"product-size clearfix\">\r\n                                \r\n                                <div class=\"check-exists\" *ngIf=\"sizeCheck\">\r\n                                    <h2 class=\"product-properties\">Size</h2>\r\n                                    <div class=\"size-box-wrapper\" *ngFor=\"let productDetails of productDetailModel.Options.size\">\r\n                                        \r\n                                        <button class=\"size-box\" (click)=\"sizevalues($event,productDetails.size,productDetails.Price)\"> \r\n        \r\n                                            {{productDetails.size}}<br>\r\n                                            + AED{{productDetails.Price}}\r\n                                        </button>\r\n                                    </div>\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n\r\n\r\n                            <div class=\"product-box-variation clearfix\">\r\n\r\n\r\n\r\n                                <div class=\"row check-exists\" *ngIf=\"boxCheck\">\r\n                                    <h2 class=\"product-properties\">Box Color</h2>\r\n                                    <div class=\"product-box-variation-wrapper clearfix\" *ngFor=\"let productDetails of productDetailModel.Options.color\">\r\n                                        <button class=\"product-variation-box boxColor\" (click)=\"colorvalues($event,productDetails.color)\">\r\n                                            {{productDetails.color}}\r\n                                        </button>\r\n                                    </div>\r\n                                </div>\r\n\r\n\r\n                                <div class=\"row check-exists\" *ngIf=\"boxTypeCheck\">\r\n                                    <h2 class=\"product-properties\">Box Type</h2>\r\n                                    <div id=\"box-type\" class=\"product-box-variation-wrapper clearfix\" *ngFor=\"let productDetails of productDetailModel.Options.box\">\r\n                                        <button class=\"product-variation-box\" (click)=\"boxtype($event,productDetails.box,productDetails.Price)\">\r\n                                        \r\n                                            {{productDetails.box}}<br>\r\n                                            + AED{{productDetails.Price}}\r\n                                        </button>\r\n                                    </div>\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-6 col-xs-6' style=\"padding-left:0;\">\r\n                                    <h2 class=\"product-properties\">In Stock</h2>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    <p class=\"quantity-value\">{{productDetailModel.Quantity}}</p>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-6 col-xs-6' style=\"padding-left:0;\">\r\n                                    <h2 class=\"product-properties\">Quantity</h2>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    <div class=\"quantity\" id=\"prod-quantity\">\r\n                                        <input type=\"number\" id=\"num_val\" min=\"1\" max=\"{{productDetailModel.Quantity}}\" class='qty' step=\"1\" value=\"1\" readonly>\r\n                                        <div class=\"quantity-nav\">\r\n                                            <div class=\"quantity-button quantity-up qtyplus \" field='quantity' (click)=\"Upping(productDetailModel.Quantity)\">+</div>\r\n                                            <div class=\"quantity-button quantity-down qtyminus\"  field='quantity' (click)=\"Downing()\">-</div>\r\n                                        </div>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert size-alert alert-danger\">Please select a Size</div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert box-alert alert-danger\">Please select Box Type</div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert color-alert alert-danger\">Please select a Color</div>\r\n                            </div>\r\n\r\n                            <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-12 col-xs-12' style=\"padding-left:0;\">\r\n                                    <button class=\"add-to-cart\" (click)=\"addtoCart(productDetailModel)\">Add To Cart</button>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    \r\n                                </div>\r\n                            </div>\r\n\r\n\r\n\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n\r\n                    <div class=\"products-list animated\">\r\n\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='allProducts'>\r\n                            <div class=\"box\" *ngFor=\"let Product of searchproductModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat1'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat2'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat3'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat4'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                </div>\r\n\r\n                <div id=\"receipts\" class=\"tab-pane fade\">\r\n\r\n\r\n\r\n                    <div class=\"customers-tab clearfix\">\r\n\r\n                        <div class=\"customers-heading\">\r\n                            <p>Receipts</p>\r\n                        </div>\r\n\r\n                    </div>\r\n                    <div class=\"search-box-items-reciept\">\r\n\r\n                    <div class=\"row clearfix order-types-row\">\r\n\r\n                        <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                              <button class=\"order-types\" id=\"cashOnDelivery\" (click)=\"getOnDeliveryOrders($event)\">On Delivery</button>\r\n                            </div>\r\n                         <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                             <button class=\"order-types\" (click)=\"getOnCashOrders($event)\">Cash</button>\r\n                            </div>\r\n\r\n                         <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                             <button class=\"order-types\">Credit Card</button>\r\n                            </div>\r\n\r\n                         <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                             <button class=\"order-types\">3rd Party</button>\r\n                            </div>\r\n\r\n\r\n                     </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div id=\"reciepts-data\">\r\n\r\n\r\n                        <ul  class=\"listing-customers clearfix\">\r\n\r\n                                <li *ngFor=\"let order of tempOrders\" class=\"clearfix\">\r\n                                    <a (click)=\"getDetailedOrder(order.Customer.OrderID)\" id='{{order.Customer.OrderID}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{order.Customer.Date}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{order.Billing.Name}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>\r\n\r\n\r\n                        </ul>\r\n\r\n\r\n\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div id=\"orderDetail\">\r\n\r\n                        <div class=\"info-holder\" *ngIf='orderDetailFlag'>\r\n                                            \r\n                        <div class=\"billing-section\">\r\n                            <div class=\"back-to-orders\" (click)=\"backToOrders()\">\r\n                                                <img src=\"/assets/img/left.png\">\r\n                                            </div>\r\n                            <div class=\"order-section\">\r\n                                <h3 class=\"order-heading\">Order Information</h3>\r\n                                <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.OrderID}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Total}}</p>\r\n                            </div>\r\n                            <div class=\"billing-name\">\r\n                                <h3 class=\"order-heading\">Billing Information</h3>\r\n                                <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Billing.Name}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Billing.Phone}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Billing.Address}}</p>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"customer-detail-section\">\r\n                            <h3 class=\"order-heading\">Customer Details</h3>\r\n                            <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.OrderID}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Name}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Email}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Date}}</p>\r\n                        </div>\r\n                        <div class=\"products-section\">\r\n                            <h3 class=\"order-heading\">Product Details</h3>\r\n                            <hr>\r\n                            <table class=\"table table-striped\">\r\n                                <thead>\r\n                                <tr>\r\n                                    <th>Product Name</th>\r\n                                    <th>Product Price</th>\r\n                                    <th>Product Sku</th>\r\n                                    <th>Product Options</th>\r\n                                </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                <tr *ngFor=\"let products of orderDetail.Products\">\r\n                                    <td>{{products.ProductName}}</td>\r\n                                    <td>{{products.ProductPrice}}</td>\r\n                                    <td>{{products.ProductSku}}</td>\r\n                                    <td>{{products.ProductName}}</td>\r\n                                </tr>\r\n                                </tbody>\r\n                            </table>\r\n\r\n\r\n                           \r\n                        </div>\r\n                        <div class=\"shipping-info-section\">\r\n                                <h3 class=\"order-heading\">Shipping Information</h3>\r\n                                <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Shipping.Name}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Shipping.Phone}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Shipping.Address}}</p>\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div class=\"cart-footer clearfix\">\r\n\r\n                        <div class=\"row\">\r\n\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n                    </div>\r\n\r\n                </div>\r\n                <div id=\"menu3\" class=\"tab-pane fade\">\r\n                    <h3>Menu 3</h3>\r\n                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>\r\n                </div>\r\n            </div>\r\n\r\n\r\n        </div>\r\n\r\n\r\n\r\n    </div>\r\n\r\n    </perfect-scrollbar>\r\n</div>"
+module.exports = "\r\n<div class=\"row products-row\">\r\n\r\n\r\n\r\n\r\n\r\n<perfect-scrollbar  [config]=\"config\">\r\n    <div class=\"main-content \">\r\n\r\n\r\n\r\n        <div class=\"nav-tabs\">\r\n\r\n            <ul class=\"nav nav-pills\">\r\n                <li><a (click)=\"changePill($event)\" data-target=\"customers\" data-toggle=\"pill\"><i (click)=\"changePill($event)\" data-target=\"customers\" class=\"fa fa-user\"></i></a></li>\r\n                <li class=\"active\"><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"categories-tab\"><i (click)=\"changePill($event)\" data-target=\"categories-tab\" class=\"fa fa-bars\"></i></a></li>\r\n                <li><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"receipts\"><i (click)=\"changePill($event)\" data-target=\"receipts\" class=\"fa fa-ticket\"></i></a></li>\r\n                <li><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"menu3\"><i (click)=\"changePill($event)\" data-target=\"menu3\" class=\"fa fa-male\"></i></a></li>\r\n            </ul>\r\n\r\n        </div>\r\n\r\n\r\n        <div class=\"nav-content\">\r\n\r\n\r\n            <div class=\"tab-content\">\r\n\r\n\r\n                <div id=\"customers\" class=\"tab-pane fade clearfix\">\r\n\r\n\r\n                    <div class=\"search-customer\">\r\n\r\n                        <div class=\"customers-tab clearfix\">\r\n\r\n                            <div class=\"editCustomer\">\r\n                                <button class=\"editCustomerBtn\" (click)=\"editCustomerDetails(toEditCustomerId)\"><i class=\"fa fa-pencil\"></i></button>\r\n                            </div>\r\n\r\n                            <div class=\"customers-heading\">\r\n                                <p>Customers</p>\r\n                            </div>\r\n\r\n                            <div class=\"customer-add\">\r\n                                <button class=\"add-customer\" (click)=\"addCustomerForm()\"><i class=\"fa fa-plus\"></i></button>\r\n                            </div>\r\n\r\n                        </div>\r\n                        <div class=\"search-box-items clearfix\">\r\n\r\n                            <div class=\"search-input clearfix\">\r\n\r\n                                <input type=\"text\" name=\"searchCustomers\" (keyup)=\"searchThisCustomer(this)\" [(ngModel)]=\"searchCustomers\" class=\"form-control\" placeholder=\"Search items by name or sku\">\r\n\r\n                                <img src=\"../../assets/img/camera.png\">\r\n                                \r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"list-customers clearfix\">\r\n                            <div class='customer-loader'>  <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i></div>\r\n                            <ul *ngIf=\"customerList\" class=\"listing-customers clearfix\">\r\n\r\n                                <li *ngFor=\"let customersModel of CustomersModel\" class=\"clearfix\">\r\n                                    <a (click)=\"editCustomer(customersModel.id)\" id='{{customersModel.id}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{customersModel.customerName}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{customersModel.customerEmail}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>\r\n\r\n\r\n                            </ul>\r\n\r\n                            <ul *ngIf=\"searchFlag\" class=\"listing-customers clearfix\">\r\n\r\n                                 <li *ngFor=\"let searchedModel of SearchedModel\" class=\"clearfix\">\r\n                                    <a (click)=\"editCustomer(searchedModel.id)\" id='{{searchedModel.id}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{searchedModel.customerName}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{searchedModel.customerEmail}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>                           \r\n\r\n\r\n                            </ul>\r\n\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"new-customer-form\">\r\n\r\n                        <div class=\"close-form\" (click)=\"hideNewCustomerForm()\">&times;</div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <div class=\"fileinput fileinput-new\" data-provides=\"fileinput\">\r\n                                        <div class=\"fileinput-preview thumbnail\" id=\"image-container\" data-trigger=\"fileinput\" style=\"width:120px;height:120px;border-radius:50%;\"></div>\r\n                                        <div>\r\n                                            <span style=\"display:none\" class=\"btn btn-default btn-file\"><span  class=\"fileinput-new\">Select image</span>\r\n                                            <span\r\n                                                class=\"fileinput-exists\">Change</span><input type=\"file\" style=\"display:none\" name=\"...\"></span>\r\n                                                <a href=\"#\" class=\"btn btn-default fileinput-exists remove_image\" data-dismiss=\"fileinput\"><i class=\"fa fa-trash\"></i></a>\r\n                                        </div>\r\n                                    </div>\r\n\r\n\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerNameInput\" name=\"customerName\" [(ngModel)]=\"customerName\" type=\"text\" placeholder=\"Customer Name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <select id=\"select-customer-type\" [(ngModel)]=\"customerType\" class=\"new-form-inputs\">\r\n                             <option  value=\"\" disabled selected>Customer Type</option>\r\n                            <option *ngFor=\"let customerGroup of CustomergroupsModel\" value=\"{{customerGroup.id}}\">{{customerGroup.value}}</option>\r\n                    \r\n                    </select>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerCellPhone\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\"\r\n                                    placeholder=\"Cell Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Work Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerWorkPhone\" [(ngModel)]=\"customerWorkPhone\" type=\"number\" placeholder=\"Work Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerEmail\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Email\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <div class=\"radio\">\r\n                                    <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"male\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                    <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"female\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                </div>\r\n\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n                               <!-- <ng2-datepicker [options]=\"options\" [(ngModel)]=\"customersDOB\"></ng2-datepicker>-->\r\n\r\n                             <input class=\"new-form-inputs\" id=\"customerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n\r\n                            <div class=\"checkbox\">\r\n                                <label><input class=\"shippingCheckbox regular-checkbox\" (change)=\"shippingAddressForm()\" type=\"checkbox\" value=\"shipping\">    Shipping</label>\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"shipping-address-form\">\r\n                            <!-- Shipping Address Form -->\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"Name\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"Phone\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\"  id=\"toShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n                        <!-- Shipping Address Form -->\r\n\r\n\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Personal Discount</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerDiscount\" [(ngModel)]=\"customerDiscount\" type=\"text\" placeholder=\"Discount\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"incompleteForm\">\r\n\r\n                            <p>Please Fill out the form completely!</p>\r\n\r\n                        </div>\r\n\r\n                        <div id=\"loader\">\r\n                            <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"submit-button\">\r\n\r\n                            <button class=\"create-customer\" (click)=\"createCustomer()\">Create Customer</button>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"alert alert-success row margined-top\" id=\"customer-added\">\r\n\r\n                            <p>Customer Created Successfully!</p>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                    <!--- Customer Edit Form -->\r\n\r\n\r\n\r\n\r\n                    <div class=\"edit-customer-form\">\r\n\r\n                        <div class=\"row\">\r\n                            <div class=\"col-md-6\"></div>\r\n                            <div class=\"col-md-6\"> <div class=\"close-edit-form\" (click)=\"hideEditForm()\">&times;</div></div>\r\n                        </div>\r\n                       \r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <div class=\"fileinput fileinput-new\" data-provides=\"fileinput\">\r\n                                        <div class=\"fileinput-preview thumbnail\" id=\"image-container\" data-trigger=\"fileinput\" style=\"width:120px;height:120px;border-radius:50%;\"></div>\r\n                                        <div>\r\n                                            <span style=\"display:none\" class=\"btn btn-default btn-file\"><span  class=\"fileinput-new\">Select image</span>\r\n                                            <span\r\n                                                class=\"fileinput-exists\">Change</span><input type=\"file\" style=\"display:none\" name=\"...\"></span>\r\n                                                <a href=\"#\" class=\"btn btn-default fileinput-exists remove_image\" data-dismiss=\"fileinput\"><i class=\"fa fa-trash\"></i></a>\r\n                                        </div>\r\n                                    </div>\r\n\r\n\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs edit-profile-name\" id=\"editCustomerName\" name=\"customerName\" [(ngModel)]=\"customerName\" type=\"text\" placeholder=\"Customer Name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <select id=\"edit-customer-type\" [(ngModel)]=\"customerType\" class=\"new-form-inputs\">\r\n                             <option  value=\"\" disabled selected>Customer Type</option>\r\n                            <option *ngFor=\"let customerGroup of CustomergroupsModel\" value=\"{{customerGroup.id}}\">{{customerGroup.value}}</option>\r\n                    \r\n                    </select>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerCellPhone\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\"\r\n                                    placeholder=\"Cell Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Work Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"editCustomerWorkPhone\" [(ngModel)]=\"customerWorkPhone\" type=\"number\" placeholder=\"Work Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerEmail\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Email\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <div class=\"radio\">\r\n                                    <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"editGender\" value=\"Male\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                    <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"editGender\" value=\"Female\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                </div>\r\n\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n                               <!-- <ng2-datepicker [options]=\"options\" [(ngModel)]=\"customersDOB\"></ng2-datepicker>-->\r\n\r\n                             <input class=\"new-form-inputs\" id=\"editCustomerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n\r\n                            <div class=\"checkbox\">\r\n                                <label><input class=\"shippingCheckbox regular-checkbox\" (change)=\"shippingAddressForm()\" type=\"checkbox\" value=\"shipping\">    Shipping</label>\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"shipping-address-form\">\r\n                            <!-- Shipping Address Form -->\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"editToShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"Name\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"editToShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"Phone\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\"  id=\"editToShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n                        <!-- Shipping Address Form -->\r\n\r\n\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Personal Discount</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerDiscount\" [(ngModel)]=\"customerDiscount\" type=\"text\" placeholder=\"Discount\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"editincompleteForm\">\r\n\r\n                            <p>Please Fill out the form completely!</p>\r\n\r\n                        </div>\r\n\r\n                        <div id=\"editloader\">\r\n                            <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"update-button\">\r\n\r\n                            <button class=\"create-customer\" (click)=\"updateCustomer()\">Update Customer</button>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"alert alert-success row margined-top\" id=\"customer-updated\">\r\n\r\n                            <p>Customer Updated Successfully!</p>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                    <!-- Customer Edit Form -->\r\n\r\n\r\n                    <!-- Customer Profile to show -->\r\n\r\n                    <div class=\"Customer-full-detail animated\">\r\n\r\n\r\n                        <div class=\"back-to-search-customers\" (click)=\"backToSearchCustomers()\">\r\n                              <img src=\"/assets/img/left.png\">\r\n                        </div>\r\n\r\n                        <div class=\"\">\r\n\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"left-pic clearfix\">\r\n\r\n                                    <div class=\"profile-pic\">\r\n\r\n                                        <img src=\"../../assets/img/bane.jpg\">\r\n\r\n                                    </div>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"right-name clearfix\">\r\n\r\n                                    <h3 class=\"profile-name\">Tom Hardy</h3>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n\r\n                            <hr>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Cell Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\" placeholder=\"Cell Phone\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Email</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Cell Phone\" readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Gender</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <div class=\"radio\">\r\n                                        <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"Male\" [(ngModel)]=\"customerGender\">\r\n                                        <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                        <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"Female\" [(ngModel)]=\"customerGender\">\r\n                                        <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                    </div>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Date of Birth</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"customerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"customerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <button class=\"reciepts\"><i class=\"fa fa-bar-chart\"></i><p> Orders/Reciepts </p></button>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <button class=\"notes\"><i class=\"fa fa-sticky-note\" aria-hidden=\"true\"></i><p> Notes </p></button>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n                    <!-- Customer Profile to Show-->\r\n\r\n\r\n                    <div class=\"customer-profile-tab\">\r\n\r\n                        <div class=\"customers-tab clearfix\">\r\n\r\n                            <div class=\"unselect-customer\">\r\n                                <button><i class=\"fa fa-times-circle-o\" aria-hidden=\"true\"></i></button>\r\n                            </div>\r\n                            <div class=\"customers-heading\">\r\n                                <p>Customers</p>\r\n                            </div>\r\n\r\n                            <div class=\"customer-edit\">\r\n                                <button class=\"add-customer\"><i class=\"fa fa-pencil\"></i></button>\r\n                            </div>\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <img src=\"../../assets/img/bane.jpg\">\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <h3 class=\"profile-name\">Tom Hardy</h3>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">--</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Code</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">9876</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">(001)-7524-3422</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">bane@gothamcity.com</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">Male</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">26-05-1993</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">Arkhan City Asylum</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <button class=\"reciepts\"><i class=\"fa fa-bar-chart\"></i><p> Orders/Reciepts </p></button>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <button class=\"notes\"><i class=\"fa fa-sticky-note\" aria-hidden=\"true\"></i><p> Notes </p></button>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                </div>\r\n\r\n\r\n\r\n                <div id=\"categories-tab\" class=\"tab-pane fade in active clearfix\">\r\n\r\n                    <div class=\"background-added\">\r\n\r\n                        <div class=\"categories-tab clearfix\">\r\n\r\n                            <div class=\"box\">\r\n                                <a class=\"no-link\" (click)=\"setAll()\">\r\n                                    <div class=\"cat-image circle-box\">\r\n                                        <p class=\"all-text\">All</p>\r\n                                    </div>\r\n                                    <h3>All</h3>\r\n                                </a>\r\n                            </div>\r\n\r\n\r\n                            <div *ngFor=\"let categories of categories\" class=\"box\">\r\n                                <a class=\"no-link\" (click)=\"ShowProductsForCategories(categories.id)\" id=\"{{categories.id}}\">\r\n                                    <div class=\"cat-image\">\r\n                                        <img src=\"{{categories.imageURL}}\">\r\n                                    </div>\r\n                                    <h3>{{categories.name}}</h3>\r\n                                </a>\r\n                            </div>\r\n\r\n\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"search-box-items\">\r\n\r\n                            <div class=\"search-input\">\r\n                                <input type=\"text\" name=\"searchProduct\" [(ngModel)]=\"searchProduct\" (keyup)=\"searchThisProduct(this)\" class=\"form-control\" placeholder=\"Search items by name or sku\">\r\n                               <!-- <button class=\"searchCustomerBtn\"><i class=\"fa fa-chevron-right\"></i></button>-->\r\n                                <img src=\"../../assets/img/camera.png\">\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                    <div *ngIf=\"detailFlag\" class=\"product-detail-tab animated\">\r\n\r\n                        <div class=\"backToProducts\" (click)=\"backToProducts()\">\r\n                            <img src=\"/assets/img/left.png\">\r\n                        </div>\r\n\r\n                        <div class=\"looping\">\r\n\r\n                            <div class=\"product-heading\">\r\n                                <h2>{{productDetailModel.Name}}</h2>\r\n                            </div>\r\n\r\n                            \r\n                        <div class=\"optionsDiv\" *ngIf=\"OptionsCheck\">\r\n\r\n                            <div class=\"product-size clearfix\">\r\n                                \r\n                                <div class=\"check-exists\" *ngIf=\"sizeCheck\">\r\n                                    <h2 class=\"product-properties\">Size</h2>\r\n                                    <div class=\"size-box-wrapper\" *ngFor=\"let productDetails of productDetailModel.Options.size\">\r\n                                        \r\n                                        <button class=\"size-box\" (click)=\"sizevalues($event,productDetails.size,productDetails.Price)\"> \r\n        \r\n                                            {{productDetails.size}}<br>\r\n                                            + AED{{productDetails.Price}}\r\n                                        </button>\r\n                                    </div>\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n\r\n\r\n                            <div class=\"product-box-variation clearfix\">\r\n\r\n\r\n\r\n                                <div class=\"row check-exists\" *ngIf=\"boxCheck\">\r\n                                    <h2 class=\"product-properties\">Box Color</h2>\r\n                                    <div class=\"product-box-variation-wrapper clearfix\" *ngFor=\"let productDetails of productDetailModel.Options.color\">\r\n                                        <button class=\"product-variation-box boxColor\" (click)=\"colorvalues($event,productDetails.color)\">\r\n                                            {{productDetails.color}}\r\n                                        </button>\r\n                                    </div>\r\n                                </div>\r\n\r\n\r\n                                <div class=\"row check-exists\" *ngIf=\"boxTypeCheck\">\r\n                                    <h2 class=\"product-properties\">Box Type</h2>\r\n                                    <div id=\"box-type\" class=\"product-box-variation-wrapper clearfix\" *ngFor=\"let productDetails of productDetailModel.Options.box\">\r\n                                        <button class=\"product-variation-box\" (click)=\"boxtype($event,productDetails.box,productDetails.Price)\">\r\n                                        \r\n                                            {{productDetails.box}}<br>\r\n                                            + AED{{productDetails.Price}}\r\n                                        </button>\r\n                                    </div>\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-6 col-xs-6' style=\"padding-left:0;\">\r\n                                    <h2 class=\"product-properties\">In Stock</h2>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    <p class=\"quantity-value\">{{productDetailModel.Quantity}}</p>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-6 col-xs-6' style=\"padding-left:0;\">\r\n                                    <h2 class=\"product-properties\">Quantity</h2>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    <div class=\"quantity\" id=\"prod-quantity\">\r\n                                        <input type=\"number\" id=\"num_val\" min=\"1\" max=\"{{productDetailModel.Quantity}}\" class='qty' step=\"1\" value=\"1\" readonly>\r\n                                        <div class=\"quantity-nav\">\r\n                                            <div class=\"quantity-button quantity-up qtyplus \" field='quantity' (click)=\"Upping(productDetailModel.Quantity)\">+</div>\r\n                                            <div class=\"quantity-button quantity-down qtyminus\"  field='quantity' (click)=\"Downing()\">-</div>\r\n                                        </div>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert size-alert alert-danger\">Please select a Size</div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert box-alert alert-danger\">Please select Box Type</div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert color-alert alert-danger\">Please select a Color</div>\r\n                            </div>\r\n\r\n                            <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-12 col-xs-12' style=\"padding-left:0;\">\r\n                                    <button class=\"add-to-cart\" (click)=\"addtoCart(productDetailModel)\">Add To Cart</button>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    \r\n                                </div>\r\n                            </div>\r\n\r\n\r\n\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n\r\n                    <div class=\"products-list animated\">\r\n\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='allProducts'>\r\n                            <div class=\"box\" *ngFor=\"let Product of searchproductModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat1'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat2'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat3'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat4'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                </div>\r\n\r\n                <div id=\"receipts\" class=\"tab-pane fade\">\r\n\r\n\r\n\r\n                    <div class=\"customers-tab clearfix\">\r\n\r\n                        <div class=\"customers-heading\">\r\n                            <p>Receipts</p>\r\n                        </div>\r\n\r\n                    </div>\r\n                    <div class=\"search-box-items-reciept\">\r\n\r\n                    <div class=\"row clearfix order-types-row\">\r\n\r\n                        <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                              <button class=\"order-types\" id=\"cashOnDelivery\" (click)=\"getOnDeliveryOrders($event)\">On Delivery</button>\r\n                            </div>\r\n                         <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                             <button class=\"order-types\" (click)=\"getOnCashOrders($event)\">Cash</button>\r\n                            </div>\r\n\r\n                         <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                             <button class=\"order-types\">Credit Card</button>\r\n                            </div>\r\n\r\n                         <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                             <button class=\"order-types\">3rd Party</button>\r\n                            </div>\r\n\r\n\r\n                     </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div id=\"reciepts-data\">\r\n\r\n\r\n                        <ul  class=\"listing-customers clearfix\">\r\n\r\n                                <li *ngFor=\"let order of tempOrders\" class=\"clearfix\">\r\n                                    <a (click)=\"getDetailedOrder(order.Customer.OrderID)\" id='{{order.Customer.OrderID}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{order.Customer.Date}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{order.Billing.Name}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>\r\n\r\n\r\n                        </ul>\r\n\r\n\r\n\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div id=\"orderDetail\">\r\n\r\n                        <div class=\"info-holder\" *ngIf='orderDetailFlag'>\r\n                                            \r\n                        <div class=\"billing-section\">\r\n                            <div class=\"back-to-orders\" (click)=\"backToOrders()\">\r\n                                                <img src=\"/assets/img/left.png\">\r\n                                            </div>\r\n                            <div class=\"order-section\">\r\n                                <h3 class=\"order-heading\">Order Information</h3>\r\n                                <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.OrderID}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Total}}</p>\r\n                            </div>\r\n                            <div class=\"billing-name\">\r\n                                <h3 class=\"order-heading\">Billing Information</h3>\r\n                                <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Billing.Name}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Billing.Phone}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Billing.Address}}</p>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"customer-detail-section\">\r\n                            <h3 class=\"order-heading\">Customer Details</h3>\r\n                            <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.OrderID}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Name}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Email}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Date}}</p>\r\n                        </div>\r\n                        <div class=\"products-section\">\r\n                            <h3 class=\"order-heading\">Product Details</h3>\r\n                            <hr>\r\n                            <table class=\"table table-striped\">\r\n                                <thead>\r\n                                <tr>\r\n                                    <th>Product Name</th>\r\n                                    <th>Product Price</th>\r\n                                    <th>Product Sku</th>\r\n                                    <th>Product Options</th>\r\n                                </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                <tr *ngFor=\"let products of orderDetail.Products\">\r\n                                    <td>{{products.ProductName}}</td>\r\n                                    <td>{{products.ProductPrice}}</td>\r\n                                    <td>{{products.ProductSku}}</td>\r\n                                    <td>{{products.ProductName}}</td>\r\n                                </tr>\r\n                                </tbody>\r\n                            </table>\r\n\r\n\r\n                           \r\n                        </div>\r\n                        <div class=\"shipping-info-section\">\r\n                                <h3 class=\"order-heading\">Shipping Information</h3>\r\n                                <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Shipping.Name}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Shipping.Phone}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Shipping.Address}}</p>\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div class=\"cart-footer clearfix\">\r\n\r\n                        <div class=\"row\">\r\n\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n                    </div>\r\n\r\n                </div>\r\n                <div id=\"menu3\" class=\"tab-pane fade\">\r\n \r\n                </div>\r\n            </div>\r\n\r\n\r\n        </div>\r\n\r\n\r\n\r\n    </div>\r\n\r\n    </perfect-scrollbar>\r\n</div>"
 
 /***/ }),
 /* 524 */
@@ -101606,7 +101611,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscription_1 = __webpack_require__(79);
+var Subscription_1 = __webpack_require__(80);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -101665,7 +101670,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(11);
 var ScalarObservable_1 = __webpack_require__(280);
-var EmptyObservable_1 = __webpack_require__(109);
+var EmptyObservable_1 = __webpack_require__(110);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -101742,7 +101747,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Subject_1 = __webpack_require__(63);
 var Observable_1 = __webpack_require__(11);
 var Subscriber_1 = __webpack_require__(20);
-var Subscription_1 = __webpack_require__(79);
+var Subscription_1 = __webpack_require__(80);
 /**
  * @class ConnectableObservable<T>
  */
@@ -101908,10 +101913,10 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(11);
-var EmptyObservable_1 = __webpack_require__(109);
-var isArray_1 = __webpack_require__(80);
-var subscribeToResult_1 = __webpack_require__(81);
-var OuterSubscriber_1 = __webpack_require__(78);
+var EmptyObservable_1 = __webpack_require__(110);
+var isArray_1 = __webpack_require__(81);
+var subscribeToResult_1 = __webpack_require__(82);
+var OuterSubscriber_1 = __webpack_require__(79);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -102025,16 +102030,16 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isArray_1 = __webpack_require__(80);
+var isArray_1 = __webpack_require__(81);
 var isPromise_1 = __webpack_require__(288);
 var PromiseObservable_1 = __webpack_require__(279);
 var IteratorObservable_1 = __webpack_require__(534);
-var ArrayObservable_1 = __webpack_require__(108);
+var ArrayObservable_1 = __webpack_require__(109);
 var ArrayLikeObservable_1 = __webpack_require__(530);
-var iterator_1 = __webpack_require__(112);
+var iterator_1 = __webpack_require__(113);
 var Observable_1 = __webpack_require__(11);
 var observeOn_1 = __webpack_require__(547);
-var observable_1 = __webpack_require__(113);
+var observable_1 = __webpack_require__(114);
 var isArrayLike = (function (x) { return x && typeof x.length === 'number'; });
 /**
  * We need this JSDoc comment for affecting ESDoc.
@@ -102155,7 +102160,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var root_1 = __webpack_require__(51);
 var Observable_1 = __webpack_require__(11);
-var iterator_1 = __webpack_require__(112);
+var iterator_1 = __webpack_require__(113);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -102352,8 +102357,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(78);
-var subscribeToResult_1 = __webpack_require__(81);
+var OuterSubscriber_1 = __webpack_require__(79);
+var subscribeToResult_1 = __webpack_require__(82);
 /**
  * Catches errors on the observable to be handled by returning a new observable or throwing an error.
  * @param {function} selector a function that takes as arguments `err`, which is the error, and `caught`, which
@@ -102419,7 +102424,7 @@ var CatchSubscriber = (function (_super) {
 
 "use strict";
 
-var mergeAll_1 = __webpack_require__(111);
+var mergeAll_1 = __webpack_require__(112);
 /* tslint:disable:max-line-length */
 /**
  * Converts a higher-order Observable into a first-order Observable by
@@ -102742,7 +102747,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(20);
-var EmptyError_1 = __webpack_require__(115);
+var EmptyError_1 = __webpack_require__(116);
 /**
  * Emits only the first value (or the first value that meets some condition)
  * emitted by the source Observable.
@@ -102900,7 +102905,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(20);
-var EmptyError_1 = __webpack_require__(115);
+var EmptyError_1 = __webpack_require__(116);
 /* tslint:disable:max-line-length */
 /**
  * Returns an Observable that emits only the last item emitted by the source Observable.
@@ -103019,8 +103024,8 @@ var LastSubscriber = (function (_super) {
 
 "use strict";
 
-var ArrayObservable_1 = __webpack_require__(108);
-var mergeAll_1 = __webpack_require__(111);
+var ArrayObservable_1 = __webpack_require__(109);
+var mergeAll_1 = __webpack_require__(112);
 var isScheduler_1 = __webpack_require__(289);
 /* tslint:disable:max-line-length */
 /**
@@ -103508,7 +103513,7 @@ exports.UnsubscriptionError = UnsubscriptionError;
 "use strict";
 
 var Subscriber_1 = __webpack_require__(20);
-var rxSubscriber_1 = __webpack_require__(114);
+var rxSubscriber_1 = __webpack_require__(115);
 var Observer_1 = __webpack_require__(278);
 function toSubscriber(nextOrObserver, error, complete) {
     if (nextOrObserver) {
