@@ -97605,7 +97605,6 @@ var CartrightComponent = (function () {
     };
     CartrightComponent.prototype.callModal = function () {
         var error = false;
-        console.log(this.cart);
         if (this.customerObject == undefined) {
             alert("Please choose a customer!");
             error = true;
@@ -97621,6 +97620,7 @@ var CartrightComponent = (function () {
             }
         }
         if (error) {
+            console.log("problem");
         }
         else {
             __WEBPACK_IMPORTED_MODULE_5_jquery__("#PaymentOptionsButton").click();
