@@ -97619,15 +97619,17 @@ var CartrightComponent = (function () {
                 error = true;
             }
         }
+        console.log("problem");
         if (error) {
-            console.log("problem");
         }
         else {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__("#PaymentOptionsButton").click();
+            console.log("problem");
+            /*jQuery("#PaymentOptionsButton").click();*/
+            __WEBPACK_IMPORTED_MODULE_5_jquery__('#PaymentOptions').modal('show');
         }
     };
     CartrightComponent.prototype.thanksMsgShow = function () {
-        self = this;
+        var self = this;
         __WEBPACK_IMPORTED_MODULE_5_jquery__(".OrderLoader").show();
         __WEBPACK_IMPORTED_MODULE_5_jquery__(".proceed").hide();
         __WEBPACK_IMPORTED_MODULE_5_jquery__(".shipment-plus-or").hide();
@@ -98618,7 +98620,9 @@ var MainComponent = (function () {
                 if (a == "1") {
                     __WEBPACK_IMPORTED_MODULE_11_jquery__("#editincompleteForm").css("display", "none");
                     __WEBPACK_IMPORTED_MODULE_11_jquery__("#editloader").hide();
-                    __WEBPACK_IMPORTED_MODULE_11_jquery__("#customer-updated").show();
+                    setTimeout(function () {
+                        __WEBPACK_IMPORTED_MODULE_11_jquery__("#customer-updated").show();
+                    }, 5000);
                     _this.unsetValues();
                     _this.CustomersModel = [];
                     _this.customerService.getCustomersList().subscribe(function (a) {
@@ -98861,7 +98865,7 @@ var MainComponent = (function () {
     };
     MainComponent.prototype.hideEditForm = function () {
         __WEBPACK_IMPORTED_MODULE_11_jquery__(".edit-customer-form,.editCustomer").hide();
-        __WEBPACK_IMPORTED_MODULE_11_jquery__(".list-customers").show();
+        __WEBPACK_IMPORTED_MODULE_11_jquery__(".list-customers,.search-box-items").show();
     };
     MainComponent.prototype.hideNewCustomerForm = function () {
         __WEBPACK_IMPORTED_MODULE_11_jquery__(".new-customer-form").hide();
