@@ -1982,7 +1982,7 @@ function loadLocale(name) {
             module && module.exports) {
         try {
             oldLocale = globalLocale._abbr;
-            __webpack_require__(516)("./" + name);
+            __webpack_require__(503)("./" + name);
             // because defineLocale currently also sets the global locale, we
             // want to undo that for lazy loaded locales
             getSetGlobalLocale(oldLocale);
@@ -4617,7 +4617,7 @@ return hooks;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(575)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(562)(module)))
 
 /***/ }),
 /* 1 */,
@@ -4823,9 +4823,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge__ = __webpack_require__(550);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge__ = __webpack_require__(537);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__ = __webpack_require__(562);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__ = __webpack_require__(549);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__);
@@ -19821,7 +19821,7 @@ function __asyncValues(o) {
 "use strict";
 
 var root_1 = __webpack_require__(51);
-var toSubscriber_1 = __webpack_require__(564);
+var toSubscriber_1 = __webpack_require__(551);
 var observable_1 = __webpack_require__(114);
 /**
  * A representation of any set of values over any amount of time. This the most basic building block
@@ -19965,10 +19965,10 @@ exports.Observable = Observable;
 
 var _ = __webpack_require__(32);
 var cls = __webpack_require__(78);
-var defaultSettings = __webpack_require__(521);
+var defaultSettings = __webpack_require__(508);
 var dom = __webpack_require__(49);
-var EventManager = __webpack_require__(518);
-var guid = __webpack_require__(519);
+var EventManager = __webpack_require__(505);
+var guid = __webpack_require__(506);
 
 var instances = {};
 
@@ -20393,33 +20393,33 @@ var SafeSubscriber = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__ = __webpack_require__(538);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__ = __webpack_require__(525);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__ = __webpack_require__(549);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__ = __webpack_require__(536);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__ = __webpack_require__(282);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__ = __webpack_require__(553);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__ = __webpack_require__(540);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__ = __webpack_require__(554);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__ = __webpack_require__(541);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__ = __webpack_require__(556);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__ = __webpack_require__(543);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__ = __webpack_require__(557);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__ = __webpack_require__(544);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__ = __webpack_require__(283);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce__ = __webpack_require__(561);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce__ = __webpack_require__(548);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__ = __webpack_require__(551);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__ = __webpack_require__(538);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__ = __webpack_require__(552);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__ = __webpack_require__(539);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError__);
@@ -20428,7 +20428,7 @@ var SafeSubscriber = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_platform_browser__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter__ = __webpack_require__(555);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter__ = __webpack_require__(542);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter__);
 
 /**
@@ -38041,7 +38041,7 @@ var Observable_1 = __webpack_require__(11);
 var Subscriber_1 = __webpack_require__(20);
 var Subscription_1 = __webpack_require__(80);
 var ObjectUnsubscribedError_1 = __webpack_require__(284);
-var SubjectSubscription_1 = __webpack_require__(541);
+var SubjectSubscription_1 = __webpack_require__(528);
 var rxSubscriber_1 = __webpack_require__(115);
 /**
  * @class SubjectSubscriber<T>
@@ -38539,9 +38539,9 @@ var __extends = (this && this.__extends) || function (d, b) {
 var isArray_1 = __webpack_require__(81);
 var isObject_1 = __webpack_require__(287);
 var isFunction_1 = __webpack_require__(286);
-var tryCatch_1 = __webpack_require__(565);
+var tryCatch_1 = __webpack_require__(552);
 var errorObject_1 = __webpack_require__(285);
-var UnsubscriptionError_1 = __webpack_require__(563);
+var UnsubscriptionError_1 = __webpack_require__(550);
 /**
  * Represents a disposable resource, such as the execution of an Observable. A
  * Subscription has one important method, `unsubscribe`, that takes no argument
@@ -38730,7 +38730,7 @@ var isPromise_1 = __webpack_require__(288);
 var isObject_1 = __webpack_require__(287);
 var Observable_1 = __webpack_require__(11);
 var iterator_1 = __webpack_require__(113);
-var InnerSubscriber_1 = __webpack_require__(539);
+var InnerSubscriber_1 = __webpack_require__(526);
 var observable_1 = __webpack_require__(114);
 function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
     var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
@@ -38907,7 +38907,7 @@ module.exports = g;
 /* unused harmony export ɵr */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__ = __webpack_require__(548);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__ = __webpack_require__(535);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__ = __webpack_require__(281);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__);
@@ -56087,8 +56087,8 @@ __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 SidebarComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: 'Sidebar',
-        template: __webpack_require__(537),
-        styles: [__webpack_require__(574)]
+        template: __webpack_require__(524),
+        styles: [__webpack_require__(561)]
     }),
     __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_3__services_AddtocartService__["a" /* AddtocartService */]])
 ], SidebarComponent);
@@ -67921,7 +67921,7 @@ var DatePickerComponent = (function () {
 "use strict";
 
 
-module.exports = __webpack_require__(520);
+module.exports = __webpack_require__(507);
 
 
 /***/ }),
@@ -68464,7 +68464,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(568);
+var	fixUrls = __webpack_require__(555);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -68781,7 +68781,7 @@ function updateLink (link, options, obj) {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(511);
+        var result = __webpack_require__(498);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -97276,7 +97276,7 @@ AppComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
         encapsulation: __WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewEncapsulation"].None,
         providers: [__WEBPACK_IMPORTED_MODULE_4__sidebar_sidebar_component__["a" /* SidebarComponent */]],
         styles: [
-            __webpack_require__(570)
+            __webpack_require__(557)
         ],
         template: "\n \n    <main>\n      <router-outlet></router-outlet>\n    </main>\n  "
     }),
@@ -97321,9 +97321,9 @@ AppComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__cartright_cartright_component__ = __webpack_require__(323);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__main_main_component__ = __webpack_require__(331);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__services_AddtocartService__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__styles_styles_scss__ = __webpack_require__(566);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__styles_styles_scss__ = __webpack_require__(553);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__styles_styles_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22__styles_styles_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__styles_headings_css__ = __webpack_require__(567);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__styles_headings_css__ = __webpack_require__(554);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__styles_headings_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_23__styles_headings_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_angular2_wizard__ = __webpack_require__(346);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_angular2_wizard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_24_angular2_wizard__);
@@ -97486,7 +97486,7 @@ AppModule = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__(542);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__(529);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__);
 
 
@@ -97528,8 +97528,8 @@ var ROUTES = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_0__home__["a" /* HomeComponent */] },
     { path: 'home', component: __WEBPACK_IMPORTED_MODULE_0__home__["a" /* HomeComponent */] },
     { path: 'about', component: __WEBPACK_IMPORTED_MODULE_1__about__["a" /* AboutComponent */] },
-    { path: 'detail', loadChildren: function() { return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 577))  .then( function(module) { return module['DetailModule']; } ); } },
-    { path: 'barrel', loadChildren: function() { return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 576))  .then( function(module) { return module['BarrelModule']; } ); } },
+    { path: 'detail', loadChildren: function() { return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 564))  .then( function(module) { return module['DetailModule']; } ); } },
+    { path: 'barrel', loadChildren: function() { return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 563))  .then( function(module) { return module['BarrelModule']; } ); } },
     { path: '**', component: __WEBPACK_IMPORTED_MODULE_2__no_content__["a" /* NoContentComponent */] },
 ];
 
@@ -97548,9 +97548,6 @@ var ROUTES = [
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_AddtocartService__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_jquery__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_bootstrap__ = __webpack_require__(347);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_bootstrap__);
-
 
 
 
@@ -97581,19 +97578,19 @@ var CartrightComponent = (function () {
             if (a.TaxCheck == '1') {
                 _this.taxValue = a.Amount;
                 _this.taxCheck = true;
-                jQuery('.tax-value').prop('checked', true);
-                jQuery(".tax-amount-input").show();
+                __WEBPACK_IMPORTED_MODULE_5_jquery__('.tax-value').prop('checked', true);
+                __WEBPACK_IMPORTED_MODULE_5_jquery__(".tax-amount-input").show();
             }
             else {
-                jQuery('.tax-value').prop('checked', false);
-                jQuery(".tax-amount-input").hide();
+                __WEBPACK_IMPORTED_MODULE_5_jquery__('.tax-value').prop('checked', false);
+                __WEBPACK_IMPORTED_MODULE_5_jquery__(".tax-amount-input").hide();
                 _this.taxValue = 0;
             }
         });
     }
     CartrightComponent.prototype.showCartHideTax = function () {
-        jQuery(".back-office-div").hide();
-        jQuery('.whole-cart').show();
+        __WEBPACK_IMPORTED_MODULE_5_jquery__(".back-office-div").hide();
+        __WEBPACK_IMPORTED_MODULE_5_jquery__('.whole-cart').show();
     };
     CartrightComponent.prototype.getSingleAddress = function (elem) {
         this.checkoutShipName = this.selectedAdress.Name;
@@ -97603,7 +97600,6 @@ var CartrightComponent = (function () {
     CartrightComponent.prototype.pauseCart = function () {
         this.unsetValues();
         this.addtocartService.putOnHoldOrder(this.ShippmentMethod, this.cartObject.length, this.customerObject.id, this.cartObject, this.shippmentObect).subscribe(function (a) {
-            console.log(a);
         });
     };
     CartrightComponent.prototype.callModal = function () {
@@ -97622,78 +97618,76 @@ var CartrightComponent = (function () {
                 error = true;
             }
         }
-        console.log("problem");
         if (error) {
         }
         else {
-            console.log("problem");
+            document.getElementById("PaymentOptionsButton").click();
             /*jQuery("#PaymentOptionsButton").click();*/
-            jQuery('#PaymentOptions').modal('show');
+            /*   jQuery('#PaymentOptions').modal('show');*/
         }
     };
     CartrightComponent.prototype.thanksMsgShow = function () {
         var self = this;
-        jQuery(".OrderLoader").show();
-        jQuery(".proceed").hide();
-        jQuery(".shipment-plus-or").hide();
+        __WEBPACK_IMPORTED_MODULE_5_jquery__(".OrderLoader").show();
+        __WEBPACK_IMPORTED_MODULE_5_jquery__(".proceed").hide();
+        __WEBPACK_IMPORTED_MODULE_5_jquery__(".shipment-plus-or").hide();
         this.addtocartService.placeOrder(this.ShippmentMethod, this.cartObject.length, this.customerObject.id, this.cartObject, this.shippmentObect).subscribe(function (a) {
             if (a == 1) {
-                jQuery(".thankyouMsg").show();
-                jQuery(".OrderLoader").hide();
+                __WEBPACK_IMPORTED_MODULE_5_jquery__(".thankyouMsg").show();
+                __WEBPACK_IMPORTED_MODULE_5_jquery__(".OrderLoader").hide();
                 setTimeout(function () {
                     self.unsetValues();
-                    jQuery('#PaymentOptions #closeModal').click();
+                    __WEBPACK_IMPORTED_MODULE_5_jquery__('#PaymentOptions #closeModal').click();
                 }, 5000);
             }
             else {
-                jQuery(".thankyouMsg>h3").text("There was an error while placing your order!");
+                __WEBPACK_IMPORTED_MODULE_5_jquery__(".thankyouMsg>h3").text("There was an error while placing your order!");
                 setTimeout(function () {
-                    jQuery(".shippment-options,.or-text,.checkout-shippment-form,.proceed-without-shippment").hide();
-                    jQuery('.payment-options').show();
+                    __WEBPACK_IMPORTED_MODULE_5_jquery__(".shippment-options,.or-text,.checkout-shippment-form,.proceed-without-shippment").hide();
+                    __WEBPACK_IMPORTED_MODULE_5_jquery__('.payment-options').show();
                 }, 5000);
-                console.log(a);
             }
         });
     };
     CartrightComponent.prototype.SubmitCheckoutShippmentInfo = function () {
         var error;
-        this.checkoutShipName = jQuery.trim(this.checkoutShipName);
-        this.checkoutShipPhone = jQuery.trim(this.checkoutShipPhone);
-        this.checkoutShipAddress = jQuery.trim(this.checkoutShipAddress);
+        this.checkoutShipName = __WEBPACK_IMPORTED_MODULE_5_jquery__["trim"](this.checkoutShipName);
+        this.checkoutShipPhone = __WEBPACK_IMPORTED_MODULE_5_jquery__["trim"](this.checkoutShipPhone);
+        this.checkoutShipAddress = __WEBPACK_IMPORTED_MODULE_5_jquery__["trim"](this.checkoutShipAddress);
         if (this.checkoutShipName == undefined || this.checkoutShipName.length == 0) {
-            jQuery(".checkout-shippment-form #checkoutShipName,.checkout-shippment-form-cash-on-delivery .checkoutShipName").addClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form #checkoutShipName,.checkout-shippment-form-cash-on-delivery .checkoutShipName").addClass("errorClass");
             error = true;
         }
         else {
-            jQuery(".checkout-shippment-form #checkoutShipName,.checkout-shippment-form-cash-on-delivery .checkoutShipName").removeClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form #checkoutShipName,.checkout-shippment-form-cash-on-delivery .checkoutShipName").removeClass("errorClass");
         }
         if (this.checkoutShipPhone == undefined || this.checkoutShipPhone.length == 0) {
-            jQuery(".checkout-shippment-form #checkoutShipPhone,.checkout-shippment-form-cash-on-delivery .checkoutShipPhone").addClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form #checkoutShipPhone,.checkout-shippment-form-cash-on-delivery .checkoutShipPhone").addClass("errorClass");
             error = true;
         }
         else {
-            jQuery(".checkout-shippment-form #checkoutShipPhone,.checkout-shippment-form-cash-on-delivery .checkoutShipPhone").removeClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form #checkoutShipPhone,.checkout-shippment-form-cash-on-delivery .checkoutShipPhone").removeClass("errorClass");
         }
         if (this.checkoutShipAddress == undefined || this.checkoutShipAddress.length == 0) {
-            jQuery(".checkout-shippment-form #checkoutShipAddress,.checkout-shippment-form-cash-on-delivery .checkoutShipAddress").addClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form #checkoutShipAddress,.checkout-shippment-form-cash-on-delivery .checkoutShipAddress").addClass("errorClass");
             error = true;
         }
         else {
-            jQuery(".checkout-shippment-form #checkoutShipAddress,.checkout-shippment-form-cash-on-delivery .checkoutShipAddress").removeClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form #checkoutShipAddress,.checkout-shippment-form-cash-on-delivery .checkoutShipAddress").removeClass("errorClass");
         }
         if (error) {
-            jQuery(".SubmitCheckoutShippment").css("display", "block");
-            jQuery(".checkoutLoader").hide();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".SubmitCheckoutShippment").css("display", "block");
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkoutLoader").hide();
         }
         else {
             this.shippmentObect.id = this.customerObject.id;
             this.shippmentObect.shipName = this.checkoutShipName;
             this.shippmentObect.shipPhone = this.checkoutShipPhone;
             this.shippmentObect.shipAddress = this.checkoutShipAddress;
-            jQuery(".SubmitCheckoutShippment").hide();
-            jQuery(".checkoutLoader").show();
-            jQuery(".shippment-options").hide();
-            jQuery(".proceed-with-order").show();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".SubmitCheckoutShippment").hide();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkoutLoader").show();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".shippment-options").hide();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".proceed-with-order").show();
         }
     };
     CartrightComponent.prototype.deleteCart = function () {
@@ -97701,55 +97695,54 @@ var CartrightComponent = (function () {
     };
     CartrightComponent.prototype.SubmitCheckoutShippmentInfoForCashOnDelivery = function () {
         var error;
-        this.checkoutShipName = jQuery.trim(this.checkoutShipName);
-        this.checkoutShipPhone = jQuery.trim(this.checkoutShipPhone);
-        this.checkoutShipAddress = jQuery.trim(this.checkoutShipAddress);
+        this.checkoutShipName = __WEBPACK_IMPORTED_MODULE_5_jquery__["trim"](this.checkoutShipName);
+        this.checkoutShipPhone = __WEBPACK_IMPORTED_MODULE_5_jquery__["trim"](this.checkoutShipPhone);
+        this.checkoutShipAddress = __WEBPACK_IMPORTED_MODULE_5_jquery__["trim"](this.checkoutShipAddress);
         if (this.checkoutShipName == undefined || this.checkoutShipName.length == 0) {
-            jQuery(".checkout-shippment-form-cash-on-delivery .checkoutShipName").addClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipName").addClass("errorClass");
             error = true;
         }
         else {
-            jQuery(".checkout-shippment-form-cash-on-delivery .checkoutShipName").removeClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipName").removeClass("errorClass");
         }
         if (this.checkoutShipPhone == undefined || this.checkoutShipPhone.length == 0) {
-            jQuery(".checkout-shippment-form-cash-on-delivery .checkoutShipPhone").addClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipPhone").addClass("errorClass");
             error = true;
         }
         else {
-            jQuery(".checkout-shippment-form-cash-on-delivery .checkoutShipPhone").removeClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipPhone").removeClass("errorClass");
         }
         if (this.checkoutShipAddress == undefined || this.checkoutShipAddress.length == 0) {
-            jQuery(".checkout-shippment-form-cash-on-delivery .checkoutShipAddress").addClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipAddress").addClass("errorClass");
             error = true;
         }
         else {
-            jQuery(".checkout-shippment-form-cash-on-delivery .checkoutShipAddress").removeClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipAddress").removeClass("errorClass");
         }
         if (error) {
-            jQuery(".SubmitCheckoutShippmentCashOnDelivery").css("display", "block");
-            jQuery(".checkoutLoader").hide();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".SubmitCheckoutShippmentCashOnDelivery").css("display", "block");
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkoutLoader").hide();
         }
         else {
             this.shippmentObect.shipName = this.checkoutShipName;
             this.shippmentObect.shipPhone = this.checkoutShipPhone;
             this.shippmentObect.shipAddress = this.checkoutShipAddress;
-            console.log(this.shippmentObect);
-            jQuery(".SubmitCheckoutShippment").hide();
-            jQuery(".checkoutLoader").show();
-            jQuery(".shippment-options").hide();
-            jQuery(".proceed-with-order").show();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".SubmitCheckoutShippment").hide();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkoutLoader").show();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".shippment-options").hide();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".proceed-with-order").show();
         }
     };
     CartrightComponent.prototype.CheckoutShippingForm = function () {
-        if (jQuery('.shippmentFormYes').is(":checked")) {
-            jQuery('.checkout-shippment-form').slideDown();
-            jQuery(".proceed-without-shippment").hide();
-            jQuery(".or-text").hide();
+        if (__WEBPACK_IMPORTED_MODULE_5_jquery__('.shippmentFormYes').is(":checked")) {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__('.checkout-shippment-form').slideDown();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".proceed-without-shippment").hide();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".or-text").hide();
         }
         else {
-            jQuery('.checkout-shippment-form').slideUp();
-            jQuery(".proceed-without-shippment").show();
-            jQuery(".or-text").hide();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__('.checkout-shippment-form').slideUp();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".proceed-without-shippment").show();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__(".or-text").hide();
         }
     };
     CartrightComponent.prototype.initiateCashPayment = function (event) {
@@ -97761,11 +97754,10 @@ var CartrightComponent = (function () {
             this.ShippmentMethod = "checkmo";
         }
         this.addtocartService.getShippingAddress(this.customerObject.id).subscribe(function (a) {
-            console.log(a);
             _this.AddressModelArray = a;
         });
-        jQuery(".payment-options").hide();
-        jQuery(".shippment-options").show();
+        __WEBPACK_IMPORTED_MODULE_5_jquery__(".payment-options").hide();
+        __WEBPACK_IMPORTED_MODULE_5_jquery__(".shippment-options").show();
     };
     CartrightComponent.prototype.unAttachUser = function () {
         this.customerName = undefined;
@@ -97776,7 +97768,6 @@ var CartrightComponent = (function () {
         }
         else {
             this.addtocartService.setTaxDetails(this.taxValue, this.taxCheck).subscribe(function (a) {
-                console.log(a);
                 if (a == 1) {
                     alert("Tax amount saved and applied!");
                 }
@@ -97784,17 +97775,16 @@ var CartrightComponent = (function () {
         }
     };
     CartrightComponent.prototype.taxValueChange = function () {
-        if (jQuery('.tax-value').is(":checked")) {
-            jQuery('.tax-amount-input').show();
+        if (__WEBPACK_IMPORTED_MODULE_5_jquery__('.tax-value').is(":checked")) {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__('.tax-amount-input').show();
             this.taxCheck = true;
             this.taxValue = 0;
         }
         else {
-            jQuery('.tax-amount-input').hide();
+            __WEBPACK_IMPORTED_MODULE_5_jquery__('.tax-amount-input').hide();
             this.taxCheck = false;
             this.taxValue = 0;
             this.addtocartService.setTaxDetails(this.taxValue, this.taxCheck).subscribe(function (a) {
-                console.log(a);
                 if (a == 1) {
                 }
             });
@@ -97808,7 +97798,6 @@ var CartrightComponent = (function () {
     };
     CartrightComponent.prototype.deleteThisRow = function (elem) {
         var obj = this.cartObject.find(function (x) { return x.product.ID == elem; });
-        console.log(obj);
         this.cart.splice(obj, 1);
         this.subtotal = 0;
         if (this.cartObject.length == 0) {
@@ -97823,7 +97812,6 @@ var CartrightComponent = (function () {
     };
     CartrightComponent.prototype.function1 = function () {
         this.oneCartObject = this.addtocartService.getCart();
-        console.log(this.oneCartObject);
         if (this.cartObject.length == 0) {
             this.cartObject.push(this.oneCartObject);
         }
@@ -97836,14 +97824,12 @@ var CartrightComponent = (function () {
                     /*   this.cartObject[k].total = parseFloat(this.cartObject.quantity) * parseFloat(this.cartObject[k].total);*/
                     if (this.oneCartObject.size == undefined) {
                         var tempPrice = 0;
-                        console.log("size is 0");
                     }
                     else {
                         var tempPrice = this.oneCartObject.sizeAddon * this.cartObject[k].quantity;
                     }
                     if (this.oneCartObject.box == undefined) {
                         var tempBoxPrice = 0;
-                        console.log("box is 0");
                     }
                     else {
                         var tempBoxPrice = this.oneCartObject.boxAddon * this.cartObject[k].quantity;
@@ -97871,7 +97857,7 @@ var CartrightComponent = (function () {
     CartrightComponent.prototype.unsetValues = function () {
         this.cart = undefined;
         this.customerObject = undefined;
-        jQuery(".no-user").click();
+        __WEBPACK_IMPORTED_MODULE_5_jquery__(".no-user").click();
         this.cartObject = undefined;
         this.oneCartObject.size = undefined;
         this.oneCartObject.box = undefined;
@@ -97887,12 +97873,12 @@ var CartrightComponent = (function () {
     CartrightComponent.prototype.ngOnInit = function () {
         var _this = this;
         var self = this;
-        jQuery(document).ready(function () {
-            jQuery('[data-dismiss=modal]').on('click', function (e) {
+        __WEBPACK_IMPORTED_MODULE_5_jquery__(document).ready(function () {
+            __WEBPACK_IMPORTED_MODULE_5_jquery__('[data-dismiss=modal]').on('click', function (e) {
                 /*         self.file=undefined;*/
                 /*    self.unsetValues();*/
-                jQuery(".shippment-options,.or-text,.checkout-shippment-form,.proceed-without-shippment").hide();
-                jQuery('.payment-options').show();
+                __WEBPACK_IMPORTED_MODULE_5_jquery__(".shippment-options,.or-text,.checkout-shippment-form,.proceed-without-shippment").hide();
+                __WEBPACK_IMPORTED_MODULE_5_jquery__('.payment-options').show();
                 /*  jQuery("").hide();*/
                 var $t = $(this), target = $t[0].href || $t.data("target") || $t.parents('.modal') || [];
                 $(target)
@@ -97948,8 +97934,8 @@ __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 CartrightComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: 'Cartright',
-        template: __webpack_require__(532),
-        styles: [__webpack_require__(571), __webpack_require__(291)],
+        template: __webpack_require__(519),
+        styles: [__webpack_require__(558), __webpack_require__(291)],
         providers: []
     }),
     __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__services_AddtocartService__["a" /* AddtocartService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]])
@@ -98011,8 +97997,8 @@ var HeaderComponent = (function () {
 HeaderComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: 'Header',
-        template: __webpack_require__(533),
-        styles: [__webpack_require__(572)]
+        template: __webpack_require__(520),
+        styles: [__webpack_require__(559)]
     }),
     __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]])
 ], HeaderComponent);
@@ -98081,11 +98067,11 @@ HomeComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
         /**
          * Our list of styles in our component. We may add more to compose many styles together.
          */
-        styles: [__webpack_require__(573)],
+        styles: [__webpack_require__(560)],
         /**
          * Every Angular template is first compiled by the browser before Angular runs it's compiler.
          */
-        template: __webpack_require__(534)
+        template: __webpack_require__(521)
     }),
     __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__app_service__["a" /* AppState */], __WEBPACK_IMPORTED_MODULE_4__title__["a" /* Title */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* Router */]])
 ], HomeComponent);
@@ -98285,8 +98271,8 @@ var Login = (function () {
 Login = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: 'login',
-        styles: [__webpack_require__(569)],
-        template: __webpack_require__(535),
+        styles: [__webpack_require__(556)],
+        template: __webpack_require__(522),
         providers: [__WEBPACK_IMPORTED_MODULE_2__services_UsersService__["a" /* UsersService */]],
         encapsulation: __WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewEncapsulation"].None,
         host: {
@@ -98314,7 +98300,7 @@ Login = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_CustomergroupsModel__ = __webpack_require__(335);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_CategoryModel__ = __webpack_require__(334);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_CustomersModel__ = __webpack_require__(336);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ng2_datepicker__ = __webpack_require__(517);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ng2_datepicker__ = __webpack_require__(504);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_AddtocartService__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_jquery__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_jquery__);
@@ -99062,7 +99048,7 @@ __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 MainComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: 'Main',
-        template: __webpack_require__(536),
+        template: __webpack_require__(523),
         inputs: ['myName'],
         outputs: ['myEvents'],
         styles: [__webpack_require__(291)],
@@ -99715,2444 +99701,19 @@ var FormWizardModule_1;
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 347 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// This file is autogenerated via the `commonjs` Grunt task. You can require() this file in a CommonJS environment.
-__webpack_require__(359)
-__webpack_require__(349)
-__webpack_require__(350)
-__webpack_require__(351)
-__webpack_require__(352)
-__webpack_require__(353)
-__webpack_require__(354)
-__webpack_require__(358)
-__webpack_require__(355)
-__webpack_require__(356)
-__webpack_require__(357)
-__webpack_require__(348)
-
-/***/ }),
-/* 348 */
-/***/ (function(module, exports) {
-
-/* ========================================================================
- * Bootstrap: affix.js v3.3.7
- * http://getbootstrap.com/javascript/#affix
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // AFFIX CLASS DEFINITION
-  // ======================
-
-  var Affix = function (element, options) {
-    this.options = $.extend({}, Affix.DEFAULTS, options)
-
-    this.$target = $(this.options.target)
-      .on('scroll.bs.affix.data-api', $.proxy(this.checkPosition, this))
-      .on('click.bs.affix.data-api',  $.proxy(this.checkPositionWithEventLoop, this))
-
-    this.$element     = $(element)
-    this.affixed      = null
-    this.unpin        = null
-    this.pinnedOffset = null
-
-    this.checkPosition()
-  }
-
-  Affix.VERSION  = '3.3.7'
-
-  Affix.RESET    = 'affix affix-top affix-bottom'
-
-  Affix.DEFAULTS = {
-    offset: 0,
-    target: window
-  }
-
-  Affix.prototype.getState = function (scrollHeight, height, offsetTop, offsetBottom) {
-    var scrollTop    = this.$target.scrollTop()
-    var position     = this.$element.offset()
-    var targetHeight = this.$target.height()
-
-    if (offsetTop != null && this.affixed == 'top') return scrollTop < offsetTop ? 'top' : false
-
-    if (this.affixed == 'bottom') {
-      if (offsetTop != null) return (scrollTop + this.unpin <= position.top) ? false : 'bottom'
-      return (scrollTop + targetHeight <= scrollHeight - offsetBottom) ? false : 'bottom'
-    }
-
-    var initializing   = this.affixed == null
-    var colliderTop    = initializing ? scrollTop : position.top
-    var colliderHeight = initializing ? targetHeight : height
-
-    if (offsetTop != null && scrollTop <= offsetTop) return 'top'
-    if (offsetBottom != null && (colliderTop + colliderHeight >= scrollHeight - offsetBottom)) return 'bottom'
-
-    return false
-  }
-
-  Affix.prototype.getPinnedOffset = function () {
-    if (this.pinnedOffset) return this.pinnedOffset
-    this.$element.removeClass(Affix.RESET).addClass('affix')
-    var scrollTop = this.$target.scrollTop()
-    var position  = this.$element.offset()
-    return (this.pinnedOffset = position.top - scrollTop)
-  }
-
-  Affix.prototype.checkPositionWithEventLoop = function () {
-    setTimeout($.proxy(this.checkPosition, this), 1)
-  }
-
-  Affix.prototype.checkPosition = function () {
-    if (!this.$element.is(':visible')) return
-
-    var height       = this.$element.height()
-    var offset       = this.options.offset
-    var offsetTop    = offset.top
-    var offsetBottom = offset.bottom
-    var scrollHeight = Math.max($(document).height(), $(document.body).height())
-
-    if (typeof offset != 'object')         offsetBottom = offsetTop = offset
-    if (typeof offsetTop == 'function')    offsetTop    = offset.top(this.$element)
-    if (typeof offsetBottom == 'function') offsetBottom = offset.bottom(this.$element)
-
-    var affix = this.getState(scrollHeight, height, offsetTop, offsetBottom)
-
-    if (this.affixed != affix) {
-      if (this.unpin != null) this.$element.css('top', '')
-
-      var affixType = 'affix' + (affix ? '-' + affix : '')
-      var e         = $.Event(affixType + '.bs.affix')
-
-      this.$element.trigger(e)
-
-      if (e.isDefaultPrevented()) return
-
-      this.affixed = affix
-      this.unpin = affix == 'bottom' ? this.getPinnedOffset() : null
-
-      this.$element
-        .removeClass(Affix.RESET)
-        .addClass(affixType)
-        .trigger(affixType.replace('affix', 'affixed') + '.bs.affix')
-    }
-
-    if (affix == 'bottom') {
-      this.$element.offset({
-        top: scrollHeight - height - offsetBottom
-      })
-    }
-  }
-
-
-  // AFFIX PLUGIN DEFINITION
-  // =======================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.affix')
-      var options = typeof option == 'object' && option
-
-      if (!data) $this.data('bs.affix', (data = new Affix(this, options)))
-      if (typeof option == 'string') data[option]()
-    })
-  }
-
-  var old = $.fn.affix
-
-  $.fn.affix             = Plugin
-  $.fn.affix.Constructor = Affix
-
-
-  // AFFIX NO CONFLICT
-  // =================
-
-  $.fn.affix.noConflict = function () {
-    $.fn.affix = old
-    return this
-  }
-
-
-  // AFFIX DATA-API
-  // ==============
-
-  $(window).on('load', function () {
-    $('[data-spy="affix"]').each(function () {
-      var $spy = $(this)
-      var data = $spy.data()
-
-      data.offset = data.offset || {}
-
-      if (data.offsetBottom != null) data.offset.bottom = data.offsetBottom
-      if (data.offsetTop    != null) data.offset.top    = data.offsetTop
-
-      Plugin.call($spy, data)
-    })
-  })
-
-}(jQuery);
-
-
-/***/ }),
-/* 349 */
-/***/ (function(module, exports) {
-
-/* ========================================================================
- * Bootstrap: alert.js v3.3.7
- * http://getbootstrap.com/javascript/#alerts
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // ALERT CLASS DEFINITION
-  // ======================
-
-  var dismiss = '[data-dismiss="alert"]'
-  var Alert   = function (el) {
-    $(el).on('click', dismiss, this.close)
-  }
-
-  Alert.VERSION = '3.3.7'
-
-  Alert.TRANSITION_DURATION = 150
-
-  Alert.prototype.close = function (e) {
-    var $this    = $(this)
-    var selector = $this.attr('data-target')
-
-    if (!selector) {
-      selector = $this.attr('href')
-      selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') // strip for ie7
-    }
-
-    var $parent = $(selector === '#' ? [] : selector)
-
-    if (e) e.preventDefault()
-
-    if (!$parent.length) {
-      $parent = $this.closest('.alert')
-    }
-
-    $parent.trigger(e = $.Event('close.bs.alert'))
-
-    if (e.isDefaultPrevented()) return
-
-    $parent.removeClass('in')
-
-    function removeElement() {
-      // detach from parent, fire event then clean up data
-      $parent.detach().trigger('closed.bs.alert').remove()
-    }
-
-    $.support.transition && $parent.hasClass('fade') ?
-      $parent
-        .one('bsTransitionEnd', removeElement)
-        .emulateTransitionEnd(Alert.TRANSITION_DURATION) :
-      removeElement()
-  }
-
-
-  // ALERT PLUGIN DEFINITION
-  // =======================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this = $(this)
-      var data  = $this.data('bs.alert')
-
-      if (!data) $this.data('bs.alert', (data = new Alert(this)))
-      if (typeof option == 'string') data[option].call($this)
-    })
-  }
-
-  var old = $.fn.alert
-
-  $.fn.alert             = Plugin
-  $.fn.alert.Constructor = Alert
-
-
-  // ALERT NO CONFLICT
-  // =================
-
-  $.fn.alert.noConflict = function () {
-    $.fn.alert = old
-    return this
-  }
-
-
-  // ALERT DATA-API
-  // ==============
-
-  $(document).on('click.bs.alert.data-api', dismiss, Alert.prototype.close)
-
-}(jQuery);
-
-
-/***/ }),
-/* 350 */
-/***/ (function(module, exports) {
-
-/* ========================================================================
- * Bootstrap: button.js v3.3.7
- * http://getbootstrap.com/javascript/#buttons
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // BUTTON PUBLIC CLASS DEFINITION
-  // ==============================
-
-  var Button = function (element, options) {
-    this.$element  = $(element)
-    this.options   = $.extend({}, Button.DEFAULTS, options)
-    this.isLoading = false
-  }
-
-  Button.VERSION  = '3.3.7'
-
-  Button.DEFAULTS = {
-    loadingText: 'loading...'
-  }
-
-  Button.prototype.setState = function (state) {
-    var d    = 'disabled'
-    var $el  = this.$element
-    var val  = $el.is('input') ? 'val' : 'html'
-    var data = $el.data()
-
-    state += 'Text'
-
-    if (data.resetText == null) $el.data('resetText', $el[val]())
-
-    // push to event loop to allow forms to submit
-    setTimeout($.proxy(function () {
-      $el[val](data[state] == null ? this.options[state] : data[state])
-
-      if (state == 'loadingText') {
-        this.isLoading = true
-        $el.addClass(d).attr(d, d).prop(d, true)
-      } else if (this.isLoading) {
-        this.isLoading = false
-        $el.removeClass(d).removeAttr(d).prop(d, false)
-      }
-    }, this), 0)
-  }
-
-  Button.prototype.toggle = function () {
-    var changed = true
-    var $parent = this.$element.closest('[data-toggle="buttons"]')
-
-    if ($parent.length) {
-      var $input = this.$element.find('input')
-      if ($input.prop('type') == 'radio') {
-        if ($input.prop('checked')) changed = false
-        $parent.find('.active').removeClass('active')
-        this.$element.addClass('active')
-      } else if ($input.prop('type') == 'checkbox') {
-        if (($input.prop('checked')) !== this.$element.hasClass('active')) changed = false
-        this.$element.toggleClass('active')
-      }
-      $input.prop('checked', this.$element.hasClass('active'))
-      if (changed) $input.trigger('change')
-    } else {
-      this.$element.attr('aria-pressed', !this.$element.hasClass('active'))
-      this.$element.toggleClass('active')
-    }
-  }
-
-
-  // BUTTON PLUGIN DEFINITION
-  // ========================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.button')
-      var options = typeof option == 'object' && option
-
-      if (!data) $this.data('bs.button', (data = new Button(this, options)))
-
-      if (option == 'toggle') data.toggle()
-      else if (option) data.setState(option)
-    })
-  }
-
-  var old = $.fn.button
-
-  $.fn.button             = Plugin
-  $.fn.button.Constructor = Button
-
-
-  // BUTTON NO CONFLICT
-  // ==================
-
-  $.fn.button.noConflict = function () {
-    $.fn.button = old
-    return this
-  }
-
-
-  // BUTTON DATA-API
-  // ===============
-
-  $(document)
-    .on('click.bs.button.data-api', '[data-toggle^="button"]', function (e) {
-      var $btn = $(e.target).closest('.btn')
-      Plugin.call($btn, 'toggle')
-      if (!($(e.target).is('input[type="radio"], input[type="checkbox"]'))) {
-        // Prevent double click on radios, and the double selections (so cancellation) on checkboxes
-        e.preventDefault()
-        // The target component still receive the focus
-        if ($btn.is('input,button')) $btn.trigger('focus')
-        else $btn.find('input:visible,button:visible').first().trigger('focus')
-      }
-    })
-    .on('focus.bs.button.data-api blur.bs.button.data-api', '[data-toggle^="button"]', function (e) {
-      $(e.target).closest('.btn').toggleClass('focus', /^focus(in)?$/.test(e.type))
-    })
-
-}(jQuery);
-
-
-/***/ }),
-/* 351 */
-/***/ (function(module, exports) {
-
-/* ========================================================================
- * Bootstrap: carousel.js v3.3.7
- * http://getbootstrap.com/javascript/#carousel
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // CAROUSEL CLASS DEFINITION
-  // =========================
-
-  var Carousel = function (element, options) {
-    this.$element    = $(element)
-    this.$indicators = this.$element.find('.carousel-indicators')
-    this.options     = options
-    this.paused      = null
-    this.sliding     = null
-    this.interval    = null
-    this.$active     = null
-    this.$items      = null
-
-    this.options.keyboard && this.$element.on('keydown.bs.carousel', $.proxy(this.keydown, this))
-
-    this.options.pause == 'hover' && !('ontouchstart' in document.documentElement) && this.$element
-      .on('mouseenter.bs.carousel', $.proxy(this.pause, this))
-      .on('mouseleave.bs.carousel', $.proxy(this.cycle, this))
-  }
-
-  Carousel.VERSION  = '3.3.7'
-
-  Carousel.TRANSITION_DURATION = 600
-
-  Carousel.DEFAULTS = {
-    interval: 5000,
-    pause: 'hover',
-    wrap: true,
-    keyboard: true
-  }
-
-  Carousel.prototype.keydown = function (e) {
-    if (/input|textarea/i.test(e.target.tagName)) return
-    switch (e.which) {
-      case 37: this.prev(); break
-      case 39: this.next(); break
-      default: return
-    }
-
-    e.preventDefault()
-  }
-
-  Carousel.prototype.cycle = function (e) {
-    e || (this.paused = false)
-
-    this.interval && clearInterval(this.interval)
-
-    this.options.interval
-      && !this.paused
-      && (this.interval = setInterval($.proxy(this.next, this), this.options.interval))
-
-    return this
-  }
-
-  Carousel.prototype.getItemIndex = function (item) {
-    this.$items = item.parent().children('.item')
-    return this.$items.index(item || this.$active)
-  }
-
-  Carousel.prototype.getItemForDirection = function (direction, active) {
-    var activeIndex = this.getItemIndex(active)
-    var willWrap = (direction == 'prev' && activeIndex === 0)
-                || (direction == 'next' && activeIndex == (this.$items.length - 1))
-    if (willWrap && !this.options.wrap) return active
-    var delta = direction == 'prev' ? -1 : 1
-    var itemIndex = (activeIndex + delta) % this.$items.length
-    return this.$items.eq(itemIndex)
-  }
-
-  Carousel.prototype.to = function (pos) {
-    var that        = this
-    var activeIndex = this.getItemIndex(this.$active = this.$element.find('.item.active'))
-
-    if (pos > (this.$items.length - 1) || pos < 0) return
-
-    if (this.sliding)       return this.$element.one('slid.bs.carousel', function () { that.to(pos) }) // yes, "slid"
-    if (activeIndex == pos) return this.pause().cycle()
-
-    return this.slide(pos > activeIndex ? 'next' : 'prev', this.$items.eq(pos))
-  }
-
-  Carousel.prototype.pause = function (e) {
-    e || (this.paused = true)
-
-    if (this.$element.find('.next, .prev').length && $.support.transition) {
-      this.$element.trigger($.support.transition.end)
-      this.cycle(true)
-    }
-
-    this.interval = clearInterval(this.interval)
-
-    return this
-  }
-
-  Carousel.prototype.next = function () {
-    if (this.sliding) return
-    return this.slide('next')
-  }
-
-  Carousel.prototype.prev = function () {
-    if (this.sliding) return
-    return this.slide('prev')
-  }
-
-  Carousel.prototype.slide = function (type, next) {
-    var $active   = this.$element.find('.item.active')
-    var $next     = next || this.getItemForDirection(type, $active)
-    var isCycling = this.interval
-    var direction = type == 'next' ? 'left' : 'right'
-    var that      = this
-
-    if ($next.hasClass('active')) return (this.sliding = false)
-
-    var relatedTarget = $next[0]
-    var slideEvent = $.Event('slide.bs.carousel', {
-      relatedTarget: relatedTarget,
-      direction: direction
-    })
-    this.$element.trigger(slideEvent)
-    if (slideEvent.isDefaultPrevented()) return
-
-    this.sliding = true
-
-    isCycling && this.pause()
-
-    if (this.$indicators.length) {
-      this.$indicators.find('.active').removeClass('active')
-      var $nextIndicator = $(this.$indicators.children()[this.getItemIndex($next)])
-      $nextIndicator && $nextIndicator.addClass('active')
-    }
-
-    var slidEvent = $.Event('slid.bs.carousel', { relatedTarget: relatedTarget, direction: direction }) // yes, "slid"
-    if ($.support.transition && this.$element.hasClass('slide')) {
-      $next.addClass(type)
-      $next[0].offsetWidth // force reflow
-      $active.addClass(direction)
-      $next.addClass(direction)
-      $active
-        .one('bsTransitionEnd', function () {
-          $next.removeClass([type, direction].join(' ')).addClass('active')
-          $active.removeClass(['active', direction].join(' '))
-          that.sliding = false
-          setTimeout(function () {
-            that.$element.trigger(slidEvent)
-          }, 0)
-        })
-        .emulateTransitionEnd(Carousel.TRANSITION_DURATION)
-    } else {
-      $active.removeClass('active')
-      $next.addClass('active')
-      this.sliding = false
-      this.$element.trigger(slidEvent)
-    }
-
-    isCycling && this.cycle()
-
-    return this
-  }
-
-
-  // CAROUSEL PLUGIN DEFINITION
-  // ==========================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.carousel')
-      var options = $.extend({}, Carousel.DEFAULTS, $this.data(), typeof option == 'object' && option)
-      var action  = typeof option == 'string' ? option : options.slide
-
-      if (!data) $this.data('bs.carousel', (data = new Carousel(this, options)))
-      if (typeof option == 'number') data.to(option)
-      else if (action) data[action]()
-      else if (options.interval) data.pause().cycle()
-    })
-  }
-
-  var old = $.fn.carousel
-
-  $.fn.carousel             = Plugin
-  $.fn.carousel.Constructor = Carousel
-
-
-  // CAROUSEL NO CONFLICT
-  // ====================
-
-  $.fn.carousel.noConflict = function () {
-    $.fn.carousel = old
-    return this
-  }
-
-
-  // CAROUSEL DATA-API
-  // =================
-
-  var clickHandler = function (e) {
-    var href
-    var $this   = $(this)
-    var $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) // strip for ie7
-    if (!$target.hasClass('carousel')) return
-    var options = $.extend({}, $target.data(), $this.data())
-    var slideIndex = $this.attr('data-slide-to')
-    if (slideIndex) options.interval = false
-
-    Plugin.call($target, options)
-
-    if (slideIndex) {
-      $target.data('bs.carousel').to(slideIndex)
-    }
-
-    e.preventDefault()
-  }
-
-  $(document)
-    .on('click.bs.carousel.data-api', '[data-slide]', clickHandler)
-    .on('click.bs.carousel.data-api', '[data-slide-to]', clickHandler)
-
-  $(window).on('load', function () {
-    $('[data-ride="carousel"]').each(function () {
-      var $carousel = $(this)
-      Plugin.call($carousel, $carousel.data())
-    })
-  })
-
-}(jQuery);
-
-
-/***/ }),
-/* 352 */
-/***/ (function(module, exports) {
-
-/* ========================================================================
- * Bootstrap: collapse.js v3.3.7
- * http://getbootstrap.com/javascript/#collapse
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-/* jshint latedef: false */
-
-+function ($) {
-  'use strict';
-
-  // COLLAPSE PUBLIC CLASS DEFINITION
-  // ================================
-
-  var Collapse = function (element, options) {
-    this.$element      = $(element)
-    this.options       = $.extend({}, Collapse.DEFAULTS, options)
-    this.$trigger      = $('[data-toggle="collapse"][href="#' + element.id + '"],' +
-                           '[data-toggle="collapse"][data-target="#' + element.id + '"]')
-    this.transitioning = null
-
-    if (this.options.parent) {
-      this.$parent = this.getParent()
-    } else {
-      this.addAriaAndCollapsedClass(this.$element, this.$trigger)
-    }
-
-    if (this.options.toggle) this.toggle()
-  }
-
-  Collapse.VERSION  = '3.3.7'
-
-  Collapse.TRANSITION_DURATION = 350
-
-  Collapse.DEFAULTS = {
-    toggle: true
-  }
-
-  Collapse.prototype.dimension = function () {
-    var hasWidth = this.$element.hasClass('width')
-    return hasWidth ? 'width' : 'height'
-  }
-
-  Collapse.prototype.show = function () {
-    if (this.transitioning || this.$element.hasClass('in')) return
-
-    var activesData
-    var actives = this.$parent && this.$parent.children('.panel').children('.in, .collapsing')
-
-    if (actives && actives.length) {
-      activesData = actives.data('bs.collapse')
-      if (activesData && activesData.transitioning) return
-    }
-
-    var startEvent = $.Event('show.bs.collapse')
-    this.$element.trigger(startEvent)
-    if (startEvent.isDefaultPrevented()) return
-
-    if (actives && actives.length) {
-      Plugin.call(actives, 'hide')
-      activesData || actives.data('bs.collapse', null)
-    }
-
-    var dimension = this.dimension()
-
-    this.$element
-      .removeClass('collapse')
-      .addClass('collapsing')[dimension](0)
-      .attr('aria-expanded', true)
-
-    this.$trigger
-      .removeClass('collapsed')
-      .attr('aria-expanded', true)
-
-    this.transitioning = 1
-
-    var complete = function () {
-      this.$element
-        .removeClass('collapsing')
-        .addClass('collapse in')[dimension]('')
-      this.transitioning = 0
-      this.$element
-        .trigger('shown.bs.collapse')
-    }
-
-    if (!$.support.transition) return complete.call(this)
-
-    var scrollSize = $.camelCase(['scroll', dimension].join('-'))
-
-    this.$element
-      .one('bsTransitionEnd', $.proxy(complete, this))
-      .emulateTransitionEnd(Collapse.TRANSITION_DURATION)[dimension](this.$element[0][scrollSize])
-  }
-
-  Collapse.prototype.hide = function () {
-    if (this.transitioning || !this.$element.hasClass('in')) return
-
-    var startEvent = $.Event('hide.bs.collapse')
-    this.$element.trigger(startEvent)
-    if (startEvent.isDefaultPrevented()) return
-
-    var dimension = this.dimension()
-
-    this.$element[dimension](this.$element[dimension]())[0].offsetHeight
-
-    this.$element
-      .addClass('collapsing')
-      .removeClass('collapse in')
-      .attr('aria-expanded', false)
-
-    this.$trigger
-      .addClass('collapsed')
-      .attr('aria-expanded', false)
-
-    this.transitioning = 1
-
-    var complete = function () {
-      this.transitioning = 0
-      this.$element
-        .removeClass('collapsing')
-        .addClass('collapse')
-        .trigger('hidden.bs.collapse')
-    }
-
-    if (!$.support.transition) return complete.call(this)
-
-    this.$element
-      [dimension](0)
-      .one('bsTransitionEnd', $.proxy(complete, this))
-      .emulateTransitionEnd(Collapse.TRANSITION_DURATION)
-  }
-
-  Collapse.prototype.toggle = function () {
-    this[this.$element.hasClass('in') ? 'hide' : 'show']()
-  }
-
-  Collapse.prototype.getParent = function () {
-    return $(this.options.parent)
-      .find('[data-toggle="collapse"][data-parent="' + this.options.parent + '"]')
-      .each($.proxy(function (i, element) {
-        var $element = $(element)
-        this.addAriaAndCollapsedClass(getTargetFromTrigger($element), $element)
-      }, this))
-      .end()
-  }
-
-  Collapse.prototype.addAriaAndCollapsedClass = function ($element, $trigger) {
-    var isOpen = $element.hasClass('in')
-
-    $element.attr('aria-expanded', isOpen)
-    $trigger
-      .toggleClass('collapsed', !isOpen)
-      .attr('aria-expanded', isOpen)
-  }
-
-  function getTargetFromTrigger($trigger) {
-    var href
-    var target = $trigger.attr('data-target')
-      || (href = $trigger.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '') // strip for ie7
-
-    return $(target)
-  }
-
-
-  // COLLAPSE PLUGIN DEFINITION
-  // ==========================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.collapse')
-      var options = $.extend({}, Collapse.DEFAULTS, $this.data(), typeof option == 'object' && option)
-
-      if (!data && options.toggle && /show|hide/.test(option)) options.toggle = false
-      if (!data) $this.data('bs.collapse', (data = new Collapse(this, options)))
-      if (typeof option == 'string') data[option]()
-    })
-  }
-
-  var old = $.fn.collapse
-
-  $.fn.collapse             = Plugin
-  $.fn.collapse.Constructor = Collapse
-
-
-  // COLLAPSE NO CONFLICT
-  // ====================
-
-  $.fn.collapse.noConflict = function () {
-    $.fn.collapse = old
-    return this
-  }
-
-
-  // COLLAPSE DATA-API
-  // =================
-
-  $(document).on('click.bs.collapse.data-api', '[data-toggle="collapse"]', function (e) {
-    var $this   = $(this)
-
-    if (!$this.attr('data-target')) e.preventDefault()
-
-    var $target = getTargetFromTrigger($this)
-    var data    = $target.data('bs.collapse')
-    var option  = data ? 'toggle' : $this.data()
-
-    Plugin.call($target, option)
-  })
-
-}(jQuery);
-
-
-/***/ }),
-/* 353 */
-/***/ (function(module, exports) {
-
-/* ========================================================================
- * Bootstrap: dropdown.js v3.3.7
- * http://getbootstrap.com/javascript/#dropdowns
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // DROPDOWN CLASS DEFINITION
-  // =========================
-
-  var backdrop = '.dropdown-backdrop'
-  var toggle   = '[data-toggle="dropdown"]'
-  var Dropdown = function (element) {
-    $(element).on('click.bs.dropdown', this.toggle)
-  }
-
-  Dropdown.VERSION = '3.3.7'
-
-  function getParent($this) {
-    var selector = $this.attr('data-target')
-
-    if (!selector) {
-      selector = $this.attr('href')
-      selector = selector && /#[A-Za-z]/.test(selector) && selector.replace(/.*(?=#[^\s]*$)/, '') // strip for ie7
-    }
-
-    var $parent = selector && $(selector)
-
-    return $parent && $parent.length ? $parent : $this.parent()
-  }
-
-  function clearMenus(e) {
-    if (e && e.which === 3) return
-    $(backdrop).remove()
-    $(toggle).each(function () {
-      var $this         = $(this)
-      var $parent       = getParent($this)
-      var relatedTarget = { relatedTarget: this }
-
-      if (!$parent.hasClass('open')) return
-
-      if (e && e.type == 'click' && /input|textarea/i.test(e.target.tagName) && $.contains($parent[0], e.target)) return
-
-      $parent.trigger(e = $.Event('hide.bs.dropdown', relatedTarget))
-
-      if (e.isDefaultPrevented()) return
-
-      $this.attr('aria-expanded', 'false')
-      $parent.removeClass('open').trigger($.Event('hidden.bs.dropdown', relatedTarget))
-    })
-  }
-
-  Dropdown.prototype.toggle = function (e) {
-    var $this = $(this)
-
-    if ($this.is('.disabled, :disabled')) return
-
-    var $parent  = getParent($this)
-    var isActive = $parent.hasClass('open')
-
-    clearMenus()
-
-    if (!isActive) {
-      if ('ontouchstart' in document.documentElement && !$parent.closest('.navbar-nav').length) {
-        // if mobile we use a backdrop because click events don't delegate
-        $(document.createElement('div'))
-          .addClass('dropdown-backdrop')
-          .insertAfter($(this))
-          .on('click', clearMenus)
-      }
-
-      var relatedTarget = { relatedTarget: this }
-      $parent.trigger(e = $.Event('show.bs.dropdown', relatedTarget))
-
-      if (e.isDefaultPrevented()) return
-
-      $this
-        .trigger('focus')
-        .attr('aria-expanded', 'true')
-
-      $parent
-        .toggleClass('open')
-        .trigger($.Event('shown.bs.dropdown', relatedTarget))
-    }
-
-    return false
-  }
-
-  Dropdown.prototype.keydown = function (e) {
-    if (!/(38|40|27|32)/.test(e.which) || /input|textarea/i.test(e.target.tagName)) return
-
-    var $this = $(this)
-
-    e.preventDefault()
-    e.stopPropagation()
-
-    if ($this.is('.disabled, :disabled')) return
-
-    var $parent  = getParent($this)
-    var isActive = $parent.hasClass('open')
-
-    if (!isActive && e.which != 27 || isActive && e.which == 27) {
-      if (e.which == 27) $parent.find(toggle).trigger('focus')
-      return $this.trigger('click')
-    }
-
-    var desc = ' li:not(.disabled):visible a'
-    var $items = $parent.find('.dropdown-menu' + desc)
-
-    if (!$items.length) return
-
-    var index = $items.index(e.target)
-
-    if (e.which == 38 && index > 0)                 index--         // up
-    if (e.which == 40 && index < $items.length - 1) index++         // down
-    if (!~index)                                    index = 0
-
-    $items.eq(index).trigger('focus')
-  }
-
-
-  // DROPDOWN PLUGIN DEFINITION
-  // ==========================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this = $(this)
-      var data  = $this.data('bs.dropdown')
-
-      if (!data) $this.data('bs.dropdown', (data = new Dropdown(this)))
-      if (typeof option == 'string') data[option].call($this)
-    })
-  }
-
-  var old = $.fn.dropdown
-
-  $.fn.dropdown             = Plugin
-  $.fn.dropdown.Constructor = Dropdown
-
-
-  // DROPDOWN NO CONFLICT
-  // ====================
-
-  $.fn.dropdown.noConflict = function () {
-    $.fn.dropdown = old
-    return this
-  }
-
-
-  // APPLY TO STANDARD DROPDOWN ELEMENTS
-  // ===================================
-
-  $(document)
-    .on('click.bs.dropdown.data-api', clearMenus)
-    .on('click.bs.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
-    .on('click.bs.dropdown.data-api', toggle, Dropdown.prototype.toggle)
-    .on('keydown.bs.dropdown.data-api', toggle, Dropdown.prototype.keydown)
-    .on('keydown.bs.dropdown.data-api', '.dropdown-menu', Dropdown.prototype.keydown)
-
-}(jQuery);
-
-
-/***/ }),
-/* 354 */
-/***/ (function(module, exports) {
-
-/* ========================================================================
- * Bootstrap: modal.js v3.3.7
- * http://getbootstrap.com/javascript/#modals
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // MODAL CLASS DEFINITION
-  // ======================
-
-  var Modal = function (element, options) {
-    this.options             = options
-    this.$body               = $(document.body)
-    this.$element            = $(element)
-    this.$dialog             = this.$element.find('.modal-dialog')
-    this.$backdrop           = null
-    this.isShown             = null
-    this.originalBodyPad     = null
-    this.scrollbarWidth      = 0
-    this.ignoreBackdropClick = false
-
-    if (this.options.remote) {
-      this.$element
-        .find('.modal-content')
-        .load(this.options.remote, $.proxy(function () {
-          this.$element.trigger('loaded.bs.modal')
-        }, this))
-    }
-  }
-
-  Modal.VERSION  = '3.3.7'
-
-  Modal.TRANSITION_DURATION = 300
-  Modal.BACKDROP_TRANSITION_DURATION = 150
-
-  Modal.DEFAULTS = {
-    backdrop: true,
-    keyboard: true,
-    show: true
-  }
-
-  Modal.prototype.toggle = function (_relatedTarget) {
-    return this.isShown ? this.hide() : this.show(_relatedTarget)
-  }
-
-  Modal.prototype.show = function (_relatedTarget) {
-    var that = this
-    var e    = $.Event('show.bs.modal', { relatedTarget: _relatedTarget })
-
-    this.$element.trigger(e)
-
-    if (this.isShown || e.isDefaultPrevented()) return
-
-    this.isShown = true
-
-    this.checkScrollbar()
-    this.setScrollbar()
-    this.$body.addClass('modal-open')
-
-    this.escape()
-    this.resize()
-
-    this.$element.on('click.dismiss.bs.modal', '[data-dismiss="modal"]', $.proxy(this.hide, this))
-
-    this.$dialog.on('mousedown.dismiss.bs.modal', function () {
-      that.$element.one('mouseup.dismiss.bs.modal', function (e) {
-        if ($(e.target).is(that.$element)) that.ignoreBackdropClick = true
-      })
-    })
-
-    this.backdrop(function () {
-      var transition = $.support.transition && that.$element.hasClass('fade')
-
-      if (!that.$element.parent().length) {
-        that.$element.appendTo(that.$body) // don't move modals dom position
-      }
-
-      that.$element
-        .show()
-        .scrollTop(0)
-
-      that.adjustDialog()
-
-      if (transition) {
-        that.$element[0].offsetWidth // force reflow
-      }
-
-      that.$element.addClass('in')
-
-      that.enforceFocus()
-
-      var e = $.Event('shown.bs.modal', { relatedTarget: _relatedTarget })
-
-      transition ?
-        that.$dialog // wait for modal to slide in
-          .one('bsTransitionEnd', function () {
-            that.$element.trigger('focus').trigger(e)
-          })
-          .emulateTransitionEnd(Modal.TRANSITION_DURATION) :
-        that.$element.trigger('focus').trigger(e)
-    })
-  }
-
-  Modal.prototype.hide = function (e) {
-    if (e) e.preventDefault()
-
-    e = $.Event('hide.bs.modal')
-
-    this.$element.trigger(e)
-
-    if (!this.isShown || e.isDefaultPrevented()) return
-
-    this.isShown = false
-
-    this.escape()
-    this.resize()
-
-    $(document).off('focusin.bs.modal')
-
-    this.$element
-      .removeClass('in')
-      .off('click.dismiss.bs.modal')
-      .off('mouseup.dismiss.bs.modal')
-
-    this.$dialog.off('mousedown.dismiss.bs.modal')
-
-    $.support.transition && this.$element.hasClass('fade') ?
-      this.$element
-        .one('bsTransitionEnd', $.proxy(this.hideModal, this))
-        .emulateTransitionEnd(Modal.TRANSITION_DURATION) :
-      this.hideModal()
-  }
-
-  Modal.prototype.enforceFocus = function () {
-    $(document)
-      .off('focusin.bs.modal') // guard against infinite focus loop
-      .on('focusin.bs.modal', $.proxy(function (e) {
-        if (document !== e.target &&
-            this.$element[0] !== e.target &&
-            !this.$element.has(e.target).length) {
-          this.$element.trigger('focus')
-        }
-      }, this))
-  }
-
-  Modal.prototype.escape = function () {
-    if (this.isShown && this.options.keyboard) {
-      this.$element.on('keydown.dismiss.bs.modal', $.proxy(function (e) {
-        e.which == 27 && this.hide()
-      }, this))
-    } else if (!this.isShown) {
-      this.$element.off('keydown.dismiss.bs.modal')
-    }
-  }
-
-  Modal.prototype.resize = function () {
-    if (this.isShown) {
-      $(window).on('resize.bs.modal', $.proxy(this.handleUpdate, this))
-    } else {
-      $(window).off('resize.bs.modal')
-    }
-  }
-
-  Modal.prototype.hideModal = function () {
-    var that = this
-    this.$element.hide()
-    this.backdrop(function () {
-      that.$body.removeClass('modal-open')
-      that.resetAdjustments()
-      that.resetScrollbar()
-      that.$element.trigger('hidden.bs.modal')
-    })
-  }
-
-  Modal.prototype.removeBackdrop = function () {
-    this.$backdrop && this.$backdrop.remove()
-    this.$backdrop = null
-  }
-
-  Modal.prototype.backdrop = function (callback) {
-    var that = this
-    var animate = this.$element.hasClass('fade') ? 'fade' : ''
-
-    if (this.isShown && this.options.backdrop) {
-      var doAnimate = $.support.transition && animate
-
-      this.$backdrop = $(document.createElement('div'))
-        .addClass('modal-backdrop ' + animate)
-        .appendTo(this.$body)
-
-      this.$element.on('click.dismiss.bs.modal', $.proxy(function (e) {
-        if (this.ignoreBackdropClick) {
-          this.ignoreBackdropClick = false
-          return
-        }
-        if (e.target !== e.currentTarget) return
-        this.options.backdrop == 'static'
-          ? this.$element[0].focus()
-          : this.hide()
-      }, this))
-
-      if (doAnimate) this.$backdrop[0].offsetWidth // force reflow
-
-      this.$backdrop.addClass('in')
-
-      if (!callback) return
-
-      doAnimate ?
-        this.$backdrop
-          .one('bsTransitionEnd', callback)
-          .emulateTransitionEnd(Modal.BACKDROP_TRANSITION_DURATION) :
-        callback()
-
-    } else if (!this.isShown && this.$backdrop) {
-      this.$backdrop.removeClass('in')
-
-      var callbackRemove = function () {
-        that.removeBackdrop()
-        callback && callback()
-      }
-      $.support.transition && this.$element.hasClass('fade') ?
-        this.$backdrop
-          .one('bsTransitionEnd', callbackRemove)
-          .emulateTransitionEnd(Modal.BACKDROP_TRANSITION_DURATION) :
-        callbackRemove()
-
-    } else if (callback) {
-      callback()
-    }
-  }
-
-  // these following methods are used to handle overflowing modals
-
-  Modal.prototype.handleUpdate = function () {
-    this.adjustDialog()
-  }
-
-  Modal.prototype.adjustDialog = function () {
-    var modalIsOverflowing = this.$element[0].scrollHeight > document.documentElement.clientHeight
-
-    this.$element.css({
-      paddingLeft:  !this.bodyIsOverflowing && modalIsOverflowing ? this.scrollbarWidth : '',
-      paddingRight: this.bodyIsOverflowing && !modalIsOverflowing ? this.scrollbarWidth : ''
-    })
-  }
-
-  Modal.prototype.resetAdjustments = function () {
-    this.$element.css({
-      paddingLeft: '',
-      paddingRight: ''
-    })
-  }
-
-  Modal.prototype.checkScrollbar = function () {
-    var fullWindowWidth = window.innerWidth
-    if (!fullWindowWidth) { // workaround for missing window.innerWidth in IE8
-      var documentElementRect = document.documentElement.getBoundingClientRect()
-      fullWindowWidth = documentElementRect.right - Math.abs(documentElementRect.left)
-    }
-    this.bodyIsOverflowing = document.body.clientWidth < fullWindowWidth
-    this.scrollbarWidth = this.measureScrollbar()
-  }
-
-  Modal.prototype.setScrollbar = function () {
-    var bodyPad = parseInt((this.$body.css('padding-right') || 0), 10)
-    this.originalBodyPad = document.body.style.paddingRight || ''
-    if (this.bodyIsOverflowing) this.$body.css('padding-right', bodyPad + this.scrollbarWidth)
-  }
-
-  Modal.prototype.resetScrollbar = function () {
-    this.$body.css('padding-right', this.originalBodyPad)
-  }
-
-  Modal.prototype.measureScrollbar = function () { // thx walsh
-    var scrollDiv = document.createElement('div')
-    scrollDiv.className = 'modal-scrollbar-measure'
-    this.$body.append(scrollDiv)
-    var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth
-    this.$body[0].removeChild(scrollDiv)
-    return scrollbarWidth
-  }
-
-
-  // MODAL PLUGIN DEFINITION
-  // =======================
-
-  function Plugin(option, _relatedTarget) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.modal')
-      var options = $.extend({}, Modal.DEFAULTS, $this.data(), typeof option == 'object' && option)
-
-      if (!data) $this.data('bs.modal', (data = new Modal(this, options)))
-      if (typeof option == 'string') data[option](_relatedTarget)
-      else if (options.show) data.show(_relatedTarget)
-    })
-  }
-
-  var old = $.fn.modal
-
-  $.fn.modal             = Plugin
-  $.fn.modal.Constructor = Modal
-
-
-  // MODAL NO CONFLICT
-  // =================
-
-  $.fn.modal.noConflict = function () {
-    $.fn.modal = old
-    return this
-  }
-
-
-  // MODAL DATA-API
-  // ==============
-
-  $(document).on('click.bs.modal.data-api', '[data-toggle="modal"]', function (e) {
-    var $this   = $(this)
-    var href    = $this.attr('href')
-    var $target = $($this.attr('data-target') || (href && href.replace(/.*(?=#[^\s]+$)/, ''))) // strip for ie7
-    var option  = $target.data('bs.modal') ? 'toggle' : $.extend({ remote: !/#/.test(href) && href }, $target.data(), $this.data())
-
-    if ($this.is('a')) e.preventDefault()
-
-    $target.one('show.bs.modal', function (showEvent) {
-      if (showEvent.isDefaultPrevented()) return // only register focus restorer if modal will actually get shown
-      $target.one('hidden.bs.modal', function () {
-        $this.is(':visible') && $this.trigger('focus')
-      })
-    })
-    Plugin.call($target, option, this)
-  })
-
-}(jQuery);
-
-
-/***/ }),
-/* 355 */
-/***/ (function(module, exports) {
-
-/* ========================================================================
- * Bootstrap: popover.js v3.3.7
- * http://getbootstrap.com/javascript/#popovers
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // POPOVER PUBLIC CLASS DEFINITION
-  // ===============================
-
-  var Popover = function (element, options) {
-    this.init('popover', element, options)
-  }
-
-  if (!$.fn.tooltip) throw new Error('Popover requires tooltip.js')
-
-  Popover.VERSION  = '3.3.7'
-
-  Popover.DEFAULTS = $.extend({}, $.fn.tooltip.Constructor.DEFAULTS, {
-    placement: 'right',
-    trigger: 'click',
-    content: '',
-    template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
-  })
-
-
-  // NOTE: POPOVER EXTENDS tooltip.js
-  // ================================
-
-  Popover.prototype = $.extend({}, $.fn.tooltip.Constructor.prototype)
-
-  Popover.prototype.constructor = Popover
-
-  Popover.prototype.getDefaults = function () {
-    return Popover.DEFAULTS
-  }
-
-  Popover.prototype.setContent = function () {
-    var $tip    = this.tip()
-    var title   = this.getTitle()
-    var content = this.getContent()
-
-    $tip.find('.popover-title')[this.options.html ? 'html' : 'text'](title)
-    $tip.find('.popover-content').children().detach().end()[ // we use append for html objects to maintain js events
-      this.options.html ? (typeof content == 'string' ? 'html' : 'append') : 'text'
-    ](content)
-
-    $tip.removeClass('fade top bottom left right in')
-
-    // IE8 doesn't accept hiding via the `:empty` pseudo selector, we have to do
-    // this manually by checking the contents.
-    if (!$tip.find('.popover-title').html()) $tip.find('.popover-title').hide()
-  }
-
-  Popover.prototype.hasContent = function () {
-    return this.getTitle() || this.getContent()
-  }
-
-  Popover.prototype.getContent = function () {
-    var $e = this.$element
-    var o  = this.options
-
-    return $e.attr('data-content')
-      || (typeof o.content == 'function' ?
-            o.content.call($e[0]) :
-            o.content)
-  }
-
-  Popover.prototype.arrow = function () {
-    return (this.$arrow = this.$arrow || this.tip().find('.arrow'))
-  }
-
-
-  // POPOVER PLUGIN DEFINITION
-  // =========================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.popover')
-      var options = typeof option == 'object' && option
-
-      if (!data && /destroy|hide/.test(option)) return
-      if (!data) $this.data('bs.popover', (data = new Popover(this, options)))
-      if (typeof option == 'string') data[option]()
-    })
-  }
-
-  var old = $.fn.popover
-
-  $.fn.popover             = Plugin
-  $.fn.popover.Constructor = Popover
-
-
-  // POPOVER NO CONFLICT
-  // ===================
-
-  $.fn.popover.noConflict = function () {
-    $.fn.popover = old
-    return this
-  }
-
-}(jQuery);
-
-
-/***/ }),
-/* 356 */
-/***/ (function(module, exports) {
-
-/* ========================================================================
- * Bootstrap: scrollspy.js v3.3.7
- * http://getbootstrap.com/javascript/#scrollspy
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // SCROLLSPY CLASS DEFINITION
-  // ==========================
-
-  function ScrollSpy(element, options) {
-    this.$body          = $(document.body)
-    this.$scrollElement = $(element).is(document.body) ? $(window) : $(element)
-    this.options        = $.extend({}, ScrollSpy.DEFAULTS, options)
-    this.selector       = (this.options.target || '') + ' .nav li > a'
-    this.offsets        = []
-    this.targets        = []
-    this.activeTarget   = null
-    this.scrollHeight   = 0
-
-    this.$scrollElement.on('scroll.bs.scrollspy', $.proxy(this.process, this))
-    this.refresh()
-    this.process()
-  }
-
-  ScrollSpy.VERSION  = '3.3.7'
-
-  ScrollSpy.DEFAULTS = {
-    offset: 10
-  }
-
-  ScrollSpy.prototype.getScrollHeight = function () {
-    return this.$scrollElement[0].scrollHeight || Math.max(this.$body[0].scrollHeight, document.documentElement.scrollHeight)
-  }
-
-  ScrollSpy.prototype.refresh = function () {
-    var that          = this
-    var offsetMethod  = 'offset'
-    var offsetBase    = 0
-
-    this.offsets      = []
-    this.targets      = []
-    this.scrollHeight = this.getScrollHeight()
-
-    if (!$.isWindow(this.$scrollElement[0])) {
-      offsetMethod = 'position'
-      offsetBase   = this.$scrollElement.scrollTop()
-    }
-
-    this.$body
-      .find(this.selector)
-      .map(function () {
-        var $el   = $(this)
-        var href  = $el.data('target') || $el.attr('href')
-        var $href = /^#./.test(href) && $(href)
-
-        return ($href
-          && $href.length
-          && $href.is(':visible')
-          && [[$href[offsetMethod]().top + offsetBase, href]]) || null
-      })
-      .sort(function (a, b) { return a[0] - b[0] })
-      .each(function () {
-        that.offsets.push(this[0])
-        that.targets.push(this[1])
-      })
-  }
-
-  ScrollSpy.prototype.process = function () {
-    var scrollTop    = this.$scrollElement.scrollTop() + this.options.offset
-    var scrollHeight = this.getScrollHeight()
-    var maxScroll    = this.options.offset + scrollHeight - this.$scrollElement.height()
-    var offsets      = this.offsets
-    var targets      = this.targets
-    var activeTarget = this.activeTarget
-    var i
-
-    if (this.scrollHeight != scrollHeight) {
-      this.refresh()
-    }
-
-    if (scrollTop >= maxScroll) {
-      return activeTarget != (i = targets[targets.length - 1]) && this.activate(i)
-    }
-
-    if (activeTarget && scrollTop < offsets[0]) {
-      this.activeTarget = null
-      return this.clear()
-    }
-
-    for (i = offsets.length; i--;) {
-      activeTarget != targets[i]
-        && scrollTop >= offsets[i]
-        && (offsets[i + 1] === undefined || scrollTop < offsets[i + 1])
-        && this.activate(targets[i])
-    }
-  }
-
-  ScrollSpy.prototype.activate = function (target) {
-    this.activeTarget = target
-
-    this.clear()
-
-    var selector = this.selector +
-      '[data-target="' + target + '"],' +
-      this.selector + '[href="' + target + '"]'
-
-    var active = $(selector)
-      .parents('li')
-      .addClass('active')
-
-    if (active.parent('.dropdown-menu').length) {
-      active = active
-        .closest('li.dropdown')
-        .addClass('active')
-    }
-
-    active.trigger('activate.bs.scrollspy')
-  }
-
-  ScrollSpy.prototype.clear = function () {
-    $(this.selector)
-      .parentsUntil(this.options.target, '.active')
-      .removeClass('active')
-  }
-
-
-  // SCROLLSPY PLUGIN DEFINITION
-  // ===========================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.scrollspy')
-      var options = typeof option == 'object' && option
-
-      if (!data) $this.data('bs.scrollspy', (data = new ScrollSpy(this, options)))
-      if (typeof option == 'string') data[option]()
-    })
-  }
-
-  var old = $.fn.scrollspy
-
-  $.fn.scrollspy             = Plugin
-  $.fn.scrollspy.Constructor = ScrollSpy
-
-
-  // SCROLLSPY NO CONFLICT
-  // =====================
-
-  $.fn.scrollspy.noConflict = function () {
-    $.fn.scrollspy = old
-    return this
-  }
-
-
-  // SCROLLSPY DATA-API
-  // ==================
-
-  $(window).on('load.bs.scrollspy.data-api', function () {
-    $('[data-spy="scroll"]').each(function () {
-      var $spy = $(this)
-      Plugin.call($spy, $spy.data())
-    })
-  })
-
-}(jQuery);
-
-
-/***/ }),
-/* 357 */
-/***/ (function(module, exports) {
-
-/* ========================================================================
- * Bootstrap: tab.js v3.3.7
- * http://getbootstrap.com/javascript/#tabs
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // TAB CLASS DEFINITION
-  // ====================
-
-  var Tab = function (element) {
-    // jscs:disable requireDollarBeforejQueryAssignment
-    this.element = $(element)
-    // jscs:enable requireDollarBeforejQueryAssignment
-  }
-
-  Tab.VERSION = '3.3.7'
-
-  Tab.TRANSITION_DURATION = 150
-
-  Tab.prototype.show = function () {
-    var $this    = this.element
-    var $ul      = $this.closest('ul:not(.dropdown-menu)')
-    var selector = $this.data('target')
-
-    if (!selector) {
-      selector = $this.attr('href')
-      selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') // strip for ie7
-    }
-
-    if ($this.parent('li').hasClass('active')) return
-
-    var $previous = $ul.find('.active:last a')
-    var hideEvent = $.Event('hide.bs.tab', {
-      relatedTarget: $this[0]
-    })
-    var showEvent = $.Event('show.bs.tab', {
-      relatedTarget: $previous[0]
-    })
-
-    $previous.trigger(hideEvent)
-    $this.trigger(showEvent)
-
-    if (showEvent.isDefaultPrevented() || hideEvent.isDefaultPrevented()) return
-
-    var $target = $(selector)
-
-    this.activate($this.closest('li'), $ul)
-    this.activate($target, $target.parent(), function () {
-      $previous.trigger({
-        type: 'hidden.bs.tab',
-        relatedTarget: $this[0]
-      })
-      $this.trigger({
-        type: 'shown.bs.tab',
-        relatedTarget: $previous[0]
-      })
-    })
-  }
-
-  Tab.prototype.activate = function (element, container, callback) {
-    var $active    = container.find('> .active')
-    var transition = callback
-      && $.support.transition
-      && ($active.length && $active.hasClass('fade') || !!container.find('> .fade').length)
-
-    function next() {
-      $active
-        .removeClass('active')
-        .find('> .dropdown-menu > .active')
-          .removeClass('active')
-        .end()
-        .find('[data-toggle="tab"]')
-          .attr('aria-expanded', false)
-
-      element
-        .addClass('active')
-        .find('[data-toggle="tab"]')
-          .attr('aria-expanded', true)
-
-      if (transition) {
-        element[0].offsetWidth // reflow for transition
-        element.addClass('in')
-      } else {
-        element.removeClass('fade')
-      }
-
-      if (element.parent('.dropdown-menu').length) {
-        element
-          .closest('li.dropdown')
-            .addClass('active')
-          .end()
-          .find('[data-toggle="tab"]')
-            .attr('aria-expanded', true)
-      }
-
-      callback && callback()
-    }
-
-    $active.length && transition ?
-      $active
-        .one('bsTransitionEnd', next)
-        .emulateTransitionEnd(Tab.TRANSITION_DURATION) :
-      next()
-
-    $active.removeClass('in')
-  }
-
-
-  // TAB PLUGIN DEFINITION
-  // =====================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this = $(this)
-      var data  = $this.data('bs.tab')
-
-      if (!data) $this.data('bs.tab', (data = new Tab(this)))
-      if (typeof option == 'string') data[option]()
-    })
-  }
-
-  var old = $.fn.tab
-
-  $.fn.tab             = Plugin
-  $.fn.tab.Constructor = Tab
-
-
-  // TAB NO CONFLICT
-  // ===============
-
-  $.fn.tab.noConflict = function () {
-    $.fn.tab = old
-    return this
-  }
-
-
-  // TAB DATA-API
-  // ============
-
-  var clickHandler = function (e) {
-    e.preventDefault()
-    Plugin.call($(this), 'show')
-  }
-
-  $(document)
-    .on('click.bs.tab.data-api', '[data-toggle="tab"]', clickHandler)
-    .on('click.bs.tab.data-api', '[data-toggle="pill"]', clickHandler)
-
-}(jQuery);
-
-
-/***/ }),
-/* 358 */
-/***/ (function(module, exports) {
-
-/* ========================================================================
- * Bootstrap: tooltip.js v3.3.7
- * http://getbootstrap.com/javascript/#tooltip
- * Inspired by the original jQuery.tipsy by Jason Frame
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // TOOLTIP PUBLIC CLASS DEFINITION
-  // ===============================
-
-  var Tooltip = function (element, options) {
-    this.type       = null
-    this.options    = null
-    this.enabled    = null
-    this.timeout    = null
-    this.hoverState = null
-    this.$element   = null
-    this.inState    = null
-
-    this.init('tooltip', element, options)
-  }
-
-  Tooltip.VERSION  = '3.3.7'
-
-  Tooltip.TRANSITION_DURATION = 150
-
-  Tooltip.DEFAULTS = {
-    animation: true,
-    placement: 'top',
-    selector: false,
-    template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>',
-    trigger: 'hover focus',
-    title: '',
-    delay: 0,
-    html: false,
-    container: false,
-    viewport: {
-      selector: 'body',
-      padding: 0
-    }
-  }
-
-  Tooltip.prototype.init = function (type, element, options) {
-    this.enabled   = true
-    this.type      = type
-    this.$element  = $(element)
-    this.options   = this.getOptions(options)
-    this.$viewport = this.options.viewport && $($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : (this.options.viewport.selector || this.options.viewport))
-    this.inState   = { click: false, hover: false, focus: false }
-
-    if (this.$element[0] instanceof document.constructor && !this.options.selector) {
-      throw new Error('`selector` option must be specified when initializing ' + this.type + ' on the window.document object!')
-    }
-
-    var triggers = this.options.trigger.split(' ')
-
-    for (var i = triggers.length; i--;) {
-      var trigger = triggers[i]
-
-      if (trigger == 'click') {
-        this.$element.on('click.' + this.type, this.options.selector, $.proxy(this.toggle, this))
-      } else if (trigger != 'manual') {
-        var eventIn  = trigger == 'hover' ? 'mouseenter' : 'focusin'
-        var eventOut = trigger == 'hover' ? 'mouseleave' : 'focusout'
-
-        this.$element.on(eventIn  + '.' + this.type, this.options.selector, $.proxy(this.enter, this))
-        this.$element.on(eventOut + '.' + this.type, this.options.selector, $.proxy(this.leave, this))
-      }
-    }
-
-    this.options.selector ?
-      (this._options = $.extend({}, this.options, { trigger: 'manual', selector: '' })) :
-      this.fixTitle()
-  }
-
-  Tooltip.prototype.getDefaults = function () {
-    return Tooltip.DEFAULTS
-  }
-
-  Tooltip.prototype.getOptions = function (options) {
-    options = $.extend({}, this.getDefaults(), this.$element.data(), options)
-
-    if (options.delay && typeof options.delay == 'number') {
-      options.delay = {
-        show: options.delay,
-        hide: options.delay
-      }
-    }
-
-    return options
-  }
-
-  Tooltip.prototype.getDelegateOptions = function () {
-    var options  = {}
-    var defaults = this.getDefaults()
-
-    this._options && $.each(this._options, function (key, value) {
-      if (defaults[key] != value) options[key] = value
-    })
-
-    return options
-  }
-
-  Tooltip.prototype.enter = function (obj) {
-    var self = obj instanceof this.constructor ?
-      obj : $(obj.currentTarget).data('bs.' + this.type)
-
-    if (!self) {
-      self = new this.constructor(obj.currentTarget, this.getDelegateOptions())
-      $(obj.currentTarget).data('bs.' + this.type, self)
-    }
-
-    if (obj instanceof $.Event) {
-      self.inState[obj.type == 'focusin' ? 'focus' : 'hover'] = true
-    }
-
-    if (self.tip().hasClass('in') || self.hoverState == 'in') {
-      self.hoverState = 'in'
-      return
-    }
-
-    clearTimeout(self.timeout)
-
-    self.hoverState = 'in'
-
-    if (!self.options.delay || !self.options.delay.show) return self.show()
-
-    self.timeout = setTimeout(function () {
-      if (self.hoverState == 'in') self.show()
-    }, self.options.delay.show)
-  }
-
-  Tooltip.prototype.isInStateTrue = function () {
-    for (var key in this.inState) {
-      if (this.inState[key]) return true
-    }
-
-    return false
-  }
-
-  Tooltip.prototype.leave = function (obj) {
-    var self = obj instanceof this.constructor ?
-      obj : $(obj.currentTarget).data('bs.' + this.type)
-
-    if (!self) {
-      self = new this.constructor(obj.currentTarget, this.getDelegateOptions())
-      $(obj.currentTarget).data('bs.' + this.type, self)
-    }
-
-    if (obj instanceof $.Event) {
-      self.inState[obj.type == 'focusout' ? 'focus' : 'hover'] = false
-    }
-
-    if (self.isInStateTrue()) return
-
-    clearTimeout(self.timeout)
-
-    self.hoverState = 'out'
-
-    if (!self.options.delay || !self.options.delay.hide) return self.hide()
-
-    self.timeout = setTimeout(function () {
-      if (self.hoverState == 'out') self.hide()
-    }, self.options.delay.hide)
-  }
-
-  Tooltip.prototype.show = function () {
-    var e = $.Event('show.bs.' + this.type)
-
-    if (this.hasContent() && this.enabled) {
-      this.$element.trigger(e)
-
-      var inDom = $.contains(this.$element[0].ownerDocument.documentElement, this.$element[0])
-      if (e.isDefaultPrevented() || !inDom) return
-      var that = this
-
-      var $tip = this.tip()
-
-      var tipId = this.getUID(this.type)
-
-      this.setContent()
-      $tip.attr('id', tipId)
-      this.$element.attr('aria-describedby', tipId)
-
-      if (this.options.animation) $tip.addClass('fade')
-
-      var placement = typeof this.options.placement == 'function' ?
-        this.options.placement.call(this, $tip[0], this.$element[0]) :
-        this.options.placement
-
-      var autoToken = /\s?auto?\s?/i
-      var autoPlace = autoToken.test(placement)
-      if (autoPlace) placement = placement.replace(autoToken, '') || 'top'
-
-      $tip
-        .detach()
-        .css({ top: 0, left: 0, display: 'block' })
-        .addClass(placement)
-        .data('bs.' + this.type, this)
-
-      this.options.container ? $tip.appendTo(this.options.container) : $tip.insertAfter(this.$element)
-      this.$element.trigger('inserted.bs.' + this.type)
-
-      var pos          = this.getPosition()
-      var actualWidth  = $tip[0].offsetWidth
-      var actualHeight = $tip[0].offsetHeight
-
-      if (autoPlace) {
-        var orgPlacement = placement
-        var viewportDim = this.getPosition(this.$viewport)
-
-        placement = placement == 'bottom' && pos.bottom + actualHeight > viewportDim.bottom ? 'top'    :
-                    placement == 'top'    && pos.top    - actualHeight < viewportDim.top    ? 'bottom' :
-                    placement == 'right'  && pos.right  + actualWidth  > viewportDim.width  ? 'left'   :
-                    placement == 'left'   && pos.left   - actualWidth  < viewportDim.left   ? 'right'  :
-                    placement
-
-        $tip
-          .removeClass(orgPlacement)
-          .addClass(placement)
-      }
-
-      var calculatedOffset = this.getCalculatedOffset(placement, pos, actualWidth, actualHeight)
-
-      this.applyPlacement(calculatedOffset, placement)
-
-      var complete = function () {
-        var prevHoverState = that.hoverState
-        that.$element.trigger('shown.bs.' + that.type)
-        that.hoverState = null
-
-        if (prevHoverState == 'out') that.leave(that)
-      }
-
-      $.support.transition && this.$tip.hasClass('fade') ?
-        $tip
-          .one('bsTransitionEnd', complete)
-          .emulateTransitionEnd(Tooltip.TRANSITION_DURATION) :
-        complete()
-    }
-  }
-
-  Tooltip.prototype.applyPlacement = function (offset, placement) {
-    var $tip   = this.tip()
-    var width  = $tip[0].offsetWidth
-    var height = $tip[0].offsetHeight
-
-    // manually read margins because getBoundingClientRect includes difference
-    var marginTop = parseInt($tip.css('margin-top'), 10)
-    var marginLeft = parseInt($tip.css('margin-left'), 10)
-
-    // we must check for NaN for ie 8/9
-    if (isNaN(marginTop))  marginTop  = 0
-    if (isNaN(marginLeft)) marginLeft = 0
-
-    offset.top  += marginTop
-    offset.left += marginLeft
-
-    // $.fn.offset doesn't round pixel values
-    // so we use setOffset directly with our own function B-0
-    $.offset.setOffset($tip[0], $.extend({
-      using: function (props) {
-        $tip.css({
-          top: Math.round(props.top),
-          left: Math.round(props.left)
-        })
-      }
-    }, offset), 0)
-
-    $tip.addClass('in')
-
-    // check to see if placing tip in new offset caused the tip to resize itself
-    var actualWidth  = $tip[0].offsetWidth
-    var actualHeight = $tip[0].offsetHeight
-
-    if (placement == 'top' && actualHeight != height) {
-      offset.top = offset.top + height - actualHeight
-    }
-
-    var delta = this.getViewportAdjustedDelta(placement, offset, actualWidth, actualHeight)
-
-    if (delta.left) offset.left += delta.left
-    else offset.top += delta.top
-
-    var isVertical          = /top|bottom/.test(placement)
-    var arrowDelta          = isVertical ? delta.left * 2 - width + actualWidth : delta.top * 2 - height + actualHeight
-    var arrowOffsetPosition = isVertical ? 'offsetWidth' : 'offsetHeight'
-
-    $tip.offset(offset)
-    this.replaceArrow(arrowDelta, $tip[0][arrowOffsetPosition], isVertical)
-  }
-
-  Tooltip.prototype.replaceArrow = function (delta, dimension, isVertical) {
-    this.arrow()
-      .css(isVertical ? 'left' : 'top', 50 * (1 - delta / dimension) + '%')
-      .css(isVertical ? 'top' : 'left', '')
-  }
-
-  Tooltip.prototype.setContent = function () {
-    var $tip  = this.tip()
-    var title = this.getTitle()
-
-    $tip.find('.tooltip-inner')[this.options.html ? 'html' : 'text'](title)
-    $tip.removeClass('fade in top bottom left right')
-  }
-
-  Tooltip.prototype.hide = function (callback) {
-    var that = this
-    var $tip = $(this.$tip)
-    var e    = $.Event('hide.bs.' + this.type)
-
-    function complete() {
-      if (that.hoverState != 'in') $tip.detach()
-      if (that.$element) { // TODO: Check whether guarding this code with this `if` is really necessary.
-        that.$element
-          .removeAttr('aria-describedby')
-          .trigger('hidden.bs.' + that.type)
-      }
-      callback && callback()
-    }
-
-    this.$element.trigger(e)
-
-    if (e.isDefaultPrevented()) return
-
-    $tip.removeClass('in')
-
-    $.support.transition && $tip.hasClass('fade') ?
-      $tip
-        .one('bsTransitionEnd', complete)
-        .emulateTransitionEnd(Tooltip.TRANSITION_DURATION) :
-      complete()
-
-    this.hoverState = null
-
-    return this
-  }
-
-  Tooltip.prototype.fixTitle = function () {
-    var $e = this.$element
-    if ($e.attr('title') || typeof $e.attr('data-original-title') != 'string') {
-      $e.attr('data-original-title', $e.attr('title') || '').attr('title', '')
-    }
-  }
-
-  Tooltip.prototype.hasContent = function () {
-    return this.getTitle()
-  }
-
-  Tooltip.prototype.getPosition = function ($element) {
-    $element   = $element || this.$element
-
-    var el     = $element[0]
-    var isBody = el.tagName == 'BODY'
-
-    var elRect    = el.getBoundingClientRect()
-    if (elRect.width == null) {
-      // width and height are missing in IE8, so compute them manually; see https://github.com/twbs/bootstrap/issues/14093
-      elRect = $.extend({}, elRect, { width: elRect.right - elRect.left, height: elRect.bottom - elRect.top })
-    }
-    var isSvg = window.SVGElement && el instanceof window.SVGElement
-    // Avoid using $.offset() on SVGs since it gives incorrect results in jQuery 3.
-    // See https://github.com/twbs/bootstrap/issues/20280
-    var elOffset  = isBody ? { top: 0, left: 0 } : (isSvg ? null : $element.offset())
-    var scroll    = { scroll: isBody ? document.documentElement.scrollTop || document.body.scrollTop : $element.scrollTop() }
-    var outerDims = isBody ? { width: $(window).width(), height: $(window).height() } : null
-
-    return $.extend({}, elRect, scroll, outerDims, elOffset)
-  }
-
-  Tooltip.prototype.getCalculatedOffset = function (placement, pos, actualWidth, actualHeight) {
-    return placement == 'bottom' ? { top: pos.top + pos.height,   left: pos.left + pos.width / 2 - actualWidth / 2 } :
-           placement == 'top'    ? { top: pos.top - actualHeight, left: pos.left + pos.width / 2 - actualWidth / 2 } :
-           placement == 'left'   ? { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth } :
-        /* placement == 'right' */ { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width }
-
-  }
-
-  Tooltip.prototype.getViewportAdjustedDelta = function (placement, pos, actualWidth, actualHeight) {
-    var delta = { top: 0, left: 0 }
-    if (!this.$viewport) return delta
-
-    var viewportPadding = this.options.viewport && this.options.viewport.padding || 0
-    var viewportDimensions = this.getPosition(this.$viewport)
-
-    if (/right|left/.test(placement)) {
-      var topEdgeOffset    = pos.top - viewportPadding - viewportDimensions.scroll
-      var bottomEdgeOffset = pos.top + viewportPadding - viewportDimensions.scroll + actualHeight
-      if (topEdgeOffset < viewportDimensions.top) { // top overflow
-        delta.top = viewportDimensions.top - topEdgeOffset
-      } else if (bottomEdgeOffset > viewportDimensions.top + viewportDimensions.height) { // bottom overflow
-        delta.top = viewportDimensions.top + viewportDimensions.height - bottomEdgeOffset
-      }
-    } else {
-      var leftEdgeOffset  = pos.left - viewportPadding
-      var rightEdgeOffset = pos.left + viewportPadding + actualWidth
-      if (leftEdgeOffset < viewportDimensions.left) { // left overflow
-        delta.left = viewportDimensions.left - leftEdgeOffset
-      } else if (rightEdgeOffset > viewportDimensions.right) { // right overflow
-        delta.left = viewportDimensions.left + viewportDimensions.width - rightEdgeOffset
-      }
-    }
-
-    return delta
-  }
-
-  Tooltip.prototype.getTitle = function () {
-    var title
-    var $e = this.$element
-    var o  = this.options
-
-    title = $e.attr('data-original-title')
-      || (typeof o.title == 'function' ? o.title.call($e[0]) :  o.title)
-
-    return title
-  }
-
-  Tooltip.prototype.getUID = function (prefix) {
-    do prefix += ~~(Math.random() * 1000000)
-    while (document.getElementById(prefix))
-    return prefix
-  }
-
-  Tooltip.prototype.tip = function () {
-    if (!this.$tip) {
-      this.$tip = $(this.options.template)
-      if (this.$tip.length != 1) {
-        throw new Error(this.type + ' `template` option must consist of exactly 1 top-level element!')
-      }
-    }
-    return this.$tip
-  }
-
-  Tooltip.prototype.arrow = function () {
-    return (this.$arrow = this.$arrow || this.tip().find('.tooltip-arrow'))
-  }
-
-  Tooltip.prototype.enable = function () {
-    this.enabled = true
-  }
-
-  Tooltip.prototype.disable = function () {
-    this.enabled = false
-  }
-
-  Tooltip.prototype.toggleEnabled = function () {
-    this.enabled = !this.enabled
-  }
-
-  Tooltip.prototype.toggle = function (e) {
-    var self = this
-    if (e) {
-      self = $(e.currentTarget).data('bs.' + this.type)
-      if (!self) {
-        self = new this.constructor(e.currentTarget, this.getDelegateOptions())
-        $(e.currentTarget).data('bs.' + this.type, self)
-      }
-    }
-
-    if (e) {
-      self.inState.click = !self.inState.click
-      if (self.isInStateTrue()) self.enter(self)
-      else self.leave(self)
-    } else {
-      self.tip().hasClass('in') ? self.leave(self) : self.enter(self)
-    }
-  }
-
-  Tooltip.prototype.destroy = function () {
-    var that = this
-    clearTimeout(this.timeout)
-    this.hide(function () {
-      that.$element.off('.' + that.type).removeData('bs.' + that.type)
-      if (that.$tip) {
-        that.$tip.detach()
-      }
-      that.$tip = null
-      that.$arrow = null
-      that.$viewport = null
-      that.$element = null
-    })
-  }
-
-
-  // TOOLTIP PLUGIN DEFINITION
-  // =========================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.tooltip')
-      var options = typeof option == 'object' && option
-
-      if (!data && /destroy|hide/.test(option)) return
-      if (!data) $this.data('bs.tooltip', (data = new Tooltip(this, options)))
-      if (typeof option == 'string') data[option]()
-    })
-  }
-
-  var old = $.fn.tooltip
-
-  $.fn.tooltip             = Plugin
-  $.fn.tooltip.Constructor = Tooltip
-
-
-  // TOOLTIP NO CONFLICT
-  // ===================
-
-  $.fn.tooltip.noConflict = function () {
-    $.fn.tooltip = old
-    return this
-  }
-
-}(jQuery);
-
-
-/***/ }),
-/* 359 */
-/***/ (function(module, exports) {
-
-/* ========================================================================
- * Bootstrap: transition.js v3.3.7
- * http://getbootstrap.com/javascript/#transitions
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
-  // ============================================================
-
-  function transitionEnd() {
-    var el = document.createElement('bootstrap')
-
-    var transEndEventNames = {
-      WebkitTransition : 'webkitTransitionEnd',
-      MozTransition    : 'transitionend',
-      OTransition      : 'oTransitionEnd otransitionend',
-      transition       : 'transitionend'
-    }
-
-    for (var name in transEndEventNames) {
-      if (el.style[name] !== undefined) {
-        return { end: transEndEventNames[name] }
-      }
-    }
-
-    return false // explicit for ie8 (  ._.)
-  }
-
-  // http://blog.alexmaccaw.com/css-transitions
-  $.fn.emulateTransitionEnd = function (duration) {
-    var called = false
-    var $el = this
-    $(this).one('bsTransitionEnd', function () { called = true })
-    var callback = function () { if (!called) $($el).trigger($.support.transition.end) }
-    setTimeout(callback, duration)
-    return this
-  }
-
-  $(function () {
-    $.support.transition = transitionEnd()
-
-    if (!$.support.transition) return
-
-    $.event.special.bsTransitionEnd = {
-      bindType: $.support.transition.end,
-      delegateType: $.support.transition.end,
-      handle: function (e) {
-        if ($(e.target).is(this)) return e.handleObj.handler.apply(this, arguments)
-      }
-    }
-  })
-
-}(jQuery);
-
-
-/***/ }),
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
 /* 360 */,
 /* 361 */,
 /* 362 */,
@@ -102285,20 +99846,7 @@ __webpack_require__(348)
 /* 489 */,
 /* 490 */,
 /* 491 */,
-/* 492 */,
-/* 493 */,
-/* 494 */,
-/* 495 */,
-/* 496 */,
-/* 497 */,
-/* 498 */,
-/* 499 */,
-/* 500 */,
-/* 501 */,
-/* 502 */,
-/* 503 */,
-/* 504 */,
-/* 505 */
+/* 492 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(31)(undefined);
@@ -102312,7 +99860,7 @@ exports.push([module.i, "body {\n  margin: 0;\n  color: #6a6f8c;\n  background: 
 
 
 /***/ }),
-/* 506 */
+/* 493 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(31)(undefined);
@@ -102326,7 +99874,7 @@ exports.push([module.i, "/* this file will be extracted to main dist folder and 
 
 
 /***/ }),
-/* 507 */
+/* 494 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(31)(undefined);
@@ -102334,13 +99882,13 @@ exports = module.exports = __webpack_require__(31)(undefined);
 
 
 // module
-exports.push([module.i, "@font-face {\r\n    font-family: 'goudy_old_styleregular';\r\n    src: url(" + __webpack_require__(515) + ") format('woff2'),\r\n         url(" + __webpack_require__(514) + ") format('woff');\r\n    font-weight: normal;\r\n    font-style: normal;\r\n\r\n}\r\n\r\nhtml, body{\r\n  height: 100%;\r\n  font-family:'goudy_old_styleregular';\r\n  background:#EAEDF1;\r\n}\r\n\r\n.left-main,.right-main{\r\n\twidth:45%;\r\n\tposition: relative;\r\n\tfloat: left;\r\n}\r\n\r\na.active {\r\n  background-color: gray;\r\n}\r\n#main-right{\r\npadding:8px 25px 10px 25px !important;\r\n} \r\n#main2{\r\nmargin-right:0;\r\n}\r\n#main{\r\n  padding-right: 0;\r\n}\r\n\r\nnav a{\r\n  background:transparent;\r\n}\r\n.custom-right-navbar{\r\n\tborder-radius:0;\r\n\tmargin-bottom:0;\r\n\tbackground-color: #fff;\r\n\tpadding-top: 4px;\r\n}\r\n.custom-navbar{\r\n\tz-index: 2;\r\n\tborder-radius:0;\r\n\t    background-color: #fff;\r\n    box-shadow: 0 0 1px rgba(76,86,103,.25), 0 2px 5px rgba(31,37,50,.32);\r\n    -webkit-box-shadow: 0 0 1px rgba(76,86,103,.25), 0 2px 5px rgba(31,37,50,.32);\r\n    -moz-box-shadow: 0 0 1px rgba(76,86,103,.25),0 2px 5px rgba(31,37,50,.32);\r\n    margin-bottom: 3px;padding-top: 4px;\r\n}\r\n.custom-right-navbar .navbar-nav li a{\r\n\tpadding-left:0;\r\n}\r\n.cart-count p{\r\n\ttext-align:center;\r\n\t    padding-top: 18px;\r\n}\r\n.cart-count{\r\n\tdisplay:inline-block;\r\n\twidth:80%;\r\n}\r\n\r\n.fa-bell{\r\n\tfont-size: 26px !important;\r\n    color: #768496 !important;\r\n\t    margin-top: 1px;\r\n    margin-right: 20px;\r\n}\r\n.fa-trash,.fa-ellipsis-h{\r\n\t    color: #768496 !important;\r\n\t\tfont-size: 26px !important;\r\n}\r\n.fa-menu{\r\n\tfont-size: 26px !important;\r\n    color: #768496 !important;\r\n\t    margin-top: 4px;\r\n}\r\n.fa-menu:before {\r\n    content: '\\F0C9';\r\n}\r\n.navbar-form{\r\n\twidth:550px;\r\n}\r\n.fa-ellipsis-v,a.dropdown-toggle{\r\n\tfont-size:14px !important;\r\n\tcolor: #3c4857 !important;\r\n    font-weight: normal;\r\n}\r\n.navbar-form input:focus{\r\nbox-shadow:none;\r\n}\r\n.dropdown-toggle .caret{\r\n\tmargin-top:-3px;\r\n\tmargin-left:8px;\r\n\tcolor: #3c4857 !important;\r\n}\r\n.navbar-form,.navbar-form button,.navbar-form input{\r\n\theight:40px;\r\n    color: #3C4867;\r\n\tborder: 0 none;\r\n    background: #EDEFF2;\r\n    box-shadow:none;\r\n    font-size: 13px;\r\n\toutline:none;\r\n    border-radius: 0;\r\n}\r\n#main2{\r\n\tbackground: #EDEFF2;\r\n}\r\n\r\n/* Radio Buttons */\r\n\r\n\r\n.radio label.radioLabels {\r\n  display: inline-block;\r\n  cursor: pointer;\r\n  position: relative;\r\n  padding-left: 25px;\r\n  margin-right: 15px;\r\n  font-size: 13px;\r\n}\r\ninput[type=radio] {\r\n  display: none ;\r\n}\r\n\r\n.radio label.radioLabels:before {\r\n  border-radius: 8px;\r\n}\r\n\r\ninput[type=radio]:checked + label.radioLabels:before {\r\n    content: \"\\2022\";\r\n    color: #f3f3f3;\r\n    font-size: 25px;\r\n    text-align: center;\r\n    line-height: 20px;\r\n}\r\n\r\n.radio label.radioLabels:before {\r\n  content: \"\";\r\n  display: inline-block;\r\n \r\n  width: 16px;\r\n  height: 16px;\r\n \r\n  margin-right: 10px;\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: 1px;\r\n  background-color: #7FCBC2;\r\n  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);\r\n}\r\n#loader i{\r\n  color:#7FCBC2;\r\n}\r\n#loader{\r\n      text-align: center;\r\n    margin-top: 50px;\r\n    display: none;\r\n}\r\n.our-name p{\r\ntext-align: center;\r\n}\r\n/* Radio Buttons */\r\n/* Media Queries */\r\n\r\n\r\n\r\n\r\n\r\n/*iPad 1 & 2 in portrait*/\r\n\r\n\r\n@media only screen \r\nand (min-device-width : 768px) \r\nand (max-device-width : 1024px) \r\nand (orientation : portrait) \r\nand (-webkit-min-device-pixel-ratio: 1) { \r\n\r\n.circle-box{\r\n\twidth:50px !important;\r\n\theight:50px !important;\r\n\t\r\n}\r\n\r\n.all-text{\r\n\tline-height: 50px !important;\r\n\r\n}\r\n\r\n.left-main, .right-main{\r\n\twidth:44% !important;\r\n}\r\n.main-item-order{\r\n    height: calc(100vh - 180px) !important;\r\n   \r\n}\r\n.table-cart{\r\n\tpadding-left:15px !important;\r\n}\r\n\r\n#main-right {\r\n    padding: 8px 10px 10px 25px !important;\r\n}\r\n.actions-customer h2{\r\n    text-align: left;\r\n    font-size: 26px !important;\r\n}\r\n\r\n.search-input img{\r\n    top: 5px !important;\r\n    width: 30px !important;\r\n    right: 12px !important;\r\n}\r\n }\r\n\r\n\r\n\r\n\r\n\r\n/* Media Queries */", ""]);
+exports.push([module.i, "@font-face {\r\n    font-family: 'goudy_old_styleregular';\r\n    src: url(" + __webpack_require__(502) + ") format('woff2'),\r\n         url(" + __webpack_require__(501) + ") format('woff');\r\n    font-weight: normal;\r\n    font-style: normal;\r\n\r\n}\r\n\r\nhtml, body{\r\n  height: 100%;\r\n  font-family:'goudy_old_styleregular';\r\n  background:#EAEDF1;\r\n}\r\n\r\n.left-main,.right-main{\r\n\twidth:45%;\r\n\tposition: relative;\r\n\tfloat: left;\r\n}\r\n\r\na.active {\r\n  background-color: gray;\r\n}\r\n#main-right{\r\npadding:8px 25px 10px 25px !important;\r\n} \r\n#main2{\r\nmargin-right:0;\r\n}\r\n#main{\r\n  padding-right: 0;\r\n}\r\n\r\nnav a{\r\n  background:transparent;\r\n}\r\n.custom-right-navbar{\r\n\tborder-radius:0;\r\n\tmargin-bottom:0;\r\n\tbackground-color: #fff;\r\n\tpadding-top: 4px;\r\n}\r\n.custom-navbar{\r\n\tz-index: 2;\r\n\tborder-radius:0;\r\n\t    background-color: #fff;\r\n    box-shadow: 0 0 1px rgba(76,86,103,.25), 0 2px 5px rgba(31,37,50,.32);\r\n    -webkit-box-shadow: 0 0 1px rgba(76,86,103,.25), 0 2px 5px rgba(31,37,50,.32);\r\n    -moz-box-shadow: 0 0 1px rgba(76,86,103,.25),0 2px 5px rgba(31,37,50,.32);\r\n    margin-bottom: 3px;padding-top: 4px;\r\n}\r\n.custom-right-navbar .navbar-nav li a{\r\n\tpadding-left:0;\r\n}\r\n.cart-count p{\r\n\ttext-align:center;\r\n\t    padding-top: 18px;\r\n}\r\n.cart-count{\r\n\tdisplay:inline-block;\r\n\twidth:80%;\r\n}\r\n\r\n.fa-bell{\r\n\tfont-size: 26px !important;\r\n    color: #768496 !important;\r\n\t    margin-top: 1px;\r\n    margin-right: 20px;\r\n}\r\n.fa-trash,.fa-ellipsis-h{\r\n\t    color: #768496 !important;\r\n\t\tfont-size: 26px !important;\r\n}\r\n.fa-menu{\r\n\tfont-size: 26px !important;\r\n    color: #768496 !important;\r\n\t    margin-top: 4px;\r\n}\r\n.fa-menu:before {\r\n    content: '\\F0C9';\r\n}\r\n.navbar-form{\r\n\twidth:550px;\r\n}\r\n.fa-ellipsis-v,a.dropdown-toggle{\r\n\tfont-size:14px !important;\r\n\tcolor: #3c4857 !important;\r\n    font-weight: normal;\r\n}\r\n.navbar-form input:focus{\r\nbox-shadow:none;\r\n}\r\n.dropdown-toggle .caret{\r\n\tmargin-top:-3px;\r\n\tmargin-left:8px;\r\n\tcolor: #3c4857 !important;\r\n}\r\n.navbar-form,.navbar-form button,.navbar-form input{\r\n\theight:40px;\r\n    color: #3C4867;\r\n\tborder: 0 none;\r\n    background: #EDEFF2;\r\n    box-shadow:none;\r\n    font-size: 13px;\r\n\toutline:none;\r\n    border-radius: 0;\r\n}\r\n#main2{\r\n\tbackground: #EDEFF2;\r\n}\r\n\r\n/* Radio Buttons */\r\n\r\n\r\n.radio label.radioLabels {\r\n  display: inline-block;\r\n  cursor: pointer;\r\n  position: relative;\r\n  padding-left: 25px;\r\n  margin-right: 15px;\r\n  font-size: 13px;\r\n}\r\ninput[type=radio] {\r\n  display: none ;\r\n}\r\n\r\n.radio label.radioLabels:before {\r\n  border-radius: 8px;\r\n}\r\n\r\ninput[type=radio]:checked + label.radioLabels:before {\r\n    content: \"\\2022\";\r\n    color: #f3f3f3;\r\n    font-size: 25px;\r\n    text-align: center;\r\n    line-height: 20px;\r\n}\r\n\r\n.radio label.radioLabels:before {\r\n  content: \"\";\r\n  display: inline-block;\r\n \r\n  width: 16px;\r\n  height: 16px;\r\n \r\n  margin-right: 10px;\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: 1px;\r\n  background-color: #7FCBC2;\r\n  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);\r\n}\r\n#loader i{\r\n  color:#7FCBC2;\r\n}\r\n#loader{\r\n      text-align: center;\r\n    margin-top: 50px;\r\n    display: none;\r\n}\r\n.our-name p{\r\ntext-align: center;\r\n}\r\n/* Radio Buttons */\r\n/* Media Queries */\r\n\r\n\r\n\r\n\r\n\r\n/*iPad 1 & 2 in portrait*/\r\n\r\n\r\n@media only screen \r\nand (min-device-width : 768px) \r\nand (max-device-width : 1024px) \r\nand (orientation : portrait) \r\nand (-webkit-min-device-pixel-ratio: 1) { \r\n\r\n.circle-box{\r\n\twidth:50px !important;\r\n\theight:50px !important;\r\n\t\r\n}\r\n\r\n.all-text{\r\n\tline-height: 50px !important;\r\n\r\n}\r\n\r\n.left-main, .right-main{\r\n\twidth:44% !important;\r\n}\r\n.main-item-order{\r\n    height: calc(100vh - 180px) !important;\r\n   \r\n}\r\n.table-cart{\r\n\tpadding-left:15px !important;\r\n}\r\n\r\n#main-right {\r\n    padding: 8px 10px 10px 25px !important;\r\n}\r\n.actions-customer h2{\r\n    text-align: left;\r\n    font-size: 26px !important;\r\n}\r\n\r\n.search-input img{\r\n    top: 5px !important;\r\n    width: 30px !important;\r\n    right: 12px !important;\r\n}\r\n }\r\n\r\n\r\n\r\n\r\n\r\n/* Media Queries */", ""]);
 
 // exports
 
 
 /***/ }),
-/* 508 */
+/* 495 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(31)(undefined);
@@ -102354,7 +99902,7 @@ exports.push([module.i, "/* Products */\r\n.custom-right-navbar{\r\n\theight:60p
 
 
 /***/ }),
-/* 509 */
+/* 496 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(31)(undefined);
@@ -102368,7 +99916,7 @@ exports.push([module.i, "\r\n/* Style page content - use this if you want to pus
 
 
 /***/ }),
-/* 510 */
+/* 497 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(31)(undefined);
@@ -102382,7 +99930,7 @@ exports.push([module.i, "/*styles for home content only*/", ""]);
 
 
 /***/ }),
-/* 511 */
+/* 498 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(31)(undefined);
@@ -102396,7 +99944,7 @@ exports.push([module.i, "/* Products */\r\n\r\ninput[type=radio]:checked + label
 
 
 /***/ }),
-/* 512 */
+/* 499 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(31)(undefined);
@@ -102410,7 +99958,7 @@ exports.push([module.i, "/* The side navigation menu */\r\n.sidenav {\r\n    hei
 
 
 /***/ }),
-/* 513 */
+/* 500 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(31)(undefined);
@@ -102424,19 +99972,19 @@ exports.push([module.i, "h1 {\r\n  color: #00BCD4;\r\n}", ""]);
 
 
 /***/ }),
-/* 514 */
+/* 501 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "ccad210978aedfd7648260f7588e849e.woff";
 
 /***/ }),
-/* 515 */
+/* 502 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "b5fd3a47e1d994ff01e32f862ac97f4e.woff2";
 
 /***/ }),
-/* 516 */
+/* 503 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -102685,10 +100233,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 516;
+webpackContext.id = 503;
 
 /***/ }),
-/* 517 */
+/* 504 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -102733,7 +100281,7 @@ var DatePickerModule = (function () {
 //# sourceMappingURL=ng2-datepicker.module.js.map
 
 /***/ }),
-/* 518 */
+/* 505 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102811,7 +100359,7 @@ module.exports = EventManager;
 
 
 /***/ }),
-/* 519 */
+/* 506 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102831,15 +100379,15 @@ module.exports = (function () {
 
 
 /***/ }),
-/* 520 */
+/* 507 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var destroy = __webpack_require__(522);
-var initialize = __webpack_require__(530);
-var update = __webpack_require__(531);
+var destroy = __webpack_require__(509);
+var initialize = __webpack_require__(517);
+var update = __webpack_require__(518);
 
 module.exports = {
   initialize: initialize,
@@ -102849,7 +100397,7 @@ module.exports = {
 
 
 /***/ }),
-/* 521 */
+/* 508 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102872,7 +100420,7 @@ module.exports = {
 
 
 /***/ }),
-/* 522 */
+/* 509 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102901,7 +100449,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 523 */
+/* 510 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102947,7 +100495,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 524 */
+/* 511 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -103057,7 +100605,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 525 */
+/* 512 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -103218,7 +100766,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 526 */
+/* 513 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -103366,7 +100914,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 527 */
+/* 514 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -103388,7 +100936,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 528 */
+/* 515 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -103510,7 +101058,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 529 */
+/* 516 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -103696,7 +101244,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 530 */
+/* 517 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -103709,14 +101257,14 @@ var updateGeometry = __webpack_require__(33);
 
 // Handlers
 var handlers = {
-  'click-rail': __webpack_require__(523),
-  'drag-scrollbar': __webpack_require__(524),
-  'keyboard': __webpack_require__(525),
-  'wheel': __webpack_require__(526),
-  'touch': __webpack_require__(529),
-  'selection': __webpack_require__(528)
+  'click-rail': __webpack_require__(510),
+  'drag-scrollbar': __webpack_require__(511),
+  'keyboard': __webpack_require__(512),
+  'wheel': __webpack_require__(513),
+  'touch': __webpack_require__(516),
+  'selection': __webpack_require__(515)
 };
-var nativeScrollHandler = __webpack_require__(527);
+var nativeScrollHandler = __webpack_require__(514);
 
 module.exports = function (element, userSettings) {
   userSettings = typeof userSettings === 'object' ? userSettings : {};
@@ -103740,7 +101288,7 @@ module.exports = function (element, userSettings) {
 
 
 /***/ }),
-/* 531 */
+/* 518 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -103784,43 +101332,43 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 532 */
+/* 519 */
 /***/ (function(module, exports) {
 
 module.exports = "\r\n  \r\n  <!-- Whole Cart-->\r\n\r\n  <div class=\"whole-cart\">\r\n\r\n\r\n  <button id=\"PaymentOptionsButton\" type=\"button\" class=\"btn btn-info btn-lg\" data-toggle=\"modal\" data-target=\"#PaymentOptions\" style=\"display:none\">Open Modal</button>\r\n\t\t <!-- Modal -->\r\n  <div class=\"modal fade\" id=\"PaymentOptions\" data-backdrop=\"static\" data-keyboard=\"false\" role=\"dialog\">\r\n    <div class=\"modal-dialog\">\r\n    \r\n      <!-- Modal content-->\r\n      <div class=\"modal-content\">\r\n        <div class=\"modal-header\">\r\n\t\t\t\t\t  <button type=\"button\" id=\"closeModal\" data-dismiss=\"modal\">Close</button>\r\n          <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                <div class=\"heading-box\"><h3>Make Payment</h3></div>\r\n        </div>\r\n        <div class=\"modal-body\">\r\n\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t<div class=\"row price-row\" style=\"margin-top:20px;\">\r\n\t\t\t\t\t\t\t  <div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p>Balance</p>\r\n\t\t\t\t\t\t\t  </div>\r\n\r\n\t\t\t\t\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p>{{FinalTotal}}</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"row price-row\">\r\n\t\t\t\t\t\t\t  <div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p class=\"blue\">Paying Now</p>\r\n\t\t\t\t\t\t\t  </div>\r\n\r\n\t\t\t\t\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p class=\"grey\">{{FinalTotal}}</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t<div class=\"payment-options\">\r\n\r\n\t\t\t\t\t\t<div class=\"row payment-methods-row\">\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\" (click)=\"initiateCashPayment($event)\" id=\"cashOnDelivery\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-gift\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>Cash on Delivery</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\" (click)=\"initiateCashPayment($event)\" id=\"cashOnHand\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-money\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>Cash</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-credit-card\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>Credit Card</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-arrow-right\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>3rd Party</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t       </div>\r\n\r\n\r\n\r\n\t\t\t\t\t <div class=\"shippment-options\">\r\n\r\n\t\t\t\t\t\t<div class=\"shipment-plus-or\">\r\n\t\t\t\t\t \t <div class=\"checkbox shippment-check\">\r\n\t\t\t\t\t\t\t<label><input type=\"checkbox\" class=\"shippmentFormYes\" (change)=\"CheckoutShippingForm()\"  value=\"shipYes\">Do you want to ship these produts?</label>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<p class=\"or-text\" style=\"text-align:center;font-size:20px;\">OR</p> \r\n\t\t\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t\t<div class=\"proceed-without-shippment\">\r\n\r\n\r\n\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t <div class=\"proceed\">\r\n\t\t\t\t\t\t\t\t\t<button class=\"proceed-button\" (click)=\"thanksMsgShow()\"><i class=\"fa fa-check\"></i>&nbsp;&nbsp;&nbsp;Proceed</button>\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t<div class=\"thankyouMsg\">\r\n\t\t\t\t\t\t\t\t\t\t<h3 style=\"color:#7FCBC2;text-align: center;margin:20px 0;\">Your order was placed successfully! Thank you </h3>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-default button-close\" data-dismiss=\"modal\">Close</button>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\r\n\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\r\n\t\t\t\t\t\t  <div class=\"checkout-shippment-form\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t<h3 style=\"text-align:center;\">Enter Shipping Details</h3>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t <div class=\"row\" style=\"margin-top:20px\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t          <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t     <Strong>Select Shipping Address</Strong>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t<select [(ngModel)]=\"selectedAdress\" class=\"new-form-inputs\" (change)=\"getSingleAddress($event.target.value)\">\r\n\r\n                <option  value=\"\" disabled selected>Select Address</option>\r\n                <option  *ngFor=\"let address of AddressModelArray\" [ngValue]=\"address\">{{address.Address}}</option>  \r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</select>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t </div>\r\n\r\n                        <div class=\"row\" style=\"margin-top:20px\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Shipping Name</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"checkoutShipName\" name=\"checkoutShipName\" [(ngModel)]=\"checkoutShipName\" type=\"text\" placeholder=\"Enter name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row\" style=\"margin-top:20px\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Shipping Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"checkoutShipPhone\" name=\"checkoutShipPhone\" [(ngModel)]=\"checkoutShipPhone\" type=\"number\" placeholder=\"Enter phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row\" style=\"margin-top:20px\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Shipping Adress</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"checkoutShipAddress\" name=\"checkoutShipAddress\" [(ngModel)]=\"checkoutShipAddress\" type=\"text\" placeholder=\"Enter address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"incompleteCheckoutShippment alert alert-danger\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Incomplete Form</strong>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"checkoutLoader\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"row\" style=\"margin-top:20px;text-align: center;\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t   <button class=\"SubmitCheckoutShippment\" (click)=\"SubmitCheckoutShippmentInfo()\">Submit Details</button>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t  <!-- Proceed -->\r\n\t\t\t\t\t\t\t<div class=\"proceed-with-order\">\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t <div class=\"proceed\">\r\n\t\t\t\t\t\t\t\t\t<h3 style=\"color:black;text-align: center;margin:20px 0;\">Do you want to Proceed?</h3>\r\n\t\t\t\t\t\t\t\t\t<button class=\"proceed-button\" (click)=\"thanksMsgShow()\"><i class=\"fa fa-check\"></i>&nbsp;&nbsp;&nbsp;Proceed</button>\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t<div class=\"OrderLoader\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t<div class=\"thankyouMsg\">\r\n\t\t\t\t\t\t\t\t\t\t<h3 style=\"color:#7FCBC2;text-align: center;margin:20px 0;\">Your order was placed successfully! Thank you </h3>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-default button-close\" data-dismiss=\"modal\">Close</button>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<!-- Proceed -->\r\n\r\n\r\n\r\n        </div>\r\n\r\n      </div>\r\n      \r\n    </div>\r\n  </div>\r\n\r\n\r\n<div class=\"table-cart animated\">\r\n\t<div class=\"actions-customer row\">\r\n\t\r\n\t <h2>Charge AED {{FinalTotal}}</h2>\r\n\t  \r\n\t\r\n\t</div>\r\n\t\r\n\t<div class=\"customer-name\">\r\n    <h3 *ngIf=\"!customerName\">Guest Customer</h3>\r\n     <h3 *ngIf=\"customerName\">{{customerName}}<button (click)=\"unAttachUser()\" class=\"no-user\">&times;</button></h3>\r\n\t</div>\r\n\t\r\n\t<div class=\"main-item-order\" [perfect-scrollbar]=\"config\"> \r\n\t\r\n\t<table class=\"table table-bordered\">\r\n    <thead>\r\n      <tr>\r\n\t\t\t\t<th class=\"col-md-1 no-right-border background-th\"></th>\r\n        <th class=\"col-md-8 background-th no-left-border\">ITEM</th>\r\n        <th class=\"col-md-3 background-th align-right\">TOTAL</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n\r\n\r\n\t\t\t<tr *ngFor=\"let cartObj of cart\" id=\"{{cartObj.product.ID}}\">\r\n\t\t\t\t<td class=\"col-md-1\" style=\" vertical-align: middle;\"><button class='deleteRow' (click)=\"deleteThisRow(cartObj.product.ID)\"><img src=\"/assets/img/delete.png\"></button></td>\r\n        <td class=\"col-md-8\">\r\n\t\t\r\n\t\t\t\t\t  <div class=\"row\">\r\n\t\t\t\t\t\t  <div class=\"col-md-10 paddingLeft\">\r\n\t\t\t\t\t\t\t\t <p class=\"blue-color\">{{cartObj.product.Name}}</p>\r\n\t\t\t\t\t\t\t\t  <p class=\"small-tex\"> AED{{cartObj.product.price}} </p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"small-tex\">{{cartObj.box}} </p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"small-tex\">{{cartObj.boxColor}} </p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"small-tex\">{{cartObj.size}} </p>\r\n\t\t\t\t\t\t  </div>\r\n\t\t\t\t\t\t\t<div class=\"col-md-2\">\r\n\t\t\t\t\t\t\t\t<p class=\"blue-color\">X {{cartObj.quantity}}</p>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t</td>\r\n        <td class=\"col-md-3  price-total-box align-right\">AED {{cartObj.total}} </td>\r\n      </tr>\r\n\r\n\r\n    </tbody>\r\n\t\t  <tfoot>\r\n\r\n\t\t\t\r\n    <tr>\r\n      <td class=\"col-md-1 no-padding-all background-colored\"><div class=\"Checkout\" (click)=\"callModal()\">a</div></td>\r\n      <td class=\"col-md-9 uppercase left-less\" >Subtotal</td>\r\n      <td class=\"col-md-2 uppercase align-right\">AED {{subtotal}}</td>\r\n    </tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"col-md-1 no-padding-all background-colored\"><div class=\"Checkout\" (click)=\"callModal()\" ><i class=\"fa fa-plus\"></i></div></td>\r\n      <td class=\"col-md-9 uppercase left-less\" >Tax</td>\r\n      <td class=\"col-md-2 uppercase align-right\">AED {{toShowTax}}</td>\r\n    </tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"col-md-1 no-padding-all background-colored\"><div class=\"Checkout\" (click)=\"callModal()\">a</div></td>\r\n      <td class=\"col-md-9 uppercase left-less\" >Total</td>\r\n      <td class=\"col-md-2 uppercase align-right\">AED {{FinalTotal}}</td>\r\n    </tr>\r\n\r\n  </tfoot>\r\n  </table>\r\n\t\r\n\t\t\r\n\t\t\r\n\t</div>\r\n\t\r\n\t</div>\r\n\r\n\r\n</div>  <!-- Whole Cart-->\r\n\r\n\r\n\r\n\r\n<!-- Back Office Div -->\r\n\r\n<div class=\"back-office-div\">\r\n\r\n<div class=\"backToCart\" (click)=\"showCartHideTax()\">\r\n\t<img src=\"/assets/img/left.png\" width=\"30px\">\r\n</div>\r\n\r\n\r\n<div class=\"row\">\r\n\r\n <h3>Global Settings</h3>\r\n <hr>\r\n</div>\r\n\r\n<div class=\"setting-row\">\r\n\t<div class=\"col-md-6 col-sm-6\">\r\n\t\t<p class=\"settings-text\">Global Tax</p>\r\n\t</div>\r\n\r\n\t<div class=\"col-md-6 col-sm-6\">\r\n\r\n\t\t<label class=\"switch\">\r\n\t\t\t<input type=\"checkbox\" (change)=\"taxValueChange()\" class=\"tax-value\">\r\n\t\t\t<span class=\"slider round\"></span>\r\n        </label>\r\n\r\n\t</div>\r\n</div>\r\n\r\n\r\n<div class=\"setting-row tax-amount-input\">\r\n\r\n\t\t<div class=\"col-md-6\">\r\n\t\t\t<p class=\"settings-text\">Global Tax Value</p>\r\n\t\t</div>\r\n\r\n\r\n\t\t<div class=\"col-md-3\">\r\n\t\t\t<input type=\"number\" class=\"new-form-inputs\" id=\"taxValue\" name=\"taxValue\" [(ngModel)]=\"taxValue\">\r\n\t\t</div>\r\n\r\n\t\t<div class=\"col-md-3\">\r\n\t\t\t<button class=\"btn-save-tax\" (click)=\"saveTax()\"><i class='fa fa-save'></i></button>\r\n\t\t</div>\r\n\r\n\r\n</div>\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<!-- Back Office div-->\r\n\r\n\r\n\r\n\r\n\r\n\t\t<div class=\"cart-footer clearfix\">\r\n\t\t\t\r\n\t\t\t <div class=\"row\">\r\n\r\n\t\t\t\t\t  <div class=\"col-md-8 col-sm-7\">\r\n\t\t\t\t\t\t\t<div class=\"upload\">\r\n\t\t\t\t\t\t\t\t<div class=\"dropup\">\r\n\t\t\t\t\t\t\t\t\t<button class=\"btn btn-primary dropdown-toggle\" type=\"button\" data-toggle=\"dropdown\"><i class=\"fa fa-upload\"></i>\r\n\t\t\t\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t\t\t\t<ul class=\"dropdown-menu\">\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Discounts</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Tips</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Notes</a></li>\r\n\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t  <div class=\"col-md-4 col-sm-5\">\r\n\t\t\t\t\t\t\t\t<div class=\"pause\">\r\n\t\t\t\t\t\t\t\t\t\t<button class=\"pause-button\" (click)=\"pauseCart()\"><img src=\"/assets/img/pause.png\" width=\"15px\"></button>\r\n\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t<div class=\"cancel\">\r\n\t\t\t\t\t\t\t\t\t<button class=\"cancel-button\" (click)=\"deleteCart()\"><img src=\"/assets/img/cross.png\" width=\"15px\"></button>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t \r\n\t\t\t </div>\r\n\t\r\n\t\t\t\r\n\t\t</div>"
 
 /***/ }),
-/* 533 */
+/* 520 */
 /***/ (function(module, exports) {
 
 module.exports = "<nav class=\"navbar navbar-default custom-navbar\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"navbar-header\">\r\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#myNavbar\">\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>                        \r\n      </button>\r\n    </div>\r\n    <div class=\"collapse navbar-collapse\" id=\"myNavbar\">\r\n      <ul class=\"nav navbar-nav\">\r\n        <li><a class=\"circle\"><i class=\"fa fa-user\"></i></a></li>\r\n      </ul> \r\n\t  \r\n\r\n    <div class=\"our-name\">\r\n         <p>Les Floralies</p>\r\n    </div>\r\n\t\r\n\r\n    </div>\r\n  </div>\r\n</nav>"
 
 /***/ }),
-/* 534 */
+/* 521 */
 /***/ (function(module, exports) {
 
 module.exports = "\r\n    <Header></Header>\r\n    <perfect-scrollbar  [config]=\"config\">\r\n    <Sidebar (showBackOfficeEvent)=\"Main.hideCartShowBackoffice()\"></Sidebar>\r\n    </perfect-scrollbar>\r\n<div class=\"row\" id=\"main2\"> <!-- Outermost Row (col-md-5 col-sm-6 main right) col-md-6 col-sm-6 mainleft -->\r\n\r\n  <div class=\"left-main\" id=\"main-right\"> <!-- Main Right -->\r\n\r\n   <Cartright #Cartright></Cartright>\r\n\r\n  </div><!-- Main Right Ends-->\r\n\r\n  <div  id=\"main\" class=\"right-main\">  <!-- Main -->\r\n\r\n    \r\n    <Main #Main id=\"backgrounded\" (customerSet)=\"Cartright.getCustomer()\" (myEvent)=\"Cartright.function1()\"></Main>\r\n\r\n\r\n  </div> <!-- Main Ends -->\r\n   \r\n\r\n\r\n\r\n</div>  <!-- Outermost Row Ends -->"
 
 /***/ }),
-/* 535 */
+/* 522 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"login-wrap\">\r\n\t<div class=\"login-html\">\r\n\t\t<input id=\"tab-1\" type=\"radio\" name=\"tab\" class=\"sign-in\" checked><label for=\"tab-1\" class=\"tab\">Sign In</label>\r\n\t\t<input id=\"tab-2\" type=\"radio\" name=\"tab\" class=\"sign-up\"><label for=\"tab-2\" class=\"tab\"></label>\r\n\t\t<div class=\"login-form\">\r\n\t\t\t<div class=\"sign-in-htm\">\r\n\t\t\t\t<div class=\"group\">\r\n\t\t\t\t\t<label for=\"user\" class=\"label\">Username</label>\r\n\t\t\t\t\t<input id=\"user\" type=\"text\" name=\"Email\" [(ngModel)]=\"Email\" class=\"input\">\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"group\">\r\n\t\t\t\t\t<label for=\"pass\" class=\"label\">Password</label>\r\n\t\t\t\t\t<input id=\"pass\" type=\"password\" name=\"Password\" [(ngModel)]=\"Password\"  class=\"input\" data-type=\"password\">\r\n\t\t\t\t</div>\r\n\t\t\t\r\n\r\n        <div class=\"group\" id=\"enterEmail\">\r\n               <p>Enter your email</p>\r\n\t\t\t\t</div>\r\n\r\n        <div class=\"group\" id=\"enterPassword\">\r\n               <p>Enter your password</p>\r\n\t\t\t\t</div>\r\n\r\n        <div class=\"group\" id=\"wrongEmail\">\r\n               <p>Enter a valid email</p>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"group\" id=\"wrongCreds\">\r\n               <p>Enter valid credentials</p>\r\n\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t<div class=\"group\">\r\n\t\t\t\t\t<input type=\"submit\" (click)=\"Submitting()\" class=\"button\" value=\"Sign In\">\r\n\t\t\t\t</div>\r\n\r\n        <div id=\"loader\">\r\n<i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n        </div>\r\n        \r\n\t\t\t\t<div class=\"hr\"></div>\r\n<!--\t\t\t\t<div class=\"foot-lnk\">\r\n\t\t\t\t\t<a href=\"#forgot\">Forgot Password?</a>\r\n\t\t\t\t</div>-->\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\t</div>\r\n</div>"
 
 /***/ }),
-/* 536 */
+/* 523 */
 /***/ (function(module, exports) {
 
 module.exports = "\r\n<div class=\"row products-row\">\r\n\r\n\r\n\r\n\r\n\r\n<perfect-scrollbar  [config]=\"config\">\r\n    <div class=\"main-content \">\r\n\r\n\r\n\r\n        <div class=\"nav-tabs\">\r\n\r\n            <ul class=\"nav nav-pills\">\r\n                <li><a (click)=\"changePill($event)\" data-target=\"customers\" data-toggle=\"pill\"><i (click)=\"changePill($event)\" data-target=\"customers\" class=\"fa fa-user\"></i></a></li>\r\n                <li class=\"active\"><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"categories-tab\"><i (click)=\"changePill($event)\" data-target=\"categories-tab\" class=\"fa fa-bars\"></i></a></li>\r\n                <li><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"receipts\"><i (click)=\"changePill($event)\" data-target=\"receipts\" class=\"fa fa-ticket\"></i></a></li>\r\n                <li><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"menu3\"><i (click)=\"changePill($event)\" data-target=\"menu3\" class=\"fa fa-male\"></i></a></li>\r\n            </ul>\r\n\r\n        </div>\r\n\r\n\r\n        <div class=\"nav-content\">\r\n\r\n\r\n            <div class=\"tab-content\">\r\n\r\n\r\n                <div id=\"customers\" class=\"tab-pane fade clearfix\">\r\n\r\n\r\n                    <div class=\"search-customer\">\r\n\r\n                        <div class=\"customers-tab clearfix\">\r\n\r\n                            <div class=\"editCustomer\">\r\n                                <button class=\"editCustomerBtn\" (click)=\"editCustomerDetails(toEditCustomerId)\"><i class=\"fa fa-pencil\"></i></button>\r\n                            </div>\r\n\r\n                            <div class=\"customers-heading\">\r\n                                <p>Customers</p>\r\n                            </div>\r\n\r\n                            <div class=\"customer-add\">\r\n                                <button class=\"add-customer\" (click)=\"addCustomerForm()\"><i class=\"fa fa-plus\"></i></button>\r\n                            </div>\r\n\r\n                        </div>\r\n                        <div class=\"search-box-items clearfix\">\r\n\r\n                            <div class=\"search-input clearfix\">\r\n\r\n                                <input type=\"text\" name=\"searchCustomers\" (keyup)=\"searchThisCustomer(this)\" [(ngModel)]=\"searchCustomers\" class=\"form-control\" placeholder=\"Search items by name or sku\">\r\n\r\n                                <img src=\"../../assets/img/camera.png\">\r\n                                \r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"list-customers clearfix\">\r\n                            <div class='customer-loader'>  <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i></div>\r\n                            <ul *ngIf=\"customerList\" class=\"listing-customers clearfix\">\r\n\r\n                                <li *ngFor=\"let customersModel of CustomersModel\" class=\"customersModel clearfix\">\r\n                                    <a (click)=\"editCustomer(customersModel.id)\" id='{{customersModel.id}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{customersModel.customerName}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{customersModel.customerEmail}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>\r\n\r\n\r\n                            </ul>\r\n\r\n                            <ul *ngIf=\"searchFlag\" class=\"listing-customers clearfix\">\r\n\r\n                                 <li *ngFor=\"let searchedModel of SearchedModel\" class=\"searchModel clearfix\">\r\n                                    <a (click)=\"editCustomer(searchedModel.id)\" id='{{searchedModel.id}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{searchedModel.customerName}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{searchedModel.customerEmail}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>                           \r\n\r\n\r\n                            </ul>\r\n\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"new-customer-form\">\r\n\r\n                        <div class=\"close-form\" (click)=\"hideNewCustomerForm()\">&times;</div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <div class=\"fileinput fileinput-new\" data-provides=\"fileinput\">\r\n                                        <div class=\"fileinput-preview thumbnail\" id=\"image-container\" data-trigger=\"fileinput\" style=\"width:120px;height:120px;border-radius:50%;\"></div>\r\n                                        <div>\r\n                                            <span style=\"display:none\" class=\"btn btn-default btn-file\"><span  class=\"fileinput-new\">Select image</span>\r\n                                            <span\r\n                                                class=\"fileinput-exists\">Change</span><input type=\"file\" style=\"display:none\" name=\"...\"></span>\r\n                                                <a href=\"#\" class=\"btn btn-default fileinput-exists remove_image\" data-dismiss=\"fileinput\"><i class=\"fa fa-trash\"></i></a>\r\n                                        </div>\r\n                                    </div>\r\n\r\n\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerNameInput\" name=\"customerName\" [(ngModel)]=\"customerName\" type=\"text\" placeholder=\"Customer Name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <select id=\"select-customer-type\" [(ngModel)]=\"customerType\" class=\"new-form-inputs\">\r\n                             <option  value=\"\" disabled selected>Customer Type</option>\r\n                            <option *ngFor=\"let customerGroup of CustomergroupsModel\" value=\"{{customerGroup.id}}\">{{customerGroup.value}}</option>\r\n                    \r\n                    </select>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerCellPhone\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\"\r\n                                    placeholder=\"Cell Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Work Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerWorkPhone\" [(ngModel)]=\"customerWorkPhone\" type=\"number\" placeholder=\"Work Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerEmail\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Email\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <div class=\"radio\">\r\n                                    <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"male\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                    <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"female\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                </div>\r\n\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n                               <!-- <ng2-datepicker [options]=\"options\" [(ngModel)]=\"customersDOB\"></ng2-datepicker>-->\r\n\r\n                             <input class=\"new-form-inputs\" id=\"customerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n\r\n                            <div class=\"checkbox\">\r\n                                <label><input class=\"shippingCheckbox regular-checkbox\" (change)=\"shippingAddressForm()\" type=\"checkbox\" value=\"shipping\">    Shipping</label>\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"shipping-address-form\">\r\n                            <!-- Shipping Address Form -->\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"Name\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"Phone\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\"  id=\"toShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n                        <!-- Shipping Address Form -->\r\n\r\n\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Personal Discount</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerDiscount\" [(ngModel)]=\"customerDiscount\" type=\"text\" placeholder=\"Discount\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"incompleteForm\">\r\n\r\n                            <p>Please Fill out the form completely!</p>\r\n\r\n                        </div>\r\n\r\n                        <div id=\"loader\">\r\n                            <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"submit-button\">\r\n\r\n                            <button class=\"create-customer\" (click)=\"createCustomer()\">Create Customer</button>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"alert alert-success row margined-top\" id=\"customer-added\">\r\n\r\n                            <p>Customer Created Successfully!</p>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                    <!--- Customer Edit Form -->\r\n\r\n\r\n\r\n\r\n                    <div class=\"edit-customer-form\">\r\n\r\n                        <div class=\"row\">\r\n                            <div class=\"col-md-6\"></div>\r\n                            <div class=\"col-md-6\"> <div class=\"close-edit-form\" (click)=\"hideEditForm()\">&times;</div></div>\r\n                        </div>\r\n                       \r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <div class=\"fileinput fileinput-new\" data-provides=\"fileinput\">\r\n                                        <div class=\"fileinput-preview thumbnail\" id=\"image-container\" data-trigger=\"fileinput\" style=\"width:120px;height:120px;border-radius:50%;\"></div>\r\n                                        <div>\r\n                                            <span style=\"display:none\" class=\"btn btn-default btn-file\"><span  class=\"fileinput-new\">Select image</span>\r\n                                            <span\r\n                                                class=\"fileinput-exists\">Change</span><input type=\"file\" style=\"display:none\" name=\"...\"></span>\r\n                                                <a href=\"#\" class=\"btn btn-default fileinput-exists remove_image\" data-dismiss=\"fileinput\"><i class=\"fa fa-trash\"></i></a>\r\n                                        </div>\r\n                                    </div>\r\n\r\n\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs edit-profile-name\" id=\"editCustomerName\" name=\"customerName\" [(ngModel)]=\"customerName\" type=\"text\" placeholder=\"Customer Name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <select id=\"edit-customer-type\" [(ngModel)]=\"customerType\" class=\"new-form-inputs\">\r\n                             <option  value=\"\" disabled selected>Customer Type</option>\r\n                            <option *ngFor=\"let customerGroup of CustomergroupsModel\" value=\"{{customerGroup.id}}\">{{customerGroup.value}}</option>\r\n                    \r\n                    </select>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerCellPhone\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\"\r\n                                    placeholder=\"Cell Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Work Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"editCustomerWorkPhone\" [(ngModel)]=\"customerWorkPhone\" type=\"number\" placeholder=\"Work Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerEmail\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Email\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <div class=\"radio\">\r\n                                    <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"editGender\" value=\"Male\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                    <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"editGender\" value=\"Female\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                </div>\r\n\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n                               <!-- <ng2-datepicker [options]=\"options\" [(ngModel)]=\"customersDOB\"></ng2-datepicker>-->\r\n\r\n                             <input class=\"new-form-inputs\" id=\"editCustomerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n\r\n                            <div class=\"checkbox\">\r\n                                <label><input class=\"shippingCheckbox regular-checkbox\" (change)=\"shippingAddressForm()\" type=\"checkbox\" value=\"shipping\">    Shipping</label>\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"shipping-address-form\">\r\n                            <!-- Shipping Address Form -->\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"editToShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"Name\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"editToShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"Phone\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\"  id=\"editToShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n                        <!-- Shipping Address Form -->\r\n\r\n\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Personal Discount</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerDiscount\" [(ngModel)]=\"customerDiscount\" type=\"text\" placeholder=\"Discount\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"editincompleteForm\">\r\n\r\n                            <p>Please Fill out the form completely!</p>\r\n\r\n                        </div>\r\n\r\n                        <div id=\"editloader\">\r\n                            <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"update-button\">\r\n\r\n                            <button class=\"create-customer\" (click)=\"updateCustomer()\">Update Customer</button>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"alert alert-success row margined-top\" id=\"customer-updated\">\r\n\r\n                            <p>Customer Updated Successfully!</p>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                    <!-- Customer Edit Form -->\r\n\r\n\r\n                    <!-- Customer Profile to show -->\r\n\r\n                    <div class=\"Customer-full-detail animated\">\r\n\r\n\r\n                        <div class=\"back-to-search-customers\" (click)=\"backToSearchCustomers()\">\r\n                              <img src=\"/assets/img/left.png\">\r\n                        </div>\r\n\r\n                        <div class=\"\">\r\n\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"left-pic clearfix\">\r\n\r\n                                    <div class=\"profile-pic\">\r\n\r\n                                        <img src=\"../../assets/img/bane.jpg\">\r\n\r\n                                    </div>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"right-name clearfix\">\r\n\r\n                                    <h3 class=\"profile-name\">Tom Hardy</h3>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n\r\n                            <hr>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Cell Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\" placeholder=\"Cell Phone\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Email</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Cell Phone\" readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Gender</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <div class=\"radio\">\r\n                                        <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"Male\" [(ngModel)]=\"customerGender\">\r\n                                        <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                        <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"Female\" [(ngModel)]=\"customerGender\">\r\n                                        <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                    </div>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Date of Birth</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"customerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"customerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <button class=\"reciepts\"><i class=\"fa fa-bar-chart\"></i><p> Orders/Reciepts </p></button>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <button class=\"notes\"><i class=\"fa fa-sticky-note\" aria-hidden=\"true\"></i><p> Notes </p></button>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n                    <!-- Customer Profile to Show-->\r\n\r\n\r\n                    <div class=\"customer-profile-tab\">\r\n\r\n                        <div class=\"customers-tab clearfix\">\r\n\r\n                            <div class=\"unselect-customer\">\r\n                                <button><i class=\"fa fa-times-circle-o\" aria-hidden=\"true\"></i></button>\r\n                            </div>\r\n                            <div class=\"customers-heading\">\r\n                                <p>Customers</p>\r\n                            </div>\r\n\r\n                            <div class=\"customer-edit\">\r\n                                <button class=\"add-customer\"><i class=\"fa fa-pencil\"></i></button>\r\n                            </div>\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <img src=\"../../assets/img/bane.jpg\">\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <h3 class=\"profile-name\">Tom Hardy</h3>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">--</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Code</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">9876</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">(001)-7524-3422</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">bane@gothamcity.com</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">Male</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">26-05-1993</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">Arkhan City Asylum</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <button class=\"reciepts\"><i class=\"fa fa-bar-chart\"></i><p> Orders/Reciepts </p></button>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <button class=\"notes\"><i class=\"fa fa-sticky-note\" aria-hidden=\"true\"></i><p> Notes </p></button>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                </div>\r\n\r\n\r\n\r\n                <div id=\"categories-tab\" class=\"tab-pane fade in active clearfix\">\r\n\r\n                    <div class=\"background-added\">\r\n\r\n                        <div class=\"categories-tab clearfix\">\r\n\r\n                            <div class=\"box\">\r\n                                <a class=\"no-link\" (click)=\"setAll()\">\r\n                                    <div class=\"cat-image circle-box\">\r\n                                        <p class=\"all-text\">All</p>\r\n                                    </div>\r\n                                    <h3>All</h3>\r\n                                </a>\r\n                            </div>\r\n\r\n\r\n                            <div *ngFor=\"let categories of categories\" class=\"box\">\r\n                                <a class=\"no-link\" (click)=\"ShowProductsForCategories(categories.id)\" id=\"{{categories.id}}\">\r\n                                    <div class=\"cat-image\">\r\n                                        <img src=\"{{categories.imageURL}}\">\r\n                                    </div>\r\n                                    <h3>{{categories.name}}</h3>\r\n                                </a>\r\n                            </div>\r\n\r\n\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"search-box-items\">\r\n\r\n                            <div class=\"search-input\">\r\n                                <input type=\"text\" name=\"searchProduct\" [(ngModel)]=\"searchProduct\" (keyup)=\"searchThisProduct(this)\" class=\"form-control\" placeholder=\"Search items by name or sku\">\r\n                               <!-- <button class=\"searchCustomerBtn\"><i class=\"fa fa-chevron-right\"></i></button>-->\r\n                                <img src=\"../../assets/img/camera.png\">\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                    <div *ngIf=\"detailFlag\" class=\"product-detail-tab animated\">\r\n\r\n                        <div class=\"backToProducts\" (click)=\"backToProducts()\">\r\n                            <img src=\"/assets/img/left.png\">\r\n                        </div>\r\n\r\n                        <div class=\"looping\">\r\n\r\n                            <div class=\"product-heading\">\r\n                                <h2>{{productDetailModel.Name}}</h2>\r\n                            </div>\r\n\r\n                            \r\n                        <div class=\"optionsDiv\" *ngIf=\"OptionsCheck\">\r\n\r\n                            <div class=\"product-size clearfix\">\r\n                                \r\n                                <div class=\"check-exists\" *ngIf=\"sizeCheck\">\r\n                                    <h2 class=\"product-properties\">Size</h2>\r\n                                    <div class=\"size-box-wrapper\" *ngFor=\"let productDetails of productDetailModel.Options.size\">\r\n                                        \r\n                                        <button class=\"size-box\" (click)=\"sizevalues($event,productDetails.size,productDetails.Price)\"> \r\n        \r\n                                            {{productDetails.size}}<br>\r\n                                            + AED{{productDetails.Price}}\r\n                                        </button>\r\n                                    </div>\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n\r\n\r\n                            <div class=\"product-box-variation clearfix\">\r\n\r\n\r\n\r\n                                <div class=\"row check-exists\" *ngIf=\"boxCheck\">\r\n                                    <h2 class=\"product-properties\">Box Color</h2>\r\n                                    <div class=\"product-box-variation-wrapper clearfix\" *ngFor=\"let productDetails of productDetailModel.Options.color\">\r\n                                        <button class=\"product-variation-box boxColor\" (click)=\"colorvalues($event,productDetails.color)\">\r\n                                            {{productDetails.color}}\r\n                                        </button>\r\n                                    </div>\r\n                                </div>\r\n\r\n\r\n                                <div class=\"row check-exists\" *ngIf=\"boxTypeCheck\">\r\n                                    <h2 class=\"product-properties\">Box Type</h2>\r\n                                    <div id=\"box-type\" class=\"product-box-variation-wrapper clearfix\" *ngFor=\"let productDetails of productDetailModel.Options.box\">\r\n                                        <button class=\"product-variation-box\" (click)=\"boxtype($event,productDetails.box,productDetails.Price)\">\r\n                                        \r\n                                            {{productDetails.box}}<br>\r\n                                            + AED{{productDetails.Price}}\r\n                                        </button>\r\n                                    </div>\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-6 col-xs-6' style=\"padding-left:0;\">\r\n                                    <h2 class=\"product-properties\">In Stock</h2>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    <p class=\"quantity-value\">{{productDetailModel.Quantity}}</p>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-6 col-xs-6' style=\"padding-left:0;\">\r\n                                    <h2 class=\"product-properties\">Quantity</h2>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    <div class=\"quantity\" id=\"prod-quantity\">\r\n                                        <input type=\"number\" id=\"num_val\" min=\"1\" max=\"{{productDetailModel.Quantity}}\" class='qty' step=\"1\" value=\"1\" readonly>\r\n                                        <div class=\"quantity-nav\">\r\n                                            <div class=\"quantity-button quantity-up qtyplus \" field='quantity' (click)=\"Upping(productDetailModel.Quantity)\">+</div>\r\n                                            <div class=\"quantity-button quantity-down qtyminus\"  field='quantity' (click)=\"Downing()\">-</div>\r\n                                        </div>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert size-alert alert-danger\">Please select a Size</div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert box-alert alert-danger\">Please select Box Type</div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert color-alert alert-danger\">Please select a Color</div>\r\n                            </div>\r\n\r\n                            <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-12 col-xs-12' style=\"padding-left:0;\">\r\n                                    <button class=\"add-to-cart\" (click)=\"addtoCart(productDetailModel)\">Add To Cart</button>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    \r\n                                </div>\r\n                            </div>\r\n\r\n\r\n\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n\r\n                    <div class=\"products-list animated\">\r\n\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='allProducts'>\r\n                            <div class=\"box\" *ngFor=\"let Product of searchproductModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat1'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat2'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat3'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat4'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                </div>\r\n\r\n                <div id=\"receipts\" class=\"tab-pane fade\">\r\n\r\n\r\n\r\n                    <div class=\"customers-tab clearfix\">\r\n\r\n                        <div class=\"customers-heading\">\r\n                            <p>Receipts</p>\r\n                        </div>\r\n\r\n                    </div>\r\n                    <div class=\"search-box-items-reciept\">\r\n\r\n                    <div class=\"row clearfix order-types-row\">\r\n\r\n                        <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                              <button class=\"order-types\" id=\"cashOnDelivery\" (click)=\"getOnDeliveryOrders($event)\">On Delivery</button>\r\n                            </div>\r\n                         <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                             <button class=\"order-types\" (click)=\"getOnCashOrders($event)\">Cash</button>\r\n                            </div>\r\n\r\n                         <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                             <button class=\"order-types\">Credit Card</button>\r\n                            </div>\r\n\r\n                         <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                             <button class=\"order-types\">3rd Party</button>\r\n                            </div>\r\n\r\n\r\n                     </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div id=\"reciepts-data\">\r\n\r\n\r\n                        <ul  class=\"listing-customers clearfix\">\r\n\r\n                                <li *ngFor=\"let order of tempOrders\" class=\"clearfix\">\r\n                                    <a (click)=\"getDetailedOrder(order.Customer.OrderID)\" id='{{order.Customer.OrderID}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{order.Customer.Date}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{order.Billing.Name}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>\r\n\r\n\r\n                        </ul>\r\n\r\n\r\n\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div id=\"orderDetail\">\r\n\r\n                        <div class=\"info-holder\" *ngIf='orderDetailFlag'>\r\n                                            \r\n                        <div class=\"billing-section\">\r\n                            <div class=\"back-to-orders\" (click)=\"backToOrders()\">\r\n                                                <img src=\"/assets/img/left.png\">\r\n                                            </div>\r\n                            <div class=\"order-section\">\r\n                                <h3 class=\"order-heading\">Order Information</h3>\r\n                                <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.OrderID}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Total}}</p>\r\n                            </div>\r\n                            <div class=\"billing-name\">\r\n                                <h3 class=\"order-heading\">Billing Information</h3>\r\n                                <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Billing.Name}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Billing.Phone}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Billing.Address}}</p>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"customer-detail-section\">\r\n                            <h3 class=\"order-heading\">Customer Details</h3>\r\n                            <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.OrderID}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Name}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Email}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Date}}</p>\r\n                        </div>\r\n                        <div class=\"products-section\">\r\n                            <h3 class=\"order-heading\">Product Details</h3>\r\n                            <hr>\r\n                            <table class=\"table table-striped\">\r\n                                <thead>\r\n                                <tr>\r\n                                    <th>Product Name</th>\r\n                                    <th>Product Price</th>\r\n                                    <th>Product Sku</th>\r\n                                    <th>Product Options</th>\r\n                                </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                <tr *ngFor=\"let products of orderDetail.Products\">\r\n                                    <td>{{products.ProductName}}</td>\r\n                                    <td>{{products.ProductPrice}}</td>\r\n                                    <td>{{products.ProductSku}}</td>\r\n                                    <td>{{products.ProductName}}</td>\r\n                                </tr>\r\n                                </tbody>\r\n                            </table>\r\n\r\n\r\n                           \r\n                        </div>\r\n                        <div class=\"shipping-info-section\">\r\n                                <h3 class=\"order-heading\">Shipping Information</h3>\r\n                                <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Shipping.Name}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Shipping.Phone}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Shipping.Address}}</p>\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div class=\"cart-footer clearfix\">\r\n\r\n                        <div class=\"row\">\r\n\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n                    </div>\r\n\r\n                </div>\r\n                <div id=\"menu3\" class=\"tab-pane fade\">\r\n \r\n                </div>\r\n            </div>\r\n\r\n\r\n        </div>\r\n\r\n\r\n\r\n    </div>\r\n\r\n    </perfect-scrollbar>\r\n</div>"
 
 /***/ }),
-/* 537 */
+/* 524 */
 /***/ (function(module, exports) {
 
 module.exports = "\r\n<div id=\"mySidenav\" class=\"sidenav\">\r\n \r\n   <ul class=\"sidebar-list\">\r\n  \r\n<li><i class=\"fa fa-sign-in\" aria-hidden=\"true\"></i><p>Register<p></li>\r\n<li><i class=\"fa fa-users\" aria-hidden=\"true\"></i><p>Customers<p></li>\r\n<li><i class=\"fa fa-cog\" aria-hidden=\"true\"></i><p>My Company<p></li>\r\n<li><a href=\"#\" (click)=\"showBackOffice()\"><i class=\"fa fa-cloud\" aria-hidden=\"true\"></i><p>Back Office<p></a></li>\r\n<li><i class=\"fa fa-question\" aria-hidden=\"true\"></i><p>Help<p></li>\r\n<li><i class=\"fa fa-bars\" aria-hidden=\"true\"></i><p>Add Ons<p></li>\r\n<li><a [routerLink]=\" ['/']\" (click)=\"logout()\"><i class=\"fa fa-lock\" aria-hidden=\"true\"></i><p>Sign Out<p></a></li>\r\n   <!--<div class=\"sync-button\">\r\n        <i class=\"fa fa-cloud\"></i><p>Sync</p>\r\n    </div>-->\r\n</ul>\r\n\r\n\r\n</div>\r\n\r\n<!-- Use any element to open the sidenav -->\r\n"
 
 /***/ }),
-/* 538 */
+/* 525 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -103875,7 +101423,7 @@ exports.BehaviorSubject = BehaviorSubject;
 //# sourceMappingURL=BehaviorSubject.js.map
 
 /***/ }),
-/* 539 */
+/* 526 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -103917,7 +101465,7 @@ exports.InnerSubscriber = InnerSubscriber;
 //# sourceMappingURL=InnerSubscriber.js.map
 
 /***/ }),
-/* 540 */
+/* 527 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -104050,7 +101598,7 @@ exports.Notification = Notification;
 //# sourceMappingURL=Notification.js.map
 
 /***/ }),
-/* 541 */
+/* 528 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -104096,7 +101644,7 @@ exports.SubjectSubscription = SubjectSubscription;
 //# sourceMappingURL=SubjectSubscription.js.map
 
 /***/ }),
-/* 542 */
+/* 529 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -104107,7 +101655,7 @@ Observable_1.Observable.of = of_1.of;
 //# sourceMappingURL=of.js.map
 
 /***/ }),
-/* 543 */
+/* 530 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -104183,7 +101731,7 @@ exports.ArrayLikeObservable = ArrayLikeObservable;
 //# sourceMappingURL=ArrayLikeObservable.js.map
 
 /***/ }),
-/* 544 */
+/* 531 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -104351,7 +101899,7 @@ var RefCountSubscriber = (function (_super) {
 //# sourceMappingURL=ConnectableObservable.js.map
 
 /***/ }),
-/* 545 */
+/* 532 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -104469,7 +102017,7 @@ var ForkJoinSubscriber = (function (_super) {
 //# sourceMappingURL=ForkJoinObservable.js.map
 
 /***/ }),
-/* 546 */
+/* 533 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -104482,12 +102030,12 @@ var __extends = (this && this.__extends) || function (d, b) {
 var isArray_1 = __webpack_require__(81);
 var isPromise_1 = __webpack_require__(288);
 var PromiseObservable_1 = __webpack_require__(279);
-var IteratorObservable_1 = __webpack_require__(547);
+var IteratorObservable_1 = __webpack_require__(534);
 var ArrayObservable_1 = __webpack_require__(109);
-var ArrayLikeObservable_1 = __webpack_require__(543);
+var ArrayLikeObservable_1 = __webpack_require__(530);
 var iterator_1 = __webpack_require__(113);
 var Observable_1 = __webpack_require__(11);
-var observeOn_1 = __webpack_require__(560);
+var observeOn_1 = __webpack_require__(547);
 var observable_1 = __webpack_require__(114);
 var isArrayLike = (function (x) { return x && typeof x.length === 'number'; });
 /**
@@ -104597,7 +102145,7 @@ exports.FromObservable = FromObservable;
 //# sourceMappingURL=FromObservable.js.map
 
 /***/ }),
-/* 547 */
+/* 534 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -104766,37 +102314,37 @@ function sign(value) {
 //# sourceMappingURL=IteratorObservable.js.map
 
 /***/ }),
-/* 548 */
+/* 535 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ForkJoinObservable_1 = __webpack_require__(545);
+var ForkJoinObservable_1 = __webpack_require__(532);
 exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
 //# sourceMappingURL=forkJoin.js.map
 
 /***/ }),
-/* 549 */
+/* 536 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var FromObservable_1 = __webpack_require__(546);
+var FromObservable_1 = __webpack_require__(533);
 exports.from = FromObservable_1.FromObservable.create;
 //# sourceMappingURL=from.js.map
 
 /***/ }),
-/* 550 */
+/* 537 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var merge_1 = __webpack_require__(558);
+var merge_1 = __webpack_require__(545);
 exports.merge = merge_1.mergeStatic;
 //# sourceMappingURL=merge.js.map
 
 /***/ }),
-/* 551 */
+/* 538 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -104868,7 +102416,7 @@ var CatchSubscriber = (function (_super) {
 //# sourceMappingURL=catch.js.map
 
 /***/ }),
-/* 552 */
+/* 539 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -104930,7 +102478,7 @@ exports.concatAll = concatAll;
 //# sourceMappingURL=concatAll.js.map
 
 /***/ }),
-/* 553 */
+/* 540 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -105006,7 +102554,7 @@ exports.concatMap = concatMap;
 //# sourceMappingURL=concatMap.js.map
 
 /***/ }),
-/* 554 */
+/* 541 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -105086,7 +102634,7 @@ var EverySubscriber = (function (_super) {
 //# sourceMappingURL=every.js.map
 
 /***/ }),
-/* 555 */
+/* 542 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -105185,7 +102733,7 @@ var FilterSubscriber = (function (_super) {
 //# sourceMappingURL=filter.js.map
 
 /***/ }),
-/* 556 */
+/* 543 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -105343,7 +102891,7 @@ var FirstSubscriber = (function (_super) {
 //# sourceMappingURL=first.js.map
 
 /***/ }),
-/* 557 */
+/* 544 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -105468,7 +103016,7 @@ var LastSubscriber = (function (_super) {
 //# sourceMappingURL=last.js.map
 
 /***/ }),
-/* 558 */
+/* 545 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -105618,12 +103166,12 @@ exports.mergeStatic = mergeStatic;
 //# sourceMappingURL=merge.js.map
 
 /***/ }),
-/* 559 */
+/* 546 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ConnectableObservable_1 = __webpack_require__(544);
+var ConnectableObservable_1 = __webpack_require__(531);
 /* tslint:disable:max-line-length */
 /**
  * Returns an Observable that emits the results of invoking a specified selector on items
@@ -105681,7 +103229,7 @@ exports.MulticastOperator = MulticastOperator;
 //# sourceMappingURL=multicast.js.map
 
 /***/ }),
-/* 560 */
+/* 547 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -105692,7 +103240,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(20);
-var Notification_1 = __webpack_require__(540);
+var Notification_1 = __webpack_require__(527);
 /**
  * @see {@link Notification}
  *
@@ -105766,7 +103314,7 @@ exports.ObserveOnMessage = ObserveOnMessage;
 //# sourceMappingURL=observeOn.js.map
 
 /***/ }),
-/* 561 */
+/* 548 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -105895,12 +103443,12 @@ exports.ReduceSubscriber = ReduceSubscriber;
 //# sourceMappingURL=reduce.js.map
 
 /***/ }),
-/* 562 */
+/* 549 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var multicast_1 = __webpack_require__(559);
+var multicast_1 = __webpack_require__(546);
 var Subject_1 = __webpack_require__(63);
 function shareSubjectFactory() {
     return new Subject_1.Subject();
@@ -105925,7 +103473,7 @@ exports.share = share;
 //# sourceMappingURL=share.js.map
 
 /***/ }),
-/* 563 */
+/* 550 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -105956,7 +103504,7 @@ exports.UnsubscriptionError = UnsubscriptionError;
 //# sourceMappingURL=UnsubscriptionError.js.map
 
 /***/ }),
-/* 564 */
+/* 551 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -105982,7 +103530,7 @@ exports.toSubscriber = toSubscriber;
 //# sourceMappingURL=toSubscriber.js.map
 
 /***/ }),
-/* 565 */
+/* 552 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -106007,13 +103555,13 @@ exports.tryCatch = tryCatch;
 //# sourceMappingURL=tryCatch.js.map
 
 /***/ }),
-/* 566 */
+/* 553 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(506);
+var content = __webpack_require__(493);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -106038,13 +103586,13 @@ if(false) {
 }
 
 /***/ }),
-/* 567 */
+/* 554 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(513);
+var content = __webpack_require__(500);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -106069,7 +103617,7 @@ if(false) {
 }
 
 /***/ }),
-/* 568 */
+/* 555 */
 /***/ (function(module, exports) {
 
 
@@ -106164,11 +103712,11 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 569 */
+/* 556 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(505);
+        var result = __webpack_require__(492);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -106178,11 +103726,11 @@ module.exports = function (css) {
     
 
 /***/ }),
-/* 570 */
+/* 557 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(507);
+        var result = __webpack_require__(494);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -106192,11 +103740,11 @@ module.exports = function (css) {
     
 
 /***/ }),
-/* 571 */
+/* 558 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(508);
+        var result = __webpack_require__(495);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -106206,11 +103754,11 @@ module.exports = function (css) {
     
 
 /***/ }),
-/* 572 */
+/* 559 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(509);
+        var result = __webpack_require__(496);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -106220,11 +103768,11 @@ module.exports = function (css) {
     
 
 /***/ }),
-/* 573 */
+/* 560 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(510);
+        var result = __webpack_require__(497);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -106234,11 +103782,11 @@ module.exports = function (css) {
     
 
 /***/ }),
-/* 574 */
+/* 561 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(512);
+        var result = __webpack_require__(499);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -106248,7 +103796,7 @@ module.exports = function (css) {
     
 
 /***/ }),
-/* 575 */
+/* 562 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
