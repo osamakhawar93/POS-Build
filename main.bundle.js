@@ -146,7 +146,7 @@ var ac_main =
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 333);
+/******/ 	return __webpack_require__(__webpack_require__.s = 336);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1982,7 +1982,7 @@ function loadLocale(name) {
             module && module.exports) {
         try {
             oldLocale = globalLocale._abbr;
-            __webpack_require__(503)("./" + name);
+            __webpack_require__(506)("./" + name);
             // because defineLocale currently also sets the global locale, we
             // want to undo that for lazy loaded locales
             getSetGlobalLocale(oldLocale);
@@ -4617,7 +4617,7 @@ return hooks;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(562)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(565)(module)))
 
 /***/ }),
 /* 1 */,
@@ -4823,9 +4823,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge__ = __webpack_require__(537);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge__ = __webpack_require__(540);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__ = __webpack_require__(549);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__ = __webpack_require__(552);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__);
@@ -10474,7 +10474,7 @@ var SystemJsNgModuleLoader = (function () {
         if (exportName === undefined) {
             exportName = 'default';
         }
-        return __webpack_require__(292)(module)
+        return __webpack_require__(295)(module)
             .then(function (module) { return module[exportName]; })
             .then(function (type) { return checkNotEmpty(type, module, exportName); })
             .then(function (type) { return _this._compiler.compileModuleAsync(type); });
@@ -10490,7 +10490,7 @@ var SystemJsNgModuleLoader = (function () {
             exportName = 'default';
             factoryClassSuffix = '';
         }
-        return __webpack_require__(292)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
+        return __webpack_require__(295)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
             .then(function (module) { return module[exportName + factoryClassSuffix]; })
             .then(function (factory) { return checkNotEmpty(factory, module, exportName); });
     };
@@ -19820,8 +19820,8 @@ function __asyncValues(o) {
 
 "use strict";
 
-var root_1 = __webpack_require__(51);
-var toSubscriber_1 = __webpack_require__(551);
+var root_1 = __webpack_require__(52);
+var toSubscriber_1 = __webpack_require__(554);
 var observable_1 = __webpack_require__(114);
 /**
  * A representation of any set of values over any amount of time. This the most basic building block
@@ -19965,10 +19965,10 @@ exports.Observable = Observable;
 
 var _ = __webpack_require__(32);
 var cls = __webpack_require__(78);
-var defaultSettings = __webpack_require__(508);
-var dom = __webpack_require__(49);
-var EventManager = __webpack_require__(505);
-var guid = __webpack_require__(506);
+var defaultSettings = __webpack_require__(511);
+var dom = __webpack_require__(50);
+var EventManager = __webpack_require__(508);
+var guid = __webpack_require__(509);
 
 var instances = {};
 
@@ -20081,9 +20081,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isFunction_1 = __webpack_require__(286);
+var isFunction_1 = __webpack_require__(289);
 var Subscription_1 = __webpack_require__(80);
-var Observer_1 = __webpack_require__(278);
+var Observer_1 = __webpack_require__(281);
 var rxSubscriber_1 = __webpack_require__(115);
 /**
  * Implements the {@link Observer} interface and extends the
@@ -20328,107 +20328,105 @@ var SafeSubscriber = (function (_super) {
 /***/ }),
 /* 21 */,
 /* 22 */,
-/* 23 */,
-/* 24 */,
-/* 25 */,
-/* 26 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export RouterLink */
-/* unused harmony export RouterLinkWithHref */
-/* unused harmony export RouterLinkActive */
-/* unused harmony export RouterOutlet */
-/* unused harmony export GuardsCheckEnd */
-/* unused harmony export GuardsCheckStart */
-/* unused harmony export NavigationCancel */
-/* unused harmony export NavigationEnd */
-/* unused harmony export NavigationError */
-/* unused harmony export NavigationStart */
-/* unused harmony export ResolveEnd */
-/* unused harmony export ResolveStart */
-/* unused harmony export RouteConfigLoadEnd */
-/* unused harmony export RouteConfigLoadStart */
-/* unused harmony export RoutesRecognized */
-/* unused harmony export RouteReuseStrategy */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return Router; });
-/* unused harmony export ROUTES */
-/* unused harmony export ROUTER_CONFIGURATION */
-/* unused harmony export ROUTER_INITIALIZER */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RouterModule; });
-/* unused harmony export provideRoutes */
-/* unused harmony export ChildrenOutletContexts */
-/* unused harmony export OutletContext */
-/* unused harmony export NoPreloading */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return PreloadAllModules; });
-/* unused harmony export PreloadingStrategy */
-/* unused harmony export RouterPreloader */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return ActivatedRoute; });
-/* unused harmony export ActivatedRouteSnapshot */
-/* unused harmony export RouterState */
-/* unused harmony export RouterStateSnapshot */
-/* unused harmony export PRIMARY_OUTLET */
-/* unused harmony export convertToParamMap */
-/* unused harmony export UrlHandlingStrategy */
-/* unused harmony export DefaultUrlSerializer */
-/* unused harmony export UrlSegment */
-/* unused harmony export UrlSegmentGroup */
-/* unused harmony export UrlSerializer */
-/* unused harmony export UrlTree */
-/* unused harmony export VERSION */
-/* unused harmony export ɵROUTER_PROVIDERS */
-/* unused harmony export ɵflatten */
-/* unused harmony export ɵa */
-/* unused harmony export ɵg */
-/* unused harmony export ɵh */
-/* unused harmony export ɵi */
-/* unused harmony export ɵd */
-/* unused harmony export ɵc */
-/* unused harmony export ɵj */
-/* unused harmony export ɵf */
-/* unused harmony export ɵb */
-/* unused harmony export ɵe */
-/* unused harmony export ɵk */
-/* unused harmony export ɵl */
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterLink", function() { return RouterLink; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterLinkWithHref", function() { return RouterLinkWithHref; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterLinkActive", function() { return RouterLinkActive; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterOutlet", function() { return RouterOutlet; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GuardsCheckEnd", function() { return GuardsCheckEnd; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GuardsCheckStart", function() { return GuardsCheckStart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavigationCancel", function() { return NavigationCancel; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavigationEnd", function() { return NavigationEnd; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavigationError", function() { return NavigationError; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavigationStart", function() { return NavigationStart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResolveEnd", function() { return ResolveEnd; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResolveStart", function() { return ResolveStart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouteConfigLoadEnd", function() { return RouteConfigLoadEnd; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouteConfigLoadStart", function() { return RouteConfigLoadStart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RoutesRecognized", function() { return RoutesRecognized; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouteReuseStrategy", function() { return RouteReuseStrategy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return Router; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ROUTES", function() { return ROUTES; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ROUTER_CONFIGURATION", function() { return ROUTER_CONFIGURATION; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ROUTER_INITIALIZER", function() { return ROUTER_INITIALIZER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterModule", function() { return RouterModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "provideRoutes", function() { return provideRoutes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChildrenOutletContexts", function() { return ChildrenOutletContexts; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OutletContext", function() { return OutletContext; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NoPreloading", function() { return NoPreloading; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PreloadAllModules", function() { return PreloadAllModules; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PreloadingStrategy", function() { return PreloadingStrategy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterPreloader", function() { return RouterPreloader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ActivatedRoute", function() { return ActivatedRoute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ActivatedRouteSnapshot", function() { return ActivatedRouteSnapshot; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterState", function() { return RouterState; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterStateSnapshot", function() { return RouterStateSnapshot; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PRIMARY_OUTLET", function() { return PRIMARY_OUTLET; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "convertToParamMap", function() { return convertToParamMap; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UrlHandlingStrategy", function() { return UrlHandlingStrategy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DefaultUrlSerializer", function() { return DefaultUrlSerializer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UrlSegment", function() { return UrlSegment; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UrlSegmentGroup", function() { return UrlSegmentGroup; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UrlSerializer", function() { return UrlSerializer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UrlTree", function() { return UrlTree; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VERSION", function() { return VERSION; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵROUTER_PROVIDERS", function() { return ROUTER_PROVIDERS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵflatten", function() { return flatten; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵa", function() { return ROUTER_FORROOT_GUARD; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵg", function() { return RouterInitializer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵh", function() { return getAppInitializer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵi", function() { return getBootstrapListener; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵd", function() { return provideForRootGuard; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵc", function() { return provideLocationStrategy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵj", function() { return provideRouterInitializer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵf", function() { return rootRoute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵb", function() { return routerNgProbeToken; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵe", function() { return setupRouter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵk", function() { return Tree; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵl", function() { return TreeNode; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__ = __webpack_require__(525);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__ = __webpack_require__(528);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__ = __webpack_require__(536);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__ = __webpack_require__(539);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__ = __webpack_require__(285);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__ = __webpack_require__(540);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__ = __webpack_require__(543);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__ = __webpack_require__(541);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__ = __webpack_require__(544);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__ = __webpack_require__(543);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__ = __webpack_require__(546);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__ = __webpack_require__(544);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__ = __webpack_require__(547);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__ = __webpack_require__(286);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce__ = __webpack_require__(548);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce__ = __webpack_require__(551);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__ = __webpack_require__(538);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__ = __webpack_require__(541);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__ = __webpack_require__(539);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__ = __webpack_require__(542);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__ = __webpack_require__(284);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_platform_browser__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter__ = __webpack_require__(542);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter__ = __webpack_require__(545);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter__);
 
 /**
@@ -26718,6 +26716,9 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["Version"]('4.3.3'
 
 
 /***/ }),
+/* 24 */,
+/* 25 */,
+/* 26 */,
 /* 27 */,
 /* 28 */,
 /* 29 */,
@@ -26811,7 +26812,7 @@ function toComment(sourceMap) {
 
 
 var cls = __webpack_require__(78);
-var dom = __webpack_require__(49);
+var dom = __webpack_require__(50);
 
 var toInt = exports.toInt = function (x) {
   return parseInt(x, 10) || 0;
@@ -26902,7 +26903,7 @@ exports.env = {
 
 var _ = __webpack_require__(32);
 var cls = __webpack_require__(78);
-var dom = __webpack_require__(49);
+var dom = __webpack_require__(50);
 var instances = __webpack_require__(19);
 var updateScroll = __webpack_require__(38);
 
@@ -27136,2365 +27137,6 @@ module.exports = function (element, axis, value) {
 
 /***/ }),
 /* 39 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export BrowserXhr */
-/* unused harmony export JSONPBackend */
-/* unused harmony export JSONPConnection */
-/* unused harmony export CookieXSRFStrategy */
-/* unused harmony export XHRBackend */
-/* unused harmony export XHRConnection */
-/* unused harmony export BaseRequestOptions */
-/* unused harmony export RequestOptions */
-/* unused harmony export BaseResponseOptions */
-/* unused harmony export ResponseOptions */
-/* unused harmony export ReadyState */
-/* unused harmony export RequestMethod */
-/* unused harmony export ResponseContentType */
-/* unused harmony export ResponseType */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Headers; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return Http; });
-/* unused harmony export Jsonp */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HttpModule; });
-/* unused harmony export JsonpModule */
-/* unused harmony export Connection */
-/* unused harmony export ConnectionBackend */
-/* unused harmony export XSRFStrategy */
-/* unused harmony export Request */
-/* unused harmony export Response */
-/* unused harmony export QueryEncoder */
-/* unused harmony export URLSearchParams */
-/* unused harmony export VERSION */
-/* unused harmony export ɵg */
-/* unused harmony export ɵa */
-/* unused harmony export ɵf */
-/* unused harmony export ɵb */
-/* unused harmony export ɵc */
-/* unused harmony export ɵd */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__(53);
-
-/**
- * @license Angular v4.3.3
- * (c) 2010-2017 Google, Inc. https://angular.io/
- * License: MIT
- */
-
-
-
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * A backend for http that uses the `XMLHttpRequest` browser API.
- *
- * Take care not to evaluate this in non-browser contexts.
- *
- * \@experimental
- */
-var BrowserXhr = (function () {
-    function BrowserXhr() {
-    }
-    /**
-     * @return {?}
-     */
-    BrowserXhr.prototype.build = function () { return ((new XMLHttpRequest())); };
-    return BrowserXhr;
-}());
-BrowserXhr.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"] },
-];
-/**
- * @nocollapse
- */
-BrowserXhr.ctorParameters = function () { return []; };
-var RequestMethod = {};
-RequestMethod.Get = 0;
-RequestMethod.Post = 1;
-RequestMethod.Put = 2;
-RequestMethod.Delete = 3;
-RequestMethod.Options = 4;
-RequestMethod.Head = 5;
-RequestMethod.Patch = 6;
-RequestMethod[RequestMethod.Get] = "Get";
-RequestMethod[RequestMethod.Post] = "Post";
-RequestMethod[RequestMethod.Put] = "Put";
-RequestMethod[RequestMethod.Delete] = "Delete";
-RequestMethod[RequestMethod.Options] = "Options";
-RequestMethod[RequestMethod.Head] = "Head";
-RequestMethod[RequestMethod.Patch] = "Patch";
-var ReadyState = {};
-ReadyState.Unsent = 0;
-ReadyState.Open = 1;
-ReadyState.HeadersReceived = 2;
-ReadyState.Loading = 3;
-ReadyState.Done = 4;
-ReadyState.Cancelled = 5;
-ReadyState[ReadyState.Unsent] = "Unsent";
-ReadyState[ReadyState.Open] = "Open";
-ReadyState[ReadyState.HeadersReceived] = "HeadersReceived";
-ReadyState[ReadyState.Loading] = "Loading";
-ReadyState[ReadyState.Done] = "Done";
-ReadyState[ReadyState.Cancelled] = "Cancelled";
-var ResponseType = {};
-ResponseType.Basic = 0;
-ResponseType.Cors = 1;
-ResponseType.Default = 2;
-ResponseType.Error = 3;
-ResponseType.Opaque = 4;
-ResponseType[ResponseType.Basic] = "Basic";
-ResponseType[ResponseType.Cors] = "Cors";
-ResponseType[ResponseType.Default] = "Default";
-ResponseType[ResponseType.Error] = "Error";
-ResponseType[ResponseType.Opaque] = "Opaque";
-var ContentType = {};
-ContentType.NONE = 0;
-ContentType.JSON = 1;
-ContentType.FORM = 2;
-ContentType.FORM_DATA = 3;
-ContentType.TEXT = 4;
-ContentType.BLOB = 5;
-ContentType.ARRAY_BUFFER = 6;
-ContentType[ContentType.NONE] = "NONE";
-ContentType[ContentType.JSON] = "JSON";
-ContentType[ContentType.FORM] = "FORM";
-ContentType[ContentType.FORM_DATA] = "FORM_DATA";
-ContentType[ContentType.TEXT] = "TEXT";
-ContentType[ContentType.BLOB] = "BLOB";
-ContentType[ContentType.ARRAY_BUFFER] = "ARRAY_BUFFER";
-var ResponseContentType = {};
-ResponseContentType.Text = 0;
-ResponseContentType.Json = 1;
-ResponseContentType.ArrayBuffer = 2;
-ResponseContentType.Blob = 3;
-ResponseContentType[ResponseContentType.Text] = "Text";
-ResponseContentType[ResponseContentType.Json] = "Json";
-ResponseContentType[ResponseContentType.ArrayBuffer] = "ArrayBuffer";
-ResponseContentType[ResponseContentType.Blob] = "Blob";
-/**
- * Polyfill for [Headers](https://developer.mozilla.org/en-US/docs/Web/API/Headers/Headers), as
- * specified in the [Fetch Spec](https://fetch.spec.whatwg.org/#headers-class).
- *
- * The only known difference between this `Headers` implementation and the spec is the
- * lack of an `entries` method.
- *
- * ### Example
- *
- * ```
- * import {Headers} from '\@angular/http';
- *
- * var firstHeaders = new Headers();
- * firstHeaders.append('Content-Type', 'image/jpeg');
- * console.log(firstHeaders.get('Content-Type')) //'image/jpeg'
- *
- * // Create headers from Plain Old JavaScript Object
- * var secondHeaders = new Headers({
- *   'X-My-Custom-Header': 'Angular'
- * });
- * console.log(secondHeaders.get('X-My-Custom-Header')); //'Angular'
- *
- * var thirdHeaders = new Headers(secondHeaders);
- * console.log(thirdHeaders.get('X-My-Custom-Header')); //'Angular'
- * ```
- *
- * \@experimental
- */
-var Headers = (function () {
-    /**
-     * @param {?=} headers
-     */
-    function Headers(headers) {
-        var _this = this;
-        /**
-         * \@internal header names are lower case
-         */
-        this._headers = new Map();
-        /**
-         * \@internal map lower case names to actual names
-         */
-        this._normalizedNames = new Map();
-        if (!headers) {
-            return;
-        }
-        if (headers instanceof Headers) {
-            headers.forEach(function (values, name) {
-                values.forEach(function (value) { return _this.append(name, value); });
-            });
-            return;
-        }
-        Object.keys(headers).forEach(function (name) {
-            var values = Array.isArray(headers[name]) ? headers[name] : [headers[name]];
-            _this.delete(name);
-            values.forEach(function (value) { return _this.append(name, value); });
-        });
-    }
-    /**
-     * Returns a new Headers instance from the given DOMString of Response Headers
-     * @param {?} headersString
-     * @return {?}
-     */
-    Headers.fromResponseHeaderString = function (headersString) {
-        var /** @type {?} */ headers = new Headers();
-        headersString.split('\n').forEach(function (line) {
-            var /** @type {?} */ index = line.indexOf(':');
-            if (index > 0) {
-                var /** @type {?} */ name = line.slice(0, index);
-                var /** @type {?} */ value = line.slice(index + 1).trim();
-                headers.set(name, value);
-            }
-        });
-        return headers;
-    };
-    /**
-     * Appends a header to existing list of header values for a given header name.
-     * @param {?} name
-     * @param {?} value
-     * @return {?}
-     */
-    Headers.prototype.append = function (name, value) {
-        var /** @type {?} */ values = this.getAll(name);
-        if (values === null) {
-            this.set(name, value);
-        }
-        else {
-            values.push(value);
-        }
-    };
-    /**
-     * Deletes all header values for the given name.
-     * @param {?} name
-     * @return {?}
-     */
-    Headers.prototype.delete = function (name) {
-        var /** @type {?} */ lcName = name.toLowerCase();
-        this._normalizedNames.delete(lcName);
-        this._headers.delete(lcName);
-    };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    Headers.prototype.forEach = function (fn) {
-        var _this = this;
-        this._headers.forEach(function (values, lcName) { return fn(values, _this._normalizedNames.get(lcName), _this._headers); });
-    };
-    /**
-     * Returns first header that matches given name.
-     * @param {?} name
-     * @return {?}
-     */
-    Headers.prototype.get = function (name) {
-        var /** @type {?} */ values = this.getAll(name);
-        if (values === null) {
-            return null;
-        }
-        return values.length > 0 ? values[0] : null;
-    };
-    /**
-     * Checks for existence of header by given name.
-     * @param {?} name
-     * @return {?}
-     */
-    Headers.prototype.has = function (name) { return this._headers.has(name.toLowerCase()); };
-    /**
-     * Returns the names of the headers
-     * @return {?}
-     */
-    Headers.prototype.keys = function () { return Array.from(this._normalizedNames.values()); };
-    /**
-     * Sets or overrides header value for given name.
-     * @param {?} name
-     * @param {?} value
-     * @return {?}
-     */
-    Headers.prototype.set = function (name, value) {
-        if (Array.isArray(value)) {
-            if (value.length) {
-                this._headers.set(name.toLowerCase(), [value.join(',')]);
-            }
-        }
-        else {
-            this._headers.set(name.toLowerCase(), [value]);
-        }
-        this.mayBeSetNormalizedName(name);
-    };
-    /**
-     * Returns values of all headers.
-     * @return {?}
-     */
-    Headers.prototype.values = function () { return Array.from(this._headers.values()); };
-    /**
-     * @return {?}
-     */
-    Headers.prototype.toJSON = function () {
-        var _this = this;
-        var /** @type {?} */ serialized = {};
-        this._headers.forEach(function (values, name) {
-            var /** @type {?} */ split = [];
-            values.forEach(function (v) { return split.push.apply(split, v.split(',')); });
-            serialized[((_this._normalizedNames.get(name)))] = split;
-        });
-        return serialized;
-    };
-    /**
-     * Returns list of header values for a given name.
-     * @param {?} name
-     * @return {?}
-     */
-    Headers.prototype.getAll = function (name) {
-        return this.has(name) ? this._headers.get(name.toLowerCase()) || null : null;
-    };
-    /**
-     * This method is not implemented.
-     * @return {?}
-     */
-    Headers.prototype.entries = function () { throw new Error('"entries" method is not implemented on Headers class'); };
-    /**
-     * @param {?} name
-     * @return {?}
-     */
-    Headers.prototype.mayBeSetNormalizedName = function (name) {
-        var /** @type {?} */ lcName = name.toLowerCase();
-        if (!this._normalizedNames.has(lcName)) {
-            this._normalizedNames.set(lcName, name);
-        }
-    };
-    return Headers;
-}());
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * Creates a response options object to be optionally provided when instantiating a
- * {\@link Response}.
- *
- * This class is based on the `ResponseInit` description in the [Fetch
- * Spec](https://fetch.spec.whatwg.org/#responseinit).
- *
- * All values are null by default. Typical defaults can be found in the
- * {\@link BaseResponseOptions} class, which sub-classes `ResponseOptions`.
- *
- * This class may be used in tests to build {\@link Response Responses} for
- * mock responses (see {\@link MockBackend}).
- *
- * ### Example ([live demo](http://plnkr.co/edit/P9Jkk8e8cz6NVzbcxEsD?p=preview))
- *
- * ```typescript
- * import {ResponseOptions, Response} from '\@angular/http';
- *
- * var options = new ResponseOptions({
- *   body: '{"name":"Jeff"}'
- * });
- * var res = new Response(options);
- *
- * console.log('res.json():', res.json()); // Object {name: "Jeff"}
- * ```
- *
- * \@experimental
- */
-var ResponseOptions = (function () {
-    /**
-     * @param {?=} opts
-     */
-    function ResponseOptions(opts) {
-        if (opts === void 0) { opts = {}; }
-        var body = opts.body, status = opts.status, headers = opts.headers, statusText = opts.statusText, type = opts.type, url = opts.url;
-        this.body = body != null ? body : null;
-        this.status = status != null ? status : null;
-        this.headers = headers != null ? headers : null;
-        this.statusText = statusText != null ? statusText : null;
-        this.type = type != null ? type : null;
-        this.url = url != null ? url : null;
-    }
-    /**
-     * Creates a copy of the `ResponseOptions` instance, using the optional input as values to
-     * override
-     * existing values. This method will not change the values of the instance on which it is being
-     * called.
-     *
-     * This may be useful when sharing a base `ResponseOptions` object inside tests,
-     * where certain properties may change from test to test.
-     *
-     * ### Example ([live demo](http://plnkr.co/edit/1lXquqFfgduTFBWjNoRE?p=preview))
-     *
-     * ```typescript
-     * import {ResponseOptions, Response} from '\@angular/http';
-     *
-     * var options = new ResponseOptions({
-     *   body: {name: 'Jeff'}
-     * });
-     * var res = new Response(options.merge({
-     *   url: 'https://google.com'
-     * }));
-     * console.log('options.url:', options.url); // null
-     * console.log('res.json():', res.json()); // Object {name: "Jeff"}
-     * console.log('res.url:', res.url); // https://google.com
-     * ```
-     * @param {?=} options
-     * @return {?}
-     */
-    ResponseOptions.prototype.merge = function (options) {
-        return new ResponseOptions({
-            body: options && options.body != null ? options.body : this.body,
-            status: options && options.status != null ? options.status : this.status,
-            headers: options && options.headers != null ? options.headers : this.headers,
-            statusText: options && options.statusText != null ? options.statusText : this.statusText,
-            type: options && options.type != null ? options.type : this.type,
-            url: options && options.url != null ? options.url : this.url,
-        });
-    };
-    return ResponseOptions;
-}());
-/**
- * Subclass of {\@link ResponseOptions}, with default values.
- *
- * Default values:
- *  * status: 200
- *  * headers: empty {\@link Headers} object
- *
- * This class could be extended and bound to the {\@link ResponseOptions} class
- * when configuring an {\@link Injector}, in order to override the default options
- * used by {\@link Http} to create {\@link Response Responses}.
- *
- * ### Example ([live demo](http://plnkr.co/edit/qv8DLT?p=preview))
- *
- * ```typescript
- * import {provide} from '\@angular/core';
- * import {bootstrap} from '\@angular/platform-browser/browser';
- * import {HTTP_PROVIDERS, Headers, Http, BaseResponseOptions, ResponseOptions} from
- * '\@angular/http';
- * import {App} from './myapp';
- *
- * class MyOptions extends BaseResponseOptions {
- *   headers:Headers = new Headers({network: 'github'});
- * }
- *
- * bootstrap(App, [HTTP_PROVIDERS, {provide: ResponseOptions, useClass: MyOptions}]);
- * ```
- *
- * The options could also be extended when manually creating a {\@link Response}
- * object.
- *
- * ### Example ([live demo](http://plnkr.co/edit/VngosOWiaExEtbstDoix?p=preview))
- *
- * ```
- * import {BaseResponseOptions, Response} from '\@angular/http';
- *
- * var options = new BaseResponseOptions();
- * var res = new Response(options.merge({
- *   body: 'Angular',
- *   headers: new Headers({framework: 'angular'})
- * }));
- * console.log('res.headers.get("framework"):', res.headers.get('framework')); // angular
- * console.log('res.text():', res.text()); // Angular;
- * ```
- *
- * \@experimental
- */
-var BaseResponseOptions = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](BaseResponseOptions, _super);
-    function BaseResponseOptions() {
-        return _super.call(this, { status: 200, statusText: 'Ok', type: ResponseType.Default, headers: new Headers() }) || this;
-    }
-    return BaseResponseOptions;
-}(ResponseOptions));
-BaseResponseOptions.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"] },
-];
-/**
- * @nocollapse
- */
-BaseResponseOptions.ctorParameters = function () { return []; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * Abstract class from which real backends are derived.
- *
- * The primary purpose of a `ConnectionBackend` is to create new connections to fulfill a given
- * {\@link Request}.
- *
- * \@experimental
- * @abstract
- */
-var ConnectionBackend = (function () {
-    function ConnectionBackend() {
-    }
-    /**
-     * @abstract
-     * @param {?} request
-     * @return {?}
-     */
-    ConnectionBackend.prototype.createConnection = function (request) { };
-    return ConnectionBackend;
-}());
-/**
- * Abstract class from which real connections are derived.
- *
- * \@experimental
- * @abstract
- */
-var Connection = (function () {
-    function Connection() {
-    }
-    return Connection;
-}());
-/**
- * An XSRFStrategy configures XSRF protection (e.g. via headers) on an HTTP request.
- *
- * \@experimental
- * @abstract
- */
-var XSRFStrategy = (function () {
-    function XSRFStrategy() {
-    }
-    /**
-     * @abstract
-     * @param {?} req
-     * @return {?}
-     */
-    XSRFStrategy.prototype.configureRequest = function (req) { };
-    return XSRFStrategy;
-}());
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @param {?} method
- * @return {?}
- */
-function normalizeMethodName(method) {
-    if (typeof method !== 'string')
-        return method;
-    switch (method.toUpperCase()) {
-        case 'GET':
-            return RequestMethod.Get;
-        case 'POST':
-            return RequestMethod.Post;
-        case 'PUT':
-            return RequestMethod.Put;
-        case 'DELETE':
-            return RequestMethod.Delete;
-        case 'OPTIONS':
-            return RequestMethod.Options;
-        case 'HEAD':
-            return RequestMethod.Head;
-        case 'PATCH':
-            return RequestMethod.Patch;
-    }
-    throw new Error("Invalid request method. The method \"" + method + "\" is not supported.");
-}
-var isSuccess = function (status) { return (status >= 200 && status < 300); };
-/**
- * @param {?} xhr
- * @return {?}
- */
-function getResponseURL(xhr) {
-    if ('responseURL' in xhr) {
-        return xhr.responseURL;
-    }
-    if (/^X-Request-URL:/m.test(xhr.getAllResponseHeaders())) {
-        return xhr.getResponseHeader('X-Request-URL');
-    }
-    return null;
-}
-/**
- * @param {?} input
- * @return {?}
- */
-/**
- * @param {?} input
- * @return {?}
- */
-function stringToArrayBuffer(input) {
-    var /** @type {?} */ view = new Uint16Array(input.length);
-    for (var /** @type {?} */ i = 0, /** @type {?} */ strLen = input.length; i < strLen; i++) {
-        view[i] = input.charCodeAt(i);
-    }
-    return view.buffer;
-}
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- * @param {?=} rawParams
- * @return {?}
- */
-function paramParser(rawParams) {
-    if (rawParams === void 0) { rawParams = ''; }
-    var /** @type {?} */ map = new Map();
-    if (rawParams.length > 0) {
-        var /** @type {?} */ params = rawParams.split('&');
-        params.forEach(function (param) {
-            var /** @type {?} */ eqIdx = param.indexOf('=');
-            var _a = eqIdx == -1 ? [param, ''] : [param.slice(0, eqIdx), param.slice(eqIdx + 1)], key = _a[0], val = _a[1];
-            var /** @type {?} */ list = map.get(key) || [];
-            list.push(val);
-            map.set(key, list);
-        });
-    }
-    return map;
-}
-/**
- * \@experimental
- *
- */
-var QueryEncoder = (function () {
-    function QueryEncoder() {
-    }
-    /**
-     * @param {?} k
-     * @return {?}
-     */
-    QueryEncoder.prototype.encodeKey = function (k) { return standardEncoding(k); };
-    /**
-     * @param {?} v
-     * @return {?}
-     */
-    QueryEncoder.prototype.encodeValue = function (v) { return standardEncoding(v); };
-    return QueryEncoder;
-}());
-/**
- * @param {?} v
- * @return {?}
- */
-function standardEncoding(v) {
-    return encodeURIComponent(v)
-        .replace(/%40/gi, '@')
-        .replace(/%3A/gi, ':')
-        .replace(/%24/gi, '$')
-        .replace(/%2C/gi, ',')
-        .replace(/%3B/gi, ';')
-        .replace(/%2B/gi, '+')
-        .replace(/%3D/gi, '=')
-        .replace(/%3F/gi, '?')
-        .replace(/%2F/gi, '/');
-}
-/**
- * Map-like representation of url search parameters, based on
- * [URLSearchParams](https://url.spec.whatwg.org/#urlsearchparams) in the url living standard,
- * with several extensions for merging URLSearchParams objects:
- *   - setAll()
- *   - appendAll()
- *   - replaceAll()
- *
- * This class accepts an optional second parameter of ${\@link QueryEncoder},
- * which is used to serialize parameters before making a request. By default,
- * `QueryEncoder` encodes keys and values of parameters using `encodeURIComponent`,
- * and then un-encodes certain characters that are allowed to be part of the query
- * according to IETF RFC 3986: https://tools.ietf.org/html/rfc3986.
- *
- * These are the characters that are not encoded: `! $ \' ( ) * + , ; A 9 - . _ ~ ? /`
- *
- * If the set of allowed query characters is not acceptable for a particular backend,
- * `QueryEncoder` can be subclassed and provided as the 2nd argument to URLSearchParams.
- *
- * ```
- * import {URLSearchParams, QueryEncoder} from '\@angular/http';
- * class MyQueryEncoder extends QueryEncoder {
- *   encodeKey(k: string): string {
- *     return myEncodingFunction(k);
- *   }
- *
- *   encodeValue(v: string): string {
- *     return myEncodingFunction(v);
- *   }
- * }
- *
- * let params = new URLSearchParams('', new MyQueryEncoder());
- * ```
- * \@experimental
- */
-var URLSearchParams = (function () {
-    /**
-     * @param {?=} rawParams
-     * @param {?=} queryEncoder
-     */
-    function URLSearchParams(rawParams, queryEncoder) {
-        if (rawParams === void 0) { rawParams = ''; }
-        if (queryEncoder === void 0) { queryEncoder = new QueryEncoder(); }
-        this.rawParams = rawParams;
-        this.queryEncoder = queryEncoder;
-        this.paramsMap = paramParser(rawParams);
-    }
-    /**
-     * @return {?}
-     */
-    URLSearchParams.prototype.clone = function () {
-        var /** @type {?} */ clone = new URLSearchParams('', this.queryEncoder);
-        clone.appendAll(this);
-        return clone;
-    };
-    /**
-     * @param {?} param
-     * @return {?}
-     */
-    URLSearchParams.prototype.has = function (param) { return this.paramsMap.has(param); };
-    /**
-     * @param {?} param
-     * @return {?}
-     */
-    URLSearchParams.prototype.get = function (param) {
-        var /** @type {?} */ storedParam = this.paramsMap.get(param);
-        return Array.isArray(storedParam) ? storedParam[0] : null;
-    };
-    /**
-     * @param {?} param
-     * @return {?}
-     */
-    URLSearchParams.prototype.getAll = function (param) { return this.paramsMap.get(param) || []; };
-    /**
-     * @param {?} param
-     * @param {?} val
-     * @return {?}
-     */
-    URLSearchParams.prototype.set = function (param, val) {
-        if (val === void 0 || val === null) {
-            this.delete(param);
-            return;
-        }
-        var /** @type {?} */ list = this.paramsMap.get(param) || [];
-        list.length = 0;
-        list.push(val);
-        this.paramsMap.set(param, list);
-    };
-    /**
-     * @param {?} searchParams
-     * @return {?}
-     */
-    URLSearchParams.prototype.setAll = function (searchParams) {
-        var _this = this;
-        searchParams.paramsMap.forEach(function (value, param) {
-            var /** @type {?} */ list = _this.paramsMap.get(param) || [];
-            list.length = 0;
-            list.push(value[0]);
-            _this.paramsMap.set(param, list);
-        });
-    };
-    /**
-     * @param {?} param
-     * @param {?} val
-     * @return {?}
-     */
-    URLSearchParams.prototype.append = function (param, val) {
-        if (val === void 0 || val === null)
-            return;
-        var /** @type {?} */ list = this.paramsMap.get(param) || [];
-        list.push(val);
-        this.paramsMap.set(param, list);
-    };
-    /**
-     * @param {?} searchParams
-     * @return {?}
-     */
-    URLSearchParams.prototype.appendAll = function (searchParams) {
-        var _this = this;
-        searchParams.paramsMap.forEach(function (value, param) {
-            var /** @type {?} */ list = _this.paramsMap.get(param) || [];
-            for (var /** @type {?} */ i = 0; i < value.length; ++i) {
-                list.push(value[i]);
-            }
-            _this.paramsMap.set(param, list);
-        });
-    };
-    /**
-     * @param {?} searchParams
-     * @return {?}
-     */
-    URLSearchParams.prototype.replaceAll = function (searchParams) {
-        var _this = this;
-        searchParams.paramsMap.forEach(function (value, param) {
-            var /** @type {?} */ list = _this.paramsMap.get(param) || [];
-            list.length = 0;
-            for (var /** @type {?} */ i = 0; i < value.length; ++i) {
-                list.push(value[i]);
-            }
-            _this.paramsMap.set(param, list);
-        });
-    };
-    /**
-     * @return {?}
-     */
-    URLSearchParams.prototype.toString = function () {
-        var _this = this;
-        var /** @type {?} */ paramsList = [];
-        this.paramsMap.forEach(function (values, k) {
-            values.forEach(function (v) { return paramsList.push(_this.queryEncoder.encodeKey(k) + '=' + _this.queryEncoder.encodeValue(v)); });
-        });
-        return paramsList.join('&');
-    };
-    /**
-     * @param {?} param
-     * @return {?}
-     */
-    URLSearchParams.prototype.delete = function (param) { this.paramsMap.delete(param); };
-    return URLSearchParams;
-}());
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * HTTP request body used by both {\@link Request} and {\@link Response}
- * https://fetch.spec.whatwg.org/#body
- * @abstract
- */
-var Body = (function () {
-    function Body() {
-    }
-    /**
-     * Attempts to return body as parsed `JSON` object, or raises an exception.
-     * @return {?}
-     */
-    Body.prototype.json = function () {
-        if (typeof this._body === 'string') {
-            return JSON.parse(/** @type {?} */ (this._body));
-        }
-        if (this._body instanceof ArrayBuffer) {
-            return JSON.parse(this.text());
-        }
-        return this._body;
-    };
-    /**
-     * Returns the body as a string, presuming `toString()` can be called on the response body.
-     *
-     * When decoding an `ArrayBuffer`, the optional `encodingHint` parameter determines how the
-     * bytes in the buffer will be interpreted. Valid values are:
-     *
-     * - `legacy` - incorrectly interpret the bytes as UTF-16 (technically, UCS-2). Only characters
-     *   in the Basic Multilingual Plane are supported, surrogate pairs are not handled correctly.
-     *   In addition, the endianness of the 16-bit octet pairs in the `ArrayBuffer` is not taken
-     *   into consideration. This is the default behavior to avoid breaking apps, but should be
-     *   considered deprecated.
-     *
-     * - `iso-8859` - interpret the bytes as ISO-8859 (which can be used for ASCII encoded text).
-     * @param {?=} encodingHint
-     * @return {?}
-     */
-    Body.prototype.text = function (encodingHint) {
-        if (encodingHint === void 0) { encodingHint = 'legacy'; }
-        if (this._body instanceof URLSearchParams) {
-            return this._body.toString();
-        }
-        if (this._body instanceof ArrayBuffer) {
-            switch (encodingHint) {
-                case 'legacy':
-                    return String.fromCharCode.apply(null, new Uint16Array(/** @type {?} */ (this._body)));
-                case 'iso-8859':
-                    return String.fromCharCode.apply(null, new Uint8Array(/** @type {?} */ (this._body)));
-                default:
-                    throw new Error("Invalid value for encodingHint: " + encodingHint);
-            }
-        }
-        if (this._body == null) {
-            return '';
-        }
-        if (typeof this._body === 'object') {
-            return JSON.stringify(this._body, null, 2);
-        }
-        return this._body.toString();
-    };
-    /**
-     * Return the body as an ArrayBuffer
-     * @return {?}
-     */
-    Body.prototype.arrayBuffer = function () {
-        if (this._body instanceof ArrayBuffer) {
-            return (this._body);
-        }
-        return stringToArrayBuffer(this.text());
-    };
-    /**
-     * Returns the request's body as a Blob, assuming that body exists.
-     * @return {?}
-     */
-    Body.prototype.blob = function () {
-        if (this._body instanceof Blob) {
-            return (this._body);
-        }
-        if (this._body instanceof ArrayBuffer) {
-            return new Blob([this._body]);
-        }
-        throw new Error('The request body isn\'t either a blob or an array buffer');
-    };
-    return Body;
-}());
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * Creates `Response` instances from provided values.
- *
- * Though this object isn't
- * usually instantiated by end-users, it is the primary object interacted with when it comes time to
- * add data to a view.
- *
- * ### Example
- *
- * ```
- * http.request('my-friends.txt').subscribe(response => this.friends = response.text());
- * ```
- *
- * The Response's interface is inspired by the Response constructor defined in the [Fetch
- * Spec](https://fetch.spec.whatwg.org/#response-class), but is considered a static value whose body
- * can be accessed many times. There are other differences in the implementation, but this is the
- * most significant.
- *
- * \@experimental
- */
-var Response = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](Response, _super);
-    /**
-     * @param {?} responseOptions
-     */
-    function Response(responseOptions) {
-        var _this = _super.call(this) || this;
-        _this._body = responseOptions.body;
-        _this.status = responseOptions.status;
-        _this.ok = (_this.status >= 200 && _this.status <= 299);
-        _this.statusText = responseOptions.statusText;
-        _this.headers = responseOptions.headers;
-        _this.type = responseOptions.type;
-        _this.url = responseOptions.url;
-        return _this;
-    }
-    /**
-     * @return {?}
-     */
-    Response.prototype.toString = function () {
-        return "Response with status: " + this.status + " " + this.statusText + " for URL: " + this.url;
-    };
-    return Response;
-}(Body));
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var _nextRequestId = 0;
-var JSONP_HOME = '__ng_jsonp__';
-var _jsonpConnections = null;
-/**
- * @return {?}
- */
-function _getJsonpConnections() {
-    var /** @type {?} */ w = typeof window == 'object' ? window : {};
-    if (_jsonpConnections === null) {
-        _jsonpConnections = w[JSONP_HOME] = {};
-    }
-    return _jsonpConnections;
-}
-var BrowserJsonp = (function () {
-    function BrowserJsonp() {
-    }
-    /**
-     * @param {?} url
-     * @return {?}
-     */
-    BrowserJsonp.prototype.build = function (url) {
-        var /** @type {?} */ node = document.createElement('script');
-        node.src = url;
-        return node;
-    };
-    /**
-     * @return {?}
-     */
-    BrowserJsonp.prototype.nextRequestID = function () { return "__req" + _nextRequestId++; };
-    /**
-     * @param {?} id
-     * @return {?}
-     */
-    BrowserJsonp.prototype.requestCallback = function (id) { return JSONP_HOME + "." + id + ".finished"; };
-    /**
-     * @param {?} id
-     * @param {?} connection
-     * @return {?}
-     */
-    BrowserJsonp.prototype.exposeConnection = function (id, connection) {
-        var /** @type {?} */ connections = _getJsonpConnections();
-        connections[id] = connection;
-    };
-    /**
-     * @param {?} id
-     * @return {?}
-     */
-    BrowserJsonp.prototype.removeConnection = function (id) {
-        var /** @type {?} */ connections = _getJsonpConnections();
-        connections[id] = null;
-    };
-    /**
-     * @param {?} node
-     * @return {?}
-     */
-    BrowserJsonp.prototype.send = function (node) { document.body.appendChild(/** @type {?} */ ((node))); };
-    /**
-     * @param {?} node
-     * @return {?}
-     */
-    BrowserJsonp.prototype.cleanup = function (node) {
-        if (node.parentNode) {
-            node.parentNode.removeChild(/** @type {?} */ ((node)));
-        }
-    };
-    return BrowserJsonp;
-}());
-BrowserJsonp.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"] },
-];
-/**
- * @nocollapse
- */
-BrowserJsonp.ctorParameters = function () { return []; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var JSONP_ERR_NO_CALLBACK = 'JSONP injected script did not invoke callback.';
-var JSONP_ERR_WRONG_METHOD = 'JSONP requests must use GET request method.';
-/**
- * Abstract base class for an in-flight JSONP request.
- *
- * \@experimental
- * @abstract
- */
-var JSONPConnection = (function () {
-    function JSONPConnection() {
-    }
-    /**
-     * Callback called when the JSONP request completes, to notify the application
-     * of the new data.
-     * @abstract
-     * @param {?=} data
-     * @return {?}
-     */
-    JSONPConnection.prototype.finished = function (data) { };
-    return JSONPConnection;
-}());
-var JSONPConnection_ = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](JSONPConnection_, _super);
-    /**
-     * @param {?} req
-     * @param {?} _dom
-     * @param {?=} baseResponseOptions
-     */
-    function JSONPConnection_(req, _dom, baseResponseOptions) {
-        var _this = _super.call(this) || this;
-        _this._dom = _dom;
-        _this.baseResponseOptions = baseResponseOptions;
-        _this._finished = false;
-        if (req.method !== RequestMethod.Get) {
-            throw new TypeError(JSONP_ERR_WRONG_METHOD);
-        }
-        _this.request = req;
-        _this.response = new __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"](function (responseObserver) {
-            _this.readyState = ReadyState.Loading;
-            var id = _this._id = _dom.nextRequestID();
-            _dom.exposeConnection(id, _this);
-            // Workaround Dart
-            // url = url.replace(/=JSONP_CALLBACK(&|$)/, `generated method`);
-            var callback = _dom.requestCallback(_this._id);
-            var url = req.url;
-            if (url.indexOf('=JSONP_CALLBACK&') > -1) {
-                url = url.replace('=JSONP_CALLBACK&', "=" + callback + "&");
-            }
-            else if (url.lastIndexOf('=JSONP_CALLBACK') === url.length - '=JSONP_CALLBACK'.length) {
-                url = url.substring(0, url.length - '=JSONP_CALLBACK'.length) + ("=" + callback);
-            }
-            var script = _this._script = _dom.build(url);
-            var onLoad = function (event) {
-                if (_this.readyState === ReadyState.Cancelled)
-                    return;
-                _this.readyState = ReadyState.Done;
-                _dom.cleanup(script);
-                if (!_this._finished) {
-                    var responseOptions_1 = new ResponseOptions({ body: JSONP_ERR_NO_CALLBACK, type: ResponseType.Error, url: url });
-                    if (baseResponseOptions) {
-                        responseOptions_1 = baseResponseOptions.merge(responseOptions_1);
-                    }
-                    responseObserver.error(new Response(responseOptions_1));
-                    return;
-                }
-                var responseOptions = new ResponseOptions({ body: _this._responseData, url: url });
-                if (_this.baseResponseOptions) {
-                    responseOptions = _this.baseResponseOptions.merge(responseOptions);
-                }
-                responseObserver.next(new Response(responseOptions));
-                responseObserver.complete();
-            };
-            var onError = function (error) {
-                if (_this.readyState === ReadyState.Cancelled)
-                    return;
-                _this.readyState = ReadyState.Done;
-                _dom.cleanup(script);
-                var responseOptions = new ResponseOptions({ body: error.message, type: ResponseType.Error });
-                if (baseResponseOptions) {
-                    responseOptions = baseResponseOptions.merge(responseOptions);
-                }
-                responseObserver.error(new Response(responseOptions));
-            };
-            script.addEventListener('load', onLoad);
-            script.addEventListener('error', onError);
-            _dom.send(script);
-            return function () {
-                _this.readyState = ReadyState.Cancelled;
-                script.removeEventListener('load', onLoad);
-                script.removeEventListener('error', onError);
-                _this._dom.cleanup(script);
-            };
-        });
-        return _this;
-    }
-    /**
-     * @param {?=} data
-     * @return {?}
-     */
-    JSONPConnection_.prototype.finished = function (data) {
-        // Don't leak connections
-        this._finished = true;
-        this._dom.removeConnection(this._id);
-        if (this.readyState === ReadyState.Cancelled)
-            return;
-        this._responseData = data;
-    };
-    return JSONPConnection_;
-}(JSONPConnection));
-/**
- * A {\@link ConnectionBackend} that uses the JSONP strategy of making requests.
- *
- * \@experimental
- * @abstract
- */
-var JSONPBackend = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](JSONPBackend, _super);
-    function JSONPBackend() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    return JSONPBackend;
-}(ConnectionBackend));
-var JSONPBackend_ = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](JSONPBackend_, _super);
-    /**
-     * @param {?} _browserJSONP
-     * @param {?} _baseResponseOptions
-     */
-    function JSONPBackend_(_browserJSONP, _baseResponseOptions) {
-        var _this = _super.call(this) || this;
-        _this._browserJSONP = _browserJSONP;
-        _this._baseResponseOptions = _baseResponseOptions;
-        return _this;
-    }
-    /**
-     * @param {?} request
-     * @return {?}
-     */
-    JSONPBackend_.prototype.createConnection = function (request) {
-        return new JSONPConnection_(request, this._browserJSONP, this._baseResponseOptions);
-    };
-    return JSONPBackend_;
-}(JSONPBackend));
-JSONPBackend_.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"] },
-];
-/**
- * @nocollapse
- */
-JSONPBackend_.ctorParameters = function () { return [
-    { type: BrowserJsonp, },
-    { type: ResponseOptions, },
-]; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var XSSI_PREFIX = /^\)\]\}',?\n/;
-/**
- * Creates connections using `XMLHttpRequest`. Given a fully-qualified
- * request, an `XHRConnection` will immediately create an `XMLHttpRequest` object and send the
- * request.
- *
- * This class would typically not be created or interacted with directly inside applications, though
- * the {\@link MockConnection} may be interacted with in tests.
- *
- * \@experimental
- */
-var XHRConnection = (function () {
-    /**
-     * @param {?} req
-     * @param {?} browserXHR
-     * @param {?=} baseResponseOptions
-     */
-    function XHRConnection(req, browserXHR, baseResponseOptions) {
-        var _this = this;
-        this.request = req;
-        this.response = new __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"](function (responseObserver) {
-            var _xhr = browserXHR.build();
-            _xhr.open(RequestMethod[req.method].toUpperCase(), req.url);
-            if (req.withCredentials != null) {
-                _xhr.withCredentials = req.withCredentials;
-            }
-            // load event handler
-            var onLoad = function () {
-                // normalize IE9 bug (http://bugs.jquery.com/ticket/1450)
-                var status = _xhr.status === 1223 ? 204 : _xhr.status;
-                var body = null;
-                // HTTP 204 means no content
-                if (status !== 204) {
-                    // responseText is the old-school way of retrieving response (supported by IE8 & 9)
-                    // response/responseType properties were introduced in ResourceLoader Level2 spec
-                    // (supported by IE10)
-                    body = (typeof _xhr.response === 'undefined') ? _xhr.responseText : _xhr.response;
-                    // Implicitly strip a potential XSSI prefix.
-                    if (typeof body === 'string') {
-                        body = body.replace(XSSI_PREFIX, '');
-                    }
-                }
-                // fix status code when it is 0 (0 status is undocumented).
-                // Occurs when accessing file resources or on Android 4.1 stock browser
-                // while retrieving files from application cache.
-                if (status === 0) {
-                    status = body ? 200 : 0;
-                }
-                var headers = Headers.fromResponseHeaderString(_xhr.getAllResponseHeaders());
-                // IE 9 does not provide the way to get URL of response
-                var url = getResponseURL(_xhr) || req.url;
-                var statusText = _xhr.statusText || 'OK';
-                var responseOptions = new ResponseOptions({ body: body, status: status, headers: headers, statusText: statusText, url: url });
-                if (baseResponseOptions != null) {
-                    responseOptions = baseResponseOptions.merge(responseOptions);
-                }
-                var response = new Response(responseOptions);
-                response.ok = isSuccess(status);
-                if (response.ok) {
-                    responseObserver.next(response);
-                    // TODO(gdi2290): defer complete if array buffer until done
-                    responseObserver.complete();
-                    return;
-                }
-                responseObserver.error(response);
-            };
-            // error event handler
-            var onError = function (err) {
-                var responseOptions = new ResponseOptions({
-                    body: err,
-                    type: ResponseType.Error,
-                    status: _xhr.status,
-                    statusText: _xhr.statusText,
-                });
-                if (baseResponseOptions != null) {
-                    responseOptions = baseResponseOptions.merge(responseOptions);
-                }
-                responseObserver.error(new Response(responseOptions));
-            };
-            _this.setDetectedContentType(req, _xhr);
-            if (req.headers == null) {
-                req.headers = new Headers();
-            }
-            if (!req.headers.has('Accept')) {
-                req.headers.append('Accept', 'application/json, text/plain, */*');
-            }
-            req.headers.forEach(function (values, name) { return _xhr.setRequestHeader(name, values.join(',')); });
-            // Select the correct buffer type to store the response
-            if (req.responseType != null && _xhr.responseType != null) {
-                switch (req.responseType) {
-                    case ResponseContentType.ArrayBuffer:
-                        _xhr.responseType = 'arraybuffer';
-                        break;
-                    case ResponseContentType.Json:
-                        _xhr.responseType = 'json';
-                        break;
-                    case ResponseContentType.Text:
-                        _xhr.responseType = 'text';
-                        break;
-                    case ResponseContentType.Blob:
-                        _xhr.responseType = 'blob';
-                        break;
-                    default:
-                        throw new Error('The selected responseType is not supported');
-                }
-            }
-            _xhr.addEventListener('load', onLoad);
-            _xhr.addEventListener('error', onError);
-            _xhr.send(_this.request.getBody());
-            return function () {
-                _xhr.removeEventListener('load', onLoad);
-                _xhr.removeEventListener('error', onError);
-                _xhr.abort();
-            };
-        });
-    }
-    /**
-     * @param {?} req
-     * @param {?} _xhr
-     * @return {?}
-     */
-    XHRConnection.prototype.setDetectedContentType = function (req /** TODO Request */, _xhr /** XMLHttpRequest */) {
-        // Skip if a custom Content-Type header is provided
-        if (req.headers != null && req.headers.get('Content-Type') != null) {
-            return;
-        }
-        // Set the detected content type
-        switch (req.contentType) {
-            case ContentType.NONE:
-                break;
-            case ContentType.JSON:
-                _xhr.setRequestHeader('content-type', 'application/json');
-                break;
-            case ContentType.FORM:
-                _xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded;charset=UTF-8');
-                break;
-            case ContentType.TEXT:
-                _xhr.setRequestHeader('content-type', 'text/plain');
-                break;
-            case ContentType.BLOB:
-                var /** @type {?} */ blob = req.blob();
-                if (blob.type) {
-                    _xhr.setRequestHeader('content-type', blob.type);
-                }
-                break;
-        }
-    };
-    return XHRConnection;
-}());
-/**
- * `XSRFConfiguration` sets up Cross Site Request Forgery (XSRF) protection for the application
- * using a cookie. See https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)
- * for more information on XSRF.
- *
- * Applications can configure custom cookie and header names by binding an instance of this class
- * with different `cookieName` and `headerName` values. See the main HTTP documentation for more
- * details.
- *
- * \@experimental
- */
-var CookieXSRFStrategy = (function () {
-    /**
-     * @param {?=} _cookieName
-     * @param {?=} _headerName
-     */
-    function CookieXSRFStrategy(_cookieName, _headerName) {
-        if (_cookieName === void 0) { _cookieName = 'XSRF-TOKEN'; }
-        if (_headerName === void 0) { _headerName = 'X-XSRF-TOKEN'; }
-        this._cookieName = _cookieName;
-        this._headerName = _headerName;
-    }
-    /**
-     * @param {?} req
-     * @return {?}
-     */
-    CookieXSRFStrategy.prototype.configureRequest = function (req) {
-        var /** @type {?} */ xsrfToken = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__["c" /* ɵgetDOM */])().getCookie(this._cookieName);
-        if (xsrfToken) {
-            req.headers.set(this._headerName, xsrfToken);
-        }
-    };
-    return CookieXSRFStrategy;
-}());
-/**
- * Creates {\@link XHRConnection} instances.
- *
- * This class would typically not be used by end users, but could be
- * overridden if a different backend implementation should be used,
- * such as in a node backend.
- *
- * ### Example
- *
- * ```
- * import {Http, MyNodeBackend, HTTP_PROVIDERS, BaseRequestOptions} from '\@angular/http';
- * \@Component({
- *   viewProviders: [
- *     HTTP_PROVIDERS,
- *     {provide: Http, useFactory: (backend, options) => {
- *       return new Http(backend, options);
- *     }, deps: [MyNodeBackend, BaseRequestOptions]}]
- * })
- * class MyComponent {
- *   constructor(http:Http) {
- *     http.request('people.json').subscribe(res => this.people = res.json());
- *   }
- * }
- * ```
- * \@experimental
- */
-var XHRBackend = (function () {
-    /**
-     * @param {?} _browserXHR
-     * @param {?} _baseResponseOptions
-     * @param {?} _xsrfStrategy
-     */
-    function XHRBackend(_browserXHR, _baseResponseOptions, _xsrfStrategy) {
-        this._browserXHR = _browserXHR;
-        this._baseResponseOptions = _baseResponseOptions;
-        this._xsrfStrategy = _xsrfStrategy;
-    }
-    /**
-     * @param {?} request
-     * @return {?}
-     */
-    XHRBackend.prototype.createConnection = function (request) {
-        this._xsrfStrategy.configureRequest(request);
-        return new XHRConnection(request, this._browserXHR, this._baseResponseOptions);
-    };
-    return XHRBackend;
-}());
-XHRBackend.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"] },
-];
-/**
- * @nocollapse
- */
-XHRBackend.ctorParameters = function () { return [
-    { type: BrowserXhr, },
-    { type: ResponseOptions, },
-    { type: XSRFStrategy, },
-]; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * Creates a request options object to be optionally provided when instantiating a
- * {\@link Request}.
- *
- * This class is based on the `RequestInit` description in the [Fetch
- * Spec](https://fetch.spec.whatwg.org/#requestinit).
- *
- * All values are null by default. Typical defaults can be found in the {\@link BaseRequestOptions}
- * class, which sub-classes `RequestOptions`.
- *
- * ```typescript
- * import {RequestOptions, Request, RequestMethod} from '\@angular/http';
- *
- * const options = new RequestOptions({
- *   method: RequestMethod.Post,
- *   url: 'https://google.com'
- * });
- * const req = new Request(options);
- * console.log('req.method:', RequestMethod[req.method]); // Post
- * console.log('options.url:', options.url); // https://google.com
- * ```
- *
- * \@experimental
- */
-var RequestOptions = (function () {
-    /**
-     * @param {?=} opts
-     */
-    function RequestOptions(opts) {
-        if (opts === void 0) { opts = {}; }
-        var method = opts.method, headers = opts.headers, body = opts.body, url = opts.url, search = opts.search, params = opts.params, withCredentials = opts.withCredentials, responseType = opts.responseType;
-        this.method = method != null ? normalizeMethodName(method) : null;
-        this.headers = headers != null ? headers : null;
-        this.body = body != null ? body : null;
-        this.url = url != null ? url : null;
-        this.params = this._mergeSearchParams(params || search);
-        this.withCredentials = withCredentials != null ? withCredentials : null;
-        this.responseType = responseType != null ? responseType : null;
-    }
-    Object.defineProperty(RequestOptions.prototype, "search", {
-        /**
-         * @deprecated from 4.0.0. Use params instead.
-         * @return {?}
-         */
-        get: function () { return this.params; },
-        /**
-         * @deprecated from 4.0.0. Use params instead.
-         * @param {?} params
-         * @return {?}
-         */
-        set: function (params) { this.params = params; },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * Creates a copy of the `RequestOptions` instance, using the optional input as values to override
-     * existing values. This method will not change the values of the instance on which it is being
-     * called.
-     *
-     * Note that `headers` and `search` will override existing values completely if present in
-     * the `options` object. If these values should be merged, it should be done prior to calling
-     * `merge` on the `RequestOptions` instance.
-     *
-     * ```typescript
-     * import {RequestOptions, Request, RequestMethod} from '\@angular/http';
-     *
-     * const options = new RequestOptions({
-     *   method: RequestMethod.Post
-     * });
-     * const req = new Request(options.merge({
-     *   url: 'https://google.com'
-     * }));
-     * console.log('req.method:', RequestMethod[req.method]); // Post
-     * console.log('options.url:', options.url); // null
-     * console.log('req.url:', req.url); // https://google.com
-     * ```
-     * @param {?=} options
-     * @return {?}
-     */
-    RequestOptions.prototype.merge = function (options) {
-        return new RequestOptions({
-            method: options && options.method != null ? options.method : this.method,
-            headers: options && options.headers != null ? options.headers : new Headers(this.headers),
-            body: options && options.body != null ? options.body : this.body,
-            url: options && options.url != null ? options.url : this.url,
-            params: options && this._mergeSearchParams(options.params || options.search),
-            withCredentials: options && options.withCredentials != null ? options.withCredentials :
-                this.withCredentials,
-            responseType: options && options.responseType != null ? options.responseType :
-                this.responseType
-        });
-    };
-    /**
-     * @param {?=} params
-     * @return {?}
-     */
-    RequestOptions.prototype._mergeSearchParams = function (params) {
-        if (!params)
-            return this.params;
-        if (params instanceof URLSearchParams) {
-            return params.clone();
-        }
-        if (typeof params === 'string') {
-            return new URLSearchParams(params);
-        }
-        return this._parseParams(params);
-    };
-    /**
-     * @param {?=} objParams
-     * @return {?}
-     */
-    RequestOptions.prototype._parseParams = function (objParams) {
-        var _this = this;
-        if (objParams === void 0) { objParams = {}; }
-        var /** @type {?} */ params = new URLSearchParams();
-        Object.keys(objParams).forEach(function (key) {
-            var /** @type {?} */ value = objParams[key];
-            if (Array.isArray(value)) {
-                value.forEach(function (item) { return _this._appendParam(key, item, params); });
-            }
-            else {
-                _this._appendParam(key, value, params);
-            }
-        });
-        return params;
-    };
-    /**
-     * @param {?} key
-     * @param {?} value
-     * @param {?} params
-     * @return {?}
-     */
-    RequestOptions.prototype._appendParam = function (key, value, params) {
-        if (typeof value !== 'string') {
-            value = JSON.stringify(value);
-        }
-        params.append(key, value);
-    };
-    return RequestOptions;
-}());
-/**
- * Subclass of {\@link RequestOptions}, with default values.
- *
- * Default values:
- *  * method: {\@link RequestMethod RequestMethod.Get}
- *  * headers: empty {\@link Headers} object
- *
- * This class could be extended and bound to the {\@link RequestOptions} class
- * when configuring an {\@link Injector}, in order to override the default options
- * used by {\@link Http} to create and send {\@link Request Requests}.
- *
- * ```typescript
- * import {BaseRequestOptions, RequestOptions} from '\@angular/http';
- *
- * class MyOptions extends BaseRequestOptions {
- *   search: string = 'coreTeam=true';
- * }
- *
- * {provide: RequestOptions, useClass: MyOptions};
- * ```
- *
- * The options could also be extended when manually creating a {\@link Request}
- * object.
- *
- * ```
- * import {BaseRequestOptions, Request, RequestMethod} from '\@angular/http';
- *
- * const options = new BaseRequestOptions();
- * const req = new Request(options.merge({
- *   method: RequestMethod.Post,
- *   url: 'https://google.com'
- * }));
- * console.log('req.method:', RequestMethod[req.method]); // Post
- * console.log('options.url:', options.url); // null
- * console.log('req.url:', req.url); // https://google.com
- * ```
- *
- * \@experimental
- */
-var BaseRequestOptions = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](BaseRequestOptions, _super);
-    function BaseRequestOptions() {
-        return _super.call(this, { method: RequestMethod.Get, headers: new Headers() }) || this;
-    }
-    return BaseRequestOptions;
-}(RequestOptions));
-BaseRequestOptions.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"] },
-];
-/**
- * @nocollapse
- */
-BaseRequestOptions.ctorParameters = function () { return []; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * Creates `Request` instances from provided values.
- *
- * The Request's interface is inspired by the Request constructor defined in the [Fetch
- * Spec](https://fetch.spec.whatwg.org/#request-class),
- * but is considered a static value whose body can be accessed many times. There are other
- * differences in the implementation, but this is the most significant.
- *
- * `Request` instances are typically created by higher-level classes, like {\@link Http} and
- * {\@link Jsonp}, but it may occasionally be useful to explicitly create `Request` instances.
- * One such example is when creating services that wrap higher-level services, like {\@link Http},
- * where it may be useful to generate a `Request` with arbitrary headers and search params.
- *
- * ```typescript
- * import {Injectable, Injector} from '\@angular/core';
- * import {HTTP_PROVIDERS, Http, Request, RequestMethod} from '\@angular/http';
- *
- * \@Injectable()
- * class AutoAuthenticator {
- *   constructor(public http:Http) {}
- *   request(url:string) {
- *     return this.http.request(new Request({
- *       method: RequestMethod.Get,
- *       url: url,
- *       search: 'password=123'
- *     }));
- *   }
- * }
- *
- * var injector = Injector.resolveAndCreate([HTTP_PROVIDERS, AutoAuthenticator]);
- * var authenticator = injector.get(AutoAuthenticator);
- * authenticator.request('people.json').subscribe(res => {
- *   //URL should have included '?password=123'
- *   console.log('people', res.json());
- * });
- * ```
- *
- * \@experimental
- */
-var Request = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](Request, _super);
-    /**
-     * @param {?} requestOptions
-     */
-    function Request(requestOptions) {
-        var _this = _super.call(this) || this;
-        // TODO: assert that url is present
-        var url = requestOptions.url;
-        _this.url = requestOptions.url;
-        var paramsArg = requestOptions.params || requestOptions.search;
-        if (paramsArg) {
-            var params = void 0;
-            if (typeof paramsArg === 'object' && !(paramsArg instanceof URLSearchParams)) {
-                params = urlEncodeParams(paramsArg).toString();
-            }
-            else {
-                params = paramsArg.toString();
-            }
-            if (params.length > 0) {
-                var prefix = '?';
-                if (_this.url.indexOf('?') != -1) {
-                    prefix = (_this.url[_this.url.length - 1] == '&') ? '' : '&';
-                }
-                // TODO: just delete search-query-looking string in url?
-                _this.url = url + prefix + params;
-            }
-        }
-        _this._body = requestOptions.body;
-        _this.method = normalizeMethodName(requestOptions.method);
-        // TODO(jeffbcross): implement behavior
-        // Defaults to 'omit', consistent with browser
-        _this.headers = new Headers(requestOptions.headers);
-        _this.contentType = _this.detectContentType();
-        _this.withCredentials = requestOptions.withCredentials;
-        _this.responseType = requestOptions.responseType;
-        return _this;
-    }
-    /**
-     * Returns the content type enum based on header options.
-     * @return {?}
-     */
-    Request.prototype.detectContentType = function () {
-        switch (this.headers.get('content-type')) {
-            case 'application/json':
-                return ContentType.JSON;
-            case 'application/x-www-form-urlencoded':
-                return ContentType.FORM;
-            case 'multipart/form-data':
-                return ContentType.FORM_DATA;
-            case 'text/plain':
-            case 'text/html':
-                return ContentType.TEXT;
-            case 'application/octet-stream':
-                return this._body instanceof ArrayBuffer$1 ? ContentType.ARRAY_BUFFER : ContentType.BLOB;
-            default:
-                return this.detectContentTypeFromBody();
-        }
-    };
-    /**
-     * Returns the content type of request's body based on its type.
-     * @return {?}
-     */
-    Request.prototype.detectContentTypeFromBody = function () {
-        if (this._body == null) {
-            return ContentType.NONE;
-        }
-        else if (this._body instanceof URLSearchParams) {
-            return ContentType.FORM;
-        }
-        else if (this._body instanceof FormData) {
-            return ContentType.FORM_DATA;
-        }
-        else if (this._body instanceof Blob$1) {
-            return ContentType.BLOB;
-        }
-        else if (this._body instanceof ArrayBuffer$1) {
-            return ContentType.ARRAY_BUFFER;
-        }
-        else if (this._body && typeof this._body === 'object') {
-            return ContentType.JSON;
-        }
-        else {
-            return ContentType.TEXT;
-        }
-    };
-    /**
-     * Returns the request's body according to its type. If body is undefined, return
-     * null.
-     * @return {?}
-     */
-    Request.prototype.getBody = function () {
-        switch (this.contentType) {
-            case ContentType.JSON:
-                return this.text();
-            case ContentType.FORM:
-                return this.text();
-            case ContentType.FORM_DATA:
-                return this._body;
-            case ContentType.TEXT:
-                return this.text();
-            case ContentType.BLOB:
-                return this.blob();
-            case ContentType.ARRAY_BUFFER:
-                return this.arrayBuffer();
-            default:
-                return null;
-        }
-    };
-    return Request;
-}(Body));
-/**
- * @param {?} params
- * @return {?}
- */
-function urlEncodeParams(params) {
-    var /** @type {?} */ searchParams = new URLSearchParams();
-    Object.keys(params).forEach(function (key) {
-        var /** @type {?} */ value = params[key];
-        if (value && Array.isArray(value)) {
-            value.forEach(function (element) { return searchParams.append(key, element.toString()); });
-        }
-        else {
-            searchParams.append(key, value.toString());
-        }
-    });
-    return searchParams;
-}
-var noop = function () { };
-var w = typeof window == 'object' ? window : noop;
-var FormData = ((w) /** TODO #9100 */)['FormData'] || noop;
-var Blob$1 = ((w) /** TODO #9100 */)['Blob'] || noop;
-var ArrayBuffer$1 = ((w) /** TODO #9100 */)['ArrayBuffer'] || noop;
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @param {?} backend
- * @param {?} request
- * @return {?}
- */
-function httpRequest(backend, request) {
-    return backend.createConnection(request).response;
-}
-/**
- * @param {?} defaultOpts
- * @param {?} providedOpts
- * @param {?} method
- * @param {?} url
- * @return {?}
- */
-function mergeOptions(defaultOpts, providedOpts, method, url) {
-    var /** @type {?} */ newOptions = defaultOpts;
-    if (providedOpts) {
-        // Hack so Dart can used named parameters
-        return (newOptions.merge(new RequestOptions({
-            method: providedOpts.method || method,
-            url: providedOpts.url || url,
-            search: providedOpts.search,
-            params: providedOpts.params,
-            headers: providedOpts.headers,
-            body: providedOpts.body,
-            withCredentials: providedOpts.withCredentials,
-            responseType: providedOpts.responseType
-        })));
-    }
-    return (newOptions.merge(new RequestOptions({ method: method, url: url })));
-}
-/**
- * Performs http requests using `XMLHttpRequest` as the default backend.
- *
- * `Http` is available as an injectable class, with methods to perform http requests. Calling
- * `request` returns an `Observable` which will emit a single {\@link Response} when a
- * response is received.
- *
- * ### Example
- *
- * ```typescript
- * import {Http, HTTP_PROVIDERS} from '\@angular/http';
- * import 'rxjs/add/operator/map'
- * \@Component({
- *   selector: 'http-app',
- *   viewProviders: [HTTP_PROVIDERS],
- *   templateUrl: 'people.html'
- * })
- * class PeopleComponent {
- *   constructor(http: Http) {
- *     http.get('people.json')
- *       // Call map on the response observable to get the parsed people object
- *       .map(res => res.json())
- *       // Subscribe to the observable to get the parsed people object and attach it to the
- *       // component
- *       .subscribe(people => this.people = people);
- *   }
- * }
- * ```
- *
- *
- * ### Example
- *
- * ```
- * http.get('people.json').subscribe((res:Response) => this.people = res.json());
- * ```
- *
- * The default construct used to perform requests, `XMLHttpRequest`, is abstracted as a "Backend" (
- * {\@link XHRBackend} in this case), which could be mocked with dependency injection by replacing
- * the {\@link XHRBackend} provider, as in the following example:
- *
- * ### Example
- *
- * ```typescript
- * import {BaseRequestOptions, Http} from '\@angular/http';
- * import {MockBackend} from '\@angular/http/testing';
- * var injector = Injector.resolveAndCreate([
- *   BaseRequestOptions,
- *   MockBackend,
- *   {provide: Http, useFactory:
- *       function(backend, defaultOptions) {
- *         return new Http(backend, defaultOptions);
- *       },
- *       deps: [MockBackend, BaseRequestOptions]}
- * ]);
- * var http = injector.get(Http);
- * http.get('request-from-mock-backend.json').subscribe((res:Response) => doSomething(res));
- * ```
- *
- * \@experimental
- */
-var Http = (function () {
-    /**
-     * @param {?} _backend
-     * @param {?} _defaultOptions
-     */
-    function Http(_backend, _defaultOptions) {
-        this._backend = _backend;
-        this._defaultOptions = _defaultOptions;
-    }
-    /**
-     * Performs any type of http request. First argument is required, and can either be a url or
-     * a {\@link Request} instance. If the first argument is a url, an optional {\@link RequestOptions}
-     * object can be provided as the 2nd argument. The options object will be merged with the values
-     * of {\@link BaseRequestOptions} before performing the request.
-     * @param {?} url
-     * @param {?=} options
-     * @return {?}
-     */
-    Http.prototype.request = function (url, options) {
-        var /** @type {?} */ responseObservable;
-        if (typeof url === 'string') {
-            responseObservable = httpRequest(this._backend, new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Get, /** @type {?} */ (url))));
-        }
-        else if (url instanceof Request) {
-            responseObservable = httpRequest(this._backend, url);
-        }
-        else {
-            throw new Error('First argument must be a url string or Request instance.');
-        }
-        return responseObservable;
-    };
-    /**
-     * Performs a request with `get` http method.
-     * @param {?} url
-     * @param {?=} options
-     * @return {?}
-     */
-    Http.prototype.get = function (url, options) {
-        return this.request(new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Get, url)));
-    };
-    /**
-     * Performs a request with `post` http method.
-     * @param {?} url
-     * @param {?} body
-     * @param {?=} options
-     * @return {?}
-     */
-    Http.prototype.post = function (url, body, options) {
-        return this.request(new Request(mergeOptions(this._defaultOptions.merge(new RequestOptions({ body: body })), options, RequestMethod.Post, url)));
-    };
-    /**
-     * Performs a request with `put` http method.
-     * @param {?} url
-     * @param {?} body
-     * @param {?=} options
-     * @return {?}
-     */
-    Http.prototype.put = function (url, body, options) {
-        return this.request(new Request(mergeOptions(this._defaultOptions.merge(new RequestOptions({ body: body })), options, RequestMethod.Put, url)));
-    };
-    /**
-     * Performs a request with `delete` http method.
-     * @param {?} url
-     * @param {?=} options
-     * @return {?}
-     */
-    Http.prototype.delete = function (url, options) {
-        return this.request(new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Delete, url)));
-    };
-    /**
-     * Performs a request with `patch` http method.
-     * @param {?} url
-     * @param {?} body
-     * @param {?=} options
-     * @return {?}
-     */
-    Http.prototype.patch = function (url, body, options) {
-        return this.request(new Request(mergeOptions(this._defaultOptions.merge(new RequestOptions({ body: body })), options, RequestMethod.Patch, url)));
-    };
-    /**
-     * Performs a request with `head` http method.
-     * @param {?} url
-     * @param {?=} options
-     * @return {?}
-     */
-    Http.prototype.head = function (url, options) {
-        return this.request(new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Head, url)));
-    };
-    /**
-     * Performs a request with `options` http method.
-     * @param {?} url
-     * @param {?=} options
-     * @return {?}
-     */
-    Http.prototype.options = function (url, options) {
-        return this.request(new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Options, url)));
-    };
-    return Http;
-}());
-Http.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"] },
-];
-/**
- * @nocollapse
- */
-Http.ctorParameters = function () { return [
-    { type: ConnectionBackend, },
-    { type: RequestOptions, },
-]; };
-/**
- * \@experimental
- */
-var Jsonp = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](Jsonp, _super);
-    /**
-     * @param {?} backend
-     * @param {?} defaultOptions
-     */
-    function Jsonp(backend, defaultOptions) {
-        return _super.call(this, backend, defaultOptions) || this;
-    }
-    /**
-     * Performs any type of http request. First argument is required, and can either be a url or
-     * a {\@link Request} instance. If the first argument is a url, an optional {\@link RequestOptions}
-     * object can be provided as the 2nd argument. The options object will be merged with the values
-     * of {\@link BaseRequestOptions} before performing the request.
-     *
-     * \@security Regular XHR is the safest alternative to JSONP for most applications, and is
-     * supported by all current browsers. Because JSONP creates a `<script>` element with
-     * contents retrieved from a remote source, attacker-controlled data introduced by an untrusted
-     * source could expose your application to XSS risks. Data exposed by JSONP may also be
-     * readable by malicious third-party websites. In addition, JSONP introduces potential risk for
-     * future security issues (e.g. content sniffing).  For more detail, see the
-     * [Security Guide](http://g.co/ng/security).
-     * @param {?} url
-     * @param {?=} options
-     * @return {?}
-     */
-    Jsonp.prototype.request = function (url, options) {
-        var /** @type {?} */ responseObservable;
-        if (typeof url === 'string') {
-            url =
-                new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Get, /** @type {?} */ (url)));
-        }
-        if (url instanceof Request) {
-            if (url.method !== RequestMethod.Get) {
-                throw new Error('JSONP requests must use GET request method.');
-            }
-            responseObservable = httpRequest(this._backend, url);
-        }
-        else {
-            throw new Error('First argument must be a url string or Request instance.');
-        }
-        return responseObservable;
-    };
-    return Jsonp;
-}(Http));
-Jsonp.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"] },
-];
-/**
- * @nocollapse
- */
-Jsonp.ctorParameters = function () { return [
-    { type: ConnectionBackend, },
-    { type: RequestOptions, },
-]; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @module
- * @description
- * The http module provides services to perform http requests. To get started, see the {@link Http}
- * class.
- */
-/**
- * @return {?}
- */
-function _createDefaultCookieXSRFStrategy() {
-    return new CookieXSRFStrategy();
-}
-/**
- * @param {?} xhrBackend
- * @param {?} requestOptions
- * @return {?}
- */
-function httpFactory(xhrBackend, requestOptions) {
-    return new Http(xhrBackend, requestOptions);
-}
-/**
- * @param {?} jsonpBackend
- * @param {?} requestOptions
- * @return {?}
- */
-function jsonpFactory(jsonpBackend, requestOptions) {
-    return new Jsonp(jsonpBackend, requestOptions);
-}
-/**
- * The module that includes http's providers
- *
- * \@experimental
- */
-var HttpModule = (function () {
-    function HttpModule() {
-    }
-    return HttpModule;
-}());
-HttpModule.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"], args: [{
-                providers: [
-                    // TODO(pascal): use factory type annotations once supported in DI
-                    // issue: https://github.com/angular/angular/issues/3183
-                    { provide: Http, useFactory: httpFactory, deps: [XHRBackend, RequestOptions] },
-                    BrowserXhr,
-                    { provide: RequestOptions, useClass: BaseRequestOptions },
-                    { provide: ResponseOptions, useClass: BaseResponseOptions },
-                    XHRBackend,
-                    { provide: XSRFStrategy, useFactory: _createDefaultCookieXSRFStrategy },
-                ],
-            },] },
-];
-/**
- * @nocollapse
- */
-HttpModule.ctorParameters = function () { return []; };
-/**
- * The module that includes jsonp's providers
- *
- * \@experimental
- */
-var JsonpModule = (function () {
-    function JsonpModule() {
-    }
-    return JsonpModule;
-}());
-JsonpModule.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"], args: [{
-                providers: [
-                    // TODO(pascal): use factory type annotations once supported in DI
-                    // issue: https://github.com/angular/angular/issues/3183
-                    { provide: Jsonp, useFactory: jsonpFactory, deps: [JSONPBackend, RequestOptions] },
-                    BrowserJsonp,
-                    { provide: RequestOptions, useClass: BaseRequestOptions },
-                    { provide: ResponseOptions, useClass: BaseResponseOptions },
-                    { provide: JSONPBackend, useClass: JSONPBackend_ },
-                ],
-            },] },
-];
-/**
- * @nocollapse
- */
-JsonpModule.ctorParameters = function () { return []; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @module
- * @description
- * Entry point for all public APIs of the common package.
- */
-/**
- * \@stable
- */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('4.3.3');
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @module
- * @description
- * Entry point for all public APIs of the http package.
- */
-// This file only reexports content of the `src` folder. Keep it that way.
-/**
- * Generated bundle index. Do not edit.
- */
-
-//# sourceMappingURL=http.es5.js.map
-
-
-/***/ }),
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var DOM = {};
-
-DOM.e = function (tagName, className) {
-  var element = document.createElement(tagName);
-  element.className = className;
-  return element;
-};
-
-DOM.appendTo = function (child, parent) {
-  parent.appendChild(child);
-  return child;
-};
-
-function cssGet(element, styleName) {
-  return window.getComputedStyle(element)[styleName];
-}
-
-function cssSet(element, styleName, styleValue) {
-  if (typeof styleValue === 'number') {
-    styleValue = styleValue.toString() + 'px';
-  }
-  element.style[styleName] = styleValue;
-  return element;
-}
-
-function cssMultiSet(element, obj) {
-  for (var key in obj) {
-    var val = obj[key];
-    if (typeof val === 'number') {
-      val = val.toString() + 'px';
-    }
-    element.style[key] = val;
-  }
-  return element;
-}
-
-DOM.css = function (element, styleNameOrObject, styleValue) {
-  if (typeof styleNameOrObject === 'object') {
-    // multiple set with object
-    return cssMultiSet(element, styleNameOrObject);
-  } else {
-    if (typeof styleValue === 'undefined') {
-      return cssGet(element, styleNameOrObject);
-    } else {
-      return cssSet(element, styleNameOrObject, styleValue);
-    }
-  }
-};
-
-DOM.matches = function (element, query) {
-  if (typeof element.matches !== 'undefined') {
-    return element.matches(query);
-  } else {
-    if (typeof element.matchesSelector !== 'undefined') {
-      return element.matchesSelector(query);
-    } else if (typeof element.webkitMatchesSelector !== 'undefined') {
-      return element.webkitMatchesSelector(query);
-    } else if (typeof element.mozMatchesSelector !== 'undefined') {
-      return element.mozMatchesSelector(query);
-    } else if (typeof element.msMatchesSelector !== 'undefined') {
-      return element.msMatchesSelector(query);
-    }
-  }
-};
-
-DOM.remove = function (element) {
-  if (typeof element.remove !== 'undefined') {
-    element.remove();
-  } else {
-    if (element.parentNode) {
-      element.parentNode.removeChild(element);
-    }
-  }
-};
-
-DOM.queryChildren = function (element, selector) {
-  return Array.prototype.filter.call(element.childNodes, function (child) {
-    return DOM.matches(child, selector);
-  });
-};
-
-module.exports = DOM;
-
-
-/***/ }),
-/* 50 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(11);
-var map_1 = __webpack_require__(111);
-Observable_1.Observable.prototype.map = map_1.map;
-//# sourceMappingURL=map.js.map
-
-/***/ }),
-/* 51 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(global) {
-/**
- * window: browser in DOM main thread
- * self: browser in WebWorker
- * global: Node.js/other
- */
-exports.root = (typeof window == 'object' && window.window === window && window
-    || typeof self == 'object' && self.self === self && self
-    || typeof global == 'object' && global.global === global && global);
-if (!exports.root) {
-    throw new Error('RxJS could not find any global context (window, self, global)');
-}
-//# sourceMappingURL=root.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(83)))
-
-/***/ }),
-/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33529,6 +31171,2365 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('4.3.3'
 
 
 /***/ }),
+/* 40 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export BrowserXhr */
+/* unused harmony export JSONPBackend */
+/* unused harmony export JSONPConnection */
+/* unused harmony export CookieXSRFStrategy */
+/* unused harmony export XHRBackend */
+/* unused harmony export XHRConnection */
+/* unused harmony export BaseRequestOptions */
+/* unused harmony export RequestOptions */
+/* unused harmony export BaseResponseOptions */
+/* unused harmony export ResponseOptions */
+/* unused harmony export ReadyState */
+/* unused harmony export RequestMethod */
+/* unused harmony export ResponseContentType */
+/* unused harmony export ResponseType */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Headers; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return Http; });
+/* unused harmony export Jsonp */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HttpModule; });
+/* unused harmony export JsonpModule */
+/* unused harmony export Connection */
+/* unused harmony export ConnectionBackend */
+/* unused harmony export XSRFStrategy */
+/* unused harmony export Request */
+/* unused harmony export Response */
+/* unused harmony export QueryEncoder */
+/* unused harmony export URLSearchParams */
+/* unused harmony export VERSION */
+/* unused harmony export ɵg */
+/* unused harmony export ɵa */
+/* unused harmony export ɵf */
+/* unused harmony export ɵb */
+/* unused harmony export ɵc */
+/* unused harmony export ɵd */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__(53);
+
+/**
+ * @license Angular v4.3.3
+ * (c) 2010-2017 Google, Inc. https://angular.io/
+ * License: MIT
+ */
+
+
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * A backend for http that uses the `XMLHttpRequest` browser API.
+ *
+ * Take care not to evaluate this in non-browser contexts.
+ *
+ * \@experimental
+ */
+var BrowserXhr = (function () {
+    function BrowserXhr() {
+    }
+    /**
+     * @return {?}
+     */
+    BrowserXhr.prototype.build = function () { return ((new XMLHttpRequest())); };
+    return BrowserXhr;
+}());
+BrowserXhr.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"] },
+];
+/**
+ * @nocollapse
+ */
+BrowserXhr.ctorParameters = function () { return []; };
+var RequestMethod = {};
+RequestMethod.Get = 0;
+RequestMethod.Post = 1;
+RequestMethod.Put = 2;
+RequestMethod.Delete = 3;
+RequestMethod.Options = 4;
+RequestMethod.Head = 5;
+RequestMethod.Patch = 6;
+RequestMethod[RequestMethod.Get] = "Get";
+RequestMethod[RequestMethod.Post] = "Post";
+RequestMethod[RequestMethod.Put] = "Put";
+RequestMethod[RequestMethod.Delete] = "Delete";
+RequestMethod[RequestMethod.Options] = "Options";
+RequestMethod[RequestMethod.Head] = "Head";
+RequestMethod[RequestMethod.Patch] = "Patch";
+var ReadyState = {};
+ReadyState.Unsent = 0;
+ReadyState.Open = 1;
+ReadyState.HeadersReceived = 2;
+ReadyState.Loading = 3;
+ReadyState.Done = 4;
+ReadyState.Cancelled = 5;
+ReadyState[ReadyState.Unsent] = "Unsent";
+ReadyState[ReadyState.Open] = "Open";
+ReadyState[ReadyState.HeadersReceived] = "HeadersReceived";
+ReadyState[ReadyState.Loading] = "Loading";
+ReadyState[ReadyState.Done] = "Done";
+ReadyState[ReadyState.Cancelled] = "Cancelled";
+var ResponseType = {};
+ResponseType.Basic = 0;
+ResponseType.Cors = 1;
+ResponseType.Default = 2;
+ResponseType.Error = 3;
+ResponseType.Opaque = 4;
+ResponseType[ResponseType.Basic] = "Basic";
+ResponseType[ResponseType.Cors] = "Cors";
+ResponseType[ResponseType.Default] = "Default";
+ResponseType[ResponseType.Error] = "Error";
+ResponseType[ResponseType.Opaque] = "Opaque";
+var ContentType = {};
+ContentType.NONE = 0;
+ContentType.JSON = 1;
+ContentType.FORM = 2;
+ContentType.FORM_DATA = 3;
+ContentType.TEXT = 4;
+ContentType.BLOB = 5;
+ContentType.ARRAY_BUFFER = 6;
+ContentType[ContentType.NONE] = "NONE";
+ContentType[ContentType.JSON] = "JSON";
+ContentType[ContentType.FORM] = "FORM";
+ContentType[ContentType.FORM_DATA] = "FORM_DATA";
+ContentType[ContentType.TEXT] = "TEXT";
+ContentType[ContentType.BLOB] = "BLOB";
+ContentType[ContentType.ARRAY_BUFFER] = "ARRAY_BUFFER";
+var ResponseContentType = {};
+ResponseContentType.Text = 0;
+ResponseContentType.Json = 1;
+ResponseContentType.ArrayBuffer = 2;
+ResponseContentType.Blob = 3;
+ResponseContentType[ResponseContentType.Text] = "Text";
+ResponseContentType[ResponseContentType.Json] = "Json";
+ResponseContentType[ResponseContentType.ArrayBuffer] = "ArrayBuffer";
+ResponseContentType[ResponseContentType.Blob] = "Blob";
+/**
+ * Polyfill for [Headers](https://developer.mozilla.org/en-US/docs/Web/API/Headers/Headers), as
+ * specified in the [Fetch Spec](https://fetch.spec.whatwg.org/#headers-class).
+ *
+ * The only known difference between this `Headers` implementation and the spec is the
+ * lack of an `entries` method.
+ *
+ * ### Example
+ *
+ * ```
+ * import {Headers} from '\@angular/http';
+ *
+ * var firstHeaders = new Headers();
+ * firstHeaders.append('Content-Type', 'image/jpeg');
+ * console.log(firstHeaders.get('Content-Type')) //'image/jpeg'
+ *
+ * // Create headers from Plain Old JavaScript Object
+ * var secondHeaders = new Headers({
+ *   'X-My-Custom-Header': 'Angular'
+ * });
+ * console.log(secondHeaders.get('X-My-Custom-Header')); //'Angular'
+ *
+ * var thirdHeaders = new Headers(secondHeaders);
+ * console.log(thirdHeaders.get('X-My-Custom-Header')); //'Angular'
+ * ```
+ *
+ * \@experimental
+ */
+var Headers = (function () {
+    /**
+     * @param {?=} headers
+     */
+    function Headers(headers) {
+        var _this = this;
+        /**
+         * \@internal header names are lower case
+         */
+        this._headers = new Map();
+        /**
+         * \@internal map lower case names to actual names
+         */
+        this._normalizedNames = new Map();
+        if (!headers) {
+            return;
+        }
+        if (headers instanceof Headers) {
+            headers.forEach(function (values, name) {
+                values.forEach(function (value) { return _this.append(name, value); });
+            });
+            return;
+        }
+        Object.keys(headers).forEach(function (name) {
+            var values = Array.isArray(headers[name]) ? headers[name] : [headers[name]];
+            _this.delete(name);
+            values.forEach(function (value) { return _this.append(name, value); });
+        });
+    }
+    /**
+     * Returns a new Headers instance from the given DOMString of Response Headers
+     * @param {?} headersString
+     * @return {?}
+     */
+    Headers.fromResponseHeaderString = function (headersString) {
+        var /** @type {?} */ headers = new Headers();
+        headersString.split('\n').forEach(function (line) {
+            var /** @type {?} */ index = line.indexOf(':');
+            if (index > 0) {
+                var /** @type {?} */ name = line.slice(0, index);
+                var /** @type {?} */ value = line.slice(index + 1).trim();
+                headers.set(name, value);
+            }
+        });
+        return headers;
+    };
+    /**
+     * Appends a header to existing list of header values for a given header name.
+     * @param {?} name
+     * @param {?} value
+     * @return {?}
+     */
+    Headers.prototype.append = function (name, value) {
+        var /** @type {?} */ values = this.getAll(name);
+        if (values === null) {
+            this.set(name, value);
+        }
+        else {
+            values.push(value);
+        }
+    };
+    /**
+     * Deletes all header values for the given name.
+     * @param {?} name
+     * @return {?}
+     */
+    Headers.prototype.delete = function (name) {
+        var /** @type {?} */ lcName = name.toLowerCase();
+        this._normalizedNames.delete(lcName);
+        this._headers.delete(lcName);
+    };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    Headers.prototype.forEach = function (fn) {
+        var _this = this;
+        this._headers.forEach(function (values, lcName) { return fn(values, _this._normalizedNames.get(lcName), _this._headers); });
+    };
+    /**
+     * Returns first header that matches given name.
+     * @param {?} name
+     * @return {?}
+     */
+    Headers.prototype.get = function (name) {
+        var /** @type {?} */ values = this.getAll(name);
+        if (values === null) {
+            return null;
+        }
+        return values.length > 0 ? values[0] : null;
+    };
+    /**
+     * Checks for existence of header by given name.
+     * @param {?} name
+     * @return {?}
+     */
+    Headers.prototype.has = function (name) { return this._headers.has(name.toLowerCase()); };
+    /**
+     * Returns the names of the headers
+     * @return {?}
+     */
+    Headers.prototype.keys = function () { return Array.from(this._normalizedNames.values()); };
+    /**
+     * Sets or overrides header value for given name.
+     * @param {?} name
+     * @param {?} value
+     * @return {?}
+     */
+    Headers.prototype.set = function (name, value) {
+        if (Array.isArray(value)) {
+            if (value.length) {
+                this._headers.set(name.toLowerCase(), [value.join(',')]);
+            }
+        }
+        else {
+            this._headers.set(name.toLowerCase(), [value]);
+        }
+        this.mayBeSetNormalizedName(name);
+    };
+    /**
+     * Returns values of all headers.
+     * @return {?}
+     */
+    Headers.prototype.values = function () { return Array.from(this._headers.values()); };
+    /**
+     * @return {?}
+     */
+    Headers.prototype.toJSON = function () {
+        var _this = this;
+        var /** @type {?} */ serialized = {};
+        this._headers.forEach(function (values, name) {
+            var /** @type {?} */ split = [];
+            values.forEach(function (v) { return split.push.apply(split, v.split(',')); });
+            serialized[((_this._normalizedNames.get(name)))] = split;
+        });
+        return serialized;
+    };
+    /**
+     * Returns list of header values for a given name.
+     * @param {?} name
+     * @return {?}
+     */
+    Headers.prototype.getAll = function (name) {
+        return this.has(name) ? this._headers.get(name.toLowerCase()) || null : null;
+    };
+    /**
+     * This method is not implemented.
+     * @return {?}
+     */
+    Headers.prototype.entries = function () { throw new Error('"entries" method is not implemented on Headers class'); };
+    /**
+     * @param {?} name
+     * @return {?}
+     */
+    Headers.prototype.mayBeSetNormalizedName = function (name) {
+        var /** @type {?} */ lcName = name.toLowerCase();
+        if (!this._normalizedNames.has(lcName)) {
+            this._normalizedNames.set(lcName, name);
+        }
+    };
+    return Headers;
+}());
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Creates a response options object to be optionally provided when instantiating a
+ * {\@link Response}.
+ *
+ * This class is based on the `ResponseInit` description in the [Fetch
+ * Spec](https://fetch.spec.whatwg.org/#responseinit).
+ *
+ * All values are null by default. Typical defaults can be found in the
+ * {\@link BaseResponseOptions} class, which sub-classes `ResponseOptions`.
+ *
+ * This class may be used in tests to build {\@link Response Responses} for
+ * mock responses (see {\@link MockBackend}).
+ *
+ * ### Example ([live demo](http://plnkr.co/edit/P9Jkk8e8cz6NVzbcxEsD?p=preview))
+ *
+ * ```typescript
+ * import {ResponseOptions, Response} from '\@angular/http';
+ *
+ * var options = new ResponseOptions({
+ *   body: '{"name":"Jeff"}'
+ * });
+ * var res = new Response(options);
+ *
+ * console.log('res.json():', res.json()); // Object {name: "Jeff"}
+ * ```
+ *
+ * \@experimental
+ */
+var ResponseOptions = (function () {
+    /**
+     * @param {?=} opts
+     */
+    function ResponseOptions(opts) {
+        if (opts === void 0) { opts = {}; }
+        var body = opts.body, status = opts.status, headers = opts.headers, statusText = opts.statusText, type = opts.type, url = opts.url;
+        this.body = body != null ? body : null;
+        this.status = status != null ? status : null;
+        this.headers = headers != null ? headers : null;
+        this.statusText = statusText != null ? statusText : null;
+        this.type = type != null ? type : null;
+        this.url = url != null ? url : null;
+    }
+    /**
+     * Creates a copy of the `ResponseOptions` instance, using the optional input as values to
+     * override
+     * existing values. This method will not change the values of the instance on which it is being
+     * called.
+     *
+     * This may be useful when sharing a base `ResponseOptions` object inside tests,
+     * where certain properties may change from test to test.
+     *
+     * ### Example ([live demo](http://plnkr.co/edit/1lXquqFfgduTFBWjNoRE?p=preview))
+     *
+     * ```typescript
+     * import {ResponseOptions, Response} from '\@angular/http';
+     *
+     * var options = new ResponseOptions({
+     *   body: {name: 'Jeff'}
+     * });
+     * var res = new Response(options.merge({
+     *   url: 'https://google.com'
+     * }));
+     * console.log('options.url:', options.url); // null
+     * console.log('res.json():', res.json()); // Object {name: "Jeff"}
+     * console.log('res.url:', res.url); // https://google.com
+     * ```
+     * @param {?=} options
+     * @return {?}
+     */
+    ResponseOptions.prototype.merge = function (options) {
+        return new ResponseOptions({
+            body: options && options.body != null ? options.body : this.body,
+            status: options && options.status != null ? options.status : this.status,
+            headers: options && options.headers != null ? options.headers : this.headers,
+            statusText: options && options.statusText != null ? options.statusText : this.statusText,
+            type: options && options.type != null ? options.type : this.type,
+            url: options && options.url != null ? options.url : this.url,
+        });
+    };
+    return ResponseOptions;
+}());
+/**
+ * Subclass of {\@link ResponseOptions}, with default values.
+ *
+ * Default values:
+ *  * status: 200
+ *  * headers: empty {\@link Headers} object
+ *
+ * This class could be extended and bound to the {\@link ResponseOptions} class
+ * when configuring an {\@link Injector}, in order to override the default options
+ * used by {\@link Http} to create {\@link Response Responses}.
+ *
+ * ### Example ([live demo](http://plnkr.co/edit/qv8DLT?p=preview))
+ *
+ * ```typescript
+ * import {provide} from '\@angular/core';
+ * import {bootstrap} from '\@angular/platform-browser/browser';
+ * import {HTTP_PROVIDERS, Headers, Http, BaseResponseOptions, ResponseOptions} from
+ * '\@angular/http';
+ * import {App} from './myapp';
+ *
+ * class MyOptions extends BaseResponseOptions {
+ *   headers:Headers = new Headers({network: 'github'});
+ * }
+ *
+ * bootstrap(App, [HTTP_PROVIDERS, {provide: ResponseOptions, useClass: MyOptions}]);
+ * ```
+ *
+ * The options could also be extended when manually creating a {\@link Response}
+ * object.
+ *
+ * ### Example ([live demo](http://plnkr.co/edit/VngosOWiaExEtbstDoix?p=preview))
+ *
+ * ```
+ * import {BaseResponseOptions, Response} from '\@angular/http';
+ *
+ * var options = new BaseResponseOptions();
+ * var res = new Response(options.merge({
+ *   body: 'Angular',
+ *   headers: new Headers({framework: 'angular'})
+ * }));
+ * console.log('res.headers.get("framework"):', res.headers.get('framework')); // angular
+ * console.log('res.text():', res.text()); // Angular;
+ * ```
+ *
+ * \@experimental
+ */
+var BaseResponseOptions = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](BaseResponseOptions, _super);
+    function BaseResponseOptions() {
+        return _super.call(this, { status: 200, statusText: 'Ok', type: ResponseType.Default, headers: new Headers() }) || this;
+    }
+    return BaseResponseOptions;
+}(ResponseOptions));
+BaseResponseOptions.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"] },
+];
+/**
+ * @nocollapse
+ */
+BaseResponseOptions.ctorParameters = function () { return []; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Abstract class from which real backends are derived.
+ *
+ * The primary purpose of a `ConnectionBackend` is to create new connections to fulfill a given
+ * {\@link Request}.
+ *
+ * \@experimental
+ * @abstract
+ */
+var ConnectionBackend = (function () {
+    function ConnectionBackend() {
+    }
+    /**
+     * @abstract
+     * @param {?} request
+     * @return {?}
+     */
+    ConnectionBackend.prototype.createConnection = function (request) { };
+    return ConnectionBackend;
+}());
+/**
+ * Abstract class from which real connections are derived.
+ *
+ * \@experimental
+ * @abstract
+ */
+var Connection = (function () {
+    function Connection() {
+    }
+    return Connection;
+}());
+/**
+ * An XSRFStrategy configures XSRF protection (e.g. via headers) on an HTTP request.
+ *
+ * \@experimental
+ * @abstract
+ */
+var XSRFStrategy = (function () {
+    function XSRFStrategy() {
+    }
+    /**
+     * @abstract
+     * @param {?} req
+     * @return {?}
+     */
+    XSRFStrategy.prototype.configureRequest = function (req) { };
+    return XSRFStrategy;
+}());
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @param {?} method
+ * @return {?}
+ */
+function normalizeMethodName(method) {
+    if (typeof method !== 'string')
+        return method;
+    switch (method.toUpperCase()) {
+        case 'GET':
+            return RequestMethod.Get;
+        case 'POST':
+            return RequestMethod.Post;
+        case 'PUT':
+            return RequestMethod.Put;
+        case 'DELETE':
+            return RequestMethod.Delete;
+        case 'OPTIONS':
+            return RequestMethod.Options;
+        case 'HEAD':
+            return RequestMethod.Head;
+        case 'PATCH':
+            return RequestMethod.Patch;
+    }
+    throw new Error("Invalid request method. The method \"" + method + "\" is not supported.");
+}
+var isSuccess = function (status) { return (status >= 200 && status < 300); };
+/**
+ * @param {?} xhr
+ * @return {?}
+ */
+function getResponseURL(xhr) {
+    if ('responseURL' in xhr) {
+        return xhr.responseURL;
+    }
+    if (/^X-Request-URL:/m.test(xhr.getAllResponseHeaders())) {
+        return xhr.getResponseHeader('X-Request-URL');
+    }
+    return null;
+}
+/**
+ * @param {?} input
+ * @return {?}
+ */
+/**
+ * @param {?} input
+ * @return {?}
+ */
+function stringToArrayBuffer(input) {
+    var /** @type {?} */ view = new Uint16Array(input.length);
+    for (var /** @type {?} */ i = 0, /** @type {?} */ strLen = input.length; i < strLen; i++) {
+        view[i] = input.charCodeAt(i);
+    }
+    return view.buffer;
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ * @param {?=} rawParams
+ * @return {?}
+ */
+function paramParser(rawParams) {
+    if (rawParams === void 0) { rawParams = ''; }
+    var /** @type {?} */ map = new Map();
+    if (rawParams.length > 0) {
+        var /** @type {?} */ params = rawParams.split('&');
+        params.forEach(function (param) {
+            var /** @type {?} */ eqIdx = param.indexOf('=');
+            var _a = eqIdx == -1 ? [param, ''] : [param.slice(0, eqIdx), param.slice(eqIdx + 1)], key = _a[0], val = _a[1];
+            var /** @type {?} */ list = map.get(key) || [];
+            list.push(val);
+            map.set(key, list);
+        });
+    }
+    return map;
+}
+/**
+ * \@experimental
+ *
+ */
+var QueryEncoder = (function () {
+    function QueryEncoder() {
+    }
+    /**
+     * @param {?} k
+     * @return {?}
+     */
+    QueryEncoder.prototype.encodeKey = function (k) { return standardEncoding(k); };
+    /**
+     * @param {?} v
+     * @return {?}
+     */
+    QueryEncoder.prototype.encodeValue = function (v) { return standardEncoding(v); };
+    return QueryEncoder;
+}());
+/**
+ * @param {?} v
+ * @return {?}
+ */
+function standardEncoding(v) {
+    return encodeURIComponent(v)
+        .replace(/%40/gi, '@')
+        .replace(/%3A/gi, ':')
+        .replace(/%24/gi, '$')
+        .replace(/%2C/gi, ',')
+        .replace(/%3B/gi, ';')
+        .replace(/%2B/gi, '+')
+        .replace(/%3D/gi, '=')
+        .replace(/%3F/gi, '?')
+        .replace(/%2F/gi, '/');
+}
+/**
+ * Map-like representation of url search parameters, based on
+ * [URLSearchParams](https://url.spec.whatwg.org/#urlsearchparams) in the url living standard,
+ * with several extensions for merging URLSearchParams objects:
+ *   - setAll()
+ *   - appendAll()
+ *   - replaceAll()
+ *
+ * This class accepts an optional second parameter of ${\@link QueryEncoder},
+ * which is used to serialize parameters before making a request. By default,
+ * `QueryEncoder` encodes keys and values of parameters using `encodeURIComponent`,
+ * and then un-encodes certain characters that are allowed to be part of the query
+ * according to IETF RFC 3986: https://tools.ietf.org/html/rfc3986.
+ *
+ * These are the characters that are not encoded: `! $ \' ( ) * + , ; A 9 - . _ ~ ? /`
+ *
+ * If the set of allowed query characters is not acceptable for a particular backend,
+ * `QueryEncoder` can be subclassed and provided as the 2nd argument to URLSearchParams.
+ *
+ * ```
+ * import {URLSearchParams, QueryEncoder} from '\@angular/http';
+ * class MyQueryEncoder extends QueryEncoder {
+ *   encodeKey(k: string): string {
+ *     return myEncodingFunction(k);
+ *   }
+ *
+ *   encodeValue(v: string): string {
+ *     return myEncodingFunction(v);
+ *   }
+ * }
+ *
+ * let params = new URLSearchParams('', new MyQueryEncoder());
+ * ```
+ * \@experimental
+ */
+var URLSearchParams = (function () {
+    /**
+     * @param {?=} rawParams
+     * @param {?=} queryEncoder
+     */
+    function URLSearchParams(rawParams, queryEncoder) {
+        if (rawParams === void 0) { rawParams = ''; }
+        if (queryEncoder === void 0) { queryEncoder = new QueryEncoder(); }
+        this.rawParams = rawParams;
+        this.queryEncoder = queryEncoder;
+        this.paramsMap = paramParser(rawParams);
+    }
+    /**
+     * @return {?}
+     */
+    URLSearchParams.prototype.clone = function () {
+        var /** @type {?} */ clone = new URLSearchParams('', this.queryEncoder);
+        clone.appendAll(this);
+        return clone;
+    };
+    /**
+     * @param {?} param
+     * @return {?}
+     */
+    URLSearchParams.prototype.has = function (param) { return this.paramsMap.has(param); };
+    /**
+     * @param {?} param
+     * @return {?}
+     */
+    URLSearchParams.prototype.get = function (param) {
+        var /** @type {?} */ storedParam = this.paramsMap.get(param);
+        return Array.isArray(storedParam) ? storedParam[0] : null;
+    };
+    /**
+     * @param {?} param
+     * @return {?}
+     */
+    URLSearchParams.prototype.getAll = function (param) { return this.paramsMap.get(param) || []; };
+    /**
+     * @param {?} param
+     * @param {?} val
+     * @return {?}
+     */
+    URLSearchParams.prototype.set = function (param, val) {
+        if (val === void 0 || val === null) {
+            this.delete(param);
+            return;
+        }
+        var /** @type {?} */ list = this.paramsMap.get(param) || [];
+        list.length = 0;
+        list.push(val);
+        this.paramsMap.set(param, list);
+    };
+    /**
+     * @param {?} searchParams
+     * @return {?}
+     */
+    URLSearchParams.prototype.setAll = function (searchParams) {
+        var _this = this;
+        searchParams.paramsMap.forEach(function (value, param) {
+            var /** @type {?} */ list = _this.paramsMap.get(param) || [];
+            list.length = 0;
+            list.push(value[0]);
+            _this.paramsMap.set(param, list);
+        });
+    };
+    /**
+     * @param {?} param
+     * @param {?} val
+     * @return {?}
+     */
+    URLSearchParams.prototype.append = function (param, val) {
+        if (val === void 0 || val === null)
+            return;
+        var /** @type {?} */ list = this.paramsMap.get(param) || [];
+        list.push(val);
+        this.paramsMap.set(param, list);
+    };
+    /**
+     * @param {?} searchParams
+     * @return {?}
+     */
+    URLSearchParams.prototype.appendAll = function (searchParams) {
+        var _this = this;
+        searchParams.paramsMap.forEach(function (value, param) {
+            var /** @type {?} */ list = _this.paramsMap.get(param) || [];
+            for (var /** @type {?} */ i = 0; i < value.length; ++i) {
+                list.push(value[i]);
+            }
+            _this.paramsMap.set(param, list);
+        });
+    };
+    /**
+     * @param {?} searchParams
+     * @return {?}
+     */
+    URLSearchParams.prototype.replaceAll = function (searchParams) {
+        var _this = this;
+        searchParams.paramsMap.forEach(function (value, param) {
+            var /** @type {?} */ list = _this.paramsMap.get(param) || [];
+            list.length = 0;
+            for (var /** @type {?} */ i = 0; i < value.length; ++i) {
+                list.push(value[i]);
+            }
+            _this.paramsMap.set(param, list);
+        });
+    };
+    /**
+     * @return {?}
+     */
+    URLSearchParams.prototype.toString = function () {
+        var _this = this;
+        var /** @type {?} */ paramsList = [];
+        this.paramsMap.forEach(function (values, k) {
+            values.forEach(function (v) { return paramsList.push(_this.queryEncoder.encodeKey(k) + '=' + _this.queryEncoder.encodeValue(v)); });
+        });
+        return paramsList.join('&');
+    };
+    /**
+     * @param {?} param
+     * @return {?}
+     */
+    URLSearchParams.prototype.delete = function (param) { this.paramsMap.delete(param); };
+    return URLSearchParams;
+}());
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * HTTP request body used by both {\@link Request} and {\@link Response}
+ * https://fetch.spec.whatwg.org/#body
+ * @abstract
+ */
+var Body = (function () {
+    function Body() {
+    }
+    /**
+     * Attempts to return body as parsed `JSON` object, or raises an exception.
+     * @return {?}
+     */
+    Body.prototype.json = function () {
+        if (typeof this._body === 'string') {
+            return JSON.parse(/** @type {?} */ (this._body));
+        }
+        if (this._body instanceof ArrayBuffer) {
+            return JSON.parse(this.text());
+        }
+        return this._body;
+    };
+    /**
+     * Returns the body as a string, presuming `toString()` can be called on the response body.
+     *
+     * When decoding an `ArrayBuffer`, the optional `encodingHint` parameter determines how the
+     * bytes in the buffer will be interpreted. Valid values are:
+     *
+     * - `legacy` - incorrectly interpret the bytes as UTF-16 (technically, UCS-2). Only characters
+     *   in the Basic Multilingual Plane are supported, surrogate pairs are not handled correctly.
+     *   In addition, the endianness of the 16-bit octet pairs in the `ArrayBuffer` is not taken
+     *   into consideration. This is the default behavior to avoid breaking apps, but should be
+     *   considered deprecated.
+     *
+     * - `iso-8859` - interpret the bytes as ISO-8859 (which can be used for ASCII encoded text).
+     * @param {?=} encodingHint
+     * @return {?}
+     */
+    Body.prototype.text = function (encodingHint) {
+        if (encodingHint === void 0) { encodingHint = 'legacy'; }
+        if (this._body instanceof URLSearchParams) {
+            return this._body.toString();
+        }
+        if (this._body instanceof ArrayBuffer) {
+            switch (encodingHint) {
+                case 'legacy':
+                    return String.fromCharCode.apply(null, new Uint16Array(/** @type {?} */ (this._body)));
+                case 'iso-8859':
+                    return String.fromCharCode.apply(null, new Uint8Array(/** @type {?} */ (this._body)));
+                default:
+                    throw new Error("Invalid value for encodingHint: " + encodingHint);
+            }
+        }
+        if (this._body == null) {
+            return '';
+        }
+        if (typeof this._body === 'object') {
+            return JSON.stringify(this._body, null, 2);
+        }
+        return this._body.toString();
+    };
+    /**
+     * Return the body as an ArrayBuffer
+     * @return {?}
+     */
+    Body.prototype.arrayBuffer = function () {
+        if (this._body instanceof ArrayBuffer) {
+            return (this._body);
+        }
+        return stringToArrayBuffer(this.text());
+    };
+    /**
+     * Returns the request's body as a Blob, assuming that body exists.
+     * @return {?}
+     */
+    Body.prototype.blob = function () {
+        if (this._body instanceof Blob) {
+            return (this._body);
+        }
+        if (this._body instanceof ArrayBuffer) {
+            return new Blob([this._body]);
+        }
+        throw new Error('The request body isn\'t either a blob or an array buffer');
+    };
+    return Body;
+}());
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Creates `Response` instances from provided values.
+ *
+ * Though this object isn't
+ * usually instantiated by end-users, it is the primary object interacted with when it comes time to
+ * add data to a view.
+ *
+ * ### Example
+ *
+ * ```
+ * http.request('my-friends.txt').subscribe(response => this.friends = response.text());
+ * ```
+ *
+ * The Response's interface is inspired by the Response constructor defined in the [Fetch
+ * Spec](https://fetch.spec.whatwg.org/#response-class), but is considered a static value whose body
+ * can be accessed many times. There are other differences in the implementation, but this is the
+ * most significant.
+ *
+ * \@experimental
+ */
+var Response = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](Response, _super);
+    /**
+     * @param {?} responseOptions
+     */
+    function Response(responseOptions) {
+        var _this = _super.call(this) || this;
+        _this._body = responseOptions.body;
+        _this.status = responseOptions.status;
+        _this.ok = (_this.status >= 200 && _this.status <= 299);
+        _this.statusText = responseOptions.statusText;
+        _this.headers = responseOptions.headers;
+        _this.type = responseOptions.type;
+        _this.url = responseOptions.url;
+        return _this;
+    }
+    /**
+     * @return {?}
+     */
+    Response.prototype.toString = function () {
+        return "Response with status: " + this.status + " " + this.statusText + " for URL: " + this.url;
+    };
+    return Response;
+}(Body));
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var _nextRequestId = 0;
+var JSONP_HOME = '__ng_jsonp__';
+var _jsonpConnections = null;
+/**
+ * @return {?}
+ */
+function _getJsonpConnections() {
+    var /** @type {?} */ w = typeof window == 'object' ? window : {};
+    if (_jsonpConnections === null) {
+        _jsonpConnections = w[JSONP_HOME] = {};
+    }
+    return _jsonpConnections;
+}
+var BrowserJsonp = (function () {
+    function BrowserJsonp() {
+    }
+    /**
+     * @param {?} url
+     * @return {?}
+     */
+    BrowserJsonp.prototype.build = function (url) {
+        var /** @type {?} */ node = document.createElement('script');
+        node.src = url;
+        return node;
+    };
+    /**
+     * @return {?}
+     */
+    BrowserJsonp.prototype.nextRequestID = function () { return "__req" + _nextRequestId++; };
+    /**
+     * @param {?} id
+     * @return {?}
+     */
+    BrowserJsonp.prototype.requestCallback = function (id) { return JSONP_HOME + "." + id + ".finished"; };
+    /**
+     * @param {?} id
+     * @param {?} connection
+     * @return {?}
+     */
+    BrowserJsonp.prototype.exposeConnection = function (id, connection) {
+        var /** @type {?} */ connections = _getJsonpConnections();
+        connections[id] = connection;
+    };
+    /**
+     * @param {?} id
+     * @return {?}
+     */
+    BrowserJsonp.prototype.removeConnection = function (id) {
+        var /** @type {?} */ connections = _getJsonpConnections();
+        connections[id] = null;
+    };
+    /**
+     * @param {?} node
+     * @return {?}
+     */
+    BrowserJsonp.prototype.send = function (node) { document.body.appendChild(/** @type {?} */ ((node))); };
+    /**
+     * @param {?} node
+     * @return {?}
+     */
+    BrowserJsonp.prototype.cleanup = function (node) {
+        if (node.parentNode) {
+            node.parentNode.removeChild(/** @type {?} */ ((node)));
+        }
+    };
+    return BrowserJsonp;
+}());
+BrowserJsonp.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"] },
+];
+/**
+ * @nocollapse
+ */
+BrowserJsonp.ctorParameters = function () { return []; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var JSONP_ERR_NO_CALLBACK = 'JSONP injected script did not invoke callback.';
+var JSONP_ERR_WRONG_METHOD = 'JSONP requests must use GET request method.';
+/**
+ * Abstract base class for an in-flight JSONP request.
+ *
+ * \@experimental
+ * @abstract
+ */
+var JSONPConnection = (function () {
+    function JSONPConnection() {
+    }
+    /**
+     * Callback called when the JSONP request completes, to notify the application
+     * of the new data.
+     * @abstract
+     * @param {?=} data
+     * @return {?}
+     */
+    JSONPConnection.prototype.finished = function (data) { };
+    return JSONPConnection;
+}());
+var JSONPConnection_ = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](JSONPConnection_, _super);
+    /**
+     * @param {?} req
+     * @param {?} _dom
+     * @param {?=} baseResponseOptions
+     */
+    function JSONPConnection_(req, _dom, baseResponseOptions) {
+        var _this = _super.call(this) || this;
+        _this._dom = _dom;
+        _this.baseResponseOptions = baseResponseOptions;
+        _this._finished = false;
+        if (req.method !== RequestMethod.Get) {
+            throw new TypeError(JSONP_ERR_WRONG_METHOD);
+        }
+        _this.request = req;
+        _this.response = new __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"](function (responseObserver) {
+            _this.readyState = ReadyState.Loading;
+            var id = _this._id = _dom.nextRequestID();
+            _dom.exposeConnection(id, _this);
+            // Workaround Dart
+            // url = url.replace(/=JSONP_CALLBACK(&|$)/, `generated method`);
+            var callback = _dom.requestCallback(_this._id);
+            var url = req.url;
+            if (url.indexOf('=JSONP_CALLBACK&') > -1) {
+                url = url.replace('=JSONP_CALLBACK&', "=" + callback + "&");
+            }
+            else if (url.lastIndexOf('=JSONP_CALLBACK') === url.length - '=JSONP_CALLBACK'.length) {
+                url = url.substring(0, url.length - '=JSONP_CALLBACK'.length) + ("=" + callback);
+            }
+            var script = _this._script = _dom.build(url);
+            var onLoad = function (event) {
+                if (_this.readyState === ReadyState.Cancelled)
+                    return;
+                _this.readyState = ReadyState.Done;
+                _dom.cleanup(script);
+                if (!_this._finished) {
+                    var responseOptions_1 = new ResponseOptions({ body: JSONP_ERR_NO_CALLBACK, type: ResponseType.Error, url: url });
+                    if (baseResponseOptions) {
+                        responseOptions_1 = baseResponseOptions.merge(responseOptions_1);
+                    }
+                    responseObserver.error(new Response(responseOptions_1));
+                    return;
+                }
+                var responseOptions = new ResponseOptions({ body: _this._responseData, url: url });
+                if (_this.baseResponseOptions) {
+                    responseOptions = _this.baseResponseOptions.merge(responseOptions);
+                }
+                responseObserver.next(new Response(responseOptions));
+                responseObserver.complete();
+            };
+            var onError = function (error) {
+                if (_this.readyState === ReadyState.Cancelled)
+                    return;
+                _this.readyState = ReadyState.Done;
+                _dom.cleanup(script);
+                var responseOptions = new ResponseOptions({ body: error.message, type: ResponseType.Error });
+                if (baseResponseOptions) {
+                    responseOptions = baseResponseOptions.merge(responseOptions);
+                }
+                responseObserver.error(new Response(responseOptions));
+            };
+            script.addEventListener('load', onLoad);
+            script.addEventListener('error', onError);
+            _dom.send(script);
+            return function () {
+                _this.readyState = ReadyState.Cancelled;
+                script.removeEventListener('load', onLoad);
+                script.removeEventListener('error', onError);
+                _this._dom.cleanup(script);
+            };
+        });
+        return _this;
+    }
+    /**
+     * @param {?=} data
+     * @return {?}
+     */
+    JSONPConnection_.prototype.finished = function (data) {
+        // Don't leak connections
+        this._finished = true;
+        this._dom.removeConnection(this._id);
+        if (this.readyState === ReadyState.Cancelled)
+            return;
+        this._responseData = data;
+    };
+    return JSONPConnection_;
+}(JSONPConnection));
+/**
+ * A {\@link ConnectionBackend} that uses the JSONP strategy of making requests.
+ *
+ * \@experimental
+ * @abstract
+ */
+var JSONPBackend = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](JSONPBackend, _super);
+    function JSONPBackend() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return JSONPBackend;
+}(ConnectionBackend));
+var JSONPBackend_ = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](JSONPBackend_, _super);
+    /**
+     * @param {?} _browserJSONP
+     * @param {?} _baseResponseOptions
+     */
+    function JSONPBackend_(_browserJSONP, _baseResponseOptions) {
+        var _this = _super.call(this) || this;
+        _this._browserJSONP = _browserJSONP;
+        _this._baseResponseOptions = _baseResponseOptions;
+        return _this;
+    }
+    /**
+     * @param {?} request
+     * @return {?}
+     */
+    JSONPBackend_.prototype.createConnection = function (request) {
+        return new JSONPConnection_(request, this._browserJSONP, this._baseResponseOptions);
+    };
+    return JSONPBackend_;
+}(JSONPBackend));
+JSONPBackend_.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"] },
+];
+/**
+ * @nocollapse
+ */
+JSONPBackend_.ctorParameters = function () { return [
+    { type: BrowserJsonp, },
+    { type: ResponseOptions, },
+]; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var XSSI_PREFIX = /^\)\]\}',?\n/;
+/**
+ * Creates connections using `XMLHttpRequest`. Given a fully-qualified
+ * request, an `XHRConnection` will immediately create an `XMLHttpRequest` object and send the
+ * request.
+ *
+ * This class would typically not be created or interacted with directly inside applications, though
+ * the {\@link MockConnection} may be interacted with in tests.
+ *
+ * \@experimental
+ */
+var XHRConnection = (function () {
+    /**
+     * @param {?} req
+     * @param {?} browserXHR
+     * @param {?=} baseResponseOptions
+     */
+    function XHRConnection(req, browserXHR, baseResponseOptions) {
+        var _this = this;
+        this.request = req;
+        this.response = new __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"](function (responseObserver) {
+            var _xhr = browserXHR.build();
+            _xhr.open(RequestMethod[req.method].toUpperCase(), req.url);
+            if (req.withCredentials != null) {
+                _xhr.withCredentials = req.withCredentials;
+            }
+            // load event handler
+            var onLoad = function () {
+                // normalize IE9 bug (http://bugs.jquery.com/ticket/1450)
+                var status = _xhr.status === 1223 ? 204 : _xhr.status;
+                var body = null;
+                // HTTP 204 means no content
+                if (status !== 204) {
+                    // responseText is the old-school way of retrieving response (supported by IE8 & 9)
+                    // response/responseType properties were introduced in ResourceLoader Level2 spec
+                    // (supported by IE10)
+                    body = (typeof _xhr.response === 'undefined') ? _xhr.responseText : _xhr.response;
+                    // Implicitly strip a potential XSSI prefix.
+                    if (typeof body === 'string') {
+                        body = body.replace(XSSI_PREFIX, '');
+                    }
+                }
+                // fix status code when it is 0 (0 status is undocumented).
+                // Occurs when accessing file resources or on Android 4.1 stock browser
+                // while retrieving files from application cache.
+                if (status === 0) {
+                    status = body ? 200 : 0;
+                }
+                var headers = Headers.fromResponseHeaderString(_xhr.getAllResponseHeaders());
+                // IE 9 does not provide the way to get URL of response
+                var url = getResponseURL(_xhr) || req.url;
+                var statusText = _xhr.statusText || 'OK';
+                var responseOptions = new ResponseOptions({ body: body, status: status, headers: headers, statusText: statusText, url: url });
+                if (baseResponseOptions != null) {
+                    responseOptions = baseResponseOptions.merge(responseOptions);
+                }
+                var response = new Response(responseOptions);
+                response.ok = isSuccess(status);
+                if (response.ok) {
+                    responseObserver.next(response);
+                    // TODO(gdi2290): defer complete if array buffer until done
+                    responseObserver.complete();
+                    return;
+                }
+                responseObserver.error(response);
+            };
+            // error event handler
+            var onError = function (err) {
+                var responseOptions = new ResponseOptions({
+                    body: err,
+                    type: ResponseType.Error,
+                    status: _xhr.status,
+                    statusText: _xhr.statusText,
+                });
+                if (baseResponseOptions != null) {
+                    responseOptions = baseResponseOptions.merge(responseOptions);
+                }
+                responseObserver.error(new Response(responseOptions));
+            };
+            _this.setDetectedContentType(req, _xhr);
+            if (req.headers == null) {
+                req.headers = new Headers();
+            }
+            if (!req.headers.has('Accept')) {
+                req.headers.append('Accept', 'application/json, text/plain, */*');
+            }
+            req.headers.forEach(function (values, name) { return _xhr.setRequestHeader(name, values.join(',')); });
+            // Select the correct buffer type to store the response
+            if (req.responseType != null && _xhr.responseType != null) {
+                switch (req.responseType) {
+                    case ResponseContentType.ArrayBuffer:
+                        _xhr.responseType = 'arraybuffer';
+                        break;
+                    case ResponseContentType.Json:
+                        _xhr.responseType = 'json';
+                        break;
+                    case ResponseContentType.Text:
+                        _xhr.responseType = 'text';
+                        break;
+                    case ResponseContentType.Blob:
+                        _xhr.responseType = 'blob';
+                        break;
+                    default:
+                        throw new Error('The selected responseType is not supported');
+                }
+            }
+            _xhr.addEventListener('load', onLoad);
+            _xhr.addEventListener('error', onError);
+            _xhr.send(_this.request.getBody());
+            return function () {
+                _xhr.removeEventListener('load', onLoad);
+                _xhr.removeEventListener('error', onError);
+                _xhr.abort();
+            };
+        });
+    }
+    /**
+     * @param {?} req
+     * @param {?} _xhr
+     * @return {?}
+     */
+    XHRConnection.prototype.setDetectedContentType = function (req /** TODO Request */, _xhr /** XMLHttpRequest */) {
+        // Skip if a custom Content-Type header is provided
+        if (req.headers != null && req.headers.get('Content-Type') != null) {
+            return;
+        }
+        // Set the detected content type
+        switch (req.contentType) {
+            case ContentType.NONE:
+                break;
+            case ContentType.JSON:
+                _xhr.setRequestHeader('content-type', 'application/json');
+                break;
+            case ContentType.FORM:
+                _xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded;charset=UTF-8');
+                break;
+            case ContentType.TEXT:
+                _xhr.setRequestHeader('content-type', 'text/plain');
+                break;
+            case ContentType.BLOB:
+                var /** @type {?} */ blob = req.blob();
+                if (blob.type) {
+                    _xhr.setRequestHeader('content-type', blob.type);
+                }
+                break;
+        }
+    };
+    return XHRConnection;
+}());
+/**
+ * `XSRFConfiguration` sets up Cross Site Request Forgery (XSRF) protection for the application
+ * using a cookie. See https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)
+ * for more information on XSRF.
+ *
+ * Applications can configure custom cookie and header names by binding an instance of this class
+ * with different `cookieName` and `headerName` values. See the main HTTP documentation for more
+ * details.
+ *
+ * \@experimental
+ */
+var CookieXSRFStrategy = (function () {
+    /**
+     * @param {?=} _cookieName
+     * @param {?=} _headerName
+     */
+    function CookieXSRFStrategy(_cookieName, _headerName) {
+        if (_cookieName === void 0) { _cookieName = 'XSRF-TOKEN'; }
+        if (_headerName === void 0) { _headerName = 'X-XSRF-TOKEN'; }
+        this._cookieName = _cookieName;
+        this._headerName = _headerName;
+    }
+    /**
+     * @param {?} req
+     * @return {?}
+     */
+    CookieXSRFStrategy.prototype.configureRequest = function (req) {
+        var /** @type {?} */ xsrfToken = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__["c" /* ɵgetDOM */])().getCookie(this._cookieName);
+        if (xsrfToken) {
+            req.headers.set(this._headerName, xsrfToken);
+        }
+    };
+    return CookieXSRFStrategy;
+}());
+/**
+ * Creates {\@link XHRConnection} instances.
+ *
+ * This class would typically not be used by end users, but could be
+ * overridden if a different backend implementation should be used,
+ * such as in a node backend.
+ *
+ * ### Example
+ *
+ * ```
+ * import {Http, MyNodeBackend, HTTP_PROVIDERS, BaseRequestOptions} from '\@angular/http';
+ * \@Component({
+ *   viewProviders: [
+ *     HTTP_PROVIDERS,
+ *     {provide: Http, useFactory: (backend, options) => {
+ *       return new Http(backend, options);
+ *     }, deps: [MyNodeBackend, BaseRequestOptions]}]
+ * })
+ * class MyComponent {
+ *   constructor(http:Http) {
+ *     http.request('people.json').subscribe(res => this.people = res.json());
+ *   }
+ * }
+ * ```
+ * \@experimental
+ */
+var XHRBackend = (function () {
+    /**
+     * @param {?} _browserXHR
+     * @param {?} _baseResponseOptions
+     * @param {?} _xsrfStrategy
+     */
+    function XHRBackend(_browserXHR, _baseResponseOptions, _xsrfStrategy) {
+        this._browserXHR = _browserXHR;
+        this._baseResponseOptions = _baseResponseOptions;
+        this._xsrfStrategy = _xsrfStrategy;
+    }
+    /**
+     * @param {?} request
+     * @return {?}
+     */
+    XHRBackend.prototype.createConnection = function (request) {
+        this._xsrfStrategy.configureRequest(request);
+        return new XHRConnection(request, this._browserXHR, this._baseResponseOptions);
+    };
+    return XHRBackend;
+}());
+XHRBackend.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"] },
+];
+/**
+ * @nocollapse
+ */
+XHRBackend.ctorParameters = function () { return [
+    { type: BrowserXhr, },
+    { type: ResponseOptions, },
+    { type: XSRFStrategy, },
+]; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Creates a request options object to be optionally provided when instantiating a
+ * {\@link Request}.
+ *
+ * This class is based on the `RequestInit` description in the [Fetch
+ * Spec](https://fetch.spec.whatwg.org/#requestinit).
+ *
+ * All values are null by default. Typical defaults can be found in the {\@link BaseRequestOptions}
+ * class, which sub-classes `RequestOptions`.
+ *
+ * ```typescript
+ * import {RequestOptions, Request, RequestMethod} from '\@angular/http';
+ *
+ * const options = new RequestOptions({
+ *   method: RequestMethod.Post,
+ *   url: 'https://google.com'
+ * });
+ * const req = new Request(options);
+ * console.log('req.method:', RequestMethod[req.method]); // Post
+ * console.log('options.url:', options.url); // https://google.com
+ * ```
+ *
+ * \@experimental
+ */
+var RequestOptions = (function () {
+    /**
+     * @param {?=} opts
+     */
+    function RequestOptions(opts) {
+        if (opts === void 0) { opts = {}; }
+        var method = opts.method, headers = opts.headers, body = opts.body, url = opts.url, search = opts.search, params = opts.params, withCredentials = opts.withCredentials, responseType = opts.responseType;
+        this.method = method != null ? normalizeMethodName(method) : null;
+        this.headers = headers != null ? headers : null;
+        this.body = body != null ? body : null;
+        this.url = url != null ? url : null;
+        this.params = this._mergeSearchParams(params || search);
+        this.withCredentials = withCredentials != null ? withCredentials : null;
+        this.responseType = responseType != null ? responseType : null;
+    }
+    Object.defineProperty(RequestOptions.prototype, "search", {
+        /**
+         * @deprecated from 4.0.0. Use params instead.
+         * @return {?}
+         */
+        get: function () { return this.params; },
+        /**
+         * @deprecated from 4.0.0. Use params instead.
+         * @param {?} params
+         * @return {?}
+         */
+        set: function (params) { this.params = params; },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * Creates a copy of the `RequestOptions` instance, using the optional input as values to override
+     * existing values. This method will not change the values of the instance on which it is being
+     * called.
+     *
+     * Note that `headers` and `search` will override existing values completely if present in
+     * the `options` object. If these values should be merged, it should be done prior to calling
+     * `merge` on the `RequestOptions` instance.
+     *
+     * ```typescript
+     * import {RequestOptions, Request, RequestMethod} from '\@angular/http';
+     *
+     * const options = new RequestOptions({
+     *   method: RequestMethod.Post
+     * });
+     * const req = new Request(options.merge({
+     *   url: 'https://google.com'
+     * }));
+     * console.log('req.method:', RequestMethod[req.method]); // Post
+     * console.log('options.url:', options.url); // null
+     * console.log('req.url:', req.url); // https://google.com
+     * ```
+     * @param {?=} options
+     * @return {?}
+     */
+    RequestOptions.prototype.merge = function (options) {
+        return new RequestOptions({
+            method: options && options.method != null ? options.method : this.method,
+            headers: options && options.headers != null ? options.headers : new Headers(this.headers),
+            body: options && options.body != null ? options.body : this.body,
+            url: options && options.url != null ? options.url : this.url,
+            params: options && this._mergeSearchParams(options.params || options.search),
+            withCredentials: options && options.withCredentials != null ? options.withCredentials :
+                this.withCredentials,
+            responseType: options && options.responseType != null ? options.responseType :
+                this.responseType
+        });
+    };
+    /**
+     * @param {?=} params
+     * @return {?}
+     */
+    RequestOptions.prototype._mergeSearchParams = function (params) {
+        if (!params)
+            return this.params;
+        if (params instanceof URLSearchParams) {
+            return params.clone();
+        }
+        if (typeof params === 'string') {
+            return new URLSearchParams(params);
+        }
+        return this._parseParams(params);
+    };
+    /**
+     * @param {?=} objParams
+     * @return {?}
+     */
+    RequestOptions.prototype._parseParams = function (objParams) {
+        var _this = this;
+        if (objParams === void 0) { objParams = {}; }
+        var /** @type {?} */ params = new URLSearchParams();
+        Object.keys(objParams).forEach(function (key) {
+            var /** @type {?} */ value = objParams[key];
+            if (Array.isArray(value)) {
+                value.forEach(function (item) { return _this._appendParam(key, item, params); });
+            }
+            else {
+                _this._appendParam(key, value, params);
+            }
+        });
+        return params;
+    };
+    /**
+     * @param {?} key
+     * @param {?} value
+     * @param {?} params
+     * @return {?}
+     */
+    RequestOptions.prototype._appendParam = function (key, value, params) {
+        if (typeof value !== 'string') {
+            value = JSON.stringify(value);
+        }
+        params.append(key, value);
+    };
+    return RequestOptions;
+}());
+/**
+ * Subclass of {\@link RequestOptions}, with default values.
+ *
+ * Default values:
+ *  * method: {\@link RequestMethod RequestMethod.Get}
+ *  * headers: empty {\@link Headers} object
+ *
+ * This class could be extended and bound to the {\@link RequestOptions} class
+ * when configuring an {\@link Injector}, in order to override the default options
+ * used by {\@link Http} to create and send {\@link Request Requests}.
+ *
+ * ```typescript
+ * import {BaseRequestOptions, RequestOptions} from '\@angular/http';
+ *
+ * class MyOptions extends BaseRequestOptions {
+ *   search: string = 'coreTeam=true';
+ * }
+ *
+ * {provide: RequestOptions, useClass: MyOptions};
+ * ```
+ *
+ * The options could also be extended when manually creating a {\@link Request}
+ * object.
+ *
+ * ```
+ * import {BaseRequestOptions, Request, RequestMethod} from '\@angular/http';
+ *
+ * const options = new BaseRequestOptions();
+ * const req = new Request(options.merge({
+ *   method: RequestMethod.Post,
+ *   url: 'https://google.com'
+ * }));
+ * console.log('req.method:', RequestMethod[req.method]); // Post
+ * console.log('options.url:', options.url); // null
+ * console.log('req.url:', req.url); // https://google.com
+ * ```
+ *
+ * \@experimental
+ */
+var BaseRequestOptions = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](BaseRequestOptions, _super);
+    function BaseRequestOptions() {
+        return _super.call(this, { method: RequestMethod.Get, headers: new Headers() }) || this;
+    }
+    return BaseRequestOptions;
+}(RequestOptions));
+BaseRequestOptions.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"] },
+];
+/**
+ * @nocollapse
+ */
+BaseRequestOptions.ctorParameters = function () { return []; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Creates `Request` instances from provided values.
+ *
+ * The Request's interface is inspired by the Request constructor defined in the [Fetch
+ * Spec](https://fetch.spec.whatwg.org/#request-class),
+ * but is considered a static value whose body can be accessed many times. There are other
+ * differences in the implementation, but this is the most significant.
+ *
+ * `Request` instances are typically created by higher-level classes, like {\@link Http} and
+ * {\@link Jsonp}, but it may occasionally be useful to explicitly create `Request` instances.
+ * One such example is when creating services that wrap higher-level services, like {\@link Http},
+ * where it may be useful to generate a `Request` with arbitrary headers and search params.
+ *
+ * ```typescript
+ * import {Injectable, Injector} from '\@angular/core';
+ * import {HTTP_PROVIDERS, Http, Request, RequestMethod} from '\@angular/http';
+ *
+ * \@Injectable()
+ * class AutoAuthenticator {
+ *   constructor(public http:Http) {}
+ *   request(url:string) {
+ *     return this.http.request(new Request({
+ *       method: RequestMethod.Get,
+ *       url: url,
+ *       search: 'password=123'
+ *     }));
+ *   }
+ * }
+ *
+ * var injector = Injector.resolveAndCreate([HTTP_PROVIDERS, AutoAuthenticator]);
+ * var authenticator = injector.get(AutoAuthenticator);
+ * authenticator.request('people.json').subscribe(res => {
+ *   //URL should have included '?password=123'
+ *   console.log('people', res.json());
+ * });
+ * ```
+ *
+ * \@experimental
+ */
+var Request = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](Request, _super);
+    /**
+     * @param {?} requestOptions
+     */
+    function Request(requestOptions) {
+        var _this = _super.call(this) || this;
+        // TODO: assert that url is present
+        var url = requestOptions.url;
+        _this.url = requestOptions.url;
+        var paramsArg = requestOptions.params || requestOptions.search;
+        if (paramsArg) {
+            var params = void 0;
+            if (typeof paramsArg === 'object' && !(paramsArg instanceof URLSearchParams)) {
+                params = urlEncodeParams(paramsArg).toString();
+            }
+            else {
+                params = paramsArg.toString();
+            }
+            if (params.length > 0) {
+                var prefix = '?';
+                if (_this.url.indexOf('?') != -1) {
+                    prefix = (_this.url[_this.url.length - 1] == '&') ? '' : '&';
+                }
+                // TODO: just delete search-query-looking string in url?
+                _this.url = url + prefix + params;
+            }
+        }
+        _this._body = requestOptions.body;
+        _this.method = normalizeMethodName(requestOptions.method);
+        // TODO(jeffbcross): implement behavior
+        // Defaults to 'omit', consistent with browser
+        _this.headers = new Headers(requestOptions.headers);
+        _this.contentType = _this.detectContentType();
+        _this.withCredentials = requestOptions.withCredentials;
+        _this.responseType = requestOptions.responseType;
+        return _this;
+    }
+    /**
+     * Returns the content type enum based on header options.
+     * @return {?}
+     */
+    Request.prototype.detectContentType = function () {
+        switch (this.headers.get('content-type')) {
+            case 'application/json':
+                return ContentType.JSON;
+            case 'application/x-www-form-urlencoded':
+                return ContentType.FORM;
+            case 'multipart/form-data':
+                return ContentType.FORM_DATA;
+            case 'text/plain':
+            case 'text/html':
+                return ContentType.TEXT;
+            case 'application/octet-stream':
+                return this._body instanceof ArrayBuffer$1 ? ContentType.ARRAY_BUFFER : ContentType.BLOB;
+            default:
+                return this.detectContentTypeFromBody();
+        }
+    };
+    /**
+     * Returns the content type of request's body based on its type.
+     * @return {?}
+     */
+    Request.prototype.detectContentTypeFromBody = function () {
+        if (this._body == null) {
+            return ContentType.NONE;
+        }
+        else if (this._body instanceof URLSearchParams) {
+            return ContentType.FORM;
+        }
+        else if (this._body instanceof FormData) {
+            return ContentType.FORM_DATA;
+        }
+        else if (this._body instanceof Blob$1) {
+            return ContentType.BLOB;
+        }
+        else if (this._body instanceof ArrayBuffer$1) {
+            return ContentType.ARRAY_BUFFER;
+        }
+        else if (this._body && typeof this._body === 'object') {
+            return ContentType.JSON;
+        }
+        else {
+            return ContentType.TEXT;
+        }
+    };
+    /**
+     * Returns the request's body according to its type. If body is undefined, return
+     * null.
+     * @return {?}
+     */
+    Request.prototype.getBody = function () {
+        switch (this.contentType) {
+            case ContentType.JSON:
+                return this.text();
+            case ContentType.FORM:
+                return this.text();
+            case ContentType.FORM_DATA:
+                return this._body;
+            case ContentType.TEXT:
+                return this.text();
+            case ContentType.BLOB:
+                return this.blob();
+            case ContentType.ARRAY_BUFFER:
+                return this.arrayBuffer();
+            default:
+                return null;
+        }
+    };
+    return Request;
+}(Body));
+/**
+ * @param {?} params
+ * @return {?}
+ */
+function urlEncodeParams(params) {
+    var /** @type {?} */ searchParams = new URLSearchParams();
+    Object.keys(params).forEach(function (key) {
+        var /** @type {?} */ value = params[key];
+        if (value && Array.isArray(value)) {
+            value.forEach(function (element) { return searchParams.append(key, element.toString()); });
+        }
+        else {
+            searchParams.append(key, value.toString());
+        }
+    });
+    return searchParams;
+}
+var noop = function () { };
+var w = typeof window == 'object' ? window : noop;
+var FormData = ((w) /** TODO #9100 */)['FormData'] || noop;
+var Blob$1 = ((w) /** TODO #9100 */)['Blob'] || noop;
+var ArrayBuffer$1 = ((w) /** TODO #9100 */)['ArrayBuffer'] || noop;
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @param {?} backend
+ * @param {?} request
+ * @return {?}
+ */
+function httpRequest(backend, request) {
+    return backend.createConnection(request).response;
+}
+/**
+ * @param {?} defaultOpts
+ * @param {?} providedOpts
+ * @param {?} method
+ * @param {?} url
+ * @return {?}
+ */
+function mergeOptions(defaultOpts, providedOpts, method, url) {
+    var /** @type {?} */ newOptions = defaultOpts;
+    if (providedOpts) {
+        // Hack so Dart can used named parameters
+        return (newOptions.merge(new RequestOptions({
+            method: providedOpts.method || method,
+            url: providedOpts.url || url,
+            search: providedOpts.search,
+            params: providedOpts.params,
+            headers: providedOpts.headers,
+            body: providedOpts.body,
+            withCredentials: providedOpts.withCredentials,
+            responseType: providedOpts.responseType
+        })));
+    }
+    return (newOptions.merge(new RequestOptions({ method: method, url: url })));
+}
+/**
+ * Performs http requests using `XMLHttpRequest` as the default backend.
+ *
+ * `Http` is available as an injectable class, with methods to perform http requests. Calling
+ * `request` returns an `Observable` which will emit a single {\@link Response} when a
+ * response is received.
+ *
+ * ### Example
+ *
+ * ```typescript
+ * import {Http, HTTP_PROVIDERS} from '\@angular/http';
+ * import 'rxjs/add/operator/map'
+ * \@Component({
+ *   selector: 'http-app',
+ *   viewProviders: [HTTP_PROVIDERS],
+ *   templateUrl: 'people.html'
+ * })
+ * class PeopleComponent {
+ *   constructor(http: Http) {
+ *     http.get('people.json')
+ *       // Call map on the response observable to get the parsed people object
+ *       .map(res => res.json())
+ *       // Subscribe to the observable to get the parsed people object and attach it to the
+ *       // component
+ *       .subscribe(people => this.people = people);
+ *   }
+ * }
+ * ```
+ *
+ *
+ * ### Example
+ *
+ * ```
+ * http.get('people.json').subscribe((res:Response) => this.people = res.json());
+ * ```
+ *
+ * The default construct used to perform requests, `XMLHttpRequest`, is abstracted as a "Backend" (
+ * {\@link XHRBackend} in this case), which could be mocked with dependency injection by replacing
+ * the {\@link XHRBackend} provider, as in the following example:
+ *
+ * ### Example
+ *
+ * ```typescript
+ * import {BaseRequestOptions, Http} from '\@angular/http';
+ * import {MockBackend} from '\@angular/http/testing';
+ * var injector = Injector.resolveAndCreate([
+ *   BaseRequestOptions,
+ *   MockBackend,
+ *   {provide: Http, useFactory:
+ *       function(backend, defaultOptions) {
+ *         return new Http(backend, defaultOptions);
+ *       },
+ *       deps: [MockBackend, BaseRequestOptions]}
+ * ]);
+ * var http = injector.get(Http);
+ * http.get('request-from-mock-backend.json').subscribe((res:Response) => doSomething(res));
+ * ```
+ *
+ * \@experimental
+ */
+var Http = (function () {
+    /**
+     * @param {?} _backend
+     * @param {?} _defaultOptions
+     */
+    function Http(_backend, _defaultOptions) {
+        this._backend = _backend;
+        this._defaultOptions = _defaultOptions;
+    }
+    /**
+     * Performs any type of http request. First argument is required, and can either be a url or
+     * a {\@link Request} instance. If the first argument is a url, an optional {\@link RequestOptions}
+     * object can be provided as the 2nd argument. The options object will be merged with the values
+     * of {\@link BaseRequestOptions} before performing the request.
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    Http.prototype.request = function (url, options) {
+        var /** @type {?} */ responseObservable;
+        if (typeof url === 'string') {
+            responseObservable = httpRequest(this._backend, new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Get, /** @type {?} */ (url))));
+        }
+        else if (url instanceof Request) {
+            responseObservable = httpRequest(this._backend, url);
+        }
+        else {
+            throw new Error('First argument must be a url string or Request instance.');
+        }
+        return responseObservable;
+    };
+    /**
+     * Performs a request with `get` http method.
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    Http.prototype.get = function (url, options) {
+        return this.request(new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Get, url)));
+    };
+    /**
+     * Performs a request with `post` http method.
+     * @param {?} url
+     * @param {?} body
+     * @param {?=} options
+     * @return {?}
+     */
+    Http.prototype.post = function (url, body, options) {
+        return this.request(new Request(mergeOptions(this._defaultOptions.merge(new RequestOptions({ body: body })), options, RequestMethod.Post, url)));
+    };
+    /**
+     * Performs a request with `put` http method.
+     * @param {?} url
+     * @param {?} body
+     * @param {?=} options
+     * @return {?}
+     */
+    Http.prototype.put = function (url, body, options) {
+        return this.request(new Request(mergeOptions(this._defaultOptions.merge(new RequestOptions({ body: body })), options, RequestMethod.Put, url)));
+    };
+    /**
+     * Performs a request with `delete` http method.
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    Http.prototype.delete = function (url, options) {
+        return this.request(new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Delete, url)));
+    };
+    /**
+     * Performs a request with `patch` http method.
+     * @param {?} url
+     * @param {?} body
+     * @param {?=} options
+     * @return {?}
+     */
+    Http.prototype.patch = function (url, body, options) {
+        return this.request(new Request(mergeOptions(this._defaultOptions.merge(new RequestOptions({ body: body })), options, RequestMethod.Patch, url)));
+    };
+    /**
+     * Performs a request with `head` http method.
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    Http.prototype.head = function (url, options) {
+        return this.request(new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Head, url)));
+    };
+    /**
+     * Performs a request with `options` http method.
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    Http.prototype.options = function (url, options) {
+        return this.request(new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Options, url)));
+    };
+    return Http;
+}());
+Http.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"] },
+];
+/**
+ * @nocollapse
+ */
+Http.ctorParameters = function () { return [
+    { type: ConnectionBackend, },
+    { type: RequestOptions, },
+]; };
+/**
+ * \@experimental
+ */
+var Jsonp = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](Jsonp, _super);
+    /**
+     * @param {?} backend
+     * @param {?} defaultOptions
+     */
+    function Jsonp(backend, defaultOptions) {
+        return _super.call(this, backend, defaultOptions) || this;
+    }
+    /**
+     * Performs any type of http request. First argument is required, and can either be a url or
+     * a {\@link Request} instance. If the first argument is a url, an optional {\@link RequestOptions}
+     * object can be provided as the 2nd argument. The options object will be merged with the values
+     * of {\@link BaseRequestOptions} before performing the request.
+     *
+     * \@security Regular XHR is the safest alternative to JSONP for most applications, and is
+     * supported by all current browsers. Because JSONP creates a `<script>` element with
+     * contents retrieved from a remote source, attacker-controlled data introduced by an untrusted
+     * source could expose your application to XSS risks. Data exposed by JSONP may also be
+     * readable by malicious third-party websites. In addition, JSONP introduces potential risk for
+     * future security issues (e.g. content sniffing).  For more detail, see the
+     * [Security Guide](http://g.co/ng/security).
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    Jsonp.prototype.request = function (url, options) {
+        var /** @type {?} */ responseObservable;
+        if (typeof url === 'string') {
+            url =
+                new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Get, /** @type {?} */ (url)));
+        }
+        if (url instanceof Request) {
+            if (url.method !== RequestMethod.Get) {
+                throw new Error('JSONP requests must use GET request method.');
+            }
+            responseObservable = httpRequest(this._backend, url);
+        }
+        else {
+            throw new Error('First argument must be a url string or Request instance.');
+        }
+        return responseObservable;
+    };
+    return Jsonp;
+}(Http));
+Jsonp.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"] },
+];
+/**
+ * @nocollapse
+ */
+Jsonp.ctorParameters = function () { return [
+    { type: ConnectionBackend, },
+    { type: RequestOptions, },
+]; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @module
+ * @description
+ * The http module provides services to perform http requests. To get started, see the {@link Http}
+ * class.
+ */
+/**
+ * @return {?}
+ */
+function _createDefaultCookieXSRFStrategy() {
+    return new CookieXSRFStrategy();
+}
+/**
+ * @param {?} xhrBackend
+ * @param {?} requestOptions
+ * @return {?}
+ */
+function httpFactory(xhrBackend, requestOptions) {
+    return new Http(xhrBackend, requestOptions);
+}
+/**
+ * @param {?} jsonpBackend
+ * @param {?} requestOptions
+ * @return {?}
+ */
+function jsonpFactory(jsonpBackend, requestOptions) {
+    return new Jsonp(jsonpBackend, requestOptions);
+}
+/**
+ * The module that includes http's providers
+ *
+ * \@experimental
+ */
+var HttpModule = (function () {
+    function HttpModule() {
+    }
+    return HttpModule;
+}());
+HttpModule.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"], args: [{
+                providers: [
+                    // TODO(pascal): use factory type annotations once supported in DI
+                    // issue: https://github.com/angular/angular/issues/3183
+                    { provide: Http, useFactory: httpFactory, deps: [XHRBackend, RequestOptions] },
+                    BrowserXhr,
+                    { provide: RequestOptions, useClass: BaseRequestOptions },
+                    { provide: ResponseOptions, useClass: BaseResponseOptions },
+                    XHRBackend,
+                    { provide: XSRFStrategy, useFactory: _createDefaultCookieXSRFStrategy },
+                ],
+            },] },
+];
+/**
+ * @nocollapse
+ */
+HttpModule.ctorParameters = function () { return []; };
+/**
+ * The module that includes jsonp's providers
+ *
+ * \@experimental
+ */
+var JsonpModule = (function () {
+    function JsonpModule() {
+    }
+    return JsonpModule;
+}());
+JsonpModule.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"], args: [{
+                providers: [
+                    // TODO(pascal): use factory type annotations once supported in DI
+                    // issue: https://github.com/angular/angular/issues/3183
+                    { provide: Jsonp, useFactory: jsonpFactory, deps: [JSONPBackend, RequestOptions] },
+                    BrowserJsonp,
+                    { provide: RequestOptions, useClass: BaseRequestOptions },
+                    { provide: ResponseOptions, useClass: BaseResponseOptions },
+                    { provide: JSONPBackend, useClass: JSONPBackend_ },
+                ],
+            },] },
+];
+/**
+ * @nocollapse
+ */
+JsonpModule.ctorParameters = function () { return []; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @module
+ * @description
+ * Entry point for all public APIs of the common package.
+ */
+/**
+ * \@stable
+ */
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('4.3.3');
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @module
+ * @description
+ * Entry point for all public APIs of the http package.
+ */
+// This file only reexports content of the `src` folder. Keep it that way.
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+//# sourceMappingURL=http.es5.js.map
+
+
+/***/ }),
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var DOM = {};
+
+DOM.e = function (tagName, className) {
+  var element = document.createElement(tagName);
+  element.className = className;
+  return element;
+};
+
+DOM.appendTo = function (child, parent) {
+  parent.appendChild(child);
+  return child;
+};
+
+function cssGet(element, styleName) {
+  return window.getComputedStyle(element)[styleName];
+}
+
+function cssSet(element, styleName, styleValue) {
+  if (typeof styleValue === 'number') {
+    styleValue = styleValue.toString() + 'px';
+  }
+  element.style[styleName] = styleValue;
+  return element;
+}
+
+function cssMultiSet(element, obj) {
+  for (var key in obj) {
+    var val = obj[key];
+    if (typeof val === 'number') {
+      val = val.toString() + 'px';
+    }
+    element.style[key] = val;
+  }
+  return element;
+}
+
+DOM.css = function (element, styleNameOrObject, styleValue) {
+  if (typeof styleNameOrObject === 'object') {
+    // multiple set with object
+    return cssMultiSet(element, styleNameOrObject);
+  } else {
+    if (typeof styleValue === 'undefined') {
+      return cssGet(element, styleNameOrObject);
+    } else {
+      return cssSet(element, styleNameOrObject, styleValue);
+    }
+  }
+};
+
+DOM.matches = function (element, query) {
+  if (typeof element.matches !== 'undefined') {
+    return element.matches(query);
+  } else {
+    if (typeof element.matchesSelector !== 'undefined') {
+      return element.matchesSelector(query);
+    } else if (typeof element.webkitMatchesSelector !== 'undefined') {
+      return element.webkitMatchesSelector(query);
+    } else if (typeof element.mozMatchesSelector !== 'undefined') {
+      return element.mozMatchesSelector(query);
+    } else if (typeof element.msMatchesSelector !== 'undefined') {
+      return element.msMatchesSelector(query);
+    }
+  }
+};
+
+DOM.remove = function (element) {
+  if (typeof element.remove !== 'undefined') {
+    element.remove();
+  } else {
+    if (element.parentNode) {
+      element.parentNode.removeChild(element);
+    }
+  }
+};
+
+DOM.queryChildren = function (element, selector) {
+  return Array.prototype.filter.call(element.childNodes, function (child) {
+    return DOM.matches(child, selector);
+  });
+};
+
+module.exports = DOM;
+
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(11);
+var map_1 = __webpack_require__(111);
+Observable_1.Observable.prototype.map = map_1.map;
+//# sourceMappingURL=map.js.map
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {
+/**
+ * window: browser in DOM main thread
+ * self: browser in WebWorker
+ * global: Node.js/other
+ */
+exports.root = (typeof window == 'object' && window.window === window && window
+    || typeof self == 'object' && self.self === self && self
+    || typeof global == 'object' && global.global === global && global);
+if (!exports.root) {
+    throw new Error('RxJS could not find any global context (window, self, global)');
+}
+//# sourceMappingURL=root.js.map
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(83)))
+
+/***/ }),
 /* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -33578,7 +33579,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('4.3.3'
 /* unused harmony export ɵd */
 /* unused harmony export ɵe */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(2);
 
 /**
@@ -38040,8 +38041,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Observable_1 = __webpack_require__(11);
 var Subscriber_1 = __webpack_require__(20);
 var Subscription_1 = __webpack_require__(80);
-var ObjectUnsubscribedError_1 = __webpack_require__(284);
-var SubjectSubscription_1 = __webpack_require__(528);
+var ObjectUnsubscribedError_1 = __webpack_require__(287);
+var SubjectSubscription_1 = __webpack_require__(531);
 var rxSubscriber_1 = __webpack_require__(115);
 /**
  * @class SubjectSubscriber<T>
@@ -38201,9 +38202,9 @@ exports.AnonymousSubject = AnonymousSubject;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddtocartService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serviceUrl__ = __webpack_require__(66);
 
 
@@ -38537,11 +38538,11 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var isArray_1 = __webpack_require__(81);
-var isObject_1 = __webpack_require__(287);
-var isFunction_1 = __webpack_require__(286);
-var tryCatch_1 = __webpack_require__(552);
-var errorObject_1 = __webpack_require__(285);
-var UnsubscriptionError_1 = __webpack_require__(550);
+var isObject_1 = __webpack_require__(290);
+var isFunction_1 = __webpack_require__(289);
+var tryCatch_1 = __webpack_require__(555);
+var errorObject_1 = __webpack_require__(288);
+var UnsubscriptionError_1 = __webpack_require__(553);
 /**
  * Represents a disposable resource, such as the execution of an Observable. A
  * Subscription has one important method, `unsubscribe`, that takes no argument
@@ -38724,13 +38725,13 @@ exports.isArray = Array.isArray || (function (x) { return x && typeof x.length =
 
 "use strict";
 
-var root_1 = __webpack_require__(51);
+var root_1 = __webpack_require__(52);
 var isArray_1 = __webpack_require__(81);
-var isPromise_1 = __webpack_require__(288);
-var isObject_1 = __webpack_require__(287);
+var isPromise_1 = __webpack_require__(291);
+var isObject_1 = __webpack_require__(290);
 var Observable_1 = __webpack_require__(11);
 var iterator_1 = __webpack_require__(113);
-var InnerSubscriber_1 = __webpack_require__(526);
+var InnerSubscriber_1 = __webpack_require__(529);
 var observable_1 = __webpack_require__(114);
 function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
     var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
@@ -38907,9 +38908,9 @@ module.exports = g;
 /* unused harmony export ɵr */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__ = __webpack_require__(535);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__ = __webpack_require__(538);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__ = __webpack_require__(284);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__);
@@ -55370,9 +55371,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(11);
-var ScalarObservable_1 = __webpack_require__(280);
+var ScalarObservable_1 = __webpack_require__(283);
 var EmptyObservable_1 = __webpack_require__(110);
-var isScheduler_1 = __webpack_require__(289);
+var isScheduler_1 = __webpack_require__(292);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -55789,7 +55790,7 @@ exports.MergeAllSubscriber = MergeAllSubscriber;
 
 "use strict";
 
-var root_1 = __webpack_require__(51);
+var root_1 = __webpack_require__(52);
 function symbolIteratorPonyfill(root) {
     var Symbol = root.Symbol;
     if (typeof Symbol === 'function') {
@@ -55829,7 +55830,7 @@ exports.$$iterator = symbolIteratorPonyfill(root_1.root);
 
 "use strict";
 
-var root_1 = __webpack_require__(51);
+var root_1 = __webpack_require__(52);
 function getSymbolObservable(context) {
     var $$observable;
     var Symbol = context.Symbol;
@@ -55857,7 +55858,7 @@ exports.$$observable = getSymbolObservable(root_1.root);
 
 "use strict";
 
-var root_1 = __webpack_require__(51);
+var root_1 = __webpack_require__(52);
 var Symbol = root_1.root.Symbol;
 exports.$$rxSubscriber = (typeof Symbol === 'function' && typeof Symbol.for === 'function') ?
     Symbol.for('rxSubscriber') : '@@rxSubscriber';
@@ -55977,7 +55978,7 @@ var SlimScrollOptions = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__about_component__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__about_component__ = __webpack_require__(321);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__about_component__["a"]; });
 
 
@@ -55987,7 +55988,7 @@ var SlimScrollOptions = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home_component__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home_component__ = __webpack_require__(328);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__home_component__["a"]; });
 
 
@@ -55997,7 +55998,7 @@ var SlimScrollOptions = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__no_content_component__ = __webpack_require__(332);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__no_content_component__ = __webpack_require__(335);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__no_content_component__["a"]; });
 
 
@@ -56010,7 +56011,7 @@ var SlimScrollOptions = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SidebarComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_AddtocartService__ = __webpack_require__(65);
 
 
@@ -56087,10 +56088,10 @@ __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 SidebarComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: 'Sidebar',
-        template: __webpack_require__(524),
-        styles: [__webpack_require__(561)]
+        template: __webpack_require__(527),
+        styles: [__webpack_require__(564)]
     }),
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_3__services_AddtocartService__["a" /* AddtocartService */]])
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"], __WEBPACK_IMPORTED_MODULE_3__services_AddtocartService__["a" /* AddtocartService */]])
 ], SidebarComponent);
 
 
@@ -56101,7 +56102,7 @@ SidebarComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 "use strict";
 
-var Ps = __webpack_require__(277);
+var Ps = __webpack_require__(280);
 var core_1 = __webpack_require__(2);
 var perfect_scrollbar_interfaces_1 = __webpack_require__(67);
 var PerfectScrollbarComponent = (function () {
@@ -56222,7 +56223,7 @@ exports.PerfectScrollbarComponent = PerfectScrollbarComponent;
 
 "use strict";
 
-var Ps = __webpack_require__(277);
+var Ps = __webpack_require__(280);
 var core_1 = __webpack_require__(2);
 var perfect_scrollbar_interfaces_1 = __webpack_require__(67);
 var PerfectScrollbarDirective = (function () {
@@ -67920,12 +67921,334 @@ var DatePickerComponent = (function () {
 
 "use strict";
 
-
-module.exports = __webpack_require__(507);
-
+var core_1 = __webpack_require__(2);
+var ModalHeader = (function () {
+    function ModalHeader() {
+    }
+    ModalHeader.decorators = [
+        { type: core_1.Component, args: [{
+                    selector: "modal-header",
+                    template: "<ng-content></ng-content>"
+                },] },
+    ];
+    /** @nocollapse */
+    ModalHeader.ctorParameters = [];
+    return ModalHeader;
+}());
+exports.ModalHeader = ModalHeader;
+var ModalContent = (function () {
+    function ModalContent() {
+    }
+    ModalContent.decorators = [
+        { type: core_1.Component, args: [{
+                    selector: "modal-content",
+                    template: "<ng-content></ng-content>"
+                },] },
+    ];
+    /** @nocollapse */
+    ModalContent.ctorParameters = [];
+    return ModalContent;
+}());
+exports.ModalContent = ModalContent;
+var ModalFooter = (function () {
+    function ModalFooter() {
+    }
+    ModalFooter.decorators = [
+        { type: core_1.Component, args: [{
+                    selector: "modal-footer",
+                    template: "<ng-content></ng-content>"
+                },] },
+    ];
+    /** @nocollapse */
+    ModalFooter.ctorParameters = [];
+    return ModalFooter;
+}());
+exports.ModalFooter = ModalFooter;
+var Modal = (function () {
+    // -------------------------------------------------------------------------
+    // Constructor
+    // -------------------------------------------------------------------------
+    function Modal() {
+        this.closeOnEscape = true;
+        this.closeOnOutsideClick = true;
+        this.hideCloseButton = false;
+        // -------------------------------------------------------------------------
+        // Outputs
+        // -------------------------------------------------------------------------
+        this.onOpen = new core_1.EventEmitter(false);
+        this.onClose = new core_1.EventEmitter(false);
+        this.onSubmit = new core_1.EventEmitter(false);
+        // -------------------------------------------------------------------------
+        // Public properties
+        // -------------------------------------------------------------------------
+        this.isOpened = false;
+        this.createBackDrop();
+    }
+    // -------------------------------------------------------------------------
+    // Lifecycle Methods
+    // -------------------------------------------------------------------------
+    Modal.prototype.ngOnDestroy = function () {
+        document.body.className = document.body.className.replace(/modal-open\b/, "");
+        if (this.backdropElement && this.backdropElement.parentNode === document.body)
+            document.body.removeChild(this.backdropElement);
+    };
+    // -------------------------------------------------------------------------
+    // Public Methods
+    // -------------------------------------------------------------------------
+    Modal.prototype.open = function () {
+        var _this = this;
+        var args = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            args[_i - 0] = arguments[_i];
+        }
+        if (this.isOpened)
+            return;
+        this.isOpened = true;
+        this.onOpen.emit(args);
+        document.body.appendChild(this.backdropElement);
+        window.setTimeout(function () { return _this.modalRoot.nativeElement.focus(); }, 0);
+        document.body.className += " modal-open";
+    };
+    Modal.prototype.close = function () {
+        var args = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            args[_i - 0] = arguments[_i];
+        }
+        if (!this.isOpened)
+            return;
+        this.isOpened = false;
+        this.onClose.emit(args);
+        document.body.removeChild(this.backdropElement);
+        document.body.className = document.body.className.replace(/modal-open\b/, "");
+    };
+    // -------------------------------------------------------------------------
+    // Private Methods
+    // -------------------------------------------------------------------------
+    Modal.prototype.backdropClick = function (event) {
+        if (this.closeOnOutsideClick === true && !this.contentEl.nativeElement.contains(event.target)) {
+            this.close();
+        }
+    };
+    Modal.prototype.preventClosing = function (event) {
+        event.stopPropagation();
+    };
+    Modal.prototype.createBackDrop = function () {
+        this.backdropElement = document.createElement("div");
+        this.backdropElement.classList.add("modal-backdrop");
+        this.backdropElement.classList.add("fade");
+        this.backdropElement.classList.add("in");
+    };
+    Modal.decorators = [
+        { type: core_1.Component, args: [{
+                    selector: "modal",
+                    template: "\n<div class=\"modal\" \n     tabindex=\"-1\"\n     role=\"dialog\"\n     #modalRoot\n     (keydown.esc)=\"closeOnEscape ? close() : 0\"\n     [ngClass]=\"{ in: isOpened, fade: isOpened }\"\n     [ngStyle]=\"{ display: isOpened ? 'block' : 'none' }\"\n     (click)=\"backdropClick($event)\">\n    <div [class]=\"'modal-dialog ' + modalClass\" #modalContent>\n        <div class=\"modal-content\" tabindex=\"0\" *ngIf=\"isOpened\">\n            <div class=\"modal-header\">\n                <button *ngIf=\"!hideCloseButton\" type=\"button\" class=\"close\" data-dismiss=\"modal\" [attr.aria-label]=\"cancelButtonLabel || 'Close'\" (click)=\"close()\"><span aria-hidden=\"true\">&times;</span></button>\n                <h4 class=\"modal-title\" *ngIf=\"title\">{{ title }}</h4>\n                <ng-content select=\"modal-header\"></ng-content>\n            </div>\n            <div class=\"modal-body\">\n                <ng-content select=\"modal-content\"></ng-content>\n            </div>\n            <div class=\"modal-footer\">\n                <ng-content select=\"modal-footer\"></ng-content>\n                <button *ngIf=\"cancelButtonLabel\" type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\" (click)=\"close()\">{{ cancelButtonLabel }}</button>\n                <button *ngIf=\"submitButtonLabel\" type=\"button\" class=\"btn btn-primary\" (click)=\"onSubmit.emit(undefined)\">{{ submitButtonLabel }}</button>\n            </div>\n        </div>\n    </div>\n</div>\n"
+                },] },
+    ];
+    /** @nocollapse */
+    Modal.ctorParameters = [];
+    Modal.propDecorators = {
+        'modalClass': [{ type: core_1.Input },],
+        'closeOnEscape': [{ type: core_1.Input },],
+        'closeOnOutsideClick': [{ type: core_1.Input },],
+        'title': [{ type: core_1.Input },],
+        'hideCloseButton': [{ type: core_1.Input },],
+        'cancelButtonLabel': [{ type: core_1.Input },],
+        'submitButtonLabel': [{ type: core_1.Input },],
+        'onOpen': [{ type: core_1.Output },],
+        'onClose': [{ type: core_1.Output },],
+        'onSubmit': [{ type: core_1.Output },],
+        'contentEl': [{ type: core_1.ViewChild, args: ['modalContent',] },],
+        'modalRoot': [{ type: core_1.ViewChild, args: ["modalRoot",] },],
+    };
+    return Modal;
+}());
+exports.Modal = Modal;
+//# sourceMappingURL=Modal.js.map
 
 /***/ }),
 /* 278 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var core_1 = __webpack_require__(2);
+var router_1 = __webpack_require__(23);
+var RouteModal = (function () {
+    // -------------------------------------------------------------------------
+    // Constructor
+    // -------------------------------------------------------------------------
+    function RouteModal(router, activatedRoute) {
+        this.router = router;
+        this.activatedRoute = activatedRoute;
+        this.closeOnEscape = true;
+        this.closeOnOutsideClick = true;
+        this.hideCloseButton = false;
+        // -------------------------------------------------------------------------
+        // Outputs
+        // -------------------------------------------------------------------------
+        this.onOpen = new core_1.EventEmitter(false);
+        this.onClose = new core_1.EventEmitter(false);
+        this.onSubmit = new core_1.EventEmitter(false);
+        this.isOpened = false;
+        this.createBackDrop();
+    }
+    // -------------------------------------------------------------------------
+    // Lifecycle Methods
+    // -------------------------------------------------------------------------
+    RouteModal.prototype.ngOnInit = function () {
+        this.open();
+    };
+    RouteModal.prototype.ngOnDestroy = function () {
+        document.body.className = document.body.className.replace(/modal-open\b/, "");
+        if (this.backdropElement && this.backdropElement.parentNode === document.body)
+            document.body.removeChild(this.backdropElement);
+    };
+    // -------------------------------------------------------------------------
+    // Public Methods
+    // -------------------------------------------------------------------------
+    RouteModal.prototype.open = function () {
+        var _this = this;
+        var args = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            args[_i - 0] = arguments[_i];
+        }
+        if (this.isOpened)
+            return;
+        this.isOpened = true;
+        this.onOpen.emit(args);
+        document.body.appendChild(this.backdropElement);
+        window.setTimeout(function () { return _this.modalRoot.nativeElement.focus(); }, 0);
+        document.body.className += " modal-open";
+    };
+    RouteModal.prototype.close = function () {
+        var args = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            args[_i - 0] = arguments[_i];
+        }
+        if (!this.isOpened)
+            return;
+        this.isOpened = false;
+        this.onClose.emit(args);
+        document.body.className = document.body.className.replace(/modal-open\b/, "");
+        if (this.cancelUrl) {
+            var navigationExtras = {};
+            if (this.cancelUrlExtras) {
+                if (this.cancelUrlExtras.relative) {
+                    navigationExtras.relativeTo = this.activatedRoute;
+                }
+                navigationExtras = Object.assign(navigationExtras, this.cancelUrlExtras);
+            }
+            this.router.navigate(this.cancelUrl, navigationExtras);
+        }
+        else {
+            window.history.back();
+        }
+    };
+    // -------------------------------------------------------------------------
+    // Private Methods
+    // -------------------------------------------------------------------------
+    RouteModal.prototype.backdropClick = function (event) {
+        if (this.closeOnOutsideClick === true && !this.contentEl.nativeElement.contains(event.target)) {
+            this.close();
+        }
+    };
+    RouteModal.prototype.preventClosing = function (event) {
+        event.stopPropagation();
+    };
+    RouteModal.prototype.createBackDrop = function () {
+        this.backdropElement = document.createElement("div");
+        this.backdropElement.classList.add("modal-backdrop");
+        this.backdropElement.classList.add("fade");
+        this.backdropElement.classList.add("in");
+    };
+    RouteModal.decorators = [
+        { type: core_1.Component, args: [{
+                    selector: "route-modal",
+                    template: "\n<div class=\"modal route-modal\" \n     tabindex=\"-1\"\n     role=\"dialog\"\n     #modalRoot\n     (keydown.esc)=\"closeOnEscape ? close() : 0\"\n     [ngClass]=\"{ in: isOpened, fade: isOpened }\"\n     [ngStyle]=\"{ display: isOpened ? 'block' : 'none' }\"\n     (click)=\"backdropClick($event)\">\n    <div [class]=\"'modal-dialog ' + modalClass\" #modalContent>\n        <div class=\"modal-content\" tabindex=\"0\" *ngIf=\"isOpened\">\n            <div class=\"modal-header\">\n                <button *ngIf=\"!hideCloseButton\" type=\"button\" class=\"close\" data-dismiss=\"modal\" [attr.aria-label]=\"cancelButtonLabel || 'Close'\" (click)=\"close()\"><span aria-hidden=\"true\">&times;</span></button>\n                <h4 class=\"modal-title\" *ngIf=\"title\">{{ title }}</h4>\n                <ng-content select=\"modal-header\"></ng-content>\n            </div>\n            <div class=\"modal-body\">\n                <ng-content select=\"modal-content\"></ng-content>\n            </div>\n            <div class=\"modal-footer\">\n                <ng-content select=\"modal-footer\"></ng-content>\n                <button *ngIf=\"cancelButtonLabel\" type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\" (click)=\"close()\">{{ cancelButtonLabel }}</button>\n                <button *ngIf=\"submitButtonLabel\" type=\"button\" class=\"btn btn-primary\" (click)=\"onSubmit.emit(undefined)\">{{ submitButtonLabel }}</button>\n            </div>\n        </div>\n    </div>\n</div>\n"
+                },] },
+    ];
+    /** @nocollapse */
+    RouteModal.ctorParameters = [
+        { type: router_1.Router, },
+        { type: router_1.ActivatedRoute, },
+    ];
+    RouteModal.propDecorators = {
+        'cancelUrl': [{ type: core_1.Input },],
+        'cancelUrlExtras': [{ type: core_1.Input },],
+        'modalClass': [{ type: core_1.Input },],
+        'closeOnEscape': [{ type: core_1.Input },],
+        'closeOnOutsideClick': [{ type: core_1.Input },],
+        'title': [{ type: core_1.Input },],
+        'hideCloseButton': [{ type: core_1.Input },],
+        'cancelButtonLabel': [{ type: core_1.Input },],
+        'submitButtonLabel': [{ type: core_1.Input },],
+        'onOpen': [{ type: core_1.Output },],
+        'onClose': [{ type: core_1.Output },],
+        'onSubmit': [{ type: core_1.Output },],
+        'contentEl': [{ type: core_1.ViewChild, args: ['modalContent',] },],
+        'modalRoot': [{ type: core_1.ViewChild, args: ["modalRoot",] },],
+    };
+    return RouteModal;
+}());
+exports.RouteModal = RouteModal;
+//# sourceMappingURL=RouteModal.js.map
+
+/***/ }),
+/* 279 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+var Modal_1 = __webpack_require__(277);
+var RouteModal_1 = __webpack_require__(278);
+var core_1 = __webpack_require__(2);
+var common_1 = __webpack_require__(39);
+__export(__webpack_require__(277));
+__export(__webpack_require__(278));
+var ModalModule = (function () {
+    function ModalModule() {
+    }
+    ModalModule.decorators = [
+        { type: core_1.NgModule, args: [{
+                    imports: [common_1.CommonModule],
+                    declarations: [
+                        Modal_1.Modal,
+                        RouteModal_1.RouteModal,
+                        Modal_1.ModalHeader,
+                        Modal_1.ModalContent,
+                        Modal_1.ModalFooter,
+                    ],
+                    exports: [
+                        Modal_1.Modal,
+                        RouteModal_1.RouteModal,
+                        Modal_1.ModalHeader,
+                        Modal_1.ModalContent,
+                        Modal_1.ModalFooter,
+                    ],
+                },] },
+    ];
+    /** @nocollapse */
+    ModalModule.ctorParameters = [];
+    return ModalModule;
+}());
+exports.ModalModule = ModalModule;
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+/* 280 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = __webpack_require__(510);
+
+
+/***/ }),
+/* 281 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67939,7 +68262,7 @@ exports.empty = {
 //# sourceMappingURL=Observer.js.map
 
 /***/ }),
-/* 279 */
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67949,7 +68272,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var root_1 = __webpack_require__(51);
+var root_1 = __webpack_require__(52);
 var Observable_1 = __webpack_require__(11);
 /**
  * We need this JSDoc comment for affecting ESDoc.
@@ -68066,7 +68389,7 @@ function dispatchError(arg) {
 //# sourceMappingURL=PromiseObservable.js.map
 
 /***/ }),
-/* 280 */
+/* 283 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68130,17 +68453,17 @@ exports.ScalarObservable = ScalarObservable;
 //# sourceMappingURL=ScalarObservable.js.map
 
 /***/ }),
-/* 281 */
+/* 284 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var PromiseObservable_1 = __webpack_require__(279);
+var PromiseObservable_1 = __webpack_require__(282);
 exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
 //# sourceMappingURL=fromPromise.js.map
 
 /***/ }),
-/* 282 */
+/* 285 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68150,7 +68473,7 @@ exports.of = ArrayObservable_1.ArrayObservable.of;
 //# sourceMappingURL=of.js.map
 
 /***/ }),
-/* 283 */
+/* 286 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68327,7 +68650,7 @@ exports.MergeMapSubscriber = MergeMapSubscriber;
 //# sourceMappingURL=mergeMap.js.map
 
 /***/ }),
-/* 284 */
+/* 287 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68360,7 +68683,7 @@ exports.ObjectUnsubscribedError = ObjectUnsubscribedError;
 //# sourceMappingURL=ObjectUnsubscribedError.js.map
 
 /***/ }),
-/* 285 */
+/* 288 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68370,7 +68693,7 @@ exports.errorObject = { e: {} };
 //# sourceMappingURL=errorObject.js.map
 
 /***/ }),
-/* 286 */
+/* 289 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68382,7 +68705,7 @@ exports.isFunction = isFunction;
 //# sourceMappingURL=isFunction.js.map
 
 /***/ }),
-/* 287 */
+/* 290 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68394,7 +68717,7 @@ exports.isObject = isObject;
 //# sourceMappingURL=isObject.js.map
 
 /***/ }),
-/* 288 */
+/* 291 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68406,7 +68729,7 @@ exports.isPromise = isPromise;
 //# sourceMappingURL=isPromise.js.map
 
 /***/ }),
-/* 289 */
+/* 292 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68418,7 +68741,7 @@ exports.isScheduler = isScheduler;
 //# sourceMappingURL=isScheduler.js.map
 
 /***/ }),
-/* 290 */
+/* 293 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -68464,7 +68787,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(555);
+var	fixUrls = __webpack_require__(558);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -68777,11 +69100,11 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 291 */
+/* 294 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(498);
+        var result = __webpack_require__(501);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -68791,7 +69114,7 @@ function updateLink (link, options, obj) {
     
 
 /***/ }),
-/* 292 */
+/* 295 */
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -68800,10 +69123,10 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 292;
+webpackEmptyAsyncContext.id = 295;
 
 /***/ }),
-/* 293 */
+/* 296 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68813,9 +69136,9 @@ webpackEmptyAsyncContext.id = 292;
 /* unused harmony export ɵINTERNAL_BROWSER_DYNAMIC_PLATFORM_PROVIDERS */
 /* unused harmony export ɵResourceLoaderImpl */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_compiler__ = __webpack_require__(315);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_compiler__ = __webpack_require__(318);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(53);
 
 /**
@@ -68986,11 +69309,11 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__
 
 
 /***/ }),
-/* 294 */
+/* 297 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_module__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_module__ = __webpack_require__(323);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__app_module__["a"]; });
 /**
  * App
@@ -68999,9 +69322,6 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__
 
 
 /***/ }),
-/* 295 */,
-/* 296 */,
-/* 297 */,
 /* 298 */,
 /* 299 */,
 /* 300 */,
@@ -69019,7 +69339,10 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__
 /* 312 */,
 /* 313 */,
 /* 314 */,
-/* 315 */
+/* 315 */,
+/* 316 */,
+/* 317 */,
+/* 318 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -96890,14 +97213,14 @@ function _mergeArrays(parts) {
 //# sourceMappingURL=compiler.es5.js.map
 
 /***/ }),
-/* 316 */
+/* 319 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SlimScrollModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_directives_slimscroll_directive__ = __webpack_require__(317);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_directives_slimscroll_directive__ = __webpack_require__(320);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_classes_slimscroll_options_class__ = __webpack_require__(118);
 /* unused harmony namespace reexport */
 
@@ -96923,7 +97246,7 @@ SlimScrollModule = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 317 */
+/* 320 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -97163,14 +97486,14 @@ SlimScrollDirective = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */](
 
 
 /***/ }),
-/* 318 */
+/* 321 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(23);
 
 
 
@@ -97220,24 +97543,24 @@ AboutComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
         styles: ["\n  "],
         template: "\n    <h1>About</h1>\n    <div>\n      For hot module reloading run\n      <pre>npm run start:hmr</pre>\n    </div>\n    <div>\n      <h3>\n        patrick@AngularClass.com\n      </h3>\n    </div>\n    <pre>this.localState = {{ localState | json }}</pre>\n  "
     }),
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]])
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"]])
 ], AboutComponent);
 
 
 
 /***/ }),
-/* 319 */
+/* 322 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_service__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sidebar_sidebar_component__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map__);
 
 
@@ -97276,11 +97599,11 @@ AppComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
         encapsulation: __WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewEncapsulation"].None,
         providers: [__WEBPACK_IMPORTED_MODULE_4__sidebar_sidebar_component__["a" /* SidebarComponent */]],
         styles: [
-            __webpack_require__(557)
+            __webpack_require__(560)
         ],
         template: "\n \n    <main>\n      <router-outlet></router-outlet>\n    </main>\n  "
     }),
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__app_service__["a" /* AppState */], __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injector"], __WEBPACK_IMPORTED_MODULE_5__angular_http__["c" /* Http */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* Router */]])
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__app_service__["a" /* AppState */], __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injector"], __WEBPACK_IMPORTED_MODULE_5__angular_http__["c" /* Http */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"]])
 ], AppComponent);
 
 /**
@@ -97293,7 +97616,7 @@ AppComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 320 */
+/* 323 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -97301,34 +97624,36 @@ AppComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angularclass_hmr__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angularclass_hmr__ = __webpack_require__(345);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angularclass_hmr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__angularclass_hmr__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__environment__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_routes__ = __webpack_require__(322);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_component__ = __webpack_require__(319);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_resolver__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_routes__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_component__ = __webpack_require__(322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_resolver__ = __webpack_require__(324);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_service__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__home__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__login_login_component__ = __webpack_require__(330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__login_login_component__ = __webpack_require__(333);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__about__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__no_content__ = __webpack_require__(121);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__home_x_large__ = __webpack_require__(328);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__home_x_large__ = __webpack_require__(331);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__sidebar_sidebar_component__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__header_header_component__ = __webpack_require__(324);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__cartright_cartright_component__ = __webpack_require__(323);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__main_main_component__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__header_header_component__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__cartright_cartright_component__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__main_main_component__ = __webpack_require__(334);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__services_AddtocartService__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__styles_styles_scss__ = __webpack_require__(553);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__styles_styles_scss__ = __webpack_require__(556);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__styles_styles_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22__styles_styles_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__styles_headings_css__ = __webpack_require__(554);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__styles_headings_css__ = __webpack_require__(557);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__styles_headings_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_23__styles_headings_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_angular2_wizard__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_angular2_wizard__ = __webpack_require__(349);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_angular2_wizard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_24_angular2_wizard__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_angular2_perfect_scrollbar__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_angular2_perfect_scrollbar__ = __webpack_require__(346);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_angular2_perfect_scrollbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_25_angular2_perfect_scrollbar__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26_ng2_modal__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26_ng2_modal___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_26_ng2_modal__);
 
 
 
@@ -97342,6 +97667,7 @@ AppComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 // App is our top level component
+
 
 
 
@@ -97452,12 +97778,13 @@ AppModule = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
         imports: [
             __WEBPACK_IMPORTED_MODULE_25_angular2_perfect_scrollbar__["PerfectScrollbarModule"].forRoot(PERFECT_SCROLLBAR_CONFIG),
             __WEBPACK_IMPORTED_MODULE_24_angular2_wizard__["FormWizardModule"],
-            __WEBPACK_IMPORTED_MODULE_6__angular_router__["a" /* RouterModule */].forRoot(appRoutes, { enableTracing: true } // <-- debugging purposes only
+            __WEBPACK_IMPORTED_MODULE_26_ng2_modal__["ModalModule"],
+            __WEBPACK_IMPORTED_MODULE_6__angular_router__["RouterModule"].forRoot(appRoutes, { enableTracing: true } // <-- debugging purposes only
             ),
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["b" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
-            __WEBPACK_IMPORTED_MODULE_6__angular_router__["a" /* RouterModule */].forRoot(__WEBPACK_IMPORTED_MODULE_8__app_routes__["a" /* ROUTES */], { useHash: true, preloadingStrategy: __WEBPACK_IMPORTED_MODULE_6__angular_router__["b" /* PreloadAllModules */] })
+            __WEBPACK_IMPORTED_MODULE_6__angular_router__["RouterModule"].forRoot(__WEBPACK_IMPORTED_MODULE_8__app_routes__["a" /* ROUTES */], { useHash: true, preloadingStrategy: __WEBPACK_IMPORTED_MODULE_6__angular_router__["PreloadAllModules"] })
         ],
         /**
          * Expose our Services and Providers into Angular's dependency injection.
@@ -97476,7 +97803,7 @@ AppModule = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 321 */
+/* 324 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -97486,7 +97813,7 @@ AppModule = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__(529);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__(532);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__);
 
 
@@ -97513,7 +97840,7 @@ var APP_RESOLVER_PROVIDERS = [
 
 
 /***/ }),
-/* 322 */
+/* 325 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -97528,26 +97855,29 @@ var ROUTES = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_0__home__["a" /* HomeComponent */] },
     { path: 'home', component: __WEBPACK_IMPORTED_MODULE_0__home__["a" /* HomeComponent */] },
     { path: 'about', component: __WEBPACK_IMPORTED_MODULE_1__about__["a" /* AboutComponent */] },
-    { path: 'detail', loadChildren: function() { return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 564))  .then( function(module) { return module['DetailModule']; } ); } },
-    { path: 'barrel', loadChildren: function() { return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 563))  .then( function(module) { return module['BarrelModule']; } ); } },
+    { path: 'detail', loadChildren: function() { return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 567))  .then( function(module) { return module['DetailModule']; } ); } },
+    { path: 'barrel', loadChildren: function() { return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 566))  .then( function(module) { return module['BarrelModule']; } ); } },
     { path: '**', component: __WEBPACK_IMPORTED_MODULE_2__no_content__["a" /* NoContentComponent */] },
 ];
 
 
 /***/ }),
-/* 323 */
+/* 326 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CartrightComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_AddtocartService__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_jquery__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_modal__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_modal___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_ng2_modal__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jquery__);
+
 
 
 
@@ -97578,19 +97908,19 @@ var CartrightComponent = (function () {
             if (a.TaxCheck == '1') {
                 _this.taxValue = a.Amount;
                 _this.taxCheck = true;
-                __WEBPACK_IMPORTED_MODULE_5_jquery__('.tax-value').prop('checked', true);
-                __WEBPACK_IMPORTED_MODULE_5_jquery__(".tax-amount-input").show();
+                __WEBPACK_IMPORTED_MODULE_6_jquery__('.tax-value').prop('checked', true);
+                __WEBPACK_IMPORTED_MODULE_6_jquery__(".tax-amount-input").show();
             }
             else {
-                __WEBPACK_IMPORTED_MODULE_5_jquery__('.tax-value').prop('checked', false);
-                __WEBPACK_IMPORTED_MODULE_5_jquery__(".tax-amount-input").hide();
+                __WEBPACK_IMPORTED_MODULE_6_jquery__('.tax-value').prop('checked', false);
+                __WEBPACK_IMPORTED_MODULE_6_jquery__(".tax-amount-input").hide();
                 _this.taxValue = 0;
             }
         });
     }
     CartrightComponent.prototype.showCartHideTax = function () {
-        __WEBPACK_IMPORTED_MODULE_5_jquery__(".back-office-div").hide();
-        __WEBPACK_IMPORTED_MODULE_5_jquery__('.whole-cart').show();
+        __WEBPACK_IMPORTED_MODULE_6_jquery__(".back-office-div").hide();
+        __WEBPACK_IMPORTED_MODULE_6_jquery__('.whole-cart').show();
     };
     CartrightComponent.prototype.getSingleAddress = function (elem) {
         this.checkoutShipName = this.selectedAdress.Name;
@@ -97621,73 +97951,74 @@ var CartrightComponent = (function () {
         if (error) {
         }
         else {
-            document.getElementById("PaymentOptionsButton").click();
+            this.modalComponent.open();
+            //document.getElementById("PaymentOptionsButton").click();
             /*jQuery("#PaymentOptionsButton").click();*/
             /*   jQuery('#PaymentOptions').modal('show');*/
         }
     };
     CartrightComponent.prototype.thanksMsgShow = function () {
         var self = this;
-        __WEBPACK_IMPORTED_MODULE_5_jquery__(".OrderLoader").show();
-        __WEBPACK_IMPORTED_MODULE_5_jquery__(".proceed").hide();
-        __WEBPACK_IMPORTED_MODULE_5_jquery__(".shipment-plus-or").hide();
+        __WEBPACK_IMPORTED_MODULE_6_jquery__(".OrderLoader").show();
+        __WEBPACK_IMPORTED_MODULE_6_jquery__(".proceed").hide();
+        __WEBPACK_IMPORTED_MODULE_6_jquery__(".shipment-plus-or").hide();
         this.addtocartService.placeOrder(this.ShippmentMethod, this.cartObject.length, this.customerObject.id, this.cartObject, this.shippmentObect).subscribe(function (a) {
             if (a == 1) {
-                __WEBPACK_IMPORTED_MODULE_5_jquery__(".thankyouMsg").show();
-                __WEBPACK_IMPORTED_MODULE_5_jquery__(".OrderLoader").hide();
+                __WEBPACK_IMPORTED_MODULE_6_jquery__(".thankyouMsg").show();
+                __WEBPACK_IMPORTED_MODULE_6_jquery__(".OrderLoader").hide();
                 setTimeout(function () {
                     self.unsetValues();
-                    __WEBPACK_IMPORTED_MODULE_5_jquery__('#PaymentOptions #closeModal').click();
+                    __WEBPACK_IMPORTED_MODULE_6_jquery__('#PaymentOptions #closeModal').click();
                 }, 5000);
             }
             else {
-                __WEBPACK_IMPORTED_MODULE_5_jquery__(".thankyouMsg>h3").text("There was an error while placing your order!");
+                __WEBPACK_IMPORTED_MODULE_6_jquery__(".thankyouMsg>h3").text("There was an error while placing your order!");
                 setTimeout(function () {
-                    __WEBPACK_IMPORTED_MODULE_5_jquery__(".shippment-options,.or-text,.checkout-shippment-form,.proceed-without-shippment").hide();
-                    __WEBPACK_IMPORTED_MODULE_5_jquery__('.payment-options').show();
+                    __WEBPACK_IMPORTED_MODULE_6_jquery__(".shippment-options,.or-text,.checkout-shippment-form,.proceed-without-shippment").hide();
+                    __WEBPACK_IMPORTED_MODULE_6_jquery__('.payment-options').show();
                 }, 5000);
             }
         });
     };
     CartrightComponent.prototype.SubmitCheckoutShippmentInfo = function () {
         var error;
-        this.checkoutShipName = __WEBPACK_IMPORTED_MODULE_5_jquery__["trim"](this.checkoutShipName);
-        this.checkoutShipPhone = __WEBPACK_IMPORTED_MODULE_5_jquery__["trim"](this.checkoutShipPhone);
-        this.checkoutShipAddress = __WEBPACK_IMPORTED_MODULE_5_jquery__["trim"](this.checkoutShipAddress);
+        this.checkoutShipName = __WEBPACK_IMPORTED_MODULE_6_jquery__["trim"](this.checkoutShipName);
+        this.checkoutShipPhone = __WEBPACK_IMPORTED_MODULE_6_jquery__["trim"](this.checkoutShipPhone);
+        this.checkoutShipAddress = __WEBPACK_IMPORTED_MODULE_6_jquery__["trim"](this.checkoutShipAddress);
         if (this.checkoutShipName == undefined || this.checkoutShipName.length == 0) {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form #checkoutShipName,.checkout-shippment-form-cash-on-delivery .checkoutShipName").addClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".checkout-shippment-form #checkoutShipName,.checkout-shippment-form-cash-on-delivery .checkoutShipName").addClass("errorClass");
             error = true;
         }
         else {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form #checkoutShipName,.checkout-shippment-form-cash-on-delivery .checkoutShipName").removeClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".checkout-shippment-form #checkoutShipName,.checkout-shippment-form-cash-on-delivery .checkoutShipName").removeClass("errorClass");
         }
         if (this.checkoutShipPhone == undefined || this.checkoutShipPhone.length == 0) {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form #checkoutShipPhone,.checkout-shippment-form-cash-on-delivery .checkoutShipPhone").addClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".checkout-shippment-form #checkoutShipPhone,.checkout-shippment-form-cash-on-delivery .checkoutShipPhone").addClass("errorClass");
             error = true;
         }
         else {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form #checkoutShipPhone,.checkout-shippment-form-cash-on-delivery .checkoutShipPhone").removeClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".checkout-shippment-form #checkoutShipPhone,.checkout-shippment-form-cash-on-delivery .checkoutShipPhone").removeClass("errorClass");
         }
         if (this.checkoutShipAddress == undefined || this.checkoutShipAddress.length == 0) {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form #checkoutShipAddress,.checkout-shippment-form-cash-on-delivery .checkoutShipAddress").addClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".checkout-shippment-form #checkoutShipAddress,.checkout-shippment-form-cash-on-delivery .checkoutShipAddress").addClass("errorClass");
             error = true;
         }
         else {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form #checkoutShipAddress,.checkout-shippment-form-cash-on-delivery .checkoutShipAddress").removeClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".checkout-shippment-form #checkoutShipAddress,.checkout-shippment-form-cash-on-delivery .checkoutShipAddress").removeClass("errorClass");
         }
         if (error) {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".SubmitCheckoutShippment").css("display", "block");
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkoutLoader").hide();
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".SubmitCheckoutShippment").css("display", "block");
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".checkoutLoader").hide();
         }
         else {
             this.shippmentObect.id = this.customerObject.id;
             this.shippmentObect.shipName = this.checkoutShipName;
             this.shippmentObect.shipPhone = this.checkoutShipPhone;
             this.shippmentObect.shipAddress = this.checkoutShipAddress;
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".SubmitCheckoutShippment").hide();
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkoutLoader").show();
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".shippment-options").hide();
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".proceed-with-order").show();
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".SubmitCheckoutShippment").hide();
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".checkoutLoader").show();
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".shippment-options").hide();
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".proceed-with-order").show();
         }
     };
     CartrightComponent.prototype.deleteCart = function () {
@@ -97695,59 +98026,59 @@ var CartrightComponent = (function () {
     };
     CartrightComponent.prototype.SubmitCheckoutShippmentInfoForCashOnDelivery = function () {
         var error;
-        this.checkoutShipName = __WEBPACK_IMPORTED_MODULE_5_jquery__["trim"](this.checkoutShipName);
-        this.checkoutShipPhone = __WEBPACK_IMPORTED_MODULE_5_jquery__["trim"](this.checkoutShipPhone);
-        this.checkoutShipAddress = __WEBPACK_IMPORTED_MODULE_5_jquery__["trim"](this.checkoutShipAddress);
+        this.checkoutShipName = __WEBPACK_IMPORTED_MODULE_6_jquery__["trim"](this.checkoutShipName);
+        this.checkoutShipPhone = __WEBPACK_IMPORTED_MODULE_6_jquery__["trim"](this.checkoutShipPhone);
+        this.checkoutShipAddress = __WEBPACK_IMPORTED_MODULE_6_jquery__["trim"](this.checkoutShipAddress);
         if (this.checkoutShipName == undefined || this.checkoutShipName.length == 0) {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipName").addClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipName").addClass("errorClass");
             error = true;
         }
         else {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipName").removeClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipName").removeClass("errorClass");
         }
         if (this.checkoutShipPhone == undefined || this.checkoutShipPhone.length == 0) {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipPhone").addClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipPhone").addClass("errorClass");
             error = true;
         }
         else {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipPhone").removeClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipPhone").removeClass("errorClass");
         }
         if (this.checkoutShipAddress == undefined || this.checkoutShipAddress.length == 0) {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipAddress").addClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipAddress").addClass("errorClass");
             error = true;
         }
         else {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipAddress").removeClass("errorClass");
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".checkout-shippment-form-cash-on-delivery .checkoutShipAddress").removeClass("errorClass");
         }
         if (error) {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".SubmitCheckoutShippmentCashOnDelivery").css("display", "block");
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkoutLoader").hide();
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".SubmitCheckoutShippmentCashOnDelivery").css("display", "block");
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".checkoutLoader").hide();
         }
         else {
             this.shippmentObect.shipName = this.checkoutShipName;
             this.shippmentObect.shipPhone = this.checkoutShipPhone;
             this.shippmentObect.shipAddress = this.checkoutShipAddress;
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".SubmitCheckoutShippment").hide();
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".checkoutLoader").show();
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".shippment-options").hide();
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".proceed-with-order").show();
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".SubmitCheckoutShippment").hide();
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".checkoutLoader").show();
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".shippment-options").hide();
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".proceed-with-order").show();
         }
     };
     CartrightComponent.prototype.CheckoutShippingForm = function () {
-        if (__WEBPACK_IMPORTED_MODULE_5_jquery__('.shippmentFormYes').is(":checked")) {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__('.checkout-shippment-form').slideDown();
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".proceed-without-shippment").hide();
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".or-text").hide();
+        if (__WEBPACK_IMPORTED_MODULE_6_jquery__('.shippmentFormYes').is(":checked")) {
+            __WEBPACK_IMPORTED_MODULE_6_jquery__('.checkout-shippment-form').slideDown();
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".proceed-without-shippment").hide();
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".or-text").hide();
         }
         else {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__('.checkout-shippment-form').slideUp();
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".proceed-without-shippment").show();
-            __WEBPACK_IMPORTED_MODULE_5_jquery__(".or-text").hide();
+            __WEBPACK_IMPORTED_MODULE_6_jquery__('.checkout-shippment-form').slideUp();
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".proceed-without-shippment").show();
+            __WEBPACK_IMPORTED_MODULE_6_jquery__(".or-text").hide();
         }
     };
-    CartrightComponent.prototype.initiateCashPayment = function (event) {
+    CartrightComponent.prototype.initiateCashPayment = function (elem) {
         var _this = this;
-        if (event.target.id == "cashOnDelivery") {
+        if (elem == "cashOnDelivery") {
             this.ShippmentMethod = "cashondelivery";
         }
         else {
@@ -97756,8 +98087,8 @@ var CartrightComponent = (function () {
         this.addtocartService.getShippingAddress(this.customerObject.id).subscribe(function (a) {
             _this.AddressModelArray = a;
         });
-        __WEBPACK_IMPORTED_MODULE_5_jquery__(".payment-options").hide();
-        __WEBPACK_IMPORTED_MODULE_5_jquery__(".shippment-options").show();
+        __WEBPACK_IMPORTED_MODULE_6_jquery__(".payment-options").hide();
+        __WEBPACK_IMPORTED_MODULE_6_jquery__(".shippment-options").show();
     };
     CartrightComponent.prototype.unAttachUser = function () {
         this.customerName = undefined;
@@ -97775,13 +98106,13 @@ var CartrightComponent = (function () {
         }
     };
     CartrightComponent.prototype.taxValueChange = function () {
-        if (__WEBPACK_IMPORTED_MODULE_5_jquery__('.tax-value').is(":checked")) {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__('.tax-amount-input').show();
+        if (__WEBPACK_IMPORTED_MODULE_6_jquery__('.tax-value').is(":checked")) {
+            __WEBPACK_IMPORTED_MODULE_6_jquery__('.tax-amount-input').show();
             this.taxCheck = true;
             this.taxValue = 0;
         }
         else {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__('.tax-amount-input').hide();
+            __WEBPACK_IMPORTED_MODULE_6_jquery__('.tax-amount-input').hide();
             this.taxCheck = false;
             this.taxValue = 0;
             this.addtocartService.setTaxDetails(this.taxValue, this.taxCheck).subscribe(function (a) {
@@ -97857,7 +98188,7 @@ var CartrightComponent = (function () {
     CartrightComponent.prototype.unsetValues = function () {
         this.cart = undefined;
         this.customerObject = undefined;
-        __WEBPACK_IMPORTED_MODULE_5_jquery__(".no-user").click();
+        __WEBPACK_IMPORTED_MODULE_6_jquery__(".no-user").click();
         this.cartObject = undefined;
         this.oneCartObject.size = undefined;
         this.oneCartObject.box = undefined;
@@ -97873,12 +98204,12 @@ var CartrightComponent = (function () {
     CartrightComponent.prototype.ngOnInit = function () {
         var _this = this;
         var self = this;
-        __WEBPACK_IMPORTED_MODULE_5_jquery__(document).ready(function () {
-            __WEBPACK_IMPORTED_MODULE_5_jquery__('[data-dismiss=modal]').on('click', function (e) {
+        __WEBPACK_IMPORTED_MODULE_6_jquery__(document).ready(function () {
+            __WEBPACK_IMPORTED_MODULE_6_jquery__('[data-dismiss=modal]').on('click', function (e) {
                 /*         self.file=undefined;*/
                 /*    self.unsetValues();*/
-                __WEBPACK_IMPORTED_MODULE_5_jquery__(".shippment-options,.or-text,.checkout-shippment-form,.proceed-without-shippment").hide();
-                __WEBPACK_IMPORTED_MODULE_5_jquery__('.payment-options').show();
+                __WEBPACK_IMPORTED_MODULE_6_jquery__(".shippment-options,.or-text,.checkout-shippment-form,.proceed-without-shippment").hide();
+                __WEBPACK_IMPORTED_MODULE_6_jquery__('.payment-options').show();
                 /*  jQuery("").hide();*/
                 var $t = $(this), target = $t[0].href || $t.data("target") || $t.parents('.modal') || [];
                 $(target)
@@ -97931,27 +98262,31 @@ __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Output"])('childData'),
     __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:type", Object)
 ], CartrightComponent.prototype, "outgoingData", void 0);
+__WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewChild"])('PaymentOptions'),
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:type", __WEBPACK_IMPORTED_MODULE_5_ng2_modal__["ModalModule"])
+], CartrightComponent.prototype, "modalComponent", void 0);
 CartrightComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: 'Cartright',
-        template: __webpack_require__(519),
-        styles: [__webpack_require__(558), __webpack_require__(291)],
+        template: __webpack_require__(522),
+        styles: [__webpack_require__(561), __webpack_require__(294)],
         providers: []
     }),
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__services_AddtocartService__["a" /* AddtocartService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]])
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__services_AddtocartService__["a" /* AddtocartService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"]])
 ], CartrightComponent);
 
 
 
 /***/ }),
-/* 324 */
+/* 327 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(23);
 
 
 
@@ -97997,25 +98332,25 @@ var HeaderComponent = (function () {
 HeaderComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: 'Header',
-        template: __webpack_require__(520),
-        styles: [__webpack_require__(559)]
+        template: __webpack_require__(523),
+        styles: [__webpack_require__(562)]
     }),
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]])
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"]])
 ], HeaderComponent);
 
 
 
 /***/ }),
-/* 325 */
+/* 328 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_service__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__title__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__title__ = __webpack_require__(329);
 
 
 
@@ -98067,36 +98402,36 @@ HomeComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
         /**
          * Our list of styles in our component. We may add more to compose many styles together.
          */
-        styles: [__webpack_require__(560)],
+        styles: [__webpack_require__(563)],
         /**
          * Every Angular template is first compiled by the browser before Angular runs it's compiler.
          */
-        template: __webpack_require__(521)
+        template: __webpack_require__(524)
     }),
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__app_service__["a" /* AppState */], __WEBPACK_IMPORTED_MODULE_4__title__["a" /* Title */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* Router */]])
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__app_service__["a" /* AppState */], __WEBPACK_IMPORTED_MODULE_4__title__["a" /* Title */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"]])
 ], HomeComponent);
 
 
 
 /***/ }),
-/* 326 */
+/* 329 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__title_service__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__title_service__ = __webpack_require__(330);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__title_service__["a"]; });
 
 
 
 /***/ }),
-/* 327 */
+/* 330 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Title; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(40);
 
 
 
@@ -98125,17 +98460,17 @@ Title = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 328 */
+/* 331 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__x_large_directive__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__x_large_directive__ = __webpack_require__(332);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__x_large_directive__["a"]; });
 
 
 
 /***/ }),
-/* 329 */
+/* 332 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -98174,15 +98509,15 @@ XLargeDirective = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 330 */
+/* 333 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Login; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_UsersService__ = __webpack_require__(338);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_UsersService__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jquery__);
 
@@ -98271,36 +98606,36 @@ var Login = (function () {
 Login = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: 'login',
-        styles: [__webpack_require__(556)],
-        template: __webpack_require__(522),
+        styles: [__webpack_require__(559)],
+        template: __webpack_require__(525),
         providers: [__WEBPACK_IMPORTED_MODULE_2__services_UsersService__["a" /* UsersService */]],
         encapsulation: __WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewEncapsulation"].None,
         host: {
             class: 'login-page app'
         }
     }),
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_UsersService__["a" /* UsersService */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["d" /* Router */]])
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_UsersService__["a" /* UsersService */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["Router"]])
 ], Login);
 
 
 
 /***/ }),
-/* 331 */
+/* 334 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_productslistService__ = __webpack_require__(340);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_customersService__ = __webpack_require__(339);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_CustomergroupsModel__ = __webpack_require__(335);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_CategoryModel__ = __webpack_require__(334);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_CustomersModel__ = __webpack_require__(336);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ng2_datepicker__ = __webpack_require__(504);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_productslistService__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_customersService__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_CustomergroupsModel__ = __webpack_require__(338);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_CategoryModel__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_CustomersModel__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ng2_datepicker__ = __webpack_require__(507);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_AddtocartService__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_jquery__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_jquery__);
@@ -99048,19 +99383,19 @@ __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 MainComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: 'Main',
-        template: __webpack_require__(523),
+        template: __webpack_require__(526),
         inputs: ['myName'],
         outputs: ['myEvents'],
-        styles: [__webpack_require__(291)],
+        styles: [__webpack_require__(294)],
         providers: [__WEBPACK_IMPORTED_MODULE_4__services_productslistService__["a" /* ProductslistService */], __WEBPACK_IMPORTED_MODULE_5__services_customersService__["a" /* CustomerService */]]
     }),
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_core__["Renderer"], __WEBPACK_IMPORTED_MODULE_10__services_AddtocartService__["a" /* AddtocartService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injector"], __WEBPACK_IMPORTED_MODULE_4__services_productslistService__["a" /* ProductslistService */], __WEBPACK_IMPORTED_MODULE_5__services_customersService__["a" /* CustomerService */]])
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["c" /* __metadata */]("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_core__["Renderer"], __WEBPACK_IMPORTED_MODULE_10__services_AddtocartService__["a" /* AddtocartService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injector"], __WEBPACK_IMPORTED_MODULE_4__services_productslistService__["a" /* ProductslistService */], __WEBPACK_IMPORTED_MODULE_5__services_customersService__["a" /* CustomerService */]])
 ], MainComponent);
 
 
 
 /***/ }),
-/* 332 */
+/* 335 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -99084,15 +99419,15 @@ NoContentComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 333 */
+/* 336 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["main"] = main;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(296);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_environment__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app__ = __webpack_require__(297);
 /**
  * Angular bootstrapping
  */
@@ -99161,7 +99496,7 @@ function _domReadyHandler() {
 
 
 /***/ }),
-/* 334 */
+/* 337 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -99200,7 +99535,7 @@ var CategoryModel = (function (_super) {
 
 
 /***/ }),
-/* 335 */
+/* 338 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -99238,7 +99573,7 @@ var CustomergroupsModel = (function (_super) {
 
 
 /***/ }),
-/* 336 */
+/* 339 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -99284,17 +99619,17 @@ var CustomersModel = (function (_super) {
 
 
 /***/ }),
-/* 337 */,
-/* 338 */
+/* 340 */,
+/* 341 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsersService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serviceUrl__ = __webpack_require__(66);
 
 
@@ -99323,16 +99658,16 @@ UsersService = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 339 */
+/* 342 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomerService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serviceUrl__ = __webpack_require__(66);
 
 
@@ -99400,16 +99735,16 @@ CustomerService = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 
 
 /***/ }),
-/* 340 */
+/* 343 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProductslistService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serviceUrl__ = __webpack_require__(66);
 
 
@@ -99463,7 +99798,7 @@ ProductslistService = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */](
 
 
 /***/ }),
-/* 341 */
+/* 344 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -99534,7 +99869,7 @@ exports.createInputTransfer = createInputTransfer;
 //# sourceMappingURL=helpers.js.map
 
 /***/ }),
-/* 342 */
+/* 345 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -99543,11 +99878,11 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 // Hot Module Replacement
-__export(__webpack_require__(341));
+__export(__webpack_require__(344));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 343 */
+/* 346 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -99555,11 +99890,11 @@ __export(__webpack_require__(341));
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-__export(__webpack_require__(344));
+__export(__webpack_require__(347));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 344 */
+/* 347 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -99570,16 +99905,16 @@ function __export(m) {
 __export(__webpack_require__(123));
 __export(__webpack_require__(124));
 __export(__webpack_require__(67));
-__export(__webpack_require__(345));
+__export(__webpack_require__(348));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 345 */
+/* 348 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var common_1 = __webpack_require__(52);
+var common_1 = __webpack_require__(39);
 var core_1 = __webpack_require__(2);
 var perfect_scrollbar_component_1 = __webpack_require__(123);
 var perfect_scrollbar_directive_1 = __webpack_require__(124);
@@ -99651,7 +99986,7 @@ exports.provideDefaultConfig = provideDefaultConfig;
 //# sourceMappingURL=perfect-scrollbar.module.js.map
 
 /***/ }),
-/* 346 */
+/* 349 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -99666,7 +100001,7 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 var core_1 = __webpack_require__(2);
-var common_1 = __webpack_require__(52);
+var common_1 = __webpack_require__(39);
 var wizard_component_1 = __webpack_require__(125);
 var wizard_step_component_1 = __webpack_require__(86);
 __export(__webpack_require__(125));
@@ -99701,9 +100036,6 @@ var FormWizardModule_1;
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 347 */,
-/* 348 */,
-/* 349 */,
 /* 350 */,
 /* 351 */,
 /* 352 */,
@@ -99846,7 +100178,10 @@ var FormWizardModule_1;
 /* 489 */,
 /* 490 */,
 /* 491 */,
-/* 492 */
+/* 492 */,
+/* 493 */,
+/* 494 */,
+/* 495 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(31)(undefined);
@@ -99860,7 +100195,7 @@ exports.push([module.i, "body {\n  margin: 0;\n  color: #6a6f8c;\n  background: 
 
 
 /***/ }),
-/* 493 */
+/* 496 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(31)(undefined);
@@ -99874,48 +100209,6 @@ exports.push([module.i, "/* this file will be extracted to main dist folder and 
 
 
 /***/ }),
-/* 494 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(31)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "@font-face {\r\n    font-family: 'goudy_old_styleregular';\r\n    src: url(" + __webpack_require__(502) + ") format('woff2'),\r\n         url(" + __webpack_require__(501) + ") format('woff');\r\n    font-weight: normal;\r\n    font-style: normal;\r\n\r\n}\r\n\r\nhtml, body{\r\n  height: 100%;\r\n  font-family:'goudy_old_styleregular';\r\n  background:#EAEDF1;\r\n}\r\n\r\n.left-main,.right-main{\r\n\twidth:45%;\r\n\tposition: relative;\r\n\tfloat: left;\r\n}\r\n\r\na.active {\r\n  background-color: gray;\r\n}\r\n#main-right{\r\npadding:8px 25px 10px 25px !important;\r\n} \r\n#main2{\r\nmargin-right:0;\r\n}\r\n#main{\r\n  padding-right: 0;\r\n}\r\n\r\nnav a{\r\n  background:transparent;\r\n}\r\n.custom-right-navbar{\r\n\tborder-radius:0;\r\n\tmargin-bottom:0;\r\n\tbackground-color: #fff;\r\n\tpadding-top: 4px;\r\n}\r\n.custom-navbar{\r\n\tz-index: 2;\r\n\tborder-radius:0;\r\n\t    background-color: #fff;\r\n    box-shadow: 0 0 1px rgba(76,86,103,.25), 0 2px 5px rgba(31,37,50,.32);\r\n    -webkit-box-shadow: 0 0 1px rgba(76,86,103,.25), 0 2px 5px rgba(31,37,50,.32);\r\n    -moz-box-shadow: 0 0 1px rgba(76,86,103,.25),0 2px 5px rgba(31,37,50,.32);\r\n    margin-bottom: 3px;padding-top: 4px;\r\n}\r\n.custom-right-navbar .navbar-nav li a{\r\n\tpadding-left:0;\r\n}\r\n.cart-count p{\r\n\ttext-align:center;\r\n\t    padding-top: 18px;\r\n}\r\n.cart-count{\r\n\tdisplay:inline-block;\r\n\twidth:80%;\r\n}\r\n\r\n.fa-bell{\r\n\tfont-size: 26px !important;\r\n    color: #768496 !important;\r\n\t    margin-top: 1px;\r\n    margin-right: 20px;\r\n}\r\n.fa-trash,.fa-ellipsis-h{\r\n\t    color: #768496 !important;\r\n\t\tfont-size: 26px !important;\r\n}\r\n.fa-menu{\r\n\tfont-size: 26px !important;\r\n    color: #768496 !important;\r\n\t    margin-top: 4px;\r\n}\r\n.fa-menu:before {\r\n    content: '\\F0C9';\r\n}\r\n.navbar-form{\r\n\twidth:550px;\r\n}\r\n.fa-ellipsis-v,a.dropdown-toggle{\r\n\tfont-size:14px !important;\r\n\tcolor: #3c4857 !important;\r\n    font-weight: normal;\r\n}\r\n.navbar-form input:focus{\r\nbox-shadow:none;\r\n}\r\n.dropdown-toggle .caret{\r\n\tmargin-top:-3px;\r\n\tmargin-left:8px;\r\n\tcolor: #3c4857 !important;\r\n}\r\n.navbar-form,.navbar-form button,.navbar-form input{\r\n\theight:40px;\r\n    color: #3C4867;\r\n\tborder: 0 none;\r\n    background: #EDEFF2;\r\n    box-shadow:none;\r\n    font-size: 13px;\r\n\toutline:none;\r\n    border-radius: 0;\r\n}\r\n#main2{\r\n\tbackground: #EDEFF2;\r\n}\r\n\r\n/* Radio Buttons */\r\n\r\n\r\n.radio label.radioLabels {\r\n  display: inline-block;\r\n  cursor: pointer;\r\n  position: relative;\r\n  padding-left: 25px;\r\n  margin-right: 15px;\r\n  font-size: 13px;\r\n}\r\ninput[type=radio] {\r\n  display: none ;\r\n}\r\n\r\n.radio label.radioLabels:before {\r\n  border-radius: 8px;\r\n}\r\n\r\ninput[type=radio]:checked + label.radioLabels:before {\r\n    content: \"\\2022\";\r\n    color: #f3f3f3;\r\n    font-size: 25px;\r\n    text-align: center;\r\n    line-height: 20px;\r\n}\r\n\r\n.radio label.radioLabels:before {\r\n  content: \"\";\r\n  display: inline-block;\r\n \r\n  width: 16px;\r\n  height: 16px;\r\n \r\n  margin-right: 10px;\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: 1px;\r\n  background-color: #7FCBC2;\r\n  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);\r\n}\r\n#loader i{\r\n  color:#7FCBC2;\r\n}\r\n#loader{\r\n      text-align: center;\r\n    margin-top: 50px;\r\n    display: none;\r\n}\r\n.our-name p{\r\ntext-align: center;\r\n}\r\n/* Radio Buttons */\r\n/* Media Queries */\r\n\r\n\r\n\r\n\r\n\r\n/*iPad 1 & 2 in portrait*/\r\n\r\n\r\n@media only screen \r\nand (min-device-width : 768px) \r\nand (max-device-width : 1024px) \r\nand (orientation : portrait) \r\nand (-webkit-min-device-pixel-ratio: 1) { \r\n\r\n.circle-box{\r\n\twidth:50px !important;\r\n\theight:50px !important;\r\n\t\r\n}\r\n\r\n.all-text{\r\n\tline-height: 50px !important;\r\n\r\n}\r\n\r\n.left-main, .right-main{\r\n\twidth:44% !important;\r\n}\r\n.main-item-order{\r\n    height: calc(100vh - 180px) !important;\r\n   \r\n}\r\n.table-cart{\r\n\tpadding-left:15px !important;\r\n}\r\n\r\n#main-right {\r\n    padding: 8px 10px 10px 25px !important;\r\n}\r\n.actions-customer h2{\r\n    text-align: left;\r\n    font-size: 26px !important;\r\n}\r\n\r\n.search-input img{\r\n    top: 5px !important;\r\n    width: 30px !important;\r\n    right: 12px !important;\r\n}\r\n }\r\n\r\n\r\n\r\n\r\n\r\n/* Media Queries */", ""]);
-
-// exports
-
-
-/***/ }),
-/* 495 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(31)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "/* Products */\r\n.custom-right-navbar{\r\n\theight:60px;\r\n}\r\n.actions-customer{\r\n\tbackground: #7FCBC2;\r\n}\r\nnav{\r\n\tmargin-top:0;\r\n}\r\n\r\n\r\n.main-content .mCSB_dragger_bar{\r\n\tdisplay:none;\r\n}\r\n.main-content{\r\n\theight: calc(100vh - 141px);\r\n}\r\n.products-row{\r\n\tmargin-left:15px !important;\r\n\tmargin-right:15px !important;\r\n\tpadding-top:15px;\r\n}\r\n.products-row .col-md-3{\r\n\tpadding-right:0;\r\n}\r\n.item-list{\r\n\tbackground:white;\r\n\tpadding: 8px 10px 0px;\r\n\tfloat: left;\r\n    width: 100%;\r\n    cursor: pointer;\r\n}\r\n.product-item{\r\n\tbackground:white;\r\n\tpadding: 10px 10px 5px;\r\n    margin-bottom: 18px;\r\n    float: left;\r\n    width: 100%;\r\n    cursor: pointer;\r\n}\r\n.product-item .product-img{\r\n\ttext-align:center;\r\n\tmax-height: calc((66vw - 591px) / 4);\r\n\twidth:auto;\r\n\tdisplay:block;\r\n}\r\n.final-price{\r\n\tfont-size:13px;\r\n}\r\n.availability,.available_qty{\r\n\t    font-size: 11px;\r\n\t\tcolor:#6f7d90;\r\n\t\tfont-family:'Open Sans';\r\n\t\tfont-weight:400 !important;\r\n}\r\n.product-name{\r\n\tmin-height: 25px;\r\n    max-height: 25px;\r\n    overflow: hidden;\r\n\tfont-size:13px;\r\n}\r\n.product-count p{\r\n\tfont-size: 14px;\r\n\tcolor: #6f7d90;\r\n\tfont-family: sans-serif;\r\n}\r\n.row{\r\n\t    margin-right: 0px;\r\n    margin-left: 0px;\r\n}\r\n.page-number{\r\n\tfont-family: sans-serif;\r\n\tcolor: #464646;\r\n    font-size: 14px;\r\n}\r\n.pagination-list li{\r\nlist-style-type:none;\r\npadding-right:10px;\r\ndisplay:inline-block;}\r\n\r\n.pagination-list .fa{\r\n\tcolor: #464646;\r\n}\r\n.myFooter{\r\n\tmargin-left:30px;\r\n\tmargin-right:10px;\r\n}\r\n.myFooter>.row{\r\n\tpadding-top: 20px;\r\n}\r\n.users-modal .fa{\r\n\tfont-size:24px;\r\n\tcolor: #6f7d90;\r\n}\r\n.no-padding{\r\n\tpadding-left:0;\r\n\tpadding-right:0;\r\n}\r\n.actions-customer h2{\r\n\tcolor:white;\r\n\ttext-align: left;\r\n\tmargin:5px 5px;\r\n\tfont-size:50px;\r\n}\r\n.actions-customer{\r\ntext-align: left;\r\nborder-top: 2px solid #d7d7d7;\r\nborder-bottom: 1px solid #d7d7d7;\r\n}\r\n.guest-text{\r\n\tcursor:default;\r\n\tcolor: #6f7d90;\r\n\tfont-family: sans-serif;\r\n}\r\n.align-right{\r\n\ttext-align:right;\r\n}\r\n.users-modal{\r\n\tborder:none;\r\n\tbackground:transparent;\r\n\t    margin-top: -5px;\r\n}\r\n.btn-custom-modal{\r\n\tborder:none;\r\n\tbackground:transparent;\r\n\tfont-family: sans-serif;\r\n\t\tcolor: #6f7d90;\r\n    font-size: 14px;\r\n\tfont-weight:400;\r\n}\r\n.main-item-order{\r\n\t    \r\n\t\t   /* height: calc(100vh - 110px);*/\r\n\t\t   height: calc(100vh - 202px);\r\n\t    background: #eaedf1;\r\n\t\toverflow: hidden;\r\n\t\t    padding-bottom: 100px;\r\n}\r\n\r\n.product-item{\r\n\t\r\n\theight:74px;\r\n}\r\n.main-data,.delete{\r\n\t\r\n\tposition:relative;\r\n\tfloat:left;\r\n}\r\n.main-data{\r\n width:94%;\t\r\n}\r\n.cart-footer{\r\n\tposition: absolute;\r\n    bottom: 0;\r\n    width: 98%;\r\n    background: #fff;\r\n    padding: 7px 15px 12px;\r\n    border-top: 1px solid #d7d7d7;\r\n}\r\n\r\n.item-image{\r\n\t\r\n\t    height: 64px;\r\n\t\twidth: 60px;\r\n}\r\n.cart-list{\r\n\tmax-height: calc(100vh - 418px);\r\n\t    padding-left: 0;\r\n}\r\n.cart-list li{\r\n\tlist-style-type:none;\r\n\t    border-bottom: 1px solid #d7d7d7;\r\n}\r\n.item-image,.item-detail,.item-price{\r\n\tdisplay:inline-block;\r\n}\r\n.delete i{\r\n\t    color: #6f7d90;\r\n\tfont-size:20px !important;\r\n}\r\n.delete{\r\n\twidth:6%;\r\n\t    padding-top: 15px;\r\n}\r\n.item-price span{\r\n\ttext-align: right;\r\n    color: #363e48;\r\n}\r\n.circle{\r\n\tborder:1px solid #6f7d90;\r\n\tborder-radius:50%;\r\n\tpadding-top:2px;\r\n}\r\n.item-image{    width: 12%;\r\n}\r\n.item-price{\r\n\ttext-align:right;\r\n\tmargin-right:5px;\r\n\twidth: 17%;\r\n}\r\n.item-detail{\r\n\t width:66%;\r\n    align-self: center;\r\n}\r\n.item-detail>h4{\r\n\t    font-size: 14px;\r\n\t\t    color: #363e48;\r\n\t\t\tmargin:0;\r\n}\r\n.item-image img{\r\n\tmax-height: 64px;\r\n    min-width: 52px;\r\n\tmax-width: 100%;\r\n    height: auto;\r\n    position: relative;\r\n    text-align: center;\r\n    align-self: center;\r\n}\r\n.total-row{\r\n\tpadding: 8px 0 5px;\r\nborder-bottom:none;\t\r\n}\r\n\r\n.cart-buttons{\r\n\t\r\n\t    padding: 8px 0 5px;\r\n\t\tmargin-bottom:15px;\r\n}\r\n.hold{\r\nposition:relative;\r\nfloat:left;\r\nwidth:34%;\r\n}\r\n.checkout{\r\nposition:relative;\t\r\nfloat:left;\r\nwidth:58%;\r\n margin-left: 6%;\r\n}\r\n.checkout-button{\r\n\theight: 50px;\r\n\tline-height: 35px;\r\n    padding-top: 0;\r\n    padding-bottom: 0;\r\n\t background: #D43A2F;\r\n\t border:1px solid #D43A2F;\r\n\t color:white;\r\n\t text-transform:uppercase;\r\n    width: 100%;\r\n\tborder-radius: 3px;\r\n    flex-grow: 1;\r\n}\r\n.hold-button{\r\n\tmargin-left:15px;\r\n\theight: 50px;\r\n\tline-height: 35px;\r\n    padding-top: 0;\r\n    padding-bottom: 0;\r\n\t background: #6f7d90;\r\n\t border:1px solid #6f7d90;\r\n\t color:white;\r\n\t text-transform:uppercase;\r\n    width: 100%;\r\n\t    border-radius: 3px;\r\n    flex-grow: 1;\r\n    margin-right: 20px;\r\n}\r\n.sub-total-row{\r\n\tborder-bottom: 1px solid #d7d7d7;\r\n\tpadding: 8px 0 5px;\r\n}\r\n.left-text,.right-text{\r\n\tposition:relative;\r\n\tfloat:left;\r\n\twidth:50%;\r\n\t\r\n}\r\n.left-text .heading{\r\n\tmargin-bottom: 0;\r\n\tpadding-left:15px;\r\n\t    color: #363e48;\r\n    font-weight: normal;\r\n\tfont-size:14px;\r\n\tfont-family: sans-serif;\r\n}\r\n.right-text{\r\ntext-align:right;\r\npadding-right:15px;\t\r\n}\r\n.right-text .price{\r\n\tmargin-bottom: 0;\r\n\tfont-weight:600;\r\n\tcolor: black;\r\n\tfont-size:14px;\r\n\tfont-family: sans-serif;\r\n}\r\n\r\n.custom-right-navbar .navbar-nav{\r\n\theight:60px;\r\n}\r\n.custom-right-navbar .navbar-nav>li>a{\r\n\tpadding-top:6px;\r\n}\r\n.customer-name{\r\n\tborder-left:1px solid #ccc;\r\nborder-right:1px solid #ccc;\r\npadding:10px 0px;\r\n}\r\n.customer-name h3{\r\n\ttext-align: center;\r\n\tfont-style: italic;\r\n\tfont-size:30px;\r\n\tcolor:black;\r\n\tmargin-top: 0;\r\n    margin-bottom: 0;\r\n\t\r\n}\r\n.background-th{\r\n\theight:46px;\r\n\tcolor:white;\r\n\tbackground:rgba(126,203,194,0.4);\r\n}\r\n.no-left-border{\r\n\tborder-left:none !important;\r\n}\r\n.no-right-border{\r\n\tborder-right:none !important;\r\n}\r\n.blue-color{\r\n\ttext-transform: uppercase;\r\n\tfont-size:16px;\r\n\tcolor:#7FCBC2;\r\n\tfont-weight: 600;\r\n}\r\n.paddingLeft{\r\n\tpadding-left:0;\r\n}\r\nsmall{\r\n\tcolor:#7FCBC2;\r\n\t    font-size: 14px;\r\n    font-weight: 500;\r\n}\r\n.price-total-box{\r\n\tfont-size:18px;\r\n\tfont-weight: bold;\r\n\tcolor:#7FCBC2;\r\n}\r\n.uppercase{\r\n\tpadding-left:30px;\r\n\tfont-size:18px;\r\n\ttext-transform: uppercase;\r\n\tcolor:#7FCBC2;\r\n\tfont-weight: bold;\r\n}\r\n.table-bordered,.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{\r\n  border: 1px solid #7FCBC2;\r\n}\r\n.empty{\r\n\tcolor:#7FCBC2;\r\n\tbackground:#7FCBC2;\r\n}\r\n.upload .dropdown-toggle i{\r\ncolor:#7FCBC2;\r\nfont-size:20px;\r\n}\r\n.upload .dropdown-toggle{\r\nbackground: none;\r\n    border: none;\r\n\tpadding:0;\r\n\tmargin-top: 8px;\r\n\t    margin-left: 12px;\r\n}\r\n.pause,.cancel{\r\n\tposition: relative;\r\n\tfloat:left;\r\n\tmargin-left:15px;\r\n\tmargin-top: 9px;\r\n}\r\n.pause-button,.cancel-button{\r\n\tborder:none;\r\n\tbackground:none;\r\n\tdisplay: inline-block;\r\n}\r\n\r\n.pause-button i, .cancel-button i{\r\n\tcolor: #7FCBC2;\r\n    font-size: 20px;\r\n}\r\n.table-cart{\r\n\tmax-height: calc(100vh - 80px);\r\n\tpadding-left:40px;\r\n}\r\n.Customer-full-detail{\r\n\tdisplay:none;\r\n\tpadding-left:75px;\r\n}\r\n.left-pic,.right-name{\r\n position: relative;\r\n float:left;\r\n}\r\n.right-name{\r\n\tmargin-left: 20px;\r\n}\r\n.left-less{\r\n\tpadding-left:10px !important;\r\n}\r\n.toCheckout i{\r\n\tcolor:white;\r\n\tfont-weight: bold;\r\n\t\r\n}\r\n.toCheckout{\r\n\tbackground:#7FCBC2;\r\n\tborder:#7FCBC2;;\r\n\twidth:35px;\r\n\t    height: 135px;\r\n\tposition: absolute;\r\n}\r\n.small-tex{\r\n\tfont-size:12px;\r\n\tcolor:#7FCBC2;\r\n\tmargin-bottom:0;\r\n}\r\n.colorBox{\r\n\twidth:25px;\r\n\theight:25px;\r\n\tbackground:#7FCBC2;\r\n\tmargin-right:10px;\r\n\tdisplay: inline-block;\r\n}\r\n.deleteRow img{\r\nwidth:25px;\r\n}\r\n.deleteRow{\r\n\t\r\n\tcursor: pointer;\r\n\twidth: 100%;\r\n    height: 100%;\r\n    background:none;\r\n\tborder:none;\r\n\r\n}\r\n.Checkout{\r\n\t    width: 100%;\r\n    min-height: 41px;\r\n    background: #7FCBC2;\r\n    color: #7FCBC2;\r\n\ttext-align: center;\r\n    padding-top: 11px;\r\n    border: none;\r\n\theight: calc(6vh - 11px);\r\n\tcursor: pointer;\r\n}\r\n.Checkout i{\r\n\tcolor:white;\r\n\tfont-size:20px;\r\n\tfont-weight: light;\r\n}\r\n.deleteRow i{\r\n\t    font-size: 32px !important;\r\n    color: #7FCBC2 !important;\r\n\tfont-weight: light;\r\n}\r\n.background-colored{\r\n\tbackground: #7FCBC2 !important;\r\n}\r\n.no-padding-all{\r\n\tpadding:0 !important;\r\n\tbackground: #7FCBC2;\r\n\t    border-bottom: 2px solid #7fcbc2 !important;\r\n}\r\n.no-user{\r\n\tfloat:right;\r\n\tmargin-right:10px;\r\n\tcolor:#7FCBC2;\r\n\tcursor: pointer;\r\n\tbackground: none;\r\n\tborder:none;\r\n}\r\n.price-row p{\r\n\tmargin-bottom:0 !important;\r\n}\r\n.price-row p:first-child{\r\n\tfont-size: 24px;\r\n    color: green;\r\n}\r\n.modal-body{\r\n\tpadding:0 !important;\r\n}\r\n.price-row p.blue{\r\n\tfont-size: 24px;\r\n    color: #7FCBC2;\r\n}\r\n.price-row p.grey{\r\n\tfont-size: 24px;\r\n    color: #cacaca;\r\n}\r\n.price-row{\r\n\t    border-bottom: 1px solid #ccc;\r\n\t\tmargin-top: 10px;\r\n    \tpadding-bottom: 8px;\r\n\r\n}\r\n.modal-header{\r\n\tpadding:0;\r\n}\r\n.modal-content{\r\n\tborder-radius: 0 !important;\r\n\tmin-height: 428px;\r\n\tbackground:#EDEFF2;\r\n}\r\n.heading-box{\r\n\tbackground: #7FCBC2;\r\n\theight:30px;\r\n\ttext-align: center;\r\n\tmargin-top:0 !important;\r\n}\r\n.heading-box h3{\r\n  margin-top:0 !important;\r\n  color:white;\r\n  line-height: 30px;\r\n}\r\n.modal-header .close {\r\n    margin-top: 5px;\r\n    margin-right: 10px;\r\n\tcolor:White;\r\n}\r\n#closeModal{\r\n\tborder: none;\r\n    background: none;\r\n    position: absolute;\r\n    left: 10px;\r\n    top: 5px;\r\n    color: white;\r\n\r\n}\r\n.payment-methods-row{\r\n\tmargin-top:50px;\r\n}\r\n.payment-methods-row .col-md-3{\r\n\tmargin-top:10px;\r\n}\r\n.option-box{\r\n\tdisplay: table-cell;\r\n\tvertical-align: middle;\r\n    min-width: 142px;\r\ncursor:pointer;\r\nheight:120px;\r\ntext-align: center;\r\nmargin:0 auto;\r\nbackground:transparent;\r\nborder:2px solid #7FCBC2;\r\n    border-radius: 4px;\r\n}\r\n\r\n.option-box i{\r\n color:#7FCBC2;\r\n     font-size: 60px;\r\n}\r\n\r\n.option-box p{\r\n\tfont-size: 14px;\r\n    margin-top: 10px;\r\n\ttext-transform: uppercase;\r\n\tcolor:#7FCBC2;\r\n\tfont-weight: bold;\r\n}\r\n\r\n.modal-dialog{\r\n\twidth: 700px;\r\n    min-height: 428px;\r\n    margin: 30px auto;\r\n}\r\n.credit-card-steps{\r\n\tdisplay:none;\r\n}\r\n.shippment-options,.checkout-shippment-form{\r\n\tdisplay: none;\r\n}\r\n.shippment-check{\r\n\ttext-align: center;\r\n    margin-top: 30px;\r\n}\r\n.new-form-inputs{\r\n    border:none;\r\n    border-bottom:1px solid #7FCBC2;\r\n    padding-left:10px;\r\n    background:transparent;\r\n    height:35px;\r\n    width:100%;\r\n}\r\n.checkoutLoader i{\r\ncolor:#7FCBC2;\r\n}\r\n.checkoutLoader{\r\n\t    width: 50px;\r\n    margin: 50px auto;\r\n\r\n}\r\n\r\n.SubmitCheckoutShippment:hover{\r\n    \r\n    color:white;\r\n    \r\n    background-color:#7FCBC2;\r\n    -webkit-transition: background-color 1s linear;\r\n    -ms-transition: background-color 1s linear;\r\n    transition: background-color 1s linear;\r\n\r\n}\r\n.SubmitCheckoutShippment{\r\n\r\n\ttext-align: center;\r\n\r\n    width:50%;\r\n    font-size:18px;\r\n     margin: 20px auto;\r\n    height:50px;\r\n    background:transparent;\r\n    border:1px solid #7FCBC2;\r\n}\r\n.incompleteCheckoutShippment,.checkoutLoader,.proceed-with-order{\r\n\tdisplay: none;\r\n}\r\n.errorClass{\r\n    border:1px solid Red !important;\r\n}\r\n.proceed{\r\n\twidth:80%;\r\n\theight:100px;\r\n\ttext-align: center;\r\n\t width: 80%;\r\n    height: 100px;\r\n    text-align: center;\r\n    margin: 100px auto;\r\n\r\n}\r\n.proceed-button{\r\n\twidth:100%;\r\n\theight:100%;\r\n\tborder:none;\r\n\tbackground:#7FCBC2;\r\n\tcolor:white;\r\n\t\tfont-size: 3.2em;\r\n}\r\n.proceed-button i{\r\n\tfont-size: 1.3em;\r\n}\r\n.thankyouMsg{\r\n\tdisplay: none;\r\n\ttext-align: center;\r\n}\r\n.button-close{\r\n\theight:40px;\r\n\twidth:20%;\r\n\tborder-radius:0 !important;\r\n\tline-height: 27px;\r\n\tcolor:white;\r\n\tbackground:#7FCBC2;\r\n\tborder:1px solid #7FCBC2;\r\n}\r\n.proceed-without-shippment .proceed{\r\n\twidth: 80%;\r\n    height: 100px;\r\n    text-align: center;\r\n    margin: 0px auto;\r\n}\r\n.cash-on-delivery-tab{\r\n\tdisplay: none;\r\n}\r\n.OrderLoader i{\r\n    font-weight: 24px;\r\n\tcolor:#7FCBC2;\r\n}\r\n.OrderLoader{\r\n\twidth:50px;\r\n\tmargin:20px auto;\r\n\tdisplay: none;\r\n}\r\n.back-office-div{\r\n\tdisplay: none;\r\n\tpadding: 25px 40px;\r\n\theight: calc(100vh - 11vh);\r\n}\r\n.setting-row{\r\n\tmargin-top:20px;\r\n}\r\n.new-form-inputs{\r\n    border:none;\r\n    border-bottom:1px solid #7FCBC2;\r\n    padding-left:10px;\r\n    background:transparent;\r\n    height:35px;\r\n    width:100%;\r\n}\r\n.btn-save-tax i{\r\n\tcolor:#7FCBC2;\r\n\tfont-size:20px;\r\n}\r\n.btn-save-tax{\r\n\tborder:1px solid #7FCBC2;\r\n\tbackground:white;\r\n\tpadding: 5px 14px;\r\n}\r\n.tax-amount-input{\r\n\tdisplay: none;\r\n}\r\n.backToCart{\r\n\tposition: absolute;\r\n    right: 30px;\r\n    cursor: pointer;\r\n    top: 20px;\r\n}\r\n/*Products*/\r\n\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 496 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(31)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\r\n/* Style page content - use this if you want to push the page content to the right when you open the side navigation */\r\n#main{\r\npadding-right:0;\r\n}\r\nnav{\r\n\tmargin-top:0;\r\n}\r\n#main {\r\n    transition: margin-left .5s;\r\n\tpadding-right:0;\r\n\t    padding-left: 0;\r\n\t\tbackground:#EAEDF1;\r\n}\r\n.mCSB_inside > .mCSB_container{\r\nmargin-right:0 !important;\r\n}\r\n\r\n.custom-navbar .navbar-nav>li>a{\r\n\tline-height: 12px;\r\n}\r\n\r\n.custom-navbar,#myNavbar,.navbar-nav{\r\n\t    height: 60px;\r\n\t\tpadding-left:0;\r\n}\r\n.bell{\r\n\tpadding-top: 4px;\r\n}\r\n.custom-navbar form{\r\n\t    margin-top: 5px;\r\n}\r\n\r\n.custom-navbar .dropdown-toggle{\r\n\t    padding-top: 12px;\r\n}\r\n.circle i{\r\ncolor:#7FCBC2;\r\nmargin-top: -8px;\r\n    margin-left: -4px;\r\n\tfont-size:22px;\t\r\n}\r\n.circle{\r\n\twidth: 40px;\r\n    height: 40px;\r\n\tborder-radius: 50%;\r\n\tborder:1px solid #7FCBC2;\r\n\tmargin-top: 5px;\r\n\tmargin-left:8px;\r\n}\r\n\r\n.our-name{\r\n\twidth:300px;\r\n    margin:0 auto;\r\n} \r\n.our-name p{\r\n\t    font-size: 34px;\r\n}", ""]);
-
-// exports
-
-
-/***/ }),
 /* 497 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -99924,7 +100217,7 @@ exports = module.exports = __webpack_require__(31)(undefined);
 
 
 // module
-exports.push([module.i, "/*styles for home content only*/", ""]);
+exports.push([module.i, "@font-face {\r\n    font-family: 'goudy_old_styleregular';\r\n    src: url(" + __webpack_require__(505) + ") format('woff2'),\r\n         url(" + __webpack_require__(504) + ") format('woff');\r\n    font-weight: normal;\r\n    font-style: normal;\r\n\r\n}\r\n\r\nhtml, body{\r\n  height: 100%;\r\n  font-family:'goudy_old_styleregular';\r\n  background:#EAEDF1;\r\n}\r\n\r\n.left-main,.right-main{\r\n\twidth:45%;\r\n\tposition: relative;\r\n\tfloat: left;\r\n}\r\n\r\na.active {\r\n  background-color: gray;\r\n}\r\n#main-right{\r\npadding:8px 25px 10px 25px !important;\r\n} \r\n#main2{\r\nmargin-right:0;\r\n}\r\n#main{\r\n  padding-right: 0;\r\n}\r\n\r\nnav a{\r\n  background:transparent;\r\n}\r\n.custom-right-navbar{\r\n\tborder-radius:0;\r\n\tmargin-bottom:0;\r\n\tbackground-color: #fff;\r\n\tpadding-top: 4px;\r\n}\r\n.custom-navbar{\r\n\tz-index: 2;\r\n\tborder-radius:0;\r\n\t    background-color: #fff;\r\n    box-shadow: 0 0 1px rgba(76,86,103,.25), 0 2px 5px rgba(31,37,50,.32);\r\n    -webkit-box-shadow: 0 0 1px rgba(76,86,103,.25), 0 2px 5px rgba(31,37,50,.32);\r\n    -moz-box-shadow: 0 0 1px rgba(76,86,103,.25),0 2px 5px rgba(31,37,50,.32);\r\n    margin-bottom: 3px;padding-top: 4px;\r\n}\r\n.custom-right-navbar .navbar-nav li a{\r\n\tpadding-left:0;\r\n}\r\n.cart-count p{\r\n\ttext-align:center;\r\n\t    padding-top: 18px;\r\n}\r\n.cart-count{\r\n\tdisplay:inline-block;\r\n\twidth:80%;\r\n}\r\n\r\n.fa-bell{\r\n\tfont-size: 26px !important;\r\n    color: #768496 !important;\r\n\t    margin-top: 1px;\r\n    margin-right: 20px;\r\n}\r\n.fa-trash,.fa-ellipsis-h{\r\n\t    color: #768496 !important;\r\n\t\tfont-size: 26px !important;\r\n}\r\n.fa-menu{\r\n\tfont-size: 26px !important;\r\n    color: #768496 !important;\r\n\t    margin-top: 4px;\r\n}\r\n.fa-menu:before {\r\n    content: '\\F0C9';\r\n}\r\n.navbar-form{\r\n\twidth:550px;\r\n}\r\n.fa-ellipsis-v,a.dropdown-toggle{\r\n\tfont-size:14px !important;\r\n\tcolor: #3c4857 !important;\r\n    font-weight: normal;\r\n}\r\n.navbar-form input:focus{\r\nbox-shadow:none;\r\n}\r\n.dropdown-toggle .caret{\r\n\tmargin-top:-3px;\r\n\tmargin-left:8px;\r\n\tcolor: #3c4857 !important;\r\n}\r\n.navbar-form,.navbar-form button,.navbar-form input{\r\n\theight:40px;\r\n    color: #3C4867;\r\n\tborder: 0 none;\r\n    background: #EDEFF2;\r\n    box-shadow:none;\r\n    font-size: 13px;\r\n\toutline:none;\r\n    border-radius: 0;\r\n}\r\n#main2{\r\n\tbackground: #EDEFF2;\r\n}\r\n\r\n/* Radio Buttons */\r\n\r\n\r\n.radio label.radioLabels {\r\n  display: inline-block;\r\n  cursor: pointer;\r\n  position: relative;\r\n  padding-left: 25px;\r\n  margin-right: 15px;\r\n  font-size: 13px;\r\n}\r\ninput[type=radio] {\r\n  display: none ;\r\n}\r\n\r\n.radio label.radioLabels:before {\r\n  border-radius: 8px;\r\n}\r\n\r\ninput[type=radio]:checked + label.radioLabels:before {\r\n    content: \"\\2022\";\r\n    color: #f3f3f3;\r\n    font-size: 25px;\r\n    text-align: center;\r\n    line-height: 20px;\r\n}\r\n\r\n.radio label.radioLabels:before {\r\n  content: \"\";\r\n  display: inline-block;\r\n \r\n  width: 16px;\r\n  height: 16px;\r\n \r\n  margin-right: 10px;\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: 1px;\r\n  background-color: #7FCBC2;\r\n  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);\r\n}\r\n#loader i{\r\n  color:#7FCBC2;\r\n}\r\n#loader{\r\n      text-align: center;\r\n    margin-top: 50px;\r\n    display: none;\r\n}\r\n.our-name p{\r\ntext-align: center;\r\n}\r\n/* Radio Buttons */\r\n/* Media Queries */\r\n\r\n\r\n\r\n\r\n\r\n/*iPad 1 & 2 in portrait*/\r\n\r\n\r\n@media only screen \r\nand (min-device-width : 768px) \r\nand (max-device-width : 1024px) \r\nand (orientation : portrait) \r\nand (-webkit-min-device-pixel-ratio: 1) { \r\n\r\n.circle-box{\r\n\twidth:50px !important;\r\n\theight:50px !important;\r\n\t\r\n}\r\n\r\n.all-text{\r\n\tline-height: 50px !important;\r\n\r\n}\r\n\r\n.left-main, .right-main{\r\n\twidth:44% !important;\r\n}\r\n.main-item-order{\r\n    height: calc(100vh - 180px) !important;\r\n   \r\n}\r\n.table-cart{\r\n\tpadding-left:15px !important;\r\n}\r\n\r\n#main-right {\r\n    padding: 8px 10px 10px 25px !important;\r\n}\r\n.actions-customer h2{\r\n    text-align: left;\r\n    font-size: 26px !important;\r\n}\r\n\r\n.search-input img{\r\n    top: 5px !important;\r\n    width: 30px !important;\r\n    right: 12px !important;\r\n}\r\n }\r\n\r\n\r\n\r\n\r\n\r\n/* Media Queries */", ""]);
 
 // exports
 
@@ -99938,7 +100231,7 @@ exports = module.exports = __webpack_require__(31)(undefined);
 
 
 // module
-exports.push([module.i, "/* Products */\r\n\r\ninput[type=radio]:checked + label.radioLabels:before {\r\n    content: \"\\2022\";\r\n    color: #f3f3f3;\r\n    font-size: 25px;\r\n    text-align: center;\r\n        line-height: 19px;\r\n}\r\n\r\n.radio label.radioLabels:before {\r\n  content: \"\";\r\n  display: inline-block;\r\n \r\n  width: 16px;\r\n  height: 16px;\r\n \r\n  margin-right: 10px;\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: 1px;\r\n  background-color: #7FCBC2;\r\n  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);\r\n}\r\n\r\n\r\n/*  Radios up */\r\n.switch {\r\n  position: relative;\r\n  display: inline-block;\r\n  width: 50px;\r\n  height: 20px;\r\n}\r\n.spaced{\r\n\tmargin-top:6px;\r\n}\r\n.switch input {display:none;}\r\nbutton:focus {outline:0;}\r\n.slider {\r\n  position: absolute;\r\n  cursor: pointer;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  background-color: #ccc;\r\n  -webkit-transition: .4s;\r\n  transition: .4s;\r\n}\r\n.customSale-add{\r\n\tdisplay: block;\r\n    margin-top: 0;\r\n    width: 100%;\r\n    text-align: center;\r\n    border: 0 none;\r\n    background:#D43A2F;\r\n\t    margin-top: 20px;\r\n\t\tfont-weight: bold;\r\n    border-radius: 2px;\r\n    padding: 0 45px;\r\n    height: 50px;\r\n    line-height: 50px;\r\n    text-transform: uppercase;\r\n    color: #fff;\r\n    font-size: 15px;\r\n    margin-bottom: 0;\r\n}\r\n.slider:before {\r\n  position: absolute;\r\n  content: \"\";\r\n  height: 26px;\r\n  width: 26px;\r\n    left: -1px;\r\n    bottom: -2px;\r\n  background-color: white;\r\n  -webkit-transition: .4s;\r\n  transition: .4s;\r\n      -webkit-transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);\r\n    -moz-transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);\r\n    -o-transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);\r\n    transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);\r\n    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 3px 4px 0 rgba(0,0,0,0.1);\r\n    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 3px 4px 0 rgba(0,0,0,0.1);\r\n}\r\n.numberFields{\r\n\tmargin-top:6px;\r\n}\r\n.numberFields button:active{\r\n\tbackground: white;\r\n\tcolor:black;\r\n}\r\n.numberFields button{\r\n\tbackground: #eee;\r\n    color: #767f89;\r\n    border: 1px solid #e1e1e1;\r\n    width: 33.33%;\r\n\tmargin:-2px;\r\n\t    font-weight: 600;\r\n    height: 47px;\r\n    display: inline-block;\r\n    font-size: 20px;\r\n    line-height: 46px;\r\n    padding: 0;\r\n    vertical-align: middle;\r\n}\r\ninput:checked + .slider {\r\n  background-color: #00A679;\r\n}\r\n\r\ninput:focus + .slider {\r\n  box-shadow: 0 0 1px #00A679;\r\n}\r\n\r\ninput:checked + .slider:before {\r\n  -webkit-transform: translateX(26px);\r\n  -ms-transform: translateX(26px);\r\n  transform: translateX(26px);\r\n}\r\n\r\n/* Rounded sliders */\r\n\r\n.slider.round {\r\n  border-radius: 34px;\r\n}\r\n\r\n.slider.round:before {\r\n  border-radius: 50%;\r\n}\r\n.shippable{\r\n\tcolor:#6f7d90 !important;\r\n\tfont-size: 15px;\r\n    font-weight: 400;\r\n}\r\n.inner-addon { \r\n    position: relative; \r\n}\r\n.fa-dollar{\r\n\tcolor:#6f7d90;\r\n\t\r\n}\r\n.dropdown-menu{\r\n\twidth: 100%;\r\n    border-radius: 0;\r\n    padding: 0;\r\n}\r\n.dropdown-toggle{\r\n\ttext-align: left;\r\n}\r\n.dropdown-toggle .caret{\r\n\tfloat: right;\r\n    margin-top: 16px;\r\n\tcolor:#6f7d90 !important;\r\n}\r\n/* style icon */\r\n.inner-addon .fa {\r\n  position: absolute;\r\n  padding: 10px;\r\n  pointer-events: none;\r\n}\r\n\r\n/* align icon */\r\n.left-addon .fa  { left:  0px;}\r\n.right-addon .fa { right: 0px;}\r\n\r\n/* add padding  */\r\n.left-addon input  { padding-left:  30px; }\r\n.right-addon input { padding-right: 30px; }\r\n.customSale-field::-webkit-input-placeholder {\r\n    /* WebKit, Blink, Edge */\r\n    color: #6f7d90;\r\n}\r\n.customSale-field:-moz-placeholder {\r\n    /* Mozilla Firefox 4 to 18 */\r\n    color: #6f7d90;\r\n    opacity: 1;\r\n}\r\n.customSale-field::-moz-placeholder {\r\n    /* Mozilla Firefox 19+ */\r\n    color: #6f7d90;\r\n    opacity: 1;\r\n}\r\n.customSale-field:-ms-input-placeholder {\r\n    /* Internet Explorer 10-11 */\r\n    color: #6f7d90;\r\n}\r\n\r\n.customSale-field{\r\n\t\tfont-family:sans-serif;\r\n\twidth: 100%;\r\n    background: #fff;\r\n    border: 1px solid #d7d7d7;\r\n    height: 35px;\r\n    line-height: 35px;\r\n    padding: 0 10px;\r\n    color: #6f7d90 !important;\r\n\tborder-radius: 0;\r\n\tmargin-bottom: 10px;\r\n}\r\n#customSale .modal-content{\r\n\tborder-radius:0;\r\n\t    width: 355px;\r\n\t\tmargin: 0 auto;\r\n}\r\n#customSale .modal-header{\r\n\t    padding-bottom: 5px;\r\n}\r\n#customSale .modal-title{\r\n\ttext-align: center;\r\n\tfont-weight: 400;\r\n    margin-bottom: 0;\r\n    min-height: 1em;\r\n    line-height: 40px;\r\n\tcolor:#6f7d90;\r\n}\r\n#customSale .close,#customSale .close:hover{\r\n\tfloat:left;\r\n\tbackground: none transparent;\r\n    border: 0 none;\r\n    color: #9da4a2;\r\n    font-size: 15px;\r\n    font-weight: 400;\r\n    line-height: 35px;\r\n    height: 35px;\r\n    padding: 0;\r\n}\r\n.products-row .col-md-3,.products-row{\r\nbackground: #EDEFF2;\r\n}\r\n.myFooter,#main2{\r\n\tbackground: #EDEFF2;\r\n}\r\n#product-modal .modal-title{\r\n\ttext-align: center;\r\n\tcolor: #4e5660;\r\n    font-size: 13px;\r\n    font-weight: normal;\r\n    margin-top: 0;\r\n    line-height: 1.4;\r\n    margin-left: 5px;\r\n}\r\n#product-modal .modal-header{\r\n\tpadding:6px;\r\n}\r\n#product-modal .close{\r\n\tfloat: left;\r\n    font-size: 12px;\r\n    font-weight: 400;\r\n\tmargin-top: 3px;\r\n    margin-left: 3px;\r\n}\r\n#product-modal .oos{\r\n\tfont-family: 'Open Sans',sans-serif!important;\r\n\t    color: #6f7d90;\r\n\t    font-size: 11px;\r\n    font-weight: 200;\r\n}\r\n#product-modal .sku{\r\n\t    color: #838f9c;\r\n\t\tfont-size: 10px;\r\n}\r\n#product-modal .product-name{\r\n  font-size: 16px;\r\n    text-transform: uppercase;\r\n    color: #363e48;\r\n    margin: 10px 0 0px;\r\n}\r\n#product-modal .product-info-price{\r\n\tmargin-top:12px;\r\n\tcolor: #363e48;\r\n    font-size: 21px;\r\n    font-weight: 100;\r\n}\r\n#product-modal .modal-content{\r\n \r\n   border-radius: 0;\r\n\r\n\r\n}\r\n#product-modal .modal-body{\r\n \r\n  padding:0;\r\n \r\n}\r\n.detail-button i{\r\n    color:#00a679;\r\n\tpadding: 6px 0px 1px 9px;\r\n\r\n}\r\n.detail-button{\r\n   width:25px;\r\n   height:25px;\r\n   border-radius: 50%;\r\n   border:1px solid #b0bec5;\r\n   position: absolute;\r\nbottom: 30px;\r\n    right: 14px;\r\n\r\n}\r\n.main-content .mCSB_dragger_bar{\r\n\tdisplay:none;\r\n}\r\n.main-content{\r\n    padding: 0 20px;\r\n\theight: calc(100vh - 150px);\r\n}\r\n\r\n.products-row .col-md-3{\r\n\tpadding-right:0;\r\n}\r\n\r\n.main-content .mCSB_dragger_bar{\r\n\tdisplay:none;\r\n}\r\n\r\n.products-row{\r\n    margin-left:0;\r\n\tpadding-top:10px;\r\n    border-left: 2px solid #7FCBC2;\r\n    height: calc(100vh - 65px);\r\n}\r\n.products-row .col-md-3{\r\n\tpadding-right:0;\r\n}\r\n.item-list{\r\n\tbackground:white;\r\n\tpadding: 10px 10px 5px;\r\n\tfloat: left;\r\n    width: 100%;\r\n    cursor: pointer;\r\n}\r\n.product-item{\r\n\tbackground:white;\r\n\tpadding: 10px 10px 5px;\r\n    margin-bottom: 18px;\r\n    float: left;\r\n    width: 100%;\r\n    cursor: pointer;\r\n\theight:235px !important;\r\n}\r\n.product-item .product-img{\r\n\ttext-align:center;\r\n\tmax-height: calc((66vw - 591px) / 4);\r\n\twidth:auto;\r\n\tdisplay:block;\r\n}\r\n.final-price{\r\n\t    color: #363e48;\r\n    font-size: 120%;\r\n}\r\n.availability,.available_qty{\r\n\t    font-size: 14px;\r\n\t\tcolor:#6f7d90;\r\n\t\tfont-family: sans-serif;\r\n\t\tfont-weight:400 !important;\r\n}\r\n.product-name{\r\n\tmin-height: 25px;\r\n    max-height: 25px;\r\n    overflow: hidden;\r\n\tfont-size:13px;\r\n\tmargin-bottom:22px;\r\n}\r\n.product-count p{\r\n\tfont-size: 14px;\r\n\tcolor: #6f7d90;\r\n\tfont-family: sans-serif;\r\n}\r\n.row{\r\n\t    margin-right: 0px;\r\n    margin-left: 0px;\r\n}\r\n.page-number{\r\n\tfont-family: sans-serif;\r\n\tcolor: #464646;\r\n    font-size: 14px;\r\n}\r\n.pagination-list li{\r\nlist-style-type:none;\r\npadding-right:10px;\r\ndisplay:inline-block;}\r\n\r\n.pagination-list .fa{\r\n\tcolor: #464646;\r\n}\r\n.myFooter{\r\n\tpadding-left:15px;\r\n\tpadding-right:25px;\r\n}\r\n.myFooter p{\r\n\tmargin-bottom:0;\r\n}\r\n.myFooter>.row{\r\n\tpadding-top: 20px;\r\n}\r\n.users-modal .fa{\r\n\tfont-size:24px;\r\n\tcolor: #6f7d90;\r\n}\r\n.no-padding{\r\n\tpadding-left:0;\r\n\tpadding-right:0;\r\n}\r\n.users-modal{\r\n\tborder:none;\r\n\tbackground:transparent;\r\n\t    margin-top: -5px;\r\n}\r\n.btn-custom-modal{\r\n\tborder:none;\r\n\tbackground:transparent;\r\n\tfont-family: sans-serif;\r\n\t\tcolor: #6f7d90;\r\n    font-size: 14px;\r\n\tfont-weight:400;\r\n}\r\n\r\n\r\n\r\n.main-data{\r\n width:94%;\t\r\n}\r\n\r\n\r\n.nav-pills{\r\n   width:300px;\r\n   border: 1px solid#ccc;\r\n    border-radius: 4px;\r\n   margin:0 auto;\r\n}\r\n\r\n.nav-pills>li>a{\r\n        padding: 10px 30px;\r\n}\r\n\r\n.nav-pills>li.active>a{\r\n    border-radius:0;\r\n    background-color:#7FCBC2;\r\n}\r\n.cat-image{\r\n    width:100px;\r\n    height:100px;\r\n    margin:0 auto;\r\n    cursor: pointer;\r\n}\r\n.cat-image img{\r\n    width:100%;\r\n    height:100px;\r\n    object-fit: cover;\r\n    border:2px solid #7FCBC2;\r\n}\r\n.categories-tab .box{\r\n    position: relative;\r\n    float:left;\r\n    width: 20%;\r\n        margin: 0 auto;\r\n}\r\n.all-text{\r\n    line-height: 100px;\r\n    text-align: center;\r\n    font-weight: bold;\r\n    color:#fff;\r\n}\r\n.circle-box{\r\n    width:100px;\r\n    height:100px;\r\n    border-radius: 50%;\r\n    background:#7FCBC2;\r\n}\r\n\r\n#categories-tab{\r\n    margin-top: 30px;\r\n}\r\n.box h3{\r\n    text-align: center;\r\n    font-size: 22px;\r\n    color:#7FCBC2;\r\n    margin-bottom:0;\r\n}\r\n.no-link,.no-link:hover{\r\n    color:#7FCBC2;\r\n    text-decoration: none;\r\n}\r\n.nav-tabs{\r\n\r\n border-bottom:none;\r\n\r\n}\r\n\r\n.categories-tab{\r\n    padding:15px 0;\r\n    border-top:1px solid #7FCBC2;\r\n    border-bottom:1px solid #7FCBC2;\r\n}\r\n.search-box-items,.search-box-items-reciept{\r\n        padding: 10px;\r\n}\r\n.search-input{\r\n    height:40px;\r\n}\r\n.search-input .form-control{\r\n    height: 40px;\r\n    text-align: center;\r\n    padding-left:15px;\r\n    border-radius:0;\r\n    width: 100%;\r\n    position: relative;\r\n    float: left;\r\n}\r\n.searchCustomerBtn{\r\n    height:40px;\r\n    border:none;\r\n    background:white;\r\n    border-top:1px solid #ccc;\r\n    border-right:1px solid #ccc;\r\n    border-bottom:1px solid #ccc;\r\n}\r\n.search-input button i{\r\n        padding-top: 8px;\r\n}\r\n.search-input button{\r\n    width: 10%;\r\n    position: relative;\r\n    float: left;\r\n}\r\n.search-input{\r\n    position: relative;\r\n}\r\n .search-input img{\r\n    position: absolute;\r\n    top: 0px;\r\n    width: 40px;\r\n    right: 23px;\r\n}\r\n.background-added{\r\n        background: rgba(126,203,194,0.1);\r\n}\r\n.products-list .box{\r\n   position: relative;\r\n   float:left;\r\n   width:20%;\r\n}\r\n.products-list{\r\n        margin-top: 20px;\r\n}\r\n.prod-image{\r\n    cursor: pointer;\r\n}\r\n.products-list .box .prod-image{\r\n   width:100px;\r\n    height:100px;\r\n    margin:0 auto;\r\n}\r\n.products-list .box p{\r\ntext-align: center;\r\ncolor:#7FCBC2;\r\nfont-size:14px;\r\nmargin-top:10px;\r\n}\r\n.align-right{\r\n    text-align: right;\r\n}\r\n.products-list .box .prod-image img{\r\n     width:100px;\r\n    height:100px;\r\n    object-fit: cover;\r\n    border: 2px solid #7FCBC2;\r\n}\r\n\r\n.customers-heading,.customer-add,.unselect-customer{\r\n    position: relative;\r\n    float:left;\r\n}\r\n.unselect-customer{\r\n    width:20%;\r\n}\r\n\r\n.customer-profile-tab .customer-edit{\r\n        width: 40%;\r\n    position: relative;\r\n    float: left;\r\n    text-align: right;\r\n}\r\n.customer-add{\r\n    width: 38%;\r\n    text-align: right;\r\n}\r\n.customers-heading p{\r\n    margin-bottom:0;\r\n    font-size: 16px;\r\n    color:#7FCBC2;\r\n\r\n        font-weight: bold;\r\n}\r\n.customers-heading{\r\n        width: 56%;\r\n    text-align: right;\r\n\r\n}\r\n.customers-tab{\r\n    border-top:1px solid #7FCBC2;\r\n    border-bottom:1px solid #7FCBC2;\r\n    padding:10px 0;\r\n        margin-top: 30px;\r\n        background: rgba(126,203,194,0.1);\r\n}\r\n.add-customer i{\r\n    color:#7FCBC2;\r\n}\r\n.add-customer{\r\n    border:none;\r\n    background: none;\r\n    margin-top: 2px;\r\n}\r\n#customers .search-box-items,#receipts .search-box-items-reciept{\r\n     background: rgba(126,203,194,0.1);\r\n}\r\n.listing-customers{\r\n    padding-left:0;\r\n}\r\n.listing-customers li a{\r\n    font-size:16px;\r\n    color:black !important;\r\n    cursor: pointer;\r\n\r\n}\r\n.listing-customers li{\r\n    list-style-type:none;\r\n    border-bottom:1px solid #ccc;\r\n        padding: 6px;\r\n}\r\n\r\n.customer-profile-tab .customers-heading{\r\n    width:35%;\r\n}\r\n.unselect-customer button i{\r\n    color:#7FCBC2;\r\n    font-size:22px;\r\n}\r\n.unselect-customer button{\r\n border:none;\r\n background:none;\r\n\r\n}\r\n.image-left,.text-right{\r\n    position: relative;\r\n    float:left;\r\n}\r\n\r\n.image-left{\r\n    width:20%;\r\n}\r\n\r\n.text-right{\r\n    width:80%;\r\n    text-align: left;\r\n\r\n}\r\n.profile-name{\r\n color:#7FCBC2;\r\n     font-size: 30px;\r\n    margin-top: 0;\r\n}\r\n.profile-pic{\r\n    width:120px;\r\n    height:120px;\r\n    border-radius: 50%;\r\n    position: relative;\r\n    float:left;\r\n    margin-bottom:20px;\r\n}\r\n.profile-pic img{\r\n  width: 100%;\r\n  height:120px;\r\n  border-radius: 50%;\r\n  object-fit:cover;\r\n}\r\n.margined-top{\r\nmargin-top:15px;\r\n}\r\nhr{\r\n     margin:0;\r\n    border: 0;\r\n    border-top: 1px solid #7FCBC2;\r\n}\r\n.customer-profile-tab p.text,.new-customer-form p.text{\r\n    font-size:16px;\r\n    padding-top: 5px;\r\n     color:#7FCBC2;\r\n}\r\n.reciepts,.notes{\r\n    border:none;\r\n    background:none;\r\n}\r\n.reciepts p,.notes p{\r\n     color:#7FCBC2;\r\n     margin-top:10px;\r\n}\r\n.reciepts i,.notes i{\r\n    font-size:30px;\r\n    color:#7FCBC2;\r\n}\r\n.new-form-inputs{\r\n    border:none;\r\n    border-bottom:1px solid #7FCBC2;\r\n    padding-left:10px;\r\n    background:transparent;\r\n    height:35px;\r\n    width:100%;\r\n}\r\n.create-customer:hover{\r\n    \r\n    color:white;\r\n    \r\n    background-color:#7FCBC2;\r\n    -webkit-transition: background-color 1s linear;\r\n    -ms-transition: background-color 1s linear;\r\n    transition: background-color 1s linear;\r\n\r\n}\r\n.create-customer{\r\n    margin-bottom:50px;\r\n    width:100%;\r\n    font-size:18px;\r\n    margin-top:10px;\r\n    height:50px;\r\n    background:transparent;\r\n    border:1px solid #7FCBC2;\r\n}\r\n.thumbnail a>img, .thumbnail>img,#image-container img{\r\n   max-height: 100%;\r\n    width: 120px;\r\n    height: 120px;\r\n    border-radius: 50%;\r\n    object-fit: cover;\r\n    line-height: 120px;\r\n}\r\n.remove_image{\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0%;\r\n    background: white;\r\n    border: none;\r\n}\r\n.remove_image i{\r\n        color: #7FCBC2 !important;\r\n    font-size: 18px !important;\r\n}\r\n.new-customer-form,.customer-profile-tab{\r\n    display:none;\r\n    margin-top:45px;\r\n}\r\n.checkbox{\r\n        margin-left: 24px;\r\n}\r\n.checkbox label{\r\n    font-size: 16px;\r\n    color: #7FCBC2;\r\n    font-weight: 700;\r\n}\r\n.regular-checkbox {\r\n\t-webkit-appearance: none;\r\n\tbackground-color: #fafafa;\r\n\tborder: 1px solid #cacece;\r\n\tbox-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);\r\n\tpadding: 6px;\r\n\tborder-radius: 3px;\r\n\tdisplay: inline-block;\r\n     outline:none;\r\n\tposition: relative;\r\n}\r\n.shipping-address-form{\r\n    display: none;\r\n}\r\n.regular-checkbox:active, .regular-checkbox:checked:active {\r\n\tbox-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);\r\n}\r\n\r\n.regular-checkbox:checked {\r\n\tbackground-color: #e9ecee;\r\n\tborder: 1px solid #adb8c0;\r\n\tbox-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);\r\n\tcolor: #99a1a7;\r\n}\r\n\r\n\r\n.regular-checkbox:checked:after {\r\n\tcontent: '\\2714';\r\n\tfont-size: 14px;\r\n\tposition: absolute;\r\n    top: -7px;\r\n    left: 0px;\r\n    outline:none;\r\n\tcolor: #99a1a7;\r\n}\r\n.checkbox .regular-checkbox{\r\nmargin-left:-30px !important;\r\n}\r\n.close-form{\r\n    position: absolute;\r\n    right: 30px;\r\n    top:44px;\r\n    font-size: 40px;\r\n    color: #7FCBC2;\r\n    cursor:pointer;\r\n}\r\n.close-edit-form{\r\n    float:right;\r\n    font-size: 40px;\r\n    color: #7FCBC2;\r\n    cursor:pointer;\r\n}\r\n.errorClass{\r\n    border:1px solid Red !important;\r\n}\r\n.customer-loader i{\r\n    color:#7FCBC2;\r\n}\r\n.customer-loader,#editloader{\r\n    width:100px;\r\n    margin:0 auto;\r\n    margin-top:30px;\r\n\r\n}\r\n#editloader i{\r\ncolor:#7FCBC2;\r\n}\r\n#incompleteForm,#loader,#customer-added,#editincompleteForm,#editloader,#customer-updated{\r\n    display:none;\r\n}\r\n#incompleteForm p{\r\n    text-align: center;\r\n    color: red;\r\n    font-size: 16px;\r\n    padding-top: 10px;\r\n}\r\n\r\n.product-detail-tab{\r\n  /*  display:none;*/\r\n}\r\n.product-heading{\r\n    padding: 0px 0;\r\n    border-bottom: 1px solid #ccc;\r\n    border-top: 1px solid #ccc;\r\n    margin-top: 10px;\r\n\r\n}\r\n.product-heading h2{\r\n    text-align: center;\r\n    color: #7FCBC2;\r\n    margin-top: 20px;\r\n    font-size: 22px;\r\n    margin-bottom: 20px;\r\n}\r\na{\r\n    text-decoration: none !important;\r\n    cursor: pointer;\r\n}\r\n.product-size,.product-box-variation{\r\n        width: 78%;\r\n    margin: 0 auto;\r\n    margin-bottom:20px;\r\n}\r\n\r\n.size-box-wrapper,.product-box-variation-wrapper{\r\n     position: relative;\r\n    float:left;\r\n        width: 30%;\r\n    margin-right: 2%;\r\n    min-height: 115px;\r\n}\r\n.size-box,.product-variation-box{\r\n    position: relative;\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n    width: 140px;\r\n    height: 120px;\r\n    border:2px solid #7FCBC2;\r\n        margin: 10px;\r\n        border-radius:4px;\r\n        cursor:pointer;\r\n}\r\n.size-box h3,.product-variation-box h3{\r\n    font-size: 20px;\r\n    text-align: center;\r\n    color: #7FCBC2;\r\n}\r\n.size-box p{\r\ntext-align:center;\r\n  color: #7FCBC2;\r\n}\r\n.size-box p.extra-price{\r\ntext-align:center;\r\n  color: #7FCBC2;\r\n   text-align: center;\r\n    font-size: 14px;\r\n\r\n}\r\n.product-properties{\r\n    font-size:24px;\r\n    color:#4D4D4F;\r\n    margin-top: 10px;\r\n}\r\n\r\n/*  Quantity */\r\n\r\n.quantity {\r\n    position: relative;\r\n    border: 0;\r\n}\r\n\r\ninput[type=number]::-webkit-inner-spin-button,\r\ninput[type=number]::-webkit-outer-spin-button {\r\n    -webkit-appearance: none;\r\n    margin: 0;\r\n}\r\n\r\ninput[type=number] {\r\n    -moz-appearance: textfield;\r\n}\r\n.quantity-row{\r\n    height:50px;\r\n    margin-top:20px;\r\n}\r\n\r\n.quantity input {\r\n  width: 50%;\r\n    height: 50px;\r\n    line-height: 1.65;\r\n    float: left;\r\n    display: block;\r\n    padding: 0;\r\n    margin: 0;\r\n    padding-left: 20px;\r\n    border: 1px solid #eee;\r\nfont-size: 24px;\r\n    font-weight: bold;\r\n    border-radius: 5px;   \r\n    margin-bottom: 4px; \r\n}\r\n\r\n.quantity input:focus {\r\n    outline: 0;\r\n}\r\n\r\n.quantity-nav {\r\n    float: left;\r\n    position: relative;\r\n    height: 50px;\r\n}\r\n\r\n.quantity-button {\r\n    position: relative;\r\n    cursor: pointer;\r\n    border-left: 1px solid #eee;\r\n    width: 20px;\r\n    text-align: center;\r\n    color: #333;\r\n    font-size: 13px;\r\n    font-family: \"Trebuchet MS\", Helvetica, sans-serif !important;\r\n    line-height: 1.7;\r\n    -webkit-transform: translateX(-100%);\r\n    transform: translateX(-100%);\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    -o-user-select: none;\r\n    user-select: none;\r\n\r\n    background: #323f44;\r\n    width: 30px;\r\n    border: 0;\r\n    color: #fff;\r\n    font-size: 23px;\r\n    line-height: 23px;\r\n    border-radius:0 5px 0 0\r\n\r\n}\r\n\r\n.quantity-button.quantity-up {\r\n    position: absolute;\r\n    height: 50%;\r\n    top: 0;\r\n}\r\n\r\n.quantity-button.quantity-down {\r\n    position: absolute;\r\n    bottom: -1px;\r\n    height: 50%;\r\n     border-radius:0 0 5px 0;\r\n}\r\n\r\n.Customer-full-detail{\r\n    display: none;\r\n    padding-left:45px;\r\n}\r\n\r\n.left-pic,.right-name{\r\n position: relative;\r\n float:left;\r\n}\r\n.right-name{\r\n\tmargin-left: 20px;\r\n}\r\n.product-detail-tab{\r\n    position: relative;\r\n}\r\n.back-to-orders{\r\n    position: absolute;\r\n    right: 30px;\r\n    cursor: pointer;\r\n}\r\n.backToProducts{\r\n    position: absolute;\r\n    right: 30px;\r\n    cursor: pointer;\r\n    top: 20px;\r\n}\r\n.backToProducts img,.back-to-search-customers img,.back-to-orders img{\r\n        width: 21px;\r\n    height: 21px;\r\n    padding-top: 5px;\r\n}\r\n.back-to-search-customers{\r\n    position: absolute;\r\n    right:25px;\r\n    cursor: pointer;\r\n    \r\n}\r\n\r\n.back-to-search-customers i,.backToProducts i{\r\n    color:#7FCBC2;\r\n        font-size: 26px;\r\n}\r\n.product-variation-box p{\r\n       color:#7FCBC2;\r\n        font-size: 14px;\r\n        text-align: center;\r\n}\r\n.search-box-items .row p,.search-box-items .row span{\r\nmargin-bottom:0;\r\ncolor:#7FCBC2;\r\nfont-size:14px;\r\nfont-weight: bold;\r\n}\r\n.add-to-cart{\r\n\r\n    background:#7FCBC2;\r\n    color:white;\r\n    font-weight: bold;\r\n    font-size:24px;\r\n    border-radius:4px;\r\n    border:1px solid #7FCBC2;\r\n    width:100%;\r\n    height: 60px;\r\n    line-height: 60px;\r\n}\r\n\r\n.selected-cart-options{\r\n    font-size: 18px;\r\nbackground-color:white;\r\ncolor:#7FCBC2;\r\n\r\n}\r\n.quantity-value{\r\n        line-height: 46px;\r\n    font-size: 24px;\r\n}\r\n.size-alert{\r\n    margin-top:20px;\r\n}\r\n.size-alert,.box-alert,.color-alert{\r\ndisplay: none;\r\n}\r\n.overlay{\r\n    width:100%;\r\n    height:100px;\r\n    background:rgba(204,204,204,0.4);\r\n    position: absolute;\r\n    top:0;\r\n    min-height: 118px;\r\n    display: none;\r\n    }\r\n    .check-exists{\r\n        margin-bottom:20px;\r\n    }\r\n\r\n    .editCustomer{\r\n        position: absolute;\r\n        left:25px;\r\n        display: none;\r\n            z-index: 25;\r\n    }\r\n    .editCustomer i{\r\n        color:#7FCBC2;\r\n\r\n    }\r\n    .editCustomerBtn{\r\n        cursor: pointer;\r\n        background:transparent;\r\n        border:none;\r\n    }\r\n    .edit-customer-form{\r\n        display: none;\r\n    }\r\n.order-types{\r\n    background:none;\r\n    border-radius:3px;\r\n    color: #7FCBC2;\r\n    font-weight: bold;\r\n    width: 100%;\r\n    border:1px solid #ccc;\r\n}\r\n#orderDetail{\r\n    display: none;\r\n}\r\n.order-types-row .col-md-3{\r\n    background: rgba(126,203,194,0.001) !important;\r\n}\r\n.order-heading{\r\n    font-size:20px;\r\n    color:#7FCBC2;\r\n    font-weight: bold;\r\n}\r\n#orderDetail{\r\n        padding: 0 2px;\r\n}\r\n#orderDetail hr{\r\n    margin-bottom:20px;\r\n}\r\n.selected{\r\n    background:white;\r\n    border-radius:3px;\r\n    color: #7FCBC2;\r\n    font-weight: bold;\r\n    width: 100%;\r\n    border:1px solid white;\r\n\r\n}\r\n/* Quantity */\r\n\r\n\r\n/*Products*/\r\n\r\n\r\n\r\n/* Media Queries */\r\n\r\n\r\n\r\n\r\n\r\n/*iPad 1 & 2 in portrait*/\r\n@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) { \r\n  \r\n   .circle-box,.cat-image,.cat-image img{\r\n\t   width: 50px;\r\n\t   height: 50px;\r\n\r\n   }\r\n   .all-text{\r\n\t   line-height: 50px;\r\n   }\r\n   .box h3{\r\n\t   font-size:16px;\r\n   }\r\n   .products-list .box{\r\n\t\t    width: 25%;\r\n   }\r\n   .prod-image,.prod-image img{\r\n\t   width:90px !important;\r\n\t   height:90px !important;\r\n   }\r\n }\r\n\r\n\r\n/*iPad 1 & 2 in landscape*/\r\n@media only screen \r\nand (min-device-width : 768px) \r\nand (max-device-width : 1024px) \r\nand (orientation : landscape)\r\nand (-webkit-min-device-pixel-ratio: 1)  {\r\n\r\n    .main-item-orders{\r\n        height: calc(100vh - 191px) !important;\r\n    }\r\n}\r\n\r\n\r\n\r\n/*Ipad in portrait*/\r\n\r\n@media only screen \r\nand (min-device-width : 768px) \r\nand (max-device-width : 1024px) \r\nand (orientation : landscape) { \r\n\r\n\r\n      .product-size,.product-box-variation{\r\n        width:100% !important;\r\n    }\r\n \r\n   .size-box-wrapper,.product-box-variation-wrapper{\r\n       width: 28%;\r\n    margin-right: 20px;\r\n   }\r\n   .size-box,.product-variation-box{\r\n       height:100px;\r\n   }\r\n   .toCheckout{\r\n           height: 218px;\r\n\r\n   }\r\n   .searchCustomerBtn{\r\n       margin-top:0.2px;\r\n   }\r\n\r\n     .left-main, .right-main{\r\n        width:44%;\r\n    }\r\n    .cat-image,.cat-image img{\r\n        width:70px ;\r\n        height: 70px ;\r\n    }\r\n\r\n    .all-text{\r\n        line-height: 70px;\r\n    }\r\n    .box h3{\r\n        font-size:16px;\r\n    }\r\n\r\n    .products-list .box{\r\n   \r\n     width:25%;\r\n\r\n    }\r\n\r\n    .prod-image ,.prod-image img{\r\n        width:90px !important;\r\n        height:90px !important;\r\n    }\r\n\r\n\r\n}\r\n\r\n@media only screen \r\nand (min-device-width : 768px) \r\nand (max-device-width : 1024px)  { \r\n  \r\n}\r\n\r\n/*Ipad Landscape*/\r\n\r\n\r\n\r\n@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { \r\n    .cat-image{\r\n        width:50px !important;\r\n        height:50px !important;\r\n\r\n    }\r\n\r\n    .box h3{\r\n        font-size:13px;\r\n    }\r\n    .prod-image,.prod-image img{\r\n        width:70px !important;\r\n        height:70px !important;\r\n    }\r\n    .product-size,.product-box-variation{\r\n        width:100%;\r\n    }\r\n    .size-box-wrapper{\r\n        width:30%;\r\n        margin-right:10px;\r\n    }\r\n    .size-box,.product-box-variation-wrapper{\r\n        height: 76px;\r\n        width:30%;\r\n        margin-right:10px;\r\n    }\r\n    .product-variation-box{\r\n        height:100px;\r\n    }\r\n    .quantity input{\r\n        width:100%;\r\n    }\r\n}\r\n\r\n\r\n\r\n\r\n/* Media Queries */", ""]);
+exports.push([module.i, "/* Products */\r\n.custom-right-navbar{\r\n\theight:60px;\r\n}\r\n.actions-customer{\r\n\tbackground: #7FCBC2;\r\n}\r\nnav{\r\n\tmargin-top:0;\r\n}\r\n\r\n\r\n.main-content .mCSB_dragger_bar{\r\n\tdisplay:none;\r\n}\r\n.main-content{\r\n\theight: calc(100vh - 141px);\r\n}\r\n.products-row{\r\n\tmargin-left:15px !important;\r\n\tmargin-right:15px !important;\r\n\tpadding-top:15px;\r\n}\r\n.products-row .col-md-3{\r\n\tpadding-right:0;\r\n}\r\n.item-list{\r\n\tbackground:white;\r\n\tpadding: 8px 10px 0px;\r\n\tfloat: left;\r\n    width: 100%;\r\n    cursor: pointer;\r\n}\r\n.product-item{\r\n\tbackground:white;\r\n\tpadding: 10px 10px 5px;\r\n    margin-bottom: 18px;\r\n    float: left;\r\n    width: 100%;\r\n    cursor: pointer;\r\n}\r\n.product-item .product-img{\r\n\ttext-align:center;\r\n\tmax-height: calc((66vw - 591px) / 4);\r\n\twidth:auto;\r\n\tdisplay:block;\r\n}\r\n.final-price{\r\n\tfont-size:13px;\r\n}\r\n.availability,.available_qty{\r\n\t    font-size: 11px;\r\n\t\tcolor:#6f7d90;\r\n\t\tfont-family:'Open Sans';\r\n\t\tfont-weight:400 !important;\r\n}\r\n.product-name{\r\n\tmin-height: 25px;\r\n    max-height: 25px;\r\n    overflow: hidden;\r\n\tfont-size:13px;\r\n}\r\n.product-count p{\r\n\tfont-size: 14px;\r\n\tcolor: #6f7d90;\r\n\tfont-family: sans-serif;\r\n}\r\n.row{\r\n\t    margin-right: 0px;\r\n    margin-left: 0px;\r\n}\r\n.page-number{\r\n\tfont-family: sans-serif;\r\n\tcolor: #464646;\r\n    font-size: 14px;\r\n}\r\n.pagination-list li{\r\nlist-style-type:none;\r\npadding-right:10px;\r\ndisplay:inline-block;}\r\n\r\n.pagination-list .fa{\r\n\tcolor: #464646;\r\n}\r\n.myFooter{\r\n\tmargin-left:30px;\r\n\tmargin-right:10px;\r\n}\r\n.myFooter>.row{\r\n\tpadding-top: 20px;\r\n}\r\n.users-modal .fa{\r\n\tfont-size:24px;\r\n\tcolor: #6f7d90;\r\n}\r\n.no-padding{\r\n\tpadding-left:0;\r\n\tpadding-right:0;\r\n}\r\n.actions-customer h2{\r\n\tcolor:white;\r\n\ttext-align: left;\r\n\tmargin:5px 5px;\r\n\tfont-size:50px;\r\n}\r\n.actions-customer{\r\ntext-align: left;\r\nborder-top: 2px solid #d7d7d7;\r\nborder-bottom: 1px solid #d7d7d7;\r\n}\r\n.guest-text{\r\n\tcursor:default;\r\n\tcolor: #6f7d90;\r\n\tfont-family: sans-serif;\r\n}\r\n.align-right{\r\n\ttext-align:right;\r\n}\r\n.users-modal{\r\n\tborder:none;\r\n\tbackground:transparent;\r\n\t    margin-top: -5px;\r\n}\r\n.btn-custom-modal{\r\n\tborder:none;\r\n\tbackground:transparent;\r\n\tfont-family: sans-serif;\r\n\t\tcolor: #6f7d90;\r\n    font-size: 14px;\r\n\tfont-weight:400;\r\n}\r\n.main-item-order{\r\n\t    \r\n\t\t   /* height: calc(100vh - 110px);*/\r\n\t\t   height: calc(100vh - 202px);\r\n\t    background: #eaedf1;\r\n\t\toverflow: hidden;\r\n\t\t    padding-bottom: 100px;\r\n}\r\n\r\n.product-item{\r\n\t\r\n\theight:74px;\r\n}\r\n.main-data,.delete{\r\n\t\r\n\tposition:relative;\r\n\tfloat:left;\r\n}\r\n.main-data{\r\n width:94%;\t\r\n}\r\n.cart-footer{\r\n\tposition: absolute;\r\n    bottom: 0;\r\n    width: 98%;\r\n    background: #fff;\r\n    padding: 7px 15px 12px;\r\n    border-top: 1px solid #d7d7d7;\r\n}\r\n\r\n.item-image{\r\n\t\r\n\t    height: 64px;\r\n\t\twidth: 60px;\r\n}\r\n.cart-list{\r\n\tmax-height: calc(100vh - 418px);\r\n\t    padding-left: 0;\r\n}\r\n.cart-list li{\r\n\tlist-style-type:none;\r\n\t    border-bottom: 1px solid #d7d7d7;\r\n}\r\n.item-image,.item-detail,.item-price{\r\n\tdisplay:inline-block;\r\n}\r\n.delete i{\r\n\t    color: #6f7d90;\r\n\tfont-size:20px !important;\r\n}\r\n.delete{\r\n\twidth:6%;\r\n\t    padding-top: 15px;\r\n}\r\n.item-price span{\r\n\ttext-align: right;\r\n    color: #363e48;\r\n}\r\n.circle{\r\n\tborder:1px solid #6f7d90;\r\n\tborder-radius:50%;\r\n\tpadding-top:2px;\r\n}\r\n.item-image{    width: 12%;\r\n}\r\n.item-price{\r\n\ttext-align:right;\r\n\tmargin-right:5px;\r\n\twidth: 17%;\r\n}\r\n.item-detail{\r\n\t width:66%;\r\n    align-self: center;\r\n}\r\n.item-detail>h4{\r\n\t    font-size: 14px;\r\n\t\t    color: #363e48;\r\n\t\t\tmargin:0;\r\n}\r\n.item-image img{\r\n\tmax-height: 64px;\r\n    min-width: 52px;\r\n\tmax-width: 100%;\r\n    height: auto;\r\n    position: relative;\r\n    text-align: center;\r\n    align-self: center;\r\n}\r\n.total-row{\r\n\tpadding: 8px 0 5px;\r\nborder-bottom:none;\t\r\n}\r\n\r\n.cart-buttons{\r\n\t\r\n\t    padding: 8px 0 5px;\r\n\t\tmargin-bottom:15px;\r\n}\r\n.hold{\r\nposition:relative;\r\nfloat:left;\r\nwidth:34%;\r\n}\r\n.checkout{\r\nposition:relative;\t\r\nfloat:left;\r\nwidth:58%;\r\n margin-left: 6%;\r\n}\r\n.checkout-button{\r\n\theight: 50px;\r\n\tline-height: 35px;\r\n    padding-top: 0;\r\n    padding-bottom: 0;\r\n\t background: #D43A2F;\r\n\t border:1px solid #D43A2F;\r\n\t color:white;\r\n\t text-transform:uppercase;\r\n    width: 100%;\r\n\tborder-radius: 3px;\r\n    flex-grow: 1;\r\n}\r\n.hold-button{\r\n\tmargin-left:15px;\r\n\theight: 50px;\r\n\tline-height: 35px;\r\n    padding-top: 0;\r\n    padding-bottom: 0;\r\n\t background: #6f7d90;\r\n\t border:1px solid #6f7d90;\r\n\t color:white;\r\n\t text-transform:uppercase;\r\n    width: 100%;\r\n\t    border-radius: 3px;\r\n    flex-grow: 1;\r\n    margin-right: 20px;\r\n}\r\n.sub-total-row{\r\n\tborder-bottom: 1px solid #d7d7d7;\r\n\tpadding: 8px 0 5px;\r\n}\r\n.left-text,.right-text{\r\n\tposition:relative;\r\n\tfloat:left;\r\n\twidth:50%;\r\n\t\r\n}\r\n.left-text .heading{\r\n\tmargin-bottom: 0;\r\n\tpadding-left:15px;\r\n\t    color: #363e48;\r\n    font-weight: normal;\r\n\tfont-size:14px;\r\n\tfont-family: sans-serif;\r\n}\r\n.right-text{\r\ntext-align:right;\r\npadding-right:15px;\t\r\n}\r\n.right-text .price{\r\n\tmargin-bottom: 0;\r\n\tfont-weight:600;\r\n\tcolor: black;\r\n\tfont-size:14px;\r\n\tfont-family: sans-serif;\r\n}\r\n\r\n.custom-right-navbar .navbar-nav{\r\n\theight:60px;\r\n}\r\n.custom-right-navbar .navbar-nav>li>a{\r\n\tpadding-top:6px;\r\n}\r\n.customer-name{\r\n\tborder-left:1px solid #ccc;\r\nborder-right:1px solid #ccc;\r\npadding:10px 0px;\r\n}\r\n.customer-name h3{\r\n\ttext-align: center;\r\n\tfont-style: italic;\r\n\tfont-size:30px;\r\n\tcolor:black;\r\n\tmargin-top: 0;\r\n    margin-bottom: 0;\r\n\t\r\n}\r\n.background-th{\r\n\theight:46px;\r\n\tcolor:white;\r\n\tbackground:rgba(126,203,194,0.4);\r\n}\r\n.no-left-border{\r\n\tborder-left:none !important;\r\n}\r\n.no-right-border{\r\n\tborder-right:none !important;\r\n}\r\n.blue-color{\r\n\ttext-transform: uppercase;\r\n\tfont-size:16px;\r\n\tcolor:#7FCBC2;\r\n\tfont-weight: 600;\r\n}\r\n.paddingLeft{\r\n\tpadding-left:0;\r\n}\r\nsmall{\r\n\tcolor:#7FCBC2;\r\n\t    font-size: 14px;\r\n    font-weight: 500;\r\n}\r\n.price-total-box{\r\n\tfont-size:18px;\r\n\tfont-weight: bold;\r\n\tcolor:#7FCBC2;\r\n}\r\n.uppercase{\r\n\tpadding-left:30px;\r\n\tfont-size:18px;\r\n\ttext-transform: uppercase;\r\n\tcolor:#7FCBC2;\r\n\tfont-weight: bold;\r\n}\r\n.table-bordered,.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{\r\n  border: 1px solid #7FCBC2;\r\n}\r\n.empty{\r\n\tcolor:#7FCBC2;\r\n\tbackground:#7FCBC2;\r\n}\r\n.upload .dropdown-toggle i{\r\ncolor:#7FCBC2;\r\nfont-size:20px;\r\n}\r\n.upload .dropdown-toggle{\r\nbackground: none;\r\n    border: none;\r\n\tpadding:0;\r\n\tmargin-top: 8px;\r\n\t    margin-left: 12px;\r\n}\r\n.pause,.cancel{\r\n\tposition: relative;\r\n\tfloat:left;\r\n\tmargin-left:15px;\r\n\tmargin-top: 9px;\r\n}\r\n.pause-button,.cancel-button{\r\n\tborder:none;\r\n\tbackground:none;\r\n\tdisplay: inline-block;\r\n}\r\n\r\n.pause-button i, .cancel-button i{\r\n\tcolor: #7FCBC2;\r\n    font-size: 20px;\r\n}\r\n.table-cart{\r\n\tmax-height: calc(100vh - 80px);\r\n\tpadding-left:40px;\r\n}\r\n.Customer-full-detail{\r\n\tdisplay:none;\r\n\tpadding-left:75px;\r\n}\r\n.left-pic,.right-name{\r\n position: relative;\r\n float:left;\r\n}\r\n.right-name{\r\n\tmargin-left: 20px;\r\n}\r\n.left-less{\r\n\tpadding-left:10px !important;\r\n}\r\n.toCheckout i{\r\n\tcolor:white;\r\n\tfont-weight: bold;\r\n\t\r\n}\r\n.toCheckout{\r\n\tbackground:#7FCBC2;\r\n\tborder:#7FCBC2;;\r\n\twidth:35px;\r\n\t    height: 135px;\r\n\tposition: absolute;\r\n}\r\n.small-tex{\r\n\tfont-size:12px;\r\n\tcolor:#7FCBC2;\r\n\tmargin-bottom:0;\r\n}\r\n.colorBox{\r\n\twidth:25px;\r\n\theight:25px;\r\n\tbackground:#7FCBC2;\r\n\tmargin-right:10px;\r\n\tdisplay: inline-block;\r\n}\r\n.deleteRow img{\r\nwidth:25px;\r\n}\r\n.deleteRow{\r\n\t\r\n\tcursor: pointer;\r\n\twidth: 100%;\r\n    height: 100%;\r\n    background:none;\r\n\tborder:none;\r\n\r\n}\r\n.Checkout{\r\n\t    width: 100%;\r\n    min-height: 41px;\r\n    background: #7FCBC2;\r\n    color: #7FCBC2;\r\n\ttext-align: center;\r\n    padding-top: 11px;\r\n    border: none;\r\n\theight: calc(6vh - 11px);\r\n\tcursor: pointer;\r\n}\r\n.Checkout i{\r\n\tcolor:white;\r\n\tfont-size:20px;\r\n\tfont-weight: light;\r\n}\r\n.deleteRow i{\r\n\t    font-size: 32px !important;\r\n    color: #7FCBC2 !important;\r\n\tfont-weight: light;\r\n}\r\n.background-colored{\r\n\tbackground: #7FCBC2 !important;\r\n}\r\n.no-padding-all{\r\n\tpadding:0 !important;\r\n\tbackground: #7FCBC2;\r\n\t    border-bottom: 2px solid #7fcbc2 !important;\r\n}\r\n.no-user{\r\n\tfloat:right;\r\n\tmargin-right:10px;\r\n\tcolor:#7FCBC2;\r\n\tcursor: pointer;\r\n\tbackground: none;\r\n\tborder:none;\r\n}\r\n.price-row p{\r\n\tmargin-bottom:0 !important;\r\n}\r\n.price-row p:first-child{\r\n\tfont-size: 24px;\r\n    color: green;\r\n}\r\n.modal-body{\r\n\tpadding:0 !important;\r\n}\r\n.price-row p.blue{\r\n\tfont-size: 24px;\r\n    color: #7FCBC2;\r\n}\r\n.price-row p.grey{\r\n\tfont-size: 24px;\r\n    color: #cacaca;\r\n}\r\n.price-row{\r\n\t    border-bottom: 1px solid #ccc;\r\n\t\tmargin-top: 10px;\r\n    \tpadding-bottom: 8px;\r\n\r\n}\r\n.modal-header{\r\n\tpadding:0;\r\n}\r\n.modal-content{\r\n\tborder-radius: 0 !important;\r\n\tmin-height: 428px;\r\n\tbackground:#EDEFF2;\r\n}\r\n.heading-box{\r\n\tbackground: #7FCBC2;\r\n\theight:30px;\r\n\ttext-align: center;\r\n\tmargin-top:0 !important;\r\n}\r\n.heading-box h3{\r\n  margin-top:0 !important;\r\n  color:white;\r\n  line-height: 30px;\r\n}\r\n.modal-header .close {\r\n    margin-top: 5px;\r\n    margin-right: 10px;\r\n\tcolor:White;\r\n}\r\n#closeModal{\r\n\tborder: none;\r\n    background: none;\r\n    position: absolute;\r\n    left: 10px;\r\n    top: 5px;\r\n    color: white;\r\n\r\n}\r\n.payment-methods-row{\r\n\tmargin-top:50px;\r\n}\r\n.payment-methods-row .col-md-3{\r\n\tmargin-top:10px;\r\n}\r\n.option-box{\r\n\tdisplay: table-cell;\r\n\tvertical-align: middle;\r\n    min-width: 110px;\r\ncursor:pointer;\r\nheight:110px;\r\ntext-align: center;\r\nmargin:0 auto;\r\nbackground:transparent;\r\nborder:2px solid #7FCBC2;\r\n    border-radius: 4px;\r\n}\r\n\r\n.option-box i{\r\n color:#7FCBC2;\r\n     font-size: 60px;\r\n}\r\n\r\n.option-box p{\r\n\tfont-size: 14px;\r\n    margin-top: 10px;\r\n\ttext-transform: uppercase;\r\n\tcolor:#7FCBC2;\r\n\tfont-weight: bold;\r\n}\r\n\r\n.modal-dialog{\r\n\twidth: 700px;\r\n    min-height: 428px;\r\n    margin: 30px auto;\r\n}\r\n.credit-card-steps{\r\n\tdisplay:none;\r\n}\r\n.shippment-options,.checkout-shippment-form{\r\n\tdisplay: none;\r\n}\r\n.shippment-check{\r\n\ttext-align: center;\r\n    margin-top: 30px;\r\n}\r\n.new-form-inputs{\r\n    border:none;\r\n    border-bottom:1px solid #7FCBC2;\r\n    padding-left:10px;\r\n    background:transparent;\r\n    height:35px;\r\n    width:100%;\r\n}\r\n.checkoutLoader i{\r\ncolor:#7FCBC2;\r\n}\r\n.checkoutLoader{\r\n\t    width: 50px;\r\n    margin: 50px auto;\r\n\r\n}\r\n\r\n.SubmitCheckoutShippment:hover{\r\n    \r\n    color:white;\r\n    \r\n    background-color:#7FCBC2;\r\n    -webkit-transition: background-color 1s linear;\r\n    -ms-transition: background-color 1s linear;\r\n    transition: background-color 1s linear;\r\n\r\n}\r\n.SubmitCheckoutShippment{\r\n\r\n\ttext-align: center;\r\n\r\n    width:50%;\r\n    font-size:18px;\r\n     margin: 20px auto;\r\n    height:50px;\r\n    background:transparent;\r\n    border:1px solid #7FCBC2;\r\n}\r\n.incompleteCheckoutShippment,.checkoutLoader,.proceed-with-order{\r\n\tdisplay: none;\r\n}\r\n.errorClass{\r\n    border:1px solid Red !important;\r\n}\r\n.proceed{\r\n\twidth:80%;\r\n\theight:100px;\r\n\ttext-align: center;\r\n\t width: 80%;\r\n    height: 100px;\r\n    text-align: center;\r\n    margin: 100px auto;\r\n\r\n}\r\n.proceed-button{\r\n\twidth:100%;\r\n\theight:100%;\r\n\tborder:none;\r\n\tbackground:#7FCBC2;\r\n\tcolor:white;\r\n\t\tfont-size: 3.2em;\r\n}\r\n.proceed-button i{\r\n\tfont-size: 1.3em;\r\n}\r\n.thankyouMsg{\r\n\tdisplay: none;\r\n\ttext-align: center;\r\n}\r\n.button-close{\r\n\theight:40px;\r\n\twidth:20%;\r\n\tborder-radius:0 !important;\r\n\tline-height: 27px;\r\n\tcolor:white;\r\n\tbackground:#7FCBC2;\r\n\tborder:1px solid #7FCBC2;\r\n}\r\n.proceed-without-shippment .proceed{\r\n\twidth: 80%;\r\n    height: 100px;\r\n    text-align: center;\r\n    margin: 0px auto;\r\n}\r\n.cash-on-delivery-tab{\r\n\tdisplay: none;\r\n}\r\n.OrderLoader i{\r\n    font-weight: 24px;\r\n\tcolor:#7FCBC2;\r\n}\r\n.OrderLoader{\r\n\twidth:50px;\r\n\tmargin:20px auto;\r\n\tdisplay: none;\r\n}\r\n.back-office-div{\r\n\tdisplay: none;\r\n\tpadding: 25px 40px;\r\n\theight: calc(100vh - 11vh);\r\n}\r\n.setting-row{\r\n\tmargin-top:20px;\r\n}\r\n.new-form-inputs{\r\n    border:none;\r\n    border-bottom:1px solid #7FCBC2;\r\n    padding-left:10px;\r\n    background:transparent;\r\n    height:35px;\r\n    width:100%;\r\n}\r\n.btn-save-tax i{\r\n\tcolor:#7FCBC2;\r\n\tfont-size:20px;\r\n}\r\n.btn-save-tax{\r\n\tborder:1px solid #7FCBC2;\r\n\tbackground:white;\r\n\tpadding: 5px 14px;\r\n}\r\n.tax-amount-input{\r\n\tdisplay: none;\r\n}\r\n.backToCart{\r\n\tposition: absolute;\r\n    right: 30px;\r\n    cursor: pointer;\r\n    top: 20px;\r\n}\r\n/*Products*/\r\n\r\n", ""]);
 
 // exports
 
@@ -99952,7 +100245,7 @@ exports = module.exports = __webpack_require__(31)(undefined);
 
 
 // module
-exports.push([module.i, "/* The side navigation menu */\r\n.sidenav {\r\n    height: 100%; /* 100% Full-height */\r\n    width: 100px; /* 0 width - change this with JavaScript */\r\n    position: fixed; /* Stay in place */\r\n    z-index: 1; /* Stay on top */\r\n    top: 0;\r\n    left: 0;\r\n    background-color:white;\r\n    overflow-y: auto; /* Black*/\r\n    overflow-x: hidden; /* Disable horizontal scroll */\r\n    padding-top: 60px; /* Place content 60px from the top */\r\n    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */\r\n}\r\n\r\n/* The navigation menu links */\r\n.sidenav a {\r\n    padding: 8px 8px 8px 32px;\r\n    text-decoration: none;\r\n    font-size: 25px;\r\n    color: #818181;\r\n    display: block;\r\n    transition: 0.3s\r\n}\r\n\r\n/* When you mouse over the navigation links, change their color */\r\n.sidenav a:hover, .offcanvas a:focus{\r\n    color: #f1f1f1;\r\n}\r\n\r\n/* Position and style the close button (top right corner) */\r\n.sidenav .closebtn {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 25px;\r\n    font-size: 36px;\r\n    margin-left: 50px;\r\n}\r\n\r\n\r\n\r\n.side-list{\r\n   padding-left:0px;\r\n   margin-bottom:0;  \r\n}\r\nul.side-list li{\r\n\tpadding-left:15px;\r\n}\r\nul.side-list li a{\r\n\tcolor: #76808d;\r\n\tfont-size:14px !important;\r\n\tpadding: 10px 0px 10px 0;\r\n}\r\n.logout-box{\r\n margin-top:60px;\r\n}\r\n.logout-link{\r\n\tpadding-left:15px !important;\r\n\t    font-size: 24px !important;\r\n    color: white !important;\r\n}\r\nul.side-list li i,ul.side-list li{\r\n\tcolor: #76808d;\r\n\tlist-style-type:none;\r\n\tfont-size:14px !important;\r\n}\r\nli.title{\r\n\tpadding: 15px 18px;\r\n    font-size: 18px;\r\n\tfont-weight: 600;\r\n    background: #202835;\r\n    display: block;\r\n    color: white !important;\r\n    text-transform: uppercase;\r\n}\r\nli.menu-item{\r\n\t    padding: 5px 18px;\r\n    text-align: left;\r\n    border-top: 0 none;\r\n    border-bottom: solid 1px #343E4A;\r\n}\r\n\r\n.sidebar-list{\r\n        padding-left: 0px;\r\n            padding-top: 10px;\r\n}\r\n.sidebar-list li{ \r\n  margin-bottom:20px;\r\n  list-style-type:none;\r\n  text-align: center;\r\n}\r\n.sidebar-list li a{\r\n    padding:0;\r\n}\r\n\r\n.sidebar-list li i,.sync-button i{\r\n  font-size:30px;\r\n  color:#7FCBC2;\r\n  list-style-type:none;\r\n}\r\n\r\n.sidebar-list li p,.sync-button p{\r\n      color:#7FCBC2;\r\n    font-size:10px;\r\n    margin-top: 14px;\r\n\r\n}\r\n.sync-button{\r\n    position: absolute;\r\n    bottom:0;\r\n    left:10px;\r\n}", ""]);
+exports.push([module.i, "\r\n/* Style page content - use this if you want to push the page content to the right when you open the side navigation */\r\n#main{\r\npadding-right:0;\r\n}\r\nnav{\r\n\tmargin-top:0;\r\n}\r\n#main {\r\n    transition: margin-left .5s;\r\n\tpadding-right:0;\r\n\t    padding-left: 0;\r\n\t\tbackground:#EAEDF1;\r\n}\r\n.mCSB_inside > .mCSB_container{\r\nmargin-right:0 !important;\r\n}\r\n\r\n.custom-navbar .navbar-nav>li>a{\r\n\tline-height: 12px;\r\n}\r\n\r\n.custom-navbar,#myNavbar,.navbar-nav{\r\n\t    height: 60px;\r\n\t\tpadding-left:0;\r\n}\r\n.bell{\r\n\tpadding-top: 4px;\r\n}\r\n.custom-navbar form{\r\n\t    margin-top: 5px;\r\n}\r\n\r\n.custom-navbar .dropdown-toggle{\r\n\t    padding-top: 12px;\r\n}\r\n.circle i{\r\ncolor:#7FCBC2;\r\nmargin-top: -8px;\r\n    margin-left: -4px;\r\n\tfont-size:22px;\t\r\n}\r\n.circle{\r\n\twidth: 40px;\r\n    height: 40px;\r\n\tborder-radius: 50%;\r\n\tborder:1px solid #7FCBC2;\r\n\tmargin-top: 5px;\r\n\tmargin-left:8px;\r\n}\r\n\r\n.our-name{\r\n\twidth:300px;\r\n    margin:0 auto;\r\n} \r\n.our-name p{\r\n\t    font-size: 34px;\r\n}", ""]);
 
 // exports
 
@@ -99966,7 +100259,7 @@ exports = module.exports = __webpack_require__(31)(undefined);
 
 
 // module
-exports.push([module.i, "h1 {\r\n  color: #00BCD4;\r\n}", ""]);
+exports.push([module.i, "/*styles for home content only*/", ""]);
 
 // exports
 
@@ -99975,16 +100268,58 @@ exports.push([module.i, "h1 {\r\n  color: #00BCD4;\r\n}", ""]);
 /* 501 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "ccad210978aedfd7648260f7588e849e.woff";
+exports = module.exports = __webpack_require__(31)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "/* Products */\r\n\r\ninput[type=radio]:checked + label.radioLabels:before {\r\n    content: \"\\2022\";\r\n    color: #f3f3f3;\r\n    font-size: 25px;\r\n    text-align: center;\r\n        line-height: 19px;\r\n}\r\n\r\n.radio label.radioLabels:before {\r\n  content: \"\";\r\n  display: inline-block;\r\n \r\n  width: 16px;\r\n  height: 16px;\r\n \r\n  margin-right: 10px;\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: 1px;\r\n  background-color: #7FCBC2;\r\n  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);\r\n}\r\n\r\n\r\n/*  Radios up */\r\n.switch {\r\n  position: relative;\r\n  display: inline-block;\r\n  width: 50px;\r\n  height: 20px;\r\n}\r\n.spaced{\r\n\tmargin-top:6px;\r\n}\r\n.switch input {display:none;}\r\nbutton:focus {outline:0;}\r\n.slider {\r\n  position: absolute;\r\n  cursor: pointer;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  background-color: #ccc;\r\n  -webkit-transition: .4s;\r\n  transition: .4s;\r\n}\r\n.customSale-add{\r\n\tdisplay: block;\r\n    margin-top: 0;\r\n    width: 100%;\r\n    text-align: center;\r\n    border: 0 none;\r\n    background:#D43A2F;\r\n\t    margin-top: 20px;\r\n\t\tfont-weight: bold;\r\n    border-radius: 2px;\r\n    padding: 0 45px;\r\n    height: 50px;\r\n    line-height: 50px;\r\n    text-transform: uppercase;\r\n    color: #fff;\r\n    font-size: 15px;\r\n    margin-bottom: 0;\r\n}\r\n.slider:before {\r\n  position: absolute;\r\n  content: \"\";\r\n  height: 26px;\r\n  width: 26px;\r\n    left: -1px;\r\n    bottom: -2px;\r\n  background-color: white;\r\n  -webkit-transition: .4s;\r\n  transition: .4s;\r\n      -webkit-transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);\r\n    -moz-transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);\r\n    -o-transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);\r\n    transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);\r\n    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 3px 4px 0 rgba(0,0,0,0.1);\r\n    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 3px 4px 0 rgba(0,0,0,0.1);\r\n}\r\n.numberFields{\r\n\tmargin-top:6px;\r\n}\r\n.numberFields button:active{\r\n\tbackground: white;\r\n\tcolor:black;\r\n}\r\n.numberFields button{\r\n\tbackground: #eee;\r\n    color: #767f89;\r\n    border: 1px solid #e1e1e1;\r\n    width: 33.33%;\r\n\tmargin:-2px;\r\n\t    font-weight: 600;\r\n    height: 47px;\r\n    display: inline-block;\r\n    font-size: 20px;\r\n    line-height: 46px;\r\n    padding: 0;\r\n    vertical-align: middle;\r\n}\r\ninput:checked + .slider {\r\n  background-color: #00A679;\r\n}\r\n\r\ninput:focus + .slider {\r\n  box-shadow: 0 0 1px #00A679;\r\n}\r\n\r\ninput:checked + .slider:before {\r\n  -webkit-transform: translateX(26px);\r\n  -ms-transform: translateX(26px);\r\n  transform: translateX(26px);\r\n}\r\n\r\n/* Rounded sliders */\r\n\r\n.slider.round {\r\n  border-radius: 34px;\r\n}\r\n\r\n.slider.round:before {\r\n  border-radius: 50%;\r\n}\r\n.shippable{\r\n\tcolor:#6f7d90 !important;\r\n\tfont-size: 15px;\r\n    font-weight: 400;\r\n}\r\n.inner-addon { \r\n    position: relative; \r\n}\r\n.fa-dollar{\r\n\tcolor:#6f7d90;\r\n\t\r\n}\r\n.dropdown-menu{\r\n\twidth: 100%;\r\n    border-radius: 0;\r\n    padding: 0;\r\n}\r\n.dropdown-toggle{\r\n\ttext-align: left;\r\n}\r\n.dropdown-toggle .caret{\r\n\tfloat: right;\r\n    margin-top: 16px;\r\n\tcolor:#6f7d90 !important;\r\n}\r\n/* style icon */\r\n.inner-addon .fa {\r\n  position: absolute;\r\n  padding: 10px;\r\n  pointer-events: none;\r\n}\r\n\r\n/* align icon */\r\n.left-addon .fa  { left:  0px;}\r\n.right-addon .fa { right: 0px;}\r\n\r\n/* add padding  */\r\n.left-addon input  { padding-left:  30px; }\r\n.right-addon input { padding-right: 30px; }\r\n.customSale-field::-webkit-input-placeholder {\r\n    /* WebKit, Blink, Edge */\r\n    color: #6f7d90;\r\n}\r\n.customSale-field:-moz-placeholder {\r\n    /* Mozilla Firefox 4 to 18 */\r\n    color: #6f7d90;\r\n    opacity: 1;\r\n}\r\n.customSale-field::-moz-placeholder {\r\n    /* Mozilla Firefox 19+ */\r\n    color: #6f7d90;\r\n    opacity: 1;\r\n}\r\n.customSale-field:-ms-input-placeholder {\r\n    /* Internet Explorer 10-11 */\r\n    color: #6f7d90;\r\n}\r\n\r\n.customSale-field{\r\n\t\tfont-family:sans-serif;\r\n\twidth: 100%;\r\n    background: #fff;\r\n    border: 1px solid #d7d7d7;\r\n    height: 35px;\r\n    line-height: 35px;\r\n    padding: 0 10px;\r\n    color: #6f7d90 !important;\r\n\tborder-radius: 0;\r\n\tmargin-bottom: 10px;\r\n}\r\n#customSale .modal-content{\r\n\tborder-radius:0;\r\n\t    width: 355px;\r\n\t\tmargin: 0 auto;\r\n}\r\n#customSale .modal-header{\r\n\t    padding-bottom: 5px;\r\n}\r\n#customSale .modal-title{\r\n\ttext-align: center;\r\n\tfont-weight: 400;\r\n    margin-bottom: 0;\r\n    min-height: 1em;\r\n    line-height: 40px;\r\n\tcolor:#6f7d90;\r\n}\r\n#customSale .close,#customSale .close:hover{\r\n\tfloat:left;\r\n\tbackground: none transparent;\r\n    border: 0 none;\r\n    color: #9da4a2;\r\n    font-size: 15px;\r\n    font-weight: 400;\r\n    line-height: 35px;\r\n    height: 35px;\r\n    padding: 0;\r\n}\r\n.products-row .col-md-3,.products-row{\r\nbackground: #EDEFF2;\r\n}\r\n.myFooter,#main2{\r\n\tbackground: #EDEFF2;\r\n}\r\n#product-modal .modal-title{\r\n\ttext-align: center;\r\n\tcolor: #4e5660;\r\n    font-size: 13px;\r\n    font-weight: normal;\r\n    margin-top: 0;\r\n    line-height: 1.4;\r\n    margin-left: 5px;\r\n}\r\n#product-modal .modal-header{\r\n\tpadding:6px;\r\n}\r\n#product-modal .close{\r\n\tfloat: left;\r\n    font-size: 12px;\r\n    font-weight: 400;\r\n\tmargin-top: 3px;\r\n    margin-left: 3px;\r\n}\r\n#product-modal .oos{\r\n\tfont-family: 'Open Sans',sans-serif!important;\r\n\t    color: #6f7d90;\r\n\t    font-size: 11px;\r\n    font-weight: 200;\r\n}\r\n#product-modal .sku{\r\n\t    color: #838f9c;\r\n\t\tfont-size: 10px;\r\n}\r\n#product-modal .product-name{\r\n  font-size: 16px;\r\n    text-transform: uppercase;\r\n    color: #363e48;\r\n    margin: 10px 0 0px;\r\n}\r\n#product-modal .product-info-price{\r\n\tmargin-top:12px;\r\n\tcolor: #363e48;\r\n    font-size: 21px;\r\n    font-weight: 100;\r\n}\r\n#product-modal .modal-content{\r\n \r\n   border-radius: 0;\r\n\r\n\r\n}\r\n#product-modal .modal-body{\r\n \r\n  padding:0;\r\n \r\n}\r\n.detail-button i{\r\n    color:#00a679;\r\n\tpadding: 6px 0px 1px 9px;\r\n\r\n}\r\n.detail-button{\r\n   width:25px;\r\n   height:25px;\r\n   border-radius: 50%;\r\n   border:1px solid #b0bec5;\r\n   position: absolute;\r\nbottom: 30px;\r\n    right: 14px;\r\n\r\n}\r\n.main-content .mCSB_dragger_bar{\r\n\tdisplay:none;\r\n}\r\n.main-content{\r\n    padding: 0 20px;\r\n\theight: calc(100vh - 150px);\r\n}\r\n\r\n.products-row .col-md-3{\r\n\tpadding-right:0;\r\n}\r\n\r\n.main-content .mCSB_dragger_bar{\r\n\tdisplay:none;\r\n}\r\n\r\n.products-row{\r\n    margin-left:0;\r\n\tpadding-top:10px;\r\n    border-left: 2px solid #7FCBC2;\r\n    height: calc(100vh - 65px);\r\n}\r\n.products-row .col-md-3{\r\n\tpadding-right:0;\r\n}\r\n.item-list{\r\n\tbackground:white;\r\n\tpadding: 10px 10px 5px;\r\n\tfloat: left;\r\n    width: 100%;\r\n    cursor: pointer;\r\n}\r\n.product-item{\r\n\tbackground:white;\r\n\tpadding: 10px 10px 5px;\r\n    margin-bottom: 18px;\r\n    float: left;\r\n    width: 100%;\r\n    cursor: pointer;\r\n\theight:235px !important;\r\n}\r\n.product-item .product-img{\r\n\ttext-align:center;\r\n\tmax-height: calc((66vw - 591px) / 4);\r\n\twidth:auto;\r\n\tdisplay:block;\r\n}\r\n.final-price{\r\n\t    color: #363e48;\r\n    font-size: 120%;\r\n}\r\n.availability,.available_qty{\r\n\t    font-size: 14px;\r\n\t\tcolor:#6f7d90;\r\n\t\tfont-family: sans-serif;\r\n\t\tfont-weight:400 !important;\r\n}\r\n.product-name{\r\n\tmin-height: 25px;\r\n    max-height: 25px;\r\n    overflow: hidden;\r\n\tfont-size:13px;\r\n\tmargin-bottom:22px;\r\n}\r\n.product-count p{\r\n\tfont-size: 14px;\r\n\tcolor: #6f7d90;\r\n\tfont-family: sans-serif;\r\n}\r\n.row{\r\n\t    margin-right: 0px;\r\n    margin-left: 0px;\r\n}\r\n.page-number{\r\n\tfont-family: sans-serif;\r\n\tcolor: #464646;\r\n    font-size: 14px;\r\n}\r\n.pagination-list li{\r\nlist-style-type:none;\r\npadding-right:10px;\r\ndisplay:inline-block;}\r\n\r\n.pagination-list .fa{\r\n\tcolor: #464646;\r\n}\r\n.myFooter{\r\n\tpadding-left:15px;\r\n\tpadding-right:25px;\r\n}\r\n.myFooter p{\r\n\tmargin-bottom:0;\r\n}\r\n.myFooter>.row{\r\n\tpadding-top: 20px;\r\n}\r\n.users-modal .fa{\r\n\tfont-size:24px;\r\n\tcolor: #6f7d90;\r\n}\r\n.no-padding{\r\n\tpadding-left:0;\r\n\tpadding-right:0;\r\n}\r\n.users-modal{\r\n\tborder:none;\r\n\tbackground:transparent;\r\n\t    margin-top: -5px;\r\n}\r\n.btn-custom-modal{\r\n\tborder:none;\r\n\tbackground:transparent;\r\n\tfont-family: sans-serif;\r\n\t\tcolor: #6f7d90;\r\n    font-size: 14px;\r\n\tfont-weight:400;\r\n}\r\n\r\n\r\n\r\n.main-data{\r\n width:94%;\t\r\n}\r\n\r\n\r\n.nav-pills{\r\n   width:300px;\r\n   border: 1px solid#ccc;\r\n    border-radius: 4px;\r\n   margin:0 auto;\r\n}\r\n\r\n.nav-pills>li>a{\r\n        padding: 10px 30px;\r\n}\r\n\r\n.nav-pills>li.active>a{\r\n    border-radius:0;\r\n    background-color:#7FCBC2;\r\n}\r\n.cat-image{\r\n    width:100px;\r\n    height:100px;\r\n    margin:0 auto;\r\n    cursor: pointer;\r\n}\r\n.cat-image img{\r\n    width:100%;\r\n    height:100px;\r\n    object-fit: cover;\r\n    border:2px solid #7FCBC2;\r\n}\r\n.categories-tab .box{\r\n    position: relative;\r\n    float:left;\r\n    width: 20%;\r\n        margin: 0 auto;\r\n}\r\n.all-text{\r\n    line-height: 100px;\r\n    text-align: center;\r\n    font-weight: bold;\r\n    color:#fff;\r\n}\r\n.circle-box{\r\n    width:100px;\r\n    height:100px;\r\n    border-radius: 50%;\r\n    background:#7FCBC2;\r\n}\r\n\r\n#categories-tab{\r\n    margin-top: 30px;\r\n}\r\n.box h3{\r\n    text-align: center;\r\n    font-size: 22px;\r\n    color:#7FCBC2;\r\n    margin-bottom:0;\r\n}\r\n.no-link,.no-link:hover{\r\n    color:#7FCBC2;\r\n    text-decoration: none;\r\n}\r\n.nav-tabs{\r\n\r\n border-bottom:none;\r\n\r\n}\r\n\r\n.categories-tab{\r\n    padding:15px 0;\r\n    border-top:1px solid #7FCBC2;\r\n    border-bottom:1px solid #7FCBC2;\r\n}\r\n.search-box-items,.search-box-items-reciept{\r\n        padding: 10px;\r\n}\r\n.search-input{\r\n    height:40px;\r\n}\r\n.search-input .form-control{\r\n    height: 40px;\r\n    text-align: center;\r\n    padding-left:15px;\r\n    border-radius:0;\r\n    width: 100%;\r\n    position: relative;\r\n    float: left;\r\n}\r\n.searchCustomerBtn{\r\n    height:40px;\r\n    border:none;\r\n    background:white;\r\n    border-top:1px solid #ccc;\r\n    border-right:1px solid #ccc;\r\n    border-bottom:1px solid #ccc;\r\n}\r\n.search-input button i{\r\n        padding-top: 8px;\r\n}\r\n.search-input button{\r\n    width: 10%;\r\n    position: relative;\r\n    float: left;\r\n}\r\n.search-input{\r\n    position: relative;\r\n}\r\n .search-input img{\r\n    position: absolute;\r\n    top: 0px;\r\n    width: 40px;\r\n    right: 23px;\r\n}\r\n.background-added{\r\n        background: rgba(126,203,194,0.1);\r\n}\r\n.products-list .box{\r\n   position: relative;\r\n   float:left;\r\n   width:20%;\r\n}\r\n.products-list{\r\n        margin-top: 20px;\r\n}\r\n.prod-image{\r\n    cursor: pointer;\r\n}\r\n.products-list .box .prod-image{\r\n   width:100px;\r\n    height:100px;\r\n    margin:0 auto;\r\n}\r\n.products-list .box p{\r\ntext-align: center;\r\ncolor:#7FCBC2;\r\nfont-size:14px;\r\nmargin-top:10px;\r\n}\r\n.align-right{\r\n    text-align: right;\r\n}\r\n.products-list .box .prod-image img{\r\n     width:100px;\r\n    height:100px;\r\n    object-fit: cover;\r\n    border: 2px solid #7FCBC2;\r\n}\r\n\r\n.customers-heading,.customer-add,.unselect-customer{\r\n    position: relative;\r\n    float:left;\r\n}\r\n.unselect-customer{\r\n    width:20%;\r\n}\r\n\r\n.customer-profile-tab .customer-edit{\r\n        width: 40%;\r\n    position: relative;\r\n    float: left;\r\n    text-align: right;\r\n}\r\n.customer-add{\r\n    width: 38%;\r\n    text-align: right;\r\n}\r\n.customers-heading p{\r\n    margin-bottom:0;\r\n    font-size: 16px;\r\n    color:#7FCBC2;\r\n\r\n        font-weight: bold;\r\n}\r\n.customers-heading{\r\n        width: 56%;\r\n    text-align: right;\r\n\r\n}\r\n.customers-tab{\r\n    border-top:1px solid #7FCBC2;\r\n    border-bottom:1px solid #7FCBC2;\r\n    padding:10px 0;\r\n        margin-top: 30px;\r\n        background: rgba(126,203,194,0.1);\r\n}\r\n.add-customer i{\r\n    color:#7FCBC2;\r\n}\r\n.add-customer{\r\n    border:none;\r\n    background: none;\r\n    margin-top: 2px;\r\n}\r\n#customers .search-box-items,#receipts .search-box-items-reciept{\r\n     background: rgba(126,203,194,0.1);\r\n}\r\n.listing-customers{\r\n    padding-left:0;\r\n}\r\n.listing-customers li a{\r\n    font-size:16px;\r\n    color:black !important;\r\n    cursor: pointer;\r\n\r\n}\r\n.listing-customers li{\r\n    list-style-type:none;\r\n    border-bottom:1px solid #ccc;\r\n        padding: 6px;\r\n}\r\n\r\n.customer-profile-tab .customers-heading{\r\n    width:35%;\r\n}\r\n.unselect-customer button i{\r\n    color:#7FCBC2;\r\n    font-size:22px;\r\n}\r\n.unselect-customer button{\r\n border:none;\r\n background:none;\r\n\r\n}\r\n.image-left,.text-right{\r\n    position: relative;\r\n    float:left;\r\n}\r\n\r\n.image-left{\r\n    width:20%;\r\n}\r\n\r\n.text-right{\r\n    width:80%;\r\n    text-align: left;\r\n\r\n}\r\n.profile-name{\r\n color:#7FCBC2;\r\n     font-size: 30px;\r\n    margin-top: 0;\r\n}\r\n.profile-pic{\r\n    width:120px;\r\n    height:120px;\r\n    border-radius: 50%;\r\n    position: relative;\r\n    float:left;\r\n    margin-bottom:20px;\r\n}\r\n.profile-pic img{\r\n  width: 100%;\r\n  height:120px;\r\n  border-radius: 50%;\r\n  object-fit:cover;\r\n}\r\n.margined-top{\r\nmargin-top:15px;\r\n}\r\nhr{\r\n     margin:0;\r\n    border: 0;\r\n    border-top: 1px solid #7FCBC2;\r\n}\r\n.customer-profile-tab p.text,.new-customer-form p.text{\r\n    font-size:16px;\r\n    padding-top: 5px;\r\n     color:#7FCBC2;\r\n}\r\n.reciepts,.notes{\r\n    border:none;\r\n    background:none;\r\n}\r\n.reciepts p,.notes p{\r\n     color:#7FCBC2;\r\n     margin-top:10px;\r\n}\r\n.reciepts i,.notes i{\r\n    font-size:30px;\r\n    color:#7FCBC2;\r\n}\r\n.new-form-inputs{\r\n    border:none;\r\n    border-bottom:1px solid #7FCBC2;\r\n    padding-left:10px;\r\n    background:transparent;\r\n    height:35px;\r\n    width:100%;\r\n}\r\n.create-customer:hover{\r\n    \r\n    color:white;\r\n    \r\n    background-color:#7FCBC2;\r\n    -webkit-transition: background-color 1s linear;\r\n    -ms-transition: background-color 1s linear;\r\n    transition: background-color 1s linear;\r\n\r\n}\r\n.create-customer{\r\n    margin-bottom:50px;\r\n    width:100%;\r\n    font-size:18px;\r\n    margin-top:10px;\r\n    height:50px;\r\n    background:transparent;\r\n    border:1px solid #7FCBC2;\r\n}\r\n.thumbnail a>img, .thumbnail>img,#image-container img{\r\n   max-height: 100%;\r\n    width: 120px;\r\n    height: 120px;\r\n    border-radius: 50%;\r\n    object-fit: cover;\r\n    line-height: 120px;\r\n}\r\n.remove_image{\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0%;\r\n    background: white;\r\n    border: none;\r\n}\r\n.remove_image i{\r\n        color: #7FCBC2 !important;\r\n    font-size: 18px !important;\r\n}\r\n.new-customer-form,.customer-profile-tab{\r\n    display:none;\r\n    margin-top:45px;\r\n}\r\n.checkbox{\r\n        margin-left: 24px;\r\n}\r\n.checkbox label{\r\n    font-size: 16px;\r\n    color: #7FCBC2;\r\n    font-weight: 700;\r\n}\r\n.regular-checkbox {\r\n\t-webkit-appearance: none;\r\n\tbackground-color: #fafafa;\r\n\tborder: 1px solid #cacece;\r\n\tbox-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);\r\n\tpadding: 6px;\r\n\tborder-radius: 3px;\r\n\tdisplay: inline-block;\r\n     outline:none;\r\n\tposition: relative;\r\n}\r\n.shipping-address-form{\r\n    display: none;\r\n}\r\n.regular-checkbox:active, .regular-checkbox:checked:active {\r\n\tbox-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);\r\n}\r\n\r\n.regular-checkbox:checked {\r\n\tbackground-color: #e9ecee;\r\n\tborder: 1px solid #adb8c0;\r\n\tbox-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);\r\n\tcolor: #99a1a7;\r\n}\r\n\r\n\r\n.regular-checkbox:checked:after {\r\n\tcontent: '\\2714';\r\n\tfont-size: 14px;\r\n\tposition: absolute;\r\n    top: -7px;\r\n    left: 0px;\r\n    outline:none;\r\n\tcolor: #99a1a7;\r\n}\r\n.checkbox .regular-checkbox{\r\nmargin-left:-30px !important;\r\n}\r\n.close-form{\r\n    position: absolute;\r\n    right: 30px;\r\n    top:44px;\r\n    font-size: 40px;\r\n    color: #7FCBC2;\r\n    cursor:pointer;\r\n}\r\n.close-edit-form{\r\n    float:right;\r\n    font-size: 40px;\r\n    color: #7FCBC2;\r\n    cursor:pointer;\r\n}\r\n.errorClass{\r\n    border:1px solid Red !important;\r\n}\r\n.customer-loader i{\r\n    color:#7FCBC2;\r\n}\r\n.customer-loader,#editloader{\r\n    width:100px;\r\n    margin:0 auto;\r\n    margin-top:30px;\r\n\r\n}\r\n#editloader i{\r\ncolor:#7FCBC2;\r\n}\r\n#incompleteForm,#loader,#customer-added,#editincompleteForm,#editloader,#customer-updated{\r\n    display:none;\r\n}\r\n#incompleteForm p{\r\n    text-align: center;\r\n    color: red;\r\n    font-size: 16px;\r\n    padding-top: 10px;\r\n}\r\n\r\n.product-detail-tab{\r\n  /*  display:none;*/\r\n}\r\n.product-heading{\r\n    padding: 0px 0;\r\n    border-bottom: 1px solid #ccc;\r\n    border-top: 1px solid #ccc;\r\n    margin-top: 10px;\r\n\r\n}\r\n.product-heading h2{\r\n    text-align: center;\r\n    color: #7FCBC2;\r\n    margin-top: 20px;\r\n    font-size: 22px;\r\n    margin-bottom: 20px;\r\n}\r\na{\r\n    text-decoration: none !important;\r\n    cursor: pointer;\r\n}\r\n.product-size,.product-box-variation{\r\n        width: 78%;\r\n    margin: 0 auto;\r\n    margin-bottom:20px;\r\n}\r\n\r\n.size-box-wrapper,.product-box-variation-wrapper{\r\n     position: relative;\r\n    float:left;\r\n        width: 30%;\r\n    margin-right: 2%;\r\n    min-height: 115px;\r\n}\r\n.size-box,.product-variation-box{\r\n    position: relative;\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n    width: 140px;\r\n    height: 120px;\r\n    border:2px solid #7FCBC2;\r\n        margin: 10px;\r\n        border-radius:4px;\r\n        cursor:pointer;\r\n}\r\n.size-box h3,.product-variation-box h3{\r\n    font-size: 20px;\r\n    text-align: center;\r\n    color: #7FCBC2;\r\n}\r\n.size-box p{\r\ntext-align:center;\r\n  color: #7FCBC2;\r\n}\r\n.size-box p.extra-price{\r\ntext-align:center;\r\n  color: #7FCBC2;\r\n   text-align: center;\r\n    font-size: 14px;\r\n\r\n}\r\n.product-properties{\r\n    font-size:24px;\r\n    color:#4D4D4F;\r\n    margin-top: 10px;\r\n}\r\n\r\n/*  Quantity */\r\n\r\n.quantity {\r\n    position: relative;\r\n    border: 0;\r\n}\r\n\r\ninput[type=number]::-webkit-inner-spin-button,\r\ninput[type=number]::-webkit-outer-spin-button {\r\n    -webkit-appearance: none;\r\n    margin: 0;\r\n}\r\n\r\ninput[type=number] {\r\n    -moz-appearance: textfield;\r\n}\r\n.quantity-row{\r\n    height:50px;\r\n    margin-top:20px;\r\n}\r\n\r\n.quantity input {\r\n  width: 50%;\r\n    height: 50px;\r\n    line-height: 1.65;\r\n    float: left;\r\n    display: block;\r\n    padding: 0;\r\n    margin: 0;\r\n    padding-left: 20px;\r\n    border: 1px solid #eee;\r\nfont-size: 24px;\r\n    font-weight: bold;\r\n    border-radius: 5px;   \r\n    margin-bottom: 4px; \r\n}\r\n\r\n.quantity input:focus {\r\n    outline: 0;\r\n}\r\n\r\n.quantity-nav {\r\n    float: left;\r\n    position: relative;\r\n    height: 50px;\r\n}\r\n\r\n.quantity-button {\r\n    position: relative;\r\n    cursor: pointer;\r\n    border-left: 1px solid #eee;\r\n    width: 20px;\r\n    text-align: center;\r\n    color: #333;\r\n    font-size: 13px;\r\n    font-family: \"Trebuchet MS\", Helvetica, sans-serif !important;\r\n    line-height: 1.7;\r\n    -webkit-transform: translateX(-100%);\r\n    transform: translateX(-100%);\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    -o-user-select: none;\r\n    user-select: none;\r\n\r\n    background: #323f44;\r\n    width: 30px;\r\n    border: 0;\r\n    color: #fff;\r\n    font-size: 23px;\r\n    line-height: 23px;\r\n    border-radius:0 5px 0 0\r\n\r\n}\r\n\r\n.quantity-button.quantity-up {\r\n    position: absolute;\r\n    height: 50%;\r\n    top: 0;\r\n}\r\n\r\n.quantity-button.quantity-down {\r\n    position: absolute;\r\n    bottom: -1px;\r\n    height: 50%;\r\n     border-radius:0 0 5px 0;\r\n}\r\n\r\n.Customer-full-detail{\r\n    display: none;\r\n    padding-left:45px;\r\n}\r\n\r\n.left-pic,.right-name{\r\n position: relative;\r\n float:left;\r\n}\r\n.right-name{\r\n\tmargin-left: 20px;\r\n}\r\n.product-detail-tab{\r\n    position: relative;\r\n}\r\n.back-to-orders{\r\n    position: absolute;\r\n    right: 30px;\r\n    cursor: pointer;\r\n}\r\n.backToProducts{\r\n    position: absolute;\r\n    right: 30px;\r\n    cursor: pointer;\r\n    top: 20px;\r\n}\r\n.backToProducts img,.back-to-search-customers img,.back-to-orders img{\r\n        width: 21px;\r\n    height: 21px;\r\n    padding-top: 5px;\r\n}\r\n.back-to-search-customers{\r\n    position: absolute;\r\n    right:25px;\r\n    cursor: pointer;\r\n    \r\n}\r\n\r\n.back-to-search-customers i,.backToProducts i{\r\n    color:#7FCBC2;\r\n        font-size: 26px;\r\n}\r\n.product-variation-box p{\r\n       color:#7FCBC2;\r\n        font-size: 14px;\r\n        text-align: center;\r\n}\r\n.search-box-items .row p,.search-box-items .row span{\r\nmargin-bottom:0;\r\ncolor:#7FCBC2;\r\nfont-size:14px;\r\nfont-weight: bold;\r\n}\r\n.add-to-cart{\r\n\r\n    background:#7FCBC2;\r\n    color:white;\r\n    font-weight: bold;\r\n    font-size:24px;\r\n    border-radius:4px;\r\n    border:1px solid #7FCBC2;\r\n    width:100%;\r\n    height: 60px;\r\n    line-height: 60px;\r\n}\r\n\r\n.selected-cart-options{\r\n    font-size: 18px;\r\nbackground-color:white;\r\ncolor:#7FCBC2;\r\n\r\n}\r\n.quantity-value{\r\n        line-height: 46px;\r\n    font-size: 24px;\r\n}\r\n.size-alert{\r\n    margin-top:20px;\r\n}\r\n.size-alert,.box-alert,.color-alert{\r\ndisplay: none;\r\n}\r\n.overlay{\r\n    width:100%;\r\n    height:100px;\r\n    background:rgba(204,204,204,0.4);\r\n    position: absolute;\r\n    top:0;\r\n    min-height: 118px;\r\n    display: none;\r\n    }\r\n    .check-exists{\r\n        margin-bottom:20px;\r\n    }\r\n\r\n    .editCustomer{\r\n        position: absolute;\r\n        left:25px;\r\n        display: none;\r\n            z-index: 25;\r\n    }\r\n    .editCustomer i{\r\n        color:#7FCBC2;\r\n\r\n    }\r\n    .editCustomerBtn{\r\n        cursor: pointer;\r\n        background:transparent;\r\n        border:none;\r\n    }\r\n    .edit-customer-form{\r\n        display: none;\r\n    }\r\n.order-types{\r\n    background:none;\r\n    border-radius:3px;\r\n    color: #7FCBC2;\r\n    font-weight: bold;\r\n    width: 100%;\r\n    border:1px solid #ccc;\r\n}\r\n#orderDetail{\r\n    display: none;\r\n}\r\n.order-types-row .col-md-3{\r\n    background: rgba(126,203,194,0.001) !important;\r\n}\r\n.order-heading{\r\n    font-size:20px;\r\n    color:#7FCBC2;\r\n    font-weight: bold;\r\n}\r\n#orderDetail{\r\n        padding: 0 2px;\r\n}\r\n#orderDetail hr{\r\n    margin-bottom:20px;\r\n}\r\n.selected{\r\n    background:white;\r\n    border-radius:3px;\r\n    color: #7FCBC2;\r\n    font-weight: bold;\r\n    width: 100%;\r\n    border:1px solid white;\r\n\r\n}\r\n/* Quantity */\r\n\r\n\r\n/*Products*/\r\n\r\n\r\n\r\n/* Media Queries */\r\n\r\n\r\n\r\n\r\n\r\n/*iPad 1 & 2 in portrait*/\r\n@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) { \r\n  \r\n   .circle-box,.cat-image,.cat-image img{\r\n\t   width: 50px;\r\n\t   height: 50px;\r\n\r\n   }\r\n   .all-text{\r\n\t   line-height: 50px;\r\n   }\r\n   .box h3{\r\n\t   font-size:16px;\r\n   }\r\n   .products-list .box{\r\n\t\t    width: 25%;\r\n   }\r\n   .prod-image,.prod-image img{\r\n\t   width:90px !important;\r\n\t   height:90px !important;\r\n   }\r\n }\r\n\r\n\r\n/*iPad 1 & 2 in landscape*/\r\n@media only screen \r\nand (min-device-width : 768px) \r\nand (max-device-width : 1024px) \r\nand (orientation : landscape)\r\nand (-webkit-min-device-pixel-ratio: 1)  {\r\n\r\n    .main-item-orders{\r\n        height: calc(100vh - 191px) !important;\r\n    }\r\n}\r\n\r\n\r\n\r\n/*Ipad in portrait*/\r\n\r\n@media only screen \r\nand (min-device-width : 768px) \r\nand (max-device-width : 1024px) \r\nand (orientation : landscape) { \r\n\r\n\r\n      .product-size,.product-box-variation{\r\n        width:100% !important;\r\n    }\r\n \r\n   .size-box-wrapper,.product-box-variation-wrapper{\r\n       width: 28%;\r\n    margin-right: 20px;\r\n   }\r\n   .size-box,.product-variation-box{\r\n       height:100px;\r\n   }\r\n   .toCheckout{\r\n           height: 218px;\r\n\r\n   }\r\n   .searchCustomerBtn{\r\n       margin-top:0.2px;\r\n   }\r\n\r\n     .left-main, .right-main{\r\n        width:44%;\r\n    }\r\n    .cat-image,.cat-image img{\r\n        width:70px ;\r\n        height: 70px ;\r\n    }\r\n\r\n    .all-text{\r\n        line-height: 70px;\r\n    }\r\n    .box h3{\r\n        font-size:16px;\r\n    }\r\n\r\n    .products-list .box{\r\n   \r\n     width:25%;\r\n\r\n    }\r\n\r\n    .prod-image ,.prod-image img{\r\n        width:90px !important;\r\n        height:90px !important;\r\n    }\r\n\r\n\r\n}\r\n\r\n@media only screen \r\nand (min-device-width : 768px) \r\nand (max-device-width : 1024px)  { \r\n  \r\n}\r\n\r\n/*Ipad Landscape*/\r\n\r\n\r\n\r\n@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { \r\n    .cat-image{\r\n        width:50px !important;\r\n        height:50px !important;\r\n\r\n    }\r\n\r\n    .box h3{\r\n        font-size:13px;\r\n    }\r\n    .prod-image,.prod-image img{\r\n        width:70px !important;\r\n        height:70px !important;\r\n    }\r\n    .product-size,.product-box-variation{\r\n        width:100%;\r\n    }\r\n    .size-box-wrapper{\r\n        width:30%;\r\n        margin-right:10px;\r\n    }\r\n    .size-box,.product-box-variation-wrapper{\r\n        height: 76px;\r\n        width:30%;\r\n        margin-right:10px;\r\n    }\r\n    .product-variation-box{\r\n        height:100px;\r\n    }\r\n    .quantity input{\r\n        width:100%;\r\n    }\r\n}\r\n\r\n\r\n\r\n\r\n/* Media Queries */", ""]);
+
+// exports
+
 
 /***/ }),
 /* 502 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "b5fd3a47e1d994ff01e32f862ac97f4e.woff2";
+exports = module.exports = __webpack_require__(31)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "/* The side navigation menu */\r\n.sidenav {\r\n    height: 100%; /* 100% Full-height */\r\n    width: 100px; /* 0 width - change this with JavaScript */\r\n    position: fixed; /* Stay in place */\r\n    z-index: 1; /* Stay on top */\r\n    top: 0;\r\n    left: 0;\r\n    background-color:white;\r\n    overflow-y: auto; /* Black*/\r\n    overflow-x: hidden; /* Disable horizontal scroll */\r\n    padding-top: 60px; /* Place content 60px from the top */\r\n    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */\r\n}\r\n\r\n/* The navigation menu links */\r\n.sidenav a {\r\n    padding: 8px 8px 8px 32px;\r\n    text-decoration: none;\r\n    font-size: 25px;\r\n    color: #818181;\r\n    display: block;\r\n    transition: 0.3s\r\n}\r\n\r\n/* When you mouse over the navigation links, change their color */\r\n.sidenav a:hover, .offcanvas a:focus{\r\n    color: #f1f1f1;\r\n}\r\n\r\n/* Position and style the close button (top right corner) */\r\n.sidenav .closebtn {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 25px;\r\n    font-size: 36px;\r\n    margin-left: 50px;\r\n}\r\n\r\n\r\n\r\n.side-list{\r\n   padding-left:0px;\r\n   margin-bottom:0;  \r\n}\r\nul.side-list li{\r\n\tpadding-left:15px;\r\n}\r\nul.side-list li a{\r\n\tcolor: #76808d;\r\n\tfont-size:14px !important;\r\n\tpadding: 10px 0px 10px 0;\r\n}\r\n.logout-box{\r\n margin-top:60px;\r\n}\r\n.logout-link{\r\n\tpadding-left:15px !important;\r\n\t    font-size: 24px !important;\r\n    color: white !important;\r\n}\r\nul.side-list li i,ul.side-list li{\r\n\tcolor: #76808d;\r\n\tlist-style-type:none;\r\n\tfont-size:14px !important;\r\n}\r\nli.title{\r\n\tpadding: 15px 18px;\r\n    font-size: 18px;\r\n\tfont-weight: 600;\r\n    background: #202835;\r\n    display: block;\r\n    color: white !important;\r\n    text-transform: uppercase;\r\n}\r\nli.menu-item{\r\n\t    padding: 5px 18px;\r\n    text-align: left;\r\n    border-top: 0 none;\r\n    border-bottom: solid 1px #343E4A;\r\n}\r\n\r\n.sidebar-list{\r\n        padding-left: 0px;\r\n            padding-top: 10px;\r\n}\r\n.sidebar-list li{ \r\n  margin-bottom:20px;\r\n  list-style-type:none;\r\n  text-align: center;\r\n}\r\n.sidebar-list li a{\r\n    padding:0;\r\n}\r\n\r\n.sidebar-list li i,.sync-button i{\r\n  font-size:30px;\r\n  color:#7FCBC2;\r\n  list-style-type:none;\r\n}\r\n\r\n.sidebar-list li p,.sync-button p{\r\n      color:#7FCBC2;\r\n    font-size:10px;\r\n    margin-top: 14px;\r\n\r\n}\r\n.sync-button{\r\n    position: absolute;\r\n    bottom:0;\r\n    left:10px;\r\n}", ""]);
+
+// exports
+
 
 /***/ }),
 /* 503 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(31)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "h1 {\r\n  color: #00BCD4;\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 504 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "ccad210978aedfd7648260f7588e849e.woff";
+
+/***/ }),
+/* 505 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "b5fd3a47e1d994ff01e32f862ac97f4e.woff2";
+
+/***/ }),
+/* 506 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -100233,18 +100568,18 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 503;
+webpackContext.id = 506;
 
 /***/ }),
-/* 504 */
+/* 507 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export DatePickerModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_slimscroll__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_slimscroll__ = __webpack_require__(319);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng2_datepicker_component__ = __webpack_require__(276);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_4__ng2_datepicker_component__["a"]; });
 /* unused harmony reexport DateModel */
@@ -100281,7 +100616,7 @@ var DatePickerModule = (function () {
 //# sourceMappingURL=ng2-datepicker.module.js.map
 
 /***/ }),
-/* 505 */
+/* 508 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100359,7 +100694,7 @@ module.exports = EventManager;
 
 
 /***/ }),
-/* 506 */
+/* 509 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100379,15 +100714,15 @@ module.exports = (function () {
 
 
 /***/ }),
-/* 507 */
+/* 510 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var destroy = __webpack_require__(509);
-var initialize = __webpack_require__(517);
-var update = __webpack_require__(518);
+var destroy = __webpack_require__(512);
+var initialize = __webpack_require__(520);
+var update = __webpack_require__(521);
 
 module.exports = {
   initialize: initialize,
@@ -100397,7 +100732,7 @@ module.exports = {
 
 
 /***/ }),
-/* 508 */
+/* 511 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100420,14 +100755,14 @@ module.exports = {
 
 
 /***/ }),
-/* 509 */
+/* 512 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var _ = __webpack_require__(32);
-var dom = __webpack_require__(49);
+var dom = __webpack_require__(50);
 var instances = __webpack_require__(19);
 
 module.exports = function (element) {
@@ -100449,7 +100784,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 510 */
+/* 513 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100495,14 +100830,14 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 511 */
+/* 514 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var _ = __webpack_require__(32);
-var dom = __webpack_require__(49);
+var dom = __webpack_require__(50);
 var instances = __webpack_require__(19);
 var updateGeometry = __webpack_require__(33);
 var updateScroll = __webpack_require__(38);
@@ -100605,14 +100940,14 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 512 */
+/* 515 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var _ = __webpack_require__(32);
-var dom = __webpack_require__(49);
+var dom = __webpack_require__(50);
 var instances = __webpack_require__(19);
 var updateGeometry = __webpack_require__(33);
 var updateScroll = __webpack_require__(38);
@@ -100766,7 +101101,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 513 */
+/* 516 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100914,7 +101249,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 514 */
+/* 517 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100936,7 +101271,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 515 */
+/* 518 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101058,7 +101393,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 516 */
+/* 519 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101244,7 +101579,7 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 517 */
+/* 520 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101257,14 +101592,14 @@ var updateGeometry = __webpack_require__(33);
 
 // Handlers
 var handlers = {
-  'click-rail': __webpack_require__(510),
-  'drag-scrollbar': __webpack_require__(511),
-  'keyboard': __webpack_require__(512),
-  'wheel': __webpack_require__(513),
-  'touch': __webpack_require__(516),
-  'selection': __webpack_require__(515)
+  'click-rail': __webpack_require__(513),
+  'drag-scrollbar': __webpack_require__(514),
+  'keyboard': __webpack_require__(515),
+  'wheel': __webpack_require__(516),
+  'touch': __webpack_require__(519),
+  'selection': __webpack_require__(518)
 };
-var nativeScrollHandler = __webpack_require__(514);
+var nativeScrollHandler = __webpack_require__(517);
 
 module.exports = function (element, userSettings) {
   userSettings = typeof userSettings === 'object' ? userSettings : {};
@@ -101288,14 +101623,14 @@ module.exports = function (element, userSettings) {
 
 
 /***/ }),
-/* 518 */
+/* 521 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var _ = __webpack_require__(32);
-var dom = __webpack_require__(49);
+var dom = __webpack_require__(50);
 var instances = __webpack_require__(19);
 var updateGeometry = __webpack_require__(33);
 var updateScroll = __webpack_require__(38);
@@ -101332,43 +101667,43 @@ module.exports = function (element) {
 
 
 /***/ }),
-/* 519 */
-/***/ (function(module, exports) {
-
-module.exports = "\r\n  \r\n  <!-- Whole Cart-->\r\n\r\n  <div class=\"whole-cart\">\r\n\r\n\r\n  <button id=\"PaymentOptionsButton\" type=\"button\" class=\"btn btn-info btn-lg\" data-toggle=\"modal\" data-target=\"#PaymentOptions\" style=\"display:none\">Open Modal</button>\r\n\t\t <!-- Modal -->\r\n  <div class=\"modal fade\" id=\"PaymentOptions\" data-backdrop=\"static\" data-keyboard=\"false\" role=\"dialog\">\r\n    <div class=\"modal-dialog\">\r\n    \r\n      <!-- Modal content-->\r\n      <div class=\"modal-content\">\r\n        <div class=\"modal-header\">\r\n\t\t\t\t\t  <button type=\"button\" id=\"closeModal\" data-dismiss=\"modal\">Close</button>\r\n          <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                <div class=\"heading-box\"><h3>Make Payment</h3></div>\r\n        </div>\r\n        <div class=\"modal-body\">\r\n\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t<div class=\"row price-row\" style=\"margin-top:20px;\">\r\n\t\t\t\t\t\t\t  <div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p>Balance</p>\r\n\t\t\t\t\t\t\t  </div>\r\n\r\n\t\t\t\t\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p>{{FinalTotal}}</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"row price-row\">\r\n\t\t\t\t\t\t\t  <div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p class=\"blue\">Paying Now</p>\r\n\t\t\t\t\t\t\t  </div>\r\n\r\n\t\t\t\t\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p class=\"grey\">{{FinalTotal}}</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t<div class=\"payment-options\">\r\n\r\n\t\t\t\t\t\t<div class=\"row payment-methods-row\">\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\" (click)=\"initiateCashPayment($event)\" id=\"cashOnDelivery\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-gift\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>Cash on Delivery</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\" (click)=\"initiateCashPayment($event)\" id=\"cashOnHand\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-money\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>Cash</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-credit-card\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>Credit Card</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-arrow-right\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>3rd Party</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t       </div>\r\n\r\n\r\n\r\n\t\t\t\t\t <div class=\"shippment-options\">\r\n\r\n\t\t\t\t\t\t<div class=\"shipment-plus-or\">\r\n\t\t\t\t\t \t <div class=\"checkbox shippment-check\">\r\n\t\t\t\t\t\t\t<label><input type=\"checkbox\" class=\"shippmentFormYes\" (change)=\"CheckoutShippingForm()\"  value=\"shipYes\">Do you want to ship these produts?</label>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<p class=\"or-text\" style=\"text-align:center;font-size:20px;\">OR</p> \r\n\t\t\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t\t<div class=\"proceed-without-shippment\">\r\n\r\n\r\n\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t <div class=\"proceed\">\r\n\t\t\t\t\t\t\t\t\t<button class=\"proceed-button\" (click)=\"thanksMsgShow()\"><i class=\"fa fa-check\"></i>&nbsp;&nbsp;&nbsp;Proceed</button>\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t<div class=\"thankyouMsg\">\r\n\t\t\t\t\t\t\t\t\t\t<h3 style=\"color:#7FCBC2;text-align: center;margin:20px 0;\">Your order was placed successfully! Thank you </h3>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-default button-close\" data-dismiss=\"modal\">Close</button>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\r\n\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\r\n\t\t\t\t\t\t  <div class=\"checkout-shippment-form\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t<h3 style=\"text-align:center;\">Enter Shipping Details</h3>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t <div class=\"row\" style=\"margin-top:20px\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t          <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t     <Strong>Select Shipping Address</Strong>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t<select [(ngModel)]=\"selectedAdress\" class=\"new-form-inputs\" (change)=\"getSingleAddress($event.target.value)\">\r\n\r\n                <option  value=\"\" disabled selected>Select Address</option>\r\n                <option  *ngFor=\"let address of AddressModelArray\" [ngValue]=\"address\">{{address.Address}}</option>  \r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</select>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t </div>\r\n\r\n                        <div class=\"row\" style=\"margin-top:20px\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Shipping Name</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"checkoutShipName\" name=\"checkoutShipName\" [(ngModel)]=\"checkoutShipName\" type=\"text\" placeholder=\"Enter name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row\" style=\"margin-top:20px\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Shipping Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"checkoutShipPhone\" name=\"checkoutShipPhone\" [(ngModel)]=\"checkoutShipPhone\" type=\"number\" placeholder=\"Enter phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row\" style=\"margin-top:20px\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Shipping Adress</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"checkoutShipAddress\" name=\"checkoutShipAddress\" [(ngModel)]=\"checkoutShipAddress\" type=\"text\" placeholder=\"Enter address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"incompleteCheckoutShippment alert alert-danger\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Incomplete Form</strong>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"checkoutLoader\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"row\" style=\"margin-top:20px;text-align: center;\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t   <button class=\"SubmitCheckoutShippment\" (click)=\"SubmitCheckoutShippmentInfo()\">Submit Details</button>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t  <!-- Proceed -->\r\n\t\t\t\t\t\t\t<div class=\"proceed-with-order\">\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t <div class=\"proceed\">\r\n\t\t\t\t\t\t\t\t\t<h3 style=\"color:black;text-align: center;margin:20px 0;\">Do you want to Proceed?</h3>\r\n\t\t\t\t\t\t\t\t\t<button class=\"proceed-button\" (click)=\"thanksMsgShow()\"><i class=\"fa fa-check\"></i>&nbsp;&nbsp;&nbsp;Proceed</button>\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t<div class=\"OrderLoader\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t<div class=\"thankyouMsg\">\r\n\t\t\t\t\t\t\t\t\t\t<h3 style=\"color:#7FCBC2;text-align: center;margin:20px 0;\">Your order was placed successfully! Thank you </h3>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-default button-close\" data-dismiss=\"modal\">Close</button>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<!-- Proceed -->\r\n\r\n\r\n\r\n        </div>\r\n\r\n      </div>\r\n      \r\n    </div>\r\n  </div>\r\n\r\n\r\n<div class=\"table-cart animated\">\r\n\t<div class=\"actions-customer row\">\r\n\t\r\n\t <h2>Charge AED {{FinalTotal}}</h2>\r\n\t  \r\n\t\r\n\t</div>\r\n\t\r\n\t<div class=\"customer-name\">\r\n    <h3 *ngIf=\"!customerName\">Guest Customer</h3>\r\n     <h3 *ngIf=\"customerName\">{{customerName}}<button (click)=\"unAttachUser()\" class=\"no-user\">&times;</button></h3>\r\n\t</div>\r\n\t\r\n\t<div class=\"main-item-order\" [perfect-scrollbar]=\"config\"> \r\n\t\r\n\t<table class=\"table table-bordered\">\r\n    <thead>\r\n      <tr>\r\n\t\t\t\t<th class=\"col-md-1 no-right-border background-th\"></th>\r\n        <th class=\"col-md-8 background-th no-left-border\">ITEM</th>\r\n        <th class=\"col-md-3 background-th align-right\">TOTAL</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n\r\n\r\n\t\t\t<tr *ngFor=\"let cartObj of cart\" id=\"{{cartObj.product.ID}}\">\r\n\t\t\t\t<td class=\"col-md-1\" style=\" vertical-align: middle;\"><button class='deleteRow' (click)=\"deleteThisRow(cartObj.product.ID)\"><img src=\"/assets/img/delete.png\"></button></td>\r\n        <td class=\"col-md-8\">\r\n\t\t\r\n\t\t\t\t\t  <div class=\"row\">\r\n\t\t\t\t\t\t  <div class=\"col-md-10 paddingLeft\">\r\n\t\t\t\t\t\t\t\t <p class=\"blue-color\">{{cartObj.product.Name}}</p>\r\n\t\t\t\t\t\t\t\t  <p class=\"small-tex\"> AED{{cartObj.product.price}} </p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"small-tex\">{{cartObj.box}} </p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"small-tex\">{{cartObj.boxColor}} </p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"small-tex\">{{cartObj.size}} </p>\r\n\t\t\t\t\t\t  </div>\r\n\t\t\t\t\t\t\t<div class=\"col-md-2\">\r\n\t\t\t\t\t\t\t\t<p class=\"blue-color\">X {{cartObj.quantity}}</p>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t</td>\r\n        <td class=\"col-md-3  price-total-box align-right\">AED {{cartObj.total}} </td>\r\n      </tr>\r\n\r\n\r\n    </tbody>\r\n\t\t  <tfoot>\r\n\r\n\t\t\t\r\n    <tr>\r\n      <td class=\"col-md-1 no-padding-all background-colored\"><div class=\"Checkout\" (click)=\"callModal()\">a</div></td>\r\n      <td class=\"col-md-9 uppercase left-less\" >Subtotal</td>\r\n      <td class=\"col-md-2 uppercase align-right\">AED {{subtotal}}</td>\r\n    </tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"col-md-1 no-padding-all background-colored\"><div class=\"Checkout\" (click)=\"callModal()\" ><i class=\"fa fa-plus\"></i></div></td>\r\n      <td class=\"col-md-9 uppercase left-less\" >Tax</td>\r\n      <td class=\"col-md-2 uppercase align-right\">AED {{toShowTax}}</td>\r\n    </tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"col-md-1 no-padding-all background-colored\"><div class=\"Checkout\" (click)=\"callModal()\">a</div></td>\r\n      <td class=\"col-md-9 uppercase left-less\" >Total</td>\r\n      <td class=\"col-md-2 uppercase align-right\">AED {{FinalTotal}}</td>\r\n    </tr>\r\n\r\n  </tfoot>\r\n  </table>\r\n\t\r\n\t\t\r\n\t\t\r\n\t</div>\r\n\t\r\n\t</div>\r\n\r\n\r\n</div>  <!-- Whole Cart-->\r\n\r\n\r\n\r\n\r\n<!-- Back Office Div -->\r\n\r\n<div class=\"back-office-div\">\r\n\r\n<div class=\"backToCart\" (click)=\"showCartHideTax()\">\r\n\t<img src=\"/assets/img/left.png\" width=\"30px\">\r\n</div>\r\n\r\n\r\n<div class=\"row\">\r\n\r\n <h3>Global Settings</h3>\r\n <hr>\r\n</div>\r\n\r\n<div class=\"setting-row\">\r\n\t<div class=\"col-md-6 col-sm-6\">\r\n\t\t<p class=\"settings-text\">Global Tax</p>\r\n\t</div>\r\n\r\n\t<div class=\"col-md-6 col-sm-6\">\r\n\r\n\t\t<label class=\"switch\">\r\n\t\t\t<input type=\"checkbox\" (change)=\"taxValueChange()\" class=\"tax-value\">\r\n\t\t\t<span class=\"slider round\"></span>\r\n        </label>\r\n\r\n\t</div>\r\n</div>\r\n\r\n\r\n<div class=\"setting-row tax-amount-input\">\r\n\r\n\t\t<div class=\"col-md-6\">\r\n\t\t\t<p class=\"settings-text\">Global Tax Value</p>\r\n\t\t</div>\r\n\r\n\r\n\t\t<div class=\"col-md-3\">\r\n\t\t\t<input type=\"number\" class=\"new-form-inputs\" id=\"taxValue\" name=\"taxValue\" [(ngModel)]=\"taxValue\">\r\n\t\t</div>\r\n\r\n\t\t<div class=\"col-md-3\">\r\n\t\t\t<button class=\"btn-save-tax\" (click)=\"saveTax()\"><i class='fa fa-save'></i></button>\r\n\t\t</div>\r\n\r\n\r\n</div>\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<!-- Back Office div-->\r\n\r\n\r\n\r\n\r\n\r\n\t\t<div class=\"cart-footer clearfix\">\r\n\t\t\t\r\n\t\t\t <div class=\"row\">\r\n\r\n\t\t\t\t\t  <div class=\"col-md-8 col-sm-7\">\r\n\t\t\t\t\t\t\t<div class=\"upload\">\r\n\t\t\t\t\t\t\t\t<div class=\"dropup\">\r\n\t\t\t\t\t\t\t\t\t<button class=\"btn btn-primary dropdown-toggle\" type=\"button\" data-toggle=\"dropdown\"><i class=\"fa fa-upload\"></i>\r\n\t\t\t\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t\t\t\t<ul class=\"dropdown-menu\">\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Discounts</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Tips</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Notes</a></li>\r\n\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t  <div class=\"col-md-4 col-sm-5\">\r\n\t\t\t\t\t\t\t\t<div class=\"pause\">\r\n\t\t\t\t\t\t\t\t\t\t<button class=\"pause-button\" (click)=\"pauseCart()\"><img src=\"/assets/img/pause.png\" width=\"15px\"></button>\r\n\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t<div class=\"cancel\">\r\n\t\t\t\t\t\t\t\t\t<button class=\"cancel-button\" (click)=\"deleteCart()\"><img src=\"/assets/img/cross.png\" width=\"15px\"></button>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t \r\n\t\t\t </div>\r\n\t\r\n\t\t\t\r\n\t\t</div>"
-
-/***/ }),
-/* 520 */
-/***/ (function(module, exports) {
-
-module.exports = "<nav class=\"navbar navbar-default custom-navbar\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"navbar-header\">\r\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#myNavbar\">\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>                        \r\n      </button>\r\n    </div>\r\n    <div class=\"collapse navbar-collapse\" id=\"myNavbar\">\r\n      <ul class=\"nav navbar-nav\">\r\n        <li><a class=\"circle\"><i class=\"fa fa-user\"></i></a></li>\r\n      </ul> \r\n\t  \r\n\r\n    <div class=\"our-name\">\r\n         <p>Les Floralies</p>\r\n    </div>\r\n\t\r\n\r\n    </div>\r\n  </div>\r\n</nav>"
-
-/***/ }),
-/* 521 */
-/***/ (function(module, exports) {
-
-module.exports = "\r\n    <Header></Header>\r\n    <perfect-scrollbar  [config]=\"config\">\r\n    <Sidebar (showBackOfficeEvent)=\"Main.hideCartShowBackoffice()\"></Sidebar>\r\n    </perfect-scrollbar>\r\n<div class=\"row\" id=\"main2\"> <!-- Outermost Row (col-md-5 col-sm-6 main right) col-md-6 col-sm-6 mainleft -->\r\n\r\n  <div class=\"left-main\" id=\"main-right\"> <!-- Main Right -->\r\n\r\n   <Cartright #Cartright></Cartright>\r\n\r\n  </div><!-- Main Right Ends-->\r\n\r\n  <div  id=\"main\" class=\"right-main\">  <!-- Main -->\r\n\r\n    \r\n    <Main #Main id=\"backgrounded\" (customerSet)=\"Cartright.getCustomer()\" (myEvent)=\"Cartright.function1()\"></Main>\r\n\r\n\r\n  </div> <!-- Main Ends -->\r\n   \r\n\r\n\r\n\r\n</div>  <!-- Outermost Row Ends -->"
-
-/***/ }),
 /* 522 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"login-wrap\">\r\n\t<div class=\"login-html\">\r\n\t\t<input id=\"tab-1\" type=\"radio\" name=\"tab\" class=\"sign-in\" checked><label for=\"tab-1\" class=\"tab\">Sign In</label>\r\n\t\t<input id=\"tab-2\" type=\"radio\" name=\"tab\" class=\"sign-up\"><label for=\"tab-2\" class=\"tab\"></label>\r\n\t\t<div class=\"login-form\">\r\n\t\t\t<div class=\"sign-in-htm\">\r\n\t\t\t\t<div class=\"group\">\r\n\t\t\t\t\t<label for=\"user\" class=\"label\">Username</label>\r\n\t\t\t\t\t<input id=\"user\" type=\"text\" name=\"Email\" [(ngModel)]=\"Email\" class=\"input\">\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"group\">\r\n\t\t\t\t\t<label for=\"pass\" class=\"label\">Password</label>\r\n\t\t\t\t\t<input id=\"pass\" type=\"password\" name=\"Password\" [(ngModel)]=\"Password\"  class=\"input\" data-type=\"password\">\r\n\t\t\t\t</div>\r\n\t\t\t\r\n\r\n        <div class=\"group\" id=\"enterEmail\">\r\n               <p>Enter your email</p>\r\n\t\t\t\t</div>\r\n\r\n        <div class=\"group\" id=\"enterPassword\">\r\n               <p>Enter your password</p>\r\n\t\t\t\t</div>\r\n\r\n        <div class=\"group\" id=\"wrongEmail\">\r\n               <p>Enter a valid email</p>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"group\" id=\"wrongCreds\">\r\n               <p>Enter valid credentials</p>\r\n\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t<div class=\"group\">\r\n\t\t\t\t\t<input type=\"submit\" (click)=\"Submitting()\" class=\"button\" value=\"Sign In\">\r\n\t\t\t\t</div>\r\n\r\n        <div id=\"loader\">\r\n<i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n        </div>\r\n        \r\n\t\t\t\t<div class=\"hr\"></div>\r\n<!--\t\t\t\t<div class=\"foot-lnk\">\r\n\t\t\t\t\t<a href=\"#forgot\">Forgot Password?</a>\r\n\t\t\t\t</div>-->\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\t</div>\r\n</div>"
+module.exports = "\r\n    <modal #PaymentOptions  [hideCloseButton]=\"true\">\r\n\t\t\r\n        <modal-content>\r\n\t\t<div class=\"modal-header\">\r\n\t<!--\t\t\t\t  <button type=\"button\" id=\"closeModal\" data-dismiss=\"modal\">Close</button>-->\r\n   <!--       <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>-->\r\n                <div class=\"heading-box\"><h3>Make Payment</h3></div>\r\n        </div>\r\n        <div class=\"modal-body\">\r\n\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t<div class=\"row price-row\" style=\"margin-top:20px;\">\r\n\t\t\t\t\t\t\t  <div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p>Balance</p>\r\n\t\t\t\t\t\t\t  </div>\r\n\r\n\t\t\t\t\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p>{{FinalTotal}}</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"row price-row\">\r\n\t\t\t\t\t\t\t  <div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p class=\"blue\">Paying Now</p>\r\n\t\t\t\t\t\t\t  </div>\r\n\r\n\t\t\t\t\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p class=\"grey\">{{FinalTotal}}</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t<div class=\"payment-options\">\r\n\r\n\t\t\t\t\t\t<div class=\"row payment-methods-row\">\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\" (click)=\"initiateCashPayment(cashOnDelivery)\" id=\"cashOnDelivery\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-gift\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>Cash on Delivery</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\" (click)=\"initiateCashPayment(cashOnHand)\" id=\"cashOnHand\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-money\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>Cash</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-credit-card\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>Credit Card</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-arrow-right\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>3rd Party</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t       </div>\r\n\r\n\r\n\r\n\t\t\t\t\t <div class=\"shippment-options\">\r\n\r\n\t\t\t\t\t\t<div class=\"shipment-plus-or\">\r\n\t\t\t\t\t \t <div class=\"checkbox shippment-check\">\r\n\t\t\t\t\t\t\t<label><input type=\"checkbox\" class=\"shippmentFormYes\" (change)=\"CheckoutShippingForm()\"  value=\"shipYes\">Do you want to ship these produts?</label>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<p class=\"or-text\" style=\"text-align:center;font-size:20px;\">OR</p> \r\n\t\t\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t\t<div class=\"proceed-without-shippment\">\r\n\r\n\r\n\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t <div class=\"proceed\">\r\n\t\t\t\t\t\t\t\t\t<button class=\"proceed-button\" (click)=\"thanksMsgShow()\"><i class=\"fa fa-check\"></i>&nbsp;&nbsp;&nbsp;Proceed</button>\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t<div class=\"thankyouMsg\">\r\n\t\t\t\t\t\t\t\t\t\t<h3 style=\"color:#7FCBC2;text-align: center;margin:20px 0;\">Your order was placed successfully! Thank you </h3>\r\n\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\r\n\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\r\n\t\t\t\t\t\t  <div class=\"checkout-shippment-form\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t<h3 style=\"text-align:center;\">Enter Shipping Details</h3>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t <div class=\"row\" style=\"margin-top:20px\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t          <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t     <Strong>Select Shipping Address</Strong>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t<select [(ngModel)]=\"selectedAdress\" class=\"new-form-inputs\" (change)=\"getSingleAddress($event.target.value)\">\r\n\r\n                <option  value=\"\" disabled selected>Select Address</option>\r\n                <option  *ngFor=\"let address of AddressModelArray\" [ngValue]=\"address\">{{address.Address}}</option>  \r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</select>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t </div>\r\n\r\n                        <div class=\"row\" style=\"margin-top:20px\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Shipping Name</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"checkoutShipName\" name=\"checkoutShipName\" [(ngModel)]=\"checkoutShipName\" type=\"text\" placeholder=\"Enter name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row\" style=\"margin-top:20px\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Shipping Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"checkoutShipPhone\" name=\"checkoutShipPhone\" [(ngModel)]=\"checkoutShipPhone\" type=\"number\" placeholder=\"Enter phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row\" style=\"margin-top:20px\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Shipping Adress</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"checkoutShipAddress\" name=\"checkoutShipAddress\" [(ngModel)]=\"checkoutShipAddress\" type=\"text\" placeholder=\"Enter address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"incompleteCheckoutShippment alert alert-danger\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Incomplete Form</strong>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"checkoutLoader\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"row\" style=\"margin-top:20px;text-align: center;\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t   <button class=\"SubmitCheckoutShippment\" (click)=\"SubmitCheckoutShippmentInfo()\">Submit Details</button>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t  <!-- Proceed -->\r\n\t\t\t\t\t\t\t<div class=\"proceed-with-order\">\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t <div class=\"proceed\">\r\n\t\t\t\t\t\t\t\t\t<h3 style=\"color:black;text-align: center;margin:20px 0;\">Do you want to Proceed?</h3>\r\n\t\t\t\t\t\t\t\t\t<button class=\"proceed-button\" (click)=\"thanksMsgShow()\"><i class=\"fa fa-check\"></i>&nbsp;&nbsp;&nbsp;Proceed</button>\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t<div class=\"OrderLoader\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t<div class=\"thankyouMsg\">\r\n\t\t\t\t\t\t\t\t\t\t<h3 style=\"color:#7FCBC2;text-align: center;margin:20px 0;\">Your order was placed successfully! Thank you </h3>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<!-- Proceed -->\r\n\r\n\r\n\r\n        </div>\r\n\r\n\r\n        </modal-content>\r\n        <modal-footer>\r\n            <button class=\"btn btn-primary\" (click)=\"PaymentOptions.close()\">close</button>\r\n        </modal-footer>\r\n    </modal>\r\n  \r\n  <!-- Whole Cart-->\r\n\r\n  <div class=\"whole-cart\">\r\n\r\n\r\n  <!--<button id=\"PaymentOptionsButton\" type=\"button\" class=\"btn btn-info btn-lg\" data-toggle=\"modal\" data-target=\"#PaymentOptions\" style=\"display:none\">Open Modal</button>\r\n\t\t <!-- Modal \r\n  <div class=\"modal fade\" id=\"PaymentOptions\" data-backdrop=\"static\" data-keyboard=\"false\" role=\"dialog\">\r\n    <div class=\"modal-dialog\">\r\n    \r\n      <!-- Modal content\r\n      <div class=\"modal-content\">\r\n        <div class=\"modal-header\">\r\n\t\t\t\t\t  <button type=\"button\" id=\"closeModal\" data-dismiss=\"modal\">Close</button>\r\n          <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                <div class=\"heading-box\"><h3>Make Payment</h3></div>\r\n        </div>\r\n        <div class=\"modal-body\">\r\n\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t<div class=\"row price-row\" style=\"margin-top:20px;\">\r\n\t\t\t\t\t\t\t  <div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p>Balance</p>\r\n\t\t\t\t\t\t\t  </div>\r\n\r\n\t\t\t\t\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p>{{FinalTotal}}</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"row price-row\">\r\n\t\t\t\t\t\t\t  <div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p class=\"blue\">Paying Now</p>\r\n\t\t\t\t\t\t\t  </div>\r\n\r\n\t\t\t\t\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t\t\t\t\t<p class=\"grey\">{{FinalTotal}}</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t<div class=\"payment-options\">\r\n\r\n\t\t\t\t\t\t<div class=\"row payment-methods-row\">\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\" (click)=\"initiateCashPayment($event)\" id=\"cashOnDelivery\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-gift\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>Cash on Delivery</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\" (click)=\"initiateCashPayment($event)\" id=\"cashOnHand\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-money\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>Cash</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-credit-card\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>Credit Card</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div class=\"col-md-3\">\r\n\t\t\t\t\t\t\t\t <div class=\"option-box\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-arrow-right\"></i>\r\n\t\t\t\t\t\t\t\t\t\t<p>3rd Party</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t       </div>\r\n\r\n\r\n\r\n\t\t\t\t\t <div class=\"shippment-options\">\r\n\r\n\t\t\t\t\t\t<div class=\"shipment-plus-or\">\r\n\t\t\t\t\t \t <div class=\"checkbox shippment-check\">\r\n\t\t\t\t\t\t\t<label><input type=\"checkbox\" class=\"shippmentFormYes\" (change)=\"CheckoutShippingForm()\"  value=\"shipYes\">Do you want to ship these produts?</label>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<p class=\"or-text\" style=\"text-align:center;font-size:20px;\">OR</p> \r\n\t\t\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t\t<div class=\"proceed-without-shippment\">\r\n\r\n\r\n\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t <div class=\"proceed\">\r\n\t\t\t\t\t\t\t\t\t<button class=\"proceed-button\" (click)=\"thanksMsgShow()\"><i class=\"fa fa-check\"></i>&nbsp;&nbsp;&nbsp;Proceed</button>\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t<div class=\"thankyouMsg\">\r\n\t\t\t\t\t\t\t\t\t\t<h3 style=\"color:#7FCBC2;text-align: center;margin:20px 0;\">Your order was placed successfully! Thank you </h3>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-default button-close\" data-dismiss=\"modal\">Close</button>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\r\n\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\r\n\t\t\t\t\t\t  <div class=\"checkout-shippment-form\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t<h3 style=\"text-align:center;\">Enter Shipping Details</h3>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t <div class=\"row\" style=\"margin-top:20px\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t          <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t     <Strong>Select Shipping Address</Strong>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t<select [(ngModel)]=\"selectedAdress\" class=\"new-form-inputs\" (change)=\"getSingleAddress($event.target.value)\">\r\n\r\n                <option  value=\"\" disabled selected>Select Address</option>\r\n                <option  *ngFor=\"let address of AddressModelArray\" [ngValue]=\"address\">{{address.Address}}</option>  \r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</select>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t </div>\r\n\r\n                        <div class=\"row\" style=\"margin-top:20px\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Shipping Name</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"checkoutShipName\" name=\"checkoutShipName\" [(ngModel)]=\"checkoutShipName\" type=\"text\" placeholder=\"Enter name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row\" style=\"margin-top:20px\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Shipping Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"checkoutShipPhone\" name=\"checkoutShipPhone\" [(ngModel)]=\"checkoutShipPhone\" type=\"number\" placeholder=\"Enter phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row\" style=\"margin-top:20px\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Shipping Adress</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"checkoutShipAddress\" name=\"checkoutShipAddress\" [(ngModel)]=\"checkoutShipAddress\" type=\"text\" placeholder=\"Enter address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"incompleteCheckoutShippment alert alert-danger\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Incomplete Form</strong>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"checkoutLoader\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"row\" style=\"margin-top:20px;text-align: center;\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t   <button class=\"SubmitCheckoutShippment\" (click)=\"SubmitCheckoutShippmentInfo()\">Submit Details</button>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\r\n\r\n\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t  <!-- Proceed \r\n\t\t\t\t\t\t\t<div class=\"proceed-with-order\">\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t <div class=\"proceed\">\r\n\t\t\t\t\t\t\t\t\t<h3 style=\"color:black;text-align: center;margin:20px 0;\">Do you want to Proceed?</h3>\r\n\t\t\t\t\t\t\t\t\t<button class=\"proceed-button\" (click)=\"thanksMsgShow()\"><i class=\"fa fa-check\"></i>&nbsp;&nbsp;&nbsp;Proceed</button>\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t<div class=\"OrderLoader\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t<div class=\"thankyouMsg\">\r\n\t\t\t\t\t\t\t\t\t\t<h3 style=\"color:#7FCBC2;text-align: center;margin:20px 0;\">Your order was placed successfully! Thank you </h3>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-default button-close\" data-dismiss=\"modal\">Close</button>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<!-- Proceed \r\n\r\n\r\n\r\n        </div>\r\n\r\n      </div>\r\n      \r\n    </div>\r\n  </div>\r\n-->\r\n\r\n<div class=\"table-cart animated\">\r\n\t<div class=\"actions-customer row\">\r\n\t\r\n\t <h2>Charge AED {{FinalTotal}}</h2>\r\n\t  \r\n\t\r\n\t</div>\r\n\t\r\n\t<div class=\"customer-name\">\r\n    <h3 *ngIf=\"!customerName\">Guest Customer</h3>\r\n     <h3 *ngIf=\"customerName\">{{customerName}}<button (click)=\"unAttachUser()\" class=\"no-user\">&times;</button></h3>\r\n\t</div>\r\n\t\r\n\t<div class=\"main-item-order\" [perfect-scrollbar]=\"config\"> \r\n\t\r\n\t<table class=\"table table-bordered\">\r\n    <thead>\r\n      <tr>\r\n\t\t\t\t<th class=\"col-md-1 no-right-border background-th\"></th>\r\n        <th class=\"col-md-8 background-th no-left-border\">ITEM</th>\r\n        <th class=\"col-md-3 background-th align-right\">TOTAL</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n\r\n\r\n\t\t\t<tr *ngFor=\"let cartObj of cart\" id=\"{{cartObj.product.ID}}\">\r\n\t\t\t\t<td class=\"col-md-1\" style=\" vertical-align: middle;\"><button class='deleteRow' (click)=\"deleteThisRow(cartObj.product.ID)\"><img src=\"/assets/img/delete.png\"></button></td>\r\n        <td class=\"col-md-8\">\r\n\t\t\r\n\t\t\t\t\t  <div class=\"row\">\r\n\t\t\t\t\t\t  <div class=\"col-md-10 paddingLeft\">\r\n\t\t\t\t\t\t\t\t <p class=\"blue-color\">{{cartObj.product.Name}}</p>\r\n\t\t\t\t\t\t\t\t  <p class=\"small-tex\"> AED{{cartObj.product.price}} </p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"small-tex\">{{cartObj.box}} </p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"small-tex\">{{cartObj.boxColor}} </p>\r\n\t\t\t\t\t\t\t\t\t<p class=\"small-tex\">{{cartObj.size}} </p>\r\n\t\t\t\t\t\t  </div>\r\n\t\t\t\t\t\t\t<div class=\"col-md-2\">\r\n\t\t\t\t\t\t\t\t<p class=\"blue-color\">X {{cartObj.quantity}}</p>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t</td>\r\n        <td class=\"col-md-3  price-total-box align-right\">AED {{cartObj.total}} </td>\r\n      </tr>\r\n\r\n\r\n    </tbody>\r\n\t\t  <tfoot>\r\n\r\n\t\t\t\r\n    <tr>\r\n      <td class=\"col-md-1 no-padding-all background-colored\"><div class=\"Checkout\" (click)=\"callModal()\">a</div></td>\r\n      <td class=\"col-md-9 uppercase left-less\" >Subtotal</td>\r\n      <td class=\"col-md-2 uppercase align-right\">AED {{subtotal}}</td>\r\n    </tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"col-md-1 no-padding-all background-colored\"><div class=\"Checkout\" (click)=\"callModal()\" ><i class=\"fa fa-plus\"></i></div></td>\r\n      <td class=\"col-md-9 uppercase left-less\" >Tax</td>\r\n      <td class=\"col-md-2 uppercase align-right\">AED {{toShowTax}}</td>\r\n    </tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"col-md-1 no-padding-all background-colored\"><div class=\"Checkout\" (click)=\"callModal()\">a</div></td>\r\n      <td class=\"col-md-9 uppercase left-less\" >Total</td>\r\n      <td class=\"col-md-2 uppercase align-right\">AED {{FinalTotal}}</td>\r\n    </tr>\r\n\r\n  </tfoot>\r\n  </table>\r\n\t\r\n\t\t\r\n\t\t\r\n\t</div>\r\n\t\r\n\t</div>\r\n\r\n\r\n</div>  <!-- Whole Cart-->\r\n\r\n\r\n\r\n\r\n<!-- Back Office Div -->\r\n\r\n<div class=\"back-office-div\">\r\n\r\n<div class=\"backToCart\" (click)=\"showCartHideTax()\">\r\n\t<img src=\"/assets/img/left.png\" width=\"30px\">\r\n</div>\r\n\r\n\r\n<div class=\"row\">\r\n\r\n <h3>Global Settings</h3>\r\n <hr>\r\n</div>\r\n\r\n<div class=\"setting-row\">\r\n\t<div class=\"col-md-6 col-sm-6\">\r\n\t\t<p class=\"settings-text\">Global Tax</p>\r\n\t</div>\r\n\r\n\t<div class=\"col-md-6 col-sm-6\">\r\n\r\n\t\t<label class=\"switch\">\r\n\t\t\t<input type=\"checkbox\" (change)=\"taxValueChange()\" class=\"tax-value\">\r\n\t\t\t<span class=\"slider round\"></span>\r\n        </label>\r\n\r\n\t</div>\r\n</div>\r\n\r\n\r\n<div class=\"setting-row tax-amount-input\">\r\n\r\n\t\t<div class=\"col-md-6\">\r\n\t\t\t<p class=\"settings-text\">Global Tax Value</p>\r\n\t\t</div>\r\n\r\n\r\n\t\t<div class=\"col-md-3\">\r\n\t\t\t<input type=\"number\" class=\"new-form-inputs\" id=\"taxValue\" name=\"taxValue\" [(ngModel)]=\"taxValue\">\r\n\t\t</div>\r\n\r\n\t\t<div class=\"col-md-3\">\r\n\t\t\t<button class=\"btn-save-tax\" (click)=\"saveTax()\"><i class='fa fa-save'></i></button>\r\n\t\t</div>\r\n\r\n\r\n</div>\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<!-- Back Office div-->\r\n\r\n\r\n\r\n\r\n\r\n\t\t<div class=\"cart-footer clearfix\">\r\n\t\t\t\r\n\t\t\t <div class=\"row\">\r\n\r\n\t\t\t\t\t  <div class=\"col-md-8 col-sm-7\">\r\n\t\t\t\t\t\t\t<div class=\"upload\">\r\n\t\t\t\t\t\t\t\t<div class=\"dropup\">\r\n\t\t\t\t\t\t\t\t\t<button class=\"btn btn-primary dropdown-toggle\" type=\"button\" data-toggle=\"dropdown\"><i class=\"fa fa-upload\"></i>\r\n\t\t\t\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t\t\t\t<ul class=\"dropdown-menu\">\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Discounts</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Tips</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Notes</a></li>\r\n\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t  <div class=\"col-md-4 col-sm-5\">\r\n\t\t\t\t\t\t\t\t<div class=\"pause\">\r\n\t\t\t\t\t\t\t\t\t\t<button class=\"pause-button\" (click)=\"pauseCart()\"><img src=\"/assets/img/pause.png\" width=\"15px\"></button>\r\n\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t<div class=\"cancel\">\r\n\t\t\t\t\t\t\t\t\t<button class=\"cancel-button\" (click)=\"deleteCart()\"><img src=\"/assets/img/cross.png\" width=\"15px\"></button>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t \r\n\t\t\t </div>\r\n\t\r\n\t\t\t\r\n\t\t</div>"
 
 /***/ }),
 /* 523 */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<div class=\"row products-row\">\r\n\r\n\r\n\r\n\r\n\r\n<perfect-scrollbar  [config]=\"config\">\r\n    <div class=\"main-content \">\r\n\r\n\r\n\r\n        <div class=\"nav-tabs\">\r\n\r\n            <ul class=\"nav nav-pills\">\r\n                <li><a (click)=\"changePill($event)\" data-target=\"customers\" data-toggle=\"pill\"><i (click)=\"changePill($event)\" data-target=\"customers\" class=\"fa fa-user\"></i></a></li>\r\n                <li class=\"active\"><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"categories-tab\"><i (click)=\"changePill($event)\" data-target=\"categories-tab\" class=\"fa fa-bars\"></i></a></li>\r\n                <li><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"receipts\"><i (click)=\"changePill($event)\" data-target=\"receipts\" class=\"fa fa-ticket\"></i></a></li>\r\n                <li><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"menu3\"><i (click)=\"changePill($event)\" data-target=\"menu3\" class=\"fa fa-male\"></i></a></li>\r\n            </ul>\r\n\r\n        </div>\r\n\r\n\r\n        <div class=\"nav-content\">\r\n\r\n\r\n            <div class=\"tab-content\">\r\n\r\n\r\n                <div id=\"customers\" class=\"tab-pane fade clearfix\">\r\n\r\n\r\n                    <div class=\"search-customer\">\r\n\r\n                        <div class=\"customers-tab clearfix\">\r\n\r\n                            <div class=\"editCustomer\">\r\n                                <button class=\"editCustomerBtn\" (click)=\"editCustomerDetails(toEditCustomerId)\"><i class=\"fa fa-pencil\"></i></button>\r\n                            </div>\r\n\r\n                            <div class=\"customers-heading\">\r\n                                <p>Customers</p>\r\n                            </div>\r\n\r\n                            <div class=\"customer-add\">\r\n                                <button class=\"add-customer\" (click)=\"addCustomerForm()\"><i class=\"fa fa-plus\"></i></button>\r\n                            </div>\r\n\r\n                        </div>\r\n                        <div class=\"search-box-items clearfix\">\r\n\r\n                            <div class=\"search-input clearfix\">\r\n\r\n                                <input type=\"text\" name=\"searchCustomers\" (keyup)=\"searchThisCustomer(this)\" [(ngModel)]=\"searchCustomers\" class=\"form-control\" placeholder=\"Search items by name or sku\">\r\n\r\n                                <img src=\"../../assets/img/camera.png\">\r\n                                \r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"list-customers clearfix\">\r\n                            <div class='customer-loader'>  <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i></div>\r\n                            <ul *ngIf=\"customerList\" class=\"listing-customers clearfix\">\r\n\r\n                                <li *ngFor=\"let customersModel of CustomersModel\" class=\"customersModel clearfix\">\r\n                                    <a (click)=\"editCustomer(customersModel.id)\" id='{{customersModel.id}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{customersModel.customerName}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{customersModel.customerEmail}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>\r\n\r\n\r\n                            </ul>\r\n\r\n                            <ul *ngIf=\"searchFlag\" class=\"listing-customers clearfix\">\r\n\r\n                                 <li *ngFor=\"let searchedModel of SearchedModel\" class=\"searchModel clearfix\">\r\n                                    <a (click)=\"editCustomer(searchedModel.id)\" id='{{searchedModel.id}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{searchedModel.customerName}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{searchedModel.customerEmail}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>                           \r\n\r\n\r\n                            </ul>\r\n\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"new-customer-form\">\r\n\r\n                        <div class=\"close-form\" (click)=\"hideNewCustomerForm()\">&times;</div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <div class=\"fileinput fileinput-new\" data-provides=\"fileinput\">\r\n                                        <div class=\"fileinput-preview thumbnail\" id=\"image-container\" data-trigger=\"fileinput\" style=\"width:120px;height:120px;border-radius:50%;\"></div>\r\n                                        <div>\r\n                                            <span style=\"display:none\" class=\"btn btn-default btn-file\"><span  class=\"fileinput-new\">Select image</span>\r\n                                            <span\r\n                                                class=\"fileinput-exists\">Change</span><input type=\"file\" style=\"display:none\" name=\"...\"></span>\r\n                                                <a href=\"#\" class=\"btn btn-default fileinput-exists remove_image\" data-dismiss=\"fileinput\"><i class=\"fa fa-trash\"></i></a>\r\n                                        </div>\r\n                                    </div>\r\n\r\n\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerNameInput\" name=\"customerName\" [(ngModel)]=\"customerName\" type=\"text\" placeholder=\"Customer Name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <select id=\"select-customer-type\" [(ngModel)]=\"customerType\" class=\"new-form-inputs\">\r\n                             <option  value=\"\" disabled selected>Customer Type</option>\r\n                            <option *ngFor=\"let customerGroup of CustomergroupsModel\" value=\"{{customerGroup.id}}\">{{customerGroup.value}}</option>\r\n                    \r\n                    </select>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerCellPhone\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\"\r\n                                    placeholder=\"Cell Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Work Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerWorkPhone\" [(ngModel)]=\"customerWorkPhone\" type=\"number\" placeholder=\"Work Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerEmail\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Email\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <div class=\"radio\">\r\n                                    <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"male\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                    <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"female\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                </div>\r\n\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n                               <!-- <ng2-datepicker [options]=\"options\" [(ngModel)]=\"customersDOB\"></ng2-datepicker>-->\r\n\r\n                             <input class=\"new-form-inputs\" id=\"customerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n\r\n                            <div class=\"checkbox\">\r\n                                <label><input class=\"shippingCheckbox regular-checkbox\" (change)=\"shippingAddressForm()\" type=\"checkbox\" value=\"shipping\">    Shipping</label>\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"shipping-address-form\">\r\n                            <!-- Shipping Address Form -->\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"Name\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"Phone\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\"  id=\"toShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n                        <!-- Shipping Address Form -->\r\n\r\n\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Personal Discount</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerDiscount\" [(ngModel)]=\"customerDiscount\" type=\"text\" placeholder=\"Discount\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"incompleteForm\">\r\n\r\n                            <p>Please Fill out the form completely!</p>\r\n\r\n                        </div>\r\n\r\n                        <div id=\"loader\">\r\n                            <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"submit-button\">\r\n\r\n                            <button class=\"create-customer\" (click)=\"createCustomer()\">Create Customer</button>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"alert alert-success row margined-top\" id=\"customer-added\">\r\n\r\n                            <p>Customer Created Successfully!</p>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                    <!--- Customer Edit Form -->\r\n\r\n\r\n\r\n\r\n                    <div class=\"edit-customer-form\">\r\n\r\n                        <div class=\"row\">\r\n                            <div class=\"col-md-6\"></div>\r\n                            <div class=\"col-md-6\"> <div class=\"close-edit-form\" (click)=\"hideEditForm()\">&times;</div></div>\r\n                        </div>\r\n                       \r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <div class=\"fileinput fileinput-new\" data-provides=\"fileinput\">\r\n                                        <div class=\"fileinput-preview thumbnail\" id=\"image-container\" data-trigger=\"fileinput\" style=\"width:120px;height:120px;border-radius:50%;\"></div>\r\n                                        <div>\r\n                                            <span style=\"display:none\" class=\"btn btn-default btn-file\"><span  class=\"fileinput-new\">Select image</span>\r\n                                            <span\r\n                                                class=\"fileinput-exists\">Change</span><input type=\"file\" style=\"display:none\" name=\"...\"></span>\r\n                                                <a href=\"#\" class=\"btn btn-default fileinput-exists remove_image\" data-dismiss=\"fileinput\"><i class=\"fa fa-trash\"></i></a>\r\n                                        </div>\r\n                                    </div>\r\n\r\n\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs edit-profile-name\" id=\"editCustomerName\" name=\"customerName\" [(ngModel)]=\"customerName\" type=\"text\" placeholder=\"Customer Name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <select id=\"edit-customer-type\" [(ngModel)]=\"customerType\" class=\"new-form-inputs\">\r\n                             <option  value=\"\" disabled selected>Customer Type</option>\r\n                            <option *ngFor=\"let customerGroup of CustomergroupsModel\" value=\"{{customerGroup.id}}\">{{customerGroup.value}}</option>\r\n                    \r\n                    </select>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerCellPhone\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\"\r\n                                    placeholder=\"Cell Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Work Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"editCustomerWorkPhone\" [(ngModel)]=\"customerWorkPhone\" type=\"number\" placeholder=\"Work Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerEmail\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Email\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <div class=\"radio\">\r\n                                    <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"editGender\" value=\"Male\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                    <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"editGender\" value=\"Female\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                </div>\r\n\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n                               <!-- <ng2-datepicker [options]=\"options\" [(ngModel)]=\"customersDOB\"></ng2-datepicker>-->\r\n\r\n                             <input class=\"new-form-inputs\" id=\"editCustomerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n\r\n                            <div class=\"checkbox\">\r\n                                <label><input class=\"shippingCheckbox regular-checkbox\" (change)=\"shippingAddressForm()\" type=\"checkbox\" value=\"shipping\">    Shipping</label>\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"shipping-address-form\">\r\n                            <!-- Shipping Address Form -->\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"editToShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"Name\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"editToShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"Phone\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\"  id=\"editToShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n                        <!-- Shipping Address Form -->\r\n\r\n\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Personal Discount</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerDiscount\" [(ngModel)]=\"customerDiscount\" type=\"text\" placeholder=\"Discount\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"editincompleteForm\">\r\n\r\n                            <p>Please Fill out the form completely!</p>\r\n\r\n                        </div>\r\n\r\n                        <div id=\"editloader\">\r\n                            <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"update-button\">\r\n\r\n                            <button class=\"create-customer\" (click)=\"updateCustomer()\">Update Customer</button>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"alert alert-success row margined-top\" id=\"customer-updated\">\r\n\r\n                            <p>Customer Updated Successfully!</p>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                    <!-- Customer Edit Form -->\r\n\r\n\r\n                    <!-- Customer Profile to show -->\r\n\r\n                    <div class=\"Customer-full-detail animated\">\r\n\r\n\r\n                        <div class=\"back-to-search-customers\" (click)=\"backToSearchCustomers()\">\r\n                              <img src=\"/assets/img/left.png\">\r\n                        </div>\r\n\r\n                        <div class=\"\">\r\n\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"left-pic clearfix\">\r\n\r\n                                    <div class=\"profile-pic\">\r\n\r\n                                        <img src=\"../../assets/img/bane.jpg\">\r\n\r\n                                    </div>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"right-name clearfix\">\r\n\r\n                                    <h3 class=\"profile-name\">Tom Hardy</h3>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n\r\n                            <hr>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Cell Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\" placeholder=\"Cell Phone\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Email</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Cell Phone\" readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Gender</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <div class=\"radio\">\r\n                                        <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"Male\" [(ngModel)]=\"customerGender\">\r\n                                        <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                        <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"Female\" [(ngModel)]=\"customerGender\">\r\n                                        <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                    </div>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Date of Birth</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"customerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"customerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <button class=\"reciepts\"><i class=\"fa fa-bar-chart\"></i><p> Orders/Reciepts </p></button>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <button class=\"notes\"><i class=\"fa fa-sticky-note\" aria-hidden=\"true\"></i><p> Notes </p></button>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n                    <!-- Customer Profile to Show-->\r\n\r\n\r\n                    <div class=\"customer-profile-tab\">\r\n\r\n                        <div class=\"customers-tab clearfix\">\r\n\r\n                            <div class=\"unselect-customer\">\r\n                                <button><i class=\"fa fa-times-circle-o\" aria-hidden=\"true\"></i></button>\r\n                            </div>\r\n                            <div class=\"customers-heading\">\r\n                                <p>Customers</p>\r\n                            </div>\r\n\r\n                            <div class=\"customer-edit\">\r\n                                <button class=\"add-customer\"><i class=\"fa fa-pencil\"></i></button>\r\n                            </div>\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <img src=\"../../assets/img/bane.jpg\">\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <h3 class=\"profile-name\">Tom Hardy</h3>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">--</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Code</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">9876</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">(001)-7524-3422</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">bane@gothamcity.com</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">Male</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">26-05-1993</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">Arkhan City Asylum</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <button class=\"reciepts\"><i class=\"fa fa-bar-chart\"></i><p> Orders/Reciepts </p></button>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <button class=\"notes\"><i class=\"fa fa-sticky-note\" aria-hidden=\"true\"></i><p> Notes </p></button>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                </div>\r\n\r\n\r\n\r\n                <div id=\"categories-tab\" class=\"tab-pane fade in active clearfix\">\r\n\r\n                    <div class=\"background-added\">\r\n\r\n                        <div class=\"categories-tab clearfix\">\r\n\r\n                            <div class=\"box\">\r\n                                <a class=\"no-link\" (click)=\"setAll()\">\r\n                                    <div class=\"cat-image circle-box\">\r\n                                        <p class=\"all-text\">All</p>\r\n                                    </div>\r\n                                    <h3>All</h3>\r\n                                </a>\r\n                            </div>\r\n\r\n\r\n                            <div *ngFor=\"let categories of categories\" class=\"box\">\r\n                                <a class=\"no-link\" (click)=\"ShowProductsForCategories(categories.id)\" id=\"{{categories.id}}\">\r\n                                    <div class=\"cat-image\">\r\n                                        <img src=\"{{categories.imageURL}}\">\r\n                                    </div>\r\n                                    <h3>{{categories.name}}</h3>\r\n                                </a>\r\n                            </div>\r\n\r\n\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"search-box-items\">\r\n\r\n                            <div class=\"search-input\">\r\n                                <input type=\"text\" name=\"searchProduct\" [(ngModel)]=\"searchProduct\" (keyup)=\"searchThisProduct(this)\" class=\"form-control\" placeholder=\"Search items by name or sku\">\r\n                               <!-- <button class=\"searchCustomerBtn\"><i class=\"fa fa-chevron-right\"></i></button>-->\r\n                                <img src=\"../../assets/img/camera.png\">\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                    <div *ngIf=\"detailFlag\" class=\"product-detail-tab animated\">\r\n\r\n                        <div class=\"backToProducts\" (click)=\"backToProducts()\">\r\n                            <img src=\"/assets/img/left.png\">\r\n                        </div>\r\n\r\n                        <div class=\"looping\">\r\n\r\n                            <div class=\"product-heading\">\r\n                                <h2>{{productDetailModel.Name}}</h2>\r\n                            </div>\r\n\r\n                            \r\n                        <div class=\"optionsDiv\" *ngIf=\"OptionsCheck\">\r\n\r\n                            <div class=\"product-size clearfix\">\r\n                                \r\n                                <div class=\"check-exists\" *ngIf=\"sizeCheck\">\r\n                                    <h2 class=\"product-properties\">Size</h2>\r\n                                    <div class=\"size-box-wrapper\" *ngFor=\"let productDetails of productDetailModel.Options.size\">\r\n                                        \r\n                                        <button class=\"size-box\" (click)=\"sizevalues($event,productDetails.size,productDetails.Price)\"> \r\n        \r\n                                            {{productDetails.size}}<br>\r\n                                            + AED{{productDetails.Price}}\r\n                                        </button>\r\n                                    </div>\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n\r\n\r\n                            <div class=\"product-box-variation clearfix\">\r\n\r\n\r\n\r\n                                <div class=\"row check-exists\" *ngIf=\"boxCheck\">\r\n                                    <h2 class=\"product-properties\">Box Color</h2>\r\n                                    <div class=\"product-box-variation-wrapper clearfix\" *ngFor=\"let productDetails of productDetailModel.Options.color\">\r\n                                        <button class=\"product-variation-box boxColor\" (click)=\"colorvalues($event,productDetails.color)\">\r\n                                            {{productDetails.color}}\r\n                                        </button>\r\n                                    </div>\r\n                                </div>\r\n\r\n\r\n                                <div class=\"row check-exists\" *ngIf=\"boxTypeCheck\">\r\n                                    <h2 class=\"product-properties\">Box Type</h2>\r\n                                    <div id=\"box-type\" class=\"product-box-variation-wrapper clearfix\" *ngFor=\"let productDetails of productDetailModel.Options.box\">\r\n                                        <button class=\"product-variation-box\" (click)=\"boxtype($event,productDetails.box,productDetails.Price)\">\r\n                                        \r\n                                            {{productDetails.box}}<br>\r\n                                            + AED{{productDetails.Price}}\r\n                                        </button>\r\n                                    </div>\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-6 col-xs-6' style=\"padding-left:0;\">\r\n                                    <h2 class=\"product-properties\">In Stock</h2>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    <p class=\"quantity-value\">{{productDetailModel.Quantity}}</p>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-6 col-xs-6' style=\"padding-left:0;\">\r\n                                    <h2 class=\"product-properties\">Quantity</h2>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    <div class=\"quantity\" id=\"prod-quantity\">\r\n                                        <input type=\"number\" id=\"num_val\" min=\"1\" max=\"{{productDetailModel.Quantity}}\" class='qty' step=\"1\" value=\"1\" readonly>\r\n                                        <div class=\"quantity-nav\">\r\n                                            <div class=\"quantity-button quantity-up qtyplus \" field='quantity' (click)=\"Upping(productDetailModel.Quantity)\">+</div>\r\n                                            <div class=\"quantity-button quantity-down qtyminus\"  field='quantity' (click)=\"Downing()\">-</div>\r\n                                        </div>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert size-alert alert-danger\">Please select a Size</div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert box-alert alert-danger\">Please select Box Type</div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert color-alert alert-danger\">Please select a Color</div>\r\n                            </div>\r\n\r\n                            <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-12 col-xs-12' style=\"padding-left:0;\">\r\n                                    <button class=\"add-to-cart\" (click)=\"addtoCart(productDetailModel)\">Add To Cart</button>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    \r\n                                </div>\r\n                            </div>\r\n\r\n\r\n\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n\r\n                    <div class=\"products-list animated\">\r\n\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='allProducts'>\r\n                            <div class=\"box\" *ngFor=\"let Product of searchproductModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat1'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat2'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat3'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat4'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                </div>\r\n\r\n                <div id=\"receipts\" class=\"tab-pane fade\">\r\n\r\n\r\n\r\n                    <div class=\"customers-tab clearfix\">\r\n\r\n                        <div class=\"customers-heading\">\r\n                            <p>Receipts</p>\r\n                        </div>\r\n\r\n                    </div>\r\n                    <div class=\"search-box-items-reciept\">\r\n\r\n                    <div class=\"row clearfix order-types-row\">\r\n\r\n                        <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                              <button class=\"order-types\" id=\"cashOnDelivery\" (click)=\"getOnDeliveryOrders($event)\">On Delivery</button>\r\n                            </div>\r\n                         <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                             <button class=\"order-types\" (click)=\"getOnCashOrders($event)\">Cash</button>\r\n                            </div>\r\n\r\n                         <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                             <button class=\"order-types\">Credit Card</button>\r\n                            </div>\r\n\r\n                         <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                             <button class=\"order-types\">3rd Party</button>\r\n                            </div>\r\n\r\n\r\n                     </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div id=\"reciepts-data\">\r\n\r\n\r\n                        <ul  class=\"listing-customers clearfix\">\r\n\r\n                                <li *ngFor=\"let order of tempOrders\" class=\"clearfix\">\r\n                                    <a (click)=\"getDetailedOrder(order.Customer.OrderID)\" id='{{order.Customer.OrderID}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{order.Customer.Date}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{order.Billing.Name}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>\r\n\r\n\r\n                        </ul>\r\n\r\n\r\n\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div id=\"orderDetail\">\r\n\r\n                        <div class=\"info-holder\" *ngIf='orderDetailFlag'>\r\n                                            \r\n                        <div class=\"billing-section\">\r\n                            <div class=\"back-to-orders\" (click)=\"backToOrders()\">\r\n                                                <img src=\"/assets/img/left.png\">\r\n                                            </div>\r\n                            <div class=\"order-section\">\r\n                                <h3 class=\"order-heading\">Order Information</h3>\r\n                                <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.OrderID}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Total}}</p>\r\n                            </div>\r\n                            <div class=\"billing-name\">\r\n                                <h3 class=\"order-heading\">Billing Information</h3>\r\n                                <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Billing.Name}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Billing.Phone}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Billing.Address}}</p>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"customer-detail-section\">\r\n                            <h3 class=\"order-heading\">Customer Details</h3>\r\n                            <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.OrderID}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Name}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Email}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Date}}</p>\r\n                        </div>\r\n                        <div class=\"products-section\">\r\n                            <h3 class=\"order-heading\">Product Details</h3>\r\n                            <hr>\r\n                            <table class=\"table table-striped\">\r\n                                <thead>\r\n                                <tr>\r\n                                    <th>Product Name</th>\r\n                                    <th>Product Price</th>\r\n                                    <th>Product Sku</th>\r\n                                    <th>Product Options</th>\r\n                                </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                <tr *ngFor=\"let products of orderDetail.Products\">\r\n                                    <td>{{products.ProductName}}</td>\r\n                                    <td>{{products.ProductPrice}}</td>\r\n                                    <td>{{products.ProductSku}}</td>\r\n                                    <td>{{products.ProductName}}</td>\r\n                                </tr>\r\n                                </tbody>\r\n                            </table>\r\n\r\n\r\n                           \r\n                        </div>\r\n                        <div class=\"shipping-info-section\">\r\n                                <h3 class=\"order-heading\">Shipping Information</h3>\r\n                                <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Shipping.Name}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Shipping.Phone}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Shipping.Address}}</p>\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div class=\"cart-footer clearfix\">\r\n\r\n                        <div class=\"row\">\r\n\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n                    </div>\r\n\r\n                </div>\r\n                <div id=\"menu3\" class=\"tab-pane fade\">\r\n \r\n                </div>\r\n            </div>\r\n\r\n\r\n        </div>\r\n\r\n\r\n\r\n    </div>\r\n\r\n    </perfect-scrollbar>\r\n</div>"
+module.exports = "<nav class=\"navbar navbar-default custom-navbar\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"navbar-header\">\r\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#myNavbar\">\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>                        \r\n      </button>\r\n    </div>\r\n    <div class=\"collapse navbar-collapse\" id=\"myNavbar\">\r\n      <ul class=\"nav navbar-nav\">\r\n        <li><a class=\"circle\"><i class=\"fa fa-user\"></i></a></li>\r\n      </ul> \r\n\t  \r\n\r\n    <div class=\"our-name\">\r\n         <p>Les Floralies</p>\r\n    </div>\r\n\t\r\n\r\n    </div>\r\n  </div>\r\n</nav>"
 
 /***/ }),
 /* 524 */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<div id=\"mySidenav\" class=\"sidenav\">\r\n \r\n   <ul class=\"sidebar-list\">\r\n  \r\n<li><i class=\"fa fa-sign-in\" aria-hidden=\"true\"></i><p>Register<p></li>\r\n<li><i class=\"fa fa-users\" aria-hidden=\"true\"></i><p>Customers<p></li>\r\n<li><i class=\"fa fa-cog\" aria-hidden=\"true\"></i><p>My Company<p></li>\r\n<li><a href=\"#\" (click)=\"showBackOffice()\"><i class=\"fa fa-cloud\" aria-hidden=\"true\"></i><p>Back Office<p></a></li>\r\n<li><i class=\"fa fa-question\" aria-hidden=\"true\"></i><p>Help<p></li>\r\n<li><i class=\"fa fa-bars\" aria-hidden=\"true\"></i><p>Add Ons<p></li>\r\n<li><a [routerLink]=\" ['/']\" (click)=\"logout()\"><i class=\"fa fa-lock\" aria-hidden=\"true\"></i><p>Sign Out<p></a></li>\r\n   <!--<div class=\"sync-button\">\r\n        <i class=\"fa fa-cloud\"></i><p>Sync</p>\r\n    </div>-->\r\n</ul>\r\n\r\n\r\n</div>\r\n\r\n<!-- Use any element to open the sidenav -->\r\n"
+module.exports = "\r\n    <Header></Header>\r\n    <perfect-scrollbar  [config]=\"config\">\r\n    <Sidebar (showBackOfficeEvent)=\"Main.hideCartShowBackoffice()\"></Sidebar>\r\n    </perfect-scrollbar>\r\n<div class=\"row\" id=\"main2\"> <!-- Outermost Row (col-md-5 col-sm-6 main right) col-md-6 col-sm-6 mainleft -->\r\n\r\n  <div class=\"left-main\" id=\"main-right\"> <!-- Main Right -->\r\n\r\n   <Cartright #Cartright></Cartright>\r\n\r\n  </div><!-- Main Right Ends-->\r\n\r\n  <div  id=\"main\" class=\"right-main\">  <!-- Main -->\r\n\r\n    \r\n    <Main #Main id=\"backgrounded\" (customerSet)=\"Cartright.getCustomer()\" (myEvent)=\"Cartright.function1()\"></Main>\r\n\r\n\r\n  </div> <!-- Main Ends -->\r\n   \r\n\r\n\r\n\r\n</div>  <!-- Outermost Row Ends -->"
 
 /***/ }),
 /* 525 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"login-wrap\">\r\n\t<div class=\"login-html\">\r\n\t\t<input id=\"tab-1\" type=\"radio\" name=\"tab\" class=\"sign-in\" checked><label for=\"tab-1\" class=\"tab\">Sign In</label>\r\n\t\t<input id=\"tab-2\" type=\"radio\" name=\"tab\" class=\"sign-up\"><label for=\"tab-2\" class=\"tab\"></label>\r\n\t\t<div class=\"login-form\">\r\n\t\t\t<div class=\"sign-in-htm\">\r\n\t\t\t\t<div class=\"group\">\r\n\t\t\t\t\t<label for=\"user\" class=\"label\">Username</label>\r\n\t\t\t\t\t<input id=\"user\" type=\"text\" name=\"Email\" [(ngModel)]=\"Email\" class=\"input\">\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"group\">\r\n\t\t\t\t\t<label for=\"pass\" class=\"label\">Password</label>\r\n\t\t\t\t\t<input id=\"pass\" type=\"password\" name=\"Password\" [(ngModel)]=\"Password\"  class=\"input\" data-type=\"password\">\r\n\t\t\t\t</div>\r\n\t\t\t\r\n\r\n        <div class=\"group\" id=\"enterEmail\">\r\n               <p>Enter your email</p>\r\n\t\t\t\t</div>\r\n\r\n        <div class=\"group\" id=\"enterPassword\">\r\n               <p>Enter your password</p>\r\n\t\t\t\t</div>\r\n\r\n        <div class=\"group\" id=\"wrongEmail\">\r\n               <p>Enter a valid email</p>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"group\" id=\"wrongCreds\">\r\n               <p>Enter valid credentials</p>\r\n\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t<div class=\"group\">\r\n\t\t\t\t\t<input type=\"submit\" (click)=\"Submitting()\" class=\"button\" value=\"Sign In\">\r\n\t\t\t\t</div>\r\n\r\n        <div id=\"loader\">\r\n<i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n        </div>\r\n        \r\n\t\t\t\t<div class=\"hr\"></div>\r\n<!--\t\t\t\t<div class=\"foot-lnk\">\r\n\t\t\t\t\t<a href=\"#forgot\">Forgot Password?</a>\r\n\t\t\t\t</div>-->\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\t</div>\r\n</div>"
+
+/***/ }),
+/* 526 */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<div class=\"row products-row\">\r\n\r\n\r\n\r\n\r\n\r\n<perfect-scrollbar  [config]=\"config\">\r\n    <div class=\"main-content \">\r\n\r\n\r\n\r\n        <div class=\"nav-tabs\">\r\n\r\n            <ul class=\"nav nav-pills\">\r\n                <li><a (click)=\"changePill($event)\" data-target=\"customers\" data-toggle=\"pill\"><i (click)=\"changePill($event)\" data-target=\"customers\" class=\"fa fa-user\"></i></a></li>\r\n                <li class=\"active\"><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"categories-tab\"><i (click)=\"changePill($event)\" data-target=\"categories-tab\" class=\"fa fa-bars\"></i></a></li>\r\n                <li><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"receipts\"><i (click)=\"changePill($event)\" data-target=\"receipts\" class=\"fa fa-ticket\"></i></a></li>\r\n                <li><a data-toggle=\"pill\" (click)=\"changePill($event)\" data-target=\"menu3\"><i (click)=\"changePill($event)\" data-target=\"menu3\" class=\"fa fa-male\"></i></a></li>\r\n            </ul>\r\n\r\n        </div>\r\n\r\n\r\n        <div class=\"nav-content\">\r\n\r\n\r\n            <div class=\"tab-content\">\r\n\r\n\r\n                <div id=\"customers\" class=\"tab-pane fade clearfix\">\r\n\r\n\r\n                    <div class=\"search-customer\">\r\n\r\n                        <div class=\"customers-tab clearfix\">\r\n\r\n                            <div class=\"editCustomer\">\r\n                                <button class=\"editCustomerBtn\" (click)=\"editCustomerDetails(toEditCustomerId)\"><i class=\"fa fa-pencil\"></i></button>\r\n                            </div>\r\n\r\n                            <div class=\"customers-heading\">\r\n                                <p>Customers</p>\r\n                            </div>\r\n\r\n                            <div class=\"customer-add\">\r\n                                <button class=\"add-customer\" (click)=\"addCustomerForm()\"><i class=\"fa fa-plus\"></i></button>\r\n                            </div>\r\n\r\n                        </div>\r\n                        <div class=\"search-box-items clearfix\">\r\n\r\n                            <div class=\"search-input clearfix\">\r\n\r\n                                <input type=\"text\" name=\"searchCustomers\" (keyup)=\"searchThisCustomer(this)\" [(ngModel)]=\"searchCustomers\" class=\"form-control\" placeholder=\"Search items by name or sku\">\r\n\r\n                                <img src=\"../../assets/img/camera.png\">\r\n                                \r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"list-customers clearfix\">\r\n                            <div class='customer-loader'>  <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i></div>\r\n                            <ul *ngIf=\"customerList\" class=\"listing-customers clearfix\">\r\n\r\n                                <li *ngFor=\"let customersModel of CustomersModel\" class=\"customersModel clearfix\">\r\n                                    <a (click)=\"editCustomer(customersModel.id)\" id='{{customersModel.id}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{customersModel.customerName}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{customersModel.customerEmail}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>\r\n\r\n\r\n                            </ul>\r\n\r\n                            <ul *ngIf=\"searchFlag\" class=\"listing-customers clearfix\">\r\n\r\n                                 <li *ngFor=\"let searchedModel of SearchedModel\" class=\"searchModel clearfix\">\r\n                                    <a (click)=\"editCustomer(searchedModel.id)\" id='{{searchedModel.id}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{searchedModel.customerName}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{searchedModel.customerEmail}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>                           \r\n\r\n\r\n                            </ul>\r\n\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"new-customer-form\">\r\n\r\n                        <div class=\"close-form\" (click)=\"hideNewCustomerForm()\">&times;</div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <div class=\"fileinput fileinput-new\" data-provides=\"fileinput\">\r\n                                        <div class=\"fileinput-preview thumbnail\" id=\"image-container\" data-trigger=\"fileinput\" style=\"width:120px;height:120px;border-radius:50%;\"></div>\r\n                                        <div>\r\n                                            <span style=\"display:none\" class=\"btn btn-default btn-file\"><span  class=\"fileinput-new\">Select image</span>\r\n                                            <span\r\n                                                class=\"fileinput-exists\">Change</span><input type=\"file\" style=\"display:none\" name=\"...\"></span>\r\n                                                <a href=\"#\" class=\"btn btn-default fileinput-exists remove_image\" data-dismiss=\"fileinput\"><i class=\"fa fa-trash\"></i></a>\r\n                                        </div>\r\n                                    </div>\r\n\r\n\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerNameInput\" name=\"customerName\" [(ngModel)]=\"customerName\" type=\"text\" placeholder=\"Customer Name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <select id=\"select-customer-type\" [(ngModel)]=\"customerType\" class=\"new-form-inputs\">\r\n                             <option  value=\"\" disabled selected>Customer Type</option>\r\n                            <option *ngFor=\"let customerGroup of CustomergroupsModel\" value=\"{{customerGroup.id}}\">{{customerGroup.value}}</option>\r\n                    \r\n                    </select>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerCellPhone\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\"\r\n                                    placeholder=\"Cell Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Work Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerWorkPhone\" [(ngModel)]=\"customerWorkPhone\" type=\"number\" placeholder=\"Work Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerEmail\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Email\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <div class=\"radio\">\r\n                                    <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"male\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                    <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"female\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                </div>\r\n\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n                               <!-- <ng2-datepicker [options]=\"options\" [(ngModel)]=\"customersDOB\"></ng2-datepicker>-->\r\n\r\n                             <input class=\"new-form-inputs\" id=\"customerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n\r\n                            <div class=\"checkbox\">\r\n                                <label><input class=\"shippingCheckbox regular-checkbox\" (change)=\"shippingAddressForm()\" type=\"checkbox\" value=\"shipping\">    Shipping</label>\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"customerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"shipping-address-form\">\r\n                            <!-- Shipping Address Form -->\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"Name\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"Phone\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\"  id=\"toShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n                        <!-- Shipping Address Form -->\r\n\r\n\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Personal Discount</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerDiscount\" [(ngModel)]=\"customerDiscount\" type=\"text\" placeholder=\"Discount\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"incompleteForm\">\r\n\r\n                            <p>Please Fill out the form completely!</p>\r\n\r\n                        </div>\r\n\r\n                        <div id=\"loader\">\r\n                            <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"submit-button\">\r\n\r\n                            <button class=\"create-customer\" (click)=\"createCustomer()\">Create Customer</button>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"alert alert-success row margined-top\" id=\"customer-added\">\r\n\r\n                            <p>Customer Created Successfully!</p>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                    <!--- Customer Edit Form -->\r\n\r\n\r\n\r\n\r\n                    <div class=\"edit-customer-form\">\r\n\r\n                        <div class=\"row\">\r\n                            <div class=\"col-md-6\"></div>\r\n                            <div class=\"col-md-6\"> <div class=\"close-edit-form\" (click)=\"hideEditForm()\">&times;</div></div>\r\n                        </div>\r\n                       \r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <div class=\"fileinput fileinput-new\" data-provides=\"fileinput\">\r\n                                        <div class=\"fileinput-preview thumbnail\" id=\"image-container\" data-trigger=\"fileinput\" style=\"width:120px;height:120px;border-radius:50%;\"></div>\r\n                                        <div>\r\n                                            <span style=\"display:none\" class=\"btn btn-default btn-file\"><span  class=\"fileinput-new\">Select image</span>\r\n                                            <span\r\n                                                class=\"fileinput-exists\">Change</span><input type=\"file\" style=\"display:none\" name=\"...\"></span>\r\n                                                <a href=\"#\" class=\"btn btn-default fileinput-exists remove_image\" data-dismiss=\"fileinput\"><i class=\"fa fa-trash\"></i></a>\r\n                                        </div>\r\n                                    </div>\r\n\r\n\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs edit-profile-name\" id=\"editCustomerName\" name=\"customerName\" [(ngModel)]=\"customerName\" type=\"text\" placeholder=\"Customer Name\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <select id=\"edit-customer-type\" [(ngModel)]=\"customerType\" class=\"new-form-inputs\">\r\n                             <option  value=\"\" disabled selected>Customer Type</option>\r\n                            <option *ngFor=\"let customerGroup of CustomergroupsModel\" value=\"{{customerGroup.id}}\">{{customerGroup.value}}</option>\r\n                    \r\n                    </select>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerCellPhone\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\"\r\n                                    placeholder=\"Cell Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Work Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"editCustomerWorkPhone\" [(ngModel)]=\"customerWorkPhone\" type=\"number\" placeholder=\"Work Phone\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerEmail\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Email\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <div class=\"radio\">\r\n                                    <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"editGender\" value=\"Male\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                    <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"editGender\" value=\"Female\" [(ngModel)]=\"customerGender\">\r\n                                    <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                </div>\r\n\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n                               <!-- <ng2-datepicker [options]=\"options\" [(ngModel)]=\"customersDOB\"></ng2-datepicker>-->\r\n\r\n                             <input class=\"new-form-inputs\" id=\"editCustomerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" id=\"editCustomerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n\r\n                            <div class=\"checkbox\">\r\n                                <label><input class=\"shippingCheckbox regular-checkbox\" (change)=\"shippingAddressForm()\" type=\"checkbox\" value=\"shipping\">    Shipping</label>\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"shipping-address-form\">\r\n                            <!-- Shipping Address Form -->\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"editToShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"Name\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"editToShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"Phone\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\"  id=\"editToShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"Address\">\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n                        <!-- Shipping Address Form -->\r\n\r\n\r\n\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Personal Discount</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerDiscount\" [(ngModel)]=\"customerDiscount\" type=\"text\" placeholder=\"Discount\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"editincompleteForm\">\r\n\r\n                            <p>Please Fill out the form completely!</p>\r\n\r\n                        </div>\r\n\r\n                        <div id=\"editloader\">\r\n                            <i class=\"fa fa-circle-o-notch fa-spin fa-3x fa-fw\"></i>\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\" id=\"update-button\">\r\n\r\n                            <button class=\"create-customer\" (click)=\"updateCustomer()\">Update Customer</button>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"alert alert-success row margined-top\" id=\"customer-updated\">\r\n\r\n                            <p>Customer Updated Successfully!</p>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                    <!-- Customer Edit Form -->\r\n\r\n\r\n                    <!-- Customer Profile to show -->\r\n\r\n                    <div class=\"Customer-full-detail animated\">\r\n\r\n\r\n                        <div class=\"back-to-search-customers\" (click)=\"backToSearchCustomers()\">\r\n                              <img src=\"/assets/img/left.png\">\r\n                        </div>\r\n\r\n                        <div class=\"\">\r\n\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"left-pic clearfix\">\r\n\r\n                                    <div class=\"profile-pic\">\r\n\r\n                                        <img src=\"../../assets/img/bane.jpg\">\r\n\r\n                                    </div>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"right-name clearfix\">\r\n\r\n                                    <h3 class=\"profile-name\">Tom Hardy</h3>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n\r\n                            <hr>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Cell Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" name=\"customerCellPhone\" [(ngModel)]=\"customerCellPhone\" type=\"number\" placeholder=\"Cell Phone\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Email</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" name=\"customerEmail\" [(ngModel)]=\"customerEmail\" type=\"email\" placeholder=\"Cell Phone\" readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Gender</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <div class=\"radio\">\r\n                                        <input id=\"male\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"Male\" [(ngModel)]=\"customerGender\">\r\n                                        <label class=\"radioLabels\" for=\"male\">Male</label>\r\n                                        <input id=\"female\" class=\"genderType\" type=\"radio\" name=\"gender\" value=\"Female\" [(ngModel)]=\"customerGender\">\r\n                                        <label class=\"radioLabels\" for=\"female\">Female</label>\r\n                                    </div>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Date of Birth</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"customerDOB\" name=\"customerDOB\" [(ngModel)]=\"customerDOB\" type=\"date\" placeholder=\"Birthdate\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"customerAddress\" name=\"customerAddress\" [(ngModel)]=\"customerAddress\" type=\"text\" placeholder=\"Address\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Name</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipName\" name=\"toShipName\" [(ngModel)]=\"toShipName\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Address</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipAddress\" name=\"toShipAddress\" [(ngModel)]=\"toShipAddress\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <p class=\"text\">\r\n                                        <Strong>Shipping Phone</Strong>\r\n                                    </p>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <input class=\"new-form-inputs\" id=\"toShipPhone\" name=\"toShipPhone\" [(ngModel)]=\"toShipPhone\" type=\"text\" placeholder=\"\"\r\n                                        readonly>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Company</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <input class=\"new-form-inputs\" name=\"customerCompany\" [(ngModel)]=\"customerCompany\" type=\"text\" placeholder=\"Company\">\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n\r\n                            <div class=\"row margined-top\">\r\n\r\n                                <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <button class=\"reciepts\"><i class=\"fa fa-bar-chart\"></i><p> Orders/Reciepts </p></button>\r\n\r\n                                </div>\r\n\r\n\r\n                                <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                    <button class=\"notes\"><i class=\"fa fa-sticky-note\" aria-hidden=\"true\"></i><p> Notes </p></button>\r\n\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n                    <!-- Customer Profile to Show-->\r\n\r\n\r\n                    <div class=\"customer-profile-tab\">\r\n\r\n                        <div class=\"customers-tab clearfix\">\r\n\r\n                            <div class=\"unselect-customer\">\r\n                                <button><i class=\"fa fa-times-circle-o\" aria-hidden=\"true\"></i></button>\r\n                            </div>\r\n                            <div class=\"customers-heading\">\r\n                                <p>Customers</p>\r\n                            </div>\r\n\r\n                            <div class=\"customer-edit\">\r\n                                <button class=\"add-customer\"><i class=\"fa fa-pencil\"></i></button>\r\n                            </div>\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-3 clearfix\">\r\n\r\n                                <div class=\"profile-pic\">\r\n\r\n                                    <img src=\"../../assets/img/bane.jpg\">\r\n\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-9 clearfix\">\r\n\r\n                                <h3 class=\"profile-name\">Tom Hardy</h3>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Type</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">--</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Customer Code</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">9876</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <hr>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Cell Phone</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">(001)-7524-3422</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Email</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">bane@gothamcity.com</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Gender</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">Male</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Date of Birth</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">26-05-1993</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">\r\n                                    <Strong>Address</Strong>\r\n                                </p>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-8 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <p class=\"text\">Arkhan City Asylum</p>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"row margined-top\">\r\n\r\n                            <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <button class=\"reciepts\"><i class=\"fa fa-bar-chart\"></i><p> Orders/Reciepts </p></button>\r\n\r\n                            </div>\r\n\r\n\r\n                            <div class=\"col-md-6 col-sm-6 col-xs-6 clearfix\">\r\n\r\n                                <button class=\"notes\"><i class=\"fa fa-sticky-note\" aria-hidden=\"true\"></i><p> Notes </p></button>\r\n\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n\r\n\r\n                    </div>\r\n\r\n\r\n\r\n                </div>\r\n\r\n\r\n\r\n                <div id=\"categories-tab\" class=\"tab-pane fade in active clearfix\">\r\n\r\n                    <div class=\"background-added\">\r\n\r\n                        <div class=\"categories-tab clearfix\">\r\n\r\n                            <div class=\"box\">\r\n                                <a class=\"no-link\" (click)=\"setAll()\">\r\n                                    <div class=\"cat-image circle-box\">\r\n                                        <p class=\"all-text\">All</p>\r\n                                    </div>\r\n                                    <h3>All</h3>\r\n                                </a>\r\n                            </div>\r\n\r\n\r\n                            <div *ngFor=\"let categories of categories\" class=\"box\">\r\n                                <a class=\"no-link\" (click)=\"ShowProductsForCategories(categories.id)\" id=\"{{categories.id}}\">\r\n                                    <div class=\"cat-image\">\r\n                                        <img src=\"{{categories.imageURL}}\">\r\n                                    </div>\r\n                                    <h3>{{categories.name}}</h3>\r\n                                </a>\r\n                            </div>\r\n\r\n\r\n\r\n\r\n                        </div>\r\n\r\n                        <div class=\"search-box-items\">\r\n\r\n                            <div class=\"search-input\">\r\n                                <input type=\"text\" name=\"searchProduct\" [(ngModel)]=\"searchProduct\" (keyup)=\"searchThisProduct(this)\" class=\"form-control\" placeholder=\"Search items by name or sku\">\r\n                               <!-- <button class=\"searchCustomerBtn\"><i class=\"fa fa-chevron-right\"></i></button>-->\r\n                                <img src=\"../../assets/img/camera.png\">\r\n                            </div>\r\n\r\n\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                    <div *ngIf=\"detailFlag\" class=\"product-detail-tab animated\">\r\n\r\n                        <div class=\"backToProducts\" (click)=\"backToProducts()\">\r\n                            <img src=\"/assets/img/left.png\">\r\n                        </div>\r\n\r\n                        <div class=\"looping\">\r\n\r\n                            <div class=\"product-heading\">\r\n                                <h2>{{productDetailModel.Name}}</h2>\r\n                            </div>\r\n\r\n                            \r\n                        <div class=\"optionsDiv\" *ngIf=\"OptionsCheck\">\r\n\r\n                            <div class=\"product-size clearfix\">\r\n                                \r\n                                <div class=\"check-exists\" *ngIf=\"sizeCheck\">\r\n                                    <h2 class=\"product-properties\">Size</h2>\r\n                                    <div class=\"size-box-wrapper\" *ngFor=\"let productDetails of productDetailModel.Options.size\">\r\n                                        \r\n                                        <button class=\"size-box\" (click)=\"sizevalues($event,productDetails.size,productDetails.Price)\"> \r\n        \r\n                                            {{productDetails.size}}<br>\r\n                                            + AED{{productDetails.Price}}\r\n                                        </button>\r\n                                    </div>\r\n                                </div>\r\n\r\n                            </div>\r\n\r\n\r\n\r\n\r\n                            <div class=\"product-box-variation clearfix\">\r\n\r\n\r\n\r\n                                <div class=\"row check-exists\" *ngIf=\"boxCheck\">\r\n                                    <h2 class=\"product-properties\">Box Color</h2>\r\n                                    <div class=\"product-box-variation-wrapper clearfix\" *ngFor=\"let productDetails of productDetailModel.Options.color\">\r\n                                        <button class=\"product-variation-box boxColor\" (click)=\"colorvalues($event,productDetails.color)\">\r\n                                            {{productDetails.color}}\r\n                                        </button>\r\n                                    </div>\r\n                                </div>\r\n\r\n\r\n                                <div class=\"row check-exists\" *ngIf=\"boxTypeCheck\">\r\n                                    <h2 class=\"product-properties\">Box Type</h2>\r\n                                    <div id=\"box-type\" class=\"product-box-variation-wrapper clearfix\" *ngFor=\"let productDetails of productDetailModel.Options.box\">\r\n                                        <button class=\"product-variation-box\" (click)=\"boxtype($event,productDetails.box,productDetails.Price)\">\r\n                                        \r\n                                            {{productDetails.box}}<br>\r\n                                            + AED{{productDetails.Price}}\r\n                                        </button>\r\n                                    </div>\r\n                                </div>\r\n\r\n\r\n                            </div>\r\n\r\n                        </div>\r\n\r\n\r\n                        <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-6 col-xs-6' style=\"padding-left:0;\">\r\n                                    <h2 class=\"product-properties\">In Stock</h2>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    <p class=\"quantity-value\">{{productDetailModel.Quantity}}</p>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-6 col-xs-6' style=\"padding-left:0;\">\r\n                                    <h2 class=\"product-properties\">Quantity</h2>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    <div class=\"quantity\" id=\"prod-quantity\">\r\n                                        <input type=\"number\" id=\"num_val\" min=\"1\" max=\"{{productDetailModel.Quantity}}\" class='qty' step=\"1\" value=\"1\" readonly>\r\n                                        <div class=\"quantity-nav\">\r\n                                            <div class=\"quantity-button quantity-up qtyplus \" field='quantity' (click)=\"Upping(productDetailModel.Quantity)\">+</div>\r\n                                            <div class=\"quantity-button quantity-down qtyminus\"  field='quantity' (click)=\"Downing()\">-</div>\r\n                                        </div>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert size-alert alert-danger\">Please select a Size</div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert box-alert alert-danger\">Please select Box Type</div>\r\n                            </div>\r\n\r\n                            <div class=\"row\">\r\n                                <div class=\"alert color-alert alert-danger\">Please select a Color</div>\r\n                            </div>\r\n\r\n                            <div class=\"row quantity-row product-box-variation\">\r\n                                <div class='col-md-6 col-sm-12 col-xs-12' style=\"padding-left:0;\">\r\n                                    <button class=\"add-to-cart\" (click)=\"addtoCart(productDetailModel)\">Add To Cart</button>\r\n                                </div>\r\n                                <div class='col-md-6 col-sm-6 col-xs-6'>\r\n                                    \r\n                                </div>\r\n                            </div>\r\n\r\n\r\n\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n\r\n                    <div class=\"products-list animated\">\r\n\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='allProducts'>\r\n                            <div class=\"box\" *ngFor=\"let Product of searchproductModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat1'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat2'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat3'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                        <div class=\"product-box-wrapper clearfix\" *ngIf='cat4'>\r\n                            <div class=\"box\" *ngFor=\"let Product of productModel\">\r\n                                <a (click)=\"showProdDetail(Product.ID)\">\r\n                                    <div class=\"prod-image\">\r\n                                        <img src=\"{{Product.Image}}\">\r\n                                    </div>\r\n                                    <p>{{Product.Name}}</p>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                </div>\r\n\r\n                <div id=\"receipts\" class=\"tab-pane fade\">\r\n\r\n\r\n\r\n                    <div class=\"customers-tab clearfix\">\r\n\r\n                        <div class=\"customers-heading\">\r\n                            <p>Receipts</p>\r\n                        </div>\r\n\r\n                    </div>\r\n                    <div class=\"search-box-items-reciept\">\r\n\r\n                    <div class=\"row clearfix order-types-row\">\r\n\r\n                        <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                              <button class=\"order-types\" id=\"cashOnDelivery\" (click)=\"getOnDeliveryOrders($event)\">On Delivery</button>\r\n                            </div>\r\n                         <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                             <button class=\"order-types\" (click)=\"getOnCashOrders($event)\">Cash</button>\r\n                            </div>\r\n\r\n                         <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                             <button class=\"order-types\">Credit Card</button>\r\n                            </div>\r\n\r\n                         <div class=\"col-md-3 col-sm-3 col-xs-6\">\r\n                             <button class=\"order-types\">3rd Party</button>\r\n                            </div>\r\n\r\n\r\n                     </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div id=\"reciepts-data\">\r\n\r\n\r\n                        <ul  class=\"listing-customers clearfix\">\r\n\r\n                                <li *ngFor=\"let order of tempOrders\" class=\"clearfix\">\r\n                                    <a (click)=\"getDetailedOrder(order.Customer.OrderID)\" id='{{order.Customer.OrderID}}'>\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6\">\r\n                                            {{order.Customer.Date}}\r\n                                        </div>\r\n\r\n                                        <div class=\"col-md-6 col-xs-6 col-xs-6 align-right\">\r\n                                            {{order.Billing.Name}}\r\n                                        </div>\r\n                                    </a>\r\n\r\n                                </li>\r\n\r\n\r\n                        </ul>\r\n\r\n\r\n\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div id=\"orderDetail\">\r\n\r\n                        <div class=\"info-holder\" *ngIf='orderDetailFlag'>\r\n                                            \r\n                        <div class=\"billing-section\">\r\n                            <div class=\"back-to-orders\" (click)=\"backToOrders()\">\r\n                                                <img src=\"/assets/img/left.png\">\r\n                                            </div>\r\n                            <div class=\"order-section\">\r\n                                <h3 class=\"order-heading\">Order Information</h3>\r\n                                <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.OrderID}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Total}}</p>\r\n                            </div>\r\n                            <div class=\"billing-name\">\r\n                                <h3 class=\"order-heading\">Billing Information</h3>\r\n                                <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Billing.Name}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Billing.Phone}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Billing.Address}}</p>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"customer-detail-section\">\r\n                            <h3 class=\"order-heading\">Customer Details</h3>\r\n                            <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.OrderID}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Name}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Email}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Customer.Date}}</p>\r\n                        </div>\r\n                        <div class=\"products-section\">\r\n                            <h3 class=\"order-heading\">Product Details</h3>\r\n                            <hr>\r\n                            <table class=\"table table-striped\">\r\n                                <thead>\r\n                                <tr>\r\n                                    <th>Product Name</th>\r\n                                    <th>Product Price</th>\r\n                                    <th>Product Sku</th>\r\n                                    <th>Product Options</th>\r\n                                </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                <tr *ngFor=\"let products of orderDetail.Products\">\r\n                                    <td>{{products.ProductName}}</td>\r\n                                    <td>{{products.ProductPrice}}</td>\r\n                                    <td>{{products.ProductSku}}</td>\r\n                                    <td>{{products.ProductName}}</td>\r\n                                </tr>\r\n                                </tbody>\r\n                            </table>\r\n\r\n\r\n                           \r\n                        </div>\r\n                        <div class=\"shipping-info-section\">\r\n                                <h3 class=\"order-heading\">Shipping Information</h3>\r\n                                <hr>\r\n                                <p class=\"order-details\">{{orderDetail.Shipping.Name}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Shipping.Phone}}</p>\r\n                                <p class=\"order-details\">{{orderDetail.Shipping.Address}}</p>\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                    <div class=\"cart-footer clearfix\">\r\n\r\n                        <div class=\"row\">\r\n\r\n\r\n\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n\r\n                    </div>\r\n\r\n                </div>\r\n                <div id=\"menu3\" class=\"tab-pane fade\">\r\n \r\n                </div>\r\n            </div>\r\n\r\n\r\n        </div>\r\n\r\n\r\n\r\n    </div>\r\n\r\n    </perfect-scrollbar>\r\n</div>"
+
+/***/ }),
+/* 527 */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<div id=\"mySidenav\" class=\"sidenav\">\r\n \r\n   <ul class=\"sidebar-list\">\r\n  \r\n<li><i class=\"fa fa-sign-in\" aria-hidden=\"true\"></i><p>Register<p></li>\r\n<li><i class=\"fa fa-users\" aria-hidden=\"true\"></i><p>Customers<p></li>\r\n<li><i class=\"fa fa-cog\" aria-hidden=\"true\"></i><p>My Company<p></li>\r\n<li><a href=\"#\" (click)=\"showBackOffice()\"><i class=\"fa fa-cloud\" aria-hidden=\"true\"></i><p>Back Office<p></a></li>\r\n<li><i class=\"fa fa-question\" aria-hidden=\"true\"></i><p>Help<p></li>\r\n<li><i class=\"fa fa-bars\" aria-hidden=\"true\"></i><p>Add Ons<p></li>\r\n<li><a [routerLink]=\" ['/']\" (click)=\"logout()\"><i class=\"fa fa-lock\" aria-hidden=\"true\"></i><p>Sign Out<p></a></li>\r\n   <!--<div class=\"sync-button\">\r\n        <i class=\"fa fa-cloud\"></i><p>Sync</p>\r\n    </div>-->\r\n</ul>\r\n\r\n\r\n</div>\r\n\r\n<!-- Use any element to open the sidenav -->\r\n"
+
+/***/ }),
+/* 528 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101379,7 +101714,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subject_1 = __webpack_require__(63);
-var ObjectUnsubscribedError_1 = __webpack_require__(284);
+var ObjectUnsubscribedError_1 = __webpack_require__(287);
 /**
  * @class BehaviorSubject<T>
  */
@@ -101423,7 +101758,7 @@ exports.BehaviorSubject = BehaviorSubject;
 //# sourceMappingURL=BehaviorSubject.js.map
 
 /***/ }),
-/* 526 */
+/* 529 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101465,7 +101800,7 @@ exports.InnerSubscriber = InnerSubscriber;
 //# sourceMappingURL=InnerSubscriber.js.map
 
 /***/ }),
-/* 527 */
+/* 530 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101598,7 +101933,7 @@ exports.Notification = Notification;
 //# sourceMappingURL=Notification.js.map
 
 /***/ }),
-/* 528 */
+/* 531 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101644,18 +101979,18 @@ exports.SubjectSubscription = SubjectSubscription;
 //# sourceMappingURL=SubjectSubscription.js.map
 
 /***/ }),
-/* 529 */
+/* 532 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(11);
-var of_1 = __webpack_require__(282);
+var of_1 = __webpack_require__(285);
 Observable_1.Observable.of = of_1.of;
 //# sourceMappingURL=of.js.map
 
 /***/ }),
-/* 530 */
+/* 533 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101666,7 +102001,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(11);
-var ScalarObservable_1 = __webpack_require__(280);
+var ScalarObservable_1 = __webpack_require__(283);
 var EmptyObservable_1 = __webpack_require__(110);
 /**
  * We need this JSDoc comment for affecting ESDoc.
@@ -101731,7 +102066,7 @@ exports.ArrayLikeObservable = ArrayLikeObservable;
 //# sourceMappingURL=ArrayLikeObservable.js.map
 
 /***/ }),
-/* 531 */
+/* 534 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101899,7 +102234,7 @@ var RefCountSubscriber = (function (_super) {
 //# sourceMappingURL=ConnectableObservable.js.map
 
 /***/ }),
-/* 532 */
+/* 535 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102017,7 +102352,7 @@ var ForkJoinSubscriber = (function (_super) {
 //# sourceMappingURL=ForkJoinObservable.js.map
 
 /***/ }),
-/* 533 */
+/* 536 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102028,14 +102363,14 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var isArray_1 = __webpack_require__(81);
-var isPromise_1 = __webpack_require__(288);
-var PromiseObservable_1 = __webpack_require__(279);
-var IteratorObservable_1 = __webpack_require__(534);
+var isPromise_1 = __webpack_require__(291);
+var PromiseObservable_1 = __webpack_require__(282);
+var IteratorObservable_1 = __webpack_require__(537);
 var ArrayObservable_1 = __webpack_require__(109);
-var ArrayLikeObservable_1 = __webpack_require__(530);
+var ArrayLikeObservable_1 = __webpack_require__(533);
 var iterator_1 = __webpack_require__(113);
 var Observable_1 = __webpack_require__(11);
-var observeOn_1 = __webpack_require__(547);
+var observeOn_1 = __webpack_require__(550);
 var observable_1 = __webpack_require__(114);
 var isArrayLike = (function (x) { return x && typeof x.length === 'number'; });
 /**
@@ -102145,7 +102480,7 @@ exports.FromObservable = FromObservable;
 //# sourceMappingURL=FromObservable.js.map
 
 /***/ }),
-/* 534 */
+/* 537 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102155,7 +102490,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var root_1 = __webpack_require__(51);
+var root_1 = __webpack_require__(52);
 var Observable_1 = __webpack_require__(11);
 var iterator_1 = __webpack_require__(113);
 /**
@@ -102314,37 +102649,37 @@ function sign(value) {
 //# sourceMappingURL=IteratorObservable.js.map
 
 /***/ }),
-/* 535 */
+/* 538 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ForkJoinObservable_1 = __webpack_require__(532);
+var ForkJoinObservable_1 = __webpack_require__(535);
 exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
 //# sourceMappingURL=forkJoin.js.map
 
 /***/ }),
-/* 536 */
+/* 539 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var FromObservable_1 = __webpack_require__(533);
+var FromObservable_1 = __webpack_require__(536);
 exports.from = FromObservable_1.FromObservable.create;
 //# sourceMappingURL=from.js.map
 
 /***/ }),
-/* 537 */
+/* 540 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var merge_1 = __webpack_require__(545);
+var merge_1 = __webpack_require__(548);
 exports.merge = merge_1.mergeStatic;
 //# sourceMappingURL=merge.js.map
 
 /***/ }),
-/* 538 */
+/* 541 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102416,7 +102751,7 @@ var CatchSubscriber = (function (_super) {
 //# sourceMappingURL=catch.js.map
 
 /***/ }),
-/* 539 */
+/* 542 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102478,12 +102813,12 @@ exports.concatAll = concatAll;
 //# sourceMappingURL=concatAll.js.map
 
 /***/ }),
-/* 540 */
+/* 543 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var mergeMap_1 = __webpack_require__(283);
+var mergeMap_1 = __webpack_require__(286);
 /* tslint:disable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -102554,7 +102889,7 @@ exports.concatMap = concatMap;
 //# sourceMappingURL=concatMap.js.map
 
 /***/ }),
-/* 541 */
+/* 544 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102634,7 +102969,7 @@ var EverySubscriber = (function (_super) {
 //# sourceMappingURL=every.js.map
 
 /***/ }),
-/* 542 */
+/* 545 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102733,7 +103068,7 @@ var FilterSubscriber = (function (_super) {
 //# sourceMappingURL=filter.js.map
 
 /***/ }),
-/* 543 */
+/* 546 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102891,7 +103226,7 @@ var FirstSubscriber = (function (_super) {
 //# sourceMappingURL=first.js.map
 
 /***/ }),
-/* 544 */
+/* 547 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -103016,14 +103351,14 @@ var LastSubscriber = (function (_super) {
 //# sourceMappingURL=last.js.map
 
 /***/ }),
-/* 545 */
+/* 548 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var ArrayObservable_1 = __webpack_require__(109);
 var mergeAll_1 = __webpack_require__(112);
-var isScheduler_1 = __webpack_require__(289);
+var isScheduler_1 = __webpack_require__(292);
 /* tslint:disable:max-line-length */
 /**
  * Creates an output Observable which concurrently emits all values from every
@@ -103166,12 +103501,12 @@ exports.mergeStatic = mergeStatic;
 //# sourceMappingURL=merge.js.map
 
 /***/ }),
-/* 546 */
+/* 549 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ConnectableObservable_1 = __webpack_require__(531);
+var ConnectableObservable_1 = __webpack_require__(534);
 /* tslint:disable:max-line-length */
 /**
  * Returns an Observable that emits the results of invoking a specified selector on items
@@ -103229,7 +103564,7 @@ exports.MulticastOperator = MulticastOperator;
 //# sourceMappingURL=multicast.js.map
 
 /***/ }),
-/* 547 */
+/* 550 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -103240,7 +103575,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(20);
-var Notification_1 = __webpack_require__(527);
+var Notification_1 = __webpack_require__(530);
 /**
  * @see {@link Notification}
  *
@@ -103314,7 +103649,7 @@ exports.ObserveOnMessage = ObserveOnMessage;
 //# sourceMappingURL=observeOn.js.map
 
 /***/ }),
-/* 548 */
+/* 551 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -103443,12 +103778,12 @@ exports.ReduceSubscriber = ReduceSubscriber;
 //# sourceMappingURL=reduce.js.map
 
 /***/ }),
-/* 549 */
+/* 552 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var multicast_1 = __webpack_require__(546);
+var multicast_1 = __webpack_require__(549);
 var Subject_1 = __webpack_require__(63);
 function shareSubjectFactory() {
     return new Subject_1.Subject();
@@ -103473,7 +103808,7 @@ exports.share = share;
 //# sourceMappingURL=share.js.map
 
 /***/ }),
-/* 550 */
+/* 553 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -103504,14 +103839,14 @@ exports.UnsubscriptionError = UnsubscriptionError;
 //# sourceMappingURL=UnsubscriptionError.js.map
 
 /***/ }),
-/* 551 */
+/* 554 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Subscriber_1 = __webpack_require__(20);
 var rxSubscriber_1 = __webpack_require__(115);
-var Observer_1 = __webpack_require__(278);
+var Observer_1 = __webpack_require__(281);
 function toSubscriber(nextOrObserver, error, complete) {
     if (nextOrObserver) {
         if (nextOrObserver instanceof Subscriber_1.Subscriber) {
@@ -103530,12 +103865,12 @@ exports.toSubscriber = toSubscriber;
 //# sourceMappingURL=toSubscriber.js.map
 
 /***/ }),
-/* 552 */
+/* 555 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var errorObject_1 = __webpack_require__(285);
+var errorObject_1 = __webpack_require__(288);
 var tryCatchTarget;
 function tryCatcher() {
     try {
@@ -103555,13 +103890,13 @@ exports.tryCatch = tryCatch;
 //# sourceMappingURL=tryCatch.js.map
 
 /***/ }),
-/* 553 */
+/* 556 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(493);
+var content = __webpack_require__(496);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -103569,7 +103904,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(290)(content, options);
+var update = __webpack_require__(293)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -103586,13 +103921,13 @@ if(false) {
 }
 
 /***/ }),
-/* 554 */
+/* 557 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(500);
+var content = __webpack_require__(503);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -103600,7 +103935,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(290)(content, options);
+var update = __webpack_require__(293)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -103617,7 +103952,7 @@ if(false) {
 }
 
 /***/ }),
-/* 555 */
+/* 558 */
 /***/ (function(module, exports) {
 
 
@@ -103712,53 +104047,11 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 556 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(492);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-/* 557 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(494);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-/* 558 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(495);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
 /* 559 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(496);
+        var result = __webpack_require__(495);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -103786,7 +104079,7 @@ module.exports = function (css) {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(499);
+        var result = __webpack_require__(498);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -103797,6 +104090,48 @@ module.exports = function (css) {
 
 /***/ }),
 /* 562 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(499);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+/* 563 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(500);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+/* 564 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(502);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+/* 565 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
