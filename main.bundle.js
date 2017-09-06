@@ -38413,7 +38413,7 @@ AddtocartService = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServiceUrl; });
 var ServiceUrl = (function () {
     function ServiceUrl() {
-        this.baseUrl = "http://182.180.56.81:8080/Magento/";
+        this.baseUrl = "https://www.lesfloralies.ae/";
     }
     return ServiceUrl;
 }());
