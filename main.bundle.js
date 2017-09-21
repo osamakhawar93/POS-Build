@@ -38923,9 +38923,9 @@ AddtocartService = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServiceUrl; });
 var ServiceUrl = (function () {
     function ServiceUrl() {
-        this.baseUrl = "http://182.180.59.170:8080/Magento/";
+        /*   public baseUrl:string = "http://182.180.59.170:8080/Magento/";*/
         /*   public baseUrl: string = "https://www.lesfloralies.ae/";*/
-        /* public baseUrl: string = "https://34.212.185.219/";*/
+        this.baseUrl = "http://34.212.185.219/";
     }
     return ServiceUrl;
 }());
