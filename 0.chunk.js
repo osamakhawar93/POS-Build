@@ -1,6 +1,6 @@
 webpackJsonpac__name_([0],{
 
-/***/ 69:
+/***/ 70:
 /***/ (function(module, exports) {
 
 module.exports = [{"res":"data"}]
